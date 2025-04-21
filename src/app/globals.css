@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 3%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.9%;
+
+    /* Cyber theme highlight colors */
+    --cyber-red: 0 100% 50%;
+    --cyber-green: 120 100% 45%;
+    --cyber-blue: 210 100% 50%;
+    --cyber-yellow: 60 100% 50%;
+    --cyber-purple: 270, 100%, 70%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Cyber Theme Custom Classes */
+.cyber-border {
+  @apply border-2 relative;
+  border-image: linear-gradient(to right,
+    hsl(var(--cyber-red)),
+    hsl(var(--cyber-green)),
+    hsl(var(--cyber-blue)),
+    hsl(var(--cyber-yellow))
+  ) 1;
+}
+
+.cyber-glow-red {
+  text-shadow: 0 0 5px hsl(var(--cyber-red)), 0 0 10px hsl(var(--cyber-red));
+}
+
+.cyber-glow-green {
+  text-shadow: 0 0 5px hsl(var(--cyber-green)), 0 0 10px hsl(var(--cyber-green));
+}
+
+.cyber-glow-blue {
+  text-shadow: 0 0 5px hsl(var(--cyber-blue)), 0 0 10px hsl(var(--cyber-blue));
+}
+
+.cyber-glow-yellow {
+  text-shadow: 0 0 5px hsl(var(--cyber-yellow)), 0 0 10px hsl(var(--cyber-yellow));
+}
+
+.cyber-glow-purple {
+  text-shadow: 0 0 5px hsl(var(--cyber-purple)), 0 0 10px hsl(var(--cyber-purple));
+}
+
+.cyber-heading {
+  @apply font-bold uppercase tracking-wider;
+}
+
+.cyber-grid {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}

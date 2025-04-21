@@ -1,0 +1,37 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import NavBar from "@/components/navbar"; // Fixed the navbar import
+
+export const metadata: Metadata = {
+  title: "Cyber Library - Advanced Tools Collection",
+  description: "A cyber-themed library of advanced cutting-edge tools and equipment",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className="min-h-screen bg-background font-sans antialiased">
+        <div className="relative flex min-h-screen flex-col cyber-grid">
+          <NavBar />
+          <div className="flex-1">
+            <main>{children}</main>
+          </div>
+          <footer className="border-t py-6 md:py-8">
+            <div className="container flex flex-col items-center justify-between gap-4 md:h-14 md:flex-row">
+              <p className="text-center text-sm text-muted-foreground md:text-left">
+                &copy; {new Date().getFullYear()} X LIBRARY. All rights reserved.
+              </p>
+              <p className="text-center text-sm text-muted-foreground md:text-right">
+                Beyblade X Japan fans library.
+              </p>
+            </div>
+          </footer>
+        </div>
+      </body>
+    </html>
+  );
+}  
