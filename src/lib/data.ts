@@ -1129,7 +1129,7 @@ export const products: Product[] = [
       {
         id: "DBS-0001",
         name: "G3 Prize",
-        image: "https://i.ibb.co/99xPq3JB/images-Photoroom.png"
+        image: "https://i.ibb.co/v4Rq8jqw/PDB-3.png"
       },
     ]
   },
@@ -2153,6 +2153,11 @@ export const products: Product[] = [
         id: "680-001",
         name: "CX-04",
         image: ""
+      },
+      {
+        id: "680-002",
+        name: "G3 Prize",
+        image: "https://i.ibb.co/gL7p4Cjg/6-80-3.png"
       },
     ]
   },
@@ -3357,13 +3362,18 @@ export const products: Product[] = [
       "Gears": "12",
       "Burst Resistance": "Low"
     },
-    // bey: [
-    //   {
-    //     id: "W-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
-    //   },
-    // ]
+    bey: [
+      {
+        id: "W-001",
+        name: "CX-04",
+        image: ""
+      },
+      {
+        id: "W-002",
+        name: "G3 Prize",
+        image: "https://i.ibb.co/VksWCPD/W-3.png"
+      },
+    ]
   },
   {
     id: "bit-036",
