@@ -3,8 +3,8 @@ import "./globals.css";
 import NavBar from "@/components/navbar"; // Fixed the navbar import
 
 export const metadata: Metadata = {
-  title: "Cyber Library - Advanced Tools Collection",
-  description: "A cyber-themed library of advanced cutting-edge tools and equipment",
+  title: "Beyblade X Library - Parts Collection",
+  description: "Library for Beyblade X parts collection",
 };
 
 export default function RootLayout({

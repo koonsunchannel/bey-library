@@ -1745,13 +1745,13 @@ export const products: Product[] = [
       "High : 8.5 mm",
       "Weight: ~4.7 g",
     ],
-    // bey: [
-    //   {
-    //     id: "370-001",
-    //     name: "UX-05",
-    //     image: "https://i.ibb.co/Y4M92mFR/3-70-2.png"
-    //   },
-    // ]
+    bey: [
+      {
+        id: "385-001",
+        name: "CX-05",
+        image: "https://i.ibb.co/TxCfvjTG/3-85-2.png"
+      },
+    ]
   },
   {
     id: "ratchet-455",
@@ -1763,16 +1763,16 @@ export const products: Product[] = [
     price: "4-55",
     features: [
       "4 Contact Points",
-      "High : 5.5 mm",
+      "High : 4.5 mm",
       "Weight: ~4.8 g",
     ],
-    // bey: [
-    //   {
-    //     id: "460-001",
-    //     name: "BX-06",
-    //     image: "https://i.ibb.co/3537qJp8/3-80-2.png"
-    //   },
-    // ]
+    bey: [
+      {
+        id: "455-001",
+        name: "CX-05",
+        image: "https://i.ibb.co/pvznvkvk/4-55-2.png"
+      },
+    ]
   },
   {
     id: "ratchet-460",
@@ -1873,6 +1873,16 @@ export const products: Product[] = [
         id: "470-003",
         name: "BX-38",
         image: "https://i.ibb.co/99kychFw/4-70-4.png"
+      },
+      {
+        id: "470-004",
+        name: "CX-05",
+        image: "https://i.ibb.co/NgZSTC1s/4-70-6.png"
+      },
+      {
+        id: "470-005",
+        name: "CX-05",
+        image: "https://i.ibb.co/gLLhJsSY/4-70-5.png"
       },
     ]
   },
@@ -2126,6 +2136,11 @@ export const products: Product[] = [
         name: "BX-00",
         image: "https://i.ibb.co/LdDb24qv/media.png"
       },
+      {
+        id: "760-002",
+        name: "CX-05",
+        image: "https://i.ibb.co/KcVkfgXK/7-60-3.png"
+      },
     ]
   },
   {
@@ -2245,6 +2260,11 @@ export const products: Product[] = [
         id: "980-003",
         name: "BX-00",
         image: "https://i.ibb.co/gMWfJwv9/9-80-4.png"
+      },
+      {
+        id: "980-004",
+        name: "CX-05",
+        image: "https://i.ibb.co/WvsBB5TB/9-80-5.png"
       },
     ]
   },
@@ -2530,6 +2550,11 @@ export const products: Product[] = [
         name: "BX-00",
         image: "https://i.ibb.co/27zzkhNB/LF-6.png"
       },
+      {
+        id: "LF-006",
+        name: "CX-05",
+        image: "https://i.ibb.co/ynQ5cq7W/LF-7.png"
+      },
     ]
   },
   {
@@ -2598,6 +2623,11 @@ export const products: Product[] = [
         id: "O-003",
         name: "BX-39",
         image: "https://i.ibb.co/9kc1DXgh/O-4.png"
+      },
+      {
+        id: "O-004",
+        name: "CX-05",
+        image: "https://i.ibb.co/xKWnG7zk/O-5.png"
       },
     ]
   },
@@ -3009,11 +3039,11 @@ export const products: Product[] = [
         name: "BX-39",
         image: "https://i.ibb.co/s9pG8nch/D-5.png"
       },
-      // {
-      //   id: "D-005",
-      //   name: "CX-05",
-      //   image: "https://i.ibb.co/HDKPPFvw/C-3.png"
-      // },
+      {
+        id: "D-005",
+        name: "CX-05",
+        image: "https://i.ibb.co/Jw2H5cvQ/D-6.png"
+      },
     ]
   },
   {
@@ -3299,19 +3329,18 @@ export const products: Product[] = [
       "Gears": "12",
       "Burst Resistance": "High"
     },
-    // bey: [
-    //   {
-    //     id: "K-001",
-    //     name: "CX-05",
-    //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
-    //   },
-    // ]
-    //   {
-    //     id: "K-002",
-    //     name: "CX-05",
-    //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
-    //   },
-    // ]
+    bey: [
+      {
+        id: "K-001",
+        name: "CX-05",
+        image: "https://i.ibb.co/0V29bD1C/K-2.png"
+      },
+      {
+        id: "K-002",
+        name: "CX-05",
+        image: "https://i.ibb.co/S7ZTXPyf/K-3.png"
+      },
+    ]
   },
   {
     id: "bit-037",
