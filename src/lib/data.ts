@@ -1554,7 +1554,13 @@ export const products: Product[] = [
         image: "https://i.ibb.co/GfHHrQM0/2-60-4.png"
       },
       {
+        //croc
         id: "260-004",
+        name: "BX-00",
+        image: "https://i.ibb.co/qYTNYYSz/2-60-5.png"
+      },
+      {
+        id: "260-005",
         name: "CX-06",
         image: ""
       },
@@ -2986,6 +2992,11 @@ export const products: Product[] = [
         name: "BX-31",
         image: "https://i.ibb.co/XfSbqR0Q/Q-3.png"
       },
+      {
+        id: "Q-003",
+        name: "BX-00",
+        image: "https://i.ibb.co/93dcfjCk/Q-4.png"
+      },
     ]
   },
   {
@@ -3318,13 +3329,13 @@ export const products: Product[] = [
       "Gears": "12",
       "Burst Resistance": "High"
     },
-    // bey: [
-    //   {
-    //     id: "V-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
-    //   },
-    // ]
+    bey: [
+      {
+        id: "V-001",
+        name: "CX-04",
+        image: ""
+      },
+    ]
   },
   {
     id: "bit-034",
