@@ -1378,6 +1378,29 @@ export const products: Product[] = [
     //   },
     // ]
   },
+  {
+    id: "blade-R007",
+    name: "Samurai Steel",
+    description: "Attack type blade with 5 side blades for barrage attack.",
+    fullDescription: "Attack type blade with 5 side blades for barrage attack.",
+    image: "https://i.ibb.co/356zg5NW/Samurai-Steel-5-70-GF-Photoroom.png",
+    category: "blade",
+    price: "BX-00",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~30 g",
+      "Stock Combo": "5-70 Gear Flat",
+      "Product Line": "BX",
+    },
+    // bey: [
+    //   {
+    //     id: "PF-001",
+    //     name: "UX-12",
+    //     image: "https://i.ibb.co/ZQbJ786/PF-12-u.webp"
+    //   },
+    // ]
+  },
 
   
 
@@ -1426,6 +1449,11 @@ export const products: Product[] = [
         id: "080-002",
         name: "UX-12",
         image: "https://i.ibb.co/jPhfNTnk/0-80-3.png"
+      },
+      {
+        id: "080-003",
+        name: "CX-06",
+        image: ""
       },
     ]
   },
@@ -1524,6 +1552,11 @@ export const products: Product[] = [
         id: "260-003",
         name: "UX-12",
         image: "https://i.ibb.co/GfHHrQM0/2-60-4.png"
+      },
+      {
+        id: "260-004",
+        name: "CX-06",
+        image: ""
       },
     ]
   },
@@ -2031,6 +2064,12 @@ export const products: Product[] = [
         id: "570-003",
         name: "BX-39",
         image: "https://i.ibb.co/kgMkw4Hz/5-70-4.png"
+      },
+      {
+        // samurai steel
+        id: "570-004",
+        name: "BX-00",
+        image: ""
       },
     ]
   },
@@ -2732,6 +2771,12 @@ export const products: Product[] = [
         name: "UX-07",
         image: "https://i.ibb.co/ksT1Kmrb/GF-3.png"
       },
+      {
+        // samurai steel
+        id: "GF-003",
+        name: "BX-00",
+        image: ""
+      },
     ]
   },
   {
@@ -2904,6 +2949,11 @@ export const products: Product[] = [
         name: "UX-00",
         image: "https://i.ibb.co/VYMMMzhZ/DB-3.png"
       },
+      {
+        id: "DB-002",
+        name: "CX-06",
+        image: ""
+      },
     ]
   },
   {
@@ -2969,13 +3019,13 @@ export const products: Product[] = [
       "Gears": "12",
       "Burst Resistance": "High"
     },
-    // bey: [
-    //   {
-    //     id: "U-001",
-    //     name: "UX-10",
-    //     image: "https://i.ibb.co/xtYY9QyC/media.png"
-    //   },
-    // ]
+    bey: [
+      {
+        id: "U-001",
+        name: "CX-06",
+        image: ""
+      },
+    ]
   },
   {
     id: "bit-022",
