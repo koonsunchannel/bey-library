@@ -2119,7 +2119,7 @@ export const products: Product[] = [
   },
   {
     id: "ratchet-760",
-    name: "7-60 (UX-10)",
+    name: "7-60 (UX-06)",
     description: "7 contact points for high defense and impact power for any style.",
     fullDescription: "7 contact points for high defense and impact power for any style.",
     image: "https://i.ibb.co/1Jq4ptqF/Ratchet7-60.webp",
@@ -2166,7 +2166,7 @@ export const products: Product[] = [
   },
   {
     id: "ratchet-780",
-    name: "7-80 (UX-10)",
+    name: "7-80 (CX-39)",
     description: "7 contact points for high defense and impact power for any style.",
     fullDescription: "7 contact points for high defense and impact power for any style.",
     image: "https://i.ibb.co/Xfcp7yT3/7-80-1.webp",

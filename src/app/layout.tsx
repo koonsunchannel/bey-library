@@ -5,6 +5,9 @@ import NavBar from "@/components/navbar"; // Fixed the navbar import
 export const metadata: Metadata = {
   title: "Beyblade X Library - Parts Collection",
   description: "Library for Beyblade X parts collection",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
