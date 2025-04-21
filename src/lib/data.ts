@@ -1181,6 +1181,29 @@ export const products: Product[] = [
     //   },
     // ]
   },
+  {
+    id: "blade-042",
+    name: "Scorpio Spear",
+    description: "Balance type blade with 6 side blades for defense with gimmick cam change to 3 side blades for attack.",
+    fullDescription: "Balance type blade with 6 side blades for defense with gimmick cam change to 3 side blades for attack.",
+    image: "https://i.ibb.co/1fMqT8g5/SSp-1.png",
+    category: "blade",
+    price: "UX-14",
+    specs: {
+      "Type": "Balance",
+      "Spin": "Right",
+      "Weight": "~? g",
+      "Stock Combo": "0-70 Zap",
+      "Product Line": "UX",
+    },
+    // bey: [
+    //   {
+    //     id: "DBS-001",
+    //     name: "CX-05",
+    //     image: ""
+    //   },
+    // ]
+  },
 
   //RARE BLADE
   {
@@ -1330,6 +1353,27 @@ export const products: Product[] = [
   
 
   // RATCHETS
+  {
+    id: "ratchet-070",
+    name: "0-70 (UX-14)",
+    description: "Round and width with 0 contact points.",
+    fullDescription: "Round and width with 0 contact points.",
+    image: "https://i.ibb.co/Nd0n4gGS/0-70-1.png",
+    category: "ratchet",
+    price: "0-70",
+    features: [
+      "0 Contact Points",
+      "High : 7.0 mm",
+      "Weight: ~7 g",
+    ],
+    // bey: [
+    //   {
+    //     id: "080-001",
+    //     name: "UX-12",
+    //     image: "https://i.ibb.co/GfbS7kcB/0-80-2.png"
+    //   },
+    // ]
+  },
   {
     id: "ratchet-080",
     name: "0-80 (UX-12)",
@@ -3236,6 +3280,28 @@ export const products: Product[] = [
     //   {
     //     id: "K-002",
     //     name: "CX-05",
+    //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
+    //   },
+    // ]
+  },
+  {
+    id: "bit-037",
+    name: "Z (UX-14)",
+    description: "Balance Bit with small point head for defense and width flat face for attack with more gears.",
+    fullDescription: "Balance Bit with small point head for defense and width flat face for attack with more gears.",
+    image: "https://i.ibb.co/r2LvMz1P/Z-1.png",
+    category: "bit",
+    price: "Zap",
+    specs: {
+      "Type": "Balance",
+      "Weight": "~2 g",
+      "Gears": "16",
+      "Burst Resistance": "High"
+    },
+    // bey: [
+    //   {
+    //     id: "W-001",
+    //     name: "UX-12",
     //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
     //   },
     // ]
