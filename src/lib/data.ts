@@ -1204,6 +1204,35 @@ export const products: Product[] = [
     //   },
     // ]
   },
+  {
+    id: "blade-043",
+    name: "Fox Brush J",
+    description: "Attack type blade with 9 side blades for barrage attack with multiple size blades.",
+    fullDescription: "Attack type blade with 9 side blades for barrage attack with multiple size blades.",
+    image: "https://i.ibb.co/LDHdzXVt/FB-01.png",
+    category: "blade",
+    price: "CX-06",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~? g",
+      "Stock Combo": "9-70 Gear Rush",
+      "Assist Blade": "Jaggy",
+      "Product Line": "CX",
+    },
+    bey: [
+      {
+        id: "FBJ-001",
+        name: "CX-06",
+        image: "https://i.ibb.co/N6QSyByy/FB-02.png"
+      },
+      {
+        id: "FBJ-002",
+        name: "CX-06",
+        image: "https://i.ibb.co/zVm8tq61/FB-03.png"
+      },
+    ]
+  },
 
   //RARE BLADE
   {
@@ -2180,13 +2209,13 @@ export const products: Product[] = [
       "High : 7.00 mm",
       "Weight: ~6.4 g",
     ],
-    // bey: [
-    //   {
-    //     id: "960-001",
-    //     name: "UX-05",
-    //     image: "https://i.ibb.co/tMBr5x5f/9-60-2.png"
-    //   },
-    // ]
+    bey: [
+      {
+        id: "970-001",
+        name: "UX-06",
+        image: "https://i.ibb.co/LDy7tgnr/Screenshot-2025-04-19-132540-Photoroom.png"
+      },
+    ]
   },
   {
     id: "ratchet-980",
@@ -3296,6 +3325,28 @@ export const products: Product[] = [
       "Type": "Balance",
       "Weight": "~2 g",
       "Gears": "16",
+      "Burst Resistance": "High"
+    },
+    // bey: [
+    //   {
+    //     id: "W-001",
+    //     name: "UX-12",
+    //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
+    //   },
+    // ]
+  },
+  {
+    id: "bit-038",
+    name: "GR (CX-06)",
+    description: "Attack Bit with less gears and full piece gear design for easier for X dash.",
+    fullDescription: "Attack Bit with less gears and full piece gear design for easier for X dash.",
+    image: "https://i.ibb.co/MyD88gMn/Bit-Gear-Rush-Photoroom.png",
+    category: "bit",
+    price: "Gear Rush",
+    specs: {
+      "Type": "Attack",
+      "Weight": "~2 g",
+      "Gears": "10",
       "Burst Resistance": "High"
     },
     // bey: [
