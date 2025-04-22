@@ -882,13 +882,13 @@ export const products: Product[] = [
       "Stock Combo": "2-70 Level",
       "Product Line": "UX",
     },
-    // bey: [
-    //   {
-    //     id: "SS-001",
-    //     name: "BX-36",
-    //     image: "https://i.ibb.co/jk69tQ85/WW-36-2.webp"
-    //   },
-    // ]
+    bey: [
+      {
+        id: "SS-001",
+        name: "BX-00",
+        image: "https://i.ibb.co/TqbZhBVT/itggboz9ofne1-Photoroom.png"
+      },
+    ]
   },
   {
     id: "blade-030",
@@ -1579,13 +1579,14 @@ export const products: Product[] = [
       "High : 7.0 mm",
       "Weight: ~6.3 g",
     ],
-    // bey: [
-    //   {
-    //     id: "260-001",
-    //     name: "BX-00",
-    //     image: "https://i.ibb.co/1Fhfzfz/2-60-2.png"
-    //   },
-    // ]
+    bey: [
+      {
+        //metal coat orange
+        id: "270-001",
+        name: "UX-00",
+        image: ""
+      },
+    ]
   },
   {
     id: "ratchet-280",
@@ -3241,13 +3242,14 @@ export const products: Product[] = [
       "Gears": "16",
       "Burst Resistance": "High"
     },
-    // bey: [
-    //   {
-    //     id: "L-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
-    //   },
-    // ]
+    //metal coat orange
+    bey: [
+      {
+        id: "L-001",
+        name: "UX-00",
+        image: ""
+      },
+    ]
   },
   {
     id: "bit-030",
