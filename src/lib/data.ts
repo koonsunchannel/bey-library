@@ -6,8 +6,6 @@ export const products: Product[] = [
   {
     id: "blade-001",
     name: "Dran Sword",
-    // description: "Attack type blade with 3 blades for smash attack.",
-    // fullDescription: "Attack type blade with 3 blades for smash attack.",
     image: "https://i.ibb.co/V039c69d/1-DS-1.webp",
     category: "blade",
     price: "BX-01",
@@ -198,8 +196,6 @@ export const products: Product[] = [
   {
     id: "blade-006",
     name: "Shark Edge",
-    description: "Attack type blade with 2 side blade for upper attack to brust enermy.",
-    fullDescription: "Attack type blade with 2 side blade for upper attack to brust enermy.",
     image: "https://i.ibb.co/HprcywWn/SE-1.webp",
     category: "blade",
     price: "BX-14",
@@ -1312,8 +1308,6 @@ export const products: Product[] = [
   {
     id: "ratchet-070",
     name: "0-70 (UX-14)",
-    description: "Round and width with 0 contact points.",
-    fullDescription: "Round and width with 0 contact points.",
     image: "https://i.ibb.co/Nd0n4gGS/0-70-1.png",
     category: "ratchet",
     price: "0-70",
@@ -1333,8 +1327,6 @@ export const products: Product[] = [
   {
     id: "ratchet-080",
     name: "0-80 (UX-12)",
-    description: "Round and width with 0 contact points.",
-    fullDescription: "Round and width with 0 contact points.",
     image: "https://i.ibb.co/NdLGgxZH/0-80-1.webp",
     category: "ratchet",
     price: "0-80",
@@ -1364,8 +1356,6 @@ export const products: Product[] = [
   {
     id: "ratchet-160",
     name: "1-60 (UX-01)",
-    description: "1 contact points for boost heavy attack.",
-    fullDescription: "1 contact points for boost heavy attack.",
     image: "https://i.ibb.co/tw7hh4yB/1-60-1.webp",
     category: "ratchet",
     price: "1-60",
@@ -1410,8 +1400,6 @@ export const products: Product[] = [
   {
     id: "ratchet-180",
     name: "1-80 (UX-05)",
-    description: "1 contact points for boost heavy attack.",
-    fullDescription: "1 contact points for boost heavy attack.",
     image: "https://i.ibb.co/spCg2bk7/1-80-1.webp",
     category: "ratchet",
     price: "1-80",
@@ -1431,8 +1419,6 @@ export const products: Product[] = [
   {
     id: "ratchet-260",
     name: "2-60 (BX-34)",
-    description: "2 contact points for boost heavy attack.",
-    fullDescription: "2 contact points for boost heavy attack.",
     image: "https://i.ibb.co/rRJRfZ36/2-60-1.webp",
     category: "ratchet",
     price: "2-60",
@@ -1473,8 +1459,6 @@ export const products: Product[] = [
   {
     id: "ratchet-270",
     name: "2-70 (UX-09)",
-    description: "2 contact points for boost heavy attack.",
-    fullDescription: "2 contact points for boost heavy attack.",
     image: "https://i.ibb.co/1YzPdgJm/Ratchet2-70.webp",
     category: "ratchet",
     price: "2-70",
@@ -1495,8 +1479,6 @@ export const products: Product[] = [
   {
     id: "ratchet-280",
     name: "2-80 (BX-00)",
-    description: "2 contact points for boost heavy attack.",
-    fullDescription: "2 contact points for boost heavy attack.",
     image: "https://i.ibb.co/21tK9Mpq/Ratchet2-80.webp",
     category: "ratchet",
     price: "2-80",
@@ -1516,8 +1498,6 @@ export const products: Product[] = [
   {
     id: "ratchet-360",
     name: "3-60 (BX-01)",
-    description: "3 contact points for balance spin force.",
-    fullDescription: "3 contact points for balance spin force.",
     image: "https://i.ibb.co/Xf1hg983/3-60-1.webp",
     category: "ratchet",
     price: "3-60",
@@ -1577,8 +1557,6 @@ export const products: Product[] = [
   {
     id: "ratchet-370",
     name: "3-70 (UX-02)",
-    description: "3 contact points for balance spin force.",
-    fullDescription: "3 contact points for balance spin force.",
     image: "https://i.ibb.co/7JNjTb1r/3-70-1.webp",
     category: "ratchet",
     price: "3-70",
@@ -1608,8 +1586,6 @@ export const products: Product[] = [
   {
     id: "ratchet-380",
     name: "3-80 (BX-04)",
-    description: "3 contact points for balance spin force.",
-    fullDescription: "3 contact points for balance spin force.",
     image: "https://i.ibb.co/hJyK6nNH/3-80-1.webp",
     category: "ratchet",
     price: "3-80",
@@ -1679,8 +1655,6 @@ export const products: Product[] = [
   {
     id: "ratchet-385",
     name: "3-85 (UX-10)",
-    description: "3 contact points for balance spin force.",
-    fullDescription: "3 contact points for balance spin force.",
     image: "https://i.ibb.co/0VG31SMS/3-85-1.webp",
     category: "ratchet",
     price: "3-85",
@@ -1700,8 +1674,6 @@ export const products: Product[] = [
   {
     id: "ratchet-455",
     name: "4-55 (CX-02)",
-    description: "4 contact points for super balance spin force.",
-    fullDescription: "4 contact points for super balance spin force.",
     image: "https://i.ibb.co/3yzN8j05/Ratchet4-55.webp",
     category: "ratchet",
     price: "4-55",
@@ -1721,8 +1693,6 @@ export const products: Product[] = [
   {
     id: "ratchet-460",
     name: "4-60 (BX-02)",
-    description: "4 contact points for super balance spin force.",
-    fullDescription: "4 contact points for super balance spin force.",
     image: "https://i.ibb.co/ccTS0Ngq/4-60-1.webp",
     category: "ratchet",
     price: "4-60",
@@ -1792,8 +1762,6 @@ export const products: Product[] = [
   {
     id: "ratchet-470",
     name: "4-70 (BX-31)",
-    description: "4 contact points for super balance spin force.",
-    fullDescription: "4 contact points for super balance spin force.",
     image: "https://i.ibb.co/jvD5Sv5Q/4-70-1.webp",
     category: "ratchet",
     price: "4-70",
@@ -1833,8 +1801,6 @@ export const products: Product[] = [
   {
     id: "ratchet-480",
     name: "4-80 (BX-03)",
-    description: "4 contact points for super balance spin force.",
-    fullDescription: "4 contact points for super balance spin force.",
     image: "https://i.ibb.co/KjzwjNrC/4-80-1.webp",
     category: "ratchet",
     price: "4-80",
@@ -1899,8 +1865,6 @@ export const products: Product[] = [
   {
     id: "ratchet-560",
     name: "5-60 (BX-15)",
-    description: "5 contact points for high impact force.",
-    fullDescription: "5 contact points for high impact force.",
     image: "https://i.ibb.co/Gv4BdLY2/5-60-1.webp",
     category: "ratchet",
     price: "5-60",
@@ -1950,8 +1914,6 @@ export const products: Product[] = [
   {
     id: "ratchet-570",
     name: "5-70 (UX-03)",
-    description: "5 contact points for high impact force.",
-    fullDescription: "5 contact points for high impact force.",
     image: "https://i.ibb.co/n5jp5Gf/5-70-1.webp",
     category: "ratchet",
     price: "5-70",
@@ -1987,8 +1949,6 @@ export const products: Product[] = [
   {
     id: "ratchet-580",
     name: "5-80 (BX-16)",
-    description: "5 contact points for high impact force.",
-    fullDescription: "5 contact points for high impact force.",
     image: "https://i.ibb.co/Xx5rhbg8/5-80-1.webp",
     category: "ratchet",
     price: "5-80",
@@ -2028,8 +1988,6 @@ export const products: Product[] = [
   {
     id: "ratchet-660",
     name: "6-60 (CX-01)",
-    description: "6 contact points for balance impact force.",
-    fullDescription: "6 contact points for balance impact force.",
     image: "https://i.ibb.co/QvWbpK2N/6-60-1.webp",
     category: "ratchet",
     price: "6-60",
@@ -2049,8 +2007,6 @@ export const products: Product[] = [
   {
     id: "ratchet-680",
     name: "6-80 (CX-03)",
-    description: "6 contact points for balance impact force.",
-    fullDescription: "6 contact points for balance impact force.",
     image: "https://i.ibb.co/spsD7V08/6-80-1.webp",
     category: "ratchet",
     price: "6-80",
@@ -2075,8 +2031,6 @@ export const products: Product[] = [
   {
     id: "ratchet-760",
     name: "7-60 (UX-06)",
-    description: "7 contact points for high defense and impact power for any style.",
-    fullDescription: "7 contact points for high defense and impact power for any style.",
     image: "https://i.ibb.co/1Jq4ptqF/Ratchet7-60.webp",
     category: "ratchet",
     price: "7-70",
@@ -2101,8 +2055,6 @@ export const products: Product[] = [
   {
     id: "ratchet-770",
     name: "7-70 (UX-10)",
-    description: "7 contact points for high defense and impact power for any style.",
-    fullDescription: "7 contact points for high defense and impact power for any style.",
     image: "https://i.ibb.co/CKTC6dtd/7-70-1.webp",
     category: "ratchet",
     price: "7-70",
@@ -2122,8 +2074,6 @@ export const products: Product[] = [
   {
     id: "ratchet-780",
     name: "7-80 (CX-39)",
-    description: "7 contact points for high defense and impact power for any style.",
-    fullDescription: "7 contact points for high defense and impact power for any style.",
     image: "https://i.ibb.co/Xfcp7yT3/7-80-1.webp",
     category: "ratchet",
     price: "7-80",
@@ -2143,8 +2093,6 @@ export const products: Product[] = [
   {
     id: "ratchet-960",
     name: "9-60 (BX-23)",
-    description: "9 contact points for high defensive and low weight for burst resistant from small contact points.",
-    fullDescription: "9 contact points for high defensive and low weight for burst resistant from small contact points.",
     image: "https://i.ibb.co/B2nvgjRc/9-60-1.webp",
     category: "ratchet",
     price: "9-60",
@@ -2169,8 +2117,6 @@ export const products: Product[] = [
   {
     id: "ratchet-970",
     name: "9-70 (UX-07)",
-    description: "9 contact points for high defensive and low weight for burst resistant from small contact points.",
-    fullDescription: "9 contact points for high defensive and low weight for burst resistant from small contact points.",
     image: "https://i.ibb.co/M5CNHgY5/9-70-1.webp",
     category: "ratchet",
     price: "9-70",
@@ -2190,8 +2136,6 @@ export const products: Product[] = [
   {
     id: "ratchet-980",
     name: "9-80 (BX-27)",
-    description: "9 contact points for high defensive and low weight for burst resistant from small contact points.",
-    fullDescription: "9 contact points for high defensive and low weight for burst resistant from small contact points.",
     image: "https://i.ibb.co/Wp3tZJxx/9-80-1.webp",
     category: "ratchet",
     price: "9-80",
@@ -2228,8 +2172,6 @@ export const products: Product[] = [
   {
     id: "bit-001",
     name: "F (BX-01)",
-    description: "Standrad Bit for Attack Type good for every combo.",
-    fullDescription: "Standrad Bit for Attack Type good for every combo.",
     image: "https://i.ibb.co/Fb19tC1y/F-1.webp",
     category: "bit",
     price: "Flat",
@@ -2300,8 +2242,6 @@ export const products: Product[] = [
   {
     id: "bit-002",
     name: "T (BX-02)",
-    description: "Standrad Bit for Balamce Type very good for many play style.",
-    fullDescription: "Standrad Bit for Balamce Type very good for many play style.",
     image: "https://i.ibb.co/Lzv1tRjV/T-1.webp",
     category: "bit",
     price: "Taper",
@@ -2347,8 +2287,6 @@ export const products: Product[] = [
   {
     id: "bit-003",
     name: "B (BX-03)",
-    description: "Standrad Bit for Stamina Type very good for long spin.",
-    fullDescription: "Standrad Bit for Stamina Type very good for long spin.",
     image: "https://i.ibb.co/Q3pGKC9j/B-1.png",
     category: "bit",
     price: "Ball",
@@ -2394,8 +2332,6 @@ export const products: Product[] = [
   {
     id: "bit-004",
     name: "N (BX-04)",
-    description: "Standrad Bit for Defense Type good for beginner.",
-    fullDescription: "Standrad Bit for Defense Type good for beginner.",
     image: "https://i.ibb.co/VcNhWfpy/N-1.png",
     category: "bit",
     price: "Needle",
@@ -2436,8 +2372,6 @@ export const products: Product[] = [
   {
     id: "bit-005",
     name: "HN (BX-13)",
-    description: "High Bit for Defense Type for more recoil.",
-    fullDescription: "High Bit for Defense Type.",
     image: "https://i.ibb.co/Fk76tP6f/HN-1.png",
     category: "bit",
     price: "High Needle",
@@ -2468,8 +2402,6 @@ export const products: Product[] = [
   {
     id: "bit-006",
     name: "LF (BX-14)",
-    description: "Low height Bit for Attack Type for high impact force.",
-    fullDescription: "Low height Bit for Attack Type for high impact force.",
     image: "https://i.ibb.co/9HYJWNsd/LF-1.png",
     category: "bit",
     price: "Low Flat",
@@ -2515,8 +2447,6 @@ export const products: Product[] = [
   {
     id: "bit-007",
     name: "P (BX-15)",
-    description: "Blacne Bit for Attack and Defense for many play style.",
-    fullDescription: "Blacne Bit for Attack and Defense.",
     image: "https://i.ibb.co/7x5WSk15/P-1.png",
     category: "bit",
     price: "Point",
@@ -2552,8 +2482,6 @@ export const products: Product[] = [
   {
     id: "bit-008",
     name: "O (BX-16)",
-    description: "Stamina Bit with small ball for high defensive and long time spin.",
-    fullDescription: "Stamina Bit with small ball for high defensive and long time spin.",
     image: "https://i.ibb.co/kVMd9cmN/O-1.png",
     category: "bit",
     price: "Orb",
@@ -2589,8 +2517,6 @@ export const products: Product[] = [
   {
     id: "bit-009",
     name: "R (BX-20)",
-    description: "Attack Bit with 10 gear for saving dash power and more round for X dash.",
-    fullDescription: "Attack Bit with 10 gear for saving dash power and more round for X dash.",
     image: "https://i.ibb.co/dw9N6Jwp/R-1.png",
     category: "bit",
     price: "Rush",
@@ -2616,8 +2542,6 @@ export const products: Product[] = [
   {
     id: "bit-010",
     name: "HT (BX-21)",
-    description: "Balance Bit with higher than Taper for more impact in higher level.",
-    fullDescription: "Balance Bit with higher than Taper for more impact in higher level.",
     image: "https://i.ibb.co/m5fJP8W2/HT-1.webp",
     category: "bit",
     price: "High Taper",
@@ -2638,8 +2562,6 @@ export const products: Product[] = [
   {
     id: "bit-011",
     name: "S (BX-19)",
-    description: "Defense Bit with small needle point not good as much for impact resistant.",
-    fullDescription: "Defense Bit with small needle point not good as much for impact resistant.",
     image: "https://i.ibb.co/5W2jsJcd/S-1.webp",
     category: "bit",
     price: "Spike",
@@ -2665,8 +2587,6 @@ export const products: Product[] = [
   {
     id: "bit-012",
     name: "GF (BX-23)",
-    description: "Attack Bit with full gear design for highest boost speed for X dash.",
-    fullDescription: "Attack Bit with full gear design for highest boost speed for X dash.",
     image: "https://i.ibb.co/DfpX7m8J/GF-1.png",
     category: "bit",
     price: "Gear Flat",
@@ -2698,8 +2618,6 @@ export const products: Product[] = [
   {
     id: "bit-013",
     name: "GB (BX-24)",
-    description: "Stamina Bit with full gear design for highest boost speed for X dash.",
-    fullDescription: "Stamina Bit with full gear design for highest boost speed for X dash.",
     image: "https://i.ibb.co/0RX4ysFC/GB-1.png",
     category: "bit",
     price: "Gear Ball",
@@ -2735,8 +2653,6 @@ export const products: Product[] = [
   {
     id: "bit-014",
     name: "GP (BX-26)",
-    description: "Balance Bit with full gear design for highest boost speed for X dash.",
-    fullDescription: "Balance Bit with full gear design for highest boost speed for X dash.",
     image: "https://i.ibb.co/s99xdg3g/GP-1.webp",
     category: "bit",
     price: "Gear Point",
@@ -2767,8 +2683,6 @@ export const products: Product[] = [
   {
     id: "bit-015",
     name: "GN (BX-27)",
-    description: "Defense Bit with full gear design for highest boost speed for X dash.",
-    fullDescription: "Defense Bit with full gear design for highest boost speed for X dash.",
     image: "https://i.ibb.co/LzG7HNsG/GN-1.png",
     category: "bit",
     price: "Gear Needle",
@@ -2789,8 +2703,6 @@ export const products: Product[] = [
   {
     id: "bit-016",
     name: "A (UX-01)",
-    description: "Attack Bit with 16 gear design for super high boost speed for X dash and 1 hit impact.",
-    fullDescription: "Attack Bit with 16 gear design for super high boost speed for X dash and 1 hit impact.",
     image: "https://i.ibb.co/Rx6Xn5z/A-1.webp",
     category: "bit",
     price: "Accel",
@@ -2816,8 +2728,6 @@ export const products: Product[] = [
   {
     id: "bit-017",
     name: "H (UX-02)",
-    description: "Balance Bit with 16 gear design with widht face and hexagon shape for high defensive and counter.",
-    fullDescription: "Balance Bit with 16 gear design with widht face and hexagon shape for high defensive and counter.",
     image: "https://i.ibb.co/bM5nwSTC/H-1.webp",
     category: "bit",
     price: "Hexa",
@@ -2843,8 +2753,6 @@ export const products: Product[] = [
   {
     id: "bit-018",
     name: "DB (UX-03)",
-    description: "Stamina Bit with disc on bit for center balance spin force and tall.",
-    fullDescription: "Stamina Bit with disc on bit for center balance spin force and tall.",
     image: "https://i.ibb.co/PsfCdskv/DB-1.webp",
     category: "bit",
     price: "Disc Ball",
@@ -2875,8 +2783,6 @@ export const products: Product[] = [
   {
     id: "bit-019",
     name: "Q (BX-31)",
-    description: "Attack Bit with super unbalance desgin for jumping attack.",
-    fullDescription: "Attack Bit with super unbalance desgin for jumping attack.",
     image: "https://i.ibb.co/PsMP3TkH/Q-1.webp",
     category: "bit",
     price: "Quake",
@@ -2907,8 +2813,6 @@ export const products: Product[] = [
   {
     id: "bit-020",
     name: "MN (UX-05)",
-    description: "Defense Bit with metal surface for smooth run in stadium but low resistant force on stadium.",
-    fullDescription: "Defense Bit with metal surface for smooth run in stadium but low resistant force on stadium.",
     image: "https://i.ibb.co/1t1b62Zt/MN-1.webp",
     category: "bit",
     price: "Metal Needle",
@@ -2929,8 +2833,6 @@ export const products: Product[] = [
   {
     id: "bit-021",
     name: "U (BX-33)",
-    description: "Balacne Bit with design from Point and Ball for triple play style.",
-    fullDescription: "Balacne Bit with design from Point and Ball for triple play style.",
     image: "https://i.ibb.co/39mxwYx1/U-1.webp",
     category: "bit",
     price: "Unite",
@@ -2951,8 +2853,6 @@ export const products: Product[] = [
   {
     id: "bit-022",
     name: "C (BX-34)",
-    description: "Attack Bit with design left star shape for boost attack power.",
-    fullDescription: "Attack Bit with design left star shape for boost attack power.",
     image: "https://i.ibb.co/8LJ49Q63/C-1.webp",
     category: "bit",
     price: "Cyclone",
@@ -2978,8 +2878,6 @@ export const products: Product[] = [
   {
     id: "bit-023",
     name: "D (BX-35)",
-    description: "Defense Bit with multiple dots for break from impact.",
-    fullDescription: "Defense Bit with multiple dots for break from impact.",
     image: "https://i.ibb.co/LdMgVJbW/D-1.png",
     category: "bit",
     price: "Dot",
@@ -3020,8 +2918,6 @@ export const products: Product[] = [
   {
     id: "bit-024",
     name: "G (UX-07)",
-    description: "Stamina Bit with POM plastic in bottom to glide around stadium.",
-    fullDescription: "Stamina Bit with POM plastic in bottom to glide around stadium.",
     image: "https://i.ibb.co/gZPVr1X6/G-1.webp",
     category: "bit",
     price: "Glide",
@@ -3042,8 +2938,6 @@ export const products: Product[] = [
   {
     id: "bit-025",
     name: "E (BX-36)",
-    description: "Balance Bit with widht and round plate for extra stamina, low height of gear for jumping X dash.",
-    fullDescription: "Balance Bit with widht and round plate for extra stamina, low height of gear for jumping X dash.",
     image: "https://i.ibb.co/xKPCMW5g/E-1.webp",
     category: "bit",
     price: "Elevate",
@@ -3069,8 +2963,6 @@ export const products: Product[] = [
   {
     id: "bit-026",
     name: "FB (UX-08)",
-    description: "Stamina Bit with free spin gimmick to reduce stamina loss.",
-    fullDescription: "Stamina Bit with free spin gimmick to reduce stamina loss.",
     image: "https://i.ibb.co/1fRpB7t5/FB-1.webp",
     category: "bit",
     price: "Free Ball",
@@ -3091,8 +2983,6 @@ export const products: Product[] = [
   {
     id: "bit-027",
     name: "BS (UX-10)",
-    description: "Defense Bit with choke absorbing from impact and couter back enermy.",
-    fullDescription: "Defense Bit with choke absorbing from impact and couter back enermy.",
     image: "https://i.ibb.co/RGfCnzm1/BS-1.webp",
     category: "bit",
     price: "Bound Spike",
@@ -3113,8 +3003,6 @@ export const products: Product[] = [
   {
     id: "bit-028",
     name: "RA (UX-10)",
-    description: "Attack Bit with rubber for high recoil impact but lose more stamina.",
-    fullDescription: "Attack Bit with rubber for high recoil impact but lose more stamina.",
     image: "https://i.ibb.co/XxrL2p47/RA-1.webp",
     category: "bit",
     price: "Rubber Accel",
@@ -3135,8 +3023,6 @@ export const products: Product[] = [
   {
     id: "bit-029",
     name: "L (UX-09)",
-    description: "Attack Bit with 3 layer of bit surface for 3 level of play style and 3 speed level.",
-    fullDescription: "Attack Bit with 3 layer of bit surface for 3 level of play style and 3 speed level.",
     image: "https://i.ibb.co/S4Z1Njz8/L-1.webp",
     category: "bit",
     price: "Level",
@@ -3158,8 +3044,6 @@ export const products: Product[] = [
   {
     id: "bit-030",
     name: "TP (BX-38)",
-    description: "Balance Bit with high adjustment gimmick between battle.",
-    fullDescription: "Balance Bit with high adjustment gimmick between battle.",
     image: "https://i.ibb.co/YwBMrdN/TP-1.webp",
     category: "bit",
     price: "Trans Point",
@@ -3180,8 +3064,6 @@ export const products: Product[] = [
   {
     id: "bit-031",
     name: "LR (UX-11)",
-    description: "Attack Bit with low height and 10 gears for boost up round of X dash.",
-    fullDescription: "Attack Bit with low height and 10 gears for boost up round of X dash.",
     image: "https://i.ibb.co/NnfcKKXv/LR-1.webp",
     category: "bit",
     price: "Low Rush",
@@ -3202,8 +3084,6 @@ export const products: Product[] = [
   {
     id: "bit-032",
     name: "UN (UX-13)",
-    description: "Defense Bit with low height for under counter attack and spread impact to stadium.",
-    fullDescription: "Defense Bit with low height for under counter attack and spread impact to stadium.",
     image: "https://i.ibb.co/dJVZBhD1/UN-1.webp",
     category: "bit",
     price: "Under Needle",
@@ -3224,8 +3104,6 @@ export const products: Product[] = [
   {
     id: "bit-033",
     name: "V (CX-01)",
-    description: "Attack Bit with design right star shape for boost attack power.",
-    fullDescription: "Attack Bit with design right star shape for boost attack power.",
     image: "https://i.ibb.co/wFbx73MV/Bit-Vortex.webp",
     category: "bit",
     price: "Vortex",
@@ -3246,8 +3124,6 @@ export const products: Product[] = [
   {
     id: "bit-034",
     name: "LO (CX-02)",
-    description: "Stamina Bit with design small and low point for high spinning and balance.",
-    fullDescription: "Stamina Bit with design small and low point for high spinning and balance.",
     image: "https://i.ibb.co/M5cncSdq/LO-1.webp",
     category: "bit",
     price: "Low Orb",
@@ -3268,8 +3144,6 @@ export const products: Product[] = [
   {
     id: "bit-035",
     name: "W (CX-03)",
-    description: "Defense Bit with small needle head and less gears for counter X dash with less stamina.",
-    fullDescription: "Defense Bit with small needle head and less gears for counter X dash with less stamina.",
     image: "https://i.ibb.co/rGmF2J4d/W-1.webp",
     category: "bit",
     price: "Wedge",
@@ -3295,8 +3169,6 @@ export const products: Product[] = [
   {
     id: "bit-036",
     name: "K (CX-05)",
-    description: "Balance Bit with hexagon surface but design like a Taper for step attacking.",
-    fullDescription: "Balance Bit with hexagon surface but design like a Taper for step attacking.",
     image: "https://i.ibb.co/Nn31LkgV/K-1.webp",
     category: "bit",
     price: "Kick",
@@ -3322,8 +3194,6 @@ export const products: Product[] = [
   {
     id: "bit-037",
     name: "Z (UX-14)",
-    description: "Balance Bit with small point head for defense and width flat face for attack with more gears.",
-    fullDescription: "Balance Bit with small point head for defense and width flat face for attack with more gears.",
     image: "https://i.ibb.co/r2LvMz1P/Z-1.png",
     category: "bit",
     price: "Zap",
@@ -3344,8 +3214,6 @@ export const products: Product[] = [
   {
     id: "bit-038",
     name: "GR (CX-06)",
-    description: "Attack Bit with less gears and full piece gear design for easier for X dash.",
-    fullDescription: "Attack Bit with less gears and full piece gear design for easier for X dash.",
     image: "https://i.ibb.co/MyD88gMn/Bit-Gear-Rush-Photoroom.png",
     category: "bit",
     price: "Gear Rush",
@@ -3368,8 +3236,6 @@ export const products: Product[] = [
   {
     id: "other-001",
     name: "Start Dash Set",
-    description: "Starter set for beginers.",
-    fullDescription: "Starter set for beginers.",
     image: "https://i.ibb.co/Ld3GLtry/Start-Dash-Set-Box.webp",
     category: "other",
     price: "BX-07",
@@ -3405,8 +3271,6 @@ export const products: Product[] = [
   {
     id: "other-002",
     name: "3on3 Deck Set",
-    description: "Deck set for beginers who want to competitive.",
-    fullDescription: "Deck set for beginers who want to competitive.",
     image: "https://i.ibb.co/8yN1V4g/B08.webp",
     category: "other",
     price: "BX-08",
@@ -3436,8 +3300,6 @@ export const products: Product[] = [
   {
     id: "other-003",
     name: "Beybattle Pass",
-    description: "Beybattle Pass is registered with a user's Beyblade X app account, the user will earn bonus Bey Points.",
-    fullDescription: "Beybattle Pass is registered with a user's Beyblade X app account, the user will earn bonus Bey Points.",
     image: "https://i.ibb.co/4wJ98Qgn/B09.webp",
     category: "other",
     price: "BX-09",
@@ -3448,8 +3310,6 @@ export const products: Product[] = [
   {
     id: "other-004",
     name: "Xtreme Stadium",
-    description: "The Xtreme Stadium is the first Stadium released.",
-    fullDescription: "The Xtreme Stadium is the first Stadium released.",
     image: "https://i.ibb.co/1fXSD1gn/B10.webp",
     category: "other",
     price: "BX-10",
@@ -3460,8 +3320,6 @@ export const products: Product[] = [
   {
     id: "other-005",
     name: "Launcher Grip",
-    description: "Assist item for holding a launcher.",
-    fullDescription: "Assist item for holding a launcher.",
     image: "https://i.ibb.co/VWMbdxR0/Beyblade-X-Launcher-Grip-Packaging.webp",
     category: "other",
     price: "BX-11",
@@ -3472,8 +3330,6 @@ export const products: Product[] = [
   {
     id: "other-006",
     name: "3on3 Deck Case",
-    description: "Deck case for keep Beyblade in tournaments.",
-    fullDescription: "Deck case for keep Beyblade in tournaments.",
     image: "https://i.ibb.co/r2KCRpTk/3on3-Deck-Case-Packaging.webp",
     category: "other",
     price: "BX-12",
@@ -3484,8 +3340,6 @@ export const products: Product[] = [
   {
     id: "other-007",
     name: "Battle Entry Set",
-    description: "Best starter set with 2 beyblade, 2 launcher and stadium.",
-    fullDescription: "Best starter set with 2 beyblade, 2 launcher and stadium.",
     image: "https://i.ibb.co/ksBSvwjY/B17.webp",
     category: "other",
     price: "BX-17",
@@ -3527,8 +3381,6 @@ export const products: Product[] = [
   {
     id: "other-008",
     name: "String Launcher",
-    description: "Launcher for Beyblade X.",
-    fullDescription: "Launcher for Beyblade X.",
     image: "https://i.ibb.co/Z1BqBNmR/Beyblade-X-String-Launcher-Packaging.webp",
     category: "other",
     price: "BX-18",
@@ -3539,8 +3391,6 @@ export const products: Product[] = [
   {
     id: "other-009",
     name: "Gear Case",
-    description: "Holding Case for keep Beyblade & Launcher inside.",
-    fullDescription: "Holding Case for keep Beyblade & Launcher inside.",
     image: "https://i.ibb.co/s9qVBQ6s/Beyblade-X-Gear-Case.webp",
     category: "other",
     price: "BX-25",
@@ -3551,8 +3401,6 @@ export const products: Product[] = [
   {
     id: "other-010",
     name: "String Launcher (White Ver.)",
-    description: "Launcher for Beyblade X.",
-    fullDescription: "Launcher for Beyblade X.",
     image: "https://i.ibb.co/zW6sQSBg/Beyblade-X-String-Launcher-White-Ver.webp",
     category: "other",
     price: "BX-28",
@@ -3563,8 +3411,6 @@ export const products: Product[] = [
   {
     id: "other-011",
     name: "Custom Grip (White Ver.)",
-    description: "Holding grip for Beyblade X.",
-    fullDescription: "Holding grip for Beyblade X.",
     image: "https://i.ibb.co/VWhzj7sD/Beyblade-X-Custom-Grip-White-Ver-Packaging.webp",
     category: "other",
     price: "BX-29",
@@ -3575,8 +3421,6 @@ export const products: Product[] = [
   {
     id: "other-012",
     name: "Custom Grip (Red Ver.)",
-    description: "Holding grip for Beyblade X.",
-    fullDescription: "Holding grip for Beyblade X.",
     image: "https://i.ibb.co/zTQNqB1M/Beyblade-X-Custom-Grip-Red-Ver-Packaging.webp",
     category: "other",
     price: "BX-30",
@@ -3587,8 +3431,6 @@ export const products: Product[] = [
   {
     id: "other-013",
     name: "Wide Xtreme Stadium",
-    description: "Stadium for Triple Battle.",
-    fullDescription: "Stadium for Triple Battle.",
     image: "https://i.ibb.co/Q3Wvn6qK/Wide-Xtreme-Stadium.webp",
     category: "other",
     price: "BX-32",
@@ -3599,8 +3441,6 @@ export const products: Product[] = [
   {
     id: "other-014",
     name: "Battle Entry Set U",
-    description: "Best starter set for begginer in UX line.",
-    fullDescription: "Best starter set for begginer in UX line.",
     image: "https://i.ibb.co/Xf7hqF9n/Battle-Entry-Set-U-Box.webp",
     category: "other",
     price: "UX-04",
@@ -3642,8 +3482,6 @@ export const products: Product[] = [
   {
     id: "other-015",
     name: "Double Xtreme Stadium Set",
-    description: "Stadium for normal battle but have another Xtreme line in middle of stadium.",
-    fullDescription: "Stadium for normal battle but have another Xtreme line in middle of stadium.",
     image: "https://i.ibb.co/Fqx8fT4j/Double-Xtreme-Stadium-Set-Box.webp",
     category: "other",
     price: "BX-37",
@@ -3671,8 +3509,6 @@ export const products: Product[] = [
   {
     id: "other-016",
     name: "Custom Grip (Black & Green Clear Ver.)",
-    description: "Holding grip for Beyblade X.",
-    fullDescription: "Holding grip for Beyblade X.",
     image: "https://i.ibb.co/Kj3FK0V5/BXG07-1.webp",
     category: "other",
     price: "BX-00",
@@ -3683,8 +3519,6 @@ export const products: Product[] = [
   {
     id: "other-017",
     name: "Battle Entry Set C",
-    description: "Best starter set for begginer in CX line.",
-    fullDescription: "Best starter set for begginer in CX line.",
     image: "https://i.ibb.co/dsRzfwqc/Battle-Entry-Set-C-Box.webp",
     category: "other",
     price: "CX-04",
@@ -3726,8 +3560,6 @@ export const products: Product[] = [
   {
     id: "other-018",
     name: "Winder Launcher L",
-    description: "Winder Launcher for Left spin.",
-    fullDescription: "Winder Launcher for Left spin.",
     image: "https://i.ibb.co/Zp29VbbR/Beyblade-X-Winder-Launcher-L-Packaging.webp",
     category: "other",
     price: "BX-40",
@@ -3738,8 +3570,6 @@ export const products: Product[] = [
   {
     id: "other-019",
     name: "Rubber Custom Grip (Gunmetal Ver.)",
-    description: "Holding grip for Beyblade X.",
-    fullDescription: "Holding grip for Beyblade X.",
     image: "https://i.ibb.co/4nhB4X2M/Beyblade-X-Rubber-Custom-Grip-Gunmetal-Ver-Packaging.webp",
     category: "other",
     price: "BX-41",
@@ -3750,8 +3580,6 @@ export const products: Product[] = [
   {
     id: "other-020",
     name: "Rubber Custom Grip (Blue Ver.)",
-    description: "Holding grip for Beyblade X.",
-    fullDescription: "Holding grip for Beyblade X.",
     image: "https://i.ibb.co/tpRcpjLx/Beyblade-X-Rubber-Custom-Grip-Blue-Ver-Packaging.webp",
     category: "other",
     price: "BX-42",
@@ -3762,8 +3590,6 @@ export const products: Product[] = [
   {
     id: "other-021",
     name: "Gear Case (White Ver.)",
-    description: "Holding Case for keep Beyblade & Launcher inside.",
-    fullDescription: "Holding Case for keep Beyblade & Launcher inside.",
     image: "https://i.ibb.co/1G77fbPb/Beyblade-X-Gear-Case-White-Ver.webp",
     category: "other",
     price: "BX-43",
@@ -3776,8 +3602,6 @@ export const products: Product[] = [
   {
     id: "OBS-001",
     name: "Dranzer Spiral",
-    description: "Balance type blade with 2 side blades for attack and spin balance force.",
-    fullDescription: "Balance type blade with 2 side blades for attack and spin balance force.",
     image: "https://i.ibb.co/bRdy8HVg/DSL-1.png",
     category: "x-over",
     price: "BX-00",
@@ -3800,8 +3624,6 @@ export const products: Product[] = [
   {
     id: "OBS-002",
     name: "Driger Slash",
-    description: "Balance type blade with 2 side big blades for more attack and defensive.",
-    fullDescription: "Balance type blade with 2 side big blades for more attack and defensive.",
     image: "https://i.ibb.co/v4417p0Y/DSH-1.png",
     category: "x-over",
     price: "BX-00",
@@ -3817,8 +3639,6 @@ export const products: Product[] = [
   {
     id: "OBS-003",
     name: "Draciel Shield",
-    description: "Defense type blade with 4 side low blades for counter attack and defensive.",
-    fullDescription: "Defense type blade with 4 side low blades for counter attack and defensive.",
     image: "https://i.ibb.co/3YfdwtpF/DSD-1.png",
     category: "x-over",
     price: "BX-00",
@@ -3834,8 +3654,6 @@ export const products: Product[] = [
   {
     id: "OBS-004",
     name: "Dragoon Storm",
-    description: "Defense type blade with 4 side low blades for counter attack and defensive.",
-    fullDescription: "Defense type blade with 4 side low blades for counter attack and defensive.",
     image: "https://i.ibb.co/VpBZPP0x/Dragoon-Storm-4-60-RA-Photoroom.png",
     category: "x-over",
     price: "BX-00 25th Anniversary",
@@ -3853,8 +3671,6 @@ export const products: Product[] = [
   {
     id: "OMF-001",
     name: "Lightning L-Drago (Upper)",
-    description: "Attack type blade with 3 side attack blades for upper smash attack or barrage attack.",
-    fullDescription: "Attack type blade with 3 side attack blades for upper smash attack or barrage attack.",
     image: "https://i.ibb.co/RT98SSpJ/LDU-1.png",
     category: "x-over",
     price: "BX-00",
@@ -3870,8 +3686,6 @@ export const products: Product[] = [
   {
     id: "OMF-002",
     name: "Lightning L-Drago (Rapid)",
-    description: "Attack type blade with 3 side attack blades for upper smash attack or barrage attack.",
-    fullDescription: "Attack type blade with 3 side attack blades for upper smash attack or barrage attack.",
     image: "https://i.ibb.co/HDHpCtKQ/LDR-1.png",
     category: "x-over",
     price: "BX-00",
@@ -3887,8 +3701,6 @@ export const products: Product[] = [
   {
     id: "OMF-003",
     name: "Storm Pegasis",
-    description: "Attack type blade with 3 side blades for smash attack.",
-    fullDescription: "Attack type blade with 3 side blades for smash attack.",
     image: "https://i.ibb.co/chFyzmBp/SPS-1.png",
     category: "x-over",
     price: "BX-00 25th Anniversary",
@@ -3906,8 +3718,6 @@ export const products: Product[] = [
   {
     id: "OBB-001",
     name: "Victory Valkyrie",
-    description: "Attack type blade with high 3 side attack blades for heavy smash attack.",
-    fullDescription: "Attack type blade with high 3 side attack blades for heavy smash attack.",
     image: "https://i.ibb.co/7dhDTs6x/VVV-1.png",
     category: "x-over",
     price: "BX-00 25th Anniversary",
@@ -3923,8 +3733,6 @@ export const products: Product[] = [
   {
     id: "OBB-002",
     name: "Xeno Xcalibur",
-    description: "Attack type blade with high 1 side giant attack blades for 1 hit attack.",
-    fullDescription: "Attack type blade with high 1 side giant attack blades for 1 hit attack.",
     image: "https://i.ibb.co/N2dYzCMF/XXX-1.png",
     category: "x-over",
     price: "BX-00",
