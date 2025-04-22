@@ -6,8 +6,10 @@ export const metadata: Metadata = {
   title: "Beyblade X Library - Parts Collection",
   description: "Library for Beyblade X parts collection",
   icons: {
-    icon: "/favicon.ico",
-  },
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32", type: "image/x-icon" },
+    ],
+  },  
 };
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
