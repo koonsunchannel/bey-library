@@ -24,7 +24,7 @@ export default function Home() {
                   Parts Library
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Library for everyone who want to know variants version of Beyblade X parts.
+                  Library for every parts of Beyblade X.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">

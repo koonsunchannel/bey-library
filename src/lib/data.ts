@@ -1668,7 +1668,7 @@ export const products: Product[] = [
       {
         id: "380-012",
         name: "Collab",
-        image: "ttps://i.ibb.co/mC1S3dDX/3-80-13.png"
+        image: "https://i.ibb.co/mC1S3dDX/3-80-13.png"
       },
       {
         id: "380-013",

@@ -6,7 +6,10 @@ export const metadata: Metadata = {
   title: "Beyblade X Library - Parts Collection",
   description: "Library for Beyblade X parts collection",
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
   },
 };
 
