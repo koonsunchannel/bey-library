@@ -6,13 +6,13 @@ import { Button } from "@/components/ui/button"
 type ProductCardProps = {
   id: string
   name: string
-  description: string
+  // description: string
   image: string
   category: 'blade' | 'ratchet' | 'bit' | 'other' | 'x-over'
   price: string
 }
 
-export function ProductCard({ id, name, description, image, category, price }: ProductCardProps) {
+export function ProductCard({ id, name, image, category, price }: ProductCardProps) {
   // Determine the glow color based on category
   const glowColor =
     category === 'blade' ? 'cyber-glow-red' :
@@ -37,7 +37,7 @@ export function ProductCard({ id, name, description, image, category, price }: P
       <CardContent className="p-4">
         <div className="space-y-1">
           <h3 className={`font-bold cyber-heading ${glowColor}`}>{name}</h3>
-          <p className="text-sm text-muted-foreground line-clamp-2">{description}</p>
+          {/* <p className="text-sm text-muted-foreground line-clamp-2">{description}</p> */}
         </div>
       </CardContent>
       <CardFooter className="flex justify-between p-4 pt-0">

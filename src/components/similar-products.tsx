@@ -41,7 +41,7 @@ export function SimilarProducts({ products, category, currentProductId }: Simila
             key={product.id}
             id={product.id}
             name={product.name}
-            description={product.description}
+            // description={product.description}
             image={product.image}
             category={category}
             price={product.price}
