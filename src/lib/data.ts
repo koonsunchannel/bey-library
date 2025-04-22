@@ -6,8 +6,8 @@ export const products: Product[] = [
   {
     id: "blade-001",
     name: "Dran Sword",
-    description: "Attack type blade with 3 blades for smash attack.",
-    fullDescription: "Attack type blade with 3 blades for smash attack.",
+    // description: "Attack type blade with 3 blades for smash attack.",
+    // fullDescription: "Attack type blade with 3 blades for smash attack.",
     image: "https://i.ibb.co/V039c69d/1-DS-1.webp",
     category: "blade",
     price: "BX-01",
@@ -49,8 +49,6 @@ export const products: Product[] = [
   {
     id: "blade-002",
     name: "Hells Scythe",
-    description: "Balance type blade with round design for smash attack and defense.",
-    fullDescription: "Balance type blade with round design for smash attack and defense.",
     image: "https://i.ibb.co/84Ycf6Dg/2-HS-1.webp",
     category: "blade",
     price: "BX-02",
@@ -87,8 +85,6 @@ export const products: Product[] = [
   {
     id: "blade-003",
     name: "Wizard Arrow",
-    description: "Stamina type blade with 2 side design for balacne to spin long time and parry.",
-    fullDescription: "Stamina type blade with 2 side design for balacne to spin long time and parry.",
     image: "https://i.ibb.co/Tqrz34Jq/3-WA-1.webp",
     category: "blade",
     price: "BX-03",
@@ -135,8 +131,6 @@ export const products: Product[] = [
   {
     id: "blade-004",
     name: "Knight Shield",
-    description: "Defense type blade with round design to resist attack and shock absorbing the impact.",
-    fullDescription: "Defense type blade with round design to resist attack and shock absorbing the impact.",
     image: "https://i.ibb.co/2rLXNq7/4-KS-1.webp",
     category: "blade",
     price: "BX-04",
@@ -178,8 +172,6 @@ export const products: Product[] = [
   {
     id: "blade-005",
     name: "Knight Lance",
-    description: "Defense type blade with lance design for counter attack enermy.",
-    fullDescription: "Defense type blade with lance design for counter attack enermy.",
     image: "https://i.ibb.co/0VngNWrL/KL-1.webp",
     category: "blade",
     price: "BX-13",
@@ -244,8 +236,6 @@ export const products: Product[] = [
   {
     id: "blade-007",
     name: "Leon Claw",
-    description: "Balance type blade with 5 blade for attack and defense.",
-    fullDescription: "Balance type blade with 5 blade for attack and defense.",
     image: "https://i.ibb.co/Z1wzg0g4/LC-1.webp",
     category: "blade",
     price: "BX-15",
@@ -277,8 +267,6 @@ export const products: Product[] = [
   {
     id: "blade-008",
     name: "Viper Tail",
-    description: "Stamina type blade have fang and tall for drain stamina enermy.",
-    fullDescription: "Stamina type blade have fang and tall for drain stamina enermy.",
     image: "https://i.ibb.co/GQLDqhTQ/VT-1.webp",
     category: "blade",
     price: "BX-16",
@@ -315,8 +303,6 @@ export const products: Product[] = [
   {
     id: "blade-009",
     name: "Rhino Horn",
-    description: "Defense type blade with small and brick design.",
-    fullDescription: "Defense type blade with small and brick design.",
     image: "https://i.ibb.co/sd595ZMt/RH-1.webp",
     category: "blade",
     price: "BX-19",
@@ -338,8 +324,6 @@ export const products: Product[] = [
   {
     id: "blade-010",
     name: "Dran Dagger",
-    description: "Attack type blade barrage attack with multiple blade.",
-    fullDescription: "Attack type blade barrage attack with multiple blade.",
     image: "https://i.ibb.co/6JntR43R/DD-1.webp",
     category: "blade",
     price: "BX-20",
@@ -371,8 +355,6 @@ export const products: Product[] = [
   {
     id: "blade-011",
     name: "Hells Chain",
-    description: "Balance type blade with upper and down blade mix together.",
-    fullDescription: "Balance type blade with upper and down blade mix together.",
     image: "https://i.ibb.co/7xcKZhXb/HC-1.webp",
     category: "blade",
     price: "BX-21",
@@ -385,12 +367,12 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "DD-001",
+        id: "HC-001",
         name: "BX-31",
         image: "https://i.ibb.co/XZdb9ygB/HC31.webp"
       },
       {
-        id: "DD-0001",
+        id: "HC-0001",
         name: "BX-00",
         image: "https://i.ibb.co/PZQjCffM/HC-zz.webp"
       },
@@ -399,8 +381,6 @@ export const products: Product[] = [
   {
     id: "blade-012",
     name: "Phoenix Wing",
-    description: "Attack type blade with 3 blades for heavy smash attack.",
-    fullDescription: "Attack type blade with 3 blades for heavy smash attack.",
     image: "https://i.ibb.co/LdT8Bq9j/PW-1.webp",
     category: "blade",
     price: "BX-23",
@@ -432,8 +412,6 @@ export const products: Product[] = [
   {
     id: "blade-013",
     name: "Wyvern Gale",
-    description: "Stamina type blade with 2 side blades for run around the stadium.",
-    fullDescription: "Stamina type blade with 2 side blades for run around the stadium.",
     image: "https://i.ibb.co/WvHRHYP7/WG-1.webp",
     category: "blade",
     price: "BX-24",
@@ -465,8 +443,6 @@ export const products: Product[] = [
   {
     id: "blade-014",
     name: "Unicorn Sting",
-    description: "Balacne type blade with 2 side difference blades 1 for attack another 1 for defence.",
-    fullDescription: "Balacne type blade with 2 side difference blades 1 for attack another 1 for defence.",
     image: "https://i.ibb.co/Cppmvdrm/US-1.webp",
     category: "blade",
     price: "BX-26",
@@ -488,8 +464,6 @@ export const products: Product[] = [
   {
     id: "blade-015",
     name: "Sphinx Cowl",
-    description: "Defense type blade with 9 side barrage blades for parry.",
-    fullDescription: "Defense type blade with 9 side barrage blades for parry.",
     image: "https://i.ibb.co/B2yRDBXx/PC-1.webp",
     category: "blade",
     price: "BX-27",
@@ -521,8 +495,6 @@ export const products: Product[] = [
   {
     id: "blade-016",
     name: "Dran Buster",
-    description: "Attack type blade with 1 blade for super heavy attack.",
-    fullDescription: "Attack type blade with 1 blade for super heavy attack.",
     image: "https://i.ibb.co/TMB6k6HP/DB-1.webp",
     category: "blade",
     price: "UX-01",
@@ -559,8 +531,6 @@ export const products: Product[] = [
   {
     id: "blade-017",
     name: "Hells Hammer",
-    description: "Balacne type blade desgin for smash attack and defense for slam down enermy.",
-    fullDescription: "Balacne type blade desgin for smash attack and defense for slam down enermy.",
     image: "https://i.ibb.co/ch8XJLxd/HH-1.webp",
     category: "blade",
     price: "UX-02",
@@ -582,8 +552,6 @@ export const products: Product[] = [
   {
     id: "blade-018",
     name: "Wizard Rod",
-    description: "Stamina type blade desgin round design and shock absorb for long time spin.",
-    fullDescription: "Stamina type blade desgin round design and shock absorb for long time spin.",
     image: "https://i.ibb.co/23NBMXh2/WR-1.webp",
     category: "blade",
     price: "UX-03",
@@ -615,8 +583,6 @@ export const products: Product[] = [
   {
     id: "blade-019",
     name: "Tyranno Beat",
-    description: "Attack type blade desgin with big 2 side blade for smash attack and jump.",
-    fullDescription: "Attack type blade desgin with big 2 side blade for smash attack and jump.",
     image: "https://i.ibb.co/b9s1FkT/TB-1.webp",
     category: "blade",
     price: "BX-31",
@@ -643,8 +609,6 @@ export const products: Product[] = [
   {
     id: "blade-020",
     name: "Shinobi Shadow",
-    description: "Defense type blade desgin with 3 side smooth blade for avoid attack from enermy.",
-    fullDescription: "Defense type blade desgin with 3 side smooth blade for avoid attack from enermy.",
     image: "https://i.ibb.co/gMgh7Yw8/SS-1.webp",
     category: "blade",
     price: "UX-05",
@@ -676,8 +640,6 @@ export const products: Product[] = [
   {
     id: "blade-021",
     name: "Weiss Tiger",
-    description: "Balance type blade desgin with 3 design blade style for multiple play.",
-    fullDescription: "Balance type blade desgin with 3 design blade style for multiple play.",
     image: "https://i.ibb.co/M5ZggzDx/media.png",
     category: "blade",
     price: "BX-33",
@@ -699,8 +661,6 @@ export const products: Product[] = [
   {
     id: "blade-022",
     name: "Cobalt Dragoon",
-    description: "Attack type blade barrage attack with width blade.",
-    fullDescription: "Attack type blade barrage attack with width blade.",
     image: "https://i.ibb.co/v4tnhcHD/CD-1.webp",
     category: "blade",
     price: "BX-34",
@@ -722,8 +682,6 @@ export const products: Product[] = [
   {
     id: "blade-023",
     name: "Black Shell",
-    description: "Defense type blade with 8 blade and downward sloep for strike enermy ratchet.",
-    fullDescription: "Defense type blade with 8 blade and downward sloep for strike enermy ratchet.",
     image: "https://i.ibb.co/fdkhGKy9/BS-1.png",
     category: "blade",
     price: "BX-35",
@@ -745,8 +703,6 @@ export const products: Product[] = [
   {
     id: "blade-024",
     name: "Leon Crest",
-    description: "Defense type blade with wall design for strong tanky and counter attack.",
-    fullDescription: "Defense type blade with wall design for strong tanky and counter attack.",
     image: "https://i.ibb.co/Yq8hdT7/media.png",
     category: "blade",
     price: "UX-06",
@@ -768,8 +724,6 @@ export const products: Product[] = [
   {
     id: "blade-025",
     name: "Phoenix Rudder",
-    description: "Stamina type blade with consume wind for high speed and drain stamina enermy.",
-    fullDescription: "Stamina type blade with consume wind for high speed and drain stamina enermy.",
     image: "https://i.ibb.co/N6hdR5VJ/PR-1.webp",
     category: "blade",
     price: "UX-07",
@@ -791,8 +745,6 @@ export const products: Product[] = [
   {
     id: "blade-026",
     name: "Whale Wave",
-    description: "Stamina type blade with consume wind for high speed and drain stamina enermy.",
-    fullDescription: "Stamina type blade with consume wind for high speed and drain stamina enermy.",
     image: "https://i.ibb.co/tM8fYvcS/WW-1.webp",
     category: "blade",
     price: "BX-36",
@@ -824,8 +776,6 @@ export const products: Product[] = [
   {
     id: "blade-027",
     name: "Bear Scratch",
-    description: "Attack type blade with small design for direct hit attack.",
-    fullDescription: "Attack type blade with small design for direct hit attack.",
     image: "https://i.ibb.co/fmvksfJ/BS-1.png",
     category: "blade",
     price: "BX-37",
@@ -847,8 +797,6 @@ export const products: Product[] = [
   {
     id: "blade-028",
     name: "Silver Wolf",
-    description: "Stamina type blade with free spin wheel for reduce enermy spin.",
-    fullDescription: "Stamina type blade with free spin wheel for reduce enermy spin.",
     image: "https://i.ibb.co/23SHSRbd/SW-1.webp",
     category: "blade",
     price: "UX-08",
@@ -870,8 +818,6 @@ export const products: Product[] = [
   {
     id: "blade-029",
     name: "Samurai Saber",
-    description: "Attack type blade with hidden blade gimmick for switch from barrage mode to heavy attack mode.",
-    fullDescription: "Attack type blade with hidden blade gimmick for switch from barrage mode to heavy attack mode.",
     image: "https://i.ibb.co/9HyRVc5X/SaS-1.webp",
     category: "blade",
     price: "UX-09",
@@ -885,7 +831,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "SS-001",
-        name: "BX-00",
+        name: "UX-00",
         image: "https://i.ibb.co/TqbZhBVT/itggboz9ofne1-Photoroom.png"
       },
     ]
@@ -893,8 +839,6 @@ export const products: Product[] = [
   {
     id: "blade-030",
     name: "Knight Mail",
-    description: "Defense type blade with metal ball inside for absorb and reduce impact from enermy.",
-    fullDescription: "Defense type blade with metal ball inside for absorb and reduce impact from enermy.",
     image: "https://i.ibb.co/6cJYNhZH/KM-1.webp",
     category: "blade",
     price: "UX-10",
@@ -916,8 +860,6 @@ export const products: Product[] = [
   {
     id: "blade-031",
     name: "Ptera Swing",
-    description: "Stamina type blade with barrage blade for drain enermy stamina.",
-    fullDescription: "Stamina type blade with barrage blade for drain enermy stamina.",
     image: "https://i.ibb.co/CKHCPyk5/PS-1.webp",
     category: "blade",
     price: "UX-10",
@@ -939,8 +881,6 @@ export const products: Product[] = [
   {
     id: "blade-032",
     name: "Crimson Garuda",
-    description: "Balacne type blade with high change gimmick in combat.",
-    fullDescription: "Balacne type blade with high change gimmick in combat.",
     image: "https://i.ibb.co/TMZD736k/CG-1.webp",
     category: "blade",
     price: "BX-38",
@@ -962,8 +902,6 @@ export const products: Product[] = [
   {
     id: "blade-033",
     name: "Impact Drake",
-    description: "Attack type blade with rubber for high impact attack.",
-    fullDescription: "Attack type blade with rubber for high impact attack.",
     image: "https://i.ibb.co/tT2GHnBW/ID-1.png",
     category: "blade",
     price: "UX-11",
@@ -985,8 +923,6 @@ export const products: Product[] = [
   {
     id: "blade-034",
     name: "Ghost Circle",
-    description: "Stmina type blade with small and circular design for parry and drain stamina enermy.",
-    fullDescription: "Stmina type blade with small and circular design for parry and drain stamina enermy.",
     image: "https://i.ibb.co/MzCyP0C/GC-1.png",
     category: "blade",
     price: "UX-12",
@@ -1008,8 +944,6 @@ export const products: Product[] = [
   {
     id: "blade-035",
     name: "Golem Rock",
-    description: "Defense type blade with low high for upper counter attack.",
-    fullDescription: "Defense type blade with low high for upper counter attack.",
     image: "https://i.ibb.co/03WW4cw/GR-1.webp",
     category: "blade",
     price: "UX-13",
@@ -1031,8 +965,6 @@ export const products: Product[] = [
   {
     id: "blade-036",
     name: "Shleter Drake",
-    description: "Defense type blade with low high for upper counter attack.",
-    fullDescription: "Defense type blade with low high for upper counter attack.",
     image: "https://i.ibb.co/BHjdn4rh/latest-41101-Photoroom.webp",
     category: "blade",
     price: "BX-39",
@@ -1059,8 +991,6 @@ export const products: Product[] = [
   {
     id: "blade-037",
     name: "Dran Brave S",
-    description: "Attack type blade with high attack blade for heavy barrage attack.",
-    fullDescription: "Attack type blade with high attack blade for heavy barrage attack.",
     image: "https://i.ibb.co/wVzVsM8/DBS-1.webp",
     category: "blade",
     price: "CX-01",
@@ -1083,8 +1013,6 @@ export const products: Product[] = [
   {
     id: "blade-038",
     name: "Wizard Arc R",
-    description: "Stamina type blade with 2 big side blade for parry and round for spinning balance.",
-    fullDescription: "Stamina type blade with 2 big side blade for parry and round for spinning balance.",
     image: "https://i.ibb.co/7Jxb2bbS/WAR-1.webp",
     category: "blade",
     price: "CX-02",
@@ -1107,8 +1035,6 @@ export const products: Product[] = [
   {
     id: "blade-039",
     name: "Perseus Dark B",
-    description: "Defense type blade with multiple blade for absorb and reduce attack for counter enermy.",
-    fullDescription: "Defense type blade with multiple blade for absorb and reduce attack for counter enermy.",
     image: "https://i.ibb.co/sJwT5YbW/PDB-1.webp",
     category: "blade",
     price: "CX-03",
@@ -1136,8 +1062,6 @@ export const products: Product[] = [
   {
     id: "blade-040",
     name: "Hells Reaper T",
-    description: "Balance type blade with reverse attack barrage shape blades and difference mode from assist blade.",
-    fullDescription: "Balance type blade with reverse attack barrage shape blades and difference mode from assist blade.",
     image: "https://i.ibb.co/XZd94Nrb/HR-1.webp",
     category: "blade",
     price: "CX-05",
@@ -1160,8 +1084,6 @@ export const products: Product[] = [
   {
     id: "blade-041",
     name: "Rhino Reaper C",
-    description: "Defense type blade with reverse attack barrage shape blades for high impact counter attack.",
-    fullDescription: "Defense type blade with reverse attack barrage shape blades for high impact counter attack.",
     image: "https://i.ibb.co/zVHV9KMF/RR-1.webp",
     category: "blade",
     price: "CX-05",
@@ -1184,8 +1106,6 @@ export const products: Product[] = [
   {
     id: "blade-042",
     name: "Scorpio Spear",
-    description: "Balance type blade with 6 side blades for defense with gimmick cam change to 3 side blades for attack.",
-    fullDescription: "Balance type blade with 6 side blades for defense with gimmick cam change to 3 side blades for attack.",
     image: "https://i.ibb.co/1fMqT8g5/SSp-1.png",
     category: "blade",
     price: "UX-14",
@@ -1207,8 +1127,6 @@ export const products: Product[] = [
   {
     id: "blade-043",
     name: "Fox Brush J",
-    description: "Attack type blade with 9 side blades for barrage attack with multiple size blades.",
-    fullDescription: "Attack type blade with 9 side blades for barrage attack with multiple size blades.",
     image: "https://i.ibb.co/LDHdzXVt/FB-01.png",
     category: "blade",
     price: "CX-06",
@@ -1238,8 +1156,6 @@ export const products: Product[] = [
   {
     id: "blade-R001",
     name: "Coblat Drake",
-    description: "Attack type blade with 4 blade for barrage heavy attack.",
-    fullDescription: "Attack type blade with 4 blade for barrage heavy attack.",
     image: "https://i.ibb.co/jvWK5Hg7/CDr-1.webp",
     category: "blade",
     price: "BX-00",
@@ -1261,8 +1177,6 @@ export const products: Product[] = [
   {
     id: "blade-R002",
     name: "Phoenix Feather",
-    description: "Attack type blade with low weight for high speed attack.",
-    fullDescription: "Attack type blade with low weight for high speed attack.",
     image: "https://i.ibb.co/DfsGJmbg/ibnyvistf2vgtapdbdp8.webp",
     category: "blade",
     price: "BX-00",
@@ -1289,8 +1203,6 @@ export const products: Product[] = [
   {
     id: "blade-R003",
     name: "Aero Pegasus",
-    description: "Attack type blade with big and widht 3 blade for super heavy attack.",
-    fullDescription: "Attack type blade with big and widht 3 blade for super heavy attack.",
     image: "https://i.ibb.co/NnKtn3H9/media.webp",
     category: "blade",
     price: "UX-00",
@@ -1312,8 +1224,6 @@ export const products: Product[] = [
   {
     id: "blade-R004",
     name: "Shinobi Knife",
-    description: "Attack type blade with big small design for one hit direct attack.",
-    fullDescription: "Attack type blade with big small design for one hit direct attack.",
     image: "https://i.ibb.co/DDP0GMys/SK-1.webp",
     category: "blade",
     price: "BX-00",
@@ -1335,8 +1245,6 @@ export const products: Product[] = [
   {
     id: "blade-R005",
     name: "Mammoth Tusk",
-    description: "Balance type blade with round and high blade for downforce attack and stamina.",
-    fullDescription: "Balance type blade with round and high blade for downforce attack and stamina.",
     image: "https://i.ibb.co/WNBC3bSK/MT-1.webp",
     category: "blade",
     price: "BX-00",
@@ -1358,8 +1266,6 @@ export const products: Product[] = [
   {
     id: "blade-R006",
     name: "Croc Crunch",
-    description: "Balance type blade with round and high blade for downforce attack and stamina.",
-    fullDescription: "Balance type blade with round and high blade for downforce attack and stamina.",
     image: "https://i.ibb.co/k2RJsZdK/CC-1.webp",
     category: "blade",
     price: "BX-00",
@@ -1381,8 +1287,6 @@ export const products: Product[] = [
   {
     id: "blade-R007",
     name: "Samurai Steel",
-    description: "Attack type blade with 5 side blades for barrage attack.",
-    fullDescription: "Attack type blade with 5 side blades for barrage attack.",
     image: "https://i.ibb.co/356zg5NW/Samurai-Steel-5-70-GF-Photoroom.png",
     category: "blade",
     price: "BX-00",
@@ -3883,7 +3787,7 @@ export const products: Product[] = [
       "Weight": "~27 g",
       "Stock Combo": "3-80 Taper",
       "Product Line": "BX",
-      "Original Genearation": "Bakuten Shoot Beyblade",
+      "Original Generation": "Bakuten Shoot Beyblade",
     },
     bey: [
       {
@@ -3907,7 +3811,7 @@ export const products: Product[] = [
       "Weight": "~28 g",
       "Stock Combo": "4-80 Point",
       "Product Line": "BX",
-      "Original Genearation": "Bakuten Shoot Beyblade",
+      "Original Generation": "Bakuten Shoot Beyblade",
     },
   },
   {
@@ -3924,7 +3828,7 @@ export const products: Product[] = [
       "Weight": "~28 g",
       "Stock Combo": "7-60 Dot",
       "Product Line": "BX",
-      "Original Genearation": "Bakuten Shoot Beyblade",
+      "Original Generation": "Bakuten Shoot Beyblade",
     },
   },
   {
@@ -3941,7 +3845,7 @@ export const products: Product[] = [
       "Weight": "~25 g",
       "Stock Combo": "4-60 Rubber Accel",
       "Product Line": "BX",
-      "Original Genearation": "Bakuten Shoot Beyblade",
+      "Original Generation": "Bakuten Shoot Beyblade",
     },
   },
 
@@ -3960,7 +3864,7 @@ export const products: Product[] = [
       "Weight": "~34 g",
       "Stock Combo": "1-60 Flat",
       "Product Line": "BX",
-      "Original Genearation": "Metal Fight Beyblade",
+      "Original Generation": "Metal Fight Beyblade",
     },
   },
   {
@@ -3977,7 +3881,7 @@ export const products: Product[] = [
       "Weight": "~33 g",
       "Stock Combo": "1-60 Flat",
       "Product Line": "BX",
-      "Original Genearation": "Metal Fight Beyblade",
+      "Original Generation": "Metal Fight Beyblade",
     },
   },
   {
@@ -3994,7 +3898,7 @@ export const products: Product[] = [
       "Weight": "~30 g",
       "Stock Combo": "3-70 Rubber Accel",
       "Product Line": "BX",
-      "Original Genearation": "Metal Fight Beyblade",
+      "Original Generation": "Metal Fight Beyblade",
     },
   },
 
@@ -4013,7 +3917,7 @@ export const products: Product[] = [
       "Weight": "~33 g",
       "Stock Combo": "2-60 Rubber Accel",
       "Product Line": "BX",
-      "Original Genearation": "Beyblade Burst",
+      "Original Generation": "Beyblade Burst",
     },
   },
   {
@@ -4030,7 +3934,7 @@ export const products: Product[] = [
       "Weight": "~30 g",
       "Stock Combo": "3-60 Gear Flat",
       "Product Line": "BX",
-      "Original Genearation": "Beyblade Burst",
+      "Original Generation": "Beyblade Burst",
     },
   },
 ];
