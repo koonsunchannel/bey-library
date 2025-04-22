@@ -3936,7 +3936,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Balance",
       "Spin": "Right",
-      "Weight": "~30 g",
+      "Weight": "~31 g",
       "Stock Combo": "4-60 Point",
       "Product Line": "BX",
       "Collab": "Transformers",
@@ -3951,7 +3951,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Stamina",
       "Spin": "Right",
-      "Weight": "~30 g",
+      "Weight": "~31 g",
       "Stock Combo": "4-80 Ball",
       "Product Line": "BX",
       "Collab": "Transformers",
@@ -3966,7 +3966,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Attack",
       "Spin": "Right",
-      "Weight": "~30 g",
+      "Weight": "~35 g",
       "Stock Combo": "3-60 Flat",
       "Product Line": "BX",
       "Collab": "Transformers",
@@ -3981,7 +3981,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Defense",
       "Spin": "Right",
-      "Weight": "~30 g",
+      "Weight": "~29 g",
       "Stock Combo": "3-80 Needle",
       "Product Line": "BX",
       "Collab": "Transformers",
@@ -3996,7 +3996,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Stamina",
       "Spin": "Right",
-      "Weight": "~30 g",
+      "Weight": "~32 g",
       "Stock Combo": "4-80 Ball",
       "Product Line": "BX",
       "Collab": "Marvel",
@@ -4011,7 +4011,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Balance",
       "Spin": "Right",
-      "Weight": "~30 g",
+      "Weight": "~29 g",
       "Stock Combo": "4-60 Point",
       "Product Line": "BX",
       "Collab": "Marvel",
@@ -4026,7 +4026,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Attack",
       "Spin": "Right",
-      "Weight": "~30 g",
+      "Weight": "~32 g",
       "Stock Combo": "3-60 Point",
       "Product Line": "BX",
       "Collab": "Marvel",
@@ -4041,7 +4041,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Defense",
       "Spin": "Right",
-      "Weight": "~30 g",
+      "Weight": "~34 g",
       "Stock Combo": "3-80 Needle",
       "Product Line": "BX",
       "Collab": "Marvel",
