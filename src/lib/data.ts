@@ -1552,6 +1552,21 @@ export const products: Product[] = [
         name: "BX-39",
         image: "https://i.ibb.co/MxcNXNN7/3-60-9.png"
       },
+      {
+        id: "360-010",
+        name: "Collab",
+        image: "https://i.ibb.co/67gtgFKR/3-60-10.png"
+      },
+      {
+        id: "360-011",
+        name: "Collab",
+        image: "https://i.ibb.co/HTMns1hd/3-60-11.png"
+      },
+      {
+        id: "360-012",
+        name: "Collab",
+        image: "https://i.ibb.co/qM37TDP8/3-60-12.png"
+      },
     ]
   },
   {
@@ -1649,6 +1664,21 @@ export const products: Product[] = [
         id: "380-011",
         name: "UX-12",
         image: "https://i.ibb.co/GvD6LvZH/3-80-12.png"
+      },
+      {
+        id: "380-012",
+        name: "Collab",
+        image: "ttps://i.ibb.co/mC1S3dDX/3-80-13.png"
+      },
+      {
+        id: "380-013",
+        name: "Collab",
+        image: "https://i.ibb.co/bgqrDmhS/3-80-14.png"
+      },
+      {
+        id: "380-014",
+        name: "Collab",
+        image: "https://i.ibb.co/HQ1bbmW/3-80-15.png"
       },
     ]
   },
@@ -1757,6 +1787,21 @@ export const products: Product[] = [
         name: "UX-12",
         image: "https://i.ibb.co/4wKQGwQP/4-60-12.png"
       },
+      {
+        id: "460-012",
+        name: "Collab",
+        image: "https://i.ibb.co/kVfz4yBG/4-60-13.png"
+      },
+      {
+        id: "460-013",
+        name: "Collab",
+        image: "https://i.ibb.co/prBwRw0h/4-60-14.png"
+      },
+      {
+        id: "460-014",
+        name: "Collab",
+        image: "https://i.ibb.co/hRfGCJM5/4-60-15.png"
+      },
     ]
   },
   {
@@ -1859,6 +1904,21 @@ export const products: Product[] = [
         id: "480-010",
         name: "BX-27",
         image: "https://i.ibb.co/7N4LF2Hn/4-80-11.png"
+      },
+      {
+        id: "480-011",
+        name: "Collab",
+        image: "https://i.ibb.co/jZr1vh8f/4-80-12.png"
+      },
+      {
+        id: "480-012",
+        name: "Collab",
+        image: "https://i.ibb.co/WWXPc5xy/4-80-13.png"
+      },
+      {
+        id: "480-013",
+        name: "Collab",
+        image: "https://i.ibb.co/Ngypm7GP/4-80-14.png"
       },
     ]
   },
@@ -2237,6 +2297,21 @@ export const products: Product[] = [
         name: "BX-00",
         image: "https://i.ibb.co/SpcM9dS/F-12.png"
       },
+      {
+        id: "F-012",
+        name: "Collab",
+        image: "https://i.ibb.co/jkwYSdwm/F-13.png"
+      },
+      {
+        id: "F-013",
+        name: "Collab",
+        image: "https://i.ibb.co/TGcBPqt/F-14.png"
+      },
+      {
+        id: "F-014",
+        name: "Collab",
+        image: "https://i.ibb.co/m5mxzjJL/F-15.png"
+      },
     ]
   },
   {
@@ -2327,6 +2402,21 @@ export const products: Product[] = [
         name: "BX-00",
         image: "https://i.ibb.co/0y7K5HdG/B-7.png"
       },
+      {
+        id: "B-007",
+        name: "Collab",
+        image: "https://i.ibb.co/67pmgqZz/B-8.png"
+      },
+      {
+        id: "B-008",
+        name: "Collab",
+        image: "https://i.ibb.co/WvXYtVp7/B-9.png"
+      },
+      {
+        id: "B-009",
+        name: "Collab",
+        image: "https://i.ibb.co/wNTqqpb0/B-10.png"
+      },
     ]
   },
   {
@@ -2366,6 +2456,21 @@ export const products: Product[] = [
         id: "N-005",
         name: "UX-12",
         image: "https://i.ibb.co/9m8xzHmX/N-6.png"
+      },
+      {
+        id: "N-006",
+        name: "Collab",
+        image: "https://i.ibb.co/RpRyZd5M/N-7.png"
+      },
+      {
+        id: "N-007",
+        name: "Collab",
+        image: "https://i.ibb.co/zWh05tM2/N-8.png"
+      },
+      {
+        id: "N-008",
+        name: "Collab",
+        image: "https://i.ibb.co/yFCr9SNs/N-9.png"
       },
     ]
   },
@@ -2476,6 +2581,21 @@ export const products: Product[] = [
         id: "P-004",
         name: "UX-10",
         image: "https://i.ibb.co/hxmz8FTy/P-5.png"
+      },
+      {
+        id: "P-005",
+        name: "Collab",
+        image: "https://i.ibb.co/Ngz9XQDw/P-6.png"
+      },
+      {
+        id: "P-006",
+        name: "Collab",
+        image: "https://i.ibb.co/HTbBVFWN/P7.png"
+      },
+      {
+        id: "P-007",
+        name: "Collab",
+        image: "https://i.ibb.co/7N2yLBwY/P8.png"
       },
     ]
   },
@@ -3743,6 +3863,188 @@ export const products: Product[] = [
       "Stock Combo": "3-60 Gear Flat",
       "Product Line": "BX",
       "Original Generation": "Beyblade Burst",
+    },
+  },
+
+  //Collab
+  {
+    id: "CLB-001",
+    name: "Luke Skywalker",
+    image: "https://i.ibb.co/xt5XFNmB/Star-1.png",
+    category: "x-over",
+    price: "BX-00",
+    specs: {
+      "Type": "Stamina",
+      "Spin": "Right",
+      "Weight": "~30 g",
+      "Stock Combo": "4-80 Ball",
+      "Product Line": "BX",
+      "Collab": "Star Wars",
+    },
+  },
+  {
+    id: "CLB-002",
+    name: "Darth Vader",
+    image: "https://i.ibb.co/YBLNbpPz/Star-2.png",
+    category: "x-over",
+    price: "BX-00",
+    specs: {
+      "Type": "Balance",
+      "Spin": "Right",
+      "Weight": "~30 g",
+      "Stock Combo": "4-60 Point",
+      "Product Line": "BX",
+      "Collab": "Star Wars",
+    },
+  },
+  {
+    id: "CLB-003",
+    name: "The Mandalorian",
+    image: "https://i.ibb.co/tw6gBm7m/Star-3.png",
+    category: "x-over",
+    price: "BX-00",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~30 g",
+      "Stock Combo": "3-60 Flat",
+      "Product Line": "BX",
+      "Collab": "Star Wars",
+    },
+  },
+  {
+    id: "CLB-004",
+    name: "Moff Gideon",
+    image: "https://i.ibb.co/PvKBPGkW/Star-4.png",
+    category: "x-over",
+    price: "BX-00",
+    specs: {
+      "Type": "Defense",
+      "Spin": "Right",
+      "Weight": "~30 g",
+      "Stock Combo": "3-80 Needle",
+      "Product Line": "BX",
+      "Collab": "Star Wars",
+    },
+  },
+  {
+    id: "CLB-005",
+    name: "Optimus Prime",
+    image: "https://i.ibb.co/Y73vktvM/Trans-1.png",
+    category: "x-over",
+    price: "BX-00",
+    specs: {
+      "Type": "Balance",
+      "Spin": "Right",
+      "Weight": "~30 g",
+      "Stock Combo": "4-60 Point",
+      "Product Line": "BX",
+      "Collab": "Transformers",
+    },
+  },
+  {
+    id: "CLB-006",
+    name: "Megatron",
+    image: "https://i.ibb.co/RkqM7vxy/Trans-2.png",
+    category: "x-over",
+    price: "BX-00",
+    specs: {
+      "Type": "Stamina",
+      "Spin": "Right",
+      "Weight": "~30 g",
+      "Stock Combo": "4-80 Ball",
+      "Product Line": "BX",
+      "Collab": "Transformers",
+    },
+  },
+  {
+    id: "CLB-007",
+    name: "Optimus Primal",
+    image: "https://i.ibb.co/LDVzqRmx/Trans-3.png",
+    category: "x-over",
+    price: "BX-00",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~30 g",
+      "Stock Combo": "3-60 Flat",
+      "Product Line": "BX",
+      "Collab": "Transformers",
+    },
+  },
+  {
+    id: "CLB-008",
+    name: "Star Scream",
+    image: "https://i.ibb.co/DPtYzN5H/Trans-4.png",
+    category: "x-over",
+    price: "BX-00",
+    specs: {
+      "Type": "Defense",
+      "Spin": "Right",
+      "Weight": "~30 g",
+      "Stock Combo": "3-80 Needle",
+      "Product Line": "BX",
+      "Collab": "Transformers",
+    },
+  },
+  {
+    id: "CLB-009",
+    name: "Iron Man",
+    image: "https://i.ibb.co/MxMtTnfP/Mar-1.png",
+    category: "x-over",
+    price: "BX-00",
+    specs: {
+      "Type": "Stamina",
+      "Spin": "Right",
+      "Weight": "~30 g",
+      "Stock Combo": "4-80 Ball",
+      "Product Line": "BX",
+      "Collab": "Marvel",
+    },
+  },
+  {
+    id: "CLB-010",
+    name: "Thanos",
+    image: "https://i.ibb.co/21sTGQHc/Mar-2.png",
+    category: "x-over",
+    price: "BX-00",
+    specs: {
+      "Type": "Balance",
+      "Spin": "Right",
+      "Weight": "~30 g",
+      "Stock Combo": "4-60 Point",
+      "Product Line": "BX",
+      "Collab": "Marvel",
+    },
+  },
+  {
+    id: "CLB-011",
+    name: "Spider Man",
+    image: "https://i.ibb.co/GQk0VkpR/Mar-3.png",
+    category: "x-over",
+    price: "BX-00",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~30 g",
+      "Stock Combo": "3-60 Point",
+      "Product Line": "BX",
+      "Collab": "Marvel",
+    },
+  },
+  {
+    id: "CLB-012",
+    name: "Venom",
+    image: "https://i.ibb.co/vvqbjP3f/Mar-4.png",
+    category: "x-over",
+    price: "BX-00",
+    specs: {
+      "Type": "Defense",
+      "Spin": "Right",
+      "Weight": "~30 g",
+      "Stock Combo": "3-80 Needle",
+      "Product Line": "BX",
+      "Collab": "Marvel",
     },
   },
 ];
