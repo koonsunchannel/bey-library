@@ -17,6 +17,9 @@ export const products: Product[] = [
       "Stock Combo": "3-60 Flat",
       "Product Line": "BX",
     },
+    combo: {
+      "Combo": "3-60 Flat",
+    },
     bey: [
       {
         id: "DS-001",
