@@ -5,6 +5,7 @@ export type Product = {
   // fullDescription?: string
   image: string
   category: 'blade' | 'ratchet' | 'bit' | 'other' | 'x-over'
+  type: string
   price: string
   features?: string[]
   specs?: Record<string, string>

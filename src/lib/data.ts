@@ -8,6 +8,7 @@ export const products: Product[] = [
     name: "Dran Sword",
     image: "https://i.ibb.co/V039c69d/1-DS-1.webp",
     category: "blade",
+    type:"attack",
     price: "BX-01",
     specs: {
       "Type": "Attack",
@@ -49,6 +50,7 @@ export const products: Product[] = [
     name: "Hells Scythe",
     image: "https://i.ibb.co/84Ycf6Dg/2-HS-1.webp",
     category: "blade",
+    type:"balance",
     price: "BX-02",
     specs: {
       "Type": "Balance",
@@ -85,6 +87,7 @@ export const products: Product[] = [
     name: "Wizard Arrow",
     image: "https://i.ibb.co/Tqrz34Jq/3-WA-1.webp",
     category: "blade",
+    type:"stamina",
     price: "BX-03",
     specs: {
       "Type": "Stamina",
@@ -131,6 +134,7 @@ export const products: Product[] = [
     name: "Knight Shield",
     image: "https://i.ibb.co/2rLXNq7/4-KS-1.webp",
     category: "blade",
+    type:"defense",
     price: "BX-04",
     specs: {
       "Type": "Defense",
@@ -172,6 +176,7 @@ export const products: Product[] = [
     name: "Knight Lance",
     image: "https://i.ibb.co/0VngNWrL/KL-1.webp",
     category: "blade",
+    type:"defense",
     price: "BX-13",
     specs: {
       "Type": "Defense",
@@ -198,6 +203,7 @@ export const products: Product[] = [
     name: "Shark Edge",
     image: "https://i.ibb.co/HprcywWn/SE-1.webp",
     category: "blade",
+    type:"attack",
     price: "BX-14",
     specs: {
       "Type": "Attack",
@@ -234,6 +240,7 @@ export const products: Product[] = [
     name: "Leon Claw",
     image: "https://i.ibb.co/Z1wzg0g4/LC-1.webp",
     category: "blade",
+    type:"balance",
     price: "BX-15",
     specs: {
       "Type": "Balance",
@@ -265,6 +272,7 @@ export const products: Product[] = [
     name: "Viper Tail",
     image: "https://i.ibb.co/GQLDqhTQ/VT-1.webp",
     category: "blade",
+    type:"stamina",
     price: "BX-16",
     specs: {
       "Type": "Stamina",
@@ -301,6 +309,7 @@ export const products: Product[] = [
     name: "Rhino Horn",
     image: "https://i.ibb.co/sd595ZMt/RH-1.webp",
     category: "blade",
+    type:"defense",
     price: "BX-19",
     specs: {
       "Type": "Defense",
@@ -322,6 +331,7 @@ export const products: Product[] = [
     name: "Dran Dagger",
     image: "https://i.ibb.co/6JntR43R/DD-1.webp",
     category: "blade",
+    type:"attack",
     price: "BX-20",
     specs: {
       "Type": "Attack",
@@ -353,6 +363,7 @@ export const products: Product[] = [
     name: "Hells Chain",
     image: "https://i.ibb.co/7xcKZhXb/HC-1.webp",
     category: "blade",
+    type:"balance",
     price: "BX-21",
     specs: {
       "Type": "Balance",
@@ -379,6 +390,7 @@ export const products: Product[] = [
     name: "Phoenix Wing",
     image: "https://i.ibb.co/LdT8Bq9j/PW-1.webp",
     category: "blade",
+    type:"attack",
     price: "BX-23",
     specs: {
       "Type": "Attack",
@@ -410,6 +422,7 @@ export const products: Product[] = [
     name: "Wyvern Gale",
     image: "https://i.ibb.co/WvHRHYP7/WG-1.webp",
     category: "blade",
+    type:"stamina",
     price: "BX-24",
     specs: {
       "Type": "Stamina",
@@ -441,6 +454,7 @@ export const products: Product[] = [
     name: "Unicorn Sting",
     image: "https://i.ibb.co/Cppmvdrm/US-1.webp",
     category: "blade",
+    type:"balance",
     price: "BX-26",
     specs: {
       "Type": "Balance",
@@ -462,6 +476,7 @@ export const products: Product[] = [
     name: "Sphinx Cowl",
     image: "https://i.ibb.co/B2yRDBXx/PC-1.webp",
     category: "blade",
+    type:"defense",
     price: "BX-27",
     specs: {
       "Type": "Defense",
@@ -493,6 +508,7 @@ export const products: Product[] = [
     name: "Dran Buster",
     image: "https://i.ibb.co/TMB6k6HP/DB-1.webp",
     category: "blade",
+    type:"attack",
     price: "UX-01",
     specs: {
       "Type": "Attack",
@@ -529,6 +545,7 @@ export const products: Product[] = [
     name: "Hells Hammer",
     image: "https://i.ibb.co/ch8XJLxd/HH-1.webp",
     category: "blade",
+    type:"balance",
     price: "UX-02",
     specs: {
       "Type": "Balance",
@@ -550,6 +567,7 @@ export const products: Product[] = [
     name: "Wizard Rod",
     image: "https://i.ibb.co/23NBMXh2/WR-1.webp",
     category: "blade",
+    type:"stamina",
     price: "UX-03",
     specs: {
       "Type": "Stamina",
@@ -581,6 +599,7 @@ export const products: Product[] = [
     name: "Tyranno Beat",
     image: "https://i.ibb.co/b9s1FkT/TB-1.webp",
     category: "blade",
+    type:"attack",
     price: "BX-31",
     specs: {
       "Type": "Attack",
@@ -607,6 +626,7 @@ export const products: Product[] = [
     name: "Shinobi Shadow",
     image: "https://i.ibb.co/gMgh7Yw8/SS-1.webp",
     category: "blade",
+    type:"defense",
     price: "UX-05",
     specs: {
       "Type": "Defense",
@@ -638,6 +658,7 @@ export const products: Product[] = [
     name: "Weiss Tiger",
     image: "https://i.ibb.co/M5ZggzDx/media.png",
     category: "blade",
+    type:"balance",
     price: "BX-33",
     specs: {
       "Type": "Balance",
@@ -659,6 +680,7 @@ export const products: Product[] = [
     name: "Cobalt Dragoon",
     image: "https://i.ibb.co/v4tnhcHD/CD-1.webp",
     category: "blade",
+    type:"attack",
     price: "BX-34",
     specs: {
       "Type": "Attack",
@@ -680,6 +702,7 @@ export const products: Product[] = [
     name: "Black Shell",
     image: "https://i.ibb.co/fdkhGKy9/BS-1.png",
     category: "blade",
+    type:"defense",
     price: "BX-35",
     specs: {
       "Type": "Defense",
@@ -701,6 +724,7 @@ export const products: Product[] = [
     name: "Leon Crest",
     image: "https://i.ibb.co/Yq8hdT7/media.png",
     category: "blade",
+    type:"defense",
     price: "UX-06",
     specs: {
       "Type": "Defense",
@@ -722,6 +746,7 @@ export const products: Product[] = [
     name: "Phoenix Rudder",
     image: "https://i.ibb.co/N6hdR5VJ/PR-1.webp",
     category: "blade",
+    type:"stamina",
     price: "UX-07",
     specs: {
       "Type": "Stamina",
@@ -743,6 +768,7 @@ export const products: Product[] = [
     name: "Whale Wave",
     image: "https://i.ibb.co/tM8fYvcS/WW-1.webp",
     category: "blade",
+    type:"balance",
     price: "BX-36",
     specs: {
       "Type": "Balance",
@@ -774,6 +800,7 @@ export const products: Product[] = [
     name: "Bear Scratch",
     image: "https://i.ibb.co/fmvksfJ/BS-1.png",
     category: "blade",
+    type:"attack",
     price: "BX-37",
     specs: {
       "Type": "Attack",
@@ -795,6 +822,7 @@ export const products: Product[] = [
     name: "Silver Wolf",
     image: "https://i.ibb.co/23SHSRbd/SW-1.webp",
     category: "blade",
+    type:"stamina",
     price: "UX-08",
     specs: {
       "Type": "Stamina",
@@ -816,6 +844,7 @@ export const products: Product[] = [
     name: "Samurai Saber",
     image: "https://i.ibb.co/9HyRVc5X/SaS-1.webp",
     category: "blade",
+    type:"attack",
     price: "UX-09",
     specs: {
       "Type": "Attack",
@@ -837,6 +866,7 @@ export const products: Product[] = [
     name: "Knight Mail",
     image: "https://i.ibb.co/6cJYNhZH/KM-1.webp",
     category: "blade",
+    type:"defense",
     price: "UX-10",
     specs: {
       "Type": "Defense",
@@ -858,6 +888,7 @@ export const products: Product[] = [
     name: "Ptera Swing",
     image: "https://i.ibb.co/CKHCPyk5/PS-1.webp",
     category: "blade",
+    type:"stamina",
     price: "UX-10",
     specs: {
       "Type": "Stamina",
@@ -879,6 +910,7 @@ export const products: Product[] = [
     name: "Crimson Garuda",
     image: "https://i.ibb.co/TMZD736k/CG-1.webp",
     category: "blade",
+    type:"balance",
     price: "BX-38",
     specs: {
       "Type": "Stamina",
@@ -900,6 +932,7 @@ export const products: Product[] = [
     name: "Impact Drake",
     image: "https://i.ibb.co/tT2GHnBW/ID-1.png",
     category: "blade",
+    type:"attack",
     price: "UX-11",
     specs: {
       "Type": "Attack",
@@ -921,6 +954,7 @@ export const products: Product[] = [
     name: "Ghost Circle",
     image: "https://i.ibb.co/MzCyP0C/GC-1.png",
     category: "blade",
+    type:"stamina",
     price: "UX-12",
     specs: {
       "Type": "Stamina",
@@ -942,6 +976,7 @@ export const products: Product[] = [
     name: "Golem Rock",
     image: "https://i.ibb.co/03WW4cw/GR-1.webp",
     category: "blade",
+    type:"defense",
     price: "UX-13",
     specs: {
       "Type": "Defense",
@@ -963,6 +998,7 @@ export const products: Product[] = [
     name: "Shleter Drake",
     image: "https://i.ibb.co/BHjdn4rh/latest-41101-Photoroom.webp",
     category: "blade",
+    type:"balance",
     price: "BX-39",
     specs: {
       "Type": "Balance",
@@ -989,6 +1025,7 @@ export const products: Product[] = [
     name: "Dran Brave S",
     image: "https://i.ibb.co/wVzVsM8/DBS-1.webp",
     category: "blade",
+    type:"attack",
     price: "CX-01",
     specs: {
       "Type": "Attack",
@@ -1011,6 +1048,7 @@ export const products: Product[] = [
     name: "Wizard Arc R",
     image: "https://i.ibb.co/7Jxb2bbS/WAR-1.webp",
     category: "blade",
+    type:"stamina",
     price: "CX-02",
     specs: {
       "Type": "Stamina",
@@ -1033,6 +1071,7 @@ export const products: Product[] = [
     name: "Perseus Dark B",
     image: "https://i.ibb.co/sJwT5YbW/PDB-1.webp",
     category: "blade",
+    type:"defense",
     price: "CX-03",
     specs: {
       "Type": "Defense",
@@ -1060,6 +1099,7 @@ export const products: Product[] = [
     name: "Hells Reaper T",
     image: "https://i.ibb.co/XZd94Nrb/HR-1.webp",
     category: "blade",
+    type:"balance",
     price: "CX-05",
     specs: {
       "Type": "Balance",
@@ -1082,6 +1122,7 @@ export const products: Product[] = [
     name: "Rhino Reaper C",
     image: "https://i.ibb.co/zVHV9KMF/RR-1.webp",
     category: "blade",
+    type:"defense",
     price: "CX-05",
     specs: {
       "Type": "Defense",
@@ -1104,6 +1145,7 @@ export const products: Product[] = [
     name: "Scorpio Spear",
     image: "https://i.ibb.co/1fMqT8g5/SSp-1.png",
     category: "blade",
+    type:"balance",
     price: "UX-14",
     specs: {
       "Type": "Balance",
@@ -1125,6 +1167,7 @@ export const products: Product[] = [
     name: "Fox Brush J",
     image: "https://i.ibb.co/LDHdzXVt/FB-01.png",
     category: "blade",
+    type:"attack",
     price: "CX-06",
     specs: {
       "Type": "Attack",
@@ -1154,6 +1197,7 @@ export const products: Product[] = [
     name: "Coblat Drake",
     image: "https://i.ibb.co/jvWK5Hg7/CDr-1.webp",
     category: "blade",
+    type:"attack",
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -1175,6 +1219,7 @@ export const products: Product[] = [
     name: "Phoenix Feather",
     image: "https://i.ibb.co/DfsGJmbg/ibnyvistf2vgtapdbdp8.webp",
     category: "blade",
+    type:"attack",
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -1201,6 +1246,7 @@ export const products: Product[] = [
     name: "Aero Pegasus",
     image: "https://i.ibb.co/NnKtn3H9/media.webp",
     category: "blade",
+    type:"attack",
     price: "UX-00",
     specs: {
       "Type": "Attack",
@@ -1222,6 +1268,7 @@ export const products: Product[] = [
     name: "Shinobi Knife",
     image: "https://i.ibb.co/DDP0GMys/SK-1.webp",
     category: "blade",
+    type:"attack",
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -1243,6 +1290,7 @@ export const products: Product[] = [
     name: "Mammoth Tusk",
     image: "https://i.ibb.co/WNBC3bSK/MT-1.webp",
     category: "blade",
+    type:"balance",
     price: "BX-00",
     specs: {
       "Type": "Balacne",
@@ -1264,6 +1312,7 @@ export const products: Product[] = [
     name: "Croc Crunch",
     image: "https://i.ibb.co/k2RJsZdK/CC-1.webp",
     category: "blade",
+    type:"attack",
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -1285,6 +1334,7 @@ export const products: Product[] = [
     name: "Samurai Steel",
     image: "https://i.ibb.co/356zg5NW/Samurai-Steel-5-70-GF-Photoroom.png",
     category: "blade",
+    type:"attack",
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -2234,6 +2284,7 @@ export const products: Product[] = [
     name: "F (BX-01)",
     image: "https://i.ibb.co/Fb19tC1y/F-1.webp",
     category: "bit",
+    type:"attack",
     price: "Flat",
     specs: {
       "Type": "Attack",
@@ -2319,6 +2370,7 @@ export const products: Product[] = [
     name: "T (BX-02)",
     image: "https://i.ibb.co/Lzv1tRjV/T-1.webp",
     category: "bit",
+    type:"balance",
     price: "Taper",
     specs: {
       "Type": "Balance",
@@ -2364,6 +2416,7 @@ export const products: Product[] = [
     name: "B (BX-03)",
     image: "https://i.ibb.co/Q3pGKC9j/B-1.png",
     category: "bit",
+    type:"stamina",
     price: "Ball",
     specs: {
       "Type": "Stamina",
@@ -2424,6 +2477,7 @@ export const products: Product[] = [
     name: "N (BX-04)",
     image: "https://i.ibb.co/VcNhWfpy/N-1.png",
     category: "bit",
+    type:"defense",
     price: "Needle",
     specs: {
       "Type": "Defense",
@@ -2479,6 +2533,7 @@ export const products: Product[] = [
     name: "HN (BX-13)",
     image: "https://i.ibb.co/Fk76tP6f/HN-1.png",
     category: "bit",
+    type:"defense",
     price: "High Needle",
     specs: {
       "Type": "Defense",
@@ -2509,6 +2564,7 @@ export const products: Product[] = [
     name: "LF (BX-14)",
     image: "https://i.ibb.co/9HYJWNsd/LF-1.png",
     category: "bit",
+    type:"attack",
     price: "Low Flat",
     specs: {
       "Type": "Attack",
@@ -2554,6 +2610,7 @@ export const products: Product[] = [
     name: "P (BX-15)",
     image: "https://i.ibb.co/7x5WSk15/P-1.png",
     category: "bit",
+    type:"balance",
     price: "Point",
     specs: {
       "Type": "Balance",
@@ -2604,6 +2661,7 @@ export const products: Product[] = [
     name: "O (BX-16)",
     image: "https://i.ibb.co/kVMd9cmN/O-1.png",
     category: "bit",
+    type:"stamina",
     price: "Orb",
     specs: {
       "Type": "Stamina",
@@ -2639,6 +2697,7 @@ export const products: Product[] = [
     name: "R (BX-20)",
     image: "https://i.ibb.co/dw9N6Jwp/R-1.png",
     category: "bit",
+    type:"attack",
     price: "Rush",
     specs: {
       "Type": "Attack",
@@ -2664,6 +2723,7 @@ export const products: Product[] = [
     name: "HT (BX-21)",
     image: "https://i.ibb.co/m5fJP8W2/HT-1.webp",
     category: "bit",
+    type:"balance",
     price: "High Taper",
     specs: {
       "Type": "Balance",
@@ -2684,6 +2744,7 @@ export const products: Product[] = [
     name: "S (BX-19)",
     image: "https://i.ibb.co/5W2jsJcd/S-1.webp",
     category: "bit",
+    type:"defense",
     price: "Spike",
     specs: {
       "Type": "Defense",
@@ -2709,6 +2770,7 @@ export const products: Product[] = [
     name: "GF (BX-23)",
     image: "https://i.ibb.co/DfpX7m8J/GF-1.png",
     category: "bit",
+    type:"attack",
     price: "Gear Flat",
     specs: {
       "Type": "Attack",
@@ -2740,6 +2802,7 @@ export const products: Product[] = [
     name: "GB (BX-24)",
     image: "https://i.ibb.co/0RX4ysFC/GB-1.png",
     category: "bit",
+    type:"stamina",
     price: "Gear Ball",
     specs: {
       "Type": "Stamina",
@@ -2775,6 +2838,7 @@ export const products: Product[] = [
     name: "GP (BX-26)",
     image: "https://i.ibb.co/s99xdg3g/GP-1.webp",
     category: "bit",
+    type:"balance",
     price: "Gear Point",
     specs: {
       "Type": "Balance",
@@ -2805,6 +2869,7 @@ export const products: Product[] = [
     name: "GN (BX-27)",
     image: "https://i.ibb.co/LzG7HNsG/GN-1.png",
     category: "bit",
+    type:"defense",
     price: "Gear Needle",
     specs: {
       "Type": "Defense",
@@ -2825,6 +2890,7 @@ export const products: Product[] = [
     name: "A (UX-01)",
     image: "https://i.ibb.co/Rx6Xn5z/A-1.webp",
     category: "bit",
+    type:"attack",
     price: "Accel",
     specs: {
       "Type": "Attack",
@@ -2850,6 +2916,7 @@ export const products: Product[] = [
     name: "H (UX-02)",
     image: "https://i.ibb.co/bM5nwSTC/H-1.webp",
     category: "bit",
+    type:"balance",
     price: "Hexa",
     specs: {
       "Type": "Balance",
@@ -2875,6 +2942,7 @@ export const products: Product[] = [
     name: "DB (UX-03)",
     image: "https://i.ibb.co/PsfCdskv/DB-1.webp",
     category: "bit",
+    type:"stamina",
     price: "Disc Ball",
     specs: {
       "Type": "Stamina",
@@ -2905,6 +2973,7 @@ export const products: Product[] = [
     name: "Q (BX-31)",
     image: "https://i.ibb.co/PsMP3TkH/Q-1.webp",
     category: "bit",
+    type:"attack",
     price: "Quake",
     specs: {
       "Type": "Attack",
@@ -2935,6 +3004,7 @@ export const products: Product[] = [
     name: "MN (UX-05)",
     image: "https://i.ibb.co/1t1b62Zt/MN-1.webp",
     category: "bit",
+    type:"defense",
     price: "Metal Needle",
     specs: {
       "Type": "Defense",
@@ -2955,6 +3025,7 @@ export const products: Product[] = [
     name: "U (BX-33)",
     image: "https://i.ibb.co/39mxwYx1/U-1.webp",
     category: "bit",
+    type:"balance",
     price: "Unite",
     specs: {
       "Type": "Balacne",
@@ -2975,6 +3046,7 @@ export const products: Product[] = [
     name: "C (BX-34)",
     image: "https://i.ibb.co/8LJ49Q63/C-1.webp",
     category: "bit",
+    type:"attack",
     price: "Cyclone",
     specs: {
       "Type": "Attack",
@@ -3000,6 +3072,7 @@ export const products: Product[] = [
     name: "D (BX-35)",
     image: "https://i.ibb.co/LdMgVJbW/D-1.png",
     category: "bit",
+    type:"defense",
     price: "Dot",
     specs: {
       "Type": "Defense",
@@ -3040,6 +3113,7 @@ export const products: Product[] = [
     name: "G (UX-07)",
     image: "https://i.ibb.co/gZPVr1X6/G-1.webp",
     category: "bit",
+    type:"stamina",
     price: "Glide",
     specs: {
       "Type": "Stamina",
@@ -3060,6 +3134,7 @@ export const products: Product[] = [
     name: "E (BX-36)",
     image: "https://i.ibb.co/xKPCMW5g/E-1.webp",
     category: "bit",
+    type:"balance",
     price: "Elevate",
     specs: {
       "Type": "Balance",
@@ -3085,6 +3160,7 @@ export const products: Product[] = [
     name: "FB (UX-08)",
     image: "https://i.ibb.co/1fRpB7t5/FB-1.webp",
     category: "bit",
+    type:"stamina",
     price: "Free Ball",
     specs: {
       "Type": "Stamina",
@@ -3105,6 +3181,7 @@ export const products: Product[] = [
     name: "BS (UX-10)",
     image: "https://i.ibb.co/RGfCnzm1/BS-1.webp",
     category: "bit",
+    type:"defense",
     price: "Bound Spike",
     specs: {
       "Type": "Defense",
@@ -3125,6 +3202,7 @@ export const products: Product[] = [
     name: "RA (UX-10)",
     image: "https://i.ibb.co/XxrL2p47/RA-1.webp",
     category: "bit",
+    type:"attack",
     price: "Rubber Accel",
     specs: {
       "Type": "Attack",
@@ -3145,6 +3223,7 @@ export const products: Product[] = [
     name: "L (UX-09)",
     image: "https://i.ibb.co/S4Z1Njz8/L-1.webp",
     category: "bit",
+    type:"attack",
     price: "Level",
     specs: {
       "Type": "Attack",
@@ -3166,6 +3245,7 @@ export const products: Product[] = [
     name: "TP (BX-38)",
     image: "https://i.ibb.co/YwBMrdN/TP-1.webp",
     category: "bit",
+    type:"balance",
     price: "Trans Point",
     specs: {
       "Type": "Attack",
@@ -3186,6 +3266,7 @@ export const products: Product[] = [
     name: "LR (UX-11)",
     image: "https://i.ibb.co/NnfcKKXv/LR-1.webp",
     category: "bit",
+    type:"attack",
     price: "Low Rush",
     specs: {
       "Type": "Attack",
@@ -3206,6 +3287,7 @@ export const products: Product[] = [
     name: "UN (UX-13)",
     image: "https://i.ibb.co/dJVZBhD1/UN-1.webp",
     category: "bit",
+    type:"defense",
     price: "Under Needle",
     specs: {
       "Type": "Defense",
@@ -3226,6 +3308,7 @@ export const products: Product[] = [
     name: "V (CX-01)",
     image: "https://i.ibb.co/wFbx73MV/Bit-Vortex.webp",
     category: "bit",
+    type:"attack",
     price: "Vortex",
     specs: {
       "Type": "Attack",
@@ -3246,6 +3329,7 @@ export const products: Product[] = [
     name: "LO (CX-02)",
     image: "https://i.ibb.co/M5cncSdq/LO-1.webp",
     category: "bit",
+    type:"stamina",
     price: "Low Orb",
     specs: {
       "Type": "Stamina",
@@ -3266,6 +3350,7 @@ export const products: Product[] = [
     name: "W (CX-03)",
     image: "https://i.ibb.co/rGmF2J4d/W-1.webp",
     category: "bit",
+    type:"defense",
     price: "Wedge",
     specs: {
       "Type": "Defense",
@@ -3291,6 +3376,7 @@ export const products: Product[] = [
     name: "K (CX-05)",
     image: "https://i.ibb.co/Nn31LkgV/K-1.webp",
     category: "bit",
+    type:"balance",
     price: "Kick",
     specs: {
       "Type": "Balance",
@@ -3316,6 +3402,7 @@ export const products: Product[] = [
     name: "Z (UX-14)",
     image: "https://i.ibb.co/r2LvMz1P/Z-1.png",
     category: "bit",
+    type:"balance",
     price: "Zap",
     specs: {
       "Type": "Balance",
@@ -3336,6 +3423,7 @@ export const products: Product[] = [
     name: "GR (CX-06)",
     image: "https://i.ibb.co/MyD88gMn/Bit-Gear-Rush-Photoroom.png",
     category: "bit",
+    type:"attack",
     price: "Gear Rush",
     specs: {
       "Type": "Attack",
