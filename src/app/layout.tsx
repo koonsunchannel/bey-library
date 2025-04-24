@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "@/components/navbar"; // Fixed the navbar import
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Beyblade X Library - Parts Collection",
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </footer>
         </div>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
