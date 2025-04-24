@@ -1,25 +1,16 @@
-"use client";
-
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
+import { Separator } from '@/components/ui/separator'
 import { getProducts } from '@/lib/data'
-import Filter from '@/components/filter'
-import { useState } from 'react'
+import { ProductCard } from '@/components/product-card'
 
 export default function Home() {
-  const bladeProducts = getProducts('blade')
-  const bitProducts = getProducts('bit')
-
-  const [filter, setFilter] = useState("All")
-
-  const filteredBlades = bladeProducts.filter(
-    (item) => filter === "All" || item.type === filter
-  )
-  const filteredBits = bitProducts.filter(
-    (item) => filter === "All" || item.type === filter
-  )
+  // Get featured products (one from each category)
+  const bladeProduct = getProducts('blade')[0]
+  const ratchetProduct = getProducts('ratchet')[0]
+  const bitProduct = getProducts('bit')[0]
 
   return (
     <div className="container py-8 space-y-16">
@@ -66,47 +57,79 @@ export default function Home() {
                 Look for every parts detail in any sections.
               </p>
             </div>
-            <Filter onChange={setFilter} />
           </div>
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 pt-12 md:grid-cols-3">
+            {/* Blade Category */}
+            <Card className="overflow-hidden transition-all duration-200 hover:border-white cyber-border">
+              <CardHeader className="p-0">
+                <div className="aspect-video overflow-hidden">
+                  <Image
+                    src="https://i.ibb.co/V039c69d/1-DS-1.webp"
+                    alt="Blade Category"
+                    width={600}
+                    height={400}
+                    className="object-cover w-full h-full transition-transform hover:scale-105"
+                  />
+                </div>
+              </CardHeader>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold cyber-heading cyber-glow-red">BLADE</h3>
+                <p className="text-muted-foreground">Top parts of Beyblade X for main play style and free style to custom.</p>
+              </CardContent>
+              <CardFooter>
+                <Button asChild variant="outline" className="w-full cyber-glow-red">
+                  <Link href="/category/blade">EXPLORE BLADES</Link>
+                </Button>
+              </CardFooter>
+            </Card>
+            
+            {/* Ratchet Category */}
+            <Card className="overflow-hidden transition-all duration-200 hover:border-white cyber-border">
+              <CardHeader className="p-0">
+                <div className="aspect-video overflow-hidden">
+                  <Image
+                    src="https://i.ibb.co/Xf1hg983/3-60-1.webp"
+                    alt="Ratchet Category"
+                    width={600}
+                    height={400}
+                    className="object-cover w-full h-full transition-transform hover:scale-105"
+                  />
+                </div>
+              </CardHeader>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold cyber-heading cyber-glow-green">RATCHET</h3>
+                <p className="text-muted-foreground">Middle parts of Beyblade X for adjust high level and momentum.</p>
+              </CardContent>
+              <CardFooter>
+                <Button asChild variant="outline" className="w-full cyber-glow-green">
+                  <Link href="/category/ratchet">EXPLORE RATCHETS</Link>
+                </Button>
+              </CardFooter>
+            </Card>
 
-          <div className="pt-12 space-y-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4 cyber-heading cyber-glow-red">Blades</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {filteredBlades.map((item) => (
-                  <Card key={item.id} className="cyber-border">
-                    <CardHeader className="p-0">
-                      <div className="aspect-video overflow-hidden">
-                        <Image src={item.image} alt={item.name} width={600} height={400} className="object-cover w-full h-full" />
-                      </div>
-                    </CardHeader>
-                    <CardContent className="p-4">
-                      <h4 className="font-semibold">{item.name}</h4>
-                      <p className="text-sm text-muted-foreground">Type: {item.type}</p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold mb-4 cyber-heading cyber-glow-blue">Bits</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {filteredBits.map((item) => (
-                  <Card key={item.id} className="cyber-border">
-                    <CardHeader className="p-0">
-                      <div className="aspect-video overflow-hidden">
-                        <Image src={item.image} alt={item.name} width={600} height={400} className="object-cover w-full h-full" />
-                      </div>
-                    </CardHeader>
-                    <CardContent className="p-4">
-                      <h4 className="font-semibold">{item.name}</h4>
-                      <p className="text-sm text-muted-foreground">Type: {item.type}</p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
+            {/* Bit Category */}
+            <Card className="overflow-hidden transition-all duration-200 hover:border-white cyber-border">
+              <CardHeader className="p-0">
+                <div className="aspect-video overflow-hidden">
+                  <Image
+                    src="https://i.ibb.co/Fb19tC1y/F-1.webp"
+                    alt="Bit Category"
+                    width={600}
+                    height={400}
+                    className="object-cover w-full h-full transition-transform hover:scale-105"
+                  />
+                </div>
+              </CardHeader>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold cyber-heading cyber-glow-blue">BIT</h3>
+                <p className="text-muted-foreground">Bottom part of Beyblade X to play with difference style.</p>
+              </CardContent>
+              <CardFooter>
+                <Button asChild variant="outline" className="w-full cyber-glow-blue">
+                  <Link href="/category/bit">EXPLORE BITS</Link>
+                </Button>
+              </CardFooter>
+            </Card>
           </div>
         </div>
       </section>
