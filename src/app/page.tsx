@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { getProducts } from '@/lib/data'
-import Filter from '@/components/ui/Filter'
+import Filter from '@/components/filter'
 import { useState } from 'react'
 
 export default function Home() {
