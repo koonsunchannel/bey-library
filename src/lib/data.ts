@@ -155,6 +155,10 @@ export const products: Product[] = [
       "Stock Combo": "3-80 Needle",
       "Product Line": "BX",
     },
+    combo: {
+      "Ratchet": "7-60, 9-60, 5-60, 5-80",
+      "Bit": "Dot, Spike",
+    },
     bey: [
       {
         id: "KS-001",
@@ -197,6 +201,10 @@ export const products: Product[] = [
       "Stock Combo": "4-80 High Needle",
       "Product Line": "BX",
     },
+    combo: {
+      "Ratchet": "9-60, 9-70, 9-80",
+      "Bit": "Needle, Metal Needle",
+    },
     bey: [
       {
         id: "KL-001",
@@ -223,6 +231,10 @@ export const products: Product[] = [
       "Weight": "~35 g",
       "Stock Combo": "3-60 Low Flat",
       "Product Line": "BX",
+    },
+    combo: {
+      "Ratchet": "1-60, 9-60, 4-55",
+      "Bit": "Low Flat, Flat, Under Needle",
     },
     bey: [
       {
@@ -261,6 +273,10 @@ export const products: Product[] = [
       "Stock Combo": "5-60 Point",
       "Product Line": "BX",
     },
+    combo: {
+      "Ratchet": "5-60, 9-60",
+      "Bit": "Point, Flat",
+    },
     bey: [
       {
         id: "LC-001",
@@ -292,6 +308,10 @@ export const products: Product[] = [
       "Weight": "~34 g",
       "Stock Combo": "5-80 Orb",
       "Product Line": "BX",
+    },
+    combo: {
+      "Ratchet": "5-60, 3-80",
+      "Bit": "Taper, High Taper, Hexa",
     },
     bey: [
       {
@@ -330,6 +350,10 @@ export const products: Product[] = [
       "Stock Combo": "3-80 Spike",
       "Product Line": "BX",
     },
+    combo: {
+      "Ratchet": "4-80, 9-60",
+      "Bit": "Taper",
+    },
     bey: [
       {
         id: "RH-001",
@@ -351,6 +375,10 @@ export const products: Product[] = [
       "Weight": "~35 g",
       "Stock Combo": "4-60 Rush",
       "Product Line": "BX",
+    },
+    combo: {
+      "Ratchet": "4-60, 6-60, 9-60, 5-60",
+      "Bit": "Rush, Flat, Accel, Point",
     },
     bey: [
       {
@@ -384,6 +412,10 @@ export const products: Product[] = [
       "Stock Combo": "5-60 High Taper",
       "Product Line": "BX",
     },
+    combo: {
+      "Ratchet": "5-80",
+      "Bit": "Ball, Gear Ball",
+    },
     bey: [
       {
         id: "HC-001",
@@ -410,6 +442,10 @@ export const products: Product[] = [
       "Weight": "~39 g",
       "Stock Combo": "9-60 Gear Flat",
       "Product Line": "BX",
+    },
+    combo: {
+      "Ratchet": "3-60, 1-60, 9-60",
+      "Bit": "Rush, Low Rush, Point, Level",
     },
     bey: [
       {
@@ -443,6 +479,10 @@ export const products: Product[] = [
       "Stock Combo": "5-80 Gear Ball",
       "Product Line": "BX",
     },
+    combo: {
+      "Ratchet": "9-60, 3-80",
+      "Bit": "Ball",
+    },
     bey: [
       {
         id: "WG-001",
@@ -475,6 +515,10 @@ export const products: Product[] = [
       "Stock Combo": "5-60 Gear Point",
       "Product Line": "BX",
     },
+    combo: {
+      "Ratchet": "7-60, 9-60, 5-60",
+      "Bit": "Point, Gear Point, Ball",
+    },
     bey: [
       {
         id: "US-001",
@@ -496,6 +540,10 @@ export const products: Product[] = [
       "Weight": "~33 g",
       "Stock Combo": "9-80 Gear Needle",
       "Product Line": "BX",
+    },
+    combo: {
+      "Ratchet": "1-60, 3-60",
+      "Bit": "Hexa, Spike",
     },
     bey: [
       {
@@ -528,6 +576,10 @@ export const products: Product[] = [
       "Weight": "~37 g",
       "Stock Combo": "1-60 Accel",
       "Product Line": "UX",
+    },
+    combo: {
+      "Ratchet": "1-60, 3-60, 5-60, 7-60",
+      "Bit": "Flat, Low Flat, Rush, Low Rush",
     },
     bey: [
       {
