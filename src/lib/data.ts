@@ -18,7 +18,8 @@ export const products: Product[] = [
       "Product Line": "BX",
     },
     combo: {
-      "Combo": "3-60 Flat",
+      "Ratchet": "3-60",
+      "Bit": "Flat",
     },
     bey: [
       {
@@ -62,6 +63,10 @@ export const products: Product[] = [
       "Stock Combo": "4-60 Taper",
       "Product Line": "BX",
     },
+    combo: {
+      "Ratchet": "9-60",
+      "Bit": "Ball",
+    },
     bey: [
       {
         id: "HS-001",
@@ -98,6 +103,10 @@ export const products: Product[] = [
       "Weight": "~32 g",
       "Stock Combo": "4-80 Ball",
       "Product Line": "BX",
+    },
+    combo: {
+      "Ratchet": "1-80",
+      "Bit": "Orb, Ball",
     },
     bey: [
       {

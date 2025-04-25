@@ -95,7 +95,7 @@ export default function ProductPage({
             {product.combo && (
               <div className="mt-6">
                 <h3 className={`text-xl font-bold cyber-heading ${glowColor} mb-4`}>
-                  RECOMMEND COMBO
+                  RECOMMEND PARTS
                 </h3>
                 <div className="grid grid-cols-2 gap-y-2">
                   {Object.entries(product.combo).map(([key, value]) => (
