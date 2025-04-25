@@ -628,6 +628,11 @@ export const products: Product[] = [
         name: "UX-10",
         image: "https://i.ibb.co/4w5mB7K7/HH-10-u.webp"
       },
+      {
+        id: "HH-002",
+        name: "UX-00",
+        image: "https://i.ibb.co/xqr5DXNm/HH-BC.png"
+      },
     ]
   },
   {
@@ -1845,6 +1850,11 @@ export const products: Product[] = [
         id: "370-003",
         name: "BX-35",
         image: "https://i.ibb.co/PvWPHLLB/3-70-4.png"
+      },
+      {
+        id: "370-004",
+        name: "UX-00",
+        image: "https://i.ibb.co/MxNwCL3k/3-70-5.png"
       },
     ]
   },
@@ -3131,9 +3141,14 @@ export const products: Product[] = [
         image: "https://i.ibb.co/2HqWZSH/H-2.png"
       },
       {
-        id: "A-002",
+        id: "H-002",
         name: "UX-12",
         image: "https://i.ibb.co/1GGz3c5t/H-3.png"
+      },
+      {
+        id: "H-003",
+        name: "UX-00",
+        image: "https://i.ibb.co/bRd6Hy2p/H-4.png"
       },
     ]
   },
