@@ -8,7 +8,7 @@ export const products: Product[] = [
     name: "Dran Sword",
     image: "https://i.ibb.co/V039c69d/1-DS-1.webp",
     category: "blade",
-    type:"attack",
+    type: "attack",
     price: "BX-01",
     specs: {
       "Type": "Attack",
@@ -1369,7 +1369,7 @@ export const products: Product[] = [
     name: "Coblat Drake",
     image: "https://i.ibb.co/jvWK5Hg7/CDr-1.webp",
     category: "blade",
-    type:"attack",
+    type: ["attack", "rare"],
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -1395,7 +1395,7 @@ export const products: Product[] = [
     name: "Phoenix Feather",
     image: "https://i.ibb.co/DfsGJmbg/ibnyvistf2vgtapdbdp8.webp",
     category: "blade",
-    type:"attack",
+    type: ["attack", "rare"],
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -1426,7 +1426,7 @@ export const products: Product[] = [
     name: "Aero Pegasus",
     image: "https://i.ibb.co/NnKtn3H9/media.webp",
     category: "blade",
-    type:"attack",
+    type: ["attack", "rare"],
     price: "UX-00",
     specs: {
       "Type": "Attack",
@@ -1452,7 +1452,7 @@ export const products: Product[] = [
     name: "Shinobi Knife",
     image: "https://i.ibb.co/DDP0GMys/SK-1.webp",
     category: "blade",
-    type:"attack",
+    type: ["attack", "rare"],
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -1478,7 +1478,7 @@ export const products: Product[] = [
     name: "Mammoth Tusk",
     image: "https://i.ibb.co/WNBC3bSK/MT-1.webp",
     category: "blade",
-    type:"balance",
+    type: ["balance", "rare"],
     price: "BX-00",
     specs: {
       "Type": "Balacne",
@@ -1504,7 +1504,7 @@ export const products: Product[] = [
     name: "Croc Crunch",
     image: "https://i.ibb.co/k2RJsZdK/CC-1.webp",
     category: "blade",
-    type:"attack",
+    type: ["attack", "rare"],
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -1530,7 +1530,7 @@ export const products: Product[] = [
     name: "Samurai Steel",
     image: "https://i.ibb.co/356zg5NW/Samurai-Steel-5-70-GF-Photoroom.png",
     category: "blade",
-    type:"attack",
+    type:["attack", "rare"],
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -4012,6 +4012,7 @@ export const products: Product[] = [
     name: "Dranzer Spiral",
     image: "https://i.ibb.co/bRdy8HVg/DSL-1.png",
     category: "x-over",
+    type: "balance",
     price: "BX-00",
     specs: {
       "Type": "Balacne",
@@ -4034,6 +4035,7 @@ export const products: Product[] = [
     name: "Driger Slash",
     image: "https://i.ibb.co/v4417p0Y/DSH-1.png",
     category: "x-over",
+    type: "balance",
     price: "BX-00",
     specs: {
       "Type": "Balacne",
@@ -4049,6 +4051,7 @@ export const products: Product[] = [
     name: "Draciel Shield",
     image: "https://i.ibb.co/3YfdwtpF/DSD-1.png",
     category: "x-over",
+    type: "defense",
     price: "BX-00",
     specs: {
       "Type": "Defense",
@@ -4064,6 +4067,7 @@ export const products: Product[] = [
     name: "Dragoon Storm",
     image: "https://i.ibb.co/VpBZPP0x/Dragoon-Storm-4-60-RA-Photoroom.png",
     category: "x-over",
+    type: "attack",
     price: "BX-00 25th Anniversary",
     specs: {
       "Type": "Attack",
@@ -4081,6 +4085,7 @@ export const products: Product[] = [
     name: "Lightning L-Drago (Upper)",
     image: "https://i.ibb.co/RT98SSpJ/LDU-1.png",
     category: "x-over",
+    type: "attack",
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -4096,6 +4101,7 @@ export const products: Product[] = [
     name: "Lightning L-Drago (Rapid)",
     image: "https://i.ibb.co/HDHpCtKQ/LDR-1.png",
     category: "x-over",
+    type: "attack",
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -4111,6 +4117,7 @@ export const products: Product[] = [
     name: "Storm Pegasis",
     image: "https://i.ibb.co/chFyzmBp/SPS-1.png",
     category: "x-over",
+    type: "attack",
     price: "BX-00 25th Anniversary",
     specs: {
       "Type": "Attack",
@@ -4128,6 +4135,7 @@ export const products: Product[] = [
     name: "Victory Valkyrie",
     image: "https://i.ibb.co/7dhDTs6x/VVV-1.png",
     category: "x-over",
+    type: "attack",
     price: "BX-00 25th Anniversary",
     specs: {
       "Type": "Attack",
@@ -4143,6 +4151,7 @@ export const products: Product[] = [
     name: "Xeno Xcalibur",
     image: "https://i.ibb.co/N2dYzCMF/XXX-1.png",
     category: "x-over",
+    type: "attack",
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -4160,6 +4169,7 @@ export const products: Product[] = [
     name: "Luke Skywalker",
     image: "https://i.ibb.co/xt5XFNmB/Star-1.png",
     category: "x-over",
+    type: "stamina",
     price: "BX-00",
     specs: {
       "Type": "Stamina",
@@ -4175,6 +4185,7 @@ export const products: Product[] = [
     name: "Darth Vader",
     image: "https://i.ibb.co/YBLNbpPz/Star-2.png",
     category: "x-over",
+    type: "balance",
     price: "BX-00",
     specs: {
       "Type": "Balance",
@@ -4190,6 +4201,7 @@ export const products: Product[] = [
     name: "The Mandalorian",
     image: "https://i.ibb.co/tw6gBm7m/Star-3.png",
     category: "x-over",
+    type: "attack",
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -4205,6 +4217,7 @@ export const products: Product[] = [
     name: "Moff Gideon",
     image: "https://i.ibb.co/PvKBPGkW/Star-4.png",
     category: "x-over",
+    type: "defense",
     price: "BX-00",
     specs: {
       "Type": "Defense",
@@ -4220,6 +4233,7 @@ export const products: Product[] = [
     name: "Optimus Prime",
     image: "https://i.ibb.co/Y73vktvM/Trans-1.png",
     category: "x-over",
+    type: "balance",
     price: "BX-00",
     specs: {
       "Type": "Balance",
@@ -4235,6 +4249,7 @@ export const products: Product[] = [
     name: "Megatron",
     image: "https://i.ibb.co/RkqM7vxy/Trans-2.png",
     category: "x-over",
+    type: "stamina",
     price: "BX-00",
     specs: {
       "Type": "Stamina",
@@ -4250,6 +4265,7 @@ export const products: Product[] = [
     name: "Optimus Primal",
     image: "https://i.ibb.co/LDVzqRmx/Trans-3.png",
     category: "x-over",
+    type: "attack",
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -4265,6 +4281,7 @@ export const products: Product[] = [
     name: "Star Scream",
     image: "https://i.ibb.co/DPtYzN5H/Trans-4.png",
     category: "x-over",
+    type: "defense",
     price: "BX-00",
     specs: {
       "Type": "Defense",
@@ -4280,6 +4297,7 @@ export const products: Product[] = [
     name: "Iron Man",
     image: "https://i.ibb.co/MxMtTnfP/Mar-1.png",
     category: "x-over",
+    type: "stamina",
     price: "BX-00",
     specs: {
       "Type": "Stamina",
@@ -4295,6 +4313,7 @@ export const products: Product[] = [
     name: "Thanos",
     image: "https://i.ibb.co/21sTGQHc/Mar-2.png",
     category: "x-over",
+    type: "balance",
     price: "BX-00",
     specs: {
       "Type": "Balance",
@@ -4310,6 +4329,7 @@ export const products: Product[] = [
     name: "Spider Man",
     image: "https://i.ibb.co/GQk0VkpR/Mar-3.png",
     category: "x-over",
+    type: "attack",
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -4325,6 +4345,7 @@ export const products: Product[] = [
     name: "Venom",
     image: "https://i.ibb.co/vvqbjP3f/Mar-4.png",
     category: "x-over",
+    type: "defense",
     price: "BX-00",
     specs: {
       "Type": "Defense",
