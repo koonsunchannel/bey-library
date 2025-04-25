@@ -1265,7 +1265,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Balance",
       "Spin": "Right",
-      "Weight": "~? g",
+      "Weight": "~36 g",
       "Stock Combo": "4-70 Kick",
       "Assist Blade": "Turn",
       "Product Line": "CX",
@@ -1292,7 +1292,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Defense",
       "Spin": "Right",
-      "Weight": "~? g",
+      "Weight": "~35 g",
       "Stock Combo": "4-55 Dot",
       "Assist Blade": "Charge",
       "Product Line": "CX",
@@ -1319,7 +1319,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Balance",
       "Spin": "Right",
-      "Weight": "~? g",
+      "Weight": "~39 g",
       "Stock Combo": "0-70 Zap",
       "Product Line": "UX",
     },
