@@ -3425,13 +3425,23 @@ export const products: Product[] = [
       "Gears": "16",
       "Burst Resistance": "High"
     },
-    // bey: [
-    //   {
-    //     id: "RA-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
-    //   },
-    // ]
+    bey: [
+      {
+        id: "RA-001",
+        name: "25th Anniversary",
+        image: "https://i.ibb.co/HDsxGrs5/RA-2.png"
+      },
+      {
+        id: "RA-002",
+        name: "25th Anniversary",
+        image: "https://i.ibb.co/fdmtZ5mG/RA-3.png"
+      },
+      {
+        id: "RA-003",
+        name: "25th Anniversary",
+        image: "https://i.ibb.co/s9pwnvtQ/RA-4.png"
+      }
+    ]
   },
   {
     id: "bit-029",
