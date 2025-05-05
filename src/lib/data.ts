@@ -1604,7 +1604,7 @@ export const products: Product[] = [
       {
         id: "080-003",
         name: "CX-06",
-        image: ""
+        image: "https://i.ibb.co/qMrnLQrc/0-80-4.png"
       },
     ]
   },
@@ -1707,7 +1707,7 @@ export const products: Product[] = [
       {
         id: "260-005",
         name: "CX-06",
-        image: ""
+        image: "https://i.ibb.co/ynNf5R8c/2-60-6.png"
       },
     ]
   },
@@ -3179,7 +3179,7 @@ export const products: Product[] = [
       {
         id: "DB-002",
         name: "CX-06",
-        image: ""
+        image: "https://i.ibb.co/1fzG84TK/DB-4.png"
       },
     ]
   },
@@ -3252,7 +3252,7 @@ export const products: Product[] = [
       {
         id: "U-001",
         name: "CX-06",
-        image: ""
+        image: "https://i.ibb.co/BK3bydYw/U-2.png"
       },
     ]
   },
