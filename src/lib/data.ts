@@ -1397,7 +1397,7 @@ export const products: Product[] = [
   //RARE BLADE
   {
     id: "blade-R001",
-    name: "Coblat Drake",
+    name: "Cobalt Drake",
     image: "https://i.ibb.co/jvWK5Hg7/CDr-1.webp",
     category: "blade",
     type: ["attack", "rare"],
