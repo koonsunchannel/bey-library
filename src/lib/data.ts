@@ -1588,7 +1588,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/q3gjnV5K/LC-01.png",
     category: "blade",
     type:["attack", "rare"],
-    price: "CX-00 Game Edition",
+    price: "CX-00",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
