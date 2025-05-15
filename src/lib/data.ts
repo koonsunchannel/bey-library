@@ -1584,11 +1584,11 @@ export const products: Product[] = [
   },
   {
     id: "blade-R008",
-    name: "Leon Fang",
+    name: "Leon Fang (Red Ver.)",
     image: "https://i.ibb.co/q3gjnV5K/LC-01.png",
     category: "blade",
     type:["attack", "rare"],
-    price: "BX-00",
+    price: "CX-00 Game Edition",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
