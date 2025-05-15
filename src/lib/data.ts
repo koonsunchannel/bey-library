@@ -1367,6 +1367,32 @@ export const products: Product[] = [
       },
     ]
   },
+  {
+    id: "blade-044",
+    name: "Tricera Press",
+    image: "https://i.ibb.co/S71mKW8j/beyblade-x-bx-44-tricera-press-m-85-bs-1.png",
+    category: "blade",
+    type:"Defense",
+    price: "BX-44",
+    specs: {
+      "Type": "Defense",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "M-85 BS",
+      "Product Line": "BX",
+    },
+    combo: {
+      "Ratchet": "",
+      "Bit": "",
+    },
+    // bey: [
+    //   {
+    //     id: "DBS-001",
+    //     name: "CX-05",
+    //     image: ""
+    //   },
+    // ]
+  },
 
   //RARE BLADE
   {
@@ -1547,6 +1573,33 @@ export const products: Product[] = [
     combo: {
       "Ratchet": "5-60, 9-60, 7-60",
       "Bit": "Level, Flat, Point",
+    },
+    // bey: [
+    //   {
+    //     id: "PF-001",
+    //     name: "UX-12",
+    //     image: "https://i.ibb.co/ZQbJ786/PF-12-u.webp"
+    //   },
+    // ]
+  },
+  {
+    id: "blade-R008",
+    name: "Leon Fang",
+    image: "https://i.ibb.co/TSf3Jkc/LF-01.png",
+    category: "blade",
+    type:["attack", "rare"],
+    price: "BX-00",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "4-60 Accel",
+      "Assist Blade": "Turn",
+      "Product Line": "CX",
+    },
+    combo: {
+      "Ratchet": "",
+      "Bit": "",
     },
     // bey: [
     //   {
@@ -2062,6 +2115,11 @@ export const products: Product[] = [
         name: "Collab",
         image: "https://i.ibb.co/hRfGCJM5/4-60-15.png"
       },
+      {
+        id: "460-016",
+        name: "CX-00",
+        image: "https://i.ibb.co/m5RBYqg1/4-60-16.png"
+      },
     ]
   },
   {
@@ -2486,6 +2544,25 @@ export const products: Product[] = [
         image: "https://i.ibb.co/WvsBB5TB/9-80-5.png"
       },
     ]
+  },
+  {
+    id: "ratchet-M85",
+    name: "M-85 (BX-44)",
+    image: "https://i.ibb.co/Nnsyx1QZ/beyblade-x-bx-44-tricera-press-m-85-bs-2.png",
+    category: "ratchet",
+    price: "M-85",
+    features: [
+      "5 Contact Points",
+      "High : 8.50 mm",
+      "Weight: ~ g",
+    ],
+    // bey: [
+    //   {
+    //     id: "970-001",
+    //     name: "BX-44",
+    //     image: "https://i.ibb.co/LDy7tgnr/Screenshot-2025-04-19-132540-Photoroom.png"
+    //   },
+    // ]
   },
 
   // BITS
@@ -3119,6 +3196,11 @@ export const products: Product[] = [
         name: "UX-00",
         image: "https://i.ibb.co/0jzc0mHg/A-3.png"
       },
+      {
+        id: "A-003",
+        name: "CX-00",
+        image: "https://i.ibb.co/YrskvTC/Screenshot-2025-05-15-153702-Photoroom.png"
+      },
     ]
   },
   {
@@ -3404,13 +3486,13 @@ export const products: Product[] = [
       "Gears": "12",
       "Burst Resistance": "Low"
     },
-    // bey: [
-    //   {
-    //     id: "BS-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
-    //   },
-    // ]
+    bey: [
+      {
+        id: "BS-001",
+        name: "BX-44",
+        image: "https://i.ibb.co/rjr9fFW/beyblade-x-bx-44-tricera-press-m-85-bs-3.png"
+      },
+    ]
   },
   {
     id: "bit-028",
