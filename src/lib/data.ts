@@ -1585,7 +1585,7 @@ export const products: Product[] = [
   {
     id: "blade-R008",
     name: "Leon Fang",
-    image: "https://i.ibb.co/TSf3Jkc/LF-01.png",
+    image: "https://i.ibb.co/q3gjnV5K/LC-01.png",
     category: "blade",
     type:["attack", "rare"],
     price: "BX-00",
