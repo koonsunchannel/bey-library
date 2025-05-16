@@ -1382,8 +1382,8 @@ export const products: Product[] = [
       "Product Line": "BX",
     },
     combo: {
-      "Ratchet": "",
-      "Bit": "",
+      "Ratchet": "5-70, 5-60",
+      "Bit": "Wedge",
     },
     // bey: [
     //   {
@@ -2287,6 +2287,11 @@ export const products: Product[] = [
         name: "BX-37",
         image: "https://i.ibb.co/8gcb16C7/5-60-8.png"
       },
+      {
+        id: "560-008",
+        name: "BX-37",
+        image: "https://i.ibb.co/Cc5qb3d/5-60-9.png"
+      },
     ]
   },
   {
@@ -3023,6 +3028,11 @@ export const products: Product[] = [
         id: "HT-001",
         name: "BX-27",
         image: "https://i.ibb.co/TBckLgfN/HT-2.png"
+      },
+      {
+        id: "HT-002",
+        name: "BX-27",
+        image: "https://i.ibb.co/v4sSwS04/HT-3.png"
       },
     ]
   },
