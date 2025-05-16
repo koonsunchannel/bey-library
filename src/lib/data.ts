@@ -1559,7 +1559,7 @@ export const products: Product[] = [
   {
     id: "blade-R007",
     name: "Samurai Steel",
-    image: "https://i.ibb.co/356zg5NW/Samurai-Steel-5-70-GF-Photoroom.png",
+    image: "https://i.ibb.co/35fhnWZX/SSl-01.png",
     category: "blade",
     type:["attack", "rare"],
     price: "BX-00",
