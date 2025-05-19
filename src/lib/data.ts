@@ -530,7 +530,7 @@ export const products: Product[] = [
   {
     id: "blade-015",
     name: "Sphinx Cowl",
-    image: "https://i.ibb.co/B2yRDBXx/PC-1.webp",
+    image: "https://i.ibb.co/DgrvPpBz/SC-1.png",
     category: "blade",
     type:"defense",
     price: "BX-27",
@@ -566,7 +566,7 @@ export const products: Product[] = [
   {
     id: "blade-016",
     name: "Dran Buster",
-    image: "https://i.ibb.co/TMB6k6HP/DB-1.webp",
+    image: "https://i.ibb.co/fd1hgG5V/DB-1.png",
     category: "blade",
     type:"attack",
     price: "UX-01",
@@ -607,7 +607,7 @@ export const products: Product[] = [
   {
     id: "blade-017",
     name: "Hells Hammer",
-    image: "https://i.ibb.co/ch8XJLxd/HH-1.webp",
+    image: "https://i.ibb.co/YB26wDXF/HH-1.png",
     category: "blade",
     type:"balance",
     price: "UX-02",
@@ -638,7 +638,7 @@ export const products: Product[] = [
   {
     id: "blade-018",
     name: "Wizard Rod",
-    image: "https://i.ibb.co/23NBMXh2/WR-1.webp",
+    image: "https://i.ibb.co/twF7k8Zn/WR-1.png",
     category: "blade",
     type:"stamina",
     price: "UX-03",
@@ -674,7 +674,7 @@ export const products: Product[] = [
   {
     id: "blade-019",
     name: "Tyranno Beat",
-    image: "https://i.ibb.co/b9s1FkT/TB-1.webp",
+    image: "https://i.ibb.co/h1yTRKk2/TB-1.png",
     category: "blade",
     type:"attack",
     price: "BX-31",
@@ -705,7 +705,7 @@ export const products: Product[] = [
   {
     id: "blade-020",
     name: "Shinobi Shadow",
-    image: "https://i.ibb.co/gMgh7Yw8/SS-1.webp",
+    image: "https://i.ibb.co/0yyrZG6z/SS-1.png",
     category: "blade",
     type:"defense",
     price: "UX-05",
@@ -741,7 +741,7 @@ export const products: Product[] = [
   {
     id: "blade-021",
     name: "Weiss Tiger",
-    image: "https://i.ibb.co/M5ZggzDx/media.png",
+    image: "https://i.ibb.co/FbdGN8CS/WT-1.png",
     category: "blade",
     type:"balance",
     price: "BX-33",
@@ -767,7 +767,7 @@ export const products: Product[] = [
   {
     id: "blade-022",
     name: "Cobalt Dragoon",
-    image: "https://i.ibb.co/v4tnhcHD/CD-1.webp",
+    image: "https://i.ibb.co/hJs3hKHd/CDG-1.png",
     category: "blade",
     type:"attack",
     price: "BX-34",
@@ -793,7 +793,7 @@ export const products: Product[] = [
   {
     id: "blade-023",
     name: "Black Shell",
-    image: "https://i.ibb.co/fdkhGKy9/BS-1.png",
+    image: "https://i.ibb.co/60PCxGBq/BS-1.png",
     category: "blade",
     type:"defense",
     price: "BX-35",
@@ -819,7 +819,7 @@ export const products: Product[] = [
   {
     id: "blade-024",
     name: "Leon Crest",
-    image: "https://i.ibb.co/Yq8hdT7/media.png",
+    image: "https://i.ibb.co/Z1vYJ9n5/LCT-1.png",
     category: "blade",
     type:"defense",
     price: "UX-06",
@@ -845,7 +845,7 @@ export const products: Product[] = [
   {
     id: "blade-025",
     name: "Phoenix Rudder",
-    image: "https://i.ibb.co/N6hdR5VJ/PR-1.webp",
+    image: "https://i.ibb.co/WN9bPYSz/PR-1.png",
     category: "blade",
     type:"stamina",
     price: "UX-07",
@@ -871,7 +871,7 @@ export const products: Product[] = [
   {
     id: "blade-026",
     name: "Whale Wave",
-    image: "https://i.ibb.co/tM8fYvcS/WW-1.webp",
+    image: "https://i.ibb.co/wN1KLCBg/WW-1.png",
     category: "blade",
     type:"balance",
     price: "BX-36",
@@ -907,7 +907,7 @@ export const products: Product[] = [
   {
     id: "blade-027",
     name: "Bear Scratch",
-    image: "https://i.ibb.co/fmvksfJ/BS-1.png",
+    image: "https://i.ibb.co/dswq6WMy/BS-1.png",
     category: "blade",
     type:"attack",
     price: "BX-37",
@@ -933,7 +933,7 @@ export const products: Product[] = [
   {
     id: "blade-028",
     name: "Silver Wolf",
-    image: "https://i.ibb.co/23SHSRbd/SW-1.webp",
+    image: "https://i.ibb.co/zTxTzB2m/SW-1.png",
     category: "blade",
     type:"stamina",
     price: "UX-08",
@@ -959,7 +959,7 @@ export const products: Product[] = [
   {
     id: "blade-029",
     name: "Samurai Saber",
-    image: "https://i.ibb.co/9HyRVc5X/SaS-1.webp",
+    image: "https://i.ibb.co/rRVSJWjV/SSR-1.png",
     category: "blade",
     type:"attack",
     price: "UX-09",
@@ -985,7 +985,7 @@ export const products: Product[] = [
   {
     id: "blade-030",
     name: "Knight Mail",
-    image: "https://i.ibb.co/6cJYNhZH/KM-1.webp",
+    image: "https://i.ibb.co/s9xRsddW/KM-1.png",
     category: "blade",
     type:"defense",
     price: "UX-10",
@@ -1011,7 +1011,7 @@ export const products: Product[] = [
   {
     id: "blade-031",
     name: "Ptera Swing",
-    image: "https://i.ibb.co/CKHCPyk5/PS-1.webp",
+    image: "https://i.ibb.co/zWRpjqyL/PS-1.webp",
     category: "blade",
     type:"stamina",
     price: "UX-10",
@@ -1037,7 +1037,7 @@ export const products: Product[] = [
   {
     id: "blade-032",
     name: "Crimson Garuda",
-    image: "https://i.ibb.co/TMZD736k/CG-1.webp",
+    image: "https://i.ibb.co/Wvf8FHG1/CG-1.png",
     category: "blade",
     type:"balance",
     price: "BX-38",
@@ -1063,7 +1063,7 @@ export const products: Product[] = [
   {
     id: "blade-033",
     name: "Impact Drake",
-    image: "https://i.ibb.co/tT2GHnBW/ID-1.png",
+    image: "https://i.ibb.co/whTStpLr/ID-1.png",
     category: "blade",
     type:"attack",
     price: "UX-11",
@@ -1089,7 +1089,7 @@ export const products: Product[] = [
   {
     id: "blade-034",
     name: "Ghost Circle",
-    image: "https://i.ibb.co/MzCyP0C/GC-1.png",
+    image: "https://i.ibb.co/Gvw2w2j2/GC-1.png",
     category: "blade",
     type:"stamina",
     price: "UX-12",
@@ -1115,7 +1115,7 @@ export const products: Product[] = [
   {
     id: "blade-035",
     name: "Golem Rock",
-    image: "https://i.ibb.co/03WW4cw/GR-1.webp",
+    image: "https://i.ibb.co/8DnB1v8j/GR-1.png",
     category: "blade",
     type:"defense",
     price: "UX-13",
