@@ -64,7 +64,7 @@ export default function Home() {
               <CardHeader className="p-0">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="https://i.ibb.co/V039c69d/1-DS-1.webp"
+                    src="https://i.ibb.co/tT0P4Y5L/1-DS-1.webp"
                     alt="Blade Category"
                     width={600}
                     height={400}
