@@ -784,7 +784,7 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "SS-0001",
+        id: "CDG-0001",
         name: "BX-00",
         image: "https://i.ibb.co/rRjGqVpv/CD-z.webp"
       },
@@ -1398,7 +1398,7 @@ export const products: Product[] = [
   {
     id: "blade-R001",
     name: "Cobalt Drake",
-    image: "https://i.ibb.co/jvWK5Hg7/CDr-1.webp",
+    image: "https://i.ibb.co/C54Qpyn8/CD-1.png",
     category: "blade",
     type: ["attack", "rare"],
     price: "BX-00",
@@ -1415,7 +1415,7 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "CDr-001",
+        id: "CD-001",
         name: "BX-00",
         image: "https://i.ibb.co/wFCZGcRP/CDr-2.webp"
       },
@@ -1424,7 +1424,7 @@ export const products: Product[] = [
   {
     id: "blade-R002",
     name: "Phoenix Feather",
-    image: "https://i.ibb.co/DfsGJmbg/ibnyvistf2vgtapdbdp8.webp",
+    image: "https://i.ibb.co/Nd2ccxB9/PF-1.webp",
     category: "blade",
     type: ["attack", "rare"],
     price: "BX-00",
@@ -1455,7 +1455,7 @@ export const products: Product[] = [
   {
     id: "blade-R003",
     name: "Aero Pegasus",
-    image: "https://i.ibb.co/NnKtn3H9/media.webp",
+    image: "https://i.ibb.co/Hpgpy4Lj/AP-1.png",
     category: "blade",
     type: ["attack", "rare"],
     price: "UX-00",
@@ -1481,7 +1481,7 @@ export const products: Product[] = [
   {
     id: "blade-R004",
     name: "Shinobi Knife (XONE)",
-    image: "https://i.ibb.co/DDP0GMys/SK-1.webp",
+    image: "https://i.ibb.co/KxD3yH27/SK-00.webp",
     category: "blade",
     type: ["attack", "rare"],
     price: "BX-00",
@@ -1507,7 +1507,7 @@ export const products: Product[] = [
   {
     id: "blade-R005",
     name: "Mammoth Tusk",
-    image: "https://i.ibb.co/WNBC3bSK/MT-1.webp",
+    image: "https://i.ibb.co/n8MrJrzf/MT-1.png",
     category: "blade",
     type: ["balance", "rare"],
     price: "BX-00",
@@ -1533,7 +1533,7 @@ export const products: Product[] = [
   {
     id: "blade-R006",
     name: "Croc Crunch",
-    image: "https://i.ibb.co/k2RJsZdK/CC-1.webp",
+    image: "https://i.ibb.co/3YBNb2zT/CC-1.png",
     category: "blade",
     type: ["attack", "rare"],
     price: "BX-00",
@@ -1559,7 +1559,7 @@ export const products: Product[] = [
   {
     id: "blade-R007",
     name: "Samurai Steel",
-    image: "https://i.ibb.co/35fhnWZX/SSl-01.png",
+    image: "https://i.ibb.co/p5LppZ6/SST-1.png",
     category: "blade",
     type:["attack", "rare"],
     price: "BX-00",
