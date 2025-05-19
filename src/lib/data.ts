@@ -6,7 +6,7 @@ export const products: Product[] = [
   {
     id: "blade-001",
     name: "Dran Sword",
-    image: "https://i.ibb.co/V039c69d/1-DS-1.webp",
+    image: "https://i.ibb.co/tT0P4Y5L/1-DS-1.webp",
     category: "blade",
     type: "attack",
     price: "BX-01",
@@ -52,7 +52,7 @@ export const products: Product[] = [
   {
     id: "blade-002",
     name: "Hells Scythe",
-    image: "https://i.ibb.co/84Ycf6Dg/2-HS-1.webp",
+    image: "https://i.ibb.co/gq9hB1X/2-HS-1.png",
     category: "blade",
     type:"balance",
     price: "BX-02",
@@ -93,7 +93,7 @@ export const products: Product[] = [
   {
     id: "blade-003",
     name: "Wizard Arrow",
-    image: "https://i.ibb.co/Tqrz34Jq/3-WA-1.webp",
+    image: "https://i.ibb.co/QFGW6ZtC/3-WA-1.png",
     category: "blade",
     type:"stamina",
     price: "BX-03",
@@ -144,7 +144,7 @@ export const products: Product[] = [
   {
     id: "blade-004",
     name: "Knight Shield",
-    image: "https://i.ibb.co/2rLXNq7/4-KS-1.webp",
+    image: "https://i.ibb.co/rKJnH2SG/4-KS-1.png",
     category: "blade",
     type:"defense",
     price: "BX-04",
@@ -190,7 +190,7 @@ export const products: Product[] = [
   {
     id: "blade-005",
     name: "Knight Lance",
-    image: "https://i.ibb.co/0VngNWrL/KL-1.webp",
+    image: "https://i.ibb.co/2fwfzRt/KL-1.png",
     category: "blade",
     type:"defense",
     price: "BX-13",
@@ -1372,7 +1372,7 @@ export const products: Product[] = [
     name: "Tricera Press",
     image: "https://i.ibb.co/S71mKW8j/beyblade-x-bx-44-tricera-press-m-85-bs-1.png",
     category: "blade",
-    type:"Defense",
+    type:"defense",
     price: "BX-44",
     specs: {
       "Type": "Defense",
@@ -1480,7 +1480,7 @@ export const products: Product[] = [
   },
   {
     id: "blade-R004",
-    name: "Shinobi Knife",
+    name: "Shinobi Knife (XONE)",
     image: "https://i.ibb.co/DDP0GMys/SK-1.webp",
     category: "blade",
     type: ["attack", "rare"],
