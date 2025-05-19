@@ -221,7 +221,7 @@ export const products: Product[] = [
   {
     id: "blade-006",
     name: "Shark Edge",
-    image: "https://i.ibb.co/HprcywWn/SE-1.webp",
+    image: "https://i.ibb.co/KcX1YqGz/SE-1.png",
     category: "blade",
     type:"attack",
     price: "BX-14",
@@ -262,7 +262,7 @@ export const products: Product[] = [
   {
     id: "blade-007",
     name: "Leon Claw",
-    image: "https://i.ibb.co/Z1wzg0g4/LC-1.webp",
+    image: "https://i.ibb.co/JWZ7Ly1B/LC-1.png",
     category: "blade",
     type:"balance",
     price: "BX-15",
@@ -298,7 +298,7 @@ export const products: Product[] = [
   {
     id: "blade-008",
     name: "Viper Tail",
-    image: "https://i.ibb.co/GQLDqhTQ/VT-1.webp",
+    image: "https://i.ibb.co/DgsY0gyG/VT-1.png",
     category: "blade",
     type:"stamina",
     price: "BX-16",
@@ -339,7 +339,7 @@ export const products: Product[] = [
   {
     id: "blade-009",
     name: "Rhino Horn",
-    image: "https://i.ibb.co/sd595ZMt/RH-1.webp",
+    image: "https://i.ibb.co/HDCPsfQR/RH-1.png",
     category: "blade",
     type:"defense",
     price: "BX-19",
@@ -365,7 +365,7 @@ export const products: Product[] = [
   {
     id: "blade-010",
     name: "Dran Dagger",
-    image: "https://i.ibb.co/6JntR43R/DD-1.webp",
+    image: "https://i.ibb.co/Z6DDxDLv/DD-1.png",
     category: "blade",
     type:"attack",
     price: "BX-20",
@@ -401,7 +401,7 @@ export const products: Product[] = [
   {
     id: "blade-011",
     name: "Hells Chain",
-    image: "https://i.ibb.co/7xcKZhXb/HC-1.webp",
+    image: "https://i.ibb.co/wNMztkLc/HC-1.png",
     category: "blade",
     type:"balance",
     price: "BX-21",
@@ -432,7 +432,7 @@ export const products: Product[] = [
   {
     id: "blade-012",
     name: "Phoenix Wing",
-    image: "https://i.ibb.co/LdT8Bq9j/PW-1.webp",
+    image: "https://i.ibb.co/pBKN3t6c/PW-1.png",
     category: "blade",
     type:"attack",
     price: "BX-23",
@@ -468,7 +468,7 @@ export const products: Product[] = [
   {
     id: "blade-013",
     name: "Wyvern Gale",
-    image: "https://i.ibb.co/WvHRHYP7/WG-1.webp",
+    image: "https://i.ibb.co/gLF0hvY4/WG-1.png",
     category: "blade",
     type:"stamina",
     price: "BX-24",
@@ -504,7 +504,7 @@ export const products: Product[] = [
   {
     id: "blade-014",
     name: "Unicorn Sting",
-    image: "https://i.ibb.co/Cppmvdrm/US-1.webp",
+    image: "https://i.ibb.co/R4tdSGnv/US-1.png",
     category: "blade",
     type:"balance",
     price: "BX-26",
