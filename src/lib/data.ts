@@ -1352,7 +1352,7 @@ export const products: Product[] = [
     },
     combo: {
       "Ratchet": "6-60, 9-60, 5-60, 7-60",
-      "Bit": "Taper, Low Rush, Rush, Gear Rush",
+      "Bit": "Taper, Low Rush, Rush",
     },
     bey: [
       {
