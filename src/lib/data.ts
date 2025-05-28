@@ -1609,6 +1609,33 @@ export const products: Product[] = [
     //   },
     // ]
   },
+  {
+    id: "blade-R009",
+    name: "Dran Arc S Metal Coat Blue",
+    image: "https://i.ibb.co/RGNxkK1N/Persona-CX.png",
+    category: "blade",
+    type:["Balance", "rare"],
+    price: "CX-00",
+    specs: {
+      "Type": "Balance",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "2-70 Kick",
+      "Assist Blade": "Slash",
+      "Product Line": "CX",
+    },
+    combo: {
+      "Ratchet": "5-60",
+      "Bit": "Hexa",
+    },
+    // bey: [
+    //   {
+    //     id: "PF-001",
+    //     name: "UX-12",
+    //     image: "https://i.ibb.co/ZQbJ786/PF-12-u.webp"
+    //   },
+    // ]
+  },
 
   
 
