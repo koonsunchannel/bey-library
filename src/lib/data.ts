@@ -1611,7 +1611,7 @@ export const products: Product[] = [
   },
   {
     id: "blade-R009",
-    name: "Dran Arc S Metal Coat Blue",
+    name: "Dran Arc S (MC Blue)",
     image: "https://i.ibb.co/RGNxkK1N/Persona-CX.png",
     category: "blade",
     type:["Balance", "rare"],
