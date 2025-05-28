@@ -1614,7 +1614,7 @@ export const products: Product[] = [
     name: "Dran Arc S (MC Blue)",
     image: "https://i.ibb.co/RGNxkK1N/Persona-CX.png",
     category: "blade",
-    type:["Balance", "rare"],
+    type:["balance", "rare"],
     price: "CX-00",
     specs: {
       "Type": "Balance",
