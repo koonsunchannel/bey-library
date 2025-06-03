@@ -25,22 +25,22 @@ export const products: Product[] = [
       {
         id: "DS-001",
         name: "BX-07",
-        image: "https://i.ibb.co/Fkdd5MxY/1-DS-07.webp"
+        image: "https://i.ibb.co/qM1qMjDT/DS-07.png"
       },
       {
         id: "DS-002",
         name: "BX-14",
-        image: "https://i.ibb.co/9mKYmtjN/1-DS-14.webp"
+        image: "https://i.ibb.co/sJ50ngtB/DS-14.png"
       },
       {
         id: "DS-003",
         name: "BX-17",
-        image: "https://i.ibb.co/Y4fQhv0w/1-DS-17.webp"
+        image: "https://i.ibb.co/nsPw3qgY/DS-17.png"
       },
       {
         id: "DS-0001",
         name: "BX-00",
-        image: "https://i.ibb.co/dwZgVHzD/1-DS-zz.webp"
+        image: "https://i.ibb.co/p6VhYYsg/DS-001.png"
       },
       {
         id: "DS-0002",
@@ -71,22 +71,22 @@ export const products: Product[] = [
       {
         id: "HS-001",
         name: "BX-08",
-        image: "https://i.ibb.co/jkfwRDHh/2-HS-08.webp"
+        image: "https://i.ibb.co/6cYv7t0H/HS-08.png"
       },
       {
         id: "HS-002",
         name: "BX-14",
-        image: "https://i.ibb.co/5gqmCqw1/2-HS-14.webp"
+        image: "https://i.ibb.co/HQMrr0S/HS-14.png"
       },
       {
         id: "HS-0001",
         name: "BX-00",
-        image: "https://i.ibb.co/fVLbW10W/HC-z.webp"
+        image: "https://i.ibb.co/YBbrb4Pf/HS-0001.png"
       },
       {
         id: "HS-0002",
-        name: "BX-00",
-        image: "https://i.ibb.co/prXssDzt/HS-zz.webp"
+        name: "Hell Persona",
+        image: "https://i.ibb.co/xt8B6kVQ/HP.png"
       },
     ]
   },
@@ -112,32 +112,32 @@ export const products: Product[] = [
       {
         id: "WA-001",
         name: "BX-05",
-        image: "https://i.ibb.co/jZqxtV71/3-WA-05.webp"
+        image: "https://i.ibb.co/Y40nSKh0/WA-05.png"
       },
       {
         id: "WA-002",
         name: "BX-08",
-        image: "https://i.ibb.co/xtTKsL9M/3-WA-08.webp"
+        image: "https://i.ibb.co/C312pqXZ/WA-08.png"
       },
       {
         id: "WA-003",
         name: "BX-14",
-        image: "https://i.ibb.co/WpDg7vPP/3-WA-14.webp"
+        image: "https://i.ibb.co/7NVPZFLS/WA-14.png"
       },
       {
         id: "WA-004",
         name: "BX-17",
-        image: "https://i.ibb.co/GfV55FNc/3-WA-17.webp"
+        image: "https://i.ibb.co/p6Y1r2fz/WA-17.png"
       },
       {
         id: "WA-005",
         name: "BX-21",
-        image: "https://i.ibb.co/qYvktQVz/3-WA-21.webp"
+        image: "https://i.ibb.co/XrSF8tGn/WA-21.png"
       },
       {
         id: "WA-006",
         name: "BX-24",
-        image: "https://i.ibb.co/Z6pkLZmq/3-WA-24.webp"
+        image: "https://i.ibb.co/F4VLKkbM/WA-23.png"
       },
     ]
   },
@@ -163,22 +163,22 @@ export const products: Product[] = [
       {
         id: "KS-001",
         name: "BX-06",
-        image: "https://i.ibb.co/dxMdhR6/4-KS-06.webp"
+        image: "https://i.ibb.co/dsXkfwq3/KS-06.png"
       },
       {
         id: "KS-002",
         name: "BX-08",
-        image: "https://i.ibb.co/4nV7W119/4-ks-08.webp"
+        image: "https://i.ibb.co/998swSS8/KS-08.png"
       },
       {
         id: "KS-003",
         name: "BX-14",
-        image: "https://i.ibb.co/pv8Tm0QY/4-KS-14.webp"
+        image: "https://i.ibb.co/HLd8f65D/KS-14.png"
       },
       {
         id: "KS-004",
         name: "BX-20",
-        image: "https://i.ibb.co/bgLRNNwG/4-KS-20.webp"
+        image: "https://i.ibb.co/vvsVNdD9/KS-20.png"
       },
       {
         id: "KS-0001",
@@ -209,12 +209,12 @@ export const products: Product[] = [
       {
         id: "KL-001",
         name: "BX-21",
-        image: "https://i.ibb.co/pjCZ3D0m/KL-21.webp"
+        image: "https://i.ibb.co/FbL6d3Kn/KL-21.png"
       },
       {
         id: "KL-002",
         name: "BX-24",
-        image: "https://i.ibb.co/B5XNrQ1F/KL-24.webp"
+        image: "https://i.ibb.co/JRk3ZfF7/KL-24.png"
       },
     ]
   },
@@ -240,22 +240,22 @@ export const products: Product[] = [
       {
         id: "SE-001",
         name: "BX-14",
-        image: "https://i.ibb.co/tMx6D7TK/SE-14.webp"
+        image: "https://i.ibb.co/yrPYDgc/SE-14.png"
       },
       {
         id: "SE-002",
         name: "BX-20",
-        image: "https://i.ibb.co/CpdYTj4k/SE-20.webp"
+        image: "https://i.ibb.co/vvPVJM5Z/SE-20.png"
       },
       {
         id: "SE-003",
         name: "BX-31",
-        image: "https://i.ibb.co/KpnLX0tv/SE-31.webp"
+        image: "https://i.ibb.co/S4ZTWKJw/SE-31.png"
       },
       {
         id: "SE-000",
         name: "BX-00",
-        image: "https://i.ibb.co/Fb9MF1jp/SE-00.webp"
+        image: "https://i.ibb.co/SXnFjnDB/SE-0001.png"
       },
     ]
   },
@@ -281,7 +281,7 @@ export const products: Product[] = [
       {
         id: "LC-001",
         name: "BX-24",
-        image: "https://i.ibb.co/Jf7hf9t/LC-24.webp"
+        image: "https://i.ibb.co/kLYzBVL/LC-24.png"
       },
       {
         id: "LC-002",
@@ -291,7 +291,7 @@ export const products: Product[] = [
       {
         id: "LC-0001",
         name: "BX-00",
-        image: "https://i.ibb.co/FLdK4gxw/LC-zz.webp"
+        image: "https://i.ibb.co/rRbCYqnW/LC-000.png"
       },
     ]
   },
@@ -317,22 +317,22 @@ export const products: Product[] = [
       {
         id: "VT-001",
         name: "BX-16",
-        image: "https://i.ibb.co/5WVvcLj8/VT-16-1.webp"
+        image: "https://i.ibb.co/4R0B6qPD/VT-16-2.png"
       },
       {
         id: "VT-002",
         name: "BX-16",
-        image: "https://i.ibb.co/v4d0JKt2/VT-16-2.webp"
+        image: "https://i.ibb.co/Lzh2L00y/VT-16-3.png"
       },
       {
         id: "VT-003",
         name: "BX-24",
-        image: "https://i.ibb.co/3bCdkTn/VT-24.webp"
+        image: "https://i.ibb.co/XrMt16FY/VT-24.png"
       },
       {
         id: "VT-004",
         name: "BX-35",
-        image: "https://i.ibb.co/TBvmf3gb/VT-35.webp"
+        image: "https://i.ibb.co/C3JQfVSv/VT-35.png"
       },
     ]
   },
@@ -358,7 +358,7 @@ export const products: Product[] = [
       {
         id: "RH-001",
         name: "BX-31",
-        image: "https://i.ibb.co/gNKQ63M/RH-31.webp"
+        image: "https://i.ibb.co/B50srRLC/RH-31.png"
       },
     ]
   },
@@ -384,7 +384,7 @@ export const products: Product[] = [
       {
         id: "DD-001",
         name: "BX-31",
-        image: "https://i.ibb.co/Wv3wmLNM/DD-31.webp"
+        image: "https://i.ibb.co/MkJWwg1Z/DD-31.png"
       },
       {
         id: "DD-0001",
@@ -394,7 +394,7 @@ export const products: Product[] = [
       {
         id: "DD-0002",
         name: "BX-00",
-        image: "https://i.ibb.co/cXxDncy8/DD-zzz.webp"
+        image: "https://i.ibb.co/xKzLW2TS/DD-000.png"
       },
     ]
   },
@@ -420,19 +420,19 @@ export const products: Product[] = [
       {
         id: "HC-001",
         name: "BX-31",
-        image: "https://i.ibb.co/XZdb9ygB/HC31.webp"
+        image: "https://i.ibb.co/TMwprT2G/HC-31.png"
       },
       {
         id: "HC-0001",
         name: "BX-00",
-        image: "https://i.ibb.co/PZQjCffM/HC-zz.webp"
+        image: "https://i.ibb.co/93v6zvhg/HC-000.png"
       },
     ]
   },
   {
     id: "blade-012",
     name: "Phoenix Wing",
-    image: "https://i.ibb.co/pBKN3t6c/PW-1.png",
+    image: "https://i.ibb.co/1tLp3w13/PW-1.png",
     category: "blade",
     type:"attack",
     price: "BX-23",
@@ -451,17 +451,17 @@ export const products: Product[] = [
       {
         id: "PW-001",
         name: "BX-35",
-        image: "https://i.ibb.co/mFHM2f5j/PW-35.webp"
+        image: "https://i.ibb.co/LDY3805b/PW-35.png"
       },
       {
         id: "PW-0001",
         name: "BX-00",
-        image: "https://i.ibb.co/TqM9Qw42/PW-zz.png"
+        image: "https://i.ibb.co/xKZ0S86c/PW-001.png"
       },
       {
         id: "PW-0002",
         name: "BX-00",
-        image: "https://i.ibb.co/Xf0JSjYX/PW-zzz.png"
+        image: "https://i.ibb.co/B5C3YgXC/PW-002.png"
       },
     ]
   },
@@ -487,12 +487,12 @@ export const products: Product[] = [
       {
         id: "WG-001",
         name: "BX-24",
-        image: "https://i.ibb.co/zhXbk09h/WG-24.webp"
+        image: "https://i.ibb.co/XfD6StfL/WG-24.png"
       },
       {
         id: "WG-002",
         name: "UX-07",
-        image: "https://i.ibb.co/7x4jgpQG/WG-7-u.webp"
+        image: "https://i.ibb.co/KCKHk0x/WG-U-07.png"
       },
       {
         id: "WG-003",
@@ -523,7 +523,7 @@ export const products: Product[] = [
       {
         id: "US-001",
         name: "BX-35",
-        image: "https://i.ibb.co/G4wJjtdc/US-35.webp"
+        image: "https://i.ibb.co/PGw1y8PV/US-35.png"
       },
     ]
   },
@@ -549,17 +549,17 @@ export const products: Product[] = [
       {
         id: "PC-001",
         name: "BX-27",
-        image: "https://i.ibb.co/ppqQ64x/PC-27-1.webp"
+        image: "https://i.ibb.co/PB99hg0/SC-27-2.png"
       },
       {
         id: "PC-002",
         name: "BX-27",
-        image: "https://i.ibb.co/992hXhWY/PC-27-2.webp"
+        image: "https://i.ibb.co/Q3YJcGBv/SC-27-3.png"
       },
       {
         id: "PC-003",
         name: "UX-07",
-        image: "https://i.ibb.co/6JWY8XHk/PC-07-u.webp"
+        image: "https://i.ibb.co/8wQ0rNj/SC-U-07.png"
       },
     ]
   },
@@ -585,7 +585,7 @@ export const products: Product[] = [
       {
         id: "DB-001",
         name: "UX-04",
-        image: "https://i.ibb.co/MkggbxSx/DB-04-u.webp"
+        image: "https://i.ibb.co/y7NLbXh/DB-04.png"
       },
       {
         id: "DB-0001",
@@ -626,12 +626,12 @@ export const products: Product[] = [
       {
         id: "HH-001",
         name: "UX-10",
-        image: "https://i.ibb.co/4w5mB7K7/HH-10-u.webp"
+        image: "https://i.ibb.co/HDD24V9m/HH-10.png"
       },
       {
         id: "HH-002",
         name: "UX-00",
-        image: "https://i.ibb.co/xqr5DXNm/HH-BC.png"
+        image: "https://i.ibb.co/vvPXN3gL/HH-001.png"
       },
     ]
   },
@@ -657,17 +657,17 @@ export const products: Product[] = [
       {
         id: "WR-001",
         name: "UX-04",
-        image: "https://i.ibb.co/606W65x8/WR-4-u.webp"
+        image: "https://i.ibb.co/xS75Kb9H/WR-U-4.png"
       },
       {
         id: "WR-002",
         name: "BX-35",
-        image: "https://i.ibb.co/G39CDJyF/WR-35.webp"
+        image: "https://i.ibb.co/BV2p9SYM/WR-B-35.png"
       },
       {
         id: "WR-0001",
         name: "G3 Prize",
-        image: "https://i.ibb.co/Gv3R62WZ/WR-z.webp"
+        image: "https://i.ibb.co/JWBC9R3t/WR-000.webp"
       },
     ]
   },
@@ -4500,10 +4500,28 @@ export const products: Product[] = [
       "Collab": "Marvel",
     },
   },
+
+  //troll credits
+  {
+    id: "CD001",
+    name: "Credits? Why you want to know that???",
+    image: "https://i.ibb.co/FbCrtZND/4Wat-1.jpg",
+    category: "credits",
+    price: "This website don't want any your money.",
+    specs: {
+      "Creator Name": "What you looking for?",
+      "Donation": "Go to Philanthropy funds.",
+      "Ownership": "I'm not Takara Tomy. Beyblade is not my product.",
+      "Objective": "To make it easier for the community to find data about Beyblade X parts.",
+      "Special Thanks": "Thanks to Takara Tomy for making Beyblade and public high quality pictures.",
+    },
+  },
 ];
 
+
+
 // Helper functions to get products
-export function getProducts(category?: 'blade' | 'ratchet' | 'bit' | 'other' | 'X-Over'): Product[] {
+export function getProducts(category?: 'blade' | 'ratchet' | 'bit' | 'other' | 'X-Over' | 'credits'): Product[] {
   if (category) {
     return products.filter(product => product.category === category);
   }

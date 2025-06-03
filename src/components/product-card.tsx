@@ -8,7 +8,7 @@ type ProductCardProps = {
   name: string
   // description: string
   image: string
-  category: 'blade' | 'ratchet' | 'bit' | 'other' | 'x-over'
+  category: 'blade' | 'ratchet' | 'bit' | 'other' | 'x-over' | 'credits'
   price: string
 }
 
@@ -19,7 +19,8 @@ export function ProductCard({ id, name, image, category, price }: ProductCardPro
     category === 'ratchet' ? 'cyber-glow-green' :
     category === 'bit' ? 'cyber-glow-blue' :
     category === 'other' ? 'cyber-glow-yellow' :
-    'cyber-glow-purple'
+    category === 'x-over' ? 'cyber-glow-purple' :
+    'cyber-glow-red'
 
   return (
     <Card className="overflow-hidden transition-all duration-200 hover:border-white border-muted cyber-border">

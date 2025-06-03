@@ -10,7 +10,8 @@ const categories = [
   { name: "Ratchet", path: "/category/ratchet", color: "cyber-glow-green" },
   { name: "Bit", path: "/category/bit", color: "cyber-glow-blue" },
   { name: "Other", path: "/category/other", color: "cyber-glow-yellow" },
-  { name: "X-Over", path: "/category/x-over", color: "cyber-glow-purple" }
+  { name: "X-Over", path: "/category/x-over", color: "cyber-glow-purple" },
+  { name: "Credits", path: "/category/credits", color: "cyber-glow-red" }
 ]
 
 export default function NavBar() {

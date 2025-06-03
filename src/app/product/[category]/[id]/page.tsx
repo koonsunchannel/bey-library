@@ -19,7 +19,7 @@ export default function ProductPage({
   params: { category: string; id: string }
 }) {
   const { category, id } = params
-  const isValidCategory = ['blade', 'ratchet', 'bit', 'other', 'x-over'].includes(category)
+  const isValidCategory = ['blade', 'ratchet', 'bit', 'other', 'x-over', 'credits'].includes(category)
 
   // Get the product data
   const product = getProductById(id)
@@ -45,7 +45,8 @@ export default function ProductPage({
     product.category === 'ratchet' ? 'cyber-glow-green' :
     product.category === 'bit' ? 'cyber-glow-blue' :
     product.category === 'other' ? 'cyber-glow-yellow' :
-    'cyber-glow-purple'
+    product.category === 'x-over' ? 'cyber-glow-purple' :
+    'cyber-glow-red'
 
   return (
     <div className="container py-12">

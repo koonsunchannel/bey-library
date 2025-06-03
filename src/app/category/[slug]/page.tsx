@@ -8,14 +8,15 @@ export function generateStaticParams() {
     { slug: 'ratchet' },
     { slug: 'bit' },
     { slug: 'other' },
-    { slug: 'x-over' }
+    { slug: 'x-over' },
+    { slug: 'credits' }
   ]
 }
 
 export default function CategoryPage({ params }: { params: { slug: string } }) {
   const { slug } = params
 
-  const isValidCategory = ['blade', 'ratchet', 'bit', 'other', 'x-over'].includes(slug)
+  const isValidCategory = ['blade', 'ratchet', 'bit', 'other', 'x-over', 'credits'].includes(slug)
   if (!isValidCategory) {
     return (
       <div className="container py-12">
@@ -25,28 +26,31 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
     )
   }
 
-  const products = getProducts(slug as 'blade' | 'ratchet' | 'bit' | 'other' | 'x-over')
+  const products = getProducts(slug as 'blade' | 'ratchet' | 'bit' | 'other' | 'x-over' | 'credits')
 
   const titleColor =
     slug === 'blade' ? 'cyber-glow-red' :
     slug === 'ratchet' ? 'cyber-glow-green' :
     slug === 'bit' ? 'cyber-glow-blue' :
     slug === 'other' ? 'cyber-glow-yellow' :
-    'cyber-glow-purple'
+    slug === 'x-over' ? 'cyber-glow-purple' :
+    'cyber-glow-red'
 
   const categoryTitle =
     slug === 'blade' ? 'BLADES' :
     slug === 'ratchet' ? 'RATCHETS' :
     slug === 'bit' ? 'BITS' :
     slug === 'other' ? 'OTHER' :
-    'X-OVER'
+    slug === 'x-over' ? 'X-OVER' :
+    'CREDITS'
 
   const categoryDescription =
     slug === 'blade' ? 'Top part for main playing style.' :
     slug === 'ratchet' ? 'Middle part for adjust high level of beyblade.' :
     slug === 'bit' ? 'Bottom part for main type play style of beyblade.' :
     slug === 'other' ? 'Other product about Beyblade X.' :
-    'Older generation remake and collab in Beyblade X.'
+    slug === 'x-over' ? 'Older generation remake and collab in Beyblade X.' :
+    'Credit for THIS WEBSITE.'
 
   return (
     <div className="container py-12">
