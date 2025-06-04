@@ -4,7 +4,7 @@ export type Product = {
   // description: string
   // fullDescription?: string
   image: string
-  category: 'blade' | 'ratchet' | 'bit' | 'other' | 'x-over' | 'credits'
+  category: 'blade' | 'assist-blade' | 'ratchet' | 'bit' | 'other' | 'x-over' | 'credits'
   type: string[]
   price: string
   features?: string[]

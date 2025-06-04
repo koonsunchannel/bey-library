@@ -1637,7 +1637,131 @@ export const products: Product[] = [
     // ]
   },
 
-  
+  // ASSIST BLADES
+  {
+    id: "AB-001",
+    name: "Slash",
+    image: "https://i.ibb.co/B5n8K6yG/S1.webp",
+    category: "assist-blade",
+    price: "CX-01",
+    specs: {
+      "Spin": "Right",
+      "Weight": "~4 g",
+      "High Level": "~9 MM",
+    },
+    bey: [
+      {
+        id: "S-001",
+        name: "CX-04",
+        image: "https://i.ibb.co/WpktS1kP/S-2.png"
+      },
+    ]
+  },
+  {
+    id: "AB-002",
+    name: "Round",
+    image: "https://i.ibb.co/6R3KJDpR/R-1.webp",
+    category: "assist-blade",
+    price: "CX-02",
+    specs: {
+      "Spin": "Right",
+      "Weight": "~4 g",
+      "High Level": "~10 MM",
+    },
+    // bey: [
+    //   {
+    //     id: "R-001",
+    //     name: "CX-04",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "AB-003",
+    name: "Bumper",
+    image: "https://i.ibb.co/99bRJhXQ/B-1.webp",
+    category: "assist-blade",
+    price: "CX-03",
+    specs: {
+      "Spin": "Right",
+      "Weight": "~5 g",
+      "High Level": "~10 MM",
+    },
+    bey: [
+      {
+        id: "B-001",
+        name: "CX-04",
+        image: "https://i.ibb.co/5Ww8KZjF/B-2.png"
+      },
+    ]
+  },
+  {
+    id: "AB-004",
+    name: "Turn",
+    image: "https://i.ibb.co/fZf5dZJ/T-1.webp",
+    category: "assist-blade",
+    price: "CX-05",
+    specs: {
+      "Spin": "Right",
+      "Weight": "~6 g",
+      "High Level": "~10 MM",
+    },
+    bey: [
+      {
+        id: "T-001",
+        name: "CX-05",
+        image: "https://i.ibb.co/HDqjc1K8/T-2.png"
+      },
+      {
+        id: "T-002",
+        name: "CX-00",
+        image: "https://i.ibb.co/MDtpZXw3/T-001.webp"
+      },
+    ]
+  },
+  {
+    id: "AB-003",
+    name: "Charge",
+    image: "https://i.ibb.co/RkVTKcw7/C-1.webp",
+    category: "assist-blade",
+    price: "CX-05",
+    specs: {
+      "Spin": "Right",
+      "Weight": "~5 g",
+      "High Level": "~10 MM",
+    },
+    // bey: [
+    //   {
+    //     id: "B-001",
+    //     name: "CX-04",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "AB-006",
+    name: "Jaggy",
+    image: "https://i.ibb.co/vxP05GVm/J-1.webp",
+    category: "assist-blade",
+    price: "CX-06",
+    specs: {
+      "Spin": "Right",
+      "Weight": "~5 g",
+      "High Level": "~9 MM",
+    },
+    bey: [
+      {
+        id: "J-001",
+        name: "CX-06",
+        image: ""
+      },
+      {
+        id: "J-002",
+        name: "CX-06",
+        image: ""
+      },
+    ]
+  },
 
   // RATCHETS
   {
@@ -4521,7 +4645,7 @@ export const products: Product[] = [
 
 
 // Helper functions to get products
-export function getProducts(category?: 'blade' | 'ratchet' | 'bit' | 'other' | 'X-Over' | 'credits'): Product[] {
+export function getProducts(category?: 'blade' | 'assist-blade' | 'ratchet' | 'bit' | 'other' | 'X-Over' | 'credits'): Product[] {
   if (category) {
     return products.filter(product => product.category === category);
   }

@@ -8,7 +8,7 @@ type ProductCardProps = {
   name: string
   // description: string
   image: string
-  category: 'blade' | 'ratchet' | 'bit' | 'other' | 'x-over' | 'credits'
+  category: 'blade' | 'assist-blade' | 'ratchet' | 'bit' | 'other' | 'x-over' | 'credits'
   price: string
 }
 
@@ -16,6 +16,7 @@ export function ProductCard({ id, name, image, category, price }: ProductCardPro
   // Determine the glow color based on category
   const glowColor =
     category === 'blade' ? 'cyber-glow-red' :
+    category === 'assist-blade' ? 'cyber-glow-red' :
     category === 'ratchet' ? 'cyber-glow-green' :
     category === 'bit' ? 'cyber-glow-blue' :
     category === 'other' ? 'cyber-glow-yellow' :
