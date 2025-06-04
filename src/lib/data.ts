@@ -25,12 +25,12 @@ export const products: Product[] = [
       {
         id: "DS-001",
         name: "BX-07",
-        image: "https://i.ibb.co/qM1qMjDT/DS-07.png"
+        image: "https://i.ibb.co/zT5Y5yLB/DS-07.png"
       },
       {
         id: "DS-002",
         name: "BX-14",
-        image: "https://i.ibb.co/sJ50ngtB/DS-14.png"
+        image: "https://i.ibb.co/JR0wjz4X/DS-14.png"
       },
       {
         id: "DS-003",
@@ -40,7 +40,7 @@ export const products: Product[] = [
       {
         id: "DS-0001",
         name: "BX-00",
-        image: "https://i.ibb.co/p6VhYYsg/DS-001.png"
+        image: "https://i.ibb.co/7JH60xvH/DS-001.png"
       },
       {
         id: "DS-0002",
@@ -240,7 +240,7 @@ export const products: Product[] = [
       {
         id: "SE-001",
         name: "BX-14",
-        image: "https://i.ibb.co/yrPYDgc/SE-14.png"
+        image: "https://i.ibb.co/1JvD82QD/SE-14.png"
       },
       {
         id: "SE-002",
@@ -250,7 +250,7 @@ export const products: Product[] = [
       {
         id: "SE-003",
         name: "BX-31",
-        image: "https://i.ibb.co/S4ZTWKJw/SE-31.png"
+        image: "https://i.ibb.co/rKXj66NR/SE-31.png"
       },
       {
         id: "SE-000",
@@ -693,12 +693,12 @@ export const products: Product[] = [
       {
         id: "TB-001",
         name: "BX-31",
-        image: "https://i.ibb.co/ns4gsVyC/TB-31.webp"
+        image: "https://i.ibb.co/YBRS4DCK/TB-31.png"
       },
       {
         id: "TB-002",
         name: "UX-10",
-        image: "https://i.ibb.co/4ZM68V04/TB-10-u.webp"
+        image: "https://i.ibb.co/1GzPrpdR/TB-u-10.png"
       },
     ]
   },
@@ -724,12 +724,12 @@ export const products: Product[] = [
       {
         id: "SS-001",
         name: "UX-05",
-        image: "https://i.ibb.co/NgCj5pKS/SS-5-u1.webp"
+        image: "https://i.ibb.co/KjBRMVKK/SS-u-06-2.png"
       },
       {
         id: "SS-002",
         name: "UX-05",
-        image: "https://i.ibb.co/zVztHb0n/SS-5-u2.webp"
+        image: "https://i.ibb.co/nNjxwS3t/SS-u-06-3.png"
       },
       {
         id: "SS-003",
@@ -812,7 +812,7 @@ export const products: Product[] = [
       {
         id: "SS-001",
         name: "BX-35",
-        image: "https://i.ibb.co/tp7dXdN4/BS-35.png"
+        image: "https://i.ibb.co/8gmJGjqf/BS-35-2.png"
       },
     ]
   },
@@ -890,12 +890,12 @@ export const products: Product[] = [
       {
         id: "SS-001",
         name: "BX-36",
-        image: "https://i.ibb.co/jk69tQ85/WW-36-2.webp"
+        image: "https://i.ibb.co/9m7x8cVc/WW-36-2.png"
       },
       {
         id: "SS-002",
         name: "BX-36",
-        image: "https://i.ibb.co/tk5hsSw/WW-36-1.webp"
+        image: "https://i.ibb.co/W4dvnnqy/WW-36-3.png"
       },
       {
         id: "SS-003",
@@ -2586,7 +2586,7 @@ export const products: Product[] = [
     features: [
       "5 Contact Points",
       "High : 8.50 mm",
-      "Weight: ~ g",
+      "Weight: ~10 g",
     ],
     // bey: [
     //   {
@@ -4507,13 +4507,13 @@ export const products: Product[] = [
     name: "Credits? Why you want to know that???",
     image: "https://i.ibb.co/FbCrtZND/4Wat-1.jpg",
     category: "credits",
-    price: "This website don't want any your money.",
+    price: "This website don't want anything from you.",
     specs: {
       "Creator Name": "What you looking for?",
       "Donation": "Go to Philanthropy funds.",
       "Ownership": "I'm not Takara Tomy. Beyblade is not my product.",
       "Objective": "To make it easier for the community to find data about Beyblade X parts.",
-      "Special Thanks": "Thanks to Takara Tomy for making Beyblade and public high quality pictures.",
+      "Special Thanks": "Thanks to Takara Tomy for making Beyblade.",
     },
   },
 ];
