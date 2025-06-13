@@ -602,6 +602,11 @@ export const products: Product[] = [
         name: "UX-00",
         image: "https://i.ibb.co/ZRcyhgyQ/DB-zzz.webp"
       },
+      {
+        id: "DB-0004",
+        name: "CX-08",
+        image: ""
+      },
     ]
   },
   {
@@ -788,6 +793,11 @@ export const products: Product[] = [
         name: "BX-00",
         image: "https://i.ibb.co/rRjGqVpv/CD-z.webp"
       },
+      {
+        id: "CDG-0002",
+        name: "CX-08",
+        image: ""
+      },
     ]
   },
   {
@@ -810,9 +820,14 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "SS-001",
+        id: "BS-001",
         name: "BX-35",
         image: "https://i.ibb.co/8gmJGjqf/BS-35-2.png"
+      },
+      {
+        id: "BS-002",
+        name: "CX-08",
+        image: ""
       },
     ]
   },
@@ -1215,13 +1230,13 @@ export const products: Product[] = [
       "Ratchet": "7-60, 9-60, 5-70",
       "Bit": "Ball, Hexa, Low Orb, Orb",
     },
-    // bey: [
-    //   {
-    //     id: "SS-001",
-    //     name: "BX-36",
-    //     image: "https://i.ibb.co/jk69tQ85/WW-36-2.webp"
-    //   },
-    // ]
+    bey: [
+      {
+        id: "WAR-001",
+        name: "CX-00",
+        image: ""
+      },
+    ]
   },
   {
     id: "blade-039",
@@ -1351,8 +1366,8 @@ export const products: Product[] = [
       "Product Line": "CX",
     },
     combo: {
-      "Ratchet": "6-60, 9-60, 5-60, 7-60",
-      "Bit": "Taper, Low Rush, Rush",
+      "Ratchet": "1-60, 6-60, 9-60, 5-60, 7-60",
+      "Bit": "Taper, Low Rush, Low Flat, Gear Rush",
     },
     bey: [
       {
@@ -1384,6 +1399,86 @@ export const products: Product[] = [
     combo: {
       "Ratchet": "5-70, 5-60",
       "Bit": "Wedge",
+    },
+    // bey: [
+    //   {
+    //     id: "DBS-001",
+    //     name: "CX-05",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "blade-045",
+    name: "Pegasus Blast A",
+    image: "",
+    category: "blade",
+    type:"attack",
+    price: "CX-07",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "Tr",
+      "Product Line": "CX",
+    },
+    combo: {
+      "Ratchet": "",
+      "Bit": "",
+    },
+    // bey: [
+    //   {
+    //     id: "DBS-001",
+    //     name: "CX-05",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "blade-046",
+    name: "Cerberus Flame W",
+    image: "",
+    category: "blade",
+    type:"stamina",
+    price: "CX-08",
+    specs: {
+      "Type": "Stamina",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "5-80 WB",
+      "Assist Blade": "Wheel",
+      "Product Line": "CX",
+    },
+    combo: {
+      "Ratchet": "",
+      "Bit": "",
+    },
+    bey: [
+      {
+        id: "CFW-001",
+        name: "CX-08 (Cerberus Dark W)",
+        image: ""
+      },
+    ]
+  },
+  {
+    id: "blade-047",
+    name: "Whale Flame M",
+    image: "",
+    category: "blade",
+    type:"balance",
+    price: "CX-08",
+    specs: {
+      "Type": "Balance",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "3-85 HT",
+      "Assist Blade": "Massive",
+      "Product Line": "CX",
+    },
+    combo: {
+      "Ratchet": "",
+      "Bit": "",
     },
     // bey: [
     //   {
@@ -1720,7 +1815,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "AB-003",
+    id: "AB-005",
     name: "Charge",
     image: "https://i.ibb.co/RkVTKcw7/C-1.webp",
     category: "assist-blade",
@@ -1761,6 +1856,63 @@ export const products: Product[] = [
         image: ""
       },
     ]
+  },
+  {
+    id: "AB-007",
+    name: "Assault",
+    image: "",
+    category: "assist-blade",
+    price: "CX-07",
+    specs: {
+      "Spin": "Right",
+      "Weight": "~ g",
+      "High Level": "~ MM",
+    },
+    // bey: [
+    //   {
+    //     id: "J-001",
+    //     name: "CX-06",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "AB-008",
+    name: "Wheel",
+    image: "",
+    category: "assist-blade",
+    price: "CX-08",
+    specs: {
+      "Spin": "Right",
+      "Weight": "~ g",
+      "High Level": "~ MM",
+    },
+    bey: [
+      {
+        id: "W-001",
+        name: "CX-08",
+        image: ""
+      },
+    ]
+  },
+  {
+    id: "AB-009",
+    name: "Massive",
+    image: "",
+    category: "assist-blade",
+    price: "CX-08",
+    specs: {
+      "Spin": "Right",
+      "Weight": "~ g",
+      "High Level": "~ MM",
+    },
+    // bey: [
+    //   {
+    //     id: "J-001",
+    //     name: "CX-06",
+    //     image: ""
+    //   },
+    // ]
   },
 
   // RATCHETS
@@ -1853,6 +2005,11 @@ export const products: Product[] = [
         id: "160-006",
         name: "UX-13",
         image: "https://i.ibb.co/0pYWN3xG/1-60-7.png"
+      },
+      {
+        id: "160-007",
+        name: "CX-08",
+        image: ""
       },
     ]
   },
@@ -2181,6 +2338,11 @@ export const products: Product[] = [
         id: "455-001",
         name: "CX-05",
         image: "https://i.ibb.co/pvznvkvk/4-55-2.png"
+      },
+      {
+        id: "455-002",
+        name: "CX-08",
+        image: ""
       },
     ]
   },
@@ -2517,6 +2679,16 @@ export const products: Product[] = [
         name: "BX-36",
         image: "https://i.ibb.co/WNQ1xwQK/5-80-6.png"
       },
+      {
+        id: "580-006",
+        name: "CX-08",
+        image: ""
+      },
+      {
+        id: "580-007",
+        name: "CX-08",
+        image: ""
+      },
     ]
   },
   {
@@ -2597,13 +2769,13 @@ export const products: Product[] = [
       "High : 7.00 mm",
       "Weight: ~7.1 g",
     ],
-    // bey: [
-    //   {
-    //     id: "760-001",
-    //     name: "BX-00",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "770-001",
+        name: "CX-08",
+        image: ""
+      },
+    ]
   },
   {
     id: "ratchet-780",
@@ -2805,6 +2977,11 @@ export const products: Product[] = [
         id: "F-014",
         name: "Collab",
         image: "https://i.ibb.co/m5mxzjJL/F-15.png"
+      },
+      {
+        id: "F-015",
+        name: "CX-08",
+        image: ""
       },
     ]
   },
@@ -3185,6 +3362,11 @@ export const products: Product[] = [
         name: "BX-27",
         image: "https://i.ibb.co/v4sSwS04/HT-3.png"
       },
+      {
+        id: "HT-003",
+        name: "CX-08",
+        image: ""
+      },
     ]
   },
   {
@@ -3475,6 +3657,11 @@ export const products: Product[] = [
         id: "MN-001",
         name: "UX-10",
         image: "https://i.ibb.co/xtYY9QyC/media.png"
+      },
+      {
+        id: "MN-002",
+        name: "CX-08",
+        image: ""
       },
     ]
   },
@@ -3906,6 +4093,53 @@ export const products: Product[] = [
     //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
     //   },
     // ]
+  },
+  {
+    id: "bit-039",
+    name: "Tr (CX-06)",
+    image: "",
+    category: "bit",
+    type:"attack",
+    price: "Turbo",
+    specs: {
+      "Type": "Attack",
+      "Weight": "~ g",
+      "Gears": "",
+      "Burst Resistance": "High"
+    },
+    // bey: [
+    //   {
+    //     id: "W-001",
+    //     name: "UX-12",
+    //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
+    //   },
+    // ]
+  },
+  {
+    id: "bit-040",
+    name: "WB (CX-06)",
+    image: "",
+    category: "bit",
+    type:"stamina",
+    price: "Wall Ball",
+    specs: {
+      "Type": "Stamina",
+      "Weight": "~ g",
+      "Gears": "16",
+      "Burst Resistance": "Low"
+    },
+    bey: [
+      {
+        id: "WB-001",
+        name: "CX-08",
+        image: ""
+      },
+      {
+        id: "WB-002",
+        name: "CX-08",
+        image: ""
+      },
+    ]
   },
 
   // OTHER
@@ -4622,6 +4856,70 @@ export const products: Product[] = [
       "Stock Combo": "3-80 Needle",
       "Product Line": "BX",
       "Collab": "Marvel",
+    },
+  },
+  {
+    id: "CLB-013",
+    name: "T.Rex",
+    image: "",
+    category: "x-over",
+    type: "stamina",
+    price: "BX-00",
+    specs: {
+      "Type": "Stamina",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "1-80 Gear Ball",
+      "Product Line": "BX",
+      "Collab": "Jurassic World",
+    },
+  },
+  {
+    id: "CLB-014",
+    name: "Mosasaurus",
+    image: "",
+    category: "x-over",
+    type: "balance",
+    price: "BX-00",
+    specs: {
+      "Type": "Balance",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "9-60 Unite",
+      "Product Line": "BX",
+      "Collab": "Jurassic World",
+    },
+  },
+  {
+    id: "CLB-016",
+    name: "Spinosaurus",
+    image: "",
+    category: "x-over",
+    type: "attack",
+    price: "BX-00",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "3-85 Accel",
+      "Product Line": "BX",
+      "Collab": "Jurassic World",
+    },
+  },
+  {
+    id: "CLB-016",
+    name: "Quetzalcoatlus",
+    image: "",
+    category: "x-over",
+    type: "defense",
+    price: "BX-00",
+    specs: {
+      "Type": "Defense",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "4-55 Dot",
+      "Product Line": "BX",
+      "Collab": "Jurassic World",
     },
   },
 
