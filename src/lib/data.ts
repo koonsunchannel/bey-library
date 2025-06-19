@@ -1848,12 +1848,12 @@ export const products: Product[] = [
       {
         id: "J-001",
         name: "CX-06",
-        image: ""
+        image: "https://i.ibb.co/fz84510z/J-2.png"
       },
       {
         id: "J-002",
         name: "CX-06",
-        image: ""
+        image: "https://i.ibb.co/TMfMfCvG/J-3.png"
       },
     ]
   },
