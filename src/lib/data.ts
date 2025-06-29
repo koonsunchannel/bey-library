@@ -1736,7 +1736,7 @@ export const products: Product[] = [
   {
     id: "AB-001",
     name: "Slash",
-    image: "https://i.ibb.co/B5n8K6yG/S1.webp",
+    image: "https://i.ibb.co/Cpv5ZKcn/S-1-C01.webp",
     category: "assist-blade",
     price: "CX-01",
     specs: {
@@ -1746,16 +1746,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "S-001",
+        id: "S-002",
         name: "CX-04",
-        image: "https://i.ibb.co/WpktS1kP/S-2.png"
+        image: "https://i.ibb.co/Zp90jhR3/S-2-C04.webp"
       },
     ]
   },
   {
     id: "AB-002",
     name: "Round",
-    image: "https://i.ibb.co/6R3KJDpR/R-1.webp",
+    image: "https://i.ibb.co/B5W0gtY8/R-1-C02.webp",
     category: "assist-blade",
     price: "CX-02",
     specs: {
@@ -1765,16 +1765,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "R-001",
+        id: "R-002",
         name: "CX-00",
-        image: "https://i.ibb.co/gZ7HGtpC/R-2-CX00.png"
+        image: "https://i.ibb.co/mC2xhrQ7/R-2-C00.webp"
       },
     ]
   },
   {
     id: "AB-003",
     name: "Bumper",
-    image: "https://i.ibb.co/99bRJhXQ/B-1.webp",
+    image: "https://i.ibb.co/CsXLs9tV/B-1-C03.webp",
     category: "assist-blade",
     price: "CX-03",
     specs: {
@@ -1784,16 +1784,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "B-001",
+        id: "B-002",
         name: "CX-04",
-        image: "https://i.ibb.co/5Ww8KZjF/B-2.png"
+        image: "https://i.ibb.co/bjSR90Rb/B-2-C04.webp"
       },
     ]
   },
   {
     id: "AB-004",
     name: "Turn",
-    image: "https://i.ibb.co/fZf5dZJ/T-1.webp",
+    image: "https://i.ibb.co/p62pryH9/T-1-C05.webp",
     category: "assist-blade",
     price: "CX-05",
     specs: {
@@ -1803,21 +1803,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "T-001",
+        id: "T-002",
         name: "CX-05",
-        image: "https://i.ibb.co/HDqjc1K8/T-2.png"
+        image: "https://i.ibb.co/VW2GdZHW/T-2-C05.webp"
       },
       {
-        id: "T-002",
+        id: "T-003",
         name: "CX-00",
-        image: "https://i.ibb.co/MDtpZXw3/T-001.webp"
+        image: "https://i.ibb.co/7tL83gw9/T-3-C00.webp"
       },
     ]
   },
   {
     id: "AB-005",
     name: "Charge",
-    image: "https://i.ibb.co/RkVTKcw7/C-1.webp",
+    image: "https://i.ibb.co/1JXJ2CB7/C-1-C05.webp",
     category: "assist-blade",
     price: "CX-05",
     specs: {
@@ -1836,7 +1836,7 @@ export const products: Product[] = [
   {
     id: "AB-006",
     name: "Jaggy",
-    image: "https://i.ibb.co/vxP05GVm/J-1.webp",
+    image: "https://i.ibb.co/1JP9XPQj/J-1-C06.webp",
     category: "assist-blade",
     price: "CX-06",
     specs: {
@@ -1846,21 +1846,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "J-001",
-        name: "CX-06",
-        image: "https://i.ibb.co/fz84510z/J-2.png"
-      },
-      {
         id: "J-002",
         name: "CX-06",
-        image: "https://i.ibb.co/TMfMfCvG/J-3.png"
+        image: "https://i.ibb.co/7J0mqvnj/J-2-C06.webp"
+      },
+      {
+        id: "J-003",
+        name: "CX-06",
+        image: "https://i.ibb.co/qYr6pSBy/J-3-C06.webp"
       },
     ]
   },
   {
     id: "AB-007",
     name: "Assault",
-    image: "https://i.ibb.co/wFmVD2Wp/A-1.png",
+    image: "https://i.ibb.co/LdDXTjKk/A-1-C07.webp",
     category: "assist-blade",
     price: "CX-07",
     specs: {
@@ -1879,7 +1879,7 @@ export const products: Product[] = [
   {
     id: "AB-008",
     name: "Wheel",
-    image: "https://i.ibb.co/ksr4pRNt/W-1.png",
+    image: "https://i.ibb.co/Y4rMVF0y/W-1-C08.webp",
     category: "assist-blade",
     price: "CX-08",
     specs: {
@@ -1889,7 +1889,7 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "W-001",
+        id: "W-002",
         name: "CX-08",
         image: ""
       },
@@ -1898,7 +1898,7 @@ export const products: Product[] = [
   {
     id: "AB-009",
     name: "Massive",
-    image: "https://i.ibb.co/Wvp1qV3m/M-1.png",
+    image: "https://i.ibb.co/jPjx5q0t/M-1-C08.webp",
     category: "assist-blade",
     price: "CX-08",
     specs: {
@@ -4162,7 +4162,7 @@ export const products: Product[] = [
   },
   {
     id: "bit-040",
-    name: "WB (CX-06)",
+    name: "WB (CX-08)",
     image: "https://i.ibb.co/B5p39Y4J/WB-1.png",
     category: "bit",
     type:"stamina",
