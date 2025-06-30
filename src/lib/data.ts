@@ -4,7 +4,7 @@ import type { Product } from "./types"
 export const products: Product[] = [
   // BLADES
   {
-    id: "blade-001",
+    id: "DS-001",
     name: "Dran Sword",
     image: "https://i.ibb.co/G40ySY2X/DS-1-B01.webp",
     category: "blade",
@@ -55,7 +55,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: "blade-002",
+    id: "HS-001",
     name: "Hells Scythe",
     image: "https://i.ibb.co/Pss3pxX5/HS-1-B02.webp",
     category: "blade",
@@ -96,7 +96,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-003",
+    id: "WA-001",
     name: "Wizard Arrow",
     image: "https://i.ibb.co/HDpHNQJ0/WA-1-B03.webp",
     category: "blade",
@@ -147,7 +147,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-004",
+    id: "KS-001",
     name: "Knight Shield",
     image: "https://i.ibb.co/Gfdx0kYG/KS-1-B04.webp",
     category: "blade",
@@ -193,7 +193,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-005",
+    id: "KL-001",
     name: "Knight Lance",
     image: "https://i.ibb.co/bMFnLVjr/KL-1-B13.webp",
     category: "blade",
@@ -224,7 +224,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-006",
+    id: "SE-001",
     name: "Shark Edge",
     image: "https://i.ibb.co/TD4nSSZF/SE-1-B14.webp",
     category: "blade",
@@ -265,7 +265,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-007",
+    id: "LC-001",
     name: "Leon Claw",
     image: "https://i.ibb.co/JwCKgzQX/LC-1-B15.webp",
     category: "blade",
@@ -301,7 +301,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-008",
+    id: "VT-001",
     name: "Viper Tail",
     image: "https://i.ibb.co/Fqd2JgW8/VT-1-B16.webp",
     category: "blade",
@@ -342,7 +342,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-009",
+    id: "RH-001",
     name: "Rhino Horn",
     image: "https://i.ibb.co/BHD7xD78/RH-1-B19.webp",
     category: "blade",
@@ -368,7 +368,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-010",
+    id: "DD-001",
     name: "Dran Dagger",
     image: "https://i.ibb.co/0V2bg1Wf/DD-1-B20.webp",
     category: "blade",
@@ -404,7 +404,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-011",
+    id: "HC-001",
     name: "Hells Chain",
     image: "https://i.ibb.co/Cs7GFrZW/HC-1-B21.webp",
     category: "blade",
@@ -435,7 +435,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-012",
+    id: "PW-001",
     name: "Phoenix Wing",
     image: "https://i.ibb.co/jk5WmMPQ/PW-1-B23.webp",
     category: "blade",
@@ -471,7 +471,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-013",
+    id: "WG-001",
     name: "Wyvern Gale",
     image: "https://i.ibb.co/nNwbhPn9/WG-1-B24.webp",
     category: "blade",
@@ -507,7 +507,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-014",
+    id: "US-001",
     name: "Unicorn Sting",
     image: "https://i.ibb.co/Ngq8QzDT/US-1-B26.webp",
     category: "blade",
@@ -533,7 +533,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-015",
+    id: "SC-001",
     name: "Sphinx Cowl",
     image: "https://i.ibb.co/Lz9t60PV/SC-1-B27.webp",
     category: "blade",
@@ -552,24 +552,24 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "PC-002",
+        id: "SC-002",
         name: "BX-27",
         image: "https://i.ibb.co/5hSjMhkS/SC-2-B27.webp"
       },
       {
-        id: "PC-003",
+        id: "SC-003",
         name: "BX-27",
         image: "https://i.ibb.co/Fqkq8Hvq/SC-3-B27.webp"
       },
       {
-        id: "PC-004",
+        id: "SC-004",
         name: "UX-07",
         image: "https://i.ibb.co/PG3h6nHR/SC-4-U07.webp"
       },
     ]
   },
   {
-    id: "blade-016",
+    id: "DB-001",
     name: "Dran Buster",
     image: "https://i.ibb.co/jkhHF3kD/DB-1-U01.webp",
     category: "blade",
@@ -630,7 +630,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-017",
+    id: "HH-001",
     name: "Hells Hammer",
     image: "https://i.ibb.co/5h9B4pBW/HH-1-U02.webp",
     category: "blade",
@@ -661,7 +661,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-018",
+    id: "WR-001",
     name: "Wizard Rod",
     image: "https://i.ibb.co/fY7sCHPy/WR-1-U03.webp",
     category: "blade",
@@ -697,7 +697,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-019",
+    id: "TB-001",
     name: "Tyranno Beat",
     image: "https://i.ibb.co/ycnqcV1s/TB-1-B31.webp",
     category: "blade",
@@ -728,7 +728,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-020",
+    id: "SSw-001",
     name: "Shinobi Shadow",
     image: "https://i.ibb.co/9kQk4ZGV/SSw-1-U05.webp",
     category: "blade",
@@ -764,7 +764,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-021",
+    id: "WT-001",
     name: "Weiss Tiger",
     image: "https://i.ibb.co/27w3KWWC/WT-1-B33.webp",
     category: "blade",
@@ -783,14 +783,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "WW-002",
+    //     id: "WT-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "blade-022",
+    id: "CDg-001",
     name: "Cobalt Dragoon",
     image: "https://i.ibb.co/pvQHqSHM/CDg-1-B34.webp",
     category: "blade",
@@ -821,7 +821,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-023",
+    id: "BSl-001",
     name: "Black Shell",
     image: "https://i.ibb.co/kV9RTVYn/BSl-1-B35.webp",
     category: "blade",
@@ -852,7 +852,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-024",
+    id: "LCT-001",
     name: "Leon Crest",
     image: "https://i.ibb.co/Zz3D7qkL/LCT-1-U06.webp",
     category: "blade",
@@ -871,14 +871,14 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "LCT-001",
+        id: "LCT-002",
         name: "CX-05",
         image: "https://i.ibb.co/ymsy12LQ/LCT-2-C05.webp"
       },
     ]
   },
   {
-    id: "blade-025",
+    id: "PR-001",
     name: "Phoenix Rudder",
     image: "https://i.ibb.co/VcbnBVfV/PR-1-U07.webp",
     category: "blade",
@@ -904,7 +904,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-026",
+    id: "WW-001",
     name: "Whale Wave",
     image: "https://i.ibb.co/v6WNXDz3/WW-1-B36.webp",
     category: "blade",
@@ -940,7 +940,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-027",
+    id: "BSc-001",
     name: "Bear Scratch",
     image: "https://i.ibb.co/SDfXPWbF/BSc-1-B37.webp",
     category: "blade",
@@ -966,7 +966,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-028",
+    id: "SW-001",
     name: "Silver Wolf",
     image: "https://i.ibb.co/4gZf8gxT/SW-1-U08.webp",
     category: "blade",
@@ -992,7 +992,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-029",
+    id: "SSr-001",
     name: "Samurai Saber",
     image: "https://i.ibb.co/1txNx0QD/SSr-1-U09.webp",
     category: "blade",
@@ -1018,7 +1018,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-030",
+    id: "KM-001",
     name: "Knight Mail",
     image: "https://i.ibb.co/zHBzhLzt/KM-1-U10.webp",
     category: "blade",
@@ -1044,7 +1044,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-031",
+    id: "PS-001",
     name: "Ptera Swing",
     image: "https://i.ibb.co/BHsTx3T2/PS-1-U10.webp",
     category: "blade",
@@ -1070,7 +1070,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-032",
+    id: "CG-001",
     name: "Crimson Garuda",
     image: "https://i.ibb.co/HD6qp9nf/CG-1-B38.webp",
     category: "blade",
@@ -1096,7 +1096,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-033",
+    id: "ID-001",
     name: "Impact Drake",
     image: "https://i.ibb.co/93VWgjL1/ID-1-U11.webp",
     category: "blade",
@@ -1122,7 +1122,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-034",
+    id: "GC-001",
     name: "Ghost Circle",
     image: "https://i.ibb.co/7tJZH3hb/GC-1-U12.webp",
     category: "blade",
@@ -1148,7 +1148,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-035",
+    id: "GR-001",
     name: "Golem Rock",
     image: "https://i.ibb.co/N0MY0LF/GR-1-U13.webp",
     category: "blade",
@@ -1174,7 +1174,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-036",
+    id: "SDk-001",
     name: "Shleter Drake",
     image: "https://i.ibb.co/xqPCD6hq/SDk-1-B39.webp",
     category: "blade",
@@ -1205,7 +1205,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-037",
+    id: "DBS-001",
     name: "Dran Brave S",
     image: "https://i.ibb.co/WNP49D0p/DBS-1-C01.webp",
     category: "blade",
@@ -1232,7 +1232,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-038",
+    id: "WAR-001",
     name: "Wizard Arc R",
     image: "https://i.ibb.co/PzrFrsqt/WAR-1-C02.webp",
     category: "blade",
@@ -1259,7 +1259,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-039",
+    id: "PDB-001",
     name: "Perseus Dark B",
     image: "https://i.ibb.co/1Cq0bqk/PDB-1-C03.webp",
     category: "blade",
@@ -1291,7 +1291,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-040",
+    id: "HRT-001",
     name: "Hells Reaper T",
     image: "https://i.ibb.co/Fk094YjS/HRT-1-C05.webp",
     category: "blade",
@@ -1318,7 +1318,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-041",
+    id: "RRC-001",
     name: "Rhino Reaper C",
     image: "https://i.ibb.co/VYwCTRkb/RRC-1-C05.webp",
     category: "blade",
@@ -1345,7 +1345,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-042",
+    id: "SSp-001",
     name: "Scorpio Spear",
     image: "https://i.ibb.co/391sdH6d/SSp-1-U14.webp",
     category: "blade",
@@ -1371,7 +1371,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-043",
+    id: "FBJ-001",
     name: "Fox Brush J",
     image: "https://i.ibb.co/XwHSLJr/FBJ-1-C06.webp",
     category: "blade",
@@ -1403,7 +1403,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-044",
+    id: "TPs-001",
     name: "Tricera Press",
     image: "https://i.ibb.co/KxPCPGJp/TPs-1-B44.webp",
     category: "blade",
@@ -1429,7 +1429,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-045",
+    id: "PBA-001",
     name: "Pegasus Blast A",
     image: "https://i.ibb.co/zhvkgRmL/PBA-1-C07.webp",
     category: "blade",
@@ -1455,7 +1455,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-046",
+    id: "CFW-001",
     name: "Cerberus Flame W",
     image: "https://i.ibb.co/VcQ0v6Ls/CFW-1-C08.webp",
     category: "blade",
@@ -1482,7 +1482,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-047",
+    id: "WFM-001",
     name: "Whale Flame M",
     image: "https://i.ibb.co/tpHHqbQh/WFM-1-C08.webp",
     category: "blade",
@@ -1511,7 +1511,7 @@ export const products: Product[] = [
 
   //RARE BLADE
   {
-    id: "blade-R001",
+    id: "CDk-001",
     name: "Cobalt Drake",
     image: "https://i.ibb.co/KjHsS8q2/CDk-1-B00.webp",
     category: "blade",
@@ -1537,7 +1537,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-R002",
+    id: "PF-001",
     name: "Phoenix Feather",
     image: "https://i.ibb.co/NgYDNzQ0/PF-1-B00.webp",
     category: "blade",
@@ -1568,7 +1568,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "blade-R003",
+    id: "AP-001",
     name: "Aero Pegasus",
     image: "https://i.ibb.co/5XY6MgBH/AP-1-U00.webp",
     category: "blade",
@@ -1594,7 +1594,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-R004",
+    id: "SK-001",
     name: "Shinobi Knife (XONE)",
     image: "https://i.ibb.co/vxw8CZC7/SK-1-XONE.webp",
     category: "blade",
@@ -1620,7 +1620,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-R005",
+    id: "MT-001",
     name: "Mammoth Tusk",
     image: "https://i.ibb.co/mrrM6Jzz/MT-1-B00.webp",
     category: "blade",
@@ -1646,7 +1646,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-R006",
+    id: "CC-001",
     name: "Croc Crunch",
     image: "https://i.ibb.co/C3jpr2Th/CC-1-B00.webp",
     category: "blade",
@@ -1672,7 +1672,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-R007",
+    id: "SSt-001",
     name: "Samurai Steel",
     image: "https://i.ibb.co/ZRdNsxyV/SSt-1-B00.webp",
     category: "blade",
@@ -1698,7 +1698,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-R008",
+    id: "LFT-001",
     name: "Leon Fang T (Red Ver.)",
     image: "https://i.ibb.co/twWHjc2b/LFT-1-RED.webp",
     category: "blade",
@@ -1725,7 +1725,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "blade-R009",
+    id: "DAS-001",
     name: "Dran Arc S (MC Blue)",
     image: "https://i.ibb.co/Hp9J3rBn/Persona-CX.webp",
     category: "blade",
@@ -1754,7 +1754,7 @@ export const products: Product[] = [
 
   // ASSIST BLADES
   {
-    id: "AB-001",
+    id: "S-001",
     name: "Slash",
     image: "https://i.ibb.co/Cpv5ZKcn/S-1-C01.webp",
     category: "assist-blade",
@@ -1773,7 +1773,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "AB-002",
+    id: "R-001",
     name: "Round",
     image: "https://i.ibb.co/B5W0gtY8/R-1-C02.webp",
     category: "assist-blade",
@@ -1792,7 +1792,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "AB-003",
+    id: "B-001",
     name: "Bumper",
     image: "https://i.ibb.co/CsXLs9tV/B-1-C03.webp",
     category: "assist-blade",
@@ -1811,7 +1811,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "AB-004",
+    id: "T-001",
     name: "Turn",
     image: "https://i.ibb.co/p62pryH9/T-1-C05.webp",
     category: "assist-blade",
@@ -1835,7 +1835,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "AB-005",
+    id: "C-001",
     name: "Charge",
     image: "https://i.ibb.co/1JXJ2CB7/C-1-C05.webp",
     category: "assist-blade",
@@ -1847,14 +1847,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "B-001",
-    //     name: "CX-04",
+    //     id: "C-002",
+    //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "AB-006",
+    id: "J-001",
     name: "Jaggy",
     image: "https://i.ibb.co/1JP9XPQj/J-1-C06.webp",
     category: "assist-blade",
@@ -1878,7 +1878,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "AB-007",
+    id: "A-001",
     name: "Assault",
     image: "https://i.ibb.co/LdDXTjKk/A-1-C07.webp",
     category: "assist-blade",
@@ -1890,14 +1890,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "J-001",
-    //     name: "CX-06",
+    //     id: "A-002",
+    //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "AB-008",
+    id: "W-001",
     name: "Wheel",
     image: "https://i.ibb.co/Y4rMVF0y/W-1-C08.webp",
     category: "assist-blade",
@@ -1916,7 +1916,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "AB-009",
+    id: "M-001",
     name: "Massive",
     image: "https://i.ibb.co/jPjx5q0t/M-1-C08.webp",
     category: "assist-blade",
@@ -1928,8 +1928,8 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "J-001",
-    //     name: "CX-06",
+    //     id: "M-002",
+    //     name: "",
     //     image: ""
     //   },
     // ]
@@ -1937,9 +1937,9 @@ export const products: Product[] = [
 
   // RATCHETS
   {
-    id: "ratchet-070",
+    id: "070-001",
     name: "0-70 (UX-14)",
-    image: "https://i.ibb.co/Nd0n4gGS/0-70-1.png",
+    image: "https://i.ibb.co/1ftYncmr/0-70-1-U14.webp",
     category: "ratchet",
     price: "0-70",
     features: [
@@ -1949,16 +1949,16 @@ export const products: Product[] = [
     ],
     // bey: [
     //   {
-    //     id: "080-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/GfbS7kcB/0-80-2.png"
+    //     id: "080-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
-    id: "ratchet-080",
+    id: "080-001",
     name: "0-80 (UX-12)",
-    image: "https://i.ibb.co/NdLGgxZH/0-80-1.webp",
+    image: "https://i.ibb.co/hxLdSfhf/0-80-1-U12.webp",
     category: "ratchet",
     price: "0-80",
     features: [
@@ -1968,26 +1968,26 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "080-001",
-        name: "UX-12",
-        image: "https://i.ibb.co/GfbS7kcB/0-80-2.png"
-      },
-      {
         id: "080-002",
         name: "UX-12",
-        image: "https://i.ibb.co/jPhfNTnk/0-80-3.png"
+        image: "https://i.ibb.co/6cVdqyVC/0-80-2-U12.webp"
       },
       {
         id: "080-003",
+        name: "UX-12",
+        image: "https://i.ibb.co/RTXGkgKr/0-80-3-U12.webp"
+      },
+      {
+        id: "080-004",
         name: "CX-06",
-        image: "https://i.ibb.co/qMrnLQrc/0-80-4.png"
+        image: "https://i.ibb.co/0RZR7ZyH/0-80-4-C06.webp"
       },
     ]
   },
   {
-    id: "ratchet-160",
+    id: "160-001",
     name: "1-60 (UX-01)",
-    image: "https://i.ibb.co/tw7hh4yB/1-60-1.webp",
+    image: "https://i.ibb.co/39mbJTH1/1-60-1-U01.webp",
     category: "ratchet",
     price: "1-60",
     features: [
@@ -1997,46 +1997,76 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "160-001",
-        name: "UX-04",
-        image: "https://i.ibb.co/CpxFDtt3/1-60-2.png"
-      },
-      {
         id: "160-002",
-        name: "BX-31",
-        image: "https://i.ibb.co/Swqf7Z6F/1-60-3.png"
+        name: "UX-04",
+        image: "https://i.ibb.co/wZqn88m5/1-60-2-U04.webp"
       },
       {
         id: "160-003",
-        name: "BX-35",
-        image: "https://i.ibb.co/pBy5qg1T/1-60-4.png"
+        name: "BX-31",
+        image: "https://i.ibb.co/BKdhw5R6/1-60-3-B31.webp"
       },
       {
         id: "160-004",
-        name: "BX-00",
-        image: "https://i.ibb.co/zT5d3WbV/1-60-5.png"
+        name: "BX-35",
+        image: "https://i.ibb.co/XffCCMYL/1-60-4-B35.webp"
       },
       {
         id: "160-005",
-        name: "UX-10",
-        image: "https://i.ibb.co/GQdQdtT2/1-60-6.png"
+        name: "BX-00",
+        image: "https://i.ibb.co/n886nNmt/1-60-5-B00.webp"
       },
       {
         id: "160-006",
-        name: "UX-13",
-        image: "https://i.ibb.co/0pYWN3xG/1-60-7.png"
+        name: "UX-10",
+        image: "https://i.ibb.co/rKmMB0kw/1-60-6-U10.webp"
       },
       {
         id: "160-007",
-        name: "CX-08",
-        image: ""
+        name: "UX-13",
+        image: "https://i.ibb.co/BKQPS0rv/1-60-7-U00.webp"
+      },
+      {
+        id: "160-008",
+        name: "Park Limited",
+        image: "https://i.ibb.co/spwXkfqS/1-60-8-LTD.webp"
+      },
+      {
+        id: "160-009",
+        name: "Park Limited",
+        image: "https://i.ibb.co/cK8pbBhj/1-60-9-LTD.webp"
+      },
+      {
+        id: "160-00=10",
+        name: "Park Limited",
+        image: "https://i.ibb.co/9kkfV44b/1-60-10-LTD.webp"
+      },
+      {
+        id: "160-011",
+        name: "Park Limited",
+        image: "https://i.ibb.co/kVZ5Vvqr/1-60-11-LTD.webp"
+      },
+      {
+        id: "160-012",
+        name: "Park Limited",
+        image: "https://i.ibb.co/rRg6jcYC/1-60-12-LTD.webp"
+      },
+      {
+        id: "160-013",
+        name: "Park Limited",
+        image: "https://i.ibb.co/Dgwfc2Nd/1-60-13-LTD.webp"
+      },
+      {
+        id: "160-014",
+        name: "UX-13",
+        image: "https://i.ibb.co/nN0nY7JM/1-60-14-U13.webp"
       },
     ]
   },
   {
-    id: "ratchet-180",
+    id: "180-001",
     name: "1-80 (UX-05)",
-    image: "https://i.ibb.co/spCg2bk7/1-80-1.webp",
+    image: "https://i.ibb.co/MwrKzWg/1-80-1-U05.webp",
     category: "ratchet",
     price: "1-80",
     features: [
@@ -2046,21 +2076,21 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "180-001",
+        id: "180-002",
         name: "UX-07",
-        image: "https://i.ibb.co/N6V72Fzm/1-80-2.png"
+        image: "https://i.ibb.co/YTWjYHJr/1-80-2-U07.webp"
       },
       {
-        id: "180-002",
+        id: "180-003",
         name: "Collab",
-        image: "https://i.ibb.co/84jzppWJ/1-80-3.png"
+        image: "https://i.ibb.co/Mk4L5PX0/1-80-3-Col.webp"
       },
     ]
   },
   {
-    id: "ratchet-260",
+    id: "260-001",
     name: "2-60 (BX-34)",
-    image: "https://i.ibb.co/rRJRfZ36/2-60-1.webp",
+    image: "https://i.ibb.co/Vc4KzB0n/2-60-1-B34.webp",
     category: "ratchet",
     price: "2-60",
     features: [
@@ -2070,37 +2100,41 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "260-001",
-        name: "BX-00",
-        image: "https://i.ibb.co/1Fhfzfz/2-60-2.png"
-      },
-      {
         id: "260-002",
-        name: "UX-07",
-        image: "https://i.ibb.co/XfNsS1zv/2-60-3.png"
+        name: "BX-00",
+        image: "https://i.ibb.co/QxX2PQ2/2-60-2-B00.webp"
       },
       {
         id: "260-003",
-        name: "UX-12",
-        image: "https://i.ibb.co/GfHHrQM0/2-60-4.png"
+        name: "UX-07",
+        image: "https://i.ibb.co/n87K2g6k/2-60-3-U07.webp"
       },
       {
-        //croc
         id: "260-004",
-        name: "BX-00",
-        image: "https://i.ibb.co/qYTNYYSz/2-60-5.png"
+        name: "25th Anniversary",
+        image: "https://i.ibb.co/dw9gMt0F/2-60-4-25th.webp"
       },
       {
         id: "260-005",
+        name: "UX-12",
+        image: "https://i.ibb.co/5xFhGnM5/2-60-5-U12.webp"
+      },
+      {
+        id: "260-006",
+        name: "BX-00",
+        image: "https://i.ibb.co/DD66dnSb/2-60-6-B00.webp"
+      },
+      {
+        id: "260-007",
         name: "CX-06",
-        image: "https://i.ibb.co/ynNf5R8c/2-60-6.png"
+        image: "https://i.ibb.co/tNWJ9G7/2-60-7-C06.webp"
       },
     ]
   },
   {
-    id: "ratchet-270",
+    id: "270-001",
     name: "2-70 (UX-09)",
-    image: "https://i.ibb.co/1YzPdgJm/Ratchet2-70.webp",
+    image: "https://i.ibb.co/HfD0mdf5/2-70-1-U09.webp",
     category: "ratchet",
     price: "2-70",
     features: [
@@ -2111,16 +2145,16 @@ export const products: Product[] = [
     bey: [
       {
         //metal coat orange
-        id: "270-001",
+        id: "270-002",
         name: "UX-00",
         image: ""
       },
     ]
   },
   {
-    id: "ratchet-280",
+    id: "280-001",
     name: "2-80 (BX-00)",
-    image: "https://i.ibb.co/21tK9Mpq/Ratchet2-80.webp",
+    image: "https://i.ibb.co/RGFDdmY8/2-80-1-B00.webp",
     category: "ratchet",
     price: "2-80",
     features: [
@@ -2130,16 +2164,16 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "280-001",
+        id: "280-002",
         name: "BX-00",
-        image: "https://i.ibb.co/0jry8ppx/media.png"
+        image: "https://i.ibb.co/N60MgZrz/2-80-2-B00.webp"
       },
     ]
   },
   {
-    id: "ratchet-360",
+    id: "360-001",
     name: "3-60 (BX-01)",
-    image: "https://i.ibb.co/Xf1hg983/3-60-1.webp",
+    image: "https://i.ibb.co/Qv29Y5pf/3-60-1-B01.webp",
     category: "ratchet",
     price: "3-60",
     features: [
@@ -2149,69 +2183,74 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "360-001",
-        name: "BX-07",
-        image: "https://i.ibb.co/J9r1YNR/3-60-1.png"
-      },
-      {
         id: "360-002",
-        name: "BX-14",
-        image: "https://i.ibb.co/rNdjr43/3-60-2.png"
+        name: "BX-07",
+        image: "https://i.ibb.co/dsm9xW62/3-60-2-B07.webp"
       },
       {
         id: "360-003",
         name: "BX-14",
-        image: "https://i.ibb.co/7N0bXzFr/3-60-3.png"
+        image: "https://i.ibb.co/ch9X0FV6/3-60-3-B14.webp"
       },
       {
         id: "360-004",
-        name: "BX-17",
-        image: "https://i.ibb.co/BVsyK0sb/3-60-4.png"
+        name: "BX-14",
+        image: "https://i.ibb.co/2fskgqs/3-60-4-B14.webp"
       },
       {
         id: "360-005",
-        name: "BX-21",
-        image: "https://i.ibb.co/ynt4qYHS/3-60-5.png"
+        name: "BX-17",
+        image: "https://i.ibb.co/zTfFvLXS/3-60-5-B17.webp"
       },
       {
         id: "360-006",
-        name: "BX-24",
-        image: "https://i.ibb.co/7N0bXzFr/3-60-3.png"
+        name: "BX-21",
+        image: "https://i.ibb.co/2YLzfWqd/3-60-6-B21.webp"
       },
       {
         id: "360-007",
-        name: "BX-31",
-        image: "https://i.ibb.co/svCgMksk/3-60-7.png"
+        name: "BX-24",
+        image: "https://i.ibb.co/9kyzR5qd/3-60-7-B24.webp"
       },
       {
         id: "360-008",
-        name: "BX-33",
-        image: "https://i.ibb.co/h12TXFBm/3-60-8.png"
+        name: "BX-31",
+        image: "https://i.ibb.co/zhcPx6wc/3-60-8-B31.webp"
       },
       {
         id: "360-009",
-        name: "BX-39",
-        image: "https://i.ibb.co/MxcNXNN7/3-60-9.png"
+        name: "BX-33",
+        image: "https://i.ibb.co/2YhDhGfV/3-60-9-B33.webp"
       },
       {
         id: "360-010",
-        name: "Collab",
-        image: "https://i.ibb.co/67gtgFKR/3-60-10.png"
+        name: "BX-39",
+        image: "https://i.ibb.co/BVpxTtQw/3-60-10-B39.webp"
       },
       {
         id: "360-011",
         name: "Collab",
-        image: "https://i.ibb.co/HTMns1hd/3-60-11.png"
+        image: "https://i.ibb.co/5X188nJ7/3-60-11-Col.webp"
       },
       {
         id: "360-012",
         name: "Collab",
-        image: "https://i.ibb.co/qM37TDP8/3-60-12.png"
+        image: "https://i.ibb.co/9H7Dh5wR/3-60-12-Col.webp"
+      },
+      {
+        id: "360-013",
+        name: "Collab",
+        image: "https://i.ibb.co/MktJJJb2/3-60-13-Col.webp"
+      },
+      {
+        id: "360-014",
+        name: "B00",
+        image: "https://i.ibb.co/KpcP076z/3-60-14-B00.webp"
       },
     ]
   },
   {
-    id: "ratchet-370",
+    id: "370-001",
     name: "3-70 (UX-02)",
     image: "https://i.ibb.co/7JNjTb1r/3-70-1.webp",
     category: "ratchet",
@@ -2223,24 +2262,29 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "370-001",
-        name: "UX-05",
-        image: "https://i.ibb.co/Y4M92mFR/3-70-2.png"
-      },
-      {
         id: "370-002",
-        name: "UX-00",
-        image: "https://i.ibb.co/jvbznFxJ/3-70-3.png"
+        name: "UX-05",
+        image: ""
       },
       {
         id: "370-003",
-        name: "BX-35",
-        image: "https://i.ibb.co/PvWPHLLB/3-70-4.png"
+        name: "UX-00",
+        image: ""
       },
       {
         id: "370-004",
+        name: "BX-35",
+        image: ""
+      },
+      {
+        id: "370-005",
         name: "UX-00",
-        image: "https://i.ibb.co/MxNwCL3k/3-70-5.png"
+        image: ""
+      },
+      {
+        id: "370-006",
+        name: "UX-00",
+        image: ""
       },
     ]
   },
