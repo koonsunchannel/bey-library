@@ -6,7 +6,7 @@ export const products: Product[] = [
   {
     id: "blade-001",
     name: "Dran Sword",
-    image: "https://i.ibb.co/tT0P4Y5L/1-DS-1.webp",
+    image: "https://i.ibb.co/G40ySY2X/DS-1-B01.webp",
     category: "blade",
     type: "attack",
     price: "BX-01",
@@ -23,36 +23,41 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "DS-001",
-        name: "BX-07",
-        image: "https://i.ibb.co/zT5Y5yLB/DS-07.png"
-      },
-      {
         id: "DS-002",
-        name: "BX-14",
-        image: "https://i.ibb.co/JR0wjz4X/DS-14.png"
+        name: "BX-07",
+        image: "https://i.ibb.co/mCsJJFYs/DS-2-B07.webp"
       },
       {
         id: "DS-003",
+        name: "BX-14",
+        image: "https://i.ibb.co/svrBXkVr/DS-3-B14.webp"
+      },
+      {
+        id: "DS-004",
         name: "BX-17",
-        image: "https://i.ibb.co/nsPw3qgY/DS-17.png"
+        image: "https://i.ibb.co/VYF6BrfF/DS-4-B17.webp"
       },
       {
-        id: "DS-0001",
+        id: "DS-005",
         name: "BX-00",
-        image: "https://i.ibb.co/7JH60xvH/DS-001.png"
+        image: "https://i.ibb.co/679WNZxb/DS-5-B00.webp"
       },
       {
-        id: "DS-0002",
+        id: "DS-006",
         name: "UX-00",
-        image: "https://i.ibb.co/9HYsbxFW/DS-zzz.webp"
-      }
+        image: "https://i.ibb.co/gZPVr6tz/DS-6-25th.webp"
+      },
+      {
+        id: "DS-007",
+        name: "BX-00",
+        image: "https://i.ibb.co/gMZ2QQFt/DS-7-UX00.webp"
+      },
     ],
   },
   {
     id: "blade-002",
     name: "Hells Scythe",
-    image: "https://i.ibb.co/gq9hB1X/2-HS-1.png",
+    image: "https://i.ibb.co/Pss3pxX5/HS-1-B02.webp",
     category: "blade",
     type:"balance",
     price: "BX-02",
@@ -69,31 +74,31 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "HS-001",
-        name: "BX-08",
-        image: "https://i.ibb.co/6cYv7t0H/HS-08.png"
+        id: "HS-002",
+        name: "BX-00",
+        image: "https://i.ibb.co/21RXmBKy/HS-2-B00.webp"
       },
       {
         id: "HS-002",
+        name: "BX-08",
+        image: "https://i.ibb.co/sdKqGYNk/HS-3-B08.webp"
+      },
+      {
+        id: "HS-003",
         name: "BX-14",
-        image: "https://i.ibb.co/HQMrr0S/HS-14.png"
+        image: "https://i.ibb.co/wrbWPP9Y/HS-4-B14.webp"
       },
       {
-        id: "HS-0001",
-        name: "BX-00",
-        image: "https://i.ibb.co/YBbrb4Pf/HS-0001.png"
-      },
-      {
-        id: "HS-0002",
+        id: "HS-004",
         name: "Hell Persona",
-        image: "https://i.ibb.co/xt8B6kVQ/HP.png"
+        image: "https://i.ibb.co/spNPWk1P/HS-5-B00.webp"
       },
     ]
   },
   {
     id: "blade-003",
     name: "Wizard Arrow",
-    image: "https://i.ibb.co/QFGW6ZtC/3-WA-1.png",
+    image: "https://i.ibb.co/HDpHNQJ0/WA-1-B03.webp",
     category: "blade",
     type:"stamina",
     price: "BX-03",
@@ -110,41 +115,41 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "WA-001",
-        name: "BX-05",
-        image: "https://i.ibb.co/Y40nSKh0/WA-05.png"
-      },
-      {
         id: "WA-002",
-        name: "BX-08",
-        image: "https://i.ibb.co/C312pqXZ/WA-08.png"
+        name: "BX-05",
+        image: "https://i.ibb.co/yD685wp/WA-2-B05.webp"
       },
       {
         id: "WA-003",
-        name: "BX-14",
-        image: "https://i.ibb.co/7NVPZFLS/WA-14.png"
+        name: "BX-08",
+        image: "https://i.ibb.co/xSdv8S60/WA-3-B08.webp"
       },
       {
         id: "WA-004",
-        name: "BX-17",
-        image: "https://i.ibb.co/p6Y1r2fz/WA-17.png"
+        name: "BX-14",
+        image: "https://i.ibb.co/QvXy1C28/WA-4-B14.webp"
       },
       {
         id: "WA-005",
-        name: "BX-21",
-        image: "https://i.ibb.co/XrSF8tGn/WA-21.png"
+        name: "BX-17",
+        image: "https://i.ibb.co/XZ4cTffR/WA-5-B17.webp"
       },
       {
         id: "WA-006",
+        name: "BX-21",
+        image: "https://i.ibb.co/5xGWKqsX/WA-6-B21.webp"
+      },
+      {
+        id: "WA-007",
         name: "BX-24",
-        image: "https://i.ibb.co/F4VLKkbM/WA-23.png"
+        image: "https://i.ibb.co/B566Xm8M/WA-7-B24.webp"
       },
     ]
   },
   {
     id: "blade-004",
     name: "Knight Shield",
-    image: "https://i.ibb.co/rKJnH2SG/4-KS-1.png",
+    image: "https://i.ibb.co/Gfdx0kYG/KS-1-B04.webp",
     category: "blade",
     type:"defense",
     price: "BX-04",
@@ -161,36 +166,36 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "KS-001",
-        name: "BX-06",
-        image: "https://i.ibb.co/dsXkfwq3/KS-06.png"
-      },
-      {
         id: "KS-002",
-        name: "BX-08",
-        image: "https://i.ibb.co/998swSS8/KS-08.png"
+        name: "BX-06",
+        image: "https://i.ibb.co/5g3XrCBS/KS-2-B06.webp"
       },
       {
         id: "KS-003",
-        name: "BX-14",
-        image: "https://i.ibb.co/HLd8f65D/KS-14.png"
+        name: "BX-08",
+        image: "https://i.ibb.co/6cXM80JP/KS-3-B08.webp"
       },
       {
         id: "KS-004",
-        name: "BX-20",
-        image: "https://i.ibb.co/vvsVNdD9/KS-20.png"
+        name: "BX-14",
+        image: "https://i.ibb.co/V03rFym8/KS-4-B14.webp"
       },
       {
-        id: "KS-0001",
+        id: "KS-005",
+        name: "BX-20",
+        image: "https://i.ibb.co/xKGq7Myy/KS-5-B20.webp"
+      },
+      {
+        id: "KS-006",
         name: "G3 Prize",
-        image: "https://i.ibb.co/dwwtRMyH/D3-B365-D0-C0-A7-4017-B3-CB-56-DB70-DBD645-Photoroom.png"
+        image: "https://i.ibb.co/GfrjdNCW/KS-6-G3P.webp"
       },
     ]
   },
   {
     id: "blade-005",
     name: "Knight Lance",
-    image: "https://i.ibb.co/2fwfzRt/KL-1.png",
+    image: "https://i.ibb.co/bMFnLVjr/KL-1-B13.webp",
     category: "blade",
     type:"defense",
     price: "BX-13",
@@ -207,21 +212,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "KL-001",
+        id: "KL-002",
         name: "BX-21",
-        image: "https://i.ibb.co/FbL6d3Kn/KL-21.png"
+        image: "https://i.ibb.co/xtW6KfZD/KL-2-B21.webp"
       },
       {
-        id: "KL-002",
+        id: "KL-003",
         name: "BX-24",
-        image: "https://i.ibb.co/JRk3ZfF7/KL-24.png"
+        image: "https://i.ibb.co/ds0zjkft/KL-3-B24.webp"
       },
     ]
   },
   {
     id: "blade-006",
     name: "Shark Edge",
-    image: "https://i.ibb.co/KcX1YqGz/SE-1.png",
+    image: "https://i.ibb.co/TD4nSSZF/SE-1-B14.webp",
     category: "blade",
     type:"attack",
     price: "BX-14",
@@ -238,31 +243,31 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "SE-001",
-        name: "BX-14",
-        image: "https://i.ibb.co/1JvD82QD/SE-14.png"
-      },
-      {
         id: "SE-002",
-        name: "BX-20",
-        image: "https://i.ibb.co/vvPVJM5Z/SE-20.png"
+        name: "BX-14",
+        image: "https://i.ibb.co/7H2dWMh/SE-2-B14.webp"
       },
       {
         id: "SE-003",
-        name: "BX-31",
-        image: "https://i.ibb.co/rKXj66NR/SE-31.png"
+        name: "BX-20",
+        image: "https://i.ibb.co/gZc9jXrX/SE-3-B20.webp"
       },
       {
-        id: "SE-000",
+        id: "SE-004",
+        name: "BX-31",
+        image: "https://i.ibb.co/pjwcs3bd/SE-4-B31.webp"
+      },
+      {
+        id: "SE-005",
         name: "BX-00",
-        image: "https://i.ibb.co/SXnFjnDB/SE-0001.png"
+        image: "https://i.ibb.co/S4pGMHd0/SE-5-B00.webp"
       },
     ]
   },
   {
     id: "blade-007",
     name: "Leon Claw",
-    image: "https://i.ibb.co/JWZ7Ly1B/LC-1.png",
+    image: "https://i.ibb.co/JwCKgzQX/LC-1-B15.webp",
     category: "blade",
     type:"balance",
     price: "BX-15",
@@ -279,26 +284,26 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "LC-001",
-        name: "BX-24",
-        image: "https://i.ibb.co/kLYzBVL/LC-24.png"
-      },
-      {
         id: "LC-002",
-        name: "UX-12",
-        image: "https://i.ibb.co/WpFDFVSF/LC-12-u.webp"
+        name: "BX-00",
+        image: "https://i.ibb.co/jvYdnq90/LC-4-B00.webp"
       },
       {
-        id: "LC-0001",
-        name: "BX-00",
-        image: "https://i.ibb.co/rRbCYqnW/LC-000.png"
+        id: "LC-003",
+        name: "BX-24",
+        image: "https://i.ibb.co/7tqvWDcM/LC-2-B24.webp"
+      },
+      {
+        id: "LC-004",
+        name: "UX-12",
+        image: "https://i.ibb.co/Fbkt3N7V/LC-3-U12.webp"
       },
     ]
   },
   {
     id: "blade-008",
     name: "Viper Tail",
-    image: "https://i.ibb.co/DgsY0gyG/VT-1.png",
+    image: "https://i.ibb.co/Fqd2JgW8/VT-1-B16.webp",
     category: "blade",
     type:"stamina",
     price: "BX-16",
@@ -315,31 +320,31 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "VT-001",
-        name: "BX-16",
-        image: "https://i.ibb.co/4R0B6qPD/VT-16-2.png"
-      },
-      {
         id: "VT-002",
         name: "BX-16",
-        image: "https://i.ibb.co/Lzh2L00y/VT-16-3.png"
+        image: "https://i.ibb.co/23Tb48Z0/VT-2-B16.webp"
       },
       {
         id: "VT-003",
-        name: "BX-24",
-        image: "https://i.ibb.co/XrMt16FY/VT-24.png"
+        name: "BX-16",
+        image: "https://i.ibb.co/XxYkf2pq/VT-3-B16.webp"
       },
       {
         id: "VT-004",
+        name: "BX-24",
+        image: "https://i.ibb.co/BVLYS6Qz/VT-4-B24.webp"
+      },
+      {
+        id: "VT-005",
         name: "BX-35",
-        image: "https://i.ibb.co/C3JQfVSv/VT-35.png"
+        image: "https://i.ibb.co/W4Z2YTFC/VT-5-B35.webp"
       },
     ]
   },
   {
     id: "blade-009",
     name: "Rhino Horn",
-    image: "https://i.ibb.co/HDCPsfQR/RH-1.png",
+    image: "https://i.ibb.co/BHD7xD78/RH-1-B19.webp",
     category: "blade",
     type:"defense",
     price: "BX-19",
@@ -358,14 +363,14 @@ export const products: Product[] = [
       {
         id: "RH-001",
         name: "BX-31",
-        image: "https://i.ibb.co/B50srRLC/RH-31.png"
+        image: "https://i.ibb.co/dwyChgTD/RH-2-B31.webp"
       },
     ]
   },
   {
     id: "blade-010",
     name: "Dran Dagger",
-    image: "https://i.ibb.co/Z6DDxDLv/DD-1.png",
+    image: "https://i.ibb.co/0V2bg1Wf/DD-1-B20.webp",
     category: "blade",
     type:"attack",
     price: "BX-20",
@@ -382,26 +387,26 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "DD-001",
+        id: "DD-002",
         name: "BX-31",
-        image: "https://i.ibb.co/MkJWwg1Z/DD-31.png"
+        image: "https://i.ibb.co/60bF0hgd/DD-2-B31.webp"
       },
       {
-        id: "DD-0001",
-        name: "UX-00",
-        image: "https://i.ibb.co/v6Nzm88Q/DD-zz.webp"
-      },
-      {
-        id: "DD-0002",
+        id: "DD-003",
         name: "BX-00",
-        image: "https://i.ibb.co/xKzLW2TS/DD-000.png"
+        image: "https://i.ibb.co/zT62PX0G/DD-3-B00.webp"
+      },
+      {
+        id: "DD-004",
+        name: "UX-00",
+        image: "https://i.ibb.co/5WLJxJ7n/DD-4-U00.webp"
       },
     ]
   },
   {
     id: "blade-011",
     name: "Hells Chain",
-    image: "https://i.ibb.co/wNMztkLc/HC-1.png",
+    image: "https://i.ibb.co/Cs7GFrZW/HC-1-B21.webp",
     category: "blade",
     type:"balance",
     price: "BX-21",
@@ -418,21 +423,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "HC-001",
+        id: "HC-002",
         name: "BX-31",
-        image: "https://i.ibb.co/TMwprT2G/HC-31.png"
+        image: "https://i.ibb.co/hF91LLCt/HC-2-B31.webp"
       },
       {
-        id: "HC-0001",
+        id: "HC-003",
         name: "BX-00",
-        image: "https://i.ibb.co/93v6zvhg/HC-000.png"
+        image: "https://i.ibb.co/N2JBtG4F/HC-3-B00.webp"
       },
     ]
   },
   {
     id: "blade-012",
     name: "Phoenix Wing",
-    image: "https://i.ibb.co/1tLp3w13/PW-1.png",
+    image: "https://i.ibb.co/jk5WmMPQ/PW-1-B23.webp",
     category: "blade",
     type:"attack",
     price: "BX-23",
@@ -449,26 +454,26 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "PW-001",
+        id: "PW-002",
         name: "BX-35",
-        image: "https://i.ibb.co/LDY3805b/PW-35.png"
+        image: "https://i.ibb.co/1JQcjB3n/PW-2-B35.webp"
       },
       {
-        id: "PW-0001",
+        id: "PW-003",
         name: "BX-00",
-        image: "https://i.ibb.co/xKZ0S86c/PW-001.png"
+        image: "https://i.ibb.co/yckZp8YX/PW-3-B00.webp"
       },
       {
-        id: "PW-0002",
+        id: "PW-004",
         name: "BX-00",
-        image: "https://i.ibb.co/B5C3YgXC/PW-002.png"
+        image: "https://i.ibb.co/nsNSpDZM/PW-4-B00.webp"
       },
     ]
   },
   {
     id: "blade-013",
     name: "Wyvern Gale",
-    image: "https://i.ibb.co/gLF0hvY4/WG-1.png",
+    image: "https://i.ibb.co/nNwbhPn9/WG-1-B24.webp",
     category: "blade",
     type:"stamina",
     price: "BX-24",
@@ -485,26 +490,26 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "WG-001",
-        name: "BX-24",
-        image: "https://i.ibb.co/XfD6StfL/WG-24.png"
-      },
-      {
         id: "WG-002",
-        name: "UX-07",
-        image: "https://i.ibb.co/KCKHk0x/WG-U-07.png"
+        name: "BX-24",
+        image: "https://i.ibb.co/RTZLt8Wn/WG-2-B24.webp"
       },
       {
         id: "WG-003",
+        name: "UX-07",
+        image: "https://i.ibb.co/DHbvc2gF/WG-3-U07.webp"
+      },
+      {
+        id: "WG-004",
         name: "UX-12",
-        image: "https://i.ibb.co/35NQhrNJ/WG-12-u.png"
+        image: "https://i.ibb.co/SwDGpb6v/WG-4-U12.webp"
       },
     ]
   },
   {
     id: "blade-014",
     name: "Unicorn Sting",
-    image: "https://i.ibb.co/R4tdSGnv/US-1.png",
+    image: "https://i.ibb.co/Ngq8QzDT/US-1-B26.webp",
     category: "blade",
     type:"balance",
     price: "BX-26",
@@ -521,16 +526,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "US-001",
+        id: "US-002",
         name: "BX-35",
-        image: "https://i.ibb.co/PGw1y8PV/US-35.png"
+        image: "https://i.ibb.co/DPsr9PJF/US-2-B35.webp"
       },
     ]
   },
   {
     id: "blade-015",
     name: "Sphinx Cowl",
-    image: "https://i.ibb.co/DgrvPpBz/SC-1.png",
+    image: "https://i.ibb.co/Lz9t60PV/SC-1-B27.webp",
     category: "blade",
     type:"defense",
     price: "BX-27",
@@ -547,26 +552,26 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "PC-001",
-        name: "BX-27",
-        image: "https://i.ibb.co/PB99hg0/SC-27-2.png"
-      },
-      {
         id: "PC-002",
         name: "BX-27",
-        image: "https://i.ibb.co/Q3YJcGBv/SC-27-3.png"
+        image: "https://i.ibb.co/5hSjMhkS/SC-2-B27.webp"
       },
       {
         id: "PC-003",
+        name: "BX-27",
+        image: "https://i.ibb.co/Fqkq8Hvq/SC-3-B27.webp"
+      },
+      {
+        id: "PC-004",
         name: "UX-07",
-        image: "https://i.ibb.co/8wQ0rNj/SC-U-07.png"
+        image: "https://i.ibb.co/PG3h6nHR/SC-4-U07.webp"
       },
     ]
   },
   {
     id: "blade-016",
     name: "Dran Buster",
-    image: "https://i.ibb.co/fd1hgG5V/DB-1.png",
+    image: "https://i.ibb.co/jkhHF3kD/DB-1-U01.webp",
     category: "blade",
     type:"attack",
     price: "UX-01",
@@ -583,36 +588,51 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "DB-001",
+        id: "DB-002",
         name: "UX-04",
-        image: "https://i.ibb.co/y7NLbXh/DB-04.png"
+        image: "https://i.ibb.co/8nc3jQZ8/DB-2-U04.webp"
       },
       {
-        id: "DB-0001",
+        id: "DB-003",
         name: "UX-00",
-        image: "https://i.ibb.co/mrnVpspr/DB-z.webp"
+        image: "https://i.ibb.co/LXm2NgHp/DB-3-U00.webp"
       },
       {
-        id: "DB-0002",
+        id: "DB-004",
         name: "UX-00",
-        image: "https://i.ibb.co/yFTRQHyT/DB-zz.webp"
+        image: "https://i.ibb.co/GQksyfXB/DB-4-LTD1.webp"
       },
       {
-        id: "DB-0003",
+        id: "DB-005",
         name: "UX-00",
-        image: "https://i.ibb.co/ZRcyhgyQ/DB-zzz.webp"
+        image: "https://i.ibb.co/4ZTZKwt9/DB-5-LTD2.webp"
       },
       {
-        id: "DB-0004",
+        id: "DB-006",
+        name: "UX-00",
+        image: "https://i.ibb.co/GvCK9FW3/DB-6-LTD3.webp"
+      },
+      {
+        id: "DB-007",
+        name: "UX-00",
+        image: "https://i.ibb.co/pjMnLD7w/DB-7-U00.webp"
+      },
+      {
+        id: "DB-008",
+        name: "UX-00",
+        image: "https://i.ibb.co/yn47CjJb/DB-8-U00.webp"
+      },
+      {
+        id: "DB-009",
         name: "CX-08",
-        image: "https://i.ibb.co/8LsdbXm9/DB-C-08.png"
+        image: "https://i.ibb.co/MDLYBsgR/DB-9-C08.webp"
       },
     ]
   },
   {
     id: "blade-017",
     name: "Hells Hammer",
-    image: "https://i.ibb.co/YB26wDXF/HH-1.png",
+    image: "https://i.ibb.co/5h9B4pBW/HH-1-U02.webp",
     category: "blade",
     type:"balance",
     price: "UX-02",
@@ -629,21 +649,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "HH-001",
+        id: "HH-002",
         name: "UX-10",
-        image: "https://i.ibb.co/HDD24V9m/HH-10.png"
+        image: "https://i.ibb.co/3tzKJFW/HH-2-U10.webp"
       },
       {
-        id: "HH-002",
+        id: "HH-003",
         name: "UX-00",
-        image: "https://i.ibb.co/vvPXN3gL/HH-001.png"
+        image: "https://i.ibb.co/wrQFjYRd/HH-3-U00.webp"
       },
     ]
   },
   {
     id: "blade-018",
     name: "Wizard Rod",
-    image: "https://i.ibb.co/twF7k8Zn/WR-1.png",
+    image: "https://i.ibb.co/fY7sCHPy/WR-1-U03.webp",
     category: "blade",
     type:"stamina",
     price: "UX-03",
@@ -660,26 +680,26 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "WR-001",
-        name: "UX-04",
-        image: "https://i.ibb.co/xS75Kb9H/WR-U-4.png"
-      },
-      {
         id: "WR-002",
-        name: "BX-35",
-        image: "https://i.ibb.co/BV2p9SYM/WR-B-35.png"
+        name: "UX-04",
+        image: "https://i.ibb.co/fVR6nWmd/WR-2-U04.webp"
       },
       {
-        id: "WR-0001",
+        id: "WR-003",
+        name: "BX-35",
+        image: "https://i.ibb.co/KcKGrbHc/WR-3-B35.webp"
+      },
+      {
+        id: "WR-004",
         name: "G3 Prize",
-        image: "https://i.ibb.co/JWBC9R3t/WR-000.webp"
+        image: "https://i.ibb.co/YBkMFQS0/WR-4-G3P.webp"
       },
     ]
   },
   {
     id: "blade-019",
     name: "Tyranno Beat",
-    image: "https://i.ibb.co/h1yTRKk2/TB-1.png",
+    image: "https://i.ibb.co/ycnqcV1s/TB-1-B31.webp",
     category: "blade",
     type:"attack",
     price: "BX-31",
@@ -696,21 +716,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "TB-001",
+        id: "TB-002",
         name: "BX-31",
-        image: "https://i.ibb.co/YBRS4DCK/TB-31.png"
+        image: "https://i.ibb.co/gZpSpZDP/TB-2-B31.webp"
       },
       {
-        id: "TB-002",
+        id: "TB-003",
         name: "UX-10",
-        image: "https://i.ibb.co/1GzPrpdR/TB-u-10.png"
+        image: "https://i.ibb.co/KcdGRtMh/TB-3-U10.webp"
       },
     ]
   },
   {
     id: "blade-020",
     name: "Shinobi Shadow",
-    image: "https://i.ibb.co/0yyrZG6z/SS-1.png",
+    image: "https://i.ibb.co/9kQk4ZGV/SSw-1-U05.webp",
     category: "blade",
     type:"defense",
     price: "UX-05",
@@ -727,26 +747,26 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "SS-001",
+        id: "SSw-002",
         name: "UX-05",
-        image: "https://i.ibb.co/KjBRMVKK/SS-u-06-2.png"
+        image: "https://i.ibb.co/xtQ1WPWb/SSw-2-U005.webp"
       },
       {
-        id: "SS-002",
+        id: "SSw-003",
         name: "UX-05",
-        image: "https://i.ibb.co/nNjxwS3t/SS-u-06-3.png"
+        image: "https://i.ibb.co/MkdtLYq3/SSw-3-U05.webp"
       },
       {
-        id: "SS-003",
+        id: "SSw-004",
         name: "UX-12",
-        image: "https://i.ibb.co/LDK7XDQ4/SS-12-u.webp"
+        image: "https://i.ibb.co/kgNMDjGv/SSw-4-U12.webp"
       },
     ]
   },
   {
     id: "blade-021",
     name: "Weiss Tiger",
-    image: "https://i.ibb.co/FbdGN8CS/WT-1.png",
+    image: "https://i.ibb.co/27w3KWWC/WT-1-B33.webp",
     category: "blade",
     type:"balance",
     price: "BX-33",
@@ -763,16 +783,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "SS-001",
-    //     name: "UX-05",
-    //     image: "https://i.ibb.co/NgCj5pKS/SS-5-u1.webp"
+    //     id: "WW-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
     id: "blade-022",
     name: "Cobalt Dragoon",
-    image: "https://i.ibb.co/hJs3hKHd/CDG-1.png",
+    image: "https://i.ibb.co/pvQHqSHM/CDg-1-B34.webp",
     category: "blade",
     type:"attack",
     price: "BX-34",
@@ -789,21 +809,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "CDG-0001",
+        id: "CDg-002",
         name: "BX-00",
-        image: "https://i.ibb.co/rRjGqVpv/CD-z.webp"
+        image: "https://i.ibb.co/GvN6TM6Y/CDg-2-B00.webp"
       },
       {
-        id: "CDG-0002",
+        id: "CDg-003",
         name: "CX-08",
-        image: "https://i.ibb.co/qYtHtCGy/CDG-C-08.png"
+        image: "https://i.ibb.co/0Vyt3PK2/CDg-3-C08.webp"
       },
     ]
   },
   {
     id: "blade-023",
     name: "Black Shell",
-    image: "https://i.ibb.co/60PCxGBq/BS-1.png",
+    image: "https://i.ibb.co/kV9RTVYn/BSl-1-B35.webp",
     category: "blade",
     type:"defense",
     price: "BX-35",
@@ -820,21 +840,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "BS-001",
+        id: "BSl-002",
         name: "BX-35",
-        image: "https://i.ibb.co/8gmJGjqf/BS-35-2.png"
+        image: "https://i.ibb.co/x8cKGMGw/BSl-2-B35.webp"
       },
       {
-        id: "BS-002",
+        id: "BSl-003",
         name: "CX-08",
-        image: "https://i.ibb.co/RkYzn8fm/BD-C-08.png"
+        image: "https://i.ibb.co/5xtZDZrh/BSl-3-C08.webp"
       },
     ]
   },
   {
     id: "blade-024",
     name: "Leon Crest",
-    image: "https://i.ibb.co/Z1vYJ9n5/LCT-1.png",
+    image: "https://i.ibb.co/Zz3D7qkL/LCT-1-U06.webp",
     category: "blade",
     type:"defense",
     price: "UX-06",
@@ -851,16 +871,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "LCr-001",
+        id: "LCT-001",
         name: "CX-05",
-        image: "https://i.ibb.co/3yN6qJLW/LC-5-c.webp"
+        image: "https://i.ibb.co/ymsy12LQ/LCT-2-C05.webp"
       },
     ]
   },
   {
     id: "blade-025",
     name: "Phoenix Rudder",
-    image: "https://i.ibb.co/WN9bPYSz/PR-1.png",
+    image: "https://i.ibb.co/VcbnBVfV/PR-1-U07.webp",
     category: "blade",
     type:"stamina",
     price: "UX-07",
@@ -877,16 +897,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "SS-001",
+        id: "PR-002",
         name: "CX-05",
-        image: "https://i.ibb.co/s93SHXbp/PR-5-c.webp"
+        image: "https://i.ibb.co/XvZnwDC/PR-2-C05.webp"
       },
     ]
   },
   {
     id: "blade-026",
     name: "Whale Wave",
-    image: "https://i.ibb.co/wN1KLCBg/WW-1.png",
+    image: "https://i.ibb.co/v6WNXDz3/WW-1-B36.webp",
     category: "blade",
     type:"balance",
     price: "BX-36",
@@ -903,26 +923,26 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "SS-001",
+        id: "WW-002",
         name: "BX-36",
-        image: "https://i.ibb.co/9m7x8cVc/WW-36-2.png"
+        image: "https://i.ibb.co/mVvtBGY7/WW-2-B36.webp"
       },
       {
-        id: "SS-002",
+        id: "WW-003",
         name: "BX-36",
-        image: "https://i.ibb.co/W4dvnnqy/WW-36-3.png"
+        image: "https://i.ibb.co/wnyW6K6/WW-3-B36.webp"
       },
       {
-        id: "SS-003",
+        id: "WW-004",
         name: "CX-05",
-        image: "https://i.ibb.co/NdDLMxvR/WW-5-c.webp"
+        image: "https://i.ibb.co/gKnzQDL/WW-4-C05.webp"
       },
     ]
   },
   {
     id: "blade-027",
     name: "Bear Scratch",
-    image: "https://i.ibb.co/dswq6WMy/BS-1.png",
+    image: "https://i.ibb.co/SDfXPWbF/BSc-1-B37.webp",
     category: "blade",
     type:"attack",
     price: "BX-37",
@@ -939,16 +959,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "SS-001",
-    //     name: "BX-36",
-    //     image: "https://i.ibb.co/jk69tQ85/WW-36-2.webp"
+    //     id: "BSc-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
     id: "blade-028",
     name: "Silver Wolf",
-    image: "https://i.ibb.co/zTxTzB2m/SW-1.png",
+    image: "https://i.ibb.co/4gZf8gxT/SW-1-U08.webp",
     category: "blade",
     type:"stamina",
     price: "UX-08",
@@ -965,16 +985,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "SS-001",
-    //     name: "BX-36",
-    //     image: "https://i.ibb.co/jk69tQ85/WW-36-2.webp"
+    //     id: "SW-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
     id: "blade-029",
     name: "Samurai Saber",
-    image: "https://i.ibb.co/rRVSJWjV/SSR-1.png",
+    image: "https://i.ibb.co/1txNx0QD/SSr-1-U09.webp",
     category: "blade",
     type:"attack",
     price: "UX-09",
@@ -991,16 +1011,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "SS-001",
+        id: "SSr-002",
         name: "UX-00",
-        image: "https://i.ibb.co/TqbZhBVT/itggboz9ofne1-Photoroom.png"
+        image: "https://i.ibb.co/bjSHyzWg/SSr-2-U00.webp"
       },
     ]
   },
   {
     id: "blade-030",
     name: "Knight Mail",
-    image: "https://i.ibb.co/s9xRsddW/KM-1.png",
+    image: "https://i.ibb.co/zHBzhLzt/KM-1-U10.webp",
     category: "blade",
     type:"defense",
     price: "UX-10",
@@ -1017,16 +1037,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "SS-001",
-    //     name: "BX-36",
-    //     image: "https://i.ibb.co/jk69tQ85/WW-36-2.webp"
+    //     id: "KM-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
     id: "blade-031",
     name: "Ptera Swing",
-    image: "https://i.ibb.co/zWRpjqyL/PS-1.webp",
+    image: "https://i.ibb.co/BHsTx3T2/PS-1-U10.webp",
     category: "blade",
     type:"stamina",
     price: "UX-10",
@@ -1043,16 +1063,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "SS-001",
-    //     name: "BX-36",
-    //     image: "https://i.ibb.co/jk69tQ85/WW-36-2.webp"
+    //     id: "PS-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
     id: "blade-032",
     name: "Crimson Garuda",
-    image: "https://i.ibb.co/Wvf8FHG1/CG-1.png",
+    image: "https://i.ibb.co/HD6qp9nf/CG-1-B38.webp",
     category: "blade",
     type:"balance",
     price: "BX-38",
@@ -1069,16 +1089,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "SS-001",
-    //     name: "BX-36",
-    //     image: "https://i.ibb.co/jk69tQ85/WW-36-2.webp"
+    //     id: "CG-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
     id: "blade-033",
     name: "Impact Drake",
-    image: "https://i.ibb.co/whTStpLr/ID-1.png",
+    image: "https://i.ibb.co/93VWgjL1/ID-1-U11.webp",
     category: "blade",
     type:"attack",
     price: "UX-11",
@@ -1095,16 +1115,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "SS-001",
-    //     name: "BX-36",
-    //     image: "https://i.ibb.co/jk69tQ85/WW-36-2.webp"
+    //     id: "ID-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
     id: "blade-034",
     name: "Ghost Circle",
-    image: "https://i.ibb.co/Gvw2w2j2/GC-1.png",
+    image: "https://i.ibb.co/7tJZH3hb/GC-1-U12.webp",
     category: "blade",
     type:"stamina",
     price: "UX-12",
@@ -1121,16 +1141,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "GC-001",
+        id: "GC-002",
         name: "UX-12",
-        image: "https://i.ibb.co/Z61hpcgT/GC-12-u.png"
+        image: "https://i.ibb.co/MyKCQx7y/GC-2-U12.webp"
       },
     ]
   },
   {
     id: "blade-035",
     name: "Golem Rock",
-    image: "https://i.ibb.co/8DnB1v8j/GR-1.png",
+    image: "https://i.ibb.co/N0MY0LF/GR-1-U13.webp",
     category: "blade",
     type:"defense",
     price: "UX-13",
@@ -1147,16 +1167,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "SS-001",
-    //     name: "BX-36",
-    //     image: "https://i.ibb.co/jk69tQ85/WW-36-2.webp"
+    //     id: "GR-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
     id: "blade-036",
     name: "Shleter Drake",
-    image: "https://i.ibb.co/BHjdn4rh/latest-41101-Photoroom.webp",
+    image: "https://i.ibb.co/xqPCD6hq/SDk-1-B39.webp",
     category: "blade",
     type:"balance",
     price: "BX-39",
@@ -1173,21 +1193,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "SD-001",
+        id: "SDk-002",
         name: "BX-39",
-        image: "https://i.ibb.co/B5y70nNv/SD-39-1.png"
+        image: "https://i.ibb.co/8npbt9wf/SDk-2-B39.webp"
       },
       {
-        id: "SD-001",
+        id: "SDk-003",
         name: "BX-39",
-        image: "https://i.ibb.co/S7RCqT0K/SD-39-2.png"
+        image: "https://i.ibb.co/VppwHZK7/SDk-3-B39.webp"
       },
     ]
   },
   {
     id: "blade-037",
     name: "Dran Brave S",
-    image: "https://i.ibb.co/wVzVsM8/DBS-1.webp",
+    image: "https://i.ibb.co/WNP49D0p/DBS-1-C01.webp",
     category: "blade",
     type:"attack",
     price: "CX-01",
@@ -1205,16 +1225,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "DBS-001",
+        id: "DBS-002",
         name: "CX-04",
-        image: "https://i.ibb.co/8gzdrSXx/DBS-4-c.webp"
+        image: "https://i.ibb.co/0pYwhrRB/DBS-2-C04.webp"
       },
     ]
   },
   {
     id: "blade-038",
     name: "Wizard Arc R",
-    image: "https://i.ibb.co/7Jxb2bbS/WAR-1.webp",
+    image: "https://i.ibb.co/PzrFrsqt/WAR-1-C02.webp",
     category: "blade",
     type:"stamina",
     price: "CX-02",
@@ -1232,16 +1252,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "WAR-001",
+        id: "WAR-002",
         name: "CX-00",
-        image: "https://i.ibb.co/5XDjf4kM/WAR-2.png"
+        image: "https://i.ibb.co/JRy1Ch0Y/WAR-2-C00.webp"
       },
     ]
   },
   {
     id: "blade-039",
     name: "Perseus Dark B",
-    image: "https://i.ibb.co/sJwT5YbW/PDB-1.webp",
+    image: "https://i.ibb.co/1Cq0bqk/PDB-1-C03.webp",
     category: "blade",
     type:"defense",
     price: "CX-03",
@@ -1259,21 +1279,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "DBS-001",
+        id: "PDB-002",
         name: "CX-04",
-        image: "https://i.ibb.co/B2XwZhLj/PDB-4-c.webp"
+        image: "https://i.ibb.co/M5jDMj6y/PDB-2-C04.webp"
       },
       {
-        id: "DBS-0001",
+        id: "PDB-003",
         name: "G3 Prize",
-        image: "https://i.ibb.co/v4Rq8jqw/PDB-3.png"
+        image: "https://i.ibb.co/pBTH7C8y/PDB-3-G3-P.webp"
       },
     ]
   },
   {
     id: "blade-040",
     name: "Hells Reaper T",
-    image: "https://i.ibb.co/XZd94Nrb/HR-1.webp",
+    image: "https://i.ibb.co/Fk094YjS/HRT-1-C05.webp",
     category: "blade",
     type:"balance",
     price: "CX-05",
@@ -1291,16 +1311,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "DBS-001",
+        id: "HRT-002",
         name: "CX-05 (Hells Arc T)",
-        image: "https://i.ibb.co/wFvzNHLw/HA-5-c.webp"
+        image: "https://i.ibb.co/vxRW58zD/HRT-2-C05.webp"
       },
     ]
   },
   {
     id: "blade-041",
     name: "Rhino Reaper C",
-    image: "https://i.ibb.co/zVHV9KMF/RR-1.webp",
+    image: "https://i.ibb.co/VYwCTRkb/RRC-1-C05.webp",
     category: "blade",
     type:"defense",
     price: "CX-05",
@@ -1318,8 +1338,8 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "DBS-001",
-    //     name: "CX-05",
+    //     id: "RRC-002",
+    //     name: "",
     //     image: ""
     //   },
     // ]
@@ -1327,7 +1347,7 @@ export const products: Product[] = [
   {
     id: "blade-042",
     name: "Scorpio Spear",
-    image: "https://i.ibb.co/1fMqT8g5/SSp-1.png",
+    image: "https://i.ibb.co/391sdH6d/SSp-1-U14.webp",
     category: "blade",
     type:"balance",
     price: "UX-14",
@@ -1344,8 +1364,8 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "DBS-001",
-    //     name: "CX-05",
+    //     id: "SSp-002",
+    //     name: "",
     //     image: ""
     //   },
     // ]
@@ -1353,14 +1373,14 @@ export const products: Product[] = [
   {
     id: "blade-043",
     name: "Fox Brush J",
-    image: "https://i.ibb.co/LDHdzXVt/FB-01.png",
+    image: "https://i.ibb.co/XwHSLJr/FBJ-1-C06.webp",
     category: "blade",
     type:"attack",
     price: "CX-06",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
-      "Weight": "~? g",
+      "Weight": "~36? g",
       "Stock Combo": "9-70 Gear Rush",
       "Assist Blade": "Jaggy",
       "Product Line": "CX",
@@ -1371,28 +1391,28 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "FBJ-001",
-        name: "CX-06",
-        image: "https://i.ibb.co/N6QSyByy/FB-02.png"
-      },
-      {
         id: "FBJ-002",
         name: "CX-06",
-        image: "https://i.ibb.co/zVm8tq61/FB-03.png"
+        image: "https://i.ibb.co/8DB3pTJb/FBJ-2-C06.webp"
+      },
+      {
+        id: "FBJ-003",
+        name: "CX-06",
+        image: "https://i.ibb.co/PZPHR9Bp/FBJ-3-C06.webp"
       },
     ]
   },
   {
     id: "blade-044",
     name: "Tricera Press",
-    image: "https://i.ibb.co/S71mKW8j/beyblade-x-bx-44-tricera-press-m-85-bs-1.png",
+    image: "https://i.ibb.co/KxPCPGJp/TPs-1-B44.webp",
     category: "blade",
     type:"defense",
     price: "BX-44",
     specs: {
       "Type": "Defense",
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~36 g",
       "Stock Combo": "M-85 BS",
       "Product Line": "BX",
     },
@@ -1402,8 +1422,8 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "DBS-001",
-    //     name: "CX-05",
+    //     id: "TPs-002",
+    //     name: "",
     //     image: ""
     //   },
     // ]
@@ -1411,7 +1431,7 @@ export const products: Product[] = [
   {
     id: "blade-045",
     name: "Pegasus Blast A",
-    image: "https://i.ibb.co/7tfq7JB6/PBA-1.png",
+    image: "https://i.ibb.co/zhvkgRmL/PBA-1-C07.webp",
     category: "blade",
     type:"attack",
     price: "CX-07",
@@ -1428,8 +1448,8 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "DBS-001",
-    //     name: "CX-05",
+    //     id: "PBA-002",
+    //     name: "",
     //     image: ""
     //   },
     // ]
@@ -1437,7 +1457,7 @@ export const products: Product[] = [
   {
     id: "blade-046",
     name: "Cerberus Flame W",
-    image: "https://i.ibb.co/fY6x6D4w/CFW-1.png",
+    image: "https://i.ibb.co/VcQ0v6Ls/CFW-1-C08.webp",
     category: "blade",
     type:"stamina",
     price: "CX-08",
@@ -1455,16 +1475,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "CFW-001",
+        id: "CFW-002",
         name: "CX-08 (Cerberus Dark W)",
-        image: "https://i.ibb.co/gM52N88N/CFW-2.png"
+        image: "https://i.ibb.co/zWN3G949/CFW-2-C08.webp"
       },
     ]
   },
   {
     id: "blade-047",
     name: "Whale Flame M",
-    image: "https://i.ibb.co/27NPqgMd/WFM-1.png",
+    image: "https://i.ibb.co/tpHHqbQh/WFM-1-C08.webp",
     category: "blade",
     type:"balance",
     price: "CX-08",
@@ -1482,8 +1502,8 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "DBS-001",
-    //     name: "CX-05",
+    //     id: "WFM-002",
+    //     name: "",
     //     image: ""
     //   },
     // ]
@@ -1493,7 +1513,7 @@ export const products: Product[] = [
   {
     id: "blade-R001",
     name: "Cobalt Drake",
-    image: "https://i.ibb.co/C54Qpyn8/CD-1.png",
+    image: "https://i.ibb.co/KjHsS8q2/CDk-1-B00.webp",
     category: "blade",
     type: ["attack", "rare"],
     price: "BX-00",
@@ -1510,16 +1530,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "CD-001",
+        id: "CDk-002",
         name: "BX-00",
-        image: "https://i.ibb.co/wFCZGcRP/CDr-2.webp"
+        image: "https://i.ibb.co/4ggqPtvt/CDk-2-B00.webp"
       },
     ]
   },
   {
     id: "blade-R002",
     name: "Phoenix Feather",
-    image: "https://i.ibb.co/Nd2ccxB9/PF-1.webp",
+    image: "https://i.ibb.co/NgYDNzQ0/PF-1-B00.webp",
     category: "blade",
     type: ["attack", "rare"],
     price: "BX-00",
@@ -1536,21 +1556,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "PF-001",
+        id: "PF-002",
         name: "UX-12",
-        image: "https://i.ibb.co/ZQbJ786/PF-12-u.webp"
+        image: "https://i.ibb.co/MyvGTPGr/PF-2-U12.webp"
       },
       {
         id: "PF-002",
         name: "BX-00",
-        image: "https://i.ibb.co/M5RDnJg7/jaqz1iwsmqsamgenxevg.webp"
+        image: "https://i.ibb.co/bjY3fZy8/PF-3-B00.webp"
       },
     ]
   },
   {
     id: "blade-R003",
     name: "Aero Pegasus",
-    image: "https://i.ibb.co/Hpgpy4Lj/AP-1.png",
+    image: "https://i.ibb.co/5XY6MgBH/AP-1-U00.webp",
     category: "blade",
     type: ["attack", "rare"],
     price: "UX-00",
@@ -1567,16 +1587,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "PF-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/ZQbJ786/PF-12-u.webp"
+    //     id: "AP-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
     id: "blade-R004",
     name: "Shinobi Knife (XONE)",
-    image: "https://i.ibb.co/KxD3yH27/SK-00.webp",
+    image: "https://i.ibb.co/vxw8CZC7/SK-1-XONE.webp",
     category: "blade",
     type: ["attack", "rare"],
     price: "BX-00",
@@ -1593,16 +1613,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "PF-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/ZQbJ786/PF-12-u.webp"
+    //     id: "SK-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
     id: "blade-R005",
     name: "Mammoth Tusk",
-    image: "https://i.ibb.co/n8MrJrzf/MT-1.png",
+    image: "https://i.ibb.co/mrrM6Jzz/MT-1-B00.webp",
     category: "blade",
     type: ["balance", "rare"],
     price: "BX-00",
@@ -1619,16 +1639,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "PF-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/ZQbJ786/PF-12-u.webp"
+    //     id: "MT-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
     id: "blade-R006",
     name: "Croc Crunch",
-    image: "https://i.ibb.co/3YBNb2zT/CC-1.png",
+    image: "https://i.ibb.co/C3jpr2Th/CC-1-B00.webp",
     category: "blade",
     type: ["attack", "rare"],
     price: "BX-00",
@@ -1645,16 +1665,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "PF-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/ZQbJ786/PF-12-u.webp"
+    //     id: "CC-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
     id: "blade-R007",
     name: "Samurai Steel",
-    image: "https://i.ibb.co/p5LppZ6/SST-1.png",
+    image: "https://i.ibb.co/ZRdNsxyV/SSt-1-B00.webp",
     category: "blade",
     type:["attack", "rare"],
     price: "BX-00",
@@ -1671,16 +1691,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "PF-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/ZQbJ786/PF-12-u.webp"
+    //     id: "SSt-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
     id: "blade-R008",
     name: "Leon Fang T (Red Ver.)",
-    image: "https://i.ibb.co/q3gjnV5K/LC-01.png",
+    image: "https://i.ibb.co/twWHjc2b/LFT-1-RED.webp",
     category: "blade",
     type:["attack", "rare"],
     price: "CX-00",
@@ -1698,16 +1718,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "PF-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/ZQbJ786/PF-12-u.webp"
+    //     id: "LFT-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
     id: "blade-R009",
     name: "Dran Arc S (MC Blue)",
-    image: "https://i.ibb.co/RGNxkK1N/Persona-CX.png",
+    image: "https://i.ibb.co/Hp9J3rBn/Persona-CX.webp",
     category: "blade",
     type:["balance", "rare"],
     price: "CX-00",
@@ -1725,9 +1745,9 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "PF-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/ZQbJ786/PF-12-u.webp"
+    //     id: "DAS-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
@@ -4202,9 +4222,9 @@ export const products: Product[] = [
     ],
     pro: [
       {
-        id: "DS-001",
+        id: "DS-002",
         name: "Dran Sword (Special Ver.)",
-        image: "https://i.ibb.co/Fkdd5MxY/1-DS-07.webp"
+        image: "https://i.ibb.co/mCsJJFYs/DS-2-B07.webp"
       },
       {
         id: "Lun07-001",
@@ -4238,17 +4258,17 @@ export const products: Product[] = [
       {
         id: "B8-001",
         name: "Hells Scythe 3-80 Ball",
-        image: "https://i.ibb.co/jkfwRDHh/2-HS-08.webp"
+        image: "https://i.ibb.co/sdKqGYNk/HS-3-B08.webp"
       },
       {
         id: "B8-002",
         name: "Wizard Arrow 4-60 Needle",
-        image: "https://i.ibb.co/xtTKsL9M/3-WA-08.webp"
+        image: "https://i.ibb.co/xSdv8S60/WA-3-B08.webp"
       },
       {
         id: "B8-003",
         name: "Knight Shield 4-80 Taper",
-        image: "https://i.ibb.co/4nV7W119/4-ks-08.webp"
+        image: "https://i.ibb.co/6cXM80JP/KS-3-B08.webp"
       },
     ]
   },
@@ -4309,12 +4329,12 @@ export const products: Product[] = [
       {
         id: "B17-001",
         name: "DranSword 3-60 Flat (Red Ver.)",
-        image: "https://i.ibb.co/Y4fQhv0w/1-DS-17.webp"
+        image: "https://i.ibb.co/VYF6BrfF/DS-4-B17.webp"
       },
       {
         id: "B17-002",
         name: "WizardArrow 4-80 Ball (Blue Ver.)",
-        image: "https://i.ibb.co/GfV55FNc/3-WA-17.webp"
+        image: "https://i.ibb.co/XZ4cTffR/WA-5-B17.webp"
       },
       {
         id: "B17-003",
@@ -4410,12 +4430,12 @@ export const products: Product[] = [
       {
         id: "U4-001",
         name: "DranBuster 1-60 A (Special Ver.)",
-        image: "https://i.ibb.co/MkggbxSx/DB-04-u.webp"
+        image: "https://i.ibb.co/8nc3jQZ8/DB-2-U04.webp"
       },
       {
         id: "U4-002",
         name: "WizardRod 5-70 DB (Special Ver.)",
-        image: "https://i.ibb.co/606W65x8/WR-4-u.webp"
+        image: "https://i.ibb.co/fVR6nWmd/WR-2-U04.webp"
       },
       {
         id: "U4-003",
@@ -4447,7 +4467,7 @@ export const products: Product[] = [
       {
         id: "B32-001",
         name: "BearScratch 5-60 Flat",
-        image: "https://i.ibb.co/fmvksfJ/BS-1.png"
+        image: "https://i.ibb.co/SDfXPWbF/BSc-1-B37.webp"
       },
       {
         id: "B17-002",
@@ -4488,12 +4508,12 @@ export const products: Product[] = [
       {
         id: "C4-001",
         name: "DranBrave S 6-60 V (Special Ver.)",
-        image: "https://i.ibb.co/8gzdrSXx/DBS-4-c.webp"
+        image: "https://i.ibb.co/0pYwhrRB/DBS-2-C04.webp"
       },
       {
         id: "C4-002",
         name: "PerseusDark B 6-80 W (Special Ver.)",
-        image: "https://i.ibb.co/B2XwZhLj/PDB-4-c.webp"
+        image: "https://i.ibb.co/M5jDMj6y/PDB-2-C04.webp"
       },
       {
         id: "C4-003",
@@ -4557,7 +4577,7 @@ export const products: Product[] = [
   {
     id: "OBS-001",
     name: "Dranzer Spiral",
-    image: "https://i.ibb.co/bRdy8HVg/DSL-1.png",
+    image: "https://i.ibb.co/Txb1ckbY/DSL-1.webp",
     category: "x-over",
     type: "balance",
     price: "BX-00",
@@ -4571,16 +4591,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "DSL-001",
+        id: "DSL-002",
         name: "BX-00",
-        image: "https://i.ibb.co/spS54y8Y/DSL-2.png"
+        image: "https://i.ibb.co/hxvhHGbm/DSL-2.webp"
       },
     ]
   },
   {
     id: "OBS-002",
     name: "Driger Slash",
-    image: "https://i.ibb.co/v4417p0Y/DSH-1.png",
+    image: "https://i.ibb.co/cSWdnpXM/DSH-1.webp",
     category: "x-over",
     type: "balance",
     price: "BX-00",
@@ -4596,7 +4616,7 @@ export const products: Product[] = [
   {
     id: "OBS-003",
     name: "Draciel Shield",
-    image: "https://i.ibb.co/3YfdwtpF/DSD-1.png",
+    image: "https://i.ibb.co/gbMjd9Nv/DSD-1.webp",
     category: "x-over",
     type: "defense",
     price: "BX-00",
@@ -4612,7 +4632,7 @@ export const products: Product[] = [
   {
     id: "OBS-004",
     name: "Dragoon Storm",
-    image: "https://i.ibb.co/VpBZPP0x/Dragoon-Storm-4-60-RA-Photoroom.png",
+    image: "https://i.ibb.co/cS5tT3qF/DST-1.webp",
     category: "x-over",
     type: "attack",
     price: "BX-00 25th Anniversary",
@@ -4630,7 +4650,7 @@ export const products: Product[] = [
   {
     id: "OMF-001",
     name: "Lightning L-Drago (Upper)",
-    image: "https://i.ibb.co/RT98SSpJ/LDU-1.png",
+    image: "https://i.ibb.co/M5CXBJWZ/LDU-1.webp",
     category: "x-over",
     type: "attack",
     price: "BX-00",
@@ -4642,27 +4662,18 @@ export const products: Product[] = [
       "Product Line": "BX",
       "Original Generation": "Metal Fight Beyblade",
     },
-  },
-  {
-    id: "OMF-002",
-    name: "Lightning L-Drago (Rapid)",
-    image: "https://i.ibb.co/HDHpCtKQ/LDR-1.png",
-    category: "x-over",
-    type: "attack",
-    price: "BX-00",
-    specs: {
-      "Type": "Attack",
-      "Spin": "Left",
-      "Weight": "~33 g",
-      "Stock Combo": "1-60 Flat",
-      "Product Line": "BX",
-      "Original Generation": "Metal Fight Beyblade",
-    },
+    bey: [
+      {
+        id: "LDR-002",
+        name: "BX-00(Rapid)",
+        image: "https://i.ibb.co/SXDGLZnV/LDR-1.webp"
+      },
+    ]
   },
   {
     id: "OMF-003",
     name: "Storm Pegasis",
-    image: "https://i.ibb.co/chFyzmBp/SPS-1.png",
+    image: "https://i.ibb.co/gL0YjrkQ/SPS-1.webp",
     category: "x-over",
     type: "attack",
     price: "BX-00 25th Anniversary",
@@ -4680,7 +4691,7 @@ export const products: Product[] = [
   {
     id: "OBB-001",
     name: "Victory Valkyrie",
-    image: "https://i.ibb.co/7dhDTs6x/VVV-1.png",
+    image: "https://i.ibb.co/DDmVg7gb/VVV-1.webp",
     category: "x-over",
     type: "attack",
     price: "BX-00 25th Anniversary",
@@ -4696,7 +4707,7 @@ export const products: Product[] = [
   {
     id: "OBB-002",
     name: "Xeno Xcalibur",
-    image: "https://i.ibb.co/N2dYzCMF/XXX-1.png",
+    image: "https://i.ibb.co/SX9LvxSZ/XXX-1.webp",
     category: "x-over",
     type: "attack",
     price: "BX-00",
@@ -4714,7 +4725,7 @@ export const products: Product[] = [
   {
     id: "CLB-001",
     name: "Luke Skywalker",
-    image: "https://i.ibb.co/xt5XFNmB/Star-1.png",
+    image: "https://i.ibb.co/Gf7MDs1X/Star1.webp",
     category: "x-over",
     type: "stamina",
     price: "BX-00",
@@ -4730,7 +4741,7 @@ export const products: Product[] = [
   {
     id: "CLB-002",
     name: "Darth Vader",
-    image: "https://i.ibb.co/YBLNbpPz/Star-2.png",
+    image: "https://i.ibb.co/1tHxb5mt/Star2.webp",
     category: "x-over",
     type: "balance",
     price: "BX-00",
@@ -4746,7 +4757,7 @@ export const products: Product[] = [
   {
     id: "CLB-003",
     name: "The Mandalorian",
-    image: "https://i.ibb.co/tw6gBm7m/Star-3.png",
+    image: "https://i.ibb.co/238Q6j7J/Star3.webp",
     category: "x-over",
     type: "attack",
     price: "BX-00",
@@ -4762,7 +4773,7 @@ export const products: Product[] = [
   {
     id: "CLB-004",
     name: "Moff Gideon",
-    image: "https://i.ibb.co/PvKBPGkW/Star-4.png",
+    image: "https://i.ibb.co/Kj8Nfh4g/Star4.webp",
     category: "x-over",
     type: "defense",
     price: "BX-00",
@@ -4778,7 +4789,7 @@ export const products: Product[] = [
   {
     id: "CLB-005",
     name: "Optimus Prime",
-    image: "https://i.ibb.co/Y73vktvM/Trans-1.png",
+    image: "https://i.ibb.co/gZGDNpsj/Trans1.webp",
     category: "x-over",
     type: "balance",
     price: "BX-00",
@@ -4794,7 +4805,7 @@ export const products: Product[] = [
   {
     id: "CLB-006",
     name: "Megatron",
-    image: "https://i.ibb.co/RkqM7vxy/Trans-2.png",
+    image: "https://i.ibb.co/G4yxCC6c/Trans2.webp",
     category: "x-over",
     type: "stamina",
     price: "BX-00",
@@ -4810,7 +4821,7 @@ export const products: Product[] = [
   {
     id: "CLB-007",
     name: "Optimus Primal",
-    image: "https://i.ibb.co/LDVzqRmx/Trans-3.png",
+    image: "https://i.ibb.co/zT3sxjyB/Trans3.webp",
     category: "x-over",
     type: "attack",
     price: "BX-00",
@@ -4826,7 +4837,7 @@ export const products: Product[] = [
   {
     id: "CLB-008",
     name: "Star Scream",
-    image: "https://i.ibb.co/DPtYzN5H/Trans-4.png",
+    image: "https://i.ibb.co/PzVSrxdm/Trans4.webp",
     category: "x-over",
     type: "defense",
     price: "BX-00",
@@ -4842,7 +4853,7 @@ export const products: Product[] = [
   {
     id: "CLB-009",
     name: "Iron Man",
-    image: "https://i.ibb.co/MxMtTnfP/Mar-1.png",
+    image: "https://i.ibb.co/Df1jK98q/Marvel1.webp",
     category: "x-over",
     type: "stamina",
     price: "BX-00",
@@ -4858,7 +4869,7 @@ export const products: Product[] = [
   {
     id: "CLB-010",
     name: "Thanos",
-    image: "https://i.ibb.co/21sTGQHc/Mar-2.png",
+    image: "https://i.ibb.co/chyBrhbJ/Marvel2.webp",
     category: "x-over",
     type: "balance",
     price: "BX-00",
@@ -4874,7 +4885,7 @@ export const products: Product[] = [
   {
     id: "CLB-011",
     name: "Spider Man",
-    image: "https://i.ibb.co/GQk0VkpR/Mar-3.png",
+    image: "https://i.ibb.co/PGwj3Dhv/Marvel3.webp",
     category: "x-over",
     type: "attack",
     price: "BX-00",
@@ -4890,7 +4901,7 @@ export const products: Product[] = [
   {
     id: "CLB-012",
     name: "Venom",
-    image: "https://i.ibb.co/vvqbjP3f/Mar-4.png",
+    image: "https://i.ibb.co/zWCNSNhS/Marvel4.webp",
     category: "x-over",
     type: "defense",
     price: "BX-00",
@@ -4906,7 +4917,7 @@ export const products: Product[] = [
   {
     id: "CLB-013",
     name: "T.Rex",
-    image: "https://i.ibb.co/Gfw7fCmM/Jura-1.png",
+    image: "https://i.ibb.co/TM6b09kq/Jura-1.webp",
     category: "x-over",
     type: "stamina",
     price: "BX-00",
@@ -4922,7 +4933,7 @@ export const products: Product[] = [
   {
     id: "CLB-014",
     name: "Mosasaurus",
-    image: "https://i.ibb.co/0pYWKNP3/Jura-2.png",
+    image: "https://i.ibb.co/rR443LXd/Jura-2.webp",
     category: "x-over",
     type: "balance",
     price: "BX-00",
@@ -4936,9 +4947,9 @@ export const products: Product[] = [
     },
   },
   {
-    id: "CLB-016",
+    id: "CLB-015",
     name: "Spinosaurus",
-    image: "https://i.ibb.co/ymJ37cK0/Jura-3.png",
+    image: "https://i.ibb.co/Z6dbCbrP/Jura-3.webp",
     category: "x-over",
     type: "attack",
     price: "BX-00",
@@ -4954,7 +4965,7 @@ export const products: Product[] = [
   {
     id: "CLB-016",
     name: "Quetzalcoatlus",
-    image: "https://i.ibb.co/n8PzhqX9/Jura-4.png",
+    image: "https://i.ibb.co/Lz0yMdTy/Jura-4.webp",
     category: "x-over",
     type: "defense",
     price: "BX-00",
@@ -4972,7 +4983,7 @@ export const products: Product[] = [
   {
     id: "CD001",
     name: "Credits? Why you want to know that???",
-    image: "https://i.ibb.co/FbCrtZND/4Wat-1.jpg",
+    image: "https://i.ibb.co/0pcrGh1N/Credit.webp",
     category: "credits",
     price: "This website don't want anything from you.",
     specs: {
