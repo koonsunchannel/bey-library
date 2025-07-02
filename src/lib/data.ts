@@ -2412,9 +2412,9 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "ratchet-455",
+    id: "455-001",
     name: "4-55 (CX-02)",
-    image: "https://i.ibb.co/3yzN8j05/Ratchet4-55.webp",
+    image: "https://i.ibb.co/G3kQrKdb/4-55-1-C02.webp",
     category: "ratchet",
     price: "4-55",
     features: [
@@ -2424,31 +2424,31 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "455-001",
+        id: "455-002",
         name: "CX-05",
-        image: "https://i.ibb.co/pvznvkvk/4-55-2.png"
+        image: "https://i.ibb.co/x8DmxJNM/4-55-2-C05.webp"
       },
       {
-        id: "455-002",
+        id: "455-003",
         name: "CX-08",
         image: ""
       },
       {
-        id: "455-003",
+        id: "455-004",
         name: "Collab",
-        image: "https://i.ibb.co/mCBv57CG/4-55-3.png"
+        image: "https://i.ibb.co/pr6M1wVK/4-55-4-Col.webp"
       },
       {
         id: "455-004",
         name: "CX-00",
-        image: "https://i.ibb.co/1GnbLngj/4-55-5-C00.png"
+        image: "https://i.ibb.co/XryYNrvt/4-55-5-C00.webp"
       },
     ]
   },
   {
-    id: "ratchet-460",
+    id: "460-001",
     name: "4-60 (BX-02)",
-    image: "https://i.ibb.co/ccTS0Ngq/4-60-1.webp",
+    image: "https://i.ibb.co/0VqTk9m8/4-60-1-B02.webp",
     category: "ratchet",
     price: "4-60",
     features: [
@@ -2458,86 +2458,91 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "460-001",
-        name: "BX-08",
-        image: "https://i.ibb.co/tMfqmp2M/4-60-2.png"
-      },
-      {
         id: "460-002",
         name: "BX-00",
-        image: "https://i.ibb.co/mrkQ0DWs/4-60-3.png"
+        image: "https://i.ibb.co/tTT5QV1b/4-60-2-B00.webp"
       },
       {
         id: "460-003",
-        name: "BX-14",
-        image: "https://i.ibb.co/DfJ2Pq2Q/4-60-4.png"
+        name: "BX-00",
+        image: "https://i.ibb.co/rG2tc0DY/4-60-3-B00.webp"
       },
       {
         id: "460-004",
-        name: "BX-16",
-        image: "https://i.ibb.co/V0P8XjVS/4-60-5.png"
+        name: "BX-08",
+        image: "https://i.ibb.co/Y4wNBLcf/4-60-4-B08.webp"
       },
       {
         id: "460-005",
-        name: "BX-20",
-        image: "https://i.ibb.co/4RmQ7Xyf/4-60-6.png"
+        name: "BX-14",
+        image: "https://i.ibb.co/8gfnKQHr/4-60-5-B14.webp"
       },
       {
         id: "460-006",
-        name: "BX-24",
-        image: "https://i.ibb.co/Wvz4Fc54/4-60-7.png"
+        name: "BX-16",
+        image: "https://i.ibb.co/0V9dwJy2/4-60-6-B16.webp"
       },
       {
         id: "460-007",
-        name: "BX-00",
-        image: "https://i.ibb.co/WmfMjb5/4-60-8.png"
+        name: "BX-20",
+        image: "https://i.ibb.co/PLCchzS/4-60-7-B20.webp"
       },
       {
         id: "460-008",
-        name: "BX-35",
-        image: "https://i.ibb.co/93yVprhs/4-60-9.png"
+        name: "BX-24",
+        image: "https://i.ibb.co/k6cGJJr7/4-60-8-B24.webp"
       },
       {
         id: "460-009",
-        name: "BX-00",
-        image: "https://i.ibb.co/Lw572M0/4-60-10.png"
+        name: "BX-35",
+        image: "https://i.ibb.co/chdZsSYr/4-60-9-B35.webp"
       },
       {
         id: "460-010",
-        name: "BX-00",
-        image: "https://i.ibb.co/MkyKnTwV/4-60-11.png"
+        name: "25th Anniversary",
+        image: "https://i.ibb.co/21z2RR3f/4-60-10-25th.webp"
       },
       {
         id: "460-011",
-        name: "UX-12",
-        image: "https://i.ibb.co/4wKQGwQP/4-60-12.png"
+        name: "BX-00",
+        image: "https://i.ibb.co/cSz248ms/4-60-11-B00.webp"
       },
       {
         id: "460-012",
-        name: "Collab",
-        image: "https://i.ibb.co/kVfz4yBG/4-60-13.png"
+        name: "BX-00",
+        image: "https://i.ibb.co/Wv5PzZgQ/4-60-12-B00.webp"
       },
       {
         id: "460-013",
-        name: "Collab",
-        image: "https://i.ibb.co/prBwRw0h/4-60-14.png"
+        name: "UX-12",
+        image: "https://i.ibb.co/Kxsf4TsB/4-60-13-U12.webp"
       },
       {
         id: "460-014",
         name: "Collab",
-        image: "https://i.ibb.co/hRfGCJM5/4-60-15.png"
+        image: "https://i.ibb.co/4nMyx4mb/4-60-14-Col.webp"
+      },
+      {
+        id: "460-015",
+        name: "Collab",
+        image: "https://i.ibb.co/bMjV2FGT/4-60-15-Col.webp"
       },
       {
         id: "460-016",
+        name: "Collab",
+        image: "https://i.ibb.co/h1FQgdJK/4-60-16-Col.webp"
+      },
+      {
+        id: "460-017",
         name: "CX-00",
-        image: "https://i.ibb.co/m5RBYqg1/4-60-16.png"
+        image: "https://i.ibb.co/ds9dvRhC/4-60-17-C00.webp"
       },
     ]
   },
   {
-    id: "ratchet-470",
+    id: "470-001",
     name: "4-70 (BX-31)",
-    image: "https://i.ibb.co/jvD5Sv5Q/4-70-1.webp",
+    image: "https://i.ibb.co/CsNVCTwJ/4-70-1-B31.webp",
     category: "ratchet",
     price: "4-70",
     features: [
@@ -2547,36 +2552,36 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "470-001",
-        name: "BX-31",
-        image: "https://i.ibb.co/G4PW99Cx/4-70-2.png"
-      },
-      {
         id: "470-002",
-        name: "BX-36",
-        image: "https://i.ibb.co/zh9Crr56/4-70-3.png"
+        name: "BX-31",
+        image: "https://i.ibb.co/gM3c3Dhm/4-70-2-B31.webp"
       },
       {
         id: "470-003",
-        name: "BX-38",
-        image: "https://i.ibb.co/99kychFw/4-70-4.png"
+        name: "BX-36",
+        image: "https://i.ibb.co/nN3Mh5wp/4-70-3-B36.webp"
       },
       {
         id: "470-004",
-        name: "CX-05",
-        image: "https://i.ibb.co/NgZSTC1s/4-70-6.png"
+        name: "BX-38",
+        image: "https://i.ibb.co/8GfsBvW/4-70-4-B38.webp"
       },
       {
         id: "470-005",
         name: "CX-05",
-        image: "https://i.ibb.co/gLLhJsSY/4-70-5.png"
+        image: "https://i.ibb.co/hx8hZ2nc/4-70-5-C05.webp"
+      },
+      {
+        id: "470-006",
+        name: "CX-05",
+        image: "https://i.ibb.co/mCKNsyKt/4-70-6-C05.webp"
       },
     ]
   },
   {
-    id: "ratchet-480",
+    id: "480-001",
     name: "4-80 (BX-03)",
-    image: "https://i.ibb.co/KjzwjNrC/4-80-1.webp",
+    image: "https://i.ibb.co/fYt4J1q7/4-80-1-B03.webp",
     category: "ratchet",
     price: "4-80",
     features: [
@@ -2586,76 +2591,76 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "480-001",
-        name: "BX-05",
-        image: "https://i.ibb.co/jvfQGkqh/4-80-2.png"
-      },
-      {
         id: "480-002",
-        name: "BX-08",
-        image: "https://i.ibb.co/KjWrzs6d/4-80-3.png"
+        name: "BX-05",
+        image: "https://i.ibb.co/Ldzk057w/4-80-2-B05.webp"
       },
       {
         id: "480-003",
-        name: "BX-13",
-        image: "https://i.ibb.co/DdL8NgT/4-80-4.png"
+        name: "BX-08",
+        image: "https://i.ibb.co/Xk3qgtYj/4-80-3-B08.webp"
       },
       {
         id: "480-004",
-        name: "BX-14",
-        image: "https://i.ibb.co/Dg930Cd6/4-80-5.png"
+        name: "BX-13",
+        image: "https://i.ibb.co/RG2rd1QD/4-80-4-B13.webp"
       },
       {
         id: "480-005",
         name: "BX-14",
-        image: "https://i.ibb.co/C3R0V7kY/4-80-6.png"
+        image: "https://i.ibb.co/rGsTfBzV/4-80-5-B14.webp"
       },
       {
         id: "480-006",
-        name: "BX-17",
-        image: "https://i.ibb.co/9kGmyrrB/4-80-7.png"
+        name: "BX-14",
+        image: "https://i.ibb.co/jPVQbBzx/4-80-6-B14.webp"
       },
       {
         id: "480-007",
-        name: "BX-21",
-        image: "https://i.ibb.co/ch9sc89K/4-80-8.png"
+        name: "BX-17",
+        image: "https://i.ibb.co/HTDJsXzM/4-80-7-B17.webp"
       },
       {
         id: "480-008",
-        name: "BX-24",
-        image: "https://i.ibb.co/XfQFWH1p/4-80-9.png"
+        name: "BX-21",
+        image: "https://i.ibb.co/fVjVgvMP/4-80-8-B21.webp"
       },
       {
         id: "480-009",
-        name: "BX-00",
-        image: "https://i.ibb.co/HL0D1TSr/4-80-10.png"
+        name: "BX-24",
+        image: "https://i.ibb.co/TqnBSsvg/4-80-9-B24.webp"
       },
       {
         id: "480-010",
         name: "BX-27",
-        image: "https://i.ibb.co/7N4LF2Hn/4-80-11.png"
+        image: "https://i.ibb.co/DfGFzGGr/4-80-10-B27.webp"
       },
       {
         id: "480-011",
-        name: "Collab",
-        image: "https://i.ibb.co/jZr1vh8f/4-80-12.png"
+        name: "BX-00",
+        image: "https://i.ibb.co/JWQRGBmY/4-80-11-B00.webp"
       },
       {
         id: "480-012",
         name: "Collab",
-        image: "https://i.ibb.co/WWXPc5xy/4-80-13.png"
+        image: "https://i.ibb.co/27dN0yyg/4-80-12-Col.webp"
       },
       {
         id: "480-013",
         name: "Collab",
-        image: "https://i.ibb.co/Ngypm7GP/4-80-14.png"
+        image: "https://i.ibb.co/R47CKmJL/4-80-13-Col.webp"
+      },
+      {
+        id: "480-014",
+        name: "Collab",
+        image: "https://i.ibb.co/1GFGtqjt/4-80-14-Col.webp"
       },
     ]
   },
   {
-    id: "ratchet-560",
+    id: "560-001",
     name: "5-60 (BX-15)",
-    image: "https://i.ibb.co/Gv4BdLY2/5-60-1.webp",
+    image: "https://i.ibb.co/nqbhGh4z/5-60-1-B15.webp",
     category: "ratchet",
     price: "5-60",
     features: [
@@ -2665,51 +2670,51 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "560-001",
-        name: "BX-21",
-        image: "https://i.ibb.co/mVQCpgdf/5-60-2.png"
-      },
-      {
         id: "560-002",
-        name: "BX-24",
-        image: "https://i.ibb.co/xtczWYrX/5-60-3.png"
+        name: "BX-21",
+        image: "https://i.ibb.co/vvJRjNjV/5-60-2-B21.webp"
       },
       {
         id: "560-003",
-        name: "BX-26",
-        image: "https://i.ibb.co/wF4jchjS/5-60-4.png"
+        name: "BX-24",
+        image: "https://i.ibb.co/chvjpmr5/5-60-3-B24.webp"
       },
       {
         id: "560-004",
-        name: "BX-27",
-        image: "https://i.ibb.co/bgrRzvQy/5-60-5.png"
+        name: "BX-00",
+        image: "https://i.ibb.co/bD9x9nR/5-60-4-B00.webp"
       },
       {
         id: "560-005",
-        name: "BX-00",
-        image: "https://i.ibb.co/MD90qCP2/5-60-6.png"
+        name: "BX-26",
+        image: "https://i.ibb.co/wNFg5TfP/5-60-5-B26.webp"
       },
       {
         id: "560-006",
         name: "BX-00",
-        image: "https://i.ibb.co/yndvggXP/5-60-7.png"
+        image: "https://i.ibb.co/RLLbKNV/5-60-10-B00.png"
       },
       {
         id: "560-007",
-        name: "BX-37",
-        image: "https://i.ibb.co/8gcb16C7/5-60-8.png"
+        name: "BX-27",
+        image: "https://i.ibb.co/hRhWqDZ9/5-60-7-B27.webp"
       },
       {
         id: "560-008",
         name: "BX-37",
-        image: "https://i.ibb.co/Cc5qb3d/5-60-9.png"
+        image: "https://i.ibb.co/TMDXwD5s/5-60-8-B00.webp"
+      },
+      {
+        id: "560-009",
+        name: "BX-37",
+        image: "https://i.ibb.co/XrDHt0NZ/5-60-9-B37.webp"
       },
     ]
   },
   {
-    id: "ratchet-570",
+    id: "570-001",
     name: "5-70 (UX-03)",
-    image: "https://i.ibb.co/n5jp5Gf/5-70-1.webp",
+    image: "https://i.ibb.co/HD5Bdf2v/5-70-1-U03.webp",
     category: "ratchet",
     price: "5-70",
     features: [
@@ -2719,32 +2724,36 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "570-001",
-        name: "UX-04",
-        image: "https://i.ibb.co/27GXvN4V/5-70-2.png"
-      },
-      {
         id: "570-002",
-        name: "BX-35",
-        image: "https://i.ibb.co/vKFzjYs/5-70-3.png"
+        name: "UX-04",
+        image: "https://i.ibb.co/qFmpMZy6/5-70-2-U04.webp"
       },
       {
         id: "570-003",
-        name: "BX-39",
-        image: "https://i.ibb.co/kgMkw4Hz/5-70-4.png"
+        name: "BX-35",
+        image: "https://i.ibb.co/twYv1fyv/5-70-3-B35.webp"
       },
       {
-        // samurai steel
         id: "570-004",
+        name: "BX-39",
+        image: "https://i.ibb.co/T6rTDQ5/5-70-4-B39.webp"
+      },
+      {
+        id: "570-005",
+        name: "G3 Prize",
+        image: "https://i.ibb.co/Q7FLgWk7/5-70-5-G3-P.webp"
+      },
+      {
+        id: "570-006",
         name: "BX-00",
-        image: ""
+        image: "https://i.ibb.co/4w3QKPGK/5-70-6-B00.webp"
       },
     ]
   },
   {
-    id: "ratchet-580",
+    id: "580-001",
     name: "5-80 (BX-16)",
-    image: "https://i.ibb.co/Xx5rhbg8/5-80-1.webp",
+    image: "https://i.ibb.co/JRm2c35r/5-80-1-B16.webp",
     category: "ratchet",
     price: "5-80",
     features: [
@@ -2754,46 +2763,46 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "580-001",
-        name: "BX-20",
-        image: "https://i.ibb.co/xqzhJLPt/5-80-2.png"
-      },
-      {
         id: "580-002",
-        name: "BX-24",
-        image: "https://i.ibb.co/Z1Ssxc7S/5-80-3.png"
+        name: "BX-20",
+        image: "https://i.ibb.co/zWq21DW5/5-80-2-B20.webp"
       },
       {
         id: "580-003",
-        name: "BX-31",
-        image: "https://i.ibb.co/21Q2nxBt/5-80-4.png"
+        name: "BX-24",
+        image: "https://i.ibb.co/39qs6LmF/5-80-3-B24.webp"
       },
       {
         id: "580-004",
-        name: "BX-35",
-        image: "https://i.ibb.co/vx2t7GqZ/5-80-5.png"
+        name: "BX-31",
+        image: "https://i.ibb.co/zVV7rNhp/5-80-4-B31.webp"
       },
       {
         id: "580-005",
-        name: "BX-36",
-        image: "https://i.ibb.co/WNQ1xwQK/5-80-6.png"
+        name: "BX-35",
+        image: "https://i.ibb.co/qM64fcL5/5-80-5-B35.webp"
       },
       {
         id: "580-006",
-        name: "CX-08",
-        image: ""
+        name: "BX-36",
+        image: "https://i.ibb.co/wrZG4HfZ/5-80-6-B36.webp"
       },
       {
         id: "580-007",
         name: "CX-08",
         image: ""
       },
+      {
+        id: "580-008",
+        name: "CX-08",
+        image: ""
+      },
     ]
   },
   {
-    id: "ratchet-660",
+    id: "660-001",
     name: "6-60 (CX-01)",
-    image: "https://i.ibb.co/QvWbpK2N/6-60-1.webp",
+    image: "https://i.ibb.co/LXzr1j6d/6-60-1-C01.webp",
     category: "ratchet",
     price: "6-60",
     features: [
@@ -2803,16 +2812,16 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "660-001",
+        id: "660-002",
         name: "CX-04",
-        image: ""
+        image: "https://i.ibb.co/B2sVVD1g/6-60-2-C04.webp"
       },
     ]
   },
   {
-    id: "ratchet-680",
+    id: "680-001",
     name: "6-80 (CX-03)",
-    image: "https://i.ibb.co/spsD7V08/6-80-1.webp",
+    image: "https://i.ibb.co/qYwHBx4r/6-80-1-C03.webp",
     category: "ratchet",
     price: "6-80",
     features: [
@@ -2822,21 +2831,21 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "680-001",
+        id: "680-002",
         name: "CX-04",
-        image: ""
+        image: "https://i.ibb.co/GfPD5b1m/6-80-2-C04.webp"
       },
       {
-        id: "680-002",
+        id: "680-003",
         name: "G3 Prize",
-        image: "https://i.ibb.co/gL7p4Cjg/6-80-3.png"
+        image: "https://i.ibb.co/XrRB83dd/6-80-3-G3-P.png"
       },
     ]
   },
   {
-    id: "ratchet-760",
+    id: "760-001",
     name: "7-60 (UX-06)",
-    image: "https://i.ibb.co/1Jq4ptqF/Ratchet7-60.webp",
+    image: "https://i.ibb.co/7T427Ry/7-60-1-U06.webp",
     category: "ratchet",
     price: "7-70",
     features: [
@@ -2846,21 +2855,21 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "760-001",
+        id: "760-002",
         name: "BX-00",
-        image: "https://i.ibb.co/LdDb24qv/media.png"
+        image: "https://i.ibb.co/Fb3xSYJ7/7-60-2-B00.webp"
       },
       {
-        id: "760-002",
+        id: "760-003",
         name: "CX-05",
-        image: "https://i.ibb.co/KcVkfgXK/7-60-3.png"
+        image: "https://i.ibb.co/MD5dxgdQ/7-60-3-C05.webp"
       },
     ]
   },
   {
     id: "ratchet-770",
     name: "7-70 (UX-10)",
-    image: "https://i.ibb.co/CKTC6dtd/7-70-1.webp",
+    image: "https://i.ibb.co/f3jVx2N/7-70-1-U10.webp",
     category: "ratchet",
     price: "7-70",
     features: [
@@ -2879,7 +2888,7 @@ export const products: Product[] = [
   {
     id: "ratchet-780",
     name: "7-80 (CX-39)",
-    image: "https://i.ibb.co/Xfcp7yT3/7-80-1.webp",
+    image: "https://i.ibb.co/PZjCjcrB/7-80-1-B39.webp",
     category: "ratchet",
     price: "7-80",
     features: [
@@ -2889,8 +2898,8 @@ export const products: Product[] = [
     ],
     // bey: [
     //   {
-    //     id: "760-001",
-    //     name: "BX-00",
+    //     id: "760-002",
+    //     name: "",
     //     image: ""
     //   },
     // ]
@@ -2898,7 +2907,7 @@ export const products: Product[] = [
   {
     id: "ratchet-960",
     name: "9-60 (BX-23)",
-    image: "https://i.ibb.co/B2nvgjRc/9-60-1.webp",
+    image: "https://i.ibb.co/C3XBTB4x/9-60-1-B23.webp",
     category: "ratchet",
     price: "9-60",
     features: [
@@ -2908,26 +2917,31 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "960-001",
-        name: "UX-05",
-        image: "https://i.ibb.co/tMBr5x5f/9-60-2.png"
-      },
-      {
         id: "960-002",
-        name: "UX-10",
-        image: "https://i.ibb.co/nsvtjXnT/9-60-3.png"
+        name: "UX-05",
+        image: "https://i.ibb.co/KjDN2gyT/9-60-2-U05.webp"
       },
       {
         id: "960-003",
+        name: "UX-11",
+        image: "https://i.ibb.co/qMPb8yg6/9-60-3-U11.webp"
+      },
+      {
+        id: "960-004",
+        name: "BX-00",
+        image: "https://i.ibb.co/YB74yMf7/9-60-4-B00.webp"
+      },
+      {
+        id: "960-005",
         name: "Collab",
-        image: "https://i.ibb.co/B5s77rm5/9-60-4.png"
+        image: "https://i.ibb.co/zh1bZdg5/9-60-5-Col.webp"
       },
     ]
   },
   {
-    id: "ratchet-970",
+    id: "970-001",
     name: "9-70 (UX-07)",
-    image: "https://i.ibb.co/M5CNHgY5/9-70-1.webp",
+    image: "https://i.ibb.co/fVphTQyV/9-70-1-U07.webp",
     category: "ratchet",
     price: "9-70",
     features: [
@@ -2937,16 +2951,16 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "970-001",
-        name: "UX-06",
-        image: "https://i.ibb.co/LDy7tgnr/Screenshot-2025-04-19-132540-Photoroom.png"
+        id: "970-002",
+        name: "CX-06",
+        image: "https://i.ibb.co/gFvCh9FG/9-70-2-C06.webp"
       },
     ]
   },
   {
-    id: "ratchet-980",
+    id: "980-001",
     name: "9-80 (BX-27)",
-    image: "https://i.ibb.co/Wp3tZJxx/9-80-1.webp",
+    image: "https://i.ibb.co/99fYmz4F/9-80-1-B27.webp",
     category: "ratchet",
     price: "9-80",
     features: [
@@ -2956,31 +2970,31 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "980-001",
-        name: "BX-31",
-        image: "https://i.ibb.co/wh5ZyvbR/9-80-2.png"
-      },
-      {
         id: "980-002",
-        name: "BX-35",
-        image: "https://i.ibb.co/zhNcrTwx/9-80-3.png"
+        name: "BX-31",
+        image: "https://i.ibb.co/QjfXWGpk/9-80-2-B31.webp"
       },
       {
         id: "980-003",
-        name: "BX-00",
-        image: "https://i.ibb.co/gMWfJwv9/9-80-4.png"
+        name: "BX-35",
+        image: "https://i.ibb.co/qY3F19Kc/9-80-3-B35.webp"
       },
       {
         id: "980-004",
+        name: "BX-00",
+        image: "https://i.ibb.co/fZGvnCW/9-80-4-B00.webp"
+      },
+      {
+        id: "980-005",
         name: "CX-05",
-        image: "https://i.ibb.co/WvsBB5TB/9-80-5.png"
+        image: "https://i.ibb.co/GQxYqLjk/9-80-5-C05.webp"
       },
     ]
   },
   {
-    id: "ratchet-M85",
+    id: "M85-001",
     name: "M-85 (BX-44)",
-    image: "https://i.ibb.co/Nnsyx1QZ/beyblade-x-bx-44-tricera-press-m-85-bs-2.png",
+    image: "https://i.ibb.co/93dWZSNz/M-85-1-B44.webp",
     category: "ratchet",
     price: "M-85",
     features: [
@@ -2990,16 +3004,16 @@ export const products: Product[] = [
     ],
     // bey: [
     //   {
-    //     id: "970-001",
-    //     name: "BX-44",
-    //     image: "https://i.ibb.co/LDy7tgnr/Screenshot-2025-04-19-132540-Photoroom.png"
+    //     id: "M85-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
-    id: "ratchet-tr",
+    id: "tr-001",
     name: "Tr (CX-07)",
-    image: "https://i.ibb.co/Fqnp4ZPs/Tr-1.png",
+    image: "https://i.ibb.co/0N8WDtj/Tr-1-C07.webp",
     category: "ratchet",
     price: "Turbo",
     features: [
@@ -4219,9 +4233,9 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "bit-039",
+    id: "tr-001",
     name: "Tr (CX-07)",
-    image: "https://i.ibb.co/Fqnp4ZPs/Tr-1.png",
+    image: "https://i.ibb.co/0N8WDtj/Tr-1-C07.webp",
     category: "bit",
     type:"attack",
     price: "Turbo",
@@ -5046,10 +5060,10 @@ export const products: Product[] = [
     category: "credits",
     price: "This website don't want anything from you.",
     specs: {
-      "Creator Name": "What you looking for?",
+      "Creator Name": "Didn't you want to know Beyblade?",
       "Donation": "Go to Philanthropy funds.",
       "Ownership": "I'm not Takara Tomy. Beyblade is not my product.",
-      "Objective": "To make it easier for the community to find data about Beyblade X parts.",
+      "Objective": "To make it easier for the community to find data about Beyblade X parts not me.",
       "Special Thanks": "Thanks to Takara Tomy for making Beyblade.",
     },
   },
