@@ -3033,9 +3033,9 @@ export const products: Product[] = [
 
   // BITS
   {
-    id: "bit-001",
+    id: "F-001",
     name: "F (BX-01)",
-    image: "https://i.ibb.co/Fb19tC1y/F-1.webp",
+    image: "https://i.ibb.co/6G2gQmM/F-1-B01.webp",
     category: "bit",
     type:"attack",
     price: "Flat",
@@ -3047,77 +3047,77 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "F-001",
-        name: "BX-07",
-        image: "https://i.ibb.co/Z16vgVCK/F-2.png"
-      },
-      {
         id: "F-002",
-        name: "BX-16",
-        image: "https://i.ibb.co/S7HdHFXs/F-3.png"
+        name: "BX-00",
+        image: "https://i.ibb.co/fVjKNGkj/F-2-B00.webp"
       },
       {
         id: "F-003",
-        name: "BX-17",
-        image: "https://i.ibb.co/sdMdhN4c/F-4.png"
+        name: "BX-07",
+        image: "https://i.ibb.co/twNHt1GW/F-3-B07.webp"
       },
       {
         id: "F-004",
-        name: "BX-20",
-        image: "https://i.ibb.co/S4y422pR/F-5.png"
+        name: "BX-16",
+        image: "https://i.ibb.co/HDzyyRFj/F-4-B16.webp"
       },
       {
         id: "F-005",
-        name: "BX-24",
-        image: "https://i.ibb.co/5X1HZNC9/F6.png"
+        name: "BX-17",
+        image: "https://i.ibb.co/fdd66Kpv/F-5-B17.webp"
       },
       {
         id: "F-006",
-        name: "BX-00",
-        image: "https://i.ibb.co/rKGbGtQz/F-7.png"
+        name: "BX-20",
+        image: "https://i.ibb.co/mr81rfzH/F-6-B20.webp"
       },
       {
         id: "F-007",
-        name: "BX-00",
-        image: "https://i.ibb.co/ZpM0L5JT/F-8.png"
+        name: "BX-24",
+        image: "https://i.ibb.co/LzkxCFmP/F-7-B24.webp"
       },
       {
         id: "F-008",
         name: "BX-00",
-        image: "https://i.ibb.co/JM7QWrR/F-9.png"
+        image: "https://i.ibb.co/k6rLjHHQ/F-8-B00.webp"
       },
       {
         id: "F-009",
-        name: "BX-37",
-        image: "https://i.ibb.co/v6SmkC5h/F-10.png"
+        name: "BX-00",
+        image: "https://i.ibb.co/4n1JrkXx/F-9-B00.webp"
       },
       {
-        id: "F-010",
-        name: "UX-12",
-        image: "https://i.ibb.co/bRMnfjb5/F-11.png"
+        id: "F-0010",
+        name: "BX-37",
+        image: "https://i.ibb.co/Qjps1qVx/F-10-B37.webp"
       },
       {
         id: "F-011",
         name: "BX-00",
-        image: "https://i.ibb.co/SpcM9dS/F-12.png"
+        image: "https://i.ibb.co/nqbxZBFy/F-11-B00.webp"
       },
       {
         id: "F-012",
-        name: "Collab",
-        image: "https://i.ibb.co/jkwYSdwm/F-13.png"
+        name: "UX-12",
+        image: "https://i.ibb.co/cK9CDbDb/F-12-U12.webp"
       },
       {
         id: "F-013",
         name: "Collab",
-        image: "https://i.ibb.co/TGcBPqt/F-14.png"
+        image: "https://i.ibb.co/CKb5GVcQ/F-13-Col.webp"
       },
       {
         id: "F-014",
         name: "Collab",
-        image: "https://i.ibb.co/m5mxzjJL/F-15.png"
+        image: "https://i.ibb.co/2YpKSzDw/F-14-Col.webp"
       },
       {
         id: "F-015",
+        name: "Collab",
+        image: "https://i.ibb.co/q3JwRhjn/F-15.webp"
+      },
+      {
+        id: "F-016",
         name: "CX-08",
         image: ""
       },
