@@ -4,7 +4,7 @@ import type { Product } from "./types"
 export const products: Product[] = [
   // BLADES
   {
-    id: "DS-001",
+    id: "Blade-DS-001",
     name: "Dran Sword",
     image: "https://i.ibb.co/G40ySY2X/DS-1-B01.webp",
     category: "blade",
@@ -23,39 +23,39 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "DS-002",
+        id: "Blade-DS-002",
         name: "BX-07",
         image: "https://i.ibb.co/mCsJJFYs/DS-2-B07.webp"
       },
       {
-        id: "DS-003",
+        id: "Blade-DS-003",
         name: "BX-14",
         image: "https://i.ibb.co/svrBXkVr/DS-3-B14.webp"
       },
       {
-        id: "DS-004",
+        id: "Blade-DS-004",
         name: "BX-17",
         image: "https://i.ibb.co/VYF6BrfF/DS-4-B17.webp"
       },
       {
-        id: "DS-005",
+        id: "Blade-DS-005",
         name: "BX-00",
         image: "https://i.ibb.co/679WNZxb/DS-5-B00.webp"
       },
       {
-        id: "DS-006",
+        id: "Blade-DS-006",
         name: "UX-00",
         image: "https://i.ibb.co/gZPVr6tz/DS-6-25th.webp"
       },
       {
-        id: "DS-007",
+        id: "Blade-DS-007",
         name: "BX-00",
         image: "https://i.ibb.co/gMZ2QQFt/DS-7-UX00.webp"
       },
     ],
   },
   {
-    id: "HS-001",
+    id: "Blade-HS-001",
     name: "Hells Scythe",
     image: "https://i.ibb.co/Pss3pxX5/HS-1-B02.webp",
     category: "blade",
@@ -74,29 +74,29 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "HS-002",
+        id: "Blade-HS-002",
         name: "BX-00",
         image: "https://i.ibb.co/21RXmBKy/HS-2-B00.webp"
       },
       {
-        id: "HS-002",
+        id: "Blade-HS-002",
         name: "BX-08",
         image: "https://i.ibb.co/sdKqGYNk/HS-3-B08.webp"
       },
       {
-        id: "HS-003",
+        id: "Blade-HS-003",
         name: "BX-14",
         image: "https://i.ibb.co/wrbWPP9Y/HS-4-B14.webp"
       },
       {
-        id: "HS-004",
+        id: "Blade-HS-004",
         name: "Hell Persona",
         image: "https://i.ibb.co/spNPWk1P/HS-5-B00.webp"
       },
     ]
   },
   {
-    id: "WA-001",
+    id: "Blade-WA-001",
     name: "Wizard Arrow",
     image: "https://i.ibb.co/HDpHNQJ0/WA-1-B03.webp",
     category: "blade",
@@ -115,39 +115,39 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "WA-002",
+        id: "Blade-WA-002",
         name: "BX-05",
         image: "https://i.ibb.co/yD685wp/WA-2-B05.webp"
       },
       {
-        id: "WA-003",
+        id: "Blade-WA-003",
         name: "BX-08",
         image: "https://i.ibb.co/xSdv8S60/WA-3-B08.webp"
       },
       {
-        id: "WA-004",
+        id: "Blade-WA-004",
         name: "BX-14",
         image: "https://i.ibb.co/QvXy1C28/WA-4-B14.webp"
       },
       {
-        id: "WA-005",
+        id: "Blade-WA-005",
         name: "BX-17",
         image: "https://i.ibb.co/XZ4cTffR/WA-5-B17.webp"
       },
       {
-        id: "WA-006",
+        id: "Blade-WA-006",
         name: "BX-21",
         image: "https://i.ibb.co/5xGWKqsX/WA-6-B21.webp"
       },
       {
-        id: "WA-007",
+        id: "Blade-WA-007",
         name: "BX-24",
         image: "https://i.ibb.co/B566Xm8M/WA-7-B24.webp"
       },
     ]
   },
   {
-    id: "KS-001",
+    id: "Blade-KS-001",
     name: "Knight Shield",
     image: "https://i.ibb.co/Gfdx0kYG/KS-1-B04.webp",
     category: "blade",
@@ -166,34 +166,34 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "KS-002",
+        id: "Blade-KS-002",
         name: "BX-06",
         image: "https://i.ibb.co/5g3XrCBS/KS-2-B06.webp"
       },
       {
-        id: "KS-003",
+        id: "Blade-KS-003",
         name: "BX-08",
         image: "https://i.ibb.co/6cXM80JP/KS-3-B08.webp"
       },
       {
-        id: "KS-004",
+        id: "Blade-KS-004",
         name: "BX-14",
         image: "https://i.ibb.co/V03rFym8/KS-4-B14.webp"
       },
       {
-        id: "KS-005",
+        id: "Blade-KS-005",
         name: "BX-20",
         image: "https://i.ibb.co/xKGq7Myy/KS-5-B20.webp"
       },
       {
-        id: "KS-006",
+        id: "Blade-KS-006",
         name: "G3 Prize",
         image: "https://i.ibb.co/GfrjdNCW/KS-6-G3P.webp"
       },
     ]
   },
   {
-    id: "KL-001",
+    id: "Blade-KL-001",
     name: "Knight Lance",
     image: "https://i.ibb.co/bMFnLVjr/KL-1-B13.webp",
     category: "blade",
@@ -212,7 +212,7 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "KL-002",
+        id: "Blade-KL-002",
         name: "BX-21",
         image: "https://i.ibb.co/xtW6KfZD/KL-2-B21.webp"
       },
@@ -224,7 +224,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "SE-001",
+    id: "Blade-SE-001",
     name: "Shark Edge",
     image: "https://i.ibb.co/TD4nSSZF/SE-1-B14.webp",
     category: "blade",
@@ -243,29 +243,29 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "SE-002",
+        id: "Blade-SE-002",
         name: "BX-14",
         image: "https://i.ibb.co/7H2dWMh/SE-2-B14.webp"
       },
       {
-        id: "SE-003",
+        id: "Blade-SE-003",
         name: "BX-20",
         image: "https://i.ibb.co/gZc9jXrX/SE-3-B20.webp"
       },
       {
-        id: "SE-004",
+        id: "Blade-SE-004",
         name: "BX-31",
         image: "https://i.ibb.co/pjwcs3bd/SE-4-B31.webp"
       },
       {
-        id: "SE-005",
+        id: "Blade-SE-005",
         name: "BX-00",
         image: "https://i.ibb.co/S4pGMHd0/SE-5-B00.webp"
       },
     ]
   },
   {
-    id: "LC-001",
+    id: "Blade-LC-001",
     name: "Leon Claw",
     image: "https://i.ibb.co/JwCKgzQX/LC-1-B15.webp",
     category: "blade",
@@ -284,24 +284,24 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "LC-002",
+        id: "Blade-LC-002",
         name: "BX-00",
         image: "https://i.ibb.co/jvYdnq90/LC-4-B00.webp"
       },
       {
-        id: "LC-003",
+        id: "Blade-LC-003",
         name: "BX-24",
         image: "https://i.ibb.co/7tqvWDcM/LC-2-B24.webp"
       },
       {
-        id: "LC-004",
+        id: "Blade-LC-004",
         name: "UX-12",
         image: "https://i.ibb.co/Fbkt3N7V/LC-3-U12.webp"
       },
     ]
   },
   {
-    id: "VT-001",
+    id: "Blade-VT-001",
     name: "Viper Tail",
     image: "https://i.ibb.co/Fqd2JgW8/VT-1-B16.webp",
     category: "blade",
@@ -320,29 +320,29 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "VT-002",
+        id: "Blade-VT-002",
         name: "BX-16",
         image: "https://i.ibb.co/23Tb48Z0/VT-2-B16.webp"
       },
       {
-        id: "VT-003",
+        id: "Blade-VT-003",
         name: "BX-16",
         image: "https://i.ibb.co/XxYkf2pq/VT-3-B16.webp"
       },
       {
-        id: "VT-004",
+        id: "Blade-VT-004",
         name: "BX-24",
         image: "https://i.ibb.co/BVLYS6Qz/VT-4-B24.webp"
       },
       {
-        id: "VT-005",
+        id: "Blade-VT-005",
         name: "BX-35",
         image: "https://i.ibb.co/W4Z2YTFC/VT-5-B35.webp"
       },
     ]
   },
   {
-    id: "RH-001",
+    id: "Blade-RH-001",
     name: "Rhino Horn",
     image: "https://i.ibb.co/BHD7xD78/RH-1-B19.webp",
     category: "blade",
@@ -361,14 +361,14 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "RH-001",
+        id: "Blade-RH-001",
         name: "BX-31",
         image: "https://i.ibb.co/dwyChgTD/RH-2-B31.webp"
       },
     ]
   },
   {
-    id: "DD-001",
+    id: "Blade-DD-001",
     name: "Dran Dagger",
     image: "https://i.ibb.co/0V2bg1Wf/DD-1-B20.webp",
     category: "blade",
@@ -387,24 +387,24 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "DD-002",
+        id: "Blade-DD-002",
         name: "BX-31",
         image: "https://i.ibb.co/60bF0hgd/DD-2-B31.webp"
       },
       {
-        id: "DD-003",
+        id: "Blade-DD-003",
         name: "BX-00",
         image: "https://i.ibb.co/zT62PX0G/DD-3-B00.webp"
       },
       {
-        id: "DD-004",
+        id: "Blade-DD-004",
         name: "UX-00",
         image: "https://i.ibb.co/5WLJxJ7n/DD-4-U00.webp"
       },
     ]
   },
   {
-    id: "HC-001",
+    id: "Blade-HC-001",
     name: "Hells Chain",
     image: "https://i.ibb.co/Cs7GFrZW/HC-1-B21.webp",
     category: "blade",
@@ -423,19 +423,19 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "HC-002",
+        id: "Blade-HC-002",
         name: "BX-31",
         image: "https://i.ibb.co/hF91LLCt/HC-2-B31.webp"
       },
       {
-        id: "HC-003",
+        id: "Blade-HC-003",
         name: "BX-00",
         image: "https://i.ibb.co/N2JBtG4F/HC-3-B00.webp"
       },
     ]
   },
   {
-    id: "PW-001",
+    id: "Blade-PW-001",
     name: "Phoenix Wing",
     image: "https://i.ibb.co/jk5WmMPQ/PW-1-B23.webp",
     category: "blade",
@@ -454,24 +454,24 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "PW-002",
+        id: "Blade-PW-002",
         name: "BX-35",
         image: "https://i.ibb.co/1JQcjB3n/PW-2-B35.webp"
       },
       {
-        id: "PW-003",
+        id: "Blade-PW-003",
         name: "BX-00",
         image: "https://i.ibb.co/yckZp8YX/PW-3-B00.webp"
       },
       {
-        id: "PW-004",
+        id: "Blade-PW-004",
         name: "BX-00",
         image: "https://i.ibb.co/nsNSpDZM/PW-4-B00.webp"
       },
     ]
   },
   {
-    id: "WG-001",
+    id: "Blade-WG-001",
     name: "Wyvern Gale",
     image: "https://i.ibb.co/nNwbhPn9/WG-1-B24.webp",
     category: "blade",
@@ -490,24 +490,24 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "WG-002",
+        id: "Blade-WG-002",
         name: "BX-24",
         image: "https://i.ibb.co/RTZLt8Wn/WG-2-B24.webp"
       },
       {
-        id: "WG-003",
+        id: "Blade-WG-003",
         name: "UX-07",
         image: "https://i.ibb.co/DHbvc2gF/WG-3-U07.webp"
       },
       {
-        id: "WG-004",
+        id: "Blade-WG-004",
         name: "UX-12",
         image: "https://i.ibb.co/SwDGpb6v/WG-4-U12.webp"
       },
     ]
   },
   {
-    id: "US-001",
+    id: "Blade-US-001",
     name: "Unicorn Sting",
     image: "https://i.ibb.co/Ngq8QzDT/US-1-B26.webp",
     category: "blade",
@@ -526,14 +526,14 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "US-002",
+        id: "Blade-US-002",
         name: "BX-35",
         image: "https://i.ibb.co/DPsr9PJF/US-2-B35.webp"
       },
     ]
   },
   {
-    id: "SC-001",
+    id: "Blade-SC-001",
     name: "Sphinx Cowl",
     image: "https://i.ibb.co/Lz9t60PV/SC-1-B27.webp",
     category: "blade",
@@ -552,24 +552,24 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "SC-002",
+        id: "Blade-SC-002",
         name: "BX-27",
         image: "https://i.ibb.co/5hSjMhkS/SC-2-B27.webp"
       },
       {
-        id: "SC-003",
+        id: "Blade-SC-003",
         name: "BX-27",
         image: "https://i.ibb.co/Fqkq8Hvq/SC-3-B27.webp"
       },
       {
-        id: "SC-004",
+        id: "Blade-SC-004",
         name: "UX-07",
         image: "https://i.ibb.co/PG3h6nHR/SC-4-U07.webp"
       },
     ]
   },
   {
-    id: "DB-001",
+    id: "Blade-DB-001",
     name: "Dran Buster",
     image: "https://i.ibb.co/jkhHF3kD/DB-1-U01.webp",
     category: "blade",
@@ -588,49 +588,49 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "DB-002",
+        id: "Blade-DB-002",
         name: "UX-04",
         image: "https://i.ibb.co/8nc3jQZ8/DB-2-U04.webp"
       },
       {
-        id: "DB-003",
+        id: "Blade-DB-003",
         name: "UX-00",
         image: "https://i.ibb.co/LXm2NgHp/DB-3-U00.webp"
       },
       {
-        id: "DB-004",
+        id: "Blade-DB-004",
         name: "UX-00",
         image: "https://i.ibb.co/GQksyfXB/DB-4-LTD1.webp"
       },
       {
-        id: "DB-005",
+        id: "Blade-DB-005",
         name: "UX-00",
         image: "https://i.ibb.co/4ZTZKwt9/DB-5-LTD2.webp"
       },
       {
-        id: "DB-006",
+        id: "Blade-DB-006",
         name: "UX-00",
         image: "https://i.ibb.co/GvCK9FW3/DB-6-LTD3.webp"
       },
       {
-        id: "DB-007",
+        id: "Blade-DB-007",
         name: "UX-00",
         image: "https://i.ibb.co/pjMnLD7w/DB-7-U00.webp"
       },
       {
-        id: "DB-008",
+        id: "Blade-DB-008",
         name: "UX-00",
         image: "https://i.ibb.co/yn47CjJb/DB-8-U00.webp"
       },
       {
-        id: "DB-009",
+        id: "Blade-DB-009",
         name: "CX-08",
         image: "https://i.ibb.co/MDLYBsgR/DB-9-C08.webp"
       },
     ]
   },
   {
-    id: "HH-001",
+    id: "Blade-HH-001",
     name: "Hells Hammer",
     image: "https://i.ibb.co/5h9B4pBW/HH-1-U02.webp",
     category: "blade",
@@ -649,19 +649,19 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "HH-002",
+        id: "Blade-H-002",
         name: "UX-10",
         image: "https://i.ibb.co/3tzKJFW/HH-2-U10.webp"
       },
       {
-        id: "HH-003",
+        id: "Blade-HH-003",
         name: "UX-00",
         image: "https://i.ibb.co/wrQFjYRd/HH-3-U00.webp"
       },
     ]
   },
   {
-    id: "WR-001",
+    id: "Blade-WR-001",
     name: "Wizard Rod",
     image: "https://i.ibb.co/fY7sCHPy/WR-1-U03.webp",
     category: "blade",
@@ -680,24 +680,24 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "WR-002",
+        id: "Blade-WR-002",
         name: "UX-04",
         image: "https://i.ibb.co/fVR6nWmd/WR-2-U04.webp"
       },
       {
-        id: "WR-003",
+        id: "Blade-WR-003",
         name: "BX-35",
         image: "https://i.ibb.co/KcKGrbHc/WR-3-B35.webp"
       },
       {
-        id: "WR-004",
+        id: "Blade-WR-004",
         name: "G3 Prize",
         image: "https://i.ibb.co/YBkMFQS0/WR-4-G3P.webp"
       },
     ]
   },
   {
-    id: "TB-001",
+    id: "Blade-TB-001",
     name: "Tyranno Beat",
     image: "https://i.ibb.co/ycnqcV1s/TB-1-B31.webp",
     category: "blade",
@@ -716,19 +716,19 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "TB-002",
+        id: "Blade-TB-002",
         name: "BX-31",
         image: "https://i.ibb.co/gZpSpZDP/TB-2-B31.webp"
       },
       {
-        id: "TB-003",
+        id: "Blade-TB-003",
         name: "UX-10",
         image: "https://i.ibb.co/KcdGRtMh/TB-3-U10.webp"
       },
     ]
   },
   {
-    id: "SSw-001",
+    id: "Blade-SSw-001",
     name: "Shinobi Shadow",
     image: "https://i.ibb.co/9kQk4ZGV/SSw-1-U05.webp",
     category: "blade",
@@ -747,24 +747,24 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "SSw-002",
+        id: "Blade-SSw-002",
         name: "UX-05",
         image: "https://i.ibb.co/xtQ1WPWb/SSw-2-U005.webp"
       },
       {
-        id: "SSw-003",
+        id: "Blade-SSw-003",
         name: "UX-05",
         image: "https://i.ibb.co/MkdtLYq3/SSw-3-U05.webp"
       },
       {
-        id: "SSw-004",
+        id: "Blade-SSw-004",
         name: "UX-12",
         image: "https://i.ibb.co/kgNMDjGv/SSw-4-U12.webp"
       },
     ]
   },
   {
-    id: "WT-001",
+    id: "Blade-WT-001",
     name: "Weiss Tiger",
     image: "https://i.ibb.co/27w3KWWC/WT-1-B33.webp",
     category: "blade",
@@ -783,14 +783,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "WT-002",
+    //     id: "Blade-WT-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "CDg-001",
+    id: "Blade-CDg-001",
     name: "Cobalt Dragoon",
     image: "https://i.ibb.co/pvQHqSHM/CDg-1-B34.webp",
     category: "blade",
@@ -809,19 +809,19 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "CDg-002",
+        id: "Blade-CDg-002",
         name: "BX-00",
         image: "https://i.ibb.co/GvN6TM6Y/CDg-2-B00.webp"
       },
       {
-        id: "CDg-003",
+        id: "Blade-CDg-003",
         name: "CX-08",
         image: "https://i.ibb.co/0Vyt3PK2/CDg-3-C08.webp"
       },
     ]
   },
   {
-    id: "BSl-001",
+    id: "Blade-BSl-001",
     name: "Black Shell",
     image: "https://i.ibb.co/kV9RTVYn/BSl-1-B35.webp",
     category: "blade",
@@ -840,19 +840,19 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "BSl-002",
+        id: "Blade-BSl-002",
         name: "BX-35",
         image: "https://i.ibb.co/x8cKGMGw/BSl-2-B35.webp"
       },
       {
-        id: "BSl-003",
+        id: "Blade-BSl-003",
         name: "CX-08",
         image: "https://i.ibb.co/5xtZDZrh/BSl-3-C08.webp"
       },
     ]
   },
   {
-    id: "LCT-001",
+    id: "Blade-LCT-001",
     name: "Leon Crest",
     image: "https://i.ibb.co/Zz3D7qkL/LCT-1-U06.webp",
     category: "blade",
@@ -878,7 +878,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "PR-001",
+    id: "Blade-PR-001",
     name: "Phoenix Rudder",
     image: "https://i.ibb.co/VcbnBVfV/PR-1-U07.webp",
     category: "blade",
@@ -904,7 +904,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "WW-001",
+    id: "Blade-WW-001",
     name: "Whale Wave",
     image: "https://i.ibb.co/v6WNXDz3/WW-1-B36.webp",
     category: "blade",
@@ -923,24 +923,24 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "WW-002",
+        id: "Blade-WW-002",
         name: "BX-36",
         image: "https://i.ibb.co/mVvtBGY7/WW-2-B36.webp"
       },
       {
-        id: "WW-003",
+        id: "Blade-WW-003",
         name: "BX-36",
         image: "https://i.ibb.co/wnyW6K6/WW-3-B36.webp"
       },
       {
-        id: "WW-004",
+        id: "Blade-WW-004",
         name: "CX-05",
         image: "https://i.ibb.co/gKnzQDL/WW-4-C05.webp"
       },
     ]
   },
   {
-    id: "BSc-001",
+    id: "Blade-BSc-001",
     name: "Bear Scratch",
     image: "https://i.ibb.co/SDfXPWbF/BSc-1-B37.webp",
     category: "blade",
@@ -959,7 +959,7 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "BSc-002",
+    //     id: "Blade-BSc-002",
     //     name: "",
     //     image: ""
     //   },
@@ -967,7 +967,7 @@ export const products: Product[] = [
   },
   {
     id: "SW-001",
-    name: "Silver Wolf",
+    name: "Blade-Silver Wolf",
     image: "https://i.ibb.co/4gZf8gxT/SW-1-U08.webp",
     category: "blade",
     type:"stamina",
@@ -985,14 +985,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "SW-002",
+    //     id: "Blade-SW-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "SSr-001",
+    id: "Blade-SSr-001",
     name: "Samurai Saber",
     image: "https://i.ibb.co/1txNx0QD/SSr-1-U09.webp",
     category: "blade",
@@ -1011,14 +1011,14 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "SSr-002",
+        id: "Blade-Sr-002",
         name: "UX-00",
         image: "https://i.ibb.co/bjSHyzWg/SSr-2-U00.webp"
       },
     ]
   },
   {
-    id: "KM-001",
+    id: "Blade-KM-001",
     name: "Knight Mail",
     image: "https://i.ibb.co/zHBzhLzt/KM-1-U10.webp",
     category: "blade",
@@ -1037,14 +1037,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "KM-002",
+    //     id: "Blade-KM-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "PS-001",
+    id: "Blade-PS-001",
     name: "Ptera Swing",
     image: "https://i.ibb.co/BHsTx3T2/PS-1-U10.webp",
     category: "blade",
@@ -1063,14 +1063,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "PS-002",
+    //     id: "Blade-PS-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "CG-001",
+    id: "Blade-CG-001",
     name: "Crimson Garuda",
     image: "https://i.ibb.co/HD6qp9nf/CG-1-B38.webp",
     category: "blade",
@@ -1089,14 +1089,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "CG-002",
+    //     id: "Blade-CG-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "ID-001",
+    id: "Blade-ID-001",
     name: "Impact Drake",
     image: "https://i.ibb.co/93VWgjL1/ID-1-U11.webp",
     category: "blade",
@@ -1115,14 +1115,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "ID-002",
+    //     id: "Blade-ID-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "GC-001",
+    id: "Blade-GC-001",
     name: "Ghost Circle",
     image: "https://i.ibb.co/7tJZH3hb/GC-1-U12.webp",
     category: "blade",
@@ -1141,14 +1141,14 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "GC-002",
+        id: "Blade-GC-002",
         name: "UX-12",
         image: "https://i.ibb.co/MyKCQx7y/GC-2-U12.webp"
       },
     ]
   },
   {
-    id: "GR-001",
+    id: "Blade-GR-001",
     name: "Golem Rock",
     image: "https://i.ibb.co/N0MY0LF/GR-1-U13.webp",
     category: "blade",
@@ -1167,14 +1167,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "GR-002",
+    //     id: "Blade-GR-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "SDk-001",
+    id: "Blade-SDk-001",
     name: "Shleter Drake",
     image: "https://i.ibb.co/xqPCD6hq/SDk-1-B39.webp",
     category: "blade",
@@ -1193,19 +1193,19 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "SDk-002",
+        id: "Blade-SDk-002",
         name: "BX-39",
         image: "https://i.ibb.co/8npbt9wf/SDk-2-B39.webp"
       },
       {
-        id: "SDk-003",
+        id: "Blade-SDk-003",
         name: "BX-39",
         image: "https://i.ibb.co/VppwHZK7/SDk-3-B39.webp"
       },
     ]
   },
   {
-    id: "DBS-001",
+    id: "Blade-DBS-001",
     name: "Dran Brave S",
     image: "https://i.ibb.co/WNP49D0p/DBS-1-C01.webp",
     category: "blade",
@@ -1225,14 +1225,14 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "DBS-002",
+        id: "Blade-DBS-002",
         name: "CX-04",
         image: "https://i.ibb.co/0pYwhrRB/DBS-2-C04.webp"
       },
     ]
   },
   {
-    id: "WAR-001",
+    id: "Blade-WAR-001",
     name: "Wizard Arc R",
     image: "https://i.ibb.co/PzrFrsqt/WAR-1-C02.webp",
     category: "blade",
@@ -1252,14 +1252,14 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "WAR-002",
+        id: "Blade-WAR-002",
         name: "CX-00",
         image: "https://i.ibb.co/JRy1Ch0Y/WAR-2-C00.webp"
       },
     ]
   },
   {
-    id: "PDB-001",
+    id: "Blade-PDB-001",
     name: "Perseus Dark B",
     image: "https://i.ibb.co/1Cq0bqk/PDB-1-C03.webp",
     category: "blade",
@@ -1279,19 +1279,19 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "PDB-002",
+        id: "Blade-PDB-002",
         name: "CX-04",
         image: "https://i.ibb.co/M5jDMj6y/PDB-2-C04.webp"
       },
       {
-        id: "PDB-003",
+        id: "Blade-PDB-003",
         name: "G3 Prize",
         image: "https://i.ibb.co/pBTH7C8y/PDB-3-G3-P.webp"
       },
     ]
   },
   {
-    id: "HRT-001",
+    id: "Blade-HRT-001",
     name: "Hells Reaper T",
     image: "https://i.ibb.co/Fk094YjS/HRT-1-C05.webp",
     category: "blade",
@@ -1311,14 +1311,14 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "HRT-002",
+        id: "Blade-HRT-002",
         name: "CX-05 (Hells Arc T)",
         image: "https://i.ibb.co/vxRW58zD/HRT-2-C05.webp"
       },
     ]
   },
   {
-    id: "RRC-001",
+    id: "Blade-RRC-001",
     name: "Rhino Reaper C",
     image: "https://i.ibb.co/VYwCTRkb/RRC-1-C05.webp",
     category: "blade",
@@ -1338,14 +1338,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "RRC-002",
+    //     id: "Blade-RRC-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "SSp-001",
+    id: "Blade-SSp-001",
     name: "Scorpio Spear",
     image: "https://i.ibb.co/391sdH6d/SSp-1-U14.webp",
     category: "blade",
@@ -1364,14 +1364,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "SSp-002",
+    //     id: "Blade-SSp-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "FBJ-001",
+    id: "Blade-FBJ-001",
     name: "Fox Brush J",
     image: "https://i.ibb.co/XwHSLJr/FBJ-1-C06.webp",
     category: "blade",
@@ -1391,19 +1391,19 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "FBJ-002",
+        id: "Blade-FBJ-002",
         name: "CX-06",
         image: "https://i.ibb.co/8DB3pTJb/FBJ-2-C06.webp"
       },
       {
-        id: "FBJ-003",
+        id: "Blade-FBJ-003",
         name: "CX-06",
         image: "https://i.ibb.co/PZPHR9Bp/FBJ-3-C06.webp"
       },
     ]
   },
   {
-    id: "TPs-001",
+    id: "Blade-TPs-001",
     name: "Tricera Press",
     image: "https://i.ibb.co/KxPCPGJp/TPs-1-B44.webp",
     category: "blade",
@@ -1422,14 +1422,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "TPs-002",
+    //     id: "Blade-TPs-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "PBA-001",
+    id: "Blade-PBA-001",
     name: "Pegasus Blast A",
     image: "https://i.ibb.co/zhvkgRmL/PBA-1-C07.webp",
     category: "blade",
@@ -1448,14 +1448,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "PBA-002",
+    //     id: "Blade-PBA-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "CFW-001",
+    id: "Blade-CFW-001",
     name: "Cerberus Flame W",
     image: "https://i.ibb.co/VcQ0v6Ls/CFW-1-C08.webp",
     category: "blade",
@@ -1475,14 +1475,14 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "CFW-002",
+        id: "Blade-CFW-002",
         name: "CX-08 (Cerberus Dark W)",
         image: "https://i.ibb.co/zWN3G949/CFW-2-C08.webp"
       },
     ]
   },
   {
-    id: "WFM-001",
+    id: "Blade-WFM-001",
     name: "Whale Flame M",
     image: "https://i.ibb.co/tpHHqbQh/WFM-1-C08.webp",
     category: "blade",
@@ -1502,7 +1502,7 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "WFM-002",
+    //     id: "Blade-WFM-002",
     //     name: "",
     //     image: ""
     //   },
@@ -1511,7 +1511,7 @@ export const products: Product[] = [
 
   //RARE BLADE
   {
-    id: "CDk-001",
+    id: "Blade-CDk-001",
     name: "Cobalt Drake",
     image: "https://i.ibb.co/KjHsS8q2/CDk-1-B00.webp",
     category: "blade",
@@ -1530,14 +1530,14 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "CDk-002",
+        id: "Blade-CDk-002",
         name: "BX-00",
         image: "https://i.ibb.co/4ggqPtvt/CDk-2-B00.webp"
       },
     ]
   },
   {
-    id: "PF-001",
+    id: "Blade-PF-001",
     name: "Phoenix Feather",
     image: "https://i.ibb.co/NgYDNzQ0/PF-1-B00.webp",
     category: "blade",
@@ -1556,19 +1556,19 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "PF-002",
+        id: "Blade-PF-002",
         name: "UX-12",
         image: "https://i.ibb.co/MyvGTPGr/PF-2-U12.webp"
       },
       {
-        id: "PF-002",
+        id: "Blade-PF-002",
         name: "BX-00",
         image: "https://i.ibb.co/bjY3fZy8/PF-3-B00.webp"
       },
     ]
   },
   {
-    id: "AP-001",
+    id: "Blade-AP-001",
     name: "Aero Pegasus",
     image: "https://i.ibb.co/5XY6MgBH/AP-1-U00.webp",
     category: "blade",
@@ -1587,14 +1587,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "AP-002",
+    //     id: "Blade-AP-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "SK-001",
+    id: "Blade-SK-001",
     name: "Shinobi Knife (XONE)",
     image: "https://i.ibb.co/vxw8CZC7/SK-1-XONE.webp",
     category: "blade",
@@ -1613,14 +1613,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "SK-002",
+    //     id: "Blade-SK-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "MT-001",
+    id: "Blade-MT-001",
     name: "Mammoth Tusk",
     image: "https://i.ibb.co/mrrM6Jzz/MT-1-B00.webp",
     category: "blade",
@@ -1639,14 +1639,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "MT-002",
+    //     id: "Blade-MT-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "CC-001",
+    id: "Blade-CC-001",
     name: "Croc Crunch",
     image: "https://i.ibb.co/C3jpr2Th/CC-1-B00.webp",
     category: "blade",
@@ -1665,14 +1665,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "CC-002",
+    //     id: "Blade-CC-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "SSt-001",
+    id: "Blade-SSt-001",
     name: "Samurai Steel",
     image: "https://i.ibb.co/ZRdNsxyV/SSt-1-B00.webp",
     category: "blade",
@@ -1691,14 +1691,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "SSt-002",
+    //     id: "Blade-SSt-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "LFT-001",
+    id: "Blade-LFT-001",
     name: "Leon Fang T (Red Ver.)",
     image: "https://i.ibb.co/twWHjc2b/LFT-1-RED.webp",
     category: "blade",
@@ -1718,14 +1718,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "LFT-002",
+    //     id: "Blade-LFT-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "DAS-001",
+    id: "Blade-DAS-001",
     name: "Dran Arc S (MC Blue)",
     image: "https://i.ibb.co/Hp9J3rBn/Persona-CX.webp",
     category: "blade",
@@ -1745,7 +1745,7 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "DAS-002",
+    //     id: "Blade-DAS-002",
     //     name: "",
     //     image: ""
     //   },
@@ -1754,7 +1754,7 @@ export const products: Product[] = [
 
   // ASSIST BLADES
   {
-    id: "S-001",
+    id: "As-S-001",
     name: "Slash",
     image: "https://i.ibb.co/Cpv5ZKcn/S-1-C01.webp",
     category: "assist-blade",
@@ -1766,14 +1766,14 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "S-002",
+        id: "As-S-002",
         name: "CX-04",
         image: "https://i.ibb.co/Zp90jhR3/S-2-C04.webp"
       },
     ]
   },
   {
-    id: "R-001",
+    id: "As-R-001",
     name: "Round",
     image: "https://i.ibb.co/B5W0gtY8/R-1-C02.webp",
     category: "assist-blade",
@@ -1785,14 +1785,14 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "R-002",
+        id: "As-R-002",
         name: "CX-00",
         image: "https://i.ibb.co/mC2xhrQ7/R-2-C00.webp"
       },
     ]
   },
   {
-    id: "B-001",
+    id: "As-B-001",
     name: "Bumper",
     image: "https://i.ibb.co/CsXLs9tV/B-1-C03.webp",
     category: "assist-blade",
@@ -1804,14 +1804,14 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "B-002",
+        id: "As-B-002",
         name: "CX-04",
         image: "https://i.ibb.co/bjSR90Rb/B-2-C04.webp"
       },
     ]
   },
   {
-    id: "T-001",
+    id: "As-T-001",
     name: "Turn",
     image: "https://i.ibb.co/p62pryH9/T-1-C05.webp",
     category: "assist-blade",
@@ -1823,19 +1823,19 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "T-002",
+        id: "As-T-002",
         name: "CX-05",
         image: "https://i.ibb.co/VW2GdZHW/T-2-C05.webp"
       },
       {
-        id: "T-003",
+        id: "As-T-003",
         name: "CX-00",
         image: "https://i.ibb.co/7tL83gw9/T-3-C00.webp"
       },
     ]
   },
   {
-    id: "C-001",
+    id: "As-C-001",
     name: "Charge",
     image: "https://i.ibb.co/1JXJ2CB7/C-1-C05.webp",
     category: "assist-blade",
@@ -1847,14 +1847,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "C-002",
+    //     id: "As-C-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "J-001",
+    id: "As-J-001",
     name: "Jaggy",
     image: "https://i.ibb.co/1JP9XPQj/J-1-C06.webp",
     category: "assist-blade",
@@ -1866,19 +1866,19 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "J-002",
+        id: "As-J-002",
         name: "CX-06",
         image: "https://i.ibb.co/7J0mqvnj/J-2-C06.webp"
       },
       {
-        id: "J-003",
+        id: "As-J-003",
         name: "CX-06",
         image: "https://i.ibb.co/qYr6pSBy/J-3-C06.webp"
       },
     ]
   },
   {
-    id: "A-001",
+    id: "As-A-001",
     name: "Assault",
     image: "https://i.ibb.co/LdDXTjKk/A-1-C07.webp",
     category: "assist-blade",
@@ -1890,14 +1890,14 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "A-002",
+    //     id: "As-A-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "W-001",
+    id: "As-W-001",
     name: "Wheel",
     image: "https://i.ibb.co/Y4rMVF0y/W-1-C08.webp",
     category: "assist-blade",
@@ -1909,14 +1909,14 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "W-002",
+        id: "As-W-002",
         name: "CX-08",
         image: ""
       },
     ]
   },
   {
-    id: "M-001",
+    id: "As-M-001",
     name: "Massive",
     image: "https://i.ibb.co/jPjx5q0t/M-1-C08.webp",
     category: "assist-blade",
@@ -1928,7 +1928,7 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "M-002",
+    //     id: "As-M-002",
     //     name: "",
     //     image: ""
     //   },
@@ -1937,7 +1937,7 @@ export const products: Product[] = [
 
   // RATCHETS
   {
-    id: "070-001",
+    id: "Rat-070-001",
     name: "0-70 (UX-14)",
     image: "https://i.ibb.co/1ftYncmr/0-70-1-U14.webp",
     category: "ratchet",
@@ -1949,14 +1949,14 @@ export const products: Product[] = [
     ],
     // bey: [
     //   {
-    //     id: "080-002",
+    //     id: "Rat-080-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "080-001",
+    id: "Rat-080-001",
     name: "0-80 (UX-12)",
     image: "https://i.ibb.co/hxLdSfhf/0-80-1-U12.webp",
     category: "ratchet",
@@ -1968,24 +1968,24 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "080-002",
+        id: "Rat-080-002",
         name: "UX-12",
         image: "https://i.ibb.co/6cVdqyVC/0-80-2-U12.webp"
       },
       {
-        id: "080-003",
+        id: "Rat-080-003",
         name: "UX-12",
         image: "https://i.ibb.co/RTXGkgKr/0-80-3-U12.webp"
       },
       {
-        id: "080-004",
+        id: "Rat-080-004",
         name: "CX-06",
         image: "https://i.ibb.co/0RZR7ZyH/0-80-4-C06.webp"
       },
     ]
   },
   {
-    id: "160-001",
+    id: "Rat-160-001",
     name: "1-60 (UX-01)",
     image: "https://i.ibb.co/39mbJTH1/1-60-1-U01.webp",
     category: "ratchet",
@@ -1997,74 +1997,74 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "160-002",
+        id: "Rat-160-002",
         name: "UX-04",
         image: "https://i.ibb.co/wZqn88m5/1-60-2-U04.webp"
       },
       {
-        id: "160-003",
+        id: "Rat-160-003",
         name: "BX-31",
         image: "https://i.ibb.co/BKdhw5R6/1-60-3-B31.webp"
       },
       {
-        id: "160-004",
+        id: "Rat-160-004",
         name: "BX-35",
         image: "https://i.ibb.co/XffCCMYL/1-60-4-B35.webp"
       },
       {
-        id: "160-005",
+        id: "Rat-160-005",
         name: "BX-00",
         image: "https://i.ibb.co/n886nNmt/1-60-5-B00.webp"
       },
       {
-        id: "160-006",
+        id: "Rat-160-006",
         name: "UX-10",
         image: "https://i.ibb.co/rKmMB0kw/1-60-6-U10.webp"
       },
       {
-        id: "160-007",
+        id: "Rat-160-007",
         name: "UX-13",
         image: "https://i.ibb.co/BKQPS0rv/1-60-7-U00.webp"
       },
       {
-        id: "160-008",
+        id: "Rat-160-008",
         name: "Park Limited",
         image: "https://i.ibb.co/spwXkfqS/1-60-8-LTD.webp"
       },
       {
-        id: "160-009",
+        id: "Rat-160-009",
         name: "Park Limited",
         image: "https://i.ibb.co/cK8pbBhj/1-60-9-LTD.webp"
       },
       {
-        id: "160-00=10",
+        id: "Rat-160-00=10",
         name: "Park Limited",
         image: "https://i.ibb.co/9kkfV44b/1-60-10-LTD.webp"
       },
       {
-        id: "160-011",
+        id: "Rat-160-011",
         name: "Park Limited",
         image: "https://i.ibb.co/kVZ5Vvqr/1-60-11-LTD.webp"
       },
       {
-        id: "160-012",
+        id: "Rat-160-012",
         name: "Park Limited",
         image: "https://i.ibb.co/rRg6jcYC/1-60-12-LTD.webp"
       },
       {
-        id: "160-013",
+        id: "Rat-160-013",
         name: "Park Limited",
         image: "https://i.ibb.co/Dgwfc2Nd/1-60-13-LTD.webp"
       },
       {
-        id: "160-014",
+        id: "Rat-160-014",
         name: "UX-13",
         image: "https://i.ibb.co/nN0nY7JM/1-60-14-U13.webp"
       },
     ]
   },
   {
-    id: "180-001",
+    id: "Rat-180-001",
     name: "1-80 (UX-05)",
     image: "https://i.ibb.co/MwrKzWg/1-80-1-U05.webp",
     category: "ratchet",
@@ -2076,19 +2076,19 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "180-002",
+        id: "Rat-180-002",
         name: "UX-07",
         image: "https://i.ibb.co/YTWjYHJr/1-80-2-U07.webp"
       },
       {
-        id: "180-003",
+        id: "Rat-180-003",
         name: "Collab",
         image: "https://i.ibb.co/Mk4L5PX0/1-80-3-Col.webp"
       },
     ]
   },
   {
-    id: "260-001",
+    id: "Rat-260-001",
     name: "2-60 (BX-34)",
     image: "https://i.ibb.co/Vc4KzB0n/2-60-1-B34.webp",
     category: "ratchet",
@@ -2100,39 +2100,39 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "260-002",
+        id: "Rat-260-002",
         name: "BX-00",
         image: "https://i.ibb.co/QxX2PQ2/2-60-2-B00.webp"
       },
       {
-        id: "260-003",
+        id: "Rat-260-003",
         name: "UX-07",
         image: "https://i.ibb.co/n87K2g6k/2-60-3-U07.webp"
       },
       {
-        id: "260-004",
+        id: "Rat-260-004",
         name: "25th Anniversary",
         image: "https://i.ibb.co/dw9gMt0F/2-60-4-25th.webp"
       },
       {
-        id: "260-005",
+        id: "Rat-260-005",
         name: "UX-12",
         image: "https://i.ibb.co/5xFhGnM5/2-60-5-U12.webp"
       },
       {
-        id: "260-006",
+        id: "Rat-260-006",
         name: "BX-00",
         image: "https://i.ibb.co/DD66dnSb/2-60-6-B00.webp"
       },
       {
-        id: "260-007",
+        id: "Rat-260-007",
         name: "CX-06",
         image: "https://i.ibb.co/tNWJ9G7/2-60-7-C06.webp"
       },
     ]
   },
   {
-    id: "270-001",
+    id: "Rat-270-001",
     name: "2-70 (UX-09)",
     image: "https://i.ibb.co/HfD0mdf5/2-70-1-U09.webp",
     category: "ratchet",
@@ -2145,14 +2145,14 @@ export const products: Product[] = [
     bey: [
       {
         //metal coat orange
-        id: "270-002",
+        id: "Rat-270-002",
         name: "UX-00",
         image: ""
       },
     ]
   },
   {
-    id: "280-001",
+    id: "Rat-280-001",
     name: "2-80 (BX-00)",
     image: "https://i.ibb.co/RGFDdmY8/2-80-1-B00.webp",
     category: "ratchet",
@@ -2164,14 +2164,14 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "280-002",
+        id: "Rat-280-002",
         name: "BX-00",
         image: "https://i.ibb.co/N60MgZrz/2-80-2-B00.webp"
       },
     ]
   },
   {
-    id: "360-001",
+    id: "Rat-360-001",
     name: "3-60 (BX-01)",
     image: "https://i.ibb.co/Qv29Y5pf/3-60-1-B01.webp",
     category: "ratchet",
@@ -2183,12 +2183,12 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "360-002",
+        id: "Rat-360-002",
         name: "BX-07",
         image: "https://i.ibb.co/dsm9xW62/3-60-2-B07.webp"
       },
       {
-        id: "360-003",
+        id: "Rat-360-003",
         name: "BX-14",
         image: "https://i.ibb.co/ch9X0FV6/3-60-3-B14.webp"
       },
@@ -2198,59 +2198,59 @@ export const products: Product[] = [
         image: "https://i.ibb.co/2fskgqs/3-60-4-B14.webp"
       },
       {
-        id: "360-005",
+        id: "Rat-360-005",
         name: "BX-17",
         image: "https://i.ibb.co/zTfFvLXS/3-60-5-B17.webp"
       },
       {
-        id: "360-006",
+        id: "Rat-360-006",
         name: "BX-21",
         image: "https://i.ibb.co/2YLzfWqd/3-60-6-B21.webp"
       },
       {
-        id: "360-007",
+        id: "Rat-360-007",
         name: "BX-24",
         image: "https://i.ibb.co/9kyzR5qd/3-60-7-B24.webp"
       },
       {
-        id: "360-008",
+        id: "Rat-360-008",
         name: "BX-31",
         image: "https://i.ibb.co/zhcPx6wc/3-60-8-B31.webp"
       },
       {
-        id: "360-009",
+        id: "Rat-360-009",
         name: "BX-33",
         image: "https://i.ibb.co/2YhDhGfV/3-60-9-B33.webp"
       },
       {
-        id: "360-010",
+        id: "Rat-360-010",
         name: "BX-39",
         image: "https://i.ibb.co/BVpxTtQw/3-60-10-B39.webp"
       },
       {
-        id: "360-011",
+        id: "Rat-360-011",
         name: "Collab",
         image: "https://i.ibb.co/5X188nJ7/3-60-11-Col.webp"
       },
       {
-        id: "360-012",
+        id: "Rat-360-012",
         name: "Collab",
         image: "https://i.ibb.co/9H7Dh5wR/3-60-12-Col.webp"
       },
       {
-        id: "360-013",
+        id: "Rat-360-013",
         name: "Collab",
         image: "https://i.ibb.co/MktJJJb2/3-60-13-Col.webp"
       },
       {
-        id: "360-014",
+        id: "Rat-360-014",
         name: "B00",
         image: "https://i.ibb.co/KpcP076z/3-60-14-B00.webp"
       },
     ]
   },
   {
-    id: "370-001",
+    id: "Rat-370-001",
     name: "3-70 (UX-02)",
     image: "https://i.ibb.co/9HD6jrmG/3-70-1-U02.webp",
     category: "ratchet",
@@ -2262,39 +2262,39 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "370-002",
+        id: "Rat-370-002",
         name: "UX-05",
         image: "https://i.ibb.co/F4Gwtkmj/3-70-2-U05.webp"
       },
       {
-        id: "370-003",
+        id: "Rat-370-003",
         name: "BX-35",
         image: "https://i.ibb.co/ZpRTWfTm/3-70-3-B35.webp"
       },
       {
-        id: "370-004",
+        id: "Rat-370-004",
         name: "UX-00",
         image: "https://i.ibb.co/ds8fFzwr/3-70-4-U00.webp"
       },
       {
-        id: "370-005",
+        id: "Rat-370-005",
         name: "UX-00",
         image: "https://i.ibb.co/V025Gj95/3-70-5-25th.webp"
       },
       {
-        id: "370-006",
+        id: "Rat-370-006",
         name: "25th Anniversary",
         image: "https://i.ibb.co/V025Gj95/3-70-5-25th.webp"
       },
       {
-        id: "370-007",
+        id: "Rat-370-007",
         name: "UX-00",
         image: "https://i.ibb.co/gZJmNMDZ/3-70-6-U00.webp"
       },
     ]
   },
   {
-    id: "380-001",
+    id: "Rat-380-001",
     name: "3-80 (BX-04)",
     image: "https://i.ibb.co/FL1qMSss/3-80-1-B04.webp",
     category: "ratchet",
@@ -2306,89 +2306,89 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "380-002",
+        id: "Rat-380-002",
         name: "BX-06",
         image: "https://i.ibb.co/XfLBmxw0/3-80-2-B06.webp"
       },
       {
-        id: "380-003",
+        id: "Rat-380-003",
         name: "BX-08",
         image: "https://i.ibb.co/b5mJ3XnP/3-80-3-B08.webp"
       },
       {
-        id: "380-004",
+        id: "Rat-380-004",
         name: "BX-14",
         image: "https://i.ibb.co/GyPPTF1/3-80-4-B14.webp"
       },
       {
-        id: "380-005",
+        id: "Rat-380-005",
         name: "BX-16",
         image: "https://i.ibb.co/Wvcmfd97/3-80-5-B16.webp"
       },
       {
-        id: "380-006",
+        id: "Rat-380-006",
         name: "BX-19",
         image: "https://i.ibb.co/8LFHRpXG/3-80-6-B19.webp"
       },
       {
-        id: "380-007",
+        id: "Rat-380-007",
         name: "BX-20",
         image: "https://i.ibb.co/21tLYn7H/3-80-7-B20.webp"
       },
       {
-        id: "380-008",
+        id: "Rat-380-008",
         name: "BX-24",
         image: "https://i.ibb.co/N6LV9vrc/3-80-8-B24.webp"
       },
       {
-        id: "380-009",
+        id: "Rat-380-009",
         name: "BX-00",
         image: "https://i.ibb.co/tMsw14vh/3-80-9-B00.webp"
       },
       {
-        id: "380-010",
+        id: "Rat-380-010",
         name: "BX-00",
         image: "https://i.ibb.co/yFkMdhgc/3-80-10-B00.webp"
       },
       {
-        id: "380-011",
+        id: "Rat-380-011",
         name: "BX-36",
         image: "https://i.ibb.co/zTSz9CZT/3-80-11-B36.webp"
       },
       {
-        id: "380-012",
+        id: "Rat-380-012",
         name: "UX-08",
         image: "https://i.ibb.co/NwTC7Sc/3-80-12-U08.webp"
       },
       {
-        id: "380-013",
+        id: "Rat-380-013",
         name: "UX-12",
         image: "https://i.ibb.co/23Q2tnGH/3-80-13-U12.webp"
       },
       {
-        id: "380-014",
+        id: "Rat-380-014",
         name: "Collab",
         image: "https://i.ibb.co/VYBGdcHt/3-80-14-Col.webp"
       },
       {
-        id: "380-015",
+        id: "Rat-380-015",
         name: "Collab",
         image: "https://i.ibb.co/8LhHQKtw/3-80-15-Col.webp"
       },
       {
-        id: "380-016",
+        id: "Rat-380-016",
         name: "Collab",
         image: "https://i.ibb.co/Fkns32NS/3-80-16-Col.webp"
       },
       {
-        id: "380-017",
+        id: "Rat-380-017",
         name: "G3 Prize",
         image: "https://i.ibb.co/N2pTYPv4/3-80-17-G3-P.webp"
       },
     ]
   },
   {
-    id: "385-001",
+    id: "Rat-385-001",
     name: "3-85 (UX-10)",
     image: "https://i.ibb.co/8L9yt4hY/3-85-1-U10.webp",
     category: "ratchet",
@@ -2400,19 +2400,19 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "385-002",
+        id: "Rat-385-002",
         name: "CX-05",
         image: "https://i.ibb.co/MDttB0K8/3-85-2-C05.webp"
       },
       {
-        id: "385-003",
+        id: "Rat-385-003",
         name: "Collab",
         image: "https://i.ibb.co/39PzGjFZ/3-85-3-Col.webp"
       },
     ]
   },
   {
-    id: "455-001",
+    id: "Rat-455-001",
     name: "4-55 (CX-02)",
     image: "https://i.ibb.co/G3kQrKdb/4-55-1-C02.webp",
     category: "ratchet",
@@ -2424,29 +2424,29 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "455-002",
+        id: "Rat-455-002",
         name: "CX-05",
         image: "https://i.ibb.co/x8DmxJNM/4-55-2-C05.webp"
       },
       {
-        id: "455-003",
+        id: "Rat-455-003",
         name: "CX-08",
         image: ""
       },
       {
-        id: "455-004",
+        id: "Rat-455-004",
         name: "Collab",
         image: "https://i.ibb.co/pr6M1wVK/4-55-4-Col.webp"
       },
       {
-        id: "455-004",
+        id: "Rat-455-004",
         name: "CX-00",
         image: "https://i.ibb.co/XryYNrvt/4-55-5-C00.webp"
       },
     ]
   },
   {
-    id: "460-001",
+    id: "Rat-460-001",
     name: "4-60 (BX-02)",
     image: "https://i.ibb.co/0VqTk9m8/4-60-1-B02.webp",
     category: "ratchet",
@@ -2458,89 +2458,89 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "460-002",
+        id: "Rat-460-002",
         name: "BX-00",
         image: "https://i.ibb.co/tTT5QV1b/4-60-2-B00.webp"
       },
       {
-        id: "460-003",
+        id: "Rat-460-003",
         name: "BX-00",
         image: "https://i.ibb.co/rG2tc0DY/4-60-3-B00.webp"
       },
       {
-        id: "460-004",
+        id: "Rat-460-004",
         name: "BX-08",
         image: "https://i.ibb.co/Y4wNBLcf/4-60-4-B08.webp"
       },
       {
-        id: "460-005",
+        id: "Rat-460-005",
         name: "BX-14",
         image: "https://i.ibb.co/8gfnKQHr/4-60-5-B14.webp"
       },
       {
-        id: "460-006",
+        id: "Rat-460-006",
         name: "BX-16",
         image: "https://i.ibb.co/0V9dwJy2/4-60-6-B16.webp"
       },
       {
-        id: "460-007",
+        id: "Rat-460-007",
         name: "BX-20",
         image: "https://i.ibb.co/PLCchzS/4-60-7-B20.webp"
       },
       {
-        id: "460-008",
+        id: "Rat-460-008",
         name: "BX-24",
         image: "https://i.ibb.co/k6cGJJr7/4-60-8-B24.webp"
       },
       {
-        id: "460-009",
+        id: "Rat-460-009",
         name: "BX-35",
         image: "https://i.ibb.co/chdZsSYr/4-60-9-B35.webp"
       },
       {
-        id: "460-010",
+        id: "Rat-460-010",
         name: "25th Anniversary",
         image: "https://i.ibb.co/21z2RR3f/4-60-10-25th.webp"
       },
       {
-        id: "460-011",
+        id: "Rat-460-011",
         name: "BX-00",
         image: "https://i.ibb.co/cSz248ms/4-60-11-B00.webp"
       },
       {
-        id: "460-012",
+        id: "Rat-460-012",
         name: "BX-00",
         image: "https://i.ibb.co/Wv5PzZgQ/4-60-12-B00.webp"
       },
       {
-        id: "460-013",
+        id: "Rat-460-013",
         name: "UX-12",
         image: "https://i.ibb.co/Kxsf4TsB/4-60-13-U12.webp"
       },
       {
-        id: "460-014",
+        id: "Rat-460-014",
         name: "Collab",
         image: "https://i.ibb.co/4nMyx4mb/4-60-14-Col.webp"
       },
       {
-        id: "460-015",
+        id: "Rat-460-015",
         name: "Collab",
         image: "https://i.ibb.co/bMjV2FGT/4-60-15-Col.webp"
       },
       {
-        id: "460-016",
+        id: "Rat-460-016",
         name: "Collab",
         image: "https://i.ibb.co/h1FQgdJK/4-60-16-Col.webp"
       },
       {
-        id: "460-017",
+        id: "Rat-460-017",
         name: "CX-00",
         image: "https://i.ibb.co/ds9dvRhC/4-60-17-C00.webp"
       },
     ]
   },
   {
-    id: "470-001",
+    id: "Rat-470-001",
     name: "4-70 (BX-31)",
     image: "https://i.ibb.co/CsNVCTwJ/4-70-1-B31.webp",
     category: "ratchet",
@@ -2552,34 +2552,34 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "470-002",
+        id: "Rat-470-002",
         name: "BX-31",
         image: "https://i.ibb.co/gM3c3Dhm/4-70-2-B31.webp"
       },
       {
-        id: "470-003",
+        id: "Rat-470-003",
         name: "BX-36",
         image: "https://i.ibb.co/nN3Mh5wp/4-70-3-B36.webp"
       },
       {
-        id: "470-004",
+        id: "Rat-470-004",
         name: "BX-38",
         image: "https://i.ibb.co/8GfsBvW/4-70-4-B38.webp"
       },
       {
-        id: "470-005",
+        id: "Rat-470-005",
         name: "CX-05",
         image: "https://i.ibb.co/hx8hZ2nc/4-70-5-C05.webp"
       },
       {
-        id: "470-006",
+        id: "Rat-470-006",
         name: "CX-05",
         image: "https://i.ibb.co/mCKNsyKt/4-70-6-C05.webp"
       },
     ]
   },
   {
-    id: "480-001",
+    id: "Rat-480-001",
     name: "4-80 (BX-03)",
     image: "https://i.ibb.co/fYt4J1q7/4-80-1-B03.webp",
     category: "ratchet",
@@ -2591,74 +2591,74 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "480-002",
+        id: "Rat-480-002",
         name: "BX-05",
         image: "https://i.ibb.co/Ldzk057w/4-80-2-B05.webp"
       },
       {
-        id: "480-003",
+        id: "Rat-480-003",
         name: "BX-08",
         image: "https://i.ibb.co/Xk3qgtYj/4-80-3-B08.webp"
       },
       {
-        id: "480-004",
+        id: "Rat-480-004",
         name: "BX-13",
         image: "https://i.ibb.co/RG2rd1QD/4-80-4-B13.webp"
       },
       {
-        id: "480-005",
+        id: "Rat-480-005",
         name: "BX-14",
         image: "https://i.ibb.co/rGsTfBzV/4-80-5-B14.webp"
       },
       {
-        id: "480-006",
+        id: "Rat-480-006",
         name: "BX-14",
         image: "https://i.ibb.co/jPVQbBzx/4-80-6-B14.webp"
       },
       {
-        id: "480-007",
+        id: "Rat-480-007",
         name: "BX-17",
         image: "https://i.ibb.co/HTDJsXzM/4-80-7-B17.webp"
       },
       {
-        id: "480-008",
+        id: "Rat-480-008",
         name: "BX-21",
         image: "https://i.ibb.co/fVjVgvMP/4-80-8-B21.webp"
       },
       {
-        id: "480-009",
+        id: "Rat-480-009",
         name: "BX-24",
         image: "https://i.ibb.co/TqnBSsvg/4-80-9-B24.webp"
       },
       {
-        id: "480-010",
+        id: "Rat-480-010",
         name: "BX-27",
         image: "https://i.ibb.co/DfGFzGGr/4-80-10-B27.webp"
       },
       {
-        id: "480-011",
+        id: "Rat-480-011",
         name: "BX-00",
         image: "https://i.ibb.co/JWQRGBmY/4-80-11-B00.webp"
       },
       {
-        id: "480-012",
+        id: "Rat-480-012",
         name: "Collab",
         image: "https://i.ibb.co/27dN0yyg/4-80-12-Col.webp"
       },
       {
-        id: "480-013",
+        id: "Rat-480-013",
         name: "Collab",
         image: "https://i.ibb.co/R47CKmJL/4-80-13-Col.webp"
       },
       {
-        id: "480-014",
+        id: "Rat-480-014",
         name: "Collab",
         image: "https://i.ibb.co/1GFGtqjt/4-80-14-Col.webp"
       },
     ]
   },
   {
-    id: "560-001",
+    id: "Rat-560-001",
     name: "5-60 (BX-15)",
     image: "https://i.ibb.co/nqbhGh4z/5-60-1-B15.webp",
     category: "ratchet",
@@ -2670,49 +2670,49 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "560-002",
+        id: "Rat-560-002",
         name: "BX-21",
         image: "https://i.ibb.co/vvJRjNjV/5-60-2-B21.webp"
       },
       {
-        id: "560-003",
+        id: "Rat-560-003",
         name: "BX-24",
         image: "https://i.ibb.co/chvjpmr5/5-60-3-B24.webp"
       },
       {
-        id: "560-004",
+        id: "Rat-560-004",
         name: "BX-00",
         image: "https://i.ibb.co/bD9x9nR/5-60-4-B00.webp"
       },
       {
-        id: "560-005",
+        id: "Rat-560-005",
         name: "BX-26",
         image: "https://i.ibb.co/wNFg5TfP/5-60-5-B26.webp"
       },
       {
-        id: "560-006",
+        id: "Rat-560-006",
         name: "BX-00",
         image: "https://i.ibb.co/RLLbKNV/5-60-10-B00.png"
       },
       {
-        id: "560-007",
+        id: "Rat-560-007",
         name: "BX-27",
         image: "https://i.ibb.co/hRhWqDZ9/5-60-7-B27.webp"
       },
       {
-        id: "560-008",
+        id: "Rat-560-008",
         name: "BX-37",
         image: "https://i.ibb.co/TMDXwD5s/5-60-8-B00.webp"
       },
       {
-        id: "560-009",
+        id: "Rat-560-009",
         name: "BX-37",
         image: "https://i.ibb.co/XrDHt0NZ/5-60-9-B37.webp"
       },
     ]
   },
   {
-    id: "570-001",
+    id: "Rat-570-001",
     name: "5-70 (UX-03)",
     image: "https://i.ibb.co/HD5Bdf2v/5-70-1-U03.webp",
     category: "ratchet",
@@ -2724,34 +2724,34 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "570-002",
+        id: "Rat-570-002",
         name: "UX-04",
         image: "https://i.ibb.co/qFmpMZy6/5-70-2-U04.webp"
       },
       {
-        id: "570-003",
+        id: "Rat-570-003",
         name: "BX-35",
         image: "https://i.ibb.co/twYv1fyv/5-70-3-B35.webp"
       },
       {
-        id: "570-004",
+        id: "Rat-570-004",
         name: "BX-39",
         image: "https://i.ibb.co/T6rTDQ5/5-70-4-B39.webp"
       },
       {
-        id: "570-005",
+        id: "Rat-570-005",
         name: "G3 Prize",
         image: "https://i.ibb.co/Q7FLgWk7/5-70-5-G3-P.webp"
       },
       {
-        id: "570-006",
+        id: "Rat-570-006",
         name: "BX-00",
         image: "https://i.ibb.co/4w3QKPGK/5-70-6-B00.webp"
       },
     ]
   },
   {
-    id: "580-001",
+    id: "Rat-580-001",
     name: "5-80 (BX-16)",
     image: "https://i.ibb.co/JRm2c35r/5-80-1-B16.webp",
     category: "ratchet",
@@ -2763,44 +2763,44 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "580-002",
+        id: "Rat-580-002",
         name: "BX-20",
         image: "https://i.ibb.co/zWq21DW5/5-80-2-B20.webp"
       },
       {
-        id: "580-003",
+        id: "Rat-580-003",
         name: "BX-24",
         image: "https://i.ibb.co/39qs6LmF/5-80-3-B24.webp"
       },
       {
-        id: "580-004",
+        id: "Rat-580-004",
         name: "BX-31",
         image: "https://i.ibb.co/zVV7rNhp/5-80-4-B31.webp"
       },
       {
-        id: "580-005",
+        id: "Rat-580-005",
         name: "BX-35",
         image: "https://i.ibb.co/qM64fcL5/5-80-5-B35.webp"
       },
       {
-        id: "580-006",
+        id: "Rat-580-006",
         name: "BX-36",
         image: "https://i.ibb.co/wrZG4HfZ/5-80-6-B36.webp"
       },
       {
-        id: "580-007",
+        id: "Rat-580-007",
         name: "CX-08",
         image: ""
       },
       {
-        id: "580-008",
+        id: "Rat-580-008",
         name: "CX-08",
         image: ""
       },
     ]
   },
   {
-    id: "660-001",
+    id: "Rat-660-001",
     name: "6-60 (CX-01)",
     image: "https://i.ibb.co/LXzr1j6d/6-60-1-C01.webp",
     category: "ratchet",
@@ -2812,14 +2812,14 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "660-002",
+        id: "Rat-660-002",
         name: "CX-04",
         image: "https://i.ibb.co/B2sVVD1g/6-60-2-C04.webp"
       },
     ]
   },
   {
-    id: "680-001",
+    id: "Rat-680-001",
     name: "6-80 (CX-03)",
     image: "https://i.ibb.co/qYwHBx4r/6-80-1-C03.webp",
     category: "ratchet",
@@ -2831,19 +2831,19 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "680-002",
+        id: "Rat-680-002",
         name: "CX-04",
         image: "https://i.ibb.co/GfPD5b1m/6-80-2-C04.webp"
       },
       {
-        id: "680-003",
+        id: "Rat-680-003",
         name: "G3 Prize",
         image: "https://i.ibb.co/XrRB83dd/6-80-3-G3-P.png"
       },
     ]
   },
   {
-    id: "760-001",
+    id: "Rat-760-001",
     name: "7-60 (UX-06)",
     image: "https://i.ibb.co/7T427Ry/7-60-1-U06.webp",
     category: "ratchet",
@@ -2855,19 +2855,19 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "760-002",
+        id: "Rat-760-002",
         name: "BX-00",
         image: "https://i.ibb.co/Fb3xSYJ7/7-60-2-B00.webp"
       },
       {
-        id: "760-003",
+        id: "Rat-760-003",
         name: "CX-05",
         image: "https://i.ibb.co/MD5dxgdQ/7-60-3-C05.webp"
       },
     ]
   },
   {
-    id: "ratchet-770",
+    id: "Rat-770-001",
     name: "7-70 (UX-10)",
     image: "https://i.ibb.co/f3jVx2N/7-70-1-U10.webp",
     category: "ratchet",
@@ -2879,14 +2879,14 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "770-001",
+        id: "Rat-770-002",
         name: "CX-08",
         image: ""
       },
     ]
   },
   {
-    id: "ratchet-780",
+    id: "Rat-780-001",
     name: "7-80 (CX-39)",
     image: "https://i.ibb.co/PZjCjcrB/7-80-1-B39.webp",
     category: "ratchet",
@@ -2898,14 +2898,14 @@ export const products: Product[] = [
     ],
     // bey: [
     //   {
-    //     id: "760-002",
+    //     id: "Rat-780-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "ratchet-960",
+    id: "Rat-960-001",
     name: "9-60 (BX-23)",
     image: "https://i.ibb.co/C3XBTB4x/9-60-1-B23.webp",
     category: "ratchet",
@@ -2917,29 +2917,29 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "960-002",
+        id: "Rat-960-002",
         name: "UX-05",
         image: "https://i.ibb.co/KjDN2gyT/9-60-2-U05.webp"
       },
       {
-        id: "960-003",
+        id: "Rat-960-003",
         name: "UX-11",
         image: "https://i.ibb.co/qMPb8yg6/9-60-3-U11.webp"
       },
       {
-        id: "960-004",
+        id: "Rat-960-004",
         name: "BX-00",
         image: "https://i.ibb.co/YB74yMf7/9-60-4-B00.webp"
       },
       {
-        id: "960-005",
+        id: "Rat-960-005",
         name: "Collab",
         image: "https://i.ibb.co/zh1bZdg5/9-60-5-Col.webp"
       },
     ]
   },
   {
-    id: "970-001",
+    id: "Rat-970-001",
     name: "9-70 (UX-07)",
     image: "https://i.ibb.co/fVphTQyV/9-70-1-U07.webp",
     category: "ratchet",
@@ -2951,14 +2951,14 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "970-002",
+        id: "Rat-970-002",
         name: "CX-06",
         image: "https://i.ibb.co/gFvCh9FG/9-70-2-C06.webp"
       },
     ]
   },
   {
-    id: "980-001",
+    id: "Rat-980-001",
     name: "9-80 (BX-27)",
     image: "https://i.ibb.co/99fYmz4F/9-80-1-B27.webp",
     category: "ratchet",
@@ -2970,29 +2970,29 @@ export const products: Product[] = [
     ],
     bey: [
       {
-        id: "980-002",
+        id: "Rat-980-002",
         name: "BX-31",
         image: "https://i.ibb.co/QjfXWGpk/9-80-2-B31.webp"
       },
       {
-        id: "980-003",
+        id: "Rat-980-003",
         name: "BX-35",
         image: "https://i.ibb.co/qY3F19Kc/9-80-3-B35.webp"
       },
       {
-        id: "980-004",
+        id: "Rat-980-004",
         name: "BX-00",
         image: "https://i.ibb.co/fZGvnCW/9-80-4-B00.webp"
       },
       {
-        id: "980-005",
+        id: "Rat-980-005",
         name: "CX-05",
         image: "https://i.ibb.co/GQxYqLjk/9-80-5-C05.webp"
       },
     ]
   },
   {
-    id: "M85-001",
+    id: "Rat-M85-001",
     name: "M-85 (BX-44)",
     image: "https://i.ibb.co/93dWZSNz/M-85-1-B44.webp",
     category: "ratchet",
@@ -3004,14 +3004,14 @@ export const products: Product[] = [
     ],
     // bey: [
     //   {
-    //     id: "M85-002",
+    //     id: "Rat-M85-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "tr-001",
+    id: "Hybrid-Tr-001",
     name: "Tr (CX-07)",
     image: "https://i.ibb.co/0N8WDtj/Tr-1-C07.webp",
     category: "ratchet",
@@ -3024,16 +3024,16 @@ export const products: Product[] = [
     ],
     // bey: [
     //   {
-    //     id: "970-001",
-    //     name: "BX-44",
-    //     image: "https://i.ibb.co/LDy7tgnr/Screenshot-2025-04-19-132540-Photoroom.png"
+    //     id: "Hybrid-Tr-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
 
   // BITS
   {
-    id: "F-001",
+    id: "Bit-F-001",
     name: "F (BX-01)",
     image: "https://i.ibb.co/27dbvcjp/F-1-B01.webp",
     category: "bit",
@@ -3047,86 +3047,86 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "F-002",
+        id: "Bit-F-002",
         name: "BX-00",
         image: "https://i.ibb.co/jZL95XWm/F-2-B00.webp"
       },
       {
-        id: "F-003",
+        id: "Bit-F-003",
         name: "BX-07",
         image: "https://i.ibb.co/0jN6fy2b/F-3-B07.webp"
       },
       {
-        id: "F-004",
+        id: "Bit-F-004",
         name: "BX-16",
         image: "https://i.ibb.co/3mmJmrWk/F-4-B16.webp"
       },
       {
-        id: "F-005",
+        id: "Bit-F-005",
         name: "BX-17",
         image: "https://i.ibb.co/RpJMPMCp/F-5-B17.webp"
       },
       {
-        id: "F-006",
+        id: "Bit-F-006",
         name: "BX-20",
         image: "https://i.ibb.co/pB445sqC/F-6-B20.webp"
       },
       {
-        id: "F-007",
+        id: "Bit-F-007",
         name: "BX-24",
         image: "https://i.ibb.co/kZ8H9Dr/F-7-B24.webp"
       },
       {
-        id: "F-008",
+        id: "Bit-F-008",
         name: "BX-00",
         image: "https://i.ibb.co/wZfMzkTP/F-8-B00.webp"
       },
       {
-        id: "F-009",
+        id: "Bit-F-009",
         name: "BX-00",
         image: "https://i.ibb.co/Vc2NMzrT/F-9-B00.webp"
       },
       {
-        id: "F-0010",
+        id: "Bit-F-0010",
         name: "BX-37",
         image: "https://i.ibb.co/hJ6Gz13c/F-10-B37.webp"
       },
       {
-        id: "F-011",
+        id: "Bit-F-011",
         name: "BX-00",
         image: "https://i.ibb.co/YBXxNHHs/F-11-B00.webp"
       },
       {
-        id: "F-012",
+        id: "Bit-F-012",
         name: "UX-12",
         image: "https://i.ibb.co/xKVcW1yy/F-12-U12.webp"
       },
       {
-        id: "F-013",
+        id: "Bit-F-013",
         name: "Collab",
         image: "https://i.ibb.co/jPJsvRYS/F-13-Col.webp"
       },
       {
-        id: "F-014",
+        id: "Bit-F-014",
         name: "Collab",
         image: "https://i.ibb.co/4R62DVvF/F-14-Col.webp"
       },
       {
-        id: "F-015",
+        id: "Bit-F-015",
         name: "Collab",
         image: "https://i.ibb.co/rfp4N8wW/F-15-Col.webp"
       },
       {
-        id: "F-016",
+        id: "Bit-F-016",
         name: "CX-08",
         image: ""
       },
     ]
   },
   {
-    id: "bit-002",
+    id: "Bit-T-001",
     name: "T (BX-02)",
-    image: "https://i.ibb.co/Lzv1tRjV/T-1.webp",
+    image: "https://i.ibb.co/6cNv6WyN/T-1-B02.webp",
     category: "bit",
     type:"balance",
     price: "Taper",
@@ -3138,41 +3138,41 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "T-001",
-        name: "BX-07",
-        image: "https://i.ibb.co/SXJZQxKR/T-2.png"
-      },
-      {
-        id: "T-002",
-        name: "BX-16",
-        image: "https://i.ibb.co/mFtyXdpK/T-3.png"
-      },
-      {
-        id: "T-003",
-        name: "BX-17",
-        image: "https://i.ibb.co/NdvX6kns/T-4.png"
-      },
-      {
-        id: "T-004",
-        name: "BX-20",
-        image: "https://i.ibb.co/9m2zkPj1/T-5.png"
-      },
-      {
-        id: "T-005",
-        name: "BX-24",
-        image: "https://i.ibb.co/MwQw375/T6.png"
-      },
-      {
-        id: "T-006",
+        id: "Bit-T-002",
         name: "BX-00",
-        image: "https://i.ibb.co/NdBS4z2h/T-7.png"
+        image: "https://i.ibb.co/kV6GsRts/T-2-B00.webp"
+      },
+      {
+        id: "Bit-T-003",
+        name: "BX-07",
+        image: "https://i.ibb.co/PGKy6cz3/T-3-B07.webp"
+      },
+      {
+        id: "Bit-T-004",
+        name: "BX-14",
+        image: "https://i.ibb.co/MDJFFchy/T-4-B14.webp"
+      },
+      {
+        id: "Bit-T-005",
+        name: "BX-20",
+        image: "https://i.ibb.co/JWb85h5g/T-5-B20.webp"
+      },
+      {
+        id: "Bit-T-006",
+        name: "BX-24",
+        image: "https://i.ibb.co/hFGyw8CY/T-6-B24.webp"
+      },
+      {
+        id: "Bit-T-007",
+        name: "BX-00",
+        image: "https://i.ibb.co/8g07nwD4/T-7-B00.webp"
       },
     ]
   },
   {
-    id: "bit-003",
+    id: "Bit-B-001",
     name: "B (BX-03)",
-    image: "https://i.ibb.co/Q3pGKC9j/B-1.png",
+    image: "https://i.ibb.co/rKyT4M4j/B-1-B03.webp",
     category: "bit",
     type:"stamina",
     price: "Ball",
@@ -3184,56 +3184,56 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "B-001",
-        name: "BX-07",
-        image: "https://i.ibb.co/HT7cshVB/B-2.png"
+        id: "Bit-B-002",
+        name: "BX-05",
+        image: "https://i.ibb.co/JRftq6Th/B-2-B05.webp"
       },
       {
-        id: "B-002",
-        name: "BX-16",
-        image: "https://i.ibb.co/9kM61wXc/B-3.png"
+        id: "Bit-B-003",
+        name: "BX-08",
+        image: "https://i.ibb.co/JFWxwG6Z/B-3-B08.webp"
       },
       {
-        id: "B-003",
+        id: "Bit-B-004",
+        name: "BX-14",
+        image: "https://i.ibb.co/W4nDQvf6/B-4-B14.webp"
+      },
+      {
+        id: "Bit-B-005",
         name: "BX-17",
-        image: "https://i.ibb.co/3Yj866q9/B-4.png"
+        image: "https://i.ibb.co/B5khm7mx/B-5-B17.webp"
       },
       {
-        id: "B-004",
-        name: "BX-20",
-        image: "https://i.ibb.co/C565PXkK/B-5.png"
+        id: "Bit-B-006",
+        name: "BX-35",
+        image: "https://i.ibb.co/v6JGYQDM/B-6-B35.webp"
       },
       {
-        id: "B-005",
-        name: "BX-24",
-        image: "https://i.ibb.co/1tB31V4s/B-6.png"
+        id: "Bit-B-007",
+        name: "UX-10",
+        image: "https://i.ibb.co/SwvxKWqD/B-7-U10.webp"
       },
       {
-        id: "B-006",
-        name: "BX-00",
-        image: "https://i.ibb.co/0y7K5HdG/B-7.png"
-      },
-      {
-        id: "B-007",
+        id: "Bit-B-008",
         name: "Collab",
-        image: "https://i.ibb.co/67pmgqZz/B-8.png"
+        image: "https://i.ibb.co/4Zj5xtBx/B-8-Col.webp"
       },
       {
-        id: "B-008",
+        id: "Bit-B-009",
         name: "Collab",
-        image: "https://i.ibb.co/WvXYtVp7/B-9.png"
+        image: "https://i.ibb.co/d4509mKh/B-9-Col.webp"
       },
       {
-        id: "B-009",
+        id: "Bit-B-010",
         name: "Collab",
-        image: "https://i.ibb.co/wNTqqpb0/B-10.png"
+        image: "https://i.ibb.co/qFdHFgDq/B-10-Col.webp"
       },
     ]
   },
   {
-    id: "bit-004",
+    id: "Bit-N-001",
     name: "N (BX-04)",
-    image: "https://i.ibb.co/VcNhWfpy/N-1.png",
+    image: "https://i.ibb.co/9fKjm15/N-1-B04.webp",
     category: "bit",
     type:"defense",
     price: "Needle",
@@ -3245,51 +3245,56 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "N-001",
+        id: "Bit-N-002",
         name: "BX-06",
-        image: "https://i.ibb.co/jvgLDdQ6/N-2.png"
+        image: "https://i.ibb.co/6cgZvKFQ/N-2-B06.webp"
       },
       {
-        id: "N-002",
+        id: "Bit-N-003",
         name: "BX-08",
-        image: "https://i.ibb.co/93HcRpwb/N-3.png"
+        image: "https://i.ibb.co/GSDfvz9/N-3-B08.webp"
       },
       {
-        id: "N-003",
+        id: "Bit-N-004",
         name: "BX-14",
-        image: "https://i.ibb.co/LXtQspqq/N-4.png"
+        image: "https://i.ibb.co/DgQY8Dkz/N-4-B14.webp"
       },
       {
-        id: "N-004",
+        id: "Bit-N-005",
         name: "BX-21",
-        image: "https://i.ibb.co/CjmGq6R/N-5.png"
+        image: "https://i.ibb.co/Lh64BP2V/N-5-B21.webp"
       },
       {
-        id: "N-005",
+        id: "Bit-N-006",
         name: "UX-12",
-        image: "https://i.ibb.co/9m8xzHmX/N-6.png"
+        image: "https://i.ibb.co/qtZ25R8/N-6-U12.webp"
       },
       {
-        id: "N-006",
+        id: "Bit-N-007",
         name: "Collab",
-        image: "https://i.ibb.co/RpRyZd5M/N-7.png"
+        image: "https://i.ibb.co/ZRwhTTJm/N-7-Col.webp"
       },
       {
-        id: "N-007",
+        id: "Bit-N-008",
         name: "Collab",
-        image: "https://i.ibb.co/zWh05tM2/N-8.png"
+        image: "https://i.ibb.co/3y314tkL/N-8-Col.webp"
       },
       {
-        id: "N-008",
+        id: "Bit-N-009",
         name: "Collab",
-        image: "https://i.ibb.co/yFCr9SNs/N-9.png"
+        image: "https://i.ibb.co/qLpCydVM/N-9-Col.webp"
+      },
+      {
+        id: "Bit-N-010",
+        name: "G3P",
+        image: "https://i.ibb.co/WC87d0Q/N-10-G3P.webp"
       },
     ]
   },
   {
-    id: "bit-005",
+    id: "Bit-HN-001",
     name: "HN (BX-13)",
-    image: "https://i.ibb.co/Fk76tP6f/HN-1.png",
+    image: "https://i.ibb.co/d4Tsqsm8/HN-1-B13.webp",
     category: "bit",
     type:"defense",
     price: "High Needle",
@@ -3301,26 +3306,26 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "HN-001",
+        id: "Bit-HN-002",
         name: "BX-16",
-        image: "https://i.ibb.co/35mr99wg/HN-2.png"
+        image: "https://i.ibb.co/BKsp0Z8B/HN-2-B16.webp"
       },
       {
-        id: "HN-002",
+        id: "Bit-HN-003",
         name: "BX-24",
-        image: "https://i.ibb.co/gZc0t2BR/HN-3.png"
+        image: "https://i.ibb.co/4ZVLnhBy/HN-3-B24.webp"
       },
       {
-        id: "HN-003",
+        id: "Bit-HN-004",
         name: "BX-36",
-        image: "https://i.ibb.co/nNWLbh9T/HN-4.png"
+        image: "https://i.ibb.co/Y4LFpPWH/HN-4-B36.webp"
       },
     ]
   },
   {
-    id: "bit-006",
+    id: "Bit-LF-001",
     name: "LF (BX-14)",
-    image: "https://i.ibb.co/9HYJWNsd/LF-1.png",
+    image: "https://i.ibb.co/VWYKF0xs/LF-1-B14.webp",
     category: "bit",
     type:"attack",
     price: "Low Flat",
@@ -3332,41 +3337,41 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "LF-001",
+        id: "Bit-LF-002",
         name: "BX-14",
-        image: "https://i.ibb.co/BKgRr83M/LF-2.png"
+        image: "https://i.ibb.co/KxCBKZmc/LF-2-BX14.webp"
       },
       {
-        id: "LF-002",
+        id: "Bit-LF-003",
         name: "BX-14",
-        image: "https://i.ibb.co/WWgVQ90j/LF-3.png"
+        image: "https://i.ibb.co/6cvBCkRf/LF-3-B14.webp"
       },
       {
-        id: "LF-003",
+        id: "Bit-LF-004",
         name: "BX-21",
-        image: "https://i.ibb.co/XNDF27V/LF-4.png"
+        image: "https://i.ibb.co/6J8n9CmW/LF-4-B21.webp"
       },
       {
-        id: "LF-004",
+        id: "Bit-LF-005",
         name: "UX-05",
-        image: "https://i.ibb.co/k2YRdgQS/LF-5.png"
+        image: "https://i.ibb.co/PZbDZzVg/LF-5-U05.webp"
       },
       {
-        id: "LF-005",
+        id: "Bit-LF-006",
         name: "BX-00",
-        image: "https://i.ibb.co/27zzkhNB/LF-6.png"
+        image: "https://i.ibb.co/5hZVzD0J/LF-6-U00.webp"
       },
       {
-        id: "LF-006",
+        id: "Bit-LF-007",
         name: "CX-05",
-        image: "https://i.ibb.co/ynQ5cq7W/LF-7.png"
+        image: "https://i.ibb.co/RkMWbLrH/LF-7-C05.webp"
       },
     ]
   },
   {
-    id: "bit-007",
+    id: "Bit-P-001",
     name: "P (BX-15)",
-    image: "https://i.ibb.co/7x5WSk15/P-1.png",
+    image: "https://i.ibb.co/LDHqkB60/P-1-B15.webp",
     category: "bit",
     type:"balance",
     price: "Point",
@@ -3378,46 +3383,46 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "P-001",
+        id: "Bit-P-002",
         name: "BX-00",
-        image: "https://i.ibb.co/xKfDGfvq/P-2.png"
+        image: "https://i.ibb.co/F4St5cL3/P-2-B00.webp"
       },
       {
-        id: "P-002",
+        id: "Bit-P-003",
         name: "BX-00",
-        image: "https://i.ibb.co/DP5vwK8C/P-3.png"
+        image: "https://i.ibb.co/0VRDnZds/P-3-B00.webp"
       },
       {
-        id: "P-003",
+        id: "Bit-P-004",
         name: "BX-31",
-        image: "https://i.ibb.co/rGZyNcZm/P-4.png"
+        image: "https://i.ibb.co/B59C7NLW/P-4-B31.webp"
       },
       {
-        id: "P-004",
+        id: "Bit-P-005",
         name: "UX-10",
-        image: "https://i.ibb.co/hxmz8FTy/P-5.png"
+        image: "https://i.ibb.co/PZ4tHYP2/P-5-U10.webp"
       },
       {
-        id: "P-005",
+        id: "Bit-P-006",
         name: "Collab",
-        image: "https://i.ibb.co/Ngz9XQDw/P-6.png"
+        image: "https://i.ibb.co/RTCHFJ3z/P-6-Col.webp"
       },
       {
-        id: "P-006",
+        id: "Bit-P-007",
         name: "Collab",
-        image: "https://i.ibb.co/HTbBVFWN/P7.png"
+        image: "https://i.ibb.co/b5CqHpZv/P-7-Col.webp"
       },
       {
-        id: "P-007",
+        id: "Bit-P-008",
         name: "Collab",
-        image: "https://i.ibb.co/7N2yLBwY/P8.png"
+        image: "https://i.ibb.co/0VtVvG1x/P-8-Col.webp"
       },
     ]
   },
   {
-    id: "bit-008",
+    id: "Bit-O-001",
     name: "O (BX-16)",
-    image: "https://i.ibb.co/kVMd9cmN/O-1.png",
+    image: "https://i.ibb.co/RGkfTnq6/O-1-B16.webp",
     category: "bit",
     type:"stamina",
     price: "Orb",
@@ -3429,31 +3434,31 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "O-001",
+        id: "Bit-O-002",
         name: "BX-27",
-        image: "https://i.ibb.co/ndSYjKt/O-2.png"
+        image: "https://i.ibb.co/Xx2hRp91/O-2-B27.webp"
       },
       {
-        id: "O-002",
+        id: "Bit-O-003",
         name: "BX-31",
-        image: "https://i.ibb.co/h1ZgrMC0/O-3.png"
+        image: "https://i.ibb.co/hF5ZyFfy/O-3-B31.webp"
       },
       {
-        id: "O-003",
+        id: "Bit-O-004",
         name: "BX-39",
-        image: "https://i.ibb.co/9kc1DXgh/O-4.png"
+        image: "https://i.ibb.co/sJpVgkTX/O-4-B39.webp"
       },
       {
-        id: "O-004",
+        id: "Bit-O-005",
         name: "CX-05",
-        image: "https://i.ibb.co/xKWnG7zk/O-5.png"
+        image: "https://i.ibb.co/xN1nhYP/O-5-C05.webp"
       },
     ]
   },
   {
-    id: "bit-009",
+    id: "Bit-R-001",
     name: "R (BX-20)",
-    image: "https://i.ibb.co/dw9N6Jwp/R-1.png",
+    image: "https://i.ibb.co/mrWG6RGP/R-1-B20.webp",
     category: "bit",
     type:"attack",
     price: "Rush",
@@ -3465,21 +3470,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "R-001",
+        id: "Bit-R-002",
         name: "BX-35",
-        image: "https://i.ibb.co/YTypRJQS/R-2.png"
+        image: "https://i.ibb.co/Vcjmt9kr/R-2-B35.webp"
       },
       {
-        id: "R-002",
+        id: "Bit-R-003",
         name: "UX-10",
-        image: "https://i.ibb.co/8g2yHFSX/R-3.png"
+        image: "https://i.ibb.co/nNnrXB3s/R-3-U10.webp"
       },
     ]
   },
   {
-    id: "bit-010",
+    id: "Bit-HT-001",
     name: "HT (BX-21)",
-    image: "https://i.ibb.co/m5fJP8W2/HT-1.webp",
+    image: "https://i.ibb.co/zVwvh0BL/HT-1-B21.webp",
     category: "bit",
     type:"balance",
     price: "High Taper",
@@ -3491,17 +3496,17 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "HT-001",
+        id: "Bit-HT-002",
         name: "BX-27",
-        image: "https://i.ibb.co/TBckLgfN/HT-2.png"
+        image: "https://i.ibb.co/n80TNXZr/HT-2-B27.webp"
       },
       {
-        id: "HT-002",
+        id: "Bit-HT-003",
         name: "BX-27",
-        image: "https://i.ibb.co/v4sSwS04/HT-3.png"
+        image: "https://i.ibb.co/ZRSg2dh7/HT-3-B00.webp"
       },
       {
-        id: "HT-003",
+        id: "Bit-HT-004",
         name: "CX-08",
         image: ""
       },
