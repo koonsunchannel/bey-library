@@ -52,6 +52,26 @@ export const products: Product[] = [
         name: "BX-00",
         image: "https://i.ibb.co/gMZ2QQFt/DS-7-UX00.webp"
       },
+      {
+        id: "Blade-DS-008",
+        name: "Suhiro Ver.",
+        image: "https://i.ibb.co/jvr7wYYs/DS-8-Sushi.webp"
+      },
+      {
+        id: "Blade-DS-009",
+        name: "G1 Prize",
+        image: "https://i.ibb.co/4RT0RwrG/DS-9-G1P.webp"
+      },
+      {
+        id: "Blade-DS-010",
+        name: "G1 Prize",
+        image: "https://i.ibb.co/HfB4fTr9/DS-10-G1-P.webp"
+      },
+      {
+        id: "Blade-DS-011",
+        name: "G1 Prize",
+        image: "https://i.ibb.co/8D1CqMsh/DS-11-G1-P.webp"
+      },
     ],
   },
   {
@@ -1229,6 +1249,21 @@ export const products: Product[] = [
         name: "CX-04",
         image: "https://i.ibb.co/0pYwhrRB/DBS-2-C04.webp"
       },
+      {
+        id: "Blade-DBS-003",
+        name: "G1 Prize",
+        image: "https://i.ibb.co/pvbcRDKW/DBs-3-G1-P.webp"
+      },
+      {
+        id: "Blade-DBS-004",
+        name: "G1 Prize",
+        image: "https://i.ibb.co/DPs076hm/DBs-4-G1-P.webp"
+      },
+      {
+        id: "Blade-DBS-005",
+        name: "G1 Prize",
+        image: "https://i.ibb.co/nsy5cj2d/DBs-5-G1-P.webp"
+      },
     ]
   },
   {
@@ -2263,6 +2298,11 @@ export const products: Product[] = [
         name: "B00",
         image: "https://i.ibb.co/KpcP076z/3-60-14-B00.webp"
       },
+      {
+        id: "Rat-360-015",
+        name: "Sushiro Ver.",
+        image: "https://i.ibb.co/nqQJD8C5/3-60-15-Sushi.webp"
+      },
     ]
   },
   {
@@ -2832,6 +2872,21 @@ export const products: Product[] = [
         name: "CX-04",
         image: "https://i.ibb.co/B2sVVD1g/6-60-2-C04.webp"
       },
+      {
+        id: "Rat-660-003",
+        name: "G1 Prize",
+        image: "https://i.ibb.co/mr9W1JFp/6-60-3-G1-P.webp"
+      },
+      {
+        id: "Rat-660-004",
+        name: "G1 Prize",
+        image: "https://i.ibb.co/XxsrGkvy/6-60-4-G1-P.webp"
+      },
+      {
+        id: "Rat-660-005",
+        name: "G1 Prize",
+        image: "https://i.ibb.co/S4xbf6Qt/6-60-5-G1-P.webp"
+      },
     ]
   },
   {
@@ -2854,7 +2909,7 @@ export const products: Product[] = [
       {
         id: "Rat-680-003",
         name: "G3 Prize",
-        image: "https://i.ibb.co/XrRB83dd/6-80-3-G3-P.png"
+        image: "https://i.ibb.co/Tqnjh6Jp/6-80-3-G3-P.webp"
       },
     ]
   },
@@ -3134,6 +3189,11 @@ export const products: Product[] = [
       },
       {
         id: "Bit-F-016",
+        name: "Sushiro Ver.",
+        image: "https://i.ibb.co/JFsw5s1x/F-16-Sushi.webp"
+      },
+      {
+        id: "Bit-F-017",
         name: "CX-08",
         image: ""
       },
@@ -4195,6 +4255,21 @@ export const products: Product[] = [
         name: "CX-04",
         image: "https://i.ibb.co/4C2Htff/V-2-C04.webp"
       },
+      {
+        id: "Bit-V-003",
+        name: "G1 Prize",
+        image: "https://i.ibb.co/C5L2xH3Q/V-3-G1P.webp"
+      },
+      {
+        id: "Bit-V-004",
+        name: "G1 Prize",
+        image: "https://i.ibb.co/hRKhL0CZ/V-4-G1P.webp"
+      },
+      {
+        id: "Bit-V-005",
+        name: "G1 Prize",
+        image: "https://i.ibb.co/nq4svh2b/V-5-G1P.webp"
+      },
     ]
   },
   {
@@ -5145,10 +5220,10 @@ export const products: Product[] = [
     category: "credits",
     price: "This website don't want anything from you.",
     specs: {
-      "Creator Name": "Didn't you want to know Beyblade?",
+      "Creator Name": "Why you want to know that?",
       "Donation": "Go to Philanthropy funds.",
-      "Ownership": "I'm not Takara Tomy. Beyblade is not my product.",
-      "Objective": "To make it easier for the community to find data about Beyblade X parts not me.",
+      "Ownership": "I'm not Takara Tomy. Beyblade is not my product, This web for community free use.",
+      "Objective": "To make it easier for the community to find Beyblade X parts data, Not find me.",
       "Special Thanks": "Thanks to Takara Tomy for making Beyblade.",
     },
   },
