@@ -90,7 +90,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-HS-004",
-        name: "Hell Persona",
+        name: "CoroCoro Comic",
         image: "https://i.ibb.co/spNPWk1P/HS-5-B00.webp"
       },
     ]
@@ -1516,7 +1516,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/KjHsS8q2/CDk-1-B00.webp",
     category: "blade",
     type: ["attack", "rare"],
-    price: "BX-00",
+    price: "Rare Bey Battle",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -1542,7 +1542,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/NgYDNzQ0/PF-1-B00.webp",
     category: "blade",
     type: ["attack", "rare"],
-    price: "BX-00",
+    price: "CoroCoro Comic",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -1562,7 +1562,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-PF-002",
-        name: "BX-00",
+        name: "CoroCoro Comic",
         image: "https://i.ibb.co/bjY3fZy8/PF-3-B00.webp"
       },
     ]
@@ -1573,7 +1573,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/5XY6MgBH/AP-1-U00.webp",
     category: "blade",
     type: ["attack", "rare"],
-    price: "UX-00",
+    price: "Rare Bey Battle",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -1599,7 +1599,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/vxw8CZC7/SK-1-XONE.webp",
     category: "blade",
     type: ["attack", "rare"],
-    price: "BX-00",
+    price: "Game Package",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -1625,7 +1625,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/mrrM6Jzz/MT-1-B00.webp",
     category: "blade",
     type: ["balance", "rare"],
-    price: "BX-00",
+    price: "Rare Bey Battle",
     specs: {
       "Type": "Balacne",
       "Spin": "Right",
@@ -1651,7 +1651,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/C3jpr2Th/CC-1-B00.webp",
     category: "blade",
     type: ["attack", "rare"],
-    price: "BX-00",
+    price: "CoroCoro Comic",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -1677,7 +1677,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/ZRdNsxyV/SSt-1-B00.webp",
     category: "blade",
     type:["attack", "rare"],
-    price: "BX-00",
+    price: "CoroCoro Comic",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -1703,7 +1703,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/twWHjc2b/LFT-1-RED.webp",
     category: "blade",
     type:["attack", "rare"],
-    price: "CX-00",
+    price: "Game Package",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -1727,10 +1727,10 @@ export const products: Product[] = [
   {
     id: "Blade-DAS-001",
     name: "Dran Arc S (MC Blue)",
-    image: "https://i.ibb.co/Hp9J3rBn/Persona-CX.webp",
+    image: "https://i.ibb.co/NnmhMKLB/Persona-CX.webp",
     category: "blade",
     type:["balance", "rare"],
-    price: "CX-00",
+    price: "CoroCoro Comic",
     specs: {
       "Type": "Balance",
       "Spin": "Right",
@@ -1769,6 +1769,11 @@ export const products: Product[] = [
         id: "As-S-002",
         name: "CX-04",
         image: "https://i.ibb.co/Zp90jhR3/S-2-C04.webp"
+      },
+      {
+        id: "As-S-003",
+        name: "CoroCoro Comic",
+        image: "https://i.ibb.co/LzYkW1xw/S-3-C00.png"
       },
     ]
   },
@@ -1874,6 +1879,11 @@ export const products: Product[] = [
         id: "As-J-003",
         name: "CX-06",
         image: "https://i.ibb.co/qYr6pSBy/J-3-C06.webp"
+      },
+      {
+        id: "As-J-004",
+        name: "CoroCoro Comic",
+        image: "https://i.ibb.co/Q31yGCx2/J-4-C00.png"
       },
     ]
   },
@@ -2121,7 +2131,7 @@ export const products: Product[] = [
       },
       {
         id: "Rat-260-006",
-        name: "BX-00",
+        name: "CoroCoro Comic",
         image: "https://i.ibb.co/DD66dnSb/2-60-6-B00.webp"
       },
       {
@@ -2146,8 +2156,14 @@ export const products: Product[] = [
       {
         //metal coat orange
         id: "Rat-270-002",
-        name: "UX-00",
+        name: "CoroCoro Comic",
         image: ""
+      },
+      {
+        //Dran Arc S
+        id: "Rat-270-003",
+        name: "CoroCoro Comic",
+        image: "https://i.ibb.co/8Dk2br85/2-70-3-C00.webp"
       },
     ]
   },
@@ -2165,7 +2181,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Rat-280-002",
-        name: "BX-00",
+        name: "Rare Bey Battle",
         image: "https://i.ibb.co/N60MgZrz/2-80-2-B00.webp"
       },
     ]
@@ -2273,7 +2289,7 @@ export const products: Product[] = [
       },
       {
         id: "Rat-370-004",
-        name: "UX-00",
+        name: "Rare Bey Battle",
         image: "https://i.ibb.co/ds8fFzwr/3-70-4-U00.webp"
       },
       {
@@ -2347,7 +2363,7 @@ export const products: Product[] = [
       },
       {
         id: "Rat-380-010",
-        name: "BX-00",
+        name: "CoroCoro Comic",
         image: "https://i.ibb.co/yFkMdhgc/3-80-10-B00.webp"
       },
       {
@@ -2459,7 +2475,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Rat-460-002",
-        name: "BX-00",
+        name: "Rare Bey Battle",
         image: "https://i.ibb.co/tTT5QV1b/4-60-2-B00.webp"
       },
       {
@@ -2504,12 +2520,12 @@ export const products: Product[] = [
       },
       {
         id: "Rat-460-011",
-        name: "BX-00",
+        name: "Rare Bey Battle",
         image: "https://i.ibb.co/cSz248ms/4-60-11-B00.webp"
       },
       {
         id: "Rat-460-012",
-        name: "BX-00",
+        name: "Game Package",
         image: "https://i.ibb.co/Wv5PzZgQ/4-60-12-B00.webp"
       },
       {
@@ -2534,7 +2550,7 @@ export const products: Product[] = [
       },
       {
         id: "Rat-460-017",
-        name: "CX-00",
+        name: "Game Package",
         image: "https://i.ibb.co/ds9dvRhC/4-60-17-C00.webp"
       },
     ]
@@ -2745,7 +2761,7 @@ export const products: Product[] = [
       },
       {
         id: "Rat-570-006",
-        name: "BX-00",
+        name: "CoroCoro Comic",
         image: "https://i.ibb.co/4w3QKPGK/5-70-6-B00.webp"
       },
     ]
@@ -3048,7 +3064,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Bit-F-002",
-        name: "BX-00",
+        name: "Rare Bey Battle",
         image: "https://i.ibb.co/jZL95XWm/F-2-B00.webp"
       },
       {
@@ -3083,7 +3099,7 @@ export const products: Product[] = [
       },
       {
         id: "Bit-F-009",
-        name: "BX-00",
+        name: "CoroCoro Comic",
         image: "https://i.ibb.co/Vc2NMzrT/F-9-B00.webp"
       },
       {
@@ -3093,7 +3109,7 @@ export const products: Product[] = [
       },
       {
         id: "Bit-F-011",
-        name: "BX-00",
+        name: "Rare Bey Battle",
         image: "https://i.ibb.co/YBXxNHHs/F-11-B00.webp"
       },
       {
@@ -3358,7 +3374,7 @@ export const products: Product[] = [
       },
       {
         id: "Bit-LF-006",
-        name: "BX-00",
+        name: "Game Package",
         image: "https://i.ibb.co/5hZVzD0J/LF-6-U00.webp"
       },
       {
@@ -3513,9 +3529,9 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "bit-011",
+    id: "Bit-S-001",
     name: "S (BX-19)",
-    image: "https://i.ibb.co/5W2jsJcd/S-1.webp",
+    image: "https://i.ibb.co/jP8K5VgK/S-1-B19.webp",
     category: "bit",
     type:"defense",
     price: "Spike",
@@ -3527,21 +3543,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "S-001",
+        id: "Bit-S-002",
         name: "BX-31",
-        image: "https://i.ibb.co/PvSGXfpd/S-2.png"
+        image: "https://i.ibb.co/svfd9f7S/S-2-B31.webp"
       },
       {
-        id: "S-002",
+        id: "Bit-S-003",
         name: "UX-07",
-        image: "https://i.ibb.co/b522bsDR/S-3.png"
+        image: "https://i.ibb.co/20yXykrQ/S-3-U07.webp"
       },
     ]
   },
   {
-    id: "bit-012",
+    id: "Bit-GF-001",
     name: "GF (BX-23)",
-    image: "https://i.ibb.co/DfpX7m8J/GF-1.png",
+    image: "https://i.ibb.co/23SnXTdN/GF-1-B23.webp",
     category: "bit",
     type:"attack",
     price: "Gear Flat",
@@ -3553,27 +3569,31 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "GF-001",
-        name: "BX-00",
-        image: "https://i.ibb.co/5XpBYNcC/GF-2.png"
-      },
-      {
-        id: "GF-002",
+        id: "Bit-GF-002",
         name: "UX-07",
-        image: "https://i.ibb.co/ksT1Kmrb/GF-3.png"
+        image: "https://i.ibb.co/xtz1bH1W/GF-2-U07.webp"
       },
       {
-        // samurai steel
-        id: "GF-003",
+        id: "Bit-GF-003",
         name: "BX-00",
-        image: ""
+        image: "https://i.ibb.co/9mQ7yrY1/GF-3-B00.webp"
+      },
+      {
+        id: "Bit-GF-004",
+        name: "BX-00",
+        image: "https://i.ibb.co/6R4h9Mf8/GF-4-B00.webp"
+      },
+      {
+        id: "Bit-GF-005",
+        name: "CoroCoro Comic",
+        image: "https://i.ibb.co/fzN70FT8/GF-5-B00.webp"
       },
     ]
   },
   {
-    id: "bit-013",
+    id: "Bit-GB-001",
     name: "GB (BX-24)",
-    image: "https://i.ibb.co/0RX4ysFC/GB-1.png",
+    image: "https://i.ibb.co/TxDYBGs3/GB-1-B24.webp",
     category: "bit",
     type:"stamina",
     price: "Gear Ball",
@@ -3585,31 +3605,31 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "GB-001",
+        id: "Bit-GB-002",
         name: "BX-24",
-        image: "https://i.ibb.co/VWY1qQBr/GB-2.png"
+        image: "https://i.ibb.co/7xY2kJVH/GB-2-B24.webp"
       },
       {
-        id: "GB-002",
+        id: "Bit-GB-003",
         name: "BX-24",
-        image: "https://i.ibb.co/mVTCbCnJ/GB-3.png"
+        image: "https://i.ibb.co/7NQxg6rp/GB-3-B24.webp"
       },
       {
-        id: "GB-003",
+        id: "Bit-GB-004",
         name: "BX-36",
-        image: "https://i.ibb.co/qYg9PtM4/GB-4.png"
+        image: "https://i.ibb.co/nsPdxTNn/GB-4-B36.webp"
       },
       {
-        id: "GB-004",
+        id: "Bit-GB-005",
         name: "UX-12",
-        image: "https://i.ibb.co/p6xh44Tz/GB-5.png"
+        image: "https://i.ibb.co/p60Rq7Lj/GB-5-U12.webp"
       },
     ]
   },
   {
-    id: "bit-014",
+    id: "Bit-GP-001",
     name: "GP (BX-26)",
-    image: "https://i.ibb.co/s99xdg3g/GP-1.webp",
+    image: "https://i.ibb.co/WpVNTWXw/GP-1-B26.webp",
     category: "bit",
     type:"balance",
     price: "Gear Point",
@@ -3621,26 +3641,26 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "GP-001",
+        id: "Bit-GP-002",
         name: "UX-05",
-        image: "https://i.ibb.co/mVZn322z/GP-2.png"
+        image: "https://i.ibb.co/pBLqKtvX/GP-2-U05.webp"
       },
       {
-        id: "GP-002",
+        id: "Bit-GP-003",
         name: "BX-00",
-        image: "https://i.ibb.co/jZ6yX1bq/GP-3.png"
+        image: "https://i.ibb.co/prG0LcMq/GP-3-B00.webp"
       },
       {
-        id: "GP-003",
+        id: "Bit-GP-004",
         name: "BX-39",
-        image: "https://i.ibb.co/HpzSqH5T/GP-4.png"
+        image: "https://i.ibb.co/twTTGKR4/GP-4-B39.webp"
       },
     ]
   },
   {
-    id: "bit-015",
+    id: "Bit-GN-001",
     name: "GN (BX-27)",
-    image: "https://i.ibb.co/LzG7HNsG/GN-1.png",
+    image: "https://i.ibb.co/PGtZPt5z/GN-1-B27.webp",
     category: "bit",
     type:"defense",
     price: "Gear Needle",
@@ -3652,16 +3672,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "GN-001",
+        id: "Bit-GN-002",
         name: "UX-06",
-        image: "https://i.ibb.co/spbfqHQ6/media.png"
+        image: "https://i.ibb.co/BVYvMK2j/GN-2-U06.webp"
       },
     ]
   },
   {
-    id: "bit-016",
+    id: "Bit-A-001",
     name: "A (UX-01)",
-    image: "https://i.ibb.co/Rx6Xn5z/A-1.webp",
+    image: "https://i.ibb.co/xq72jrDy/A-1-U01.webp",
     category: "bit",
     type:"attack",
     price: "Accel",
@@ -3673,26 +3693,66 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "A-001",
+        id: "Bit-A-002",
         name: "UX-04",
-        image: "https://i.ibb.co/9kjQVhJD/A-2.png"
+        image: "https://i.ibb.co/zT08FKg8/A-2-U04.webp"
       },
       {
-        id: "A-002",
+        id: "Bit-A-003",
+        name: "Rare Bey Battle",
+        image: "https://i.ibb.co/k22n73mc/A-3-U00.webp"
+      },
+      {
+        id: "Bit-A-004",
         name: "UX-00",
-        image: "https://i.ibb.co/0jzc0mHg/A-3.png"
+        image: "https://i.ibb.co/rfHJnh5M/A-4-U00.webp"
       },
       {
-        id: "A-003",
-        name: "CX-00",
-        image: "https://i.ibb.co/YrskvTC/Screenshot-2025-05-15-153702-Photoroom.png"
+        id: "Bit-A-005",
+        name: "Park Limited",
+        image: "https://i.ibb.co/BVpfTNvL/A-5-LTD.webp"
+      },
+      {
+        id: "Bit-A-006",
+        name: "Park Limited",
+        image: "https://i.ibb.co/h1XdYJQK/A-6-LTD.webp"
+      },
+      {
+        id: "Bit-A-007",
+        name: "Park Limited",
+        image: "https://i.ibb.co/67CnS4Qm/A-7-LTD.webp"
+      },
+      {
+        id: "Bit-A-008",
+        name: "Park Limited",
+        image: "https://i.ibb.co/fVKg2RTq/A-8-LTD.webp"
+      },
+      {
+        id: "Bit-A-009",
+        name: "Park Limited",
+        image: "https://i.ibb.co/tTpn429F/A-9-LTD.webp"
+      },
+      {
+        id: "Bit-A-010",
+        name: "Park Limited",
+        image: "https://i.ibb.co/twQVshHS/A-10-LTD.webp"
+      },
+      {
+        id: "Bit-A-011",
+        name: "Game Package",
+        image: "https://i.ibb.co/0p2F849G/A-11-C00.webp"
+      },
+      {
+        id: "Bit-A-012",
+        name: "Collab",
+        image: "https://i.ibb.co/pvhhykxq/A-12-Col.webp"
       },
     ]
   },
   {
-    id: "bit-017",
+    id: "Bit-H-001",
     name: "H (UX-02)",
-    image: "https://i.ibb.co/bM5nwSTC/H-1.webp",
+    image: "https://i.ibb.co/wNGHygPb/H-1-U02.webp",
     category: "bit",
     type:"balance",
     price: "Hexa",
@@ -3704,26 +3764,26 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "H-001",
+        id: "Bit-H-002",
         name: "BX-35",
-        image: "https://i.ibb.co/2HqWZSH/H-2.png"
+        image: "https://i.ibb.co/sppfs0yX/H-2-B35.webp"
       },
       {
-        id: "H-002",
-        name: "UX-12",
-        image: "https://i.ibb.co/1GGz3c5t/H-3.png"
-      },
-      {
-        id: "H-003",
+        id: "Bit-H-003",
         name: "UX-00",
-        image: "https://i.ibb.co/bRd6Hy2p/H-4.png"
+        image: "https://i.ibb.co/wZWbYZtT/H-3-U00.webp"
+      },
+      {
+        id: "Bit-H-004",
+        name: "UX-12",
+        image: "https://i.ibb.co/99Hvx1nV/H-4-U12.webp"
       },
     ]
   },
   {
-    id: "bit-018",
+    id: "Bit-DB-001",
     name: "DB (UX-03)",
-    image: "https://i.ibb.co/PsfCdskv/DB-1.webp",
+    image: "https://i.ibb.co/8DFB9k4m/DB-1-U03.webp",
     category: "bit",
     type:"stamina",
     price: "Disc Ball",
@@ -3735,26 +3795,31 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "DB-001",
+        id: "Bit-DB-002",
         name: "UX-04",
-        image: "https://i.ibb.co/fGGYBFFY/DB-2.png"
+        image: "https://i.ibb.co/nMg4sYdB/DB-2-U04.webp"
       },
       {
-        id: "DB-002",
-        name: "UX-00",
-        image: "https://i.ibb.co/VYMMMzhZ/DB-3.png"
+        id: "Bit-DB-003",
+        name: "G3 Prize",
+        image: "https://i.ibb.co/hFJdwHWJ/DB-3-G3P.webp"
       },
       {
-        id: "DB-002",
+        id: "Bit-DB-004",
+        name: "BX-00",
+        image: "https://i.ibb.co/Gf9WpjjV/DB-4-B00.webp"
+      },
+      {
+        id: "Bit-DB-005",
         name: "CX-06",
-        image: "https://i.ibb.co/1fzG84TK/DB-4.png"
+        image: "https://i.ibb.co/bj5PnHCr/DB-5-C06.webp"
       },
     ]
   },
   {
-    id: "bit-019",
+    id: "Bit-Q-001",
     name: "Q (BX-31)",
-    image: "https://i.ibb.co/PsMP3TkH/Q-1.webp",
+    image: "https://i.ibb.co/wN6TLKHf/Q-1-B31.webp",
     category: "bit",
     type:"attack",
     price: "Quake",
@@ -3766,26 +3831,26 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "Q-001",
+        id: "Bit-Q-002",
         name: "BX-31",
-        image: "https://i.ibb.co/rfwWZQ6L/Q-2.png"
+        image: "https://i.ibb.co/XxpnfR7D/Q-2-B31.webp"
       },
       {
-        id: "Q-002",
+        id: "Bit-Q-003",
         name: "BX-31",
-        image: "https://i.ibb.co/XfSbqR0Q/Q-3.png"
+        image: "https://i.ibb.co/JjfSKbP8/Q-3-B31.webp"
       },
       {
-        id: "Q-003",
-        name: "BX-00",
-        image: "https://i.ibb.co/93dcfjCk/Q-4.png"
+        id: "Bit-Q-004",
+        name: "CoroCoro Comic",
+        image: "https://i.ibb.co/TDdk2NYH/Q-4-B00.webp"
       },
     ]
   },
   {
-    id: "bit-020",
+    id: "Bit-MN-001",
     name: "MN (UX-05)",
-    image: "https://i.ibb.co/1t1b62Zt/MN-1.webp",
+    image: "https://i.ibb.co/1GV1081f/MN-1-U05.webp",
     category: "bit",
     type:"defense",
     price: "Metal Needle",
@@ -3797,21 +3862,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "MN-001",
+        id: "Bit-MN-002",
         name: "UX-10",
-        image: "https://i.ibb.co/xtYY9QyC/media.png"
+        image: "https://i.ibb.co/DZ9dRNF/MN-2-U10.webp"
       },
       {
-        id: "MN-002",
+        id: "Bit-MN-003",
         name: "CX-08",
         image: ""
       },
     ]
   },
   {
-    id: "bit-021",
+    id: "Bit-U-001",
     name: "U (BX-33)",
-    image: "https://i.ibb.co/39mxwYx1/U-1.webp",
+    image: "https://i.ibb.co/B519fP43/U-1-B33.webp",
     category: "bit",
     type:"balance",
     price: "Unite",
@@ -3823,16 +3888,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "U-001",
+        id: "Bit-U-002",
         name: "CX-06",
-        image: "https://i.ibb.co/BK3bydYw/U-2.png"
+        image: "https://i.ibb.co/YFMnT5nY/U-2-C06.webp"
+      },
+      {
+        id: "Bit-U-003",
+        name: "Collab",
+        image: "https://i.ibb.co/MDw6BP5y/U-3-Col.webp"
       },
     ]
   },
   {
-    id: "bit-022",
+    id: "Bit-C-001",
     name: "C (BX-34)",
-    image: "https://i.ibb.co/8LJ49Q63/C-1.webp",
+    image: "https://i.ibb.co/Lhv43yQc/C-1-B34.webp",
     category: "bit",
     type:"attack",
     price: "Cyclone",
@@ -3844,21 +3914,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "C-001",
+        id: "Bit-C-002",
         name: "BX-00",
-        image: "https://i.ibb.co/x8MD6CMb/C-2.png"
+        image: "https://i.ibb.co/DHq3cnJF/C-2-B00.webp"
       },
       {
-        id: "C-002",
+        id: "Bit-C-003",
         name: "UX-12",
-        image: "https://i.ibb.co/HDKPPFvw/C-3.png"
+        image: "https://i.ibb.co/XxR5hKdC/C-3-U12.webp"
       },
     ]
   },
   {
-    id: "bit-023",
+    id: "Bit-D-001",
     name: "D (BX-35)",
-    image: "https://i.ibb.co/LdMgVJbW/D-1.png",
+    image: "https://i.ibb.co/KjnqzxP9/D-1-B35.webp",
     category: "bit",
     type:"defense",
     price: "Dot",
@@ -3870,36 +3940,41 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "D-001",
+        id: "Bit-D-002",
         name: "BX-35",
-        image: "https://i.ibb.co/7wDkLM5/D-2.png"
+        image: "https://i.ibb.co/HTkYmHHB/D-2-B35.webp"
       },
       {
-        id: "D-002",
+        id: "Bit-D-003",
         name: "BX-35",
-        image: "https://i.ibb.co/Z6PMR8DY/D-3.png"
+        image: "https://i.ibb.co/jkBLBXnW/D-3-B35.webp"
       },
       {
-        id: "D-003",
+        id: "Bit-D-004",
         name: "BX-00",
-        image: "https://i.ibb.co/tTkydcsj/D-4.png"
+        image: "https://i.ibb.co/0jvMQLyw/D-4-B00.webp"
       },
       {
-        id: "D-004",
+        id: "Bit-D-005",
         name: "BX-39",
-        image: "https://i.ibb.co/s9pG8nch/D-5.png"
+        image: "https://i.ibb.co/4BKwW78/D-5-B39.webp"
       },
       {
-        id: "D-005",
+        id: "Bit-D-006",
         name: "CX-05",
-        image: "https://i.ibb.co/Jw2H5cvQ/D-6.png"
+        image: "https://i.ibb.co/BVR27YYy/D-6-C05.webp"
+      },
+      {
+        id: "Bit-D-007",
+        name: "CX-05",
+        image: "https://i.ibb.co/mC3s896y/D-7-B00.webp"
       },
     ]
   },
   {
-    id: "bit-024",
+    id: "Bit-G-001",
     name: "G (UX-07)",
-    image: "https://i.ibb.co/gZPVr1X6/G-1.webp",
+    image: "https://i.ibb.co/xKpq45M6/G-1-U07.webp",
     category: "bit",
     type:"stamina",
     price: "Glide",
@@ -3911,16 +3986,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "G-001",
-    //     name: "BX-35",
-    //     image: "https://i.ibb.co/7wDkLM5/D-2.png"
+    //     id: "Bit-G-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
-    id: "bit-025",
+    id: "Bit-E-001",
     name: "E (BX-36)",
-    image: "https://i.ibb.co/xKPCMW5g/E-1.webp",
+    image: "https://i.ibb.co/8LvNJXFr/E-1-B36.webp",
     category: "bit",
     type:"balance",
     price: "Elevate",
@@ -3932,21 +4007,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "E-001",
-        name: "UX-12",
-        image: "https://i.ibb.co/0zXcZ2F/E-2.png"
+        id: "Bit-E-002",
+        name: "Rare Bey Battle",
+        image: "https://i.ibb.co/yBVRdQLC/E-2-B00.webp"
       },
       {
-        id: "E-002",
-        name: "BX-00",
-        image: "https://i.ibb.co/1tCYv50j/E-3.png"
+        id: "Bit-E-003",
+        name: "UX-12",
+        image: "https://i.ibb.co/LdmQfjfG/E-3-U12.webp"
       },
     ]
   },
   {
-    id: "bit-026",
+    id: "Bit-FB-001",
     name: "FB (UX-08)",
-    image: "https://i.ibb.co/1fRpB7t5/FB-1.webp",
+    image: "https://i.ibb.co/1GYFKzb8/FB-1-U08.webp",
     category: "bit",
     type:"stamina",
     price: "Free Ball",
@@ -3958,16 +4033,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "FB-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
+    //     id: "Bit-FB-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
-    id: "bit-027",
+    id: "Bit-BS-001",
     name: "BS (UX-10)",
-    image: "https://i.ibb.co/RGfCnzm1/BS-1.webp",
+    image: "https://i.ibb.co/fdkh2Qwn/BS-1-U10.webp",
     category: "bit",
     type:"defense",
     price: "Bound Spike",
@@ -3979,16 +4054,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "BS-001",
+        id: "Bit-BS-002",
         name: "BX-44",
-        image: "https://i.ibb.co/rjr9fFW/beyblade-x-bx-44-tricera-press-m-85-bs-3.png"
+        image: "https://i.ibb.co/pBZwnqSq/BS-2-B44.webp"
       },
     ]
   },
   {
-    id: "bit-028",
+    id: "Bit-RA-001",
     name: "RA (UX-10)",
-    image: "https://i.ibb.co/XxrL2p47/RA-1.webp",
+    image: "https://i.ibb.co/WWNMXBCK/RA-1-U10.webp",
     category: "bit",
     type:"attack",
     price: "Rubber Accel",
@@ -4000,26 +4075,26 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "RA-001",
+        id: "Bit-RA-002",
         name: "25th Anniversary",
-        image: "https://i.ibb.co/HDsxGrs5/RA-2.png"
+        image: "https://i.ibb.co/KpCFJWKR/RA-2-25th.webp"
       },
       {
-        id: "RA-002",
+        id: "Bit-RA-003",
         name: "25th Anniversary",
-        image: "https://i.ibb.co/fdmtZ5mG/RA-3.png"
+        image: "https://i.ibb.co/zcCbjx0/RA-3-25th.webp"
       },
       {
-        id: "RA-003",
+        id: "Bit-RA-004",
         name: "25th Anniversary",
-        image: "https://i.ibb.co/s9pwnvtQ/RA-4.png"
+        image: "https://i.ibb.co/twdxk36f/RA-4-25th.webp"
       }
     ]
   },
   {
-    id: "bit-029",
+    id: "Bit-L-001",
     name: "L (UX-09)",
-    image: "https://i.ibb.co/S4Z1Njz8/L-1.webp",
+    image: "https://i.ibb.co/fVv0V8DL/L-1-U09.webp",
     category: "bit",
     type:"attack",
     price: "Level",
@@ -4032,37 +4107,37 @@ export const products: Product[] = [
     //metal coat orange
     bey: [
       {
-        id: "L-001",
-        name: "UX-00",
+        id: "Bit-L-002",
+        name: "CoroCoro Comic",
         image: ""
       },
     ]
   },
   {
-    id: "bit-030",
+    id: "Bit-TP-001",
     name: "TP (BX-38)",
-    image: "https://i.ibb.co/YwBMrdN/TP-1.webp",
+    image: "https://i.ibb.co/9k669c0p/TP-1-B38.webp",
     category: "bit",
     type:"balance",
     price: "Trans Point",
     specs: {
-      "Type": "Attack",
+      "Type": "Balance",
       "Weight": "~2.2 g",
       "Gears": "12",
       "Burst Resistance": "High"
     },
     // bey: [
     //   {
-    //     id: "TP-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
+    //     id: "Bit-TP-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
-    id: "bit-031",
+    id: "Bit-LR-001",
     name: "LR (UX-11)",
-    image: "https://i.ibb.co/NnfcKKXv/LR-1.webp",
+    image: "https://i.ibb.co/xS4d31Gc/LR-1-U11.webp",
     category: "bit",
     type:"attack",
     price: "Low Rush",
@@ -4074,16 +4149,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "LR-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
+    //     id: "Bit-LR-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
-    id: "bit-032",
+    id: "Bit-UN-001",
     name: "UN (UX-13)",
-    image: "https://i.ibb.co/dJVZBhD1/UN-1.webp",
+    image: "https://i.ibb.co/78br1Q2/UN-1-U13.webp",
     category: "bit",
     type:"defense",
     price: "Under Needle",
@@ -4095,16 +4170,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "UN-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
+    //     id: "Bit-UN-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
-    id: "bit-033",
+    id: "Bit-V-001",
     name: "V (CX-01)",
-    image: "https://i.ibb.co/wFbx73MV/Bit-Vortex.webp",
+    image: "https://i.ibb.co/V0xVfX6G/V-1-C01.webp",
     category: "bit",
     type:"attack",
     price: "Vortex",
@@ -4116,16 +4191,16 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "V-001",
+        id: "Bit-V-002",
         name: "CX-04",
-        image: ""
+        image: "https://i.ibb.co/4C2Htff/V-2-C04.webp"
       },
     ]
   },
   {
     id: "bit-034",
     name: "LO (CX-02)",
-    image: "https://i.ibb.co/M5cncSdq/LO-1.webp",
+    image: "https://i.ibb.co/FZtDSm5/LO-1-C02.webp",
     category: "bit",
     type:"stamina",
     price: "Low Orb",
@@ -4139,14 +4214,14 @@ export const products: Product[] = [
       {
         id: "LO-001",
         name: "CX-00",
-        image: "https://i.ibb.co/60CF1y7K/LO-2.png"
+        image: "https://i.ibb.co/ccSVdNkz/LO-2-C00.webp"
       },
     ]
   },
   {
-    id: "bit-035",
+    id: "Bit-W-001",
     name: "W (CX-03)",
-    image: "https://i.ibb.co/rGmF2J4d/W-1.webp",
+    image: "https://i.ibb.co/fdWvXx5d/W-1-C03.webp",
     category: "bit",
     type:"defense",
     price: "Wedge",
@@ -4158,21 +4233,21 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "W-001",
+        id: "Bit-W-002",
         name: "CX-04",
-        image: ""
+        image: "https://i.ibb.co/hjhZ72V/W-2-C04.webp"
       },
       {
-        id: "W-002",
+        id: "Bit-W-003",
         name: "G3 Prize",
-        image: "https://i.ibb.co/VksWCPD/W-3.png"
+        image: "https://i.ibb.co/gMbZvZqp/W-3-G3P.webp"
       },
     ]
   },
   {
-    id: "bit-036",
+    id: "Bit-K-001",
     name: "K (CX-05)",
-    image: "https://i.ibb.co/Nn31LkgV/K-1.webp",
+    image: "https://i.ibb.co/cX69bTwj/K-1-C05.webp",
     category: "bit",
     type:"balance",
     price: "Kick",
@@ -4184,21 +4259,26 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "K-001",
+        id: "Bit-K-002",
         name: "CX-05",
-        image: "https://i.ibb.co/0V29bD1C/K-2.png"
+        image: "https://i.ibb.co/pB2TfsHn/K-2-C05.webp"
       },
       {
-        id: "K-002",
+        id: "Bit-K-003",
         name: "CX-05",
-        image: "https://i.ibb.co/S7ZTXPyf/K-3.png"
+        image: "https://i.ibb.co/CL0pBRz/K-3-C05.webp"
+      },
+      {
+        id: "K-003",
+        name: "CoroCoro Comic",
+        image: "https://i.ibb.co/7xSMtNSX/K-4-C00.webp"
       },
     ]
   },
   {
-    id: "bit-037",
+    id: "Bit-Z-001",
     name: "Z (UX-14)",
-    image: "https://i.ibb.co/r2LvMz1P/Z-1.png",
+    image: "https://i.ibb.co/YBD9RWkz/Z-1-U14.webp",
     category: "bit",
     type:"balance",
     price: "Zap",
@@ -4210,16 +4290,16 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "W-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
+    //     id: "Bit-Z-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
   {
-    id: "bit-038",
+    id: "Bit-GR-001",
     name: "GR (CX-06)",
-    image: "https://i.ibb.co/MyD88gMn/Bit-Gear-Rush-Photoroom.png",
+    image: "https://i.ibb.co/xS0Xx35Y/GR-1-C06.webp",
     category: "bit",
     type:"attack",
     price: "Gear Rush",
@@ -4231,9 +4311,9 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "W-001",
-    //     name: "UX-12",
-    //     image: "https://i.ibb.co/0zXcZ2F/E-2.png"
+    //     id: "Bit-GR-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
@@ -4259,9 +4339,9 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "bit-040",
+    id: "Bit-WB-001",
     name: "WB (CX-08)",
-    image: "https://i.ibb.co/B5p39Y4J/WB-1.png",
+    image: "https://i.ibb.co/Qv570YqT/WB-1-C08.webp",
     category: "bit",
     type:"stamina",
     price: "Wall Ball",
@@ -4273,12 +4353,12 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "WB-001",
+        id: "Bit-WB-002",
         name: "CX-08",
         image: ""
       },
       {
-        id: "WB-002",
+        id: "Bit-WB-003",
         name: "CX-08",
         image: ""
       },
