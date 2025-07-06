@@ -88,7 +88,7 @@ export default function Home() {
               <CardHeader className="p-0">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="https://i.ibb.co/Xf1hg983/3-60-1.webp"
+                    src="https://i.ibb.co/Qv29Y5pf/3-60-1-B01.webp"
                     alt="Ratchet Category"
                     width={600}
                     height={400}
@@ -112,7 +112,7 @@ export default function Home() {
               <CardHeader className="p-0">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="https://i.ibb.co/Fb19tC1y/F-1.webp"
+                    src="https://i.ibb.co/27dbvcjp/F-1-B01.webp"
                     alt="Bit Category"
                     width={600}
                     height={400}
