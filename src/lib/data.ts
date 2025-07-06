@@ -44,7 +44,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-DS-006",
-        name: "UX-00",
+        name: "25th Anniversary",
         image: "https://i.ibb.co/gZPVr6tz/DS-6-25th.webp"
       },
       {
@@ -4868,7 +4868,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/cS5tT3qF/DST-1.webp",
     category: "x-over",
     type: "attack",
-    price: "BX-00 25th Anniversary",
+    price: "25th Anniversary",
     specs: {
       "Type": "Attack",
       "Spin": "Left",
@@ -4909,7 +4909,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/gL0YjrkQ/SPS-1.webp",
     category: "x-over",
     type: "attack",
-    price: "BX-00 25th Anniversary",
+    price: "25th Anniversary",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -4927,7 +4927,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/DDmVg7gb/VVV-1.webp",
     category: "x-over",
     type: "attack",
-    price: "BX-00 25th Anniversary",
+    price: "25th Anniversary",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -4961,7 +4961,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/Gf7MDs1X/Star1.webp",
     category: "x-over",
     type: "stamina",
-    price: "BX-00",
+    price: "Collab Star Wars",
     specs: {
       "Type": "Stamina",
       "Spin": "Right",
@@ -4977,7 +4977,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/1tHxb5mt/Star2.webp",
     category: "x-over",
     type: "balance",
-    price: "BX-00",
+    price: "Collab Star Wars",
     specs: {
       "Type": "Balance",
       "Spin": "Right",
@@ -4993,7 +4993,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/238Q6j7J/Star3.webp",
     category: "x-over",
     type: "attack",
-    price: "BX-00",
+    price: "Collab Star Wars",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -5009,7 +5009,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/Kj8Nfh4g/Star4.webp",
     category: "x-over",
     type: "defense",
-    price: "BX-00",
+    price: "Collab Star Wars",
     specs: {
       "Type": "Defense",
       "Spin": "Right",
@@ -5025,7 +5025,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/gZGDNpsj/Trans1.webp",
     category: "x-over",
     type: "balance",
-    price: "BX-00",
+    price: "Collab Transformers",
     specs: {
       "Type": "Balance",
       "Spin": "Right",
@@ -5041,7 +5041,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/G4yxCC6c/Trans2.webp",
     category: "x-over",
     type: "stamina",
-    price: "BX-00",
+    price: "Collab Transformers",
     specs: {
       "Type": "Stamina",
       "Spin": "Right",
@@ -5057,7 +5057,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/zT3sxjyB/Trans3.webp",
     category: "x-over",
     type: "attack",
-    price: "BX-00",
+    price: "Collab Transformers",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -5073,7 +5073,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/PzVSrxdm/Trans4.webp",
     category: "x-over",
     type: "defense",
-    price: "BX-00",
+    price: "Collab Transformers",
     specs: {
       "Type": "Defense",
       "Spin": "Right",
@@ -5089,7 +5089,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/Df1jK98q/Marvel1.webp",
     category: "x-over",
     type: "stamina",
-    price: "BX-00",
+    price: "Collab Marvel",
     specs: {
       "Type": "Stamina",
       "Spin": "Right",
@@ -5105,7 +5105,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/chyBrhbJ/Marvel2.webp",
     category: "x-over",
     type: "balance",
-    price: "BX-00",
+    price: "Collab Marvel",
     specs: {
       "Type": "Balance",
       "Spin": "Right",
@@ -5121,7 +5121,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/PGwj3Dhv/Marvel3.webp",
     category: "x-over",
     type: "attack",
-    price: "BX-00",
+    price: "Collab Marvel",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -5137,7 +5137,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/zWCNSNhS/Marvel4.webp",
     category: "x-over",
     type: "defense",
-    price: "BX-00",
+    price: "Collab Marvel",
     specs: {
       "Type": "Defense",
       "Spin": "Right",
@@ -5153,7 +5153,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/TM6b09kq/Jura-1.webp",
     category: "x-over",
     type: "stamina",
-    price: "BX-00",
+    price: "Collab Jurassic World",
     specs: {
       "Type": "Stamina",
       "Spin": "Right",
@@ -5169,7 +5169,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/rR443LXd/Jura-2.webp",
     category: "x-over",
     type: "balance",
-    price: "BX-00",
+    price: "Collab Jurassic World",
     specs: {
       "Type": "Balance",
       "Spin": "Right",
@@ -5185,7 +5185,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/Z6dbCbrP/Jura-3.webp",
     category: "x-over",
     type: "attack",
-    price: "BX-00",
+    price: "Collab Jurassic World",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -5201,7 +5201,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/Lz0yMdTy/Jura-4.webp",
     category: "x-over",
     type: "defense",
-    price: "BX-00",
+    price: "Collab Jurassic World",
     specs: {
       "Type": "Defense",
       "Spin": "Right",
