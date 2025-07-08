@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   description: "Library for Beyblade X parts collection",
   icons: {
     icon: [
-      { url: "/public/favicon.ico", type: "image/x-icon" },
-      { url: "/public/favicon.png", type: "image/png" },
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/favicon.png", type: "image/png" },
     ],
   },
 };
