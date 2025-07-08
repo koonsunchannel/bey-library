@@ -12,7 +12,8 @@ const categories = [
   { name: "Bit", path: "/category/bit", color: "cyber-glow-blue" },
   { name: "Other", path: "/category/other", color: "cyber-glow-yellow" },
   { name: "X-Over", path: "/category/x-over", color: "cyber-glow-purple" },
-  { name: "Credits", path: "/category/credits", color: "cyber-glow-red" }
+  { name: "Credits", path: "/category/credits", color: "cyber-glow-red" },
+  { name: "RANDOM", path: "/random", color: "cyber-glow-red" },
 ]
 
 export default function NavBar() {
