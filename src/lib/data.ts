@@ -5127,7 +5127,7 @@ export const products: Product[] = [
       "Type": "Attack",
       "Spin": "Right",
       "Weight": "~32 g",
-      "Stock Combo": "3-60 Point",
+      "Stock Combo": "3-60 Flat",
       "Product Line": "BX",
       "Collab": "Marvel",
     },
