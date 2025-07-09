@@ -14,21 +14,25 @@ export default function ClientBody({
 }) {
   const [selectedType, setSelectedType] = useState<string>('All')
 
-  const filteredProducts =
-    selectedType === 'All' || !['blade', 'bit', 'x-over'].includes(slug)
-    ? products
-    : products.filter((product) =>
+  let filteredProducts = products;
+  if (selectedType !== 'All' && ['blade', 'bit', 'x-over'].includes(slug)) {
+    if (slug === 'blade' && ['BX', 'UX', 'CX'].includes(selectedType)) {
+      filteredProducts = products.filter(product => product.specs && product.specs['Product Line'] === selectedType);
+    } else {
+      filteredProducts = products.filter((product) =>
         Array.isArray(product.type)
-            ? product.type.includes(selectedType)
-            : product.type === selectedType
-        )
+          ? product.type.includes(selectedType)
+          : product.type === selectedType
+      );
+    }
+  }
 
 
   return (
     <>
       {['blade', 'bit', 'x-over'].includes(slug) && (
         <div className="mb-8">
-          <Filter onChange={setSelectedType} />
+          <Filter onChange={setSelectedType} slug={slug} />
         </div>
       )}
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -37,7 +41,6 @@ export default function ClientBody({
             key={product.id}
             id={product.id}
             name={product.name}
-            description={product.description}
             image={product.image}
             category={product.category}
             price={product.price}

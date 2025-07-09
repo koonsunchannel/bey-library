@@ -2,9 +2,12 @@
 
 import { useState } from "react"
 
-const types = ["All", "attack", "balance", "stamina", "defense", "rare"]
+export default function Filter({ onChange, slug }: { onChange: (type: string) => void, slug?: string }) {
+  // เพิ่ม BX, UX, CX เฉพาะหน้า blade
+  const types = slug === 'blade'
+    ? ["All", "BX", "UX", "CX", "attack", "balance", "stamina", "defense", "rare"]
+    : ["All", "attack", "balance", "stamina", "defense", "rare"];
 
-export default function Filter({ onChange }: { onChange: (type: string) => void }) {
   const [active, setActive] = useState("All")
 
   return (
