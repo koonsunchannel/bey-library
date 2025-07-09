@@ -1552,7 +1552,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/KjHsS8q2/CDk-1-B00.webp",
     category: "blade",
     type: ["attack", "rare"],
-    price: "Rare Bey Battle",
+    price: "BX-Rare Bey Battle",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -1578,7 +1578,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/NgYDNzQ0/PF-1-B00.webp",
     category: "blade",
     type: ["attack", "rare"],
-    price: "CoroCoro Comic",
+    price: "BX-CoroCoro Comic",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -1609,7 +1609,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/5XY6MgBH/AP-1-U00.webp",
     category: "blade",
     type: ["attack", "rare"],
-    price: "Rare Bey Battle",
+    price: "UX-Rare Bey Battle",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -1635,7 +1635,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/vxw8CZC7/SK-1-XONE.webp",
     category: "blade",
     type: ["attack", "rare"],
-    price: "Game Package",
+    price: "BX-Game Package",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -1661,7 +1661,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/mrrM6Jzz/MT-1-B00.webp",
     category: "blade",
     type: ["balance", "rare"],
-    price: "Rare Bey Battle",
+    price: "BX-Rare Bey Battle",
     specs: {
       "Type": "Balacne",
       "Spin": "Right",
@@ -1687,7 +1687,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/C3jpr2Th/CC-1-B00.webp",
     category: "blade",
     type: ["attack", "rare"],
-    price: "CoroCoro Comic",
+    price: "BX-CoroCoro Comic",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -1713,7 +1713,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/ZRdNsxyV/SSt-1-B00.webp",
     category: "blade",
     type:["attack", "rare"],
-    price: "CoroCoro Comic",
+    price: "BX-CoroCoro Comic",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -1735,11 +1735,11 @@ export const products: Product[] = [
   },
   {
     id: "Blade-LFT-001",
-    name: "Leon Fang T (Red Ver.)",
+    name: "Leon Fang (Red Ver.)",
     image: "https://i.ibb.co/twWHjc2b/LFT-1-RED.webp",
     category: "blade",
     type:["attack", "rare"],
-    price: "Game Package",
+    price: "CX-Game Package",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
@@ -1766,7 +1766,7 @@ export const products: Product[] = [
     image: "https://i.ibb.co/NnmhMKLB/Persona-CX.webp",
     category: "blade",
     type:["balance", "rare"],
-    price: "CoroCoro Comic",
+    price: "CX-CoroCoro Comic",
     specs: {
       "Type": "Balance",
       "Spin": "Right",

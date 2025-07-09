@@ -16,32 +16,42 @@ export default function RandomPage() {
   const blades = products.filter(p => p.id.startsWith("Blade-"));
 
   function handleRandomize() {
-    // Filter Rat-, Bit-, As-
+    // Filter Blade-, Rat-, Bit-, As-, Hybrid-
     const rats = products.filter(p => p.id.startsWith("Rat-"));
+    const hybrids = products.filter(p => p.id.startsWith("Hybrid-"));
     const bits = products.filter(p => p.id.startsWith("Bit-") && !p.id.startsWith("Hybrid-Bit-"));
     const asList = products.filter(p => p.id.startsWith("As-"));
 
     // ใช้ blade ที่เลือก ถ้าเลือกไว้, ถ้าไม่เลือกให้สุ่ม
     let blade = lockedBladeId ? blades.find(b => b.id === lockedBladeId) : getRandomItem(blades);
-    const rat = getRandomItem(rats);
-    let bit = getRandomItem(bits);
-    let randoms = [blade, rat, bit];
+
+    // สุ่ม Rat- กับ Hybrid- รวมกัน แล้วเลือกมาแสดงแค่ 1 อย่าง
+    const ratOrHybridList = [...rats, ...hybrids];
+    const ratOrHybrid = getRandomItem(ratOrHybridList);
+
+    let bit: any = null;
+    let randoms: any[] = [blade];
 
     // ถ้า blade ที่สุ่มได้มี price: CX- ให้สุ่ม As- มาแทรกต่อท้าย blade
     if (blade && typeof blade.price === "string" && blade.price.startsWith("CX-")) {
       const asItem = getRandomItem(asList);
       if (asItem) {
-        randoms = [blade, asItem, rat, bit];
+        randoms.push(asItem);
       }
     }
 
-    // ถ้า blade ที่สุ่มได้ id มีคำว่า Hybrid- ไม่ต้องสุ่ม Bit- (ลบ bit ออกจากผลลัพธ์)
-    if (blade && blade.id.includes("Hybrid-")) {
-      // ถ้ามี asItem (จาก CX-) ให้คงไว้
-      if (randoms.length === 4) {
-        randoms = [randoms[0], randoms[1], randoms[2]]; // blade, asItem, rat
-      } else {
-        randoms = [blade, rat];
+    // เพิ่ม ratOrHybrid
+    if (ratOrHybrid) {
+      if (ratOrHybrid.id.startsWith("Hybrid-")) {
+        // ถ้าเป็น Hybrid- ให้แสดงเฉพาะ Hybrid- (ไม่ต้องแสดง Rat- และไม่ต้องสุ่ม Bit-)
+        randoms.push(ratOrHybrid);
+      } else if (ratOrHybrid.id.startsWith("Rat-")) {
+        // ถ้าเป็น Rat- ให้แสดง Rat- และสุ่ม Bit-
+        randoms.push(ratOrHybrid);
+        bit = getRandomItem(bits);
+        if (bit) {
+          randoms.push(bit);
+        }
       }
     }
 
@@ -100,8 +110,8 @@ export default function RandomPage() {
           >
             {result.map((item, idx) => {
               let name = item?.name || "";
-              // ถ้าเป็น Rat-, Bit-, หรือ As- ให้ตัดข้อความในวงเล็บออก (ลบทุกวงเล็บและ trim ช่องว่างซ้ำ)
-              if ((item?.id?.startsWith("Rat-") || item?.id?.startsWith("Bit-") || item?.id?.startsWith("As-"))) {
+              // ถ้าเป็น Rat-, Bit-, As-, หรือ Hybrid- ให้ตัดข้อความในวงเล็บออก (ลบทุกวงเล็บและ trim ช่องว่างซ้ำ)
+              if ((item?.id?.startsWith("Rat-") || item?.id?.startsWith("Bit-") || item?.id?.startsWith("As-") || item?.id?.startsWith("Hybrid-"))) {
                 name = name.replace(/\s*\([^)]*\)/g, "").replace(/\s+/g, " ").trim();
               }
               return name;
