@@ -485,7 +485,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-PW-004",
-        name: "BX-00",
+        name: "CoroCoro Comic",
         image: "https://i.ibb.co/nsNSpDZM/PW-4-B00.webp"
       },
     ]
