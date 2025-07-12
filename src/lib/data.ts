@@ -1350,6 +1350,11 @@ export const products: Product[] = [
         name: "CX-05 (Hells Arc T)",
         image: "https://i.ibb.co/vxRW58zD/HRT-2-C05.webp"
       },
+      {
+        id: "Blade-HRT-003",
+        name: "CX-05 (Full Set)",
+        image: "https://i.ibb.co/fWwkJKS/HRT-3-F-C05.webp"
+      },
     ]
   },
   {
@@ -1514,6 +1519,11 @@ export const products: Product[] = [
         id: "Blade-CFW-002",
         name: "CX-08 (Cerberus Dark W)",
         image: "https://i.ibb.co/zWN3G949/CFW-2-C08.webp"
+      },
+      {
+        id: "Blade-CFW-003",
+        name: "CX-08 (Full Set)",
+        image: "https://i.ibb.co/FkqM0H7R/CFW-3-F-C08.webp"
       },
     ]
   },
@@ -1957,7 +1967,7 @@ export const products: Product[] = [
       {
         id: "As-W-002",
         name: "CX-08",
-        image: ""
+        image: "https://i.ibb.co/DHRCNgSZ/W-2-C08.webp"
       },
     ]
   },
@@ -2106,6 +2116,11 @@ export const products: Product[] = [
         id: "Rat-160-014",
         name: "UX-13",
         image: "https://i.ibb.co/nN0nY7JM/1-60-14-U13.webp"
+      },
+      {
+        id: "Rat-160-015",
+        name: "CX-08",
+        image: "https://i.ibb.co/ycDrxSYC/1-60-15-C08.webp"
       },
     ]
   },
@@ -2466,6 +2481,11 @@ export const products: Product[] = [
         name: "Collab",
         image: "https://i.ibb.co/39PzGjFZ/3-85-3-Col.webp"
       },
+      {
+        id: "Rat-385-004",
+        name: "CX-08",
+        image: "https://i.ibb.co/qZkWLmB/3-85-4-C08.webp"
+      },
     ]
   },
   {
@@ -2488,7 +2508,7 @@ export const products: Product[] = [
       {
         id: "Rat-455-003",
         name: "CX-08",
-        image: ""
+        image: "https://i.ibb.co/vCCB70KB/4-55-6-C08.webp"
       },
       {
         id: "Rat-455-004",
@@ -2847,12 +2867,12 @@ export const products: Product[] = [
       {
         id: "Rat-580-007",
         name: "CX-08",
-        image: ""
+        image: "https://i.ibb.co/ynvx7Dts/5-80-7-C08.webp"
       },
       {
         id: "Rat-580-008",
         name: "CX-08",
-        image: ""
+        image: "https://i.ibb.co/rRQhH5bg/5-80-8-C08.webp"
       },
     ]
   },
@@ -2953,7 +2973,7 @@ export const products: Product[] = [
       {
         id: "Rat-770-002",
         name: "CX-08",
-        image: ""
+        image: "https://i.ibb.co/gL9GxQk7/7-70-2-C08.webp"
       },
     ]
   },
@@ -3196,7 +3216,7 @@ export const products: Product[] = [
       {
         id: "Bit-F-017",
         name: "CX-08",
-        image: ""
+        image: "https://i.ibb.co/kfs70Vv/F-17-C08.webp"
       },
     ]
   },
@@ -3585,7 +3605,7 @@ export const products: Product[] = [
       {
         id: "Bit-HT-004",
         name: "CX-08",
-        image: ""
+        image: "https://i.ibb.co/SXjYBh7R/HT-4-C08.webp"
       },
     ]
   },
@@ -3930,7 +3950,7 @@ export const products: Product[] = [
       {
         id: "Bit-MN-003",
         name: "CX-08",
-        image: ""
+        image: "https://i.ibb.co/GQ1d3hKM/MN-3-C08.webp"
       },
     ]
   },
@@ -4431,12 +4451,12 @@ export const products: Product[] = [
       {
         id: "Bit-WB-002",
         name: "CX-08",
-        image: ""
+        image: "https://i.ibb.co/QvctgWBv/WB-2-C08.webp"
       },
       {
         id: "Bit-WB-003",
         name: "CX-08",
-        image: ""
+        image: "https://i.ibb.co/cSSV4mG5/WB-3-C08.webp"
       },
     ]
   },
