@@ -3109,7 +3109,7 @@ export const products: Product[] = [
     category: "ratchet",
     price: "CX-07",
     features: [
-      "Ratchet + Bit",
+      "Integrated Bit (Ratchet + Bit)",
       "2 Contact Points",
       "High : 9 -> 6.50 mm",
       "Weight: ~ g",
@@ -4421,9 +4421,9 @@ export const products: Product[] = [
     type:"attack",
     price: "CX-07",
     specs: {
-      "Type": "Attack",
+      "Type": "Attack, Integrated Bit",
       "Weight": "~ g",
-      "Gears": "",
+      "Gears": "16",
       "Burst Resistance": "High"
     },
     // bey: [
