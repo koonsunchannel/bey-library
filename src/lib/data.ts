@@ -1055,13 +1055,13 @@ export const products: Product[] = [
       "Ratchet": "3-60, 7-60, 1-60, 5-60",
       "Bit": "Dot, Metal Needle, Level, Low Rush",
     },
-    // bey: [
-    //   {
-    //     id: "Blade-KM-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Blade-KM-002",
+        name: "Rare Bey Battle",
+        image: ""
+      },
+    ]
   },
   {
     id: "Blade-PS-001",
@@ -1355,6 +1355,11 @@ export const products: Product[] = [
         name: "CX-05 (Full Set)",
         image: "https://i.ibb.co/fWwkJKS/HRT-3-F-C05.webp"
       },
+      {
+        id: "Blade-HRT-004",
+        name: "UX-15 (Hells Brave J)",
+        image: ""
+      },
     ]
   },
   {
@@ -1554,6 +1559,84 @@ export const products: Product[] = [
     //   },
     // ]
   },
+  {
+    id: "Blade-SSl-001",
+    name: "Shark Scale",
+    image: "",
+    category: "blade",
+    type:"attack",
+    price: "UX-15",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "4-50 Under Flat",
+      "Product Line": "UX",
+    },
+    combo: {
+      "Ratchet": "",
+      "Bit": "",
+    },
+    // bey: [
+    //   {
+    //     id: "Blade-SSl-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Blade-TR-001",
+    name: "Tyranno Roar",
+    image: "",
+    category: "blade",
+    type:"attack",
+    price: "UX-15",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "1-70 Level",
+      "Product Line": "BX",
+    },
+    combo: {
+      "Ratchet": "",
+      "Bit": "",
+    },
+    // bey: [
+    //   {
+    //     id: "Blade-TR-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Blade-SCa-001",
+    name: "Samurai Caliber",
+    image: "",
+    category: "blade",
+    type:"attack",
+    price: "BX-45",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "6-70 M",
+      "Product Line": "BX",
+    },
+    combo: {
+      "Ratchet": "",
+      "Bit": "",
+    },
+    // bey: [
+    //   {
+    //     id: "Blade-SCa-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
 
   //RARE BLADE
   {
@@ -1625,7 +1708,7 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~38 g",
       "Stock Combo": "3-70 Accel",
-      "Product Line": "BX",
+      "Product Line": "UX",
     },
     combo: {
       "Ratchet": "3-60, 9-60, 5-60, 7-60",
@@ -1797,6 +1880,33 @@ export const products: Product[] = [
     //   },
     // ]
   },
+  {
+    id: "Blade-VBS-001",
+    name: "Valkyrie Bolt",
+    image: "",
+    category: "blade",
+    type:["balance", "rare"],
+    price: "CX-Rare Bey Battle",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "S 4-70 Vortex",
+      "Assist Blade": "Slash",
+      "Product Line": "CX",
+    },
+    combo: {
+      "Ratchet": "",
+      "Bit": "",
+    },
+    // bey: [
+    //   {
+    //     id: "Blade-VBS-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
 
   // ASSIST BLADES
   {
@@ -1820,6 +1930,11 @@ export const products: Product[] = [
         id: "As-S-003",
         name: "CoroCoro Comic",
         image: "https://i.ibb.co/LzYkW1xw/S-3-C00.png"
+      },
+      {
+        id: "As-S-004",
+        name: "Rare Bey Battle",
+        image: ""
       },
     ]
   },
@@ -1930,6 +2045,11 @@ export const products: Product[] = [
         id: "As-J-004",
         name: "CoroCoro Comic",
         image: "https://i.ibb.co/Q31yGCx2/J-4-C00.png"
+      },
+      {
+        id: "As-J-005",
+        name: "UX-15",
+        image: ""
       },
     ]
   },
@@ -2125,6 +2245,25 @@ export const products: Product[] = [
     ]
   },
   {
+    id: "Rat-170-001",
+    name: "1-70",
+    image: "",
+    category: "ratchet",
+    price: "UX-15",
+    features: [
+      "1 Contact Points",
+      "High : 7.0 mm",
+      "Weight: ~ g",
+    ],
+    // bey: [
+    //   {
+    //     id: "Rat-170-002",
+    //     name: "UX-07",
+    //     image: "https://i.ibb.co/YTWjYHJr/1-80-2-U07.webp"
+    //   },
+    // ]
+  },
+  {
     id: "Rat-180-001",
     name: "1-80",
     image: "https://i.ibb.co/MwrKzWg/1-80-1-U05.webp",
@@ -2311,13 +2450,18 @@ export const products: Product[] = [
       },
       {
         id: "Rat-360-014",
-        name: "B00",
+        name: "BX-00",
         image: "https://i.ibb.co/KpcP076z/3-60-14-B00.webp"
       },
       {
         id: "Rat-360-015",
         name: "Sushiro Ver.",
         image: "https://i.ibb.co/nqQJD8C5/3-60-15-Sushi.webp"
+      },
+      {
+        id: "Rat-360-016",
+        name: "UX-15",
+        image: ""
       },
     ]
   },
@@ -2486,7 +2630,31 @@ export const products: Product[] = [
         name: "CX-08",
         image: "https://i.ibb.co/qZkWLmB/3-85-4-C08.webp"
       },
+      {
+        id: "Rat-385-005",
+        name: "Rare Bey Battle",
+        image: ""
+      },
     ]
+  },
+  {
+    id: "Rat-450-001",
+    name: "4-50",
+    image: "",
+    category: "ratchet",
+    price: "UX-15",
+    features: [
+      "4 Contact Points",
+      "High : 5.0 mm",
+      "Weight: ~ g",
+    ],
+    // bey: [
+    //   {
+    //     id: "Rat-450-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
   },
   {
     id: "Rat-455-001",
@@ -2652,6 +2820,11 @@ export const products: Product[] = [
         id: "Rat-470-006",
         name: "CX-05",
         image: "https://i.ibb.co/mCKNsyKt/4-70-6-C05.webp"
+      },
+      {
+        id: "Rat-470-007",
+        name: "Rare Bey Battle",
+        image: ""
       },
     ]
   },
@@ -2909,6 +3082,25 @@ export const products: Product[] = [
         image: "https://i.ibb.co/S4xbf6Qt/6-60-5-G1-P.webp"
       },
     ]
+  },
+  {
+    id: "Rat-670-001",
+    name: "6-70",
+    image: "",
+    category: "ratchet",
+    price: "UX-15",
+    features: [
+      "6 Contact Points",
+      "High : 7.0 mm",
+      "Weight: ~ g",
+    ],
+    // bey: [
+    //   {
+    //     id: "Rat-170-002",
+    //     name: "UX-07",
+    //     image: "https://i.ibb.co/YTWjYHJr/1-80-2-U07.webp"
+    //   },
+    // ]
   },
   {
     id: "Rat-680-001",
@@ -3669,6 +3861,11 @@ export const products: Product[] = [
         name: "CoroCoro Comic",
         image: "https://i.ibb.co/fzN70FT8/GF-5-B00.webp"
       },
+      {
+        id: "Bit-GF-006",
+        name: "UX-15",
+        image: ""
+      },
     ]
   },
   {
@@ -4139,6 +4336,11 @@ export const products: Product[] = [
         name: "BX-44",
         image: "https://i.ibb.co/pBZwnqSq/BS-2-B44.webp"
       },
+      {
+        id: "Bit-BS-003",
+        name: "Rare Bey Battle",
+        image: ""
+      },
     ]
   },
   {
@@ -4190,6 +4392,11 @@ export const products: Product[] = [
       {
         id: "Bit-L-002",
         name: "CoroCoro Comic",
+        image: ""
+      },
+      {
+        id: "Bit-L-003",
+        name: "UX-15",
         image: ""
       },
     ]
@@ -4290,6 +4497,11 @@ export const products: Product[] = [
         id: "Bit-V-005",
         name: "G1 Prize",
         image: "https://i.ibb.co/nq4svh2b/V-5-G1P.webp"
+      },
+      {
+        id: "Bit-V-006",
+        name: "Rare Bey Battle",
+        image: ""
       },
     ]
   },
@@ -4428,7 +4640,7 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "Hybrid-Bit-Tr-001",
+    //     id: "Hybrid-Bit-Tr-002",
     //     name: "",
     //     image: ""
     //   },
@@ -4459,6 +4671,48 @@ export const products: Product[] = [
         image: "https://i.ibb.co/cSSV4mG5/WB-3-C08.webp"
       },
     ]
+  },
+  {
+    id: "Bit-UF-001",
+    name: "UF (Under Flat)",
+    image: "",
+    category: "bit",
+    type:"attack",
+    price: "UX-15",
+    specs: {
+      "Type": "Attack",
+      "Weight": "~ g",
+      "Gears": "16",
+      "Burst Resistance": "High"
+    },
+    // bey: [
+    //   {
+    //     id: "Bit-UF-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Bit-M-001",
+    name: "M (Merge)",
+    image: "",
+    category: "bit",
+    type:"attack",
+    price: "UX-15",
+    specs: {
+      "Type": "Attack",
+      "Weight": "~ g",
+      "Gears": "16",
+      "Burst Resistance": "High"
+    },
+    // bey: [
+    //   {
+    //     id: "Bit-UF-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
   },
 
   // OTHER
