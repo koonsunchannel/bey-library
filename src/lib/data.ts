@@ -1631,7 +1631,7 @@ export const products: Product[] = [
       "Type": "Balance",
       "Spin": "Right",
       "Weight": "~ g",
-      "Stock Combo": "6-70 M",
+      "Stock Combo": "6-70 Merge",
       "Product Line": "BX",
     },
     combo: {
