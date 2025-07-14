@@ -3088,7 +3088,7 @@ export const products: Product[] = [
     name: "6-70",
     image: "",
     category: "ratchet",
-    price: "UX-15",
+    price: "BX-45",
     features: [
       "6 Contact Points",
       "High : 7.0 mm",
@@ -4699,7 +4699,7 @@ export const products: Product[] = [
     image: "",
     category: "bit",
     type:"attack",
-    price: "UX-15",
+    price: "BX-45",
     specs: {
       "Type": "Attack",
       "Weight": "~ g",
