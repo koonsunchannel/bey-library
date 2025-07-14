@@ -1236,6 +1236,7 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~37 g",
       "Stock Combo": "S 6-60 Vortex",
+      "Lock Chip Type": "Plastic",
       "Assist Blade": "Slash",
       "Product Line": "CX",
     },
@@ -1278,6 +1279,7 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~35 g",
       "Stock Combo": "R 4-55 Low Orb",
+      "Lock Chip Type": "Plastic",
       "Assist Blade": "Round",
       "Product Line": "CX",
     },
@@ -1305,6 +1307,7 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~37 g",
       "Stock Combo": "B 6-80 Wedge",
+      "Lock Chip Type": "Plastic",
       "Assist Blade": "Bumper",
       "Product Line": "CX",
     },
@@ -1337,6 +1340,7 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~36 g",
       "Stock Combo": "T 4-70 Kick",
+      "Lock Chip Type": "Plastic",
       "Assist Blade": "Turn",
       "Product Line": "CX",
     },
@@ -1358,7 +1362,7 @@ export const products: Product[] = [
       {
         id: "Blade-HRT-004",
         name: "UX-15 (Hells Brave J)",
-        image: ""
+        image: "https://i.ibb.co/VYYLvnyS/HRT-4-U15.webp"
       },
     ]
   },
@@ -1374,6 +1378,7 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~35 g",
       "Stock Combo": "C 4-55 Dot",
+      "Lock Chip Type": "Plastic",
       "Assist Blade": "Charge",
       "Product Line": "CX",
     },
@@ -1427,6 +1432,7 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~36? g",
       "Stock Combo": "J 9-70 Gear Rush",
+      "Lock Chip Type": "Plastic",
       "Assist Blade": "Jaggy",
       "Product Line": "CX",
     },
@@ -1485,6 +1491,7 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~ g",
       "Stock Combo": "A Tr",
+      "Lock Chip Type": "Plastic",
       "Assist Blade": "Assault",
       "Product Line": "CX",
     },
@@ -1492,13 +1499,13 @@ export const products: Product[] = [
       "Ratchet": "",
       "Bit": "",
     },
-    // bey: [
-    //   {
-    //     id: "Blade-PBA-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Blade-PBA-002",
+        name: "CX-00",
+        image: "https://i.ibb.co/wN5GJCvD/PBA-2-C00.webp"
+      },
+    ]
   },
   {
     id: "Blade-CFW-001",
@@ -1512,6 +1519,7 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~ g",
       "Stock Combo": "W 5-80 WB",
+      "Lock Chip Type": "Plastic",
       "Assist Blade": "Wheel",
       "Product Line": "CX",
     },
@@ -1544,6 +1552,7 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~ g",
       "Stock Combo": "M 3-85 HT",
+      "Lock Chip Type": "Plastic",
       "Assist Blade": "Massive",
       "Product Line": "CX",
     },
@@ -1562,7 +1571,7 @@ export const products: Product[] = [
   {
     id: "Blade-SSl-001",
     name: "Shark Scale",
-    image: "",
+    image: "https://i.ibb.co/j9JBGxv2/SSl-1-U15.webp",
     category: "blade",
     type:"attack",
     price: "UX-15",
@@ -1588,7 +1597,7 @@ export const products: Product[] = [
   {
     id: "Blade-TR-001",
     name: "Tyranno Roar",
-    image: "",
+    image: "https://i.ibb.co/5xBj96Sc/TR-1-U15.webp",
     category: "blade",
     type:"attack",
     price: "UX-15",
@@ -1613,13 +1622,13 @@ export const products: Product[] = [
   },
   {
     id: "Blade-SCa-001",
-    name: "Samurai Caliber",
-    image: "",
+    name: "Samurai Calibur",
+    image: "https://i.ibb.co/fz8bZVPf/SCa-1-B45.webp",
     category: "blade",
-    type:"attack",
+    type:"balance",
     price: "BX-45",
     specs: {
-      "Type": "Attack",
+      "Type": "Balance",
       "Spin": "Right",
       "Weight": "~ g",
       "Stock Combo": "6-70 M",
@@ -1838,6 +1847,7 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~ g",
       "Stock Combo": "4-60 Accel",
+      "Lock Chip Type": "Plastic",
       "Assist Blade": "Turn",
       "Product Line": "CX",
     },
@@ -1865,6 +1875,7 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~ g",
       "Stock Combo": "S 2-70 Kick",
+      "Lock Chip Type": "Plastic",
       "Assist Blade": "Slash",
       "Product Line": "CX",
     },
@@ -1883,7 +1894,7 @@ export const products: Product[] = [
   {
     id: "Blade-VBS-001",
     name: "Valkyrie Bolt",
-    image: "",
+    image: "https://i.ibb.co/YBtX6SHJ/VBS-1-C00.webp",
     category: "blade",
     type:["balance", "rare"],
     price: "CX-Rare Bey Battle",
@@ -1892,6 +1903,7 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~ g",
       "Stock Combo": "S 4-70 Vortex",
+      "Lock Chip Type": "Metal",
       "Assist Blade": "Slash",
       "Product Line": "CX",
     },
@@ -2044,7 +2056,7 @@ export const products: Product[] = [
       {
         id: "As-J-004",
         name: "CoroCoro Comic",
-        image: "https://i.ibb.co/Q31yGCx2/J-4-C00.png"
+        image: "https://i.ibb.co/d4Nnc11L/J-4-C00.webp"
       },
       {
         id: "As-J-005",
@@ -3306,13 +3318,13 @@ export const products: Product[] = [
       "High : 9 -> 6.50 mm",
       "Weight: ~ g",
     ],
-    // bey: [
-    //   {
-    //     id: "Hybrid-Rat-Tr-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Hybrid-Rat-Tr-002",
+        name: "CX-00",
+        image: ""
+      },
+    ]
   },
 
   // BITS
@@ -4638,13 +4650,13 @@ export const products: Product[] = [
       "Gears": "16",
       "Burst Resistance": "High"
     },
-    // bey: [
-    //   {
-    //     id: "Hybrid-Bit-Tr-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Hybrid-Bit-Tr-002",
+        name: "CX-00",
+        image: ""
+      },
+    ]
   },
   {
     id: "Bit-WB-001",
