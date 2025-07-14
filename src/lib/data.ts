@@ -1502,7 +1502,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-PBA-002",
-        name: "CX-00",
+        name: "CoroCoro Event",
         image: "https://i.ibb.co/wN5GJCvD/PBA-2-C00.webp"
       },
     ]
