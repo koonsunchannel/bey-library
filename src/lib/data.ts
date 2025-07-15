@@ -3098,7 +3098,7 @@ export const products: Product[] = [
   {
     id: "Rat-670-001",
     name: "6-70",
-    image: "",
+    image: "https://i.ibb.co/C5kQN1tT/6-70-1-B45.webp",
     category: "ratchet",
     price: "BX-45",
     features: [
@@ -4708,7 +4708,7 @@ export const products: Product[] = [
   {
     id: "Bit-M-001",
     name: "M (Merge)",
-    image: "",
+    image: "https://i.ibb.co/HLM6Gc1g/M-1-B45.webp",
     category: "bit",
     type:"balance",
     price: "BX-45",
