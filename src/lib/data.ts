@@ -1033,7 +1033,7 @@ export const products: Product[] = [
       {
         id: "Blade-Sr-002",
         name: "UX-00",
-        image: "https://i.ibb.co/bjSHyzWg/SSr-2-U00.webp"
+        image: "https://i.ibb.co/SXrCpqwg/SSr-2-U00.webp"
       },
     ]
   },
@@ -1059,7 +1059,7 @@ export const products: Product[] = [
       {
         id: "Blade-KM-002",
         name: "Rare Bey Battle",
-        image: ""
+        image: "https://i.ibb.co/BH43hfjg/KM-2-U00.webp"
       },
     ]
   },
@@ -1894,7 +1894,7 @@ export const products: Product[] = [
   {
     id: "Blade-VBS-001",
     name: "Valkyrie Bolt",
-    image: "https://i.ibb.co/YBtX6SHJ/VBS-1-C00.webp",
+    image: "https://i.ibb.co/hFs4WM7S/VBS-1-C00.webp",
     category: "blade",
     type:["attack", "rare"],
     price: "CX-Rare Bey Battle",
@@ -1946,7 +1946,7 @@ export const products: Product[] = [
       {
         id: "As-S-004",
         name: "Rare Bey Battle",
-        image: ""
+        image: "https://i.ibb.co/BHrsBYgF/S-4-C00.webp"
       },
     ]
   },
@@ -2259,7 +2259,7 @@ export const products: Product[] = [
   {
     id: "Rat-170-001",
     name: "1-70",
-    image: "",
+    image: "https://i.ibb.co/Z6wCbgdh/1-70-1-U15.webp",
     category: "ratchet",
     price: "UX-15",
     features: [
@@ -2473,7 +2473,7 @@ export const products: Product[] = [
       {
         id: "Rat-360-016",
         name: "UX-15",
-        image: ""
+        image: "https://i.ibb.co/Q7km5vgM/3-60-16-U15.webp"
       },
     ]
   },
@@ -2645,14 +2645,14 @@ export const products: Product[] = [
       {
         id: "Rat-385-005",
         name: "Rare Bey Battle",
-        image: ""
+        image: "https://i.ibb.co/WWtVbrbw/3-85-5-U00.webp"
       },
     ]
   },
   {
     id: "Rat-450-001",
     name: "4-50",
-    image: "",
+    image: "https://i.ibb.co/vCgy13ZZ/4-50-1-U15.webp",
     category: "ratchet",
     price: "UX-15",
     features: [
@@ -2836,7 +2836,7 @@ export const products: Product[] = [
       {
         id: "Rat-470-007",
         name: "Rare Bey Battle",
-        image: ""
+        image: "https://i.ibb.co/Zz5TVXcH/4-70-7-C00.webp"
       },
     ]
   },
@@ -3098,7 +3098,7 @@ export const products: Product[] = [
   {
     id: "Rat-670-001",
     name: "6-70",
-    image: "",
+    image: "https://i.ibb.co/C5kQN1tT/6-70-1-B45.webp",
     category: "ratchet",
     price: "BX-45",
     features: [
@@ -3108,7 +3108,7 @@ export const products: Product[] = [
     ],
     // bey: [
     //   {
-    //     id: "Rat-170-002",
+    //     id: "Rat-670-002",
     //     name: "UX-07",
     //     image: "https://i.ibb.co/YTWjYHJr/1-80-2-U07.webp"
     //   },
@@ -3876,7 +3876,7 @@ export const products: Product[] = [
       {
         id: "Bit-GF-006",
         name: "UX-15",
-        image: ""
+        image: "https://i.ibb.co/jPMPfvM1/GF-6-U15.webp"
       },
     ]
   },
@@ -4351,7 +4351,7 @@ export const products: Product[] = [
       {
         id: "Bit-BS-003",
         name: "Rare Bey Battle",
-        image: ""
+        image: "https://i.ibb.co/B2nddjH1/BS-3-U00.webp"
       },
     ]
   },
@@ -4409,7 +4409,7 @@ export const products: Product[] = [
       {
         id: "Bit-L-003",
         name: "UX-15",
-        image: ""
+        image: "https://i.ibb.co/BK7RZT6f/L-3-U15.webp"
       },
     ]
   },
@@ -4513,7 +4513,7 @@ export const products: Product[] = [
       {
         id: "Bit-V-006",
         name: "Rare Bey Battle",
-        image: ""
+        image: "https://i.ibb.co/pj84Gp7f/V-6-C00.webp"
       },
     ]
   },
@@ -4548,7 +4548,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Defense",
       "Weight": "~2 g",
-      "Gears": "12",
+      "Gears": "10",
       "Burst Resistance": "Low"
     },
     bey: [
@@ -4687,14 +4687,14 @@ export const products: Product[] = [
   {
     id: "Bit-UF-001",
     name: "UF (Under Flat)",
-    image: "",
+    image: "https://i.ibb.co/mr2mZqsF/UF-1-U15.webp",
     category: "bit",
     type:"attack",
     price: "UX-15",
     specs: {
       "Type": "Attack",
       "Weight": "~ g",
-      "Gears": "16",
+      "Gears": "12",
       "Burst Resistance": "High"
     },
     // bey: [
@@ -4708,12 +4708,12 @@ export const products: Product[] = [
   {
     id: "Bit-M-001",
     name: "M (Merge)",
-    image: "",
+    image: "https://i.ibb.co/HLM6Gc1g/M-1-B45.webp",
     category: "bit",
-    type:"attack",
+    type:"balance",
     price: "BX-45",
     specs: {
-      "Type": "Attack",
+      "Type": "Balance",
       "Weight": "~ g",
       "Gears": "16",
       "Burst Resistance": "High"
