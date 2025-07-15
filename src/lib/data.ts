@@ -4548,7 +4548,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Defense",
       "Weight": "~2 g",
-      "Gears": "12",
+      "Gears": "10",
       "Burst Resistance": "Low"
     },
     bey: [
@@ -4694,7 +4694,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Attack",
       "Weight": "~ g",
-      "Gears": "16",
+      "Gears": "12",
       "Burst Resistance": "High"
     },
     // bey: [
