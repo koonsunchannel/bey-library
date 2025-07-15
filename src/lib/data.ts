@@ -4710,10 +4710,10 @@ export const products: Product[] = [
     name: "M (Merge)",
     image: "",
     category: "bit",
-    type:"attack",
+    type:"balance",
     price: "BX-45",
     specs: {
-      "Type": "Attack",
+      "Type": "Balance",
       "Weight": "~ g",
       "Gears": "16",
       "Burst Resistance": "High"
