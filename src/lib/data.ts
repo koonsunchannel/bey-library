@@ -2259,7 +2259,7 @@ export const products: Product[] = [
   {
     id: "Rat-170-001",
     name: "1-70",
-    image: "",
+    image: "https://i.ibb.co/Z6wCbgdh/1-70-1-U15.webp",
     category: "ratchet",
     price: "UX-15",
     features: [
@@ -2473,7 +2473,7 @@ export const products: Product[] = [
       {
         id: "Rat-360-016",
         name: "UX-15",
-        image: ""
+        image: "https://i.ibb.co/Q7km5vgM/3-60-16-U15.webp"
       },
     ]
   },
@@ -2652,7 +2652,7 @@ export const products: Product[] = [
   {
     id: "Rat-450-001",
     name: "4-50",
-    image: "",
+    image: "https://i.ibb.co/vCgy13ZZ/4-50-1-U15.webp",
     category: "ratchet",
     price: "UX-15",
     features: [
@@ -3108,7 +3108,7 @@ export const products: Product[] = [
     ],
     // bey: [
     //   {
-    //     id: "Rat-170-002",
+    //     id: "Rat-670-002",
     //     name: "UX-07",
     //     image: "https://i.ibb.co/YTWjYHJr/1-80-2-U07.webp"
     //   },
@@ -3876,7 +3876,7 @@ export const products: Product[] = [
       {
         id: "Bit-GF-006",
         name: "UX-15",
-        image: ""
+        image: "https://i.ibb.co/jPMPfvM1/GF-6-U15.webp"
       },
     ]
   },
@@ -4409,7 +4409,7 @@ export const products: Product[] = [
       {
         id: "Bit-L-003",
         name: "UX-15",
-        image: ""
+        image: "https://i.ibb.co/BK7RZT6f/L-3-U15.webp"
       },
     ]
   },
@@ -4687,7 +4687,7 @@ export const products: Product[] = [
   {
     id: "Bit-UF-001",
     name: "UF (Under Flat)",
-    image: "",
+    image: "https://i.ibb.co/KxsSYW80/UF-1-U15.webp",
     category: "bit",
     type:"attack",
     price: "UX-15",
