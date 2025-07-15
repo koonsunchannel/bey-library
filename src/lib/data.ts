@@ -1896,7 +1896,7 @@ export const products: Product[] = [
     name: "Valkyrie Bolt",
     image: "https://i.ibb.co/YBtX6SHJ/VBS-1-C00.webp",
     category: "blade",
-    type:["balance", "rare"],
+    type:["attack", "rare"],
     price: "CX-Rare Bey Battle",
     specs: {
       "Type": "Attack",
