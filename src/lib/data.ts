@@ -1033,7 +1033,7 @@ export const products: Product[] = [
       {
         id: "Blade-Sr-002",
         name: "UX-00",
-        image: "https://i.ibb.co/bjSHyzWg/SSr-2-U00.webp"
+        image: "https://i.ibb.co/SXrCpqwg/SSr-2-U00.webp"
       },
     ]
   },
@@ -1059,7 +1059,7 @@ export const products: Product[] = [
       {
         id: "Blade-KM-002",
         name: "Rare Bey Battle",
-        image: ""
+        image: "https://i.ibb.co/BH43hfjg/KM-2-U00.webp"
       },
     ]
   },
@@ -1894,7 +1894,7 @@ export const products: Product[] = [
   {
     id: "Blade-VBS-001",
     name: "Valkyrie Bolt",
-    image: "https://i.ibb.co/YBtX6SHJ/VBS-1-C00.webp",
+    image: "https://i.ibb.co/hFs4WM7S/VBS-1-C00.webp",
     category: "blade",
     type:["balance", "rare"],
     price: "CX-Rare Bey Battle",
@@ -1946,7 +1946,7 @@ export const products: Product[] = [
       {
         id: "As-S-004",
         name: "Rare Bey Battle",
-        image: ""
+        image: "https://i.ibb.co/BHrsBYgF/S-4-C00.webp"
       },
     ]
   },
@@ -2645,7 +2645,7 @@ export const products: Product[] = [
       {
         id: "Rat-385-005",
         name: "Rare Bey Battle",
-        image: ""
+        image: "https://i.ibb.co/WWtVbrbw/3-85-5-U00.webp"
       },
     ]
   },
@@ -2836,7 +2836,7 @@ export const products: Product[] = [
       {
         id: "Rat-470-007",
         name: "Rare Bey Battle",
-        image: ""
+        image: "https://i.ibb.co/Zz5TVXcH/4-70-7-C00.webp"
       },
     ]
   },
@@ -4351,7 +4351,7 @@ export const products: Product[] = [
       {
         id: "Bit-BS-003",
         name: "Rare Bey Battle",
-        image: ""
+        image: "https://i.ibb.co/B2nddjH1/BS-3-U00.webp"
       },
     ]
   },
@@ -4513,7 +4513,7 @@ export const products: Product[] = [
       {
         id: "Bit-V-006",
         name: "Rare Bey Battle",
-        image: ""
+        image: "https://i.ibb.co/pj84Gp7f/V-6-C00.webp"
       },
     ]
   },
