@@ -4687,7 +4687,7 @@ export const products: Product[] = [
   {
     id: "Bit-UF-001",
     name: "UF (Under Flat)",
-    image: "https://i.ibb.co/KxsSYW80/UF-1-U15.webp",
+    image: "https://i.ibb.co/mr2mZqsF/UF-1-U15.webp",
     category: "bit",
     type:"attack",
     price: "UX-15",
