@@ -986,7 +986,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "SW-001",
+    id: "Blade-SW-001",
     name: "Blade-Silver Wolf",
     image: "https://i.ibb.co/4gZf8gxT/SW-1-U08.webp",
     category: "blade",
