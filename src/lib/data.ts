@@ -2076,13 +2076,13 @@ export const products: Product[] = [
       "Weight": "~ g",
       "High Level": "~ MM",
     },
-    // bey: [
-    //   {
-    //     id: "As-A-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "As-A-002",
+        name: "CoroCoro Event",
+        image: "https://i.ibb.co/rGXRT7bx/A-2-C00.webp"
+      },
+    ]
   },
   {
     id: "As-W-001",
@@ -3321,8 +3321,8 @@ export const products: Product[] = [
     bey: [
       {
         id: "Hybrid-Rat-Tr-002",
-        name: "CX-00",
-        image: ""
+        name: "CoroCoro Event",
+        image: "https://i.ibb.co/My90NVBb/Tr-2-C00.webp"
       },
     ]
   },
@@ -4653,8 +4653,8 @@ export const products: Product[] = [
     bey: [
       {
         id: "Hybrid-Bit-Tr-002",
-        name: "CX-00",
-        image: ""
+        name: "CoroCoro Event",
+        image: "https://i.ibb.co/My90NVBb/Tr-2-C00.webp"
       },
     ]
   },
@@ -4721,6 +4721,25 @@ export const products: Product[] = [
     // bey: [
     //   {
     //     id: "Bit-UF-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Rare-Bit-001",
+    name: "F/T/B/N (Bit Set)",
+    image: "https://i.ibb.co/yF70q1My/Rare-Bit-1-B00.webp",
+    category: "bit",
+    type:"rare",
+    price: "BX-Rare Bey Battle",
+    specs: {
+      "Type": "Attack/Balance/Stamina/Defense",
+      "Gears": "12",
+    },
+    // bey: [
+    //   {
+    //     id: "Rare-Bit-002",
     //     name: "",
     //     image: ""
     //   },
