@@ -5225,6 +5225,22 @@ export const products: Product[] = [
       "Original Generation": "Metal Fight Beyblade",
     },
   },
+  {
+    id: "Blade-X-OMF-004",
+    name: "Rock Leone",
+    image: "https://i.ibb.co/pvd8y85Y/RLN-1.webp",
+    category: "x-over",
+    type: "defense",
+    price: "BX-00",
+    specs: {
+      "Type": "Defense",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "6-80 Gear Needle",
+      "Product Line": "BX",
+      "Original Generation": "Metal Fight Beyblade",
+    },
+  },
 
   //X-OVER Beyblade Burst
   {
