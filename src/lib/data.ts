@@ -3136,6 +3136,12 @@ export const products: Product[] = [
         name: "G3 Prize",
         image: "https://i.ibb.co/Tqnjh6Jp/6-80-3-G3-P.webp"
       },
+      {
+        //lock leon
+        id: "Rat-680-004",
+        name: "BX-00",
+        image: ""
+      },
     ]
   },
   {
@@ -3965,6 +3971,12 @@ export const products: Product[] = [
         id: "Bit-GN-002",
         name: "UX-06",
         image: "https://i.ibb.co/BVYvMK2j/GN-2-U06.webp"
+      },
+      {
+        //lock leon
+        id: "Bit-GN-003",
+        name: "BX-00",
+        image: ""
       },
     ]
   },
