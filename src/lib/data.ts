@@ -1892,8 +1892,8 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "Blade-VBS-001",
-    name: "Valkyrie Bolt",
+    id: "Blade-VVS-001",
+    name: "Valkyrie Volt",
     image: "https://i.ibb.co/hFs4WM7S/VBS-1-C00.webp",
     category: "blade",
     type:["attack", "rare"],
