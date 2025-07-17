@@ -5228,7 +5228,7 @@ export const products: Product[] = [
   {
     id: "Blade-X-OMF-004",
     name: "Rock Leone",
-    image: "https://i.ibb.co/pvd8y85Y/RLN-1.webp",
+    image: "https://i.ibb.co/HcgMTBg/RLN-1.webp",
     category: "x-over",
     type: "defense",
     price: "BX-00",
