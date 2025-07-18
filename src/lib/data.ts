@@ -1430,7 +1430,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Attack",
       "Spin": "Right",
-      "Weight": "~36? g",
+      "Weight": "~36 g",
       "Stock Combo": "J 9-70 Gear Rush",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Jaggy",
@@ -1489,7 +1489,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Attack",
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~39 g",
       "Stock Combo": "A Tr",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Assault",
@@ -1517,7 +1517,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Stamina",
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~37 g",
       "Stock Combo": "W 5-80 WB",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Wheel",
@@ -1550,7 +1550,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Balance",
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~37 g",
       "Stock Combo": "M 3-85 HT",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Massive",
@@ -3321,7 +3321,7 @@ export const products: Product[] = [
       "Integrated Bit (Ratchet + Bit)",
       "2 Contact Points",
       "High : 9 -> 6.50 mm",
-      "Weight: ~ g",
+      "Weight: ~12 g",
     ],
     bey: [
       {
@@ -4656,7 +4656,7 @@ export const products: Product[] = [
     price: "CX-07",
     specs: {
       "Type": "Attack, Integrated Bit",
-      "Weight": "~ g",
+      "Weight": "~12 g",
       "Gears": "16",
       "Burst Resistance": "High"
     },
@@ -5245,7 +5245,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Defense",
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~29 g",
       "Stock Combo": "6-80 Gear Needle",
       "Product Line": "BX",
       "Original Generation": "Metal Fight Beyblade",
