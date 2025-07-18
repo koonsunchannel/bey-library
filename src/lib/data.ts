@@ -5252,7 +5252,7 @@ export const products: Product[] = [
     },
   },
 
-  //X-OVER Beyblade Burst
+  //X-OVER Beyblade Burst //
   {
     id: "Blade-X-OBB-001",
     name: "Victory Valkyrie",
