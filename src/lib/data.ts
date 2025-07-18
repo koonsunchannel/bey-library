@@ -1669,7 +1669,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-CDk-002",
-        name: "BX-00",
+        name: "Rare Bey Battle",
         image: "https://i.ibb.co/4ggqPtvt/CDk-2-B00.webp"
       },
     ]
