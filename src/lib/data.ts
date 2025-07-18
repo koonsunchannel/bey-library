@@ -4528,7 +4528,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "bit-034",
+    id: "Bit-LO-001",
     name: "LO (Low Orb)",
     image: "https://i.ibb.co/FZtDSm5/LO-1-C02.webp",
     category: "bit",
@@ -4542,7 +4542,7 @@ export const products: Product[] = [
     },
     bey: [
       {
-        id: "LO-001",
+        id: "Bit-LO-002",
         name: "CX-00",
         image: "https://i.ibb.co/ccSVdNkz/LO-2-C00.webp"
       },
