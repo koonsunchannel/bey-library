@@ -3137,10 +3137,9 @@ export const products: Product[] = [
         image: "https://i.ibb.co/Tqnjh6Jp/6-80-3-G3-P.webp"
       },
       {
-        //lock leon
         id: "Rat-680-004",
         name: "BX-00",
-        image: ""
+        image: "https://i.ibb.co/v4gKd9QW/6-80-4-B00.webp"
       },
     ]
   },
@@ -3973,10 +3972,9 @@ export const products: Product[] = [
         image: "https://i.ibb.co/BVYvMK2j/GN-2-U06.webp"
       },
       {
-        //lock leon
         id: "Bit-GN-003",
         name: "BX-00",
-        image: ""
+        image: "https://i.ibb.co/Q7F5HMjJ/GN-3-B00.webp"
       },
     ]
   },
