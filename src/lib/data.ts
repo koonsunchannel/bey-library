@@ -1597,7 +1597,7 @@ export const products: Product[] = [
   {
     id: "Blade-TR-001",
     name: "Tyranno Roar",
-    image: "https://i.ibb.co/5xBj96Sc/TR-1-U15.webp",
+    image: "https://i.ibb.co/JFgz0ZPr/TR-1-U15.webp",
     category: "blade",
     type:"attack",
     price: "UX-15",
