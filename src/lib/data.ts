@@ -1901,7 +1901,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Attack",
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~41 g",
       "Stock Combo": "S 4-70 Vortex",
       "Lock Chip Type": "Metal",
       "Assist Blade": "Slash",
@@ -2061,7 +2061,7 @@ export const products: Product[] = [
       {
         id: "As-J-005",
         name: "UX-15",
-        image: ""
+        image: "https://i.ibb.co/FLwqwNkw/J-5-U15.webp"
       },
     ]
   },
@@ -2073,7 +2073,7 @@ export const products: Product[] = [
     price: "CX-07",
     specs: {
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~5 g",
       "High Level": "~ MM",
     },
     bey: [
@@ -2092,7 +2092,7 @@ export const products: Product[] = [
     price: "CX-08",
     specs: {
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~7 g",
       "High Level": "~ MM",
     },
     bey: [
@@ -2111,7 +2111,7 @@ export const products: Product[] = [
     price: "CX-08",
     specs: {
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~6 g",
       "High Level": "~ MM",
     },
     // bey: [
