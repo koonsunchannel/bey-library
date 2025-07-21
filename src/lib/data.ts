@@ -405,7 +405,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-HC-003",
-        name: "BX-00",
+        name: "Rare Bey Battle",
         image: "https://i.ibb.co/N2JBtG4F/HC-3-B00.webp"
       },
     ]
