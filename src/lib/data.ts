@@ -3078,7 +3078,7 @@ export const products: Product[] = [
     category: "ratchet",
     price: "CX-07",
     features: [
-      "Integrated Bit (Ratchet + Bit)",
+      "Hybrid Part (Ratchet + Bit)",
       "2 Contact Points",
       "High : 9 -> 6.50 mm",
       "Weight: ~12 g",
@@ -4415,7 +4415,7 @@ export const products: Product[] = [
     type:"attack",
     price: "CX-07",
     specs: {
-      "Type": "Attack, Integrated Bit",
+      "Type": "Attack, Hybrid Part",
       "Weight": "~12 g",
       "Gears": "16",
       "Burst Resistance": "High"
