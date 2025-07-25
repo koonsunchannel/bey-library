@@ -1191,7 +1191,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-HRT-002",
-        name: "CX-05 (Hells Arc T)",
+        name: "CX-05 (Arc T)",
         image: "https://i.ibb.co/vxRW58zD/HRT-2-C05.webp"
       },
       {
@@ -1201,7 +1201,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-HRT-004",
-        name: "UX-15 (Hells Brave J)",
+        name: "UX-15 (Brave J)",
         image: "https://i.ibb.co/VYYLvnyS/HRT-4-U15.webp"
       },
     ]
@@ -1346,7 +1346,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-CFW-002",
-        name: "CX-08 (Cerberus Dark W)",
+        name: "CX-08 (Dark W)",
         image: "https://i.ibb.co/zWN3G949/CFW-2-C08.webp"
       },
       {
