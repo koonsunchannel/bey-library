@@ -1117,6 +1117,21 @@ export const products: Product[] = [
         name: "G1 Prize",
         image: "https://i.ibb.co/nsy5cj2d/DBs-5-G1-P.webp"
       },
+      {
+        id: "Blade-DBS-006",
+        name: "CoroCoro Special",
+        image: "https://i.ibb.co/VpbYTrk9/DBS-6-SP1.webp"
+      },
+      {
+        id: "Blade-DBS-007",
+        name: "Rare Bey Battle",
+        image: "https://i.ibb.co/TsCKKcG/Dran-Lock-R1.webp"
+      },
+      {
+        id: "Blade-DBS-008",
+        name: "CoroCoro Comic",
+        image: "https://i.ibb.co/NnmhMKLB/Persona-CX.webp"
+      },
     ]
   },
   {
@@ -1626,30 +1641,6 @@ export const products: Product[] = [
     // bey: [
     //   {
     //     id: "Blade-LFT-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
-  },
-  {
-    id: "Blade-DAS-001",
-    name: "Dran Arc (MC Blue)",
-    image: "https://i.ibb.co/NnmhMKLB/Persona-CX.webp",
-    category: "blade",
-    type:["balance", "rare"],
-    price: "CX-CoroCoro Comic",
-    specs: {
-      "Type": "Balance",
-      "Spin": "Right",
-      "Weight": "~ g",
-      "Stock Combo": "S 2-70 Kick",
-      "Lock Chip Type": "Plastic",
-      "Assist Blade": "Slash",
-      "Product Line": "CX",
-    },
-    // bey: [
-    //   {
-    //     id: "Blade-DAS-002",
     //     name: "",
     //     image: ""
     //   },
