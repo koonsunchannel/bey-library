@@ -4,6 +4,7 @@ export const seo = {
   description: "Discover, compare, and learn about Beyblade X parts. Find blades, bits, and accessories with detailed information and images. Perfect for Beyblade X collectors and enthusiasts!",
   keywords: [
     "Beyblade X",
+    "Beyblade X up to date",
     "Beyblade X database",
     "Beyblade X Library",
     "Beyblade X parts database",
