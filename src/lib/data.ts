@@ -1258,6 +1258,7 @@ export const products: Product[] = [
       "Weight": "~39 g",
       "Stock Combo": "0-70 Zap",
       "Product Line": "UX",
+      "Gimmick": "Mode Change (Defense/Attack)",
     },
     // bey: [
     //   {
@@ -1452,6 +1453,31 @@ export const products: Product[] = [
       "Weight": "~ g",
       "Stock Combo": "6-70 Merge",
       "Product Line": "BX",
+    },
+    // bey: [
+    //   {
+    //     id: "Blade-SCa-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Blade-SED-001",
+    name: "Sol Eclipse",
+    image: "https://i.ibb.co/rfTYdT6F/SED-1-C09.webp",
+    category: "blade",
+    type:"balance",
+    price: "CX-09",
+    specs: {
+      "Type": "Balance",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "D 5-70 T K",
+      "Lock Chip Type": "Plastic",
+      "Assist Blade": "D",
+      "Product Line": "CX",
+      "Gimmick": "Mode Change (8 Modes Stock Combo)",
     },
     // bey: [
     //   {
@@ -1749,6 +1775,7 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~6 g",
       "High Level": "~10 MM",
+      "Gimmick": "Mode Change (Barrage/Parry)",
     },
     bey: [
       {
@@ -1864,6 +1891,26 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~6 g",
       "High Level": "~ MM",
+    },
+    // bey: [
+    //   {
+    //     id: "As-M-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "As-D-001",
+    name: "D ()",
+    image: "",
+    category: "assist-blade",
+    price: "CX-09",
+    specs: {
+      "Spin": "Right",
+      "Weight": "~ g",
+      "High Level": "~ MM",
+      "Gimmick": "Mode Change ()",
     },
     // bey: [
     //   {
@@ -2760,6 +2807,11 @@ export const products: Product[] = [
         id: "Rat-570-006",
         name: "CoroCoro Comic",
         image: "https://i.ibb.co/4w3QKPGK/5-70-6-B00.webp"
+      },
+      {
+        id: "Rat-570-007",
+        name: "CX-09",
+        image: ""
       },
     ]
   },
@@ -4185,7 +4237,8 @@ export const products: Product[] = [
       "Type": "Balance",
       "Weight": "~2.2 g",
       "Gears": "12",
-      "Burst Resistance": "High"
+      "Burst Resistance": "High",
+      "Gimmick": "Height Change"
     },
     // bey: [
     //   {
@@ -4409,7 +4462,7 @@ export const products: Product[] = [
       "Type": "Attack, Hybrid Part",
       "Weight": "~12 g",
       "Gears": "16",
-      "Burst Resistance": "High"
+      "Burst Resistance": "Simple"
     },
     bey: [
       {
@@ -4481,12 +4534,35 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "Bit-UF-002",
+    //     id: "Bit-M-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
+  {
+    id: "Bit-TK-001",
+    name: "TK ()",
+    image: "",
+    category: "bit",
+    type:"balance",
+    price: "BX-45",
+    specs: {
+      "Type": "Balance",
+      "Weight": "~ g",
+      "Gears": "",
+      "Burst Resistance": "High"
+    },
+    // bey: [
+    //   {
+    //     id: "Bit-TK-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+
+  // RARE BIT
   {
     id: "Rare-Bit-001",
     name: "F/T/B/N (Bit Set)",
