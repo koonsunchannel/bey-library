@@ -1852,7 +1852,7 @@ export const products: Product[] = [
     specs: {
       "Spin": "Right",
       "Weight": "~5 g",
-      "High Level": "~ MM",
+      "High Level": "~10 MM",
     },
     bey: [
       {
@@ -1871,7 +1871,7 @@ export const products: Product[] = [
     specs: {
       "Spin": "Right",
       "Weight": "~7 g",
-      "High Level": "~ MM",
+      "High Level": "~10 MM",
     },
     bey: [
       {
@@ -1890,7 +1890,7 @@ export const products: Product[] = [
     specs: {
       "Spin": "Right",
       "Weight": "~6 g",
-      "High Level": "~ MM",
+      "High Level": "~10 MM",
     },
     // bey: [
     //   {
