@@ -4567,7 +4567,7 @@ export const products: Product[] = [
   },
   {
     id: "Bit-TK-001",
-    name: "TK ()",
+    name: "TK (Trans Kick?)",
     image: "",
     category: "bit",
     type:"balance",
@@ -4575,7 +4575,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Balance",
       "Weight": "~ g",
-      "Gears": "",
+      "Gears": "12?",
       "Burst Resistance": "High"
     },
     // bey: [
