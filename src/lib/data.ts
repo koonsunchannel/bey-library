@@ -4529,7 +4529,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Balance",
       "Weight": "~ g",
-      "Gears": "16",
+      "Gears": "18",
       "Burst Resistance": "High"
     },
     // bey: [
