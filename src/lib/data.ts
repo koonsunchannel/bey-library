@@ -1132,6 +1132,11 @@ export const products: Product[] = [
         name: "CoroCoro Comic",
         image: "/Blade/00Persona/Persona CX.webp"
       },
+      {
+        id: "Blade-DBS-009",
+        name: "Grand Prix Limited",
+        image: "/Blade/00Persona/DBS 7 GPL.webp"
+      },
     ]
   },
   {
@@ -1468,7 +1473,7 @@ export const products: Product[] = [
     image: "/Blade/00SubCharacter/SED 1 C09.webp",
     category: "blade",
     type:"balance",
-    price: "CX-09",
+    price: "CX-09?",
     specs: {
       "Type": "Balance",
       "Spin": "Right",
@@ -1482,6 +1487,50 @@ export const products: Product[] = [
     // bey: [
     //   {
     //     id: "Blade-SCa-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Blade-UXWyvern-001",
+    name: "Wyvern ???",
+    image: "/Blade/00SubCharacter/UX Wyvern.webp",
+    category: "blade",
+    type:"defense",
+    price: "UX-16?",
+    specs: {
+      "Type": "Defense?",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "???",
+      "Product Line": "UX",
+    },
+    // bey: [
+    //   {
+    //     id: "Blade-Wy-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Blade-BXGoat-001",
+    name: "Goat ???",
+    image: "/Blade/00SubCharacter/BX Goat.webp",
+    category: "blade",
+    type:"defense",
+    price: "BX-46?",
+    specs: {
+      "Type": "Defense?",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "???",
+      "Product Line": "BX",
+    },
+    // bey: [
+    //   {
+    //     id: "Blade-Wy-002",
     //     name: "",
     //     image: ""
     //   },
@@ -1552,13 +1601,13 @@ export const products: Product[] = [
       "Stock Combo": "3-70 Accel",
       "Product Line": "UX",
     },
-    // bey: [
-    //   {
-    //     id: "Blade-AP-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Blade-AP-002",
+        name: "UX-??",
+        image: "/Blade/00Zodiac - Fox/AP 2 U--.webp"
+      },
+    ]
   },
   {
     id: "Blade-SK-001",
@@ -4971,6 +5020,16 @@ export const products: Product[] = [
     price: "BX-43",
     features: [
       "Gear Case (White Ver.)",
+    ],
+  },
+  {
+    id: "other-022",
+    name: "Infinity Stadium",
+    image: "/Other/Infinity Stadium.webp",
+    category: "other",
+    price: "BX-??",
+    features: [
+      "Infinity Stadium",
     ],
   },
 
