@@ -1411,7 +1411,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Attack",
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~37 g",
       "Stock Combo": "4-50 Under Flat",
       "Product Line": "UX",
     },
@@ -1433,7 +1433,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Attack",
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~36 g",
       "Stock Combo": "1-70 Level",
       "Product Line": "BX",
     },
@@ -1455,7 +1455,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Balance",
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~36 g",
       "Stock Combo": "6-70 Merge",
       "Product Line": "BX",
     },
@@ -1486,7 +1486,7 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "Blade-SCa-002",
+    //     id: "Blade-SED-002",
     //     name: "",
     //     image: ""
     //   },
