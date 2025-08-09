@@ -2112,7 +2112,7 @@ export const products: Product[] = [
     features: [
       "1 Contact Points",
       "High : 7.0 mm",
-      "Weight: ~ g",
+      "Weight: ~6 g",
     ],
     // bey: [
     //   {
@@ -2131,7 +2131,7 @@ export const products: Product[] = [
     features: [
       "1 Contact Points",
       "High : 8.0 mm",
-      "Weight: ~6.5 g",
+      "Weight: ~6 g",
     ],
     bey: [
       {
@@ -2155,7 +2155,7 @@ export const products: Product[] = [
     features: [
       "2 Contact Points",
       "High : 6.0 mm",
-      "Weight: ~6.2 g",
+      "Weight: ~6 g",
     ],
     bey: [
       {
@@ -2199,7 +2199,7 @@ export const products: Product[] = [
     features: [
       "2 Contact Points",
       "High : 7.0 mm",
-      "Weight: ~6.3 g",
+      "Weight: ~6 g",
     ],
     bey: [
       {
@@ -2225,7 +2225,7 @@ export const products: Product[] = [
     features: [
       "2 Contact Points",
       "High : 8.0 mm",
-      "Weight: ~6.9 g",
+      "Weight: ~6 g",
     ],
     bey: [
       {
@@ -2244,7 +2244,7 @@ export const products: Product[] = [
     features: [
       "3 Contact Points",
       "High : 6.0 mm",
-      "Weight: ~6.4 g",
+      "Weight: ~6 g",
     ],
     bey: [
       {
@@ -2333,7 +2333,7 @@ export const products: Product[] = [
     features: [
       "3 Contact Points",
       "High : 7.0 mm",
-      "Weight: ~6.4 g",
+      "Weight: ~6 g",
     ],
     bey: [
       {
@@ -2367,6 +2367,7 @@ export const products: Product[] = [
         image: "/Ratchet/3/3 70 7 U00.webp"
       },
       {
+        //AP Red Ver.
         id: "Rat-370-008",
         name: "UX-??",
         image: ""
@@ -2382,7 +2383,7 @@ export const products: Product[] = [
     features: [
       "3 Contact Points",
       "High : 8.0 mm",
-      "Weight: ~7.1 g",
+      "Weight: ~7 g",
     ],
     bey: [
       {
@@ -2476,7 +2477,7 @@ export const products: Product[] = [
     features: [
       "3 Contact Points",
       "High : 8.5 mm",
-      "Weight: ~4.7 g",
+      "Weight: ~4 g",
     ],
     bey: [
       {
@@ -2510,7 +2511,7 @@ export const products: Product[] = [
     features: [
       "4 Contact Points",
       "High : 5.0 mm",
-      "Weight: ~ g",
+      "Weight: ~5 g",
     ],
     // bey: [
     //   {
@@ -2529,7 +2530,7 @@ export const products: Product[] = [
     features: [
       "4 Contact Points",
       "High : 4.5 mm",
-      "Weight: ~4.8 g",
+      "Weight: ~4 g",
     ],
     bey: [
       {
@@ -2563,7 +2564,7 @@ export const products: Product[] = [
     features: [
       "4 Contact Points",
       "High : 6.00 mm",
-      "Weight: ~6.4 g",
+      "Weight: ~6 g",
     ],
     bey: [
       {
@@ -2657,7 +2658,7 @@ export const products: Product[] = [
     features: [
       "4 Contact Points",
       "High : 7.00 mm",
-      "Weight: ~6.5 g",
+      "Weight: ~6 g",
     ],
     bey: [
       {
@@ -2785,7 +2786,7 @@ export const products: Product[] = [
     features: [
       "5 Contact Points",
       "High : 6.00 mm",
-      "Weight: ~6.6 g",
+      "Weight: ~6 g",
     ],
     bey: [
       {
@@ -2839,7 +2840,7 @@ export const products: Product[] = [
     features: [
       "5 Contact Points",
       "High : 7.00 mm",
-      "Weight: ~6.6 g",
+      "Weight: ~6 g",
     ],
     bey: [
       {
@@ -2883,7 +2884,7 @@ export const products: Product[] = [
     features: [
       "5 Contact Points",
       "High : 8.00 mm",
-      "Weight: ~7.2 g",
+      "Weight: ~7 g",
     ],
     bey: [
       {
@@ -2932,7 +2933,7 @@ export const products: Product[] = [
     features: [
       "6 Contact Points",
       "High : 6.00 mm",
-      "Weight: ~6.1 g",
+      "Weight: ~6 g",
     ],
     bey: [
       {
@@ -2971,7 +2972,7 @@ export const products: Product[] = [
     features: [
       "6 Contact Points",
       "High : 7.0 mm",
-      "Weight: ~ g",
+      "Weight: ~6 g",
     ],
     // bey: [
     //   {
@@ -2990,7 +2991,7 @@ export const products: Product[] = [
     features: [
       "6 Contact Points",
       "High : 8.00 mm",
-      "Weight: ~6.9 g",
+      "Weight: ~7 g",
     ],
     bey: [
       {
@@ -3043,7 +3044,7 @@ export const products: Product[] = [
     features: [
       "7 Contact Points",
       "High : 7.00 mm",
-      "Weight: ~7.1 g",
+      "Weight: ~7 g",
     ],
     bey: [
       {
@@ -3062,7 +3063,7 @@ export const products: Product[] = [
     features: [
       "7 Contact Points",
       "High : 8.00 mm",
-      "Weight: ~7.8 g",
+      "Weight: ~8 g",
     ],
     // bey: [
     //   {
@@ -3081,7 +3082,7 @@ export const products: Product[] = [
     features: [
       "9 Contact Points",
       "High : 6.00 mm",
-      "Weight: ~6.2 g",
+      "Weight: ~6 g",
     ],
     bey: [
       {
@@ -3120,7 +3121,7 @@ export const products: Product[] = [
     features: [
       "9 Contact Points",
       "High : 7.00 mm",
-      "Weight: ~6.4 g",
+      "Weight: ~6 g",
     ],
     bey: [
       {
@@ -3139,7 +3140,7 @@ export const products: Product[] = [
     features: [
       "9 Contact Points",
       "High : 8.00 mm",
-      "Weight: ~6.8 g",
+      "Weight: ~7 g",
     ],
     bey: [
       {
@@ -3214,7 +3215,7 @@ export const products: Product[] = [
     price: "BX-01",
     specs: {
       "Type": "Attack",
-      "Weight": "~2.3 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "High"
     },
@@ -3310,7 +3311,7 @@ export const products: Product[] = [
     price: "BX-02",
     specs: {
       "Type": "Balance",
-      "Weight": "~2.2 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "High"
     },
@@ -3356,7 +3357,7 @@ export const products: Product[] = [
     price: "BX-03",
     specs: {
       "Type": "Stamina",
-      "Weight": "~2.1 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "Low"
     },
@@ -3483,7 +3484,7 @@ export const products: Product[] = [
     price: "BX-13",
     specs: {
       "Type": "Defense",
-      "Weight": "~2.2 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "Low"
     },
@@ -3514,7 +3515,7 @@ export const products: Product[] = [
     price: "BX-14",
     specs: {
       "Type": "Attack",
-      "Weight": "~2.1 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "High"
     },
@@ -3565,7 +3566,7 @@ export const products: Product[] = [
     price: "BX-15",
     specs: {
       "Type": "Balance",
-      "Weight": "~2.2 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "High"
     },
@@ -3652,7 +3653,7 @@ export const products: Product[] = [
     price: "BX-20",
     specs: {
       "Type": "Attack",
-      "Weight": "~2.1 g",
+      "Weight": "~2 g",
       "Gears": "10",
       "Burst Resistance": "High"
     },
@@ -3678,7 +3679,7 @@ export const products: Product[] = [
     price: "BX-21",
     specs: {
       "Type": "Balance",
-      "Weight": "~2.2 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "High"
     },
@@ -3735,7 +3736,7 @@ export const products: Product[] = [
     price: "BX-23",
     specs: {
       "Type": "Attack",
-      "Weight": "~2.3 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "High"
     },
@@ -3776,7 +3777,7 @@ export const products: Product[] = [
     price: "BX-24",
     specs: {
       "Type": "Stamina",
-      "Weight": "~2.1 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "Low"
     },
@@ -3812,7 +3813,7 @@ export const products: Product[] = [
     price: "BX-26",
     specs: {
       "Type": "Balance",
-      "Weight": "~2.3 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "High"
     },
@@ -3843,7 +3844,7 @@ export const products: Product[] = [
     price: "BX-27",
     specs: {
       "Type": "Defense",
-      "Weight": "~2.3 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "Low"
     },
@@ -3869,7 +3870,7 @@ export const products: Product[] = [
     price: "UX-01",
     specs: {
       "Type": "Attack",
-      "Weight": "~2.6 g",
+      "Weight": "~3 g",
       "Gears": "16",
       "Burst Resistance": "High"
     },
@@ -3945,7 +3946,7 @@ export const products: Product[] = [
     price: "UX-02",
     specs: {
       "Type": "Balance",
-      "Weight": "~2.6 g",
+      "Weight": "~3 g",
       "Gears": "16",
       "Burst Resistance": "High"
     },
@@ -3976,7 +3977,7 @@ export const products: Product[] = [
     price: "UX-03",
     specs: {
       "Type": "Stamina",
-      "Weight": "~3.2 g",
+      "Weight": "~3 g",
       "Gears": "12",
       "Burst Resistance": "Low"
     },
@@ -4017,7 +4018,7 @@ export const products: Product[] = [
     price: "BX-31",
     specs: {
       "Type": "Attack",
-      "Weight": "~2.3 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "High"
     },
@@ -4048,7 +4049,7 @@ export const products: Product[] = [
     price: "UX-05",
     specs: {
       "Type": "Defense",
-      "Weight": "~2.7 g",
+      "Weight": "~3 g",
       "Gears": "12",
       "Burst Resistance": "Low"
     },
@@ -4074,7 +4075,7 @@ export const products: Product[] = [
     price: "BX-33",
     specs: {
       "Type": "Balacne",
-      "Weight": "~2.2 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "High"
     },
@@ -4100,7 +4101,7 @@ export const products: Product[] = [
     price: "BX-34",
     specs: {
       "Type": "Attack",
-      "Weight": "~2.1 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "High"
     },
@@ -4172,7 +4173,7 @@ export const products: Product[] = [
     price: "UX-07",
     specs: {
       "Type": "Stamina",
-      "Weight": "~2.5 g",
+      "Weight": "~2 g",
       "Gears": "16",
       "Burst Resistance": "Low"
     },
@@ -4193,7 +4194,7 @@ export const products: Product[] = [
     price: "BX-36",
     specs: {
       "Type": "Balance",
-      "Weight": "~3.2 g",
+      "Weight": "~3 g",
       "Gears": "12",
       "Burst Resistance": "Low"
     },
@@ -4297,7 +4298,7 @@ export const products: Product[] = [
     price: "UX-09",
     specs: {
       "Type": "Attack",
-      "Weight": "~2.6 g",
+      "Weight": "~2 g",
       "Gears": "16",
       "Burst Resistance": "High"
     },
@@ -4324,7 +4325,7 @@ export const products: Product[] = [
     price: "BX-38",
     specs: {
       "Type": "Balance",
-      "Weight": "~2.2 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "High",
       "Gimmick": "Height Change"
@@ -4346,7 +4347,7 @@ export const products: Product[] = [
     price: "UX-11",
     specs: {
       "Type": "Attack",
-      "Weight": "~1.9 g",
+      "Weight": "~2 g",
       "Gears": "10",
       "Burst Resistance": "High"
     },
@@ -4367,7 +4368,7 @@ export const products: Product[] = [
     price: "UX-13",
     specs: {
       "Type": "Defense",
-      "Weight": "~1.8 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "Low"
     },
@@ -4388,7 +4389,7 @@ export const products: Product[] = [
     price: "CX-01",
     specs: {
       "Type": "Attack",
-      "Weight": "~2.2 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "High"
     },
@@ -4481,7 +4482,7 @@ export const products: Product[] = [
     price: "CX-05",
     specs: {
       "Type": "Balance",
-      "Weight": "~2.2 g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "High"
     },
@@ -4575,7 +4576,7 @@ export const products: Product[] = [
     price: "CX-08",
     specs: {
       "Type": "Stamina",
-      "Weight": "~ g",
+      "Weight": "~3 g",
       "Gears": "16",
       "Burst Resistance": "Low"
     },
@@ -4601,7 +4602,7 @@ export const products: Product[] = [
     price: "UX-15",
     specs: {
       "Type": "Attack",
-      "Weight": "~ g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "High"
     },
@@ -4622,7 +4623,7 @@ export const products: Product[] = [
     price: "BX-45",
     specs: {
       "Type": "Balance",
-      "Weight": "~ g",
+      "Weight": "~3 g",
       "Gears": "18",
       "Burst Resistance": "High"
     },
