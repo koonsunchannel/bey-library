@@ -5425,6 +5425,7 @@ export const products: Product[] = [
       "Stock Combo": "1-80 Gear Ball",
       "Product Line": "BX",
       "Collab": "Jurassic World",
+      "Description": "This Blade is also count as Tyranno Beat.",
     },
   },
   {
@@ -5457,6 +5458,7 @@ export const products: Product[] = [
       "Stock Combo": "3-85 Accel",
       "Product Line": "BX",
       "Collab": "Jurassic World",
+      "Description": "This Blade is also count as Tyranno Roar.",
     },
   },
   {
@@ -5473,6 +5475,7 @@ export const products: Product[] = [
       "Stock Combo": "4-55 Dot",
       "Product Line": "BX",
       "Collab": "Jurassic World",
+      "Description": "This Blade is also count as Ptera Swing.",
     },
   },
 
