@@ -4646,7 +4646,7 @@ export const products: Product[] = [
       "Type": "Balance",
       "Weight": "~ g",
       "Gears": "12?",
-      "Burst Resistance": "High"
+      "Burst Resistance": "High",
       "Gimmick": "Height Change?"
     },
     // bey: [
