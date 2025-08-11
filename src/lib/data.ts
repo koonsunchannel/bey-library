@@ -1473,7 +1473,7 @@ export const products: Product[] = [
     image: "/Blade/00SubCharacter/SED 1 C09.webp",
     category: "blade",
     type:"balance",
-    price: "CX-09?",
+    price: "CX-09",
     specs: {
       "Type": "Balance",
       "Spin": "Right",
@@ -1959,7 +1959,7 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~ g",
       "High Level": "~ MM",
-      "Gimmick": "Mode Change ()",
+      "Gimmick": "Mode Change (Flip to change)",
     },
     // bey: [
     //   {
@@ -4647,6 +4647,7 @@ export const products: Product[] = [
       "Weight": "~ g",
       "Gears": "12?",
       "Burst Resistance": "High"
+      "Gimmick": "Height Change?"
     },
     // bey: [
     //   {
