@@ -2,6 +2,14 @@
 
 import { useState } from "react";
 import { products } from "@/lib/data";
+import type { Product } from "@/lib/types";
+
+// Type for blade variants
+type BeyVariant = {
+  name: string;
+  image: string;
+  type: string[];
+};
 
 function getRandomItem<T>(arr: T[]): T | undefined {
   if (!arr.length) return undefined;
@@ -15,6 +23,22 @@ export default function RandomPage() {
   // Blade list for dropdown
   const blades = products.filter(p => p.id.startsWith("Blade-"));
 
+  // Helper to get random variant if blade has randomVariants
+  function getRandomBladeWithVariant(blade: Product & { randomVariants?: BeyVariant[] }) {
+    if (blade?.randomVariants?.length) {
+      const variant = getRandomItem(blade.randomVariants);
+      if (variant) {
+        return { 
+          ...blade,
+          name: variant.name,
+          image: variant.image,
+          type: variant.type
+        };
+      }
+    }
+    return blade;
+  }
+
   function handleRandomize() {
     // Filter Blade-, Rat-, Bit-, As-, Hybrid-
     const rats = products.filter(p => p.id.startsWith("Rat-"));
@@ -22,8 +46,10 @@ export default function RandomPage() {
     const bits = products.filter(p => p.id.startsWith("Bit-") && !p.id.startsWith("Hybrid-Bit-"));
     const asList = products.filter(p => p.id.startsWith("As-"));
 
-    // ใช้ blade ที่เลือก ถ้าเลือกไว้, ถ้าไม่เลือกให้สุ่ม
+    // ใช้ blade ที่เลือก ถ้าเลือกไว้, ถ้าไม่เลือกให้สุ่ม และสุ่ม variant ถ้ามี
     let blade = lockedBladeId ? blades.find(b => b.id === lockedBladeId) : getRandomItem(blades);
+    // Only try to get random variant if blade exists
+    blade = blade ? getRandomBladeWithVariant(blade) : undefined;
 
     // สุ่ม Rat- กับ Hybrid- รวมกัน แล้วเลือกมาแสดงแค่ 1 อย่าง
     const ratOrHybridList = [...rats, ...hybrids];

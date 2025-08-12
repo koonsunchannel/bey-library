@@ -1313,7 +1313,7 @@ export const products: Product[] = [
       "Type": "Defense",
       "Spin": "Right",
       "Weight": "~36 g",
-      "Stock Combo": "M-85 BS",
+      "Stock Combo": "M-85 Bound Spike",
       "Product Line": "BX",
     },
     // bey: [
@@ -1335,7 +1335,7 @@ export const products: Product[] = [
       "Type": "Attack",
       "Spin": "Right",
       "Weight": "~39 g",
-      "Stock Combo": "A Tr",
+      "Stock Combo": "A Turbo",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Assault",
       "Product Line": "CX",
@@ -1359,7 +1359,7 @@ export const products: Product[] = [
       "Type": "Stamina",
       "Spin": "Right",
       "Weight": "~37 g",
-      "Stock Combo": "W 5-80 WB",
+      "Stock Combo": "W 5-80 Wall Ball",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Wheel",
       "Product Line": "CX",
@@ -1388,7 +1388,7 @@ export const products: Product[] = [
       "Type": "Balance",
       "Spin": "Right",
       "Weight": "~37 g",
-      "Stock Combo": "M 3-85 HT",
+      "Stock Combo": "M 3-85 High Taper",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Massive",
       "Product Line": "CX",
@@ -1470,27 +1470,32 @@ export const products: Product[] = [
   {
     id: "Blade-SED-001",
     name: "Sol Eclipse",
-    image: "/Blade/00SubCharacter/SED 1 C09.webp",
+    image: "",
     category: "blade",
-    type:"balance",
+    type: ["balance"],
     price: "CX-09",
     specs: {
-      "Type": "Balance",
-      "Spin": "Right",
-      "Weight": "~ g",
-      "Stock Combo": "D 5-70 T K",
+      Type: "Balance",
+      Spin: "Right",
+      Weight: "~ g",
+      "Stock Combo": "D 5-70 Trans Kick",
       "Lock Chip Type": "Plastic",
-      "Assist Blade": "D",
+      "Assist Blade": "Dual",
       "Product Line": "CX",
-      "Gimmick": "Mode Change (Upper/Smash)",
+      Gimmick: "Mode Change (Upper/Smash)",
     },
-    // bey: [
-    //   {
-    //     id: "Blade-SED-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    randomVariants: [
+      {
+        name: "Sol Eclipse (Upper)",
+        image: "/Blade/00SubCharacter/SED Upper 1 C09.webp",
+        type: ["balance"]
+      },
+      {
+        name: "Sol Eclipse (Smash)",
+        image: "/Blade/00SubCharacter/SED Smash 1 C09.webp",
+        type: ["balance"]
+      }
+    ]
   },
   {
     id: "Blade-UXWyvern-001",
@@ -2871,7 +2876,7 @@ export const products: Product[] = [
       {
         id: "Rat-570-007",
         name: "CX-09",
-        image: ""
+        image: "/Ratchet/5/5 70 7 C09.webp"
       },
     ]
   },
@@ -4638,7 +4643,7 @@ export const products: Product[] = [
   {
     id: "Bit-TK-001",
     name: "TK (Trans Kick)",
-    image: "",
+    image: "/Bit/TK/TK 1 C09.webp",
     category: "bit",
     type:"balance",
     price: "CX-09",
@@ -5131,10 +5136,10 @@ export const products: Product[] = [
   //X-OVER Metal Fight Beyblade
   {
     id: "Blade-X-OMF-001",
-    name: "Lightning L-Drago (Upper)",
-    image: "/Blade/X-Collab/LDU-1.webp",
+    name: "Lightning L-Drago",
+    image: "",
     category: "x-over",
-    type: "attack",
+    type: ["attack"],
     price: "BX-00",
     specs: {
       "Type": "Attack",
@@ -5143,13 +5148,19 @@ export const products: Product[] = [
       "Stock Combo": "1-60 Flat",
       "Product Line": "BX",
       "Original Generation": "Metal Fight Beyblade",
+      "Gimmick": "Same name difference mode (Upper/Rapid)",
     },
-    bey: [
+    randomVariants: [
       {
-        id: "LDR-002",
-        name: "BX-00(Rapid)",
-        image: "/Blade/X-Collab/LDR-1.webp"
+        name: "Lightning L-Drago (Upper)",
+        image: "/Blade/X-Collab/LLD-1 Upper.webp",
+        type: ["attack"]
       },
+      {
+        name: "Lightning L-Drago (Rapid)",
+        image: "/Blade/X-Collab/LLD-1 Rapid.webp",
+        type: ["attack"]
+      }
     ]
   },
   {
@@ -5497,16 +5508,39 @@ export const products: Product[] = [
   },
 ];
 
-
+// --- Helper for randomizing SED-001 and OMF-001 ---
+function randomizeSpecialProduct(product: Product): Product {
+  if (product.id === "Blade-SED-001") {
+    const isUpper = Math.random() < 0.5;
+    return {
+      ...product,
+      name: isUpper ? "Sol Eclipse (Upper)" : "Sol Eclipse (Smash)",
+      image: isUpper
+        ? "/Blade/00SubCharacter/SED Upper 1 C09.webp"
+        : "/Blade/00SubCharacter/SED Smash 1 C09.webp",
+    };
+  }
+  if (product.id === "Blade-X-OMF-001") {
+    const isUpper = Math.random() < 0.5;
+    return {
+      ...product,
+      name: isUpper ? "Lightning L-Drago (Upper)" : "Lightning L-Drago (Rapid)",
+      image: isUpper
+        ? "/Blade/X-Collab/LLD-1 Upper.webp"
+        : "/Blade/X-Collab/LLD-1 Rapid.webp",
+    };
+  }
+  return product;
+}
 
 // Helper functions to get products
+
 export function getProducts(category?: 'blade' | 'assist-blade' | 'ratchet' | 'bit' | 'other' | 'X-Over' | 'credits'): Product[] {
-  if (category) {
-    return products.filter(product => product.category === category);
-  }
-  return products;
+  let result = category ? products.filter(product => product.category === category) : products;
+  return result.map(randomizeSpecialProduct);
 }
 
 export function getProductById(id: string): Product | undefined {
-  return products.find(product => product.id === id);
+  const product = products.find(product => product.id === id);
+  return product ? randomizeSpecialProduct(product) : undefined;
 }
