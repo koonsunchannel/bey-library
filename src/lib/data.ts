@@ -1482,7 +1482,7 @@ export const products: Product[] = [
       "Lock Chip Type": "Plastic",
       "Assist Blade": "D",
       "Product Line": "CX",
-      "Gimmick": "Mode Change (Flip Main Blade)",
+      "Gimmick": "Mode Change (Upper/Smash)",
     },
     // bey: [
     //   {
@@ -1951,15 +1951,15 @@ export const products: Product[] = [
   },
   {
     id: "As-D-001",
-    name: "D ()",
+    name: "D (Dual)",
     image: "/Assist Blade/D/D 1 C09.webp",
     category: "assist-blade",
     price: "CX-09",
     specs: {
       "Spin": "Right",
       "Weight": "~ g",
-      "High Level": "~ MM",
-      "Gimmick": "Mode Change (Flip to change)",
+      "High Level": "~10 MM",
+      "Gimmick": "Mode Change (Upper/Smash)",
     },
     // bey: [
     //   {
@@ -4637,7 +4637,7 @@ export const products: Product[] = [
   },
   {
     id: "Bit-TK-001",
-    name: "TK (Trans Kick?)",
+    name: "TK (Trans Kick)",
     image: "",
     category: "bit",
     type:"balance",
@@ -4645,7 +4645,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Balance",
       "Weight": "~ g",
-      "Gears": "12?",
+      "Gears": "12",
       "Burst Resistance": "High",
       "Gimmick": "Height Change?"
     },
