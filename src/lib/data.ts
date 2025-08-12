@@ -1495,7 +1495,14 @@ export const products: Product[] = [
         image: "/Blade/00SubCharacter/SED Smash 1 C09.webp",
         type: ["balance"]
       }
-    ]
+    ],
+    // bey: [
+    //   {
+    //     id: "Blade-SED-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
   },
   {
     id: "Blade-UXWyvern-001",

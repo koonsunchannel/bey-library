@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+
+import { useState, useEffect } from 'react'
 import Filter from '@/components/Filter'
 import { ProductCard } from '@/components/product-card'
 import type { Product } from '@/lib/types'
@@ -13,20 +14,33 @@ export default function ClientBody({
   slug: string
 }) {
   const [selectedType, setSelectedType] = useState<string>('All')
+  const [randomizedProducts, setRandomizedProducts] = useState<Product[]>(products)
 
-  let filteredProducts = products;
+  useEffect(() => {
+    setRandomizedProducts(
+      products.map(product => {
+        if ((product as any).randomVariants?.length) {
+          const variants = (product as any).randomVariants;
+          const chosen = variants[Math.floor(Math.random() * variants.length)];
+          return { ...product, ...chosen };
+        }
+        return product;
+      })
+    )
+  }, [products])
+
+  let filteredProducts = randomizedProducts;
   if (selectedType !== 'All' && ['blade', 'bit', 'x-over'].includes(slug)) {
     if (slug === 'blade' && ['BX', 'UX', 'CX'].includes(selectedType)) {
-      filteredProducts = products.filter(product => product.specs && product.specs['Product Line'] === selectedType);
+      filteredProducts = randomizedProducts.filter(product => product.specs && product.specs['Product Line'] === selectedType);
     } else {
-      filteredProducts = products.filter((product) =>
+      filteredProducts = randomizedProducts.filter((product) =>
         Array.isArray(product.type)
           ? product.type.includes(selectedType)
           : product.type === selectedType
       );
     }
   }
-
 
   return (
     <>
