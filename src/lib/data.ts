@@ -1764,6 +1764,7 @@ export const products: Product[] = [
     name: "S (Slash)",
     image: "/Assist Blade/S/S 1 C01.webp",
     category: "assist-blade",
+    type: "assist",
     price: "CX-01",
     specs: {
       "Spin": "Right",
@@ -1793,6 +1794,7 @@ export const products: Product[] = [
     name: "R (Round)",
     image: "/Assist Blade/R/R 1 C02.webp",
     category: "assist-blade",
+    type: "assist",
     price: "CX-02",
     specs: {
       "Spin": "Right",
@@ -1812,6 +1814,7 @@ export const products: Product[] = [
     name: "B (Bumper)",
     image: "/Assist Blade/B/B 1 C03.webp",
     category: "assist-blade",
+    type: "assist",
     price: "CX-03",
     specs: {
       "Spin": "Right",
@@ -1831,6 +1834,7 @@ export const products: Product[] = [
     name: "T (Turn)",
     image: "/Assist Blade/T/T 1 C05.webp",
     category: "assist-blade",
+    type: "assist",
     price: "CX-05",
     specs: {
       "Spin": "Right",
@@ -1856,6 +1860,7 @@ export const products: Product[] = [
     name: "C (Charge)",
     image: "/Assist Blade/C/C 1 C05.webp",
     category: "assist-blade",
+    type: "assist",
     price: "CX-05",
     specs: {
       "Spin": "Right",
@@ -1875,6 +1880,7 @@ export const products: Product[] = [
     name: "J (Jaggy)",
     image: "/Assist Blade/J/J 1 C06.webp",
     category: "assist-blade",
+    type: "assist",
     price: "CX-06",
     specs: {
       "Spin": "Right",
@@ -1909,6 +1915,7 @@ export const products: Product[] = [
     name: "A (Assault)",
     image: "/Assist Blade/A/A 1 C07.webp",
     category: "assist-blade",
+    type: "assist",
     price: "CX-07",
     specs: {
       "Spin": "Right",
@@ -1928,6 +1935,7 @@ export const products: Product[] = [
     name: "W (Wheel)",
     image: "/Assist Blade/W/W 1 C08.webp",
     category: "assist-blade",
+    type: "assist",
     price: "CX-08",
     specs: {
       "Spin": "Right",
@@ -1947,6 +1955,7 @@ export const products: Product[] = [
     name: "M (Massive)",
     image: "/Assist Blade/M/M 1 C08.webp",
     category: "assist-blade",
+    type: "assist",
     price: "CX-08",
     specs: {
       "Spin": "Right",
@@ -1966,6 +1975,7 @@ export const products: Product[] = [
     name: "D (Dual)",
     image: "/Assist Blade/D/D 1 C09.webp",
     category: "assist-blade",
+    type: "assist",
     price: "CX-09",
     specs: {
       "Spin": "Right",
@@ -1988,6 +1998,7 @@ export const products: Product[] = [
     name: "0-70",
     image: "/Ratchet/0/0 70 1 U14.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "UX-14",
     features: [
       "0 Contact Points",
@@ -2007,6 +2018,7 @@ export const products: Product[] = [
     name: "0-80",
     image: "/Ratchet/0/0 80 1 U12.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "UX-12",
     features: [
       "0 Contact Points",
@@ -2036,6 +2048,7 @@ export const products: Product[] = [
     name: "1-60",
     image: "/Ratchet/1/1 60 1 U01.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "UX-01",
     features: [
       "1 Contact Points",
@@ -2120,6 +2133,7 @@ export const products: Product[] = [
     name: "1-70",
     image: "/Ratchet/1/1 70 1 U15.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "UX-15",
     features: [
       "1 Contact Points",
@@ -2139,6 +2153,7 @@ export const products: Product[] = [
     name: "1-80",
     image: "/Ratchet/1/1 80 1 U05.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "UX-05",
     features: [
       "1 Contact Points",
@@ -2163,6 +2178,7 @@ export const products: Product[] = [
     name: "2-60",
     image: "/Ratchet/2/2 60 1 B34.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "BX-34",
     features: [
       "2 Contact Points",
@@ -2207,6 +2223,7 @@ export const products: Product[] = [
     name: "2-70",
     image: "/Ratchet/2/2 70 1 U09.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "UX-09",
     features: [
       "2 Contact Points",
@@ -2233,6 +2250,7 @@ export const products: Product[] = [
     name: "2-80",
     image: "/Ratchet/2/2 80 1 B00.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "BX-00",
     features: [
       "2 Contact Points",
@@ -2252,6 +2270,7 @@ export const products: Product[] = [
     name: "3-60",
     image: "/Ratchet/3/3 60 1 B01.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "BX-01",
     features: [
       "3 Contact Points",
@@ -2341,6 +2360,7 @@ export const products: Product[] = [
     name: "3-70",
     image: "/Ratchet/3/3 70 1 U02.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "UX-02",
     features: [
       "3 Contact Points",
@@ -2391,6 +2411,7 @@ export const products: Product[] = [
     name: "3-80",
     image: "/Ratchet/3/3 80 1 B04.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "BX-04",
     features: [
       "3 Contact Points",
@@ -2485,6 +2506,7 @@ export const products: Product[] = [
     name: "3-85",
     image: "/Ratchet/3/3 85 1 U10.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "UX-10",
     features: [
       "3 Contact Points",
@@ -2519,6 +2541,7 @@ export const products: Product[] = [
     name: "4-50",
     image: "/Ratchet/4/4 50 1 U15.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "UX-15",
     features: [
       "4 Contact Points",
@@ -2538,6 +2561,7 @@ export const products: Product[] = [
     name: "4-55",
     image: "/Ratchet/4/4 55 1 C02.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "CX-02",
     features: [
       "4 Contact Points",
@@ -2572,6 +2596,7 @@ export const products: Product[] = [
     name: "4-60",
     image: "/Ratchet/4/4 60 1 B02.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "BX-02",
     features: [
       "4 Contact Points",
@@ -2666,6 +2691,7 @@ export const products: Product[] = [
     name: "4-70",
     image: "/Ratchet/4/4 70 1 B31.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "BX-31",
     features: [
       "4 Contact Points",
@@ -2710,6 +2736,7 @@ export const products: Product[] = [
     name: "4-80",
     image: "/Ratchet/4/4 80 1 B03.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "BX-03",
     features: [
       "4 Contact Points",
@@ -2794,6 +2821,7 @@ export const products: Product[] = [
     name: "5-60",
     image: "/Ratchet/5/5 60 1 B15.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "BX-15",
     features: [
       "5 Contact Points",
@@ -2848,6 +2876,7 @@ export const products: Product[] = [
     name: "5-70",
     image: "/Ratchet/5/5 70 1 U03.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "UX-03",
     features: [
       "5 Contact Points",
@@ -2892,6 +2921,7 @@ export const products: Product[] = [
     name: "5-80",
     image: "/Ratchet/5/5 80 1 B16.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "BX-16",
     features: [
       "5 Contact Points",
@@ -2941,6 +2971,7 @@ export const products: Product[] = [
     name: "6-60",
     image: "/Ratchet/6/6 60 1 C01.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "CX-01",
     features: [
       "6 Contact Points",
@@ -2980,6 +3011,7 @@ export const products: Product[] = [
     name: "6-70",
     image: "/Ratchet/6/6 70 1 B45.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "BX-45",
     features: [
       "6 Contact Points",
@@ -2999,6 +3031,7 @@ export const products: Product[] = [
     name: "6-80",
     image: "/Ratchet/6/6 80 1 C03.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "CX-03",
     features: [
       "6 Contact Points",
@@ -3028,6 +3061,7 @@ export const products: Product[] = [
     name: "7-60",
     image: "/Ratchet/7/7 60 1 U06.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "UX-06",
     features: [
       "7 Contact Points",
@@ -3052,6 +3086,7 @@ export const products: Product[] = [
     name: "7-70",
     image: "/Ratchet/7/7 70 1 U10.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "UX-10",
     features: [
       "7 Contact Points",
@@ -3071,6 +3106,7 @@ export const products: Product[] = [
     name: "7-80",
     image: "/Ratchet/7/7 80 1 B39.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "CX-39",
     features: [
       "7 Contact Points",
@@ -3090,6 +3126,7 @@ export const products: Product[] = [
     name: "9-60",
     image: "/Ratchet/9/9 60 1 B23.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "BX-23",
     features: [
       "9 Contact Points",
@@ -3129,6 +3166,7 @@ export const products: Product[] = [
     name: "9-70",
     image: "/Ratchet/9/9 70 1 U07.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "UX-07",
     features: [
       "9 Contact Points",
@@ -3148,6 +3186,7 @@ export const products: Product[] = [
     name: "9-80",
     image: "/Ratchet/9/9 80 1 B27.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "BX-27",
     features: [
       "9 Contact Points",
@@ -3182,6 +3221,7 @@ export const products: Product[] = [
     name: "M-85",
     image: "/Ratchet/M/M 85 1 B44.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "BX-44",
     features: [
       "5 Contact Points",
@@ -3201,6 +3241,7 @@ export const products: Product[] = [
     name: "Tr",
     image: "/Hybird Part/Tr 1 C07.webp",
     category: "ratchet",
+    type: "ratchet",
     price: "CX-07",
     features: [
       "Hybrid Part (Ratchet + Bit)",
@@ -4697,6 +4738,7 @@ export const products: Product[] = [
     name: "Start Dash Set",
     image: "https://i.ibb.co/Ld3GLtry/Start-Dash-Set-Box.webp",
     category: "other",
+    type: "other",
     price: "BX-07",
     features: [
       "Xtreme Stadium",
@@ -4732,6 +4774,7 @@ export const products: Product[] = [
     name: "3on3 Deck Set",
     image: "https://i.ibb.co/8yN1V4g/B08.webp",
     category: "other",
+    type: "other",
     price: "BX-08",
     features: [
       "Hells Scythe 3-80 B",
@@ -4761,6 +4804,7 @@ export const products: Product[] = [
     name: "Beybattle Pass",
     image: "https://i.ibb.co/4wJ98Qgn/B09.webp",
     category: "other",
+    type: "other",
     price: "BX-09",
     features: [
       "Beybattle Pass",
@@ -4771,6 +4815,7 @@ export const products: Product[] = [
     name: "Xtreme Stadium",
     image: "https://i.ibb.co/1fXSD1gn/B10.webp",
     category: "other",
+    type: "other",
     price: "BX-10",
     features: [
       "Xtreme Stadium",
@@ -4781,6 +4826,7 @@ export const products: Product[] = [
     name: "Launcher Grip",
     image: "https://i.ibb.co/VWMbdxR0/Beyblade-X-Launcher-Grip-Packaging.webp",
     category: "other",
+    type: "other",
     price: "BX-11",
     features: [
       "Launcher Grip (Black Ver.)",
@@ -4791,6 +4837,7 @@ export const products: Product[] = [
     name: "3on3 Deck Case",
     image: "https://i.ibb.co/r2KCRpTk/3on3-Deck-Case-Packaging.webp",
     category: "other",
+    type: "other",
     price: "BX-12",
     features: [
       "3on3 Deck Case",
@@ -4801,6 +4848,7 @@ export const products: Product[] = [
     name: "Battle Entry Set",
     image: "https://i.ibb.co/ksBSvwjY/B17.webp",
     category: "other",
+    type: "other",
     price: "BX-17",
     features: [
       "DranSword 3-60 F (Red Ver.)",
@@ -4842,6 +4890,7 @@ export const products: Product[] = [
     name: "String Launcher",
     image: "https://i.ibb.co/Z1BqBNmR/Beyblade-X-String-Launcher-Packaging.webp",
     category: "other",
+    type: "other",
     price: "BX-18",
     features: [
       "String Launcher",
@@ -4852,6 +4901,7 @@ export const products: Product[] = [
     name: "Gear Case",
     image: "https://i.ibb.co/s9qVBQ6s/Beyblade-X-Gear-Case.webp",
     category: "other",
+    type: "other",
     price: "BX-25",
     features: [
       "Gear Case",
@@ -4862,6 +4912,7 @@ export const products: Product[] = [
     name: "String Launcher (White Ver.)",
     image: "https://i.ibb.co/zW6sQSBg/Beyblade-X-String-Launcher-White-Ver.webp",
     category: "other",
+    type: "other",
     price: "BX-28",
     features: [
       "String Launcher (White Ver.)",
@@ -4872,6 +4923,7 @@ export const products: Product[] = [
     name: "Custom Grip (White Ver.)",
     image: "https://i.ibb.co/VWhzj7sD/Beyblade-X-Custom-Grip-White-Ver-Packaging.webp",
     category: "other",
+    type: "other",
     price: "BX-29",
     features: [
       "Custom Grip (White Ver.)",
@@ -4882,6 +4934,7 @@ export const products: Product[] = [
     name: "Custom Grip (Red Ver.)",
     image: "https://i.ibb.co/zTQNqB1M/Beyblade-X-Custom-Grip-Red-Ver-Packaging.webp",
     category: "other",
+    type: "other",
     price: "BX-30",
     features: [
       "Custom Grip (Red Ver.)",
@@ -4892,6 +4945,7 @@ export const products: Product[] = [
     name: "Wide Xtreme Stadium",
     image: "https://i.ibb.co/Q3Wvn6qK/Wide-Xtreme-Stadium.webp",
     category: "other",
+    type: "other",
     price: "BX-32",
     features: [
       "Wide Xtreme Stadium",
@@ -4902,6 +4956,7 @@ export const products: Product[] = [
     name: "Battle Entry Set U",
     image: "https://i.ibb.co/Xf7hqF9n/Battle-Entry-Set-U-Box.webp",
     category: "other",
+    type: "other",
     price: "UX-04",
     features: [
       "DranBuster 1-60 Accel (Special Ver.)",
@@ -4943,6 +4998,7 @@ export const products: Product[] = [
     name: "Double Xtreme Stadium Set",
     image: "https://i.ibb.co/Fqx8fT4j/Double-Xtreme-Stadium-Set-Box.webp",
     category: "other",
+    type: "other",
     price: "BX-37",
     features: [
       "Double Xtreme Stadium Set",
@@ -4970,6 +5026,7 @@ export const products: Product[] = [
     name: "Custom Grip (Black & Green Clear Ver.)",
     image: "https://i.ibb.co/Kj3FK0V5/BXG07-1.webp",
     category: "other",
+    type: "other",
     price: "BX-00",
     features: [
       "Custom Grip (Black & Green Clear Ver.)",
@@ -4980,6 +5037,7 @@ export const products: Product[] = [
     name: "Battle Entry Set C",
     image: "https://i.ibb.co/dsRzfwqc/Battle-Entry-Set-C-Box.webp",
     category: "other",
+    type: "other",
     price: "CX-04",
     features: [
       "Dran Brave S 6-60 Vortex (Special Ver.)",
@@ -5021,6 +5079,7 @@ export const products: Product[] = [
     name: "Winder Launcher L",
     image: "https://i.ibb.co/Zp29VbbR/Beyblade-X-Winder-Launcher-L-Packaging.webp",
     category: "other",
+    type: "other",
     price: "BX-40",
     features: [
       "Winder Launcher L",
@@ -5031,6 +5090,7 @@ export const products: Product[] = [
     name: "Rubber Custom Grip (Gunmetal Ver.)",
     image: "https://i.ibb.co/4nhB4X2M/Beyblade-X-Rubber-Custom-Grip-Gunmetal-Ver-Packaging.webp",
     category: "other",
+    type: "other",
     price: "BX-41",
     features: [
       "Rubber Custom Grip (Gunmetal Ver.)",
@@ -5041,6 +5101,7 @@ export const products: Product[] = [
     name: "Rubber Custom Grip (Blue Ver.)",
     image: "https://i.ibb.co/tpRcpjLx/Beyblade-X-Rubber-Custom-Grip-Blue-Ver-Packaging.webp",
     category: "other",
+    type: "other",
     price: "BX-42",
     features: [
       "Rubber Custom Grip (Blue Ver.)",
@@ -5051,6 +5112,7 @@ export const products: Product[] = [
     name: "Gear Case (White Ver.)",
     image: "https://i.ibb.co/1G77fbPb/Beyblade-X-Gear-Case-White-Ver.webp",
     category: "other",
+    type: "other",
     price: "BX-43",
     features: [
       "Gear Case (White Ver.)",
@@ -5061,6 +5123,7 @@ export const products: Product[] = [
     name: "Infinity Stadium",
     image: "/Other/Infinity Stadium.webp",
     category: "other",
+    type: "other",
     price: "BX-??",
     features: [
       "Infinity Stadium",
@@ -5504,6 +5567,7 @@ export const products: Product[] = [
     name: "Credits? Why you want to know that???",
     image: "https://i.ibb.co/0pcrGh1N/Credit.webp",
     category: "credits",
+    type: "credits",
     price: "This website don't want anything from you.",
     specs: {
       "Creator Name": "Why you want to know that?",
@@ -5517,24 +5581,15 @@ export const products: Product[] = [
 
 // --- Helper for randomizing SED-001 and OMF-001 ---
 function randomizeSpecialProduct(product: Product): Product {
-  if (product.id === "Blade-SED-001") {
-    const isUpper = Math.random() < 0.5;
+  if (product.randomVariants && product.randomVariants.length > 0) {
+    const randomIndex = Math.floor(Math.random() * product.randomVariants.length);
+    const selectedVariant = product.randomVariants[randomIndex];
+    
     return {
       ...product,
-      name: isUpper ? "Sol Eclipse (Upper)" : "Sol Eclipse (Smash)",
-      image: isUpper
-        ? "/Blade/00SubCharacter/SED Upper 1 C09.webp"
-        : "/Blade/00SubCharacter/SED Smash 1 C09.webp",
-    };
-  }
-  if (product.id === "Blade-X-OMF-001") {
-    const isUpper = Math.random() < 0.5;
-    return {
-      ...product,
-      name: isUpper ? "Lightning L-Drago (Upper)" : "Lightning L-Drago (Rapid)",
-      image: isUpper
-        ? "/Blade/X-Collab/LLD-1 Upper.webp"
-        : "/Blade/X-Collab/LLD-1 Rapid.webp",
+      name: selectedVariant.name,
+      image: selectedVariant.image,
+      type: selectedVariant.type
     };
   }
   return product;
