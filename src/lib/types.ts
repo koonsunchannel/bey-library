@@ -2,10 +2,12 @@ export type Product = {
   id: string
   name: string
   // description: string
-  // fullDescription?: string
+  // description: string
+  fullDescription?: string
   image: string
   category: 'blade' | 'assist-blade' | 'ratchet' | 'bit' | 'other' | 'x-over' | 'credits'
   type: string | string[]
+  combo?: Record<string, string>
   price: string
   features?: string[]
   specs?: Record<string, string>

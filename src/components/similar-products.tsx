@@ -1,32 +1,33 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import { ProductCard } from "@/components/product-card"
 import { Separator } from "@/components/ui/separator"
 import type { Product } from "@/lib/types"
 
 type SimilarProductsProps = {
   products: Product[]
-  category: 'blade' | 'ratchet' | 'bit' | 'other' | 'x-over'
+  category: Product['category']
   currentProductId: string
 }
 
 export function SimilarProducts({ products, category, currentProductId }: SimilarProductsProps) {
-  // Shuffle utility
-  function shuffle<T>(array: T[]): T[] {
-    return array
-      .map(value => ({ value, sort: Math.random() }))
-      .sort((a, b) => a.sort - b.sort)
-      .map(({ value }) => value);
-  }
+  const [shuffled, setShuffled] = useState<Product[] | null>(null)
 
-  // Filter out the current product and shuffle, then limit to max 4 similar products
-  const filteredProducts = shuffle(
-    products.filter(product => product.id !== currentProductId)
-  ).slice(0, 4);
+  useEffect(() => {
+    function shuffle<T>(array: T[]): T[] {
+      return array
+        .map(value => ({ value, sort: Math.random() }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({ value }) => value);
+    }
 
-  if (filteredProducts.length === 0) {
-    return null
-  }
+    const filtered = products.filter(product => product.id !== currentProductId)
+    setShuffled(shuffle(filtered).slice(0, 4))
+  }, [products, currentProductId])
 
-  // Determine the highlight color based on category
+  if (!shuffled || shuffled.length === 0) return null
+
   const titleColor =
     category === 'blade' ? 'cyber-glow-red' :
     category === 'ratchet' ? 'cyber-glow-green' :
@@ -50,12 +51,11 @@ export function SimilarProducts({ products, category, currentProductId }: Simila
       </div>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
-        {filteredProducts.map((product) => (
+        {shuffled.map((product) => (
           <ProductCard
             key={product.id}
             id={product.id}
             name={product.name}
-            // description={product.description}
             image={product.image}
             category={category}
             price={product.price}

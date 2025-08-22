@@ -1470,7 +1470,7 @@ export const products: Product[] = [
   {
     id: "Blade-SED-001",
     name: "Sol Eclipse",
-    image: "",
+    image: "/Blade/00SubCharacter/SED Upper 1 C09.webp",
     category: "blade",
     type: ["balance"],
     price: "CX-09",
@@ -5207,7 +5207,7 @@ export const products: Product[] = [
   {
     id: "Blade-X-OMF-001",
     name: "Lightning L-Drago",
-    image: "",
+    image: "/Blade/X-Collab/LLD-1 Upper.webp",
     category: "x-over",
     type: ["attack"],
     price: "BX-00",
@@ -5579,30 +5579,12 @@ export const products: Product[] = [
   },
 ];
 
-// --- Helper for randomizing SED-001 and OMF-001 ---
-function randomizeSpecialProduct(product: Product): Product {
-  if (product.randomVariants && product.randomVariants.length > 0) {
-    const randomIndex = Math.floor(Math.random() * product.randomVariants.length);
-    const selectedVariant = product.randomVariants[randomIndex];
-    
-    return {
-      ...product,
-      name: selectedVariant.name,
-      image: selectedVariant.image,
-      type: selectedVariant.type
-    };
-  }
-  return product;
-}
+// Helper functions to get products (deterministic; do not perform randomization here)
 
-// Helper functions to get products
-
-export function getProducts(category?: 'blade' | 'assist-blade' | 'ratchet' | 'bit' | 'other' | 'X-Over' | 'credits'): Product[] {
-  let result = category ? products.filter(product => product.category === category) : products;
-  return result.map(randomizeSpecialProduct);
+export function getProducts(category?: Product['category']): Product[] {
+  return category ? products.filter(product => product.category === category) : products;
 }
 
 export function getProductById(id: string): Product | undefined {
-  const product = products.find(product => product.id === id);
-  return product ? randomizeSpecialProduct(product) : undefined;
+  return products.find(product => product.id === id);
 }
