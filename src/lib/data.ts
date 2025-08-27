@@ -1528,16 +1528,16 @@ export const products: Product[] = [
   },
   {
     id: "Blade-BXGoat-001",
-    name: "Goat ???",
-    image: "/Blade/00SubCharacter/BX Goat.webp",
+    name: "Goat Tackle",
+    image: "/Blade/00SubCharacter/GTk 1 B46.webp",
     category: "blade",
-    type:"defense",
-    price: "BX-46?",
+    type:"balance",
+    price: "BX-46",
     specs: {
-      "Type": "Defense?",
+      "Type": "Balance",
       "Spin": "Right",
       "Weight": "~ g",
-      "Stock Combo": "???",
+      "Stock Combo": "7-70 Taper",
       "Product Line": "BX",
     },
     // bey: [
@@ -1569,6 +1569,11 @@ export const products: Product[] = [
         id: "Blade-CDk-002",
         name: "Rare Bey Battle",
         image: "/Blade/00Pendragon-Goldius/CDk 2 B00.webp"
+      },
+      {
+        id: "Blade-CDk-003",
+        name: "BX-46",
+        image: "/Blade/00Pendragon-Goldius/CDk 3 B46.webp"
       },
     ]
   },
@@ -3099,6 +3104,12 @@ export const products: Product[] = [
         name: "CX-08",
         image: "/Ratchet/7/7 70 2 C08.webp"
       },
+      {
+        id: "Rat-770-003",
+        name: "BX-46",
+        image: ""
+        // /Ratchet/7/7 70 4 B46.webp
+      },
     ]
   },
   {
@@ -3158,6 +3169,12 @@ export const products: Product[] = [
         id: "Rat-960-006",
         name: "UX-00",
         image: "/Ratchet/9/9 60 6 U00.webp"
+      },
+      {
+        id: "Rat-960-007",
+        name: "BX-46",
+        image: ""
+        // /Ratchet/9/9 60 7 B46.webp
       },
     ]
   },
@@ -3398,6 +3415,12 @@ export const products: Product[] = [
         id: "Bit-T-007",
         name: "BX-00",
         image: "/Bit/T/T 7 B00.webp"
+      },
+      {
+        id: "Bit-T-007",
+        name: "BX-46",
+        image: ""
+        // /Bit/T/T 8 B46.webp
       },
     ]
   },
@@ -3720,6 +3743,12 @@ export const products: Product[] = [
         id: "Bit-R-003",
         name: "UX-10",
         image: "/Bit/R/R 3 U10.webp"
+      },
+      {
+        id: "Bit-R-004",
+        name: "BX-46",
+        image: ""
+        // /Bit/R/R 4 B46.webp
       },
     ]
   },
@@ -4851,8 +4880,8 @@ export const products: Product[] = [
     type: "other",
     price: "BX-17",
     features: [
-      "DranSword 3-60 F (Red Ver.)",
-      "WizardArrow 4-80 B (Blue Ver.)",
+      "Dran Sword 3-60 F (Red Ver.)",
+      "Wizard Arrow 4-80 B (Blue Ver.)",
       "Winder Launcher (Red Ver.)",
       "Winder Launcher (Blue Ver.)",
       "Xtreme Stadium (Black Ver.)",
@@ -4860,12 +4889,12 @@ export const products: Product[] = [
     pro: [
       {
         id: "B17-001",
-        name: "DranSword 3-60 Flat (Red Ver.)",
+        name: "Dran Sword 3-60 Flat (Red Ver.)",
         image: "https://i.ibb.co/VYF6BrfF/DS-4-B17.webp"
       },
       {
         id: "B17-002",
-        name: "WizardArrow 4-80 Ball (Blue Ver.)",
+        name: "Wizard Arrow 4-80 Ball (Blue Ver.)",
         image: "https://i.ibb.co/XZ4cTffR/WA-5-B17.webp"
       },
       {
@@ -4959,8 +4988,8 @@ export const products: Product[] = [
     type: "other",
     price: "UX-04",
     features: [
-      "DranBuster 1-60 Accel (Special Ver.)",
-      "WizardRod 5-70 Disc Ball (Special Ver.)",
+      "Dran Buster 1-60 Accel (Special Ver.)",
+      "Wizard Rod 5-70 Disc Ball (Special Ver.)",
       "Winder Launcher (White & Black Ver.)",
       "Winder Launcher (Black & Yellow Ver.)",
       "Xtreme Stadium (Special Ver.)",
@@ -4968,12 +4997,12 @@ export const products: Product[] = [
     pro: [
       {
         id: "U4-001",
-        name: "DranBuster 1-60 A (Special Ver.)",
+        name: "Dran Buster 1-60 A (Special Ver.)",
         image: "https://i.ibb.co/8nc3jQZ8/DB-2-U04.webp"
       },
       {
         id: "U4-002",
-        name: "WizardRod 5-70 DB (Special Ver.)",
+        name: "Wizard Rod 5-70 DB (Special Ver.)",
         image: "https://i.ibb.co/fVR6nWmd/WR-2-U04.webp"
       },
       {
@@ -5002,11 +5031,13 @@ export const products: Product[] = [
     price: "BX-37",
     features: [
       "Double Xtreme Stadium Set",
+      "Bear Scratch 5-60 Flat",
+      "Winder Launcher (Black×Gold Ver.)",
     ],
     pro: [
       {
         id: "B32-001",
-        name: "BearScratch 5-60 Flat",
+        name: "Bear Scratch 5-60 Flat",
         image: "https://i.ibb.co/SDfXPWbF/BSc-1-B37.webp"
       },
       {
@@ -5049,12 +5080,12 @@ export const products: Product[] = [
     pro: [
       {
         id: "C4-001",
-        name: "DranBrave S 6-60 V (Special Ver.)",
+        name: "Dran Brave S 6-60 V (Special Ver.)",
         image: "https://i.ibb.co/0pYwhrRB/DBS-2-C04.webp"
       },
       {
         id: "C4-002",
-        name: "PerseusDark B 6-80 W (Special Ver.)",
+        name: "Perseus Dark B 6-80 W (Special Ver.)",
         image: "https://i.ibb.co/M5jDMj6y/PDB-2-C04.webp"
       },
       {
@@ -5120,14 +5151,45 @@ export const products: Product[] = [
   },
   {
     id: "other-022",
-    name: "Infinity Stadium",
-    image: "/Other/Infinity Stadium.webp",
+    name: "Battle Entry Set ∞",
+    image: "/Other/BX46/BX46 IXS.jpg",
     category: "other",
     type: "other",
-    price: "BX-??",
+    price: "BX-46",
     features: [
-      "Infinity Stadium",
+      "Infinity Xtreme Stadium",
+      "Cobalt Drake (Metal Coat Red) 9-60 Rush",
+      "Goat Tackle 7-70 Taper",
+      "Winder Launcher (Red & White Ver.)",
+      "Winder Launcher (Black & Green Ver.)",
     ],
+    pro: [
+      {
+        id: "C4-001",
+        name: "Cobalt Drake (MC Red) 9-60 Rush",
+        image: "/Blade/00Pendragon-Goldius/CDk 3 B46.webp"
+      },
+      {
+        id: "C4-002",
+        name: "Goat Tackle 7-70 Taper",
+        image: "/Blade/00SubCharacter/GTk 1 B46.webp"
+      },
+      {
+        id: "C4-003",
+        name: "Winder Launcher (Red & White Ver.)",
+        image: "/Other/BX46/Luancher-Red-White-Ver.webp"
+      },
+      {
+        id: "C4-004",
+        name: "Winder Launcher (Black & Green Ver.)",
+        image: "/Other/BX46/Luancher-Black-Green-Ver.webp"
+      },
+      {
+        id: "C4-005",
+        name: "Infinity Xtreme Stadium",
+        image: "/Other/BX46/Infinity Stadium.webp"
+      },
+    ]
   },
 
   //X-OVER Bakuten Shoot Beyblade
