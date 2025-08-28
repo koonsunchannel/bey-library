@@ -4761,7 +4761,7 @@ export const products: Product[] = [
   {
     id: "other-001",
     name: "Start Dash Set",
-    image: "https://i.ibb.co/Ld3GLtry/Start-Dash-Set-Box.webp",
+    image: "/Other/BX07/Start-Dash-Set-Box.webp",
     category: "other",
     type: "other",
     price: "BX-07",
@@ -4774,30 +4774,30 @@ export const products: Product[] = [
     pro: [
       {
         id: "DS-002",
-        name: "Dran Sword (Special Ver.)",
-        image: "https://i.ibb.co/mCsJJFYs/DS-2-B07.webp"
+        name: "Dran Sword 3-60 Flat (Special Ver.)",
+        image: "/Blade/00Persona/DS 2 B07.webp"
       },
       {
         id: "Lun07-001",
-        name: "BX-07",
-        image: "https://i.ibb.co/JhVt9cX/Beyblade-X-String-Launcher-Blue-Ver.webp"
+        name: "String Launcher (Blue Ver.)",
+        image: "/Other/BX07/Beyblade-X-String-Launcher-Blue-Ver.webp"
       },
       {
         id: "Gip07-0001",
-        name: "BX-07",
-        image: "https://i.ibb.co/whtdZFVX/Beyblade-X-Launcher-Grip-Blue-Ver.webp"
+        name: "Launcher Grip (Blue Ver.)",
+        image: "/Other/BX07/Beyblade-X-Launcher-Grip-Blue-Ver.webp"
       },
       {
         id: "Sta-0001",
-        name: "BX-07",
-        image: "https://i.ibb.co/214TCT0j/Xtreme-Stadium-BX-07.webp"
+        name: "Xtreme Stadium (Clear & Black Ver.)",
+        image: "/Other/BX07/Xtreme-Stadium-BX-07.webp"
       },
     ]
   },
   {
     id: "other-002",
     name: "3on3 Deck Set",
-    image: "https://i.ibb.co/8yN1V4g/B08.webp",
+    image: "/Other/BX08/B08.webp",
     category: "other",
     type: "other",
     price: "BX-08",
@@ -4810,24 +4810,24 @@ export const products: Product[] = [
       {
         id: "B8-001",
         name: "Hells Scythe 3-80 Ball",
-        image: "https://i.ibb.co/sdKqGYNk/HS-3-B08.webp"
+        image: "/Blade/00Persona/HS 3 B08.webp"
       },
       {
         id: "B8-002",
         name: "Wizard Arrow 4-60 Needle",
-        image: "https://i.ibb.co/xSdv8S60/WA-3-B08.webp"
+        image: "/Blade/00Persona/WA 3 B08.webp"
       },
       {
         id: "B8-003",
         name: "Knight Shield 4-80 Taper",
-        image: "https://i.ibb.co/6cXM80JP/KS-3-B08.webp"
+        image: "/Blade/00Persona/KS 3 B08.webp"
       },
     ]
   },
   {
     id: "other-003",
     name: "Beybattle Pass",
-    image: "https://i.ibb.co/4wJ98Qgn/B09.webp",
+    image: "/Other/BX09/B09.webp",
     category: "other",
     type: "other",
     price: "BX-09",
@@ -4838,7 +4838,7 @@ export const products: Product[] = [
   {
     id: "other-004",
     name: "Xtreme Stadium",
-    image: "https://i.ibb.co/1fXSD1gn/B10.webp",
+    image: "/Other/BX10/B10.webp",
     category: "other",
     type: "other",
     price: "BX-10",
@@ -4849,7 +4849,7 @@ export const products: Product[] = [
   {
     id: "other-005",
     name: "Launcher Grip",
-    image: "https://i.ibb.co/VWMbdxR0/Beyblade-X-Launcher-Grip-Packaging.webp",
+    image: "/Other/BX11/Grip Black.webp",
     category: "other",
     type: "other",
     price: "BX-11",
@@ -4860,7 +4860,7 @@ export const products: Product[] = [
   {
     id: "other-006",
     name: "3on3 Deck Case",
-    image: "https://i.ibb.co/r2KCRpTk/3on3-Deck-Case-Packaging.webp",
+    image: "/Other/BX12/3o3.webp",
     category: "other",
     type: "other",
     price: "BX-12",
@@ -4871,7 +4871,7 @@ export const products: Product[] = [
   {
     id: "other-007",
     name: "Battle Entry Set",
-    image: "https://i.ibb.co/ksBSvwjY/B17.webp",
+    image: "/Other/BX17/B17.webp",
     category: "other",
     type: "other",
     price: "BX-17",
@@ -4886,34 +4886,34 @@ export const products: Product[] = [
       {
         id: "B17-001",
         name: "Dran Sword 3-60 Flat (Red Ver.)",
-        image: "https://i.ibb.co/VYF6BrfF/DS-4-B17.webp"
+        image: "/Blade/00Persona/DS 4 B17.webp"
       },
       {
         id: "B17-002",
         name: "Wizard Arrow 4-80 Ball (Blue Ver.)",
-        image: "https://i.ibb.co/XZ4cTffR/WA-5-B17.webp"
+        image: "/Blade/00Persona/WA 5 B17.webp"
       },
       {
         id: "B17-003",
         name: "Winder Launcher (Red Ver.)",
-        image: "https://i.ibb.co/wNc2GGZ8/Beyblade-X-Winder-Launcher-Red-Ver.webp"
+        image: "/Other/BX17/Luncher Red-Black.webp"
       },
       {
         id: "B17-004",
         name: "Winder Launcher (Blue Ver.)",
-        image: "https://i.ibb.co/QLNqvbW/Beyblade-X-Winder-Launcher-Blue-Ver.webp"
+        image: "/Other/BX17/Luncher Blue-Black.webp"
       },
       {
         id: "B17-005",
         name: "Xtreme Stadium (Black Ver.)",
-        image: "https://i.ibb.co/Ndgs5DbL/Xtreme-Stadium-Black-Ver.webp"
+        image: "/Other/BX17/Stadium Black Green.webp"
       },
     ]
   },
   {
     id: "other-008",
     name: "String Launcher",
-    image: "https://i.ibb.co/Z1BqBNmR/Beyblade-X-String-Launcher-Packaging.webp",
+    image: "/Other/BX18/String Black.webp",
     category: "other",
     type: "other",
     price: "BX-18",
@@ -4924,7 +4924,7 @@ export const products: Product[] = [
   {
     id: "other-009",
     name: "Gear Case",
-    image: "https://i.ibb.co/s9qVBQ6s/Beyblade-X-Gear-Case.webp",
+    image: "/Other/BX25/Case Black.webp",
     category: "other",
     type: "other",
     price: "BX-25",
@@ -4935,7 +4935,7 @@ export const products: Product[] = [
   {
     id: "other-010",
     name: "String Launcher (White Ver.)",
-    image: "https://i.ibb.co/zW6sQSBg/Beyblade-X-String-Launcher-White-Ver.webp",
+    image: "/Other/BX28/String White.webp",
     category: "other",
     type: "other",
     price: "BX-28",
@@ -4946,7 +4946,7 @@ export const products: Product[] = [
   {
     id: "other-011",
     name: "Custom Grip (White Ver.)",
-    image: "https://i.ibb.co/VWhzj7sD/Beyblade-X-Custom-Grip-White-Ver-Packaging.webp",
+    image: "/Other/BX29/Grip White.webp",
     category: "other",
     type: "other",
     price: "BX-29",
@@ -4957,7 +4957,7 @@ export const products: Product[] = [
   {
     id: "other-012",
     name: "Custom Grip (Red Ver.)",
-    image: "https://i.ibb.co/zTQNqB1M/Beyblade-X-Custom-Grip-Red-Ver-Packaging.webp",
+    image: "/Other/BX30/Grip Red.webp",
     category: "other",
     type: "other",
     price: "BX-30",
@@ -4968,7 +4968,7 @@ export const products: Product[] = [
   {
     id: "other-013",
     name: "Wide Xtreme Stadium",
-    image: "https://i.ibb.co/Q3Wvn6qK/Wide-Xtreme-Stadium.webp",
+    image: "/Other/BX32/Wide-Xtreme-Stadium.webp",
     category: "other",
     type: "other",
     price: "BX-32",
@@ -4979,7 +4979,7 @@ export const products: Product[] = [
   {
     id: "other-014",
     name: "Battle Entry Set U",
-    image: "https://i.ibb.co/Xf7hqF9n/Battle-Entry-Set-U-Box.webp",
+    image: "/Other/UX04/U04.webp",
     category: "other",
     type: "other",
     price: "UX-04",
@@ -4994,34 +4994,34 @@ export const products: Product[] = [
       {
         id: "U4-001",
         name: "Dran Buster 1-60 A (Special Ver.)",
-        image: "https://i.ibb.co/8nc3jQZ8/DB-2-U04.webp"
+        image: "/Blade/00Persona/DB 2 U04.webp"
       },
       {
         id: "U4-002",
         name: "Wizard Rod 5-70 DB (Special Ver.)",
-        image: "https://i.ibb.co/fVR6nWmd/WR-2-U04.webp"
+        image: "/Blade/00Persona/WR 2 U04.webp"
       },
       {
         id: "U4-003",
         name: "Winder Launcher (White & Black Ver.)",
-        image: "https://i.ibb.co/bMZ1ffvC/Beyblade-X-Winder-Launcher-White-Black-Ver.webp"
+        image: "/Other/UX04/Luncher White-Black.webp"
       },
       {
         id: "U4-004",
         name: "Winder Launcher (Black & Yellow Ver.)",
-        image: "https://i.ibb.co/8gJFrNdB/Beyblade-X-Winder-Launcher-Black-Yellow-Ver.webp"
+        image: "/Other/UX04/Luncher Black-Yellow.webp"
       },
       {
         id: "U4-005",
         name: "Xtreme Stadium (Special Ver.)",
-        image: "https://i.ibb.co/fGCBrK1C/Xtreme-Stadium-Special-Ver.webp"
+        image: "/Other/UX04/Stadium White Yellow.webp"
       },
     ]
   },
   {
     id: "other-015",
     name: "Double Xtreme Stadium Set",
-    image: "https://i.ibb.co/Fqx8fT4j/Double-Xtreme-Stadium-Set-Box.webp",
+    image: "/Other/BX37/B37.webp",
     category: "other",
     type: "other",
     price: "BX-37",
@@ -5034,24 +5034,24 @@ export const products: Product[] = [
       {
         id: "B32-001",
         name: "Bear Scratch 5-60 Flat",
-        image: "https://i.ibb.co/SDfXPWbF/BSc-1-B37.webp"
+        image: "/Blade/00SubCharacter/BSc 1 B37.webp"
       },
       {
         id: "B17-002",
         name: "Double Xtreme Stadium",
-        image: "https://i.ibb.co/4ncCr3h8/Double-Xtreme-Stadium.webp"
+        image: "/Other/BX37/DX Stadium.webp"
       },
       {
         id: "B17-003",
         name: "Winder Launcher (Black×Gold Ver.)",
-        image: "https://i.ibb.co/fY9VdT4s/Beyblade-X-Winder-Launcher-Black-Gold-Ver.webp"
+        image: "/Other/BX37/Luncher Black-Gold.webp"
       },
     ]
   },
   {
     id: "other-016",
     name: "Custom Grip (Black & Green Clear Ver.)",
-    image: "https://i.ibb.co/Kj3FK0V5/BXG07-1.webp",
+    image: "/Other/BX00/Grip Black Green.webp",
     category: "other",
     type: "other",
     price: "BX-00",
@@ -5062,7 +5062,7 @@ export const products: Product[] = [
   {
     id: "other-017",
     name: "Battle Entry Set C",
-    image: "https://i.ibb.co/dsRzfwqc/Battle-Entry-Set-C-Box.webp",
+    image: "/Other/CX04/C04.webp",
     category: "other",
     type: "other",
     price: "CX-04",
@@ -5077,34 +5077,34 @@ export const products: Product[] = [
       {
         id: "C4-001",
         name: "Dran Brave S 6-60 V (Special Ver.)",
-        image: "https://i.ibb.co/0pYwhrRB/DBS-2-C04.webp"
+        image: "/Blade/00Persona/DBS 2 C04.webp"
       },
       {
         id: "C4-002",
         name: "Perseus Dark B 6-80 W (Special Ver.)",
-        image: "https://i.ibb.co/M5jDMj6y/PDB-2-C04.webp"
+        image: "/Blade/00Zodiac - Fox/PDB 2 C04.webp"
       },
       {
         id: "C4-003",
         name: "Winder Launcher (Black & Magenta Ver.)",
-        image: "https://i.ibb.co/0jsQk0s8/Beyblade-X-Winder-Launcher-Black-Magenta-Ver.webp"
+        image: "/Other/CX04/Luncher Black-Pink.webp"
       },
       {
         id: "C4-004",
         name: "Winder Launcher (White & Blue Ver.)",
-        image: "https://i.ibb.co/fVJ5XrWn/Beyblade-X-Winder-Launcher-White-Blue-Ver.webp"
+        image: "/Other/CX04/Luncher White-Blue.webp"
       },
       {
         id: "C4-005",
         name: "Xtreme Stadium (Special Ver.)",
-        image: "https://i.ibb.co/wNv1tKhD/Xtreme-Stadium-CX-04.webp"
+        image: "/Other/CX04/Stadium Clear Pink.webp"
       },
     ]
   },
   {
     id: "other-018",
     name: "Winder Launcher L",
-    image: "https://i.ibb.co/Zp29VbbR/Beyblade-X-Winder-Launcher-L-Packaging.webp",
+    image: "/Other/BX40/L Winder.webp",
     category: "other",
     type: "other",
     price: "BX-40",
@@ -5115,7 +5115,7 @@ export const products: Product[] = [
   {
     id: "other-019",
     name: "Rubber Custom Grip (Gunmetal Ver.)",
-    image: "https://i.ibb.co/4nhB4X2M/Beyblade-X-Rubber-Custom-Grip-Gunmetal-Ver-Packaging.webp",
+    image: "/Other/BX41/Grip Gunmetal.webp",
     category: "other",
     type: "other",
     price: "BX-41",
@@ -5126,7 +5126,7 @@ export const products: Product[] = [
   {
     id: "other-020",
     name: "Rubber Custom Grip (Blue Ver.)",
-    image: "https://i.ibb.co/tpRcpjLx/Beyblade-X-Rubber-Custom-Grip-Blue-Ver-Packaging.webp",
+    image: "/Other/BX42/Grip Blue.webp",
     category: "other",
     type: "other",
     price: "BX-42",
@@ -5137,7 +5137,7 @@ export const products: Product[] = [
   {
     id: "other-021",
     name: "Gear Case (White Ver.)",
-    image: "https://i.ibb.co/1G77fbPb/Beyblade-X-Gear-Case-White-Ver.webp",
+    image: "/Other/BX43/Case White.webp",
     category: "other",
     type: "other",
     price: "BX-43",
