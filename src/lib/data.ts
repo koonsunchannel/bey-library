@@ -1505,28 +1505,6 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "Blade-UXWyvern-001",
-    name: "Wyvern ???",
-    image: "/Blade/00SubCharacter/UX Wyvern.webp",
-    category: "blade",
-    type:"defense",
-    price: "UX-16?",
-    specs: {
-      "Type": "Defense?",
-      "Spin": "Right",
-      "Weight": "~ g",
-      "Stock Combo": "???",
-      "Product Line": "UX",
-    },
-    // bey: [
-    //   {
-    //     id: "Blade-Wy-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
-  },
-  {
     id: "Blade-BXGoat-001",
     name: "Goat Tackle",
     image: "/Blade/00SubCharacter/GTk 1 B46.webp",
@@ -1539,6 +1517,28 @@ export const products: Product[] = [
       "Weight": "~ g",
       "Stock Combo": "7-70 Taper",
       "Product Line": "BX",
+    },
+    // bey: [
+    //   {
+    //     id: "Blade-Wy-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Blade-UXWyvern-001",
+    name: "Wyvern ???",
+    image: "/Blade/00SubCharacter/UX Wyvern.webp",
+    category: "blade",
+    type:"defense",
+    price: "UX-16?",
+    specs: {
+      "Type": "Defense?",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "???",
+      "Product Line": "UX",
     },
     // bey: [
     //   {
@@ -3107,8 +3107,7 @@ export const products: Product[] = [
       {
         id: "Rat-770-003",
         name: "BX-46",
-        image: ""
-        // /Ratchet/7/7 70 4 B46.webp
+        image: "/Ratchet/7/7 70 3 B46.webp"
       },
     ]
   },
@@ -3173,8 +3172,7 @@ export const products: Product[] = [
       {
         id: "Rat-960-007",
         name: "BX-46",
-        image: ""
-        // /Ratchet/9/9 60 7 B46.webp
+        image: "/Ratchet/9/9 60 7 B46.webp"
       },
     ]
   },
@@ -3417,10 +3415,9 @@ export const products: Product[] = [
         image: "/Bit/T/T 7 B00.webp"
       },
       {
-        id: "Bit-T-007",
+        id: "Bit-T-008",
         name: "BX-46",
-        image: ""
-        // /Bit/T/T 8 B46.webp
+        image: "/Bit/T/T 8 B46.webp"
       },
     ]
   },
@@ -3747,8 +3744,7 @@ export const products: Product[] = [
       {
         id: "Bit-R-004",
         name: "BX-46",
-        image: ""
-        // /Bit/R/R 4 B46.webp
+        image: "/Bit/R/R 4 B46.webp"
       },
     ]
   },
