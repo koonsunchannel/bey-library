@@ -1514,7 +1514,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Balance",
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~31 g",
       "Stock Combo": "7-70 Taper",
       "Product Line": "BX",
     },
