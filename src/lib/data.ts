@@ -3205,15 +3205,15 @@ export const products: Product[] = [
   },
   {
     id: "Rat-965-001",
-    name: "9-70",
+    name: "9-65",
     image: "/Ratchet/9/9 65 1 U16.webp",
     category: "ratchet",
     type: "ratchet",
-    price: "UX-07",
+    price: "UX-16",
     features: [
       "9 Contact Points",
-      "High : 7.00 mm",
-      "Weight: ~6 g",
+      "High : 6.50 mm",
+      "Weight: ~4 g",
     ],
     bey: [
       {
