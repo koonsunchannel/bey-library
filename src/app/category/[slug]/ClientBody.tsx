@@ -58,6 +58,7 @@ export default function ClientBody({
             image={product.image}
             category={product.category}
             price={product.price}
+            type={Array.isArray(product.type) ? product.type : [product.type]}
           />
         ))}
       </div>

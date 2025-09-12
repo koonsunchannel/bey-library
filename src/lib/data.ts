@@ -1553,28 +1553,6 @@ export const products: Product[] = [
       },
     ]
   },
-  {
-    id: "Blade-WHv-001",
-    name: "Wyvern ???",
-    image: "/Blade/00SubCharacter/UX Wyvern.webp",
-    category: "blade",
-    type:"defense",
-    price: "UX-17?",
-    specs: {
-      "Type": "Defense?",
-      "Spin": "Right",
-      "Weight": "~ g",
-      "Stock Combo": "???",
-      "Product Line": "UX",
-    },
-    // bey: [
-    //   {
-    //     id: "Blade-Wy-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
-  },
 
   //RARE BLADE
   {
@@ -1599,7 +1577,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-CDk-003",
-        name: "BX-46",
+        name: "BX-46 (Regular Sale)",
         image: "/Blade/00Pendragon-Goldius/CDk 3 B46.webp"
       },
     ]
@@ -1621,7 +1599,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-PF-002",
-        name: "UX-12",
+        name: "UX-12 (Regular Sale)",
         image: "/Blade/00Yggdrasil/PF 2 U12.webp"
       },
       {
@@ -1788,6 +1766,28 @@ export const products: Product[] = [
     //     image: ""
     //   },
     // ]
+  },
+  {
+    id: "Blade-WHv-001",
+    name: "Wyvern Hover",
+    image: "/Blade/00SubCharacter/WHr 1 U00.webp",
+    category: "blade",
+    type:["defense", "rare"],
+    price: "UX-DMM Lottery",
+    specs: {
+      "Type": "Defense",
+      "Spin": "Right",
+      "Weight": "~35 g",
+      "Stock Combo": "2-80 Gear Needle",
+      "Product Line": "UX",
+    },
+    bey: [
+      {
+        id: "Blade-Wy-002",
+        name: "DMM Lottery",
+        image: "/Blade/00SubCharacter/WHr 2 U00.webp"
+      },
+    ]
   },
 
   // ASSIST BLADES
@@ -5256,13 +5256,24 @@ export const products: Product[] = [
   },
   {
     id: "other-023",
-    name: "String Luncher Left (Red Ver.)",
+    name: "String Luncher L (Red Ver.)",
     image: "/Other/BX47/String L Red.webp",
     category: "other",
     type: "other",
     price: "BX-47",
     features: [
       "String Luncher Left (Red Ver.)",
+    ],
+  },
+  {
+    id: "other-024",
+    name: "String Luncher (Violet Ver.)",
+    image: "/Other/BX00/String Purple.webp",
+    category: "other",
+    type: "other",
+    price: "BX-00 (DMM Lottey)",
+    features: [
+      "String Luncher (Violet Ver.)",
     ],
   },
 
