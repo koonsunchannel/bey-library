@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import BackToTopButton from "@/components/BackToTopButton"
 
 export const metadata: Metadata = {
-  title: "Beyblade X Library - Parts Collection",
+  title: "Beyblade X Library - Parts Database",
   description: "Library for Beyblade X parts collection",
   icons: {
     icon: [
@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <footer className="border-t py-6 md:py-8">
             <div className="container flex flex-col items-center justify-between gap-4 md:h-14 md:flex-row">
               <p className="text-center text-sm text-muted-foreground md:text-left">
-                &copy; Beyblade X LIBRARY. PATCH DATE 08/2025.
+                &copy; Beyblade X LIBRARY. PATCH DATE 09/2025.
               </p>
               <p className="text-center text-sm text-muted-foreground md:text-right">
                 Beyblade X Japan. library fans edit.

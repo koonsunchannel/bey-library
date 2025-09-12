@@ -1,6 +1,6 @@
 // SEO configuration for bey-library (English)
 export const seo = {
-  title: "Beyblade X Library - The Ultimate Beyblade X Parts Catalog",
+  title: "Beyblade X Library - Parts Database",
   description: "Discover, compare, and learn about Beyblade X parts. Find blades, bits, and accessories with detailed information and images. Perfect for Beyblade X collectors and enthusiasts!",
   keywords: [
     "Beyblade X",
@@ -73,7 +73,7 @@ export const seo = {
     "Beyblade X accessories list"
   ],
   openGraph: {
-    title: "Beyblade X Library - The Ultimate Beyblade X Parts Catalog",
+    title: "Beyblade X Library - Parts Database",
     description: "Explore the most comprehensive Beyblade X parts database. Find everything you need to know about Beyblade X blades, bits, and more!",
     url: "https://bey-library.vercel.app/",
     type: "website",
@@ -88,7 +88,7 @@ export const seo = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Beyblade X Library - The Ultimate Beyblade X Parts Catalog",
+    title: "Beyblade X Library - Parts Database",
     description: "Discover, compare, and learn about Beyblade X parts. Perfect for Beyblade X collectors and enthusiasts!",
     image: "/favicon.png"
   }
