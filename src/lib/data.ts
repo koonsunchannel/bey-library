@@ -1505,7 +1505,7 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "Blade-BXGoat-001",
+    id: "Blade-GTk-001",
     name: "Goat Tackle",
     image: "/Blade/00SubCharacter/GTk 1 B46.webp",
     category: "blade",
@@ -1527,12 +1527,39 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "Blade-UXWyvern-001",
+    id: "Blade-CMr-001",
+    name: "Clock Mirage",
+    image: "/Blade/00Kurosu/CMr 1 U16.webp",
+    category: "blade",
+    type:"stamina",
+    price: "UX-16",
+    specs: {
+      "Type": "Stamina",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "9-65 Ball",
+      "Product Line": "UX",
+    },
+    bey: [
+      {
+        id: "Blade-Wy-002",
+        name: "UX-16",
+        image: "/Blade/00Ekusu/CMr 2 U16.webp"
+      },
+      {
+        id: "Blade-Wy-003",
+        name: "UX-16",
+        image: "/Blade/00Ekusu/CMr 3 U16.webp"
+      },
+    ]
+  },
+  {
+    id: "Blade-WHv-001",
     name: "Wyvern ???",
     image: "/Blade/00SubCharacter/UX Wyvern.webp",
     category: "blade",
     type:"defense",
-    price: "UX-16?",
+    price: "UX-17?",
     specs: {
       "Type": "Defense?",
       "Spin": "Right",
@@ -1741,7 +1768,7 @@ export const products: Product[] = [
   {
     id: "Blade-VVS-001",
     name: "Valkyrie Volt",
-    image: "/Blade/00Valkyrie/VBS 1 C00.webp",
+    image: "/Blade/00Kurosu/VVS 1 C00.webp",
     category: "blade",
     type:["attack", "rare"],
     price: "CX-Rare Bey Battle",
@@ -3177,6 +3204,31 @@ export const products: Product[] = [
     ]
   },
   {
+    id: "Rat-965-001",
+    name: "9-70",
+    image: "/Ratchet/9/9 65 1 U16.webp",
+    category: "ratchet",
+    type: "ratchet",
+    price: "UX-07",
+    features: [
+      "9 Contact Points",
+      "High : 7.00 mm",
+      "Weight: ~6 g",
+    ],
+    bey: [
+      {
+        id: "Rat-965-002",
+        name: "UX-16",
+        image: "/Ratchet/9/9 65 2 C06.webp"
+      },
+      {
+        id: "Rat-965-003",
+        name: "UX-16",
+        image: "/Ratchet/9/9 65 3 C06.webp"
+      },
+    ]
+  },
+  {
     id: "Rat-970-001",
     name: "9-70",
     image: "/Ratchet/9/9 70 1 U07.webp",
@@ -3479,6 +3531,21 @@ export const products: Product[] = [
         id: "Bit-B-010",
         name: "Collab",
         image: "/Bit/B/B 10 Col.webp"
+      },
+      {
+        id: "Bit-B-011",
+        name: "UX-16",
+        image: "/Bit/B/B 11 U16.webp"
+      },
+      {
+        id: "Bit-B-012",
+        name: "UX-16",
+        image: "/Bit/B/B 12 U16.webp"
+      },
+      {
+        id: "Bit-B-013",
+        name: "UX-16",
+        image: "/Bit/B/B 13 U16.webp"
       },
     ]
   },
@@ -5186,6 +5253,17 @@ export const products: Product[] = [
         image: "/Other/BX46/Infinity Stadium.webp"
       },
     ]
+  },
+  {
+    id: "other-023",
+    name: "String Luncher Left (Red Ver.)",
+    image: "/Other/BX47/String L Red.webp",
+    category: "other",
+    type: "other",
+    price: "BX-47",
+    features: [
+      "String Luncher Left (Red Ver.)",
+    ],
   },
 
   //X-OVER Bakuten Shoot Beyblade
