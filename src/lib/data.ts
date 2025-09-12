@@ -1544,12 +1544,12 @@ export const products: Product[] = [
       {
         id: "Blade-Wy-002",
         name: "UX-16",
-        image: "/Blade/00Ekusu/CMr 2 U16.webp"
+        image: "/Blade/00Kurosu/CMr 2 U16.webp"
       },
       {
         id: "Blade-Wy-003",
         name: "UX-16",
-        image: "/Blade/00Ekusu/CMr 3 U16.webp"
+        image: "/Blade/00Kurosu/CMr 3 U16.webp"
       },
     ]
   },
