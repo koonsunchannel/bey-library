@@ -2011,7 +2011,7 @@ export const products: Product[] = [
     price: "CX-09",
     specs: {
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~6 g",
       "High Level": "~10 MM",
       "Gimmick": "Mode Change (Upper/Smash)",
     },
