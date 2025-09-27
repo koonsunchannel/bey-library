@@ -1090,7 +1090,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Attack",
       "Spin": "Right",
-      "Weight": "~37 g",
+      "Weight": "~37 g (Stock Combo Blade)",
       "Stock Combo": "S 6-60 Vortex",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Slash",
@@ -1149,7 +1149,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Stamina",
       "Spin": "Right",
-      "Weight": "~35 g",
+      "Weight": "~35 g (Stock Combo Blade)",
       "Stock Combo": "R 4-55 Low Orb",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Round",
@@ -1173,7 +1173,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Defense",
       "Spin": "Right",
-      "Weight": "~37 g",
+      "Weight": "~37 g (Stock Combo Blade)",
       "Stock Combo": "B 6-80 Wedge",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Bumper",
@@ -1202,7 +1202,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Balance",
       "Spin": "Right",
-      "Weight": "~36 g",
+      "Weight": "~36 g (Stock Combo Blade)",
       "Stock Combo": "T 4-70 Kick",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Turn",
@@ -1236,7 +1236,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Defense",
       "Spin": "Right",
-      "Weight": "~35 g",
+      "Weight": "~35 g (Stock Combo Blade)",
       "Stock Combo": "C 4-55 Dot",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Charge",
@@ -1283,7 +1283,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Attack",
       "Spin": "Right",
-      "Weight": "~36 g",
+      "Weight": "~36 g (Stock Combo Blade)",
       "Stock Combo": "J 9-70 Gear Rush",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Jaggy",
@@ -1334,7 +1334,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Attack",
       "Spin": "Right",
-      "Weight": "~39 g",
+      "Weight": "~39 g (Stock Combo Blade)",
       "Stock Combo": "A Turbo",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Assault",
@@ -1358,7 +1358,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Stamina",
       "Spin": "Right",
-      "Weight": "~37 g",
+      "Weight": "~37 g (Stock Combo Blade)",
       "Stock Combo": "W 5-80 Wall Ball",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Wheel",
@@ -1387,7 +1387,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Balance",
       "Spin": "Right",
-      "Weight": "~37 g",
+      "Weight": "~37 g (Stock Combo Blade)",
       "Stock Combo": "M 3-85 High Taper",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Massive",
@@ -1477,12 +1477,12 @@ export const products: Product[] = [
     specs: {
       Type: "Balance",
       Spin: "Right",
-      Weight: "~ g",
+      Weight: "~39 g (Stock Combo Blade)",
       "Stock Combo": "D 5-70 Trans Kick",
       "Lock Chip Type": "Plastic",
       "Assist Blade": "Dual",
       "Product Line": "CX",
-      Gimmick: "Mode Change (Upper/Smash)",
+      Gimmick: "Mode Change (8 Modes custom)",
     },
     randomVariants: [
       {
@@ -4789,7 +4789,7 @@ export const products: Product[] = [
     price: "CX-09",
     specs: {
       "Type": "Balance",
-      "Weight": "~ g",
+      "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "High",
       "Gimmick": "Height Change?"
