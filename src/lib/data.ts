@@ -1470,7 +1470,7 @@ export const products: Product[] = [
   {
     id: "Blade-SED-001",
     name: "Sol Eclipse",
-    image: "/Blade/00SubCharacter/SED Upper 1 C09.webp",
+    image: "/Blade/00Kurosu/SED Upper 1 C09.webp",
     category: "blade",
     type: ["balance"],
     price: "CX-09",
@@ -1487,12 +1487,12 @@ export const products: Product[] = [
     randomVariants: [
       {
         name: "Sol Eclipse (Upper)",
-        image: "/Blade/00SubCharacter/SED Upper 1 C09.webp",
+        image: "/Blade/00Kurosu/SED Upper 1 C09.webp",
         type: ["balance"]
       },
       {
         name: "Sol Eclipse (Smash)",
-        image: "/Blade/00SubCharacter/SED Smash 1 C09.webp",
+        image: "/Blade/00Kurosu/SED Smash 1 C09.webp",
         type: ["balance"]
       }
     ],
