@@ -3219,12 +3219,12 @@ export const products: Product[] = [
       {
         id: "Rat-965-002",
         name: "UX-16",
-        image: "/Ratchet/9/9 65 2 C06.webp"
+        image: "/Ratchet/9/9 65 2 U16.webp"
       },
       {
         id: "Rat-965-003",
         name: "UX-16",
-        image: "/Ratchet/9/9 65 3 C06.webp"
+        image: "/Ratchet/9/9 65 3 U16.webp"
       },
     ]
   },
