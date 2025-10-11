@@ -2295,6 +2295,16 @@ export const products: Product[] = [
         name: "Rare Bey Battle",
         image: "/Ratchet/2/2 80 2 B00.webp"
       },
+      {
+        id: "Rat-280-003",
+        name: "DMM Lottery",
+        image: "/Ratchet/2/2 80 3 B00.webp"
+      },
+      {
+        id: "Rat-280-004",
+        name: "DMM Lottery",
+        image: "/Ratchet/2/2 80 4 B00.webp"
+      },
     ]
   },
   {
@@ -4003,6 +4013,16 @@ export const products: Product[] = [
         id: "Bit-GN-003",
         name: "BX-00",
         image: "/Bit/GN/GN 3 B00.webp"
+      },
+      {
+        id: "Bit-GN-004",
+        name: "DMM Lottery",
+        image: "/Bit/GN/GN 4 B00.webp"
+      },
+      {
+        id: "Bit-GN-005",
+        name: "DMM Lottery",
+        image: "/Bit/GN/GN 5 B00.webp"
       },
     ]
   },
