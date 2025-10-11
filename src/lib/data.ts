@@ -1536,7 +1536,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Stamina",
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~37 g",
       "Stock Combo": "9-65 Ball",
       "Product Line": "UX",
     },
