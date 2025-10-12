@@ -1539,6 +1539,7 @@ export const products: Product[] = [
       "Weight": "~37 g",
       "Stock Combo": "9-65 Ball",
       "Product Line": "UX",
+      "Gimmick": "Only use simple lock ratchet",
     },
     bey: [
       {
@@ -1566,7 +1567,7 @@ export const products: Product[] = [
       "Weight": "~ g (Stock Combo Blade)",
       "Stock Combo": "Free 0-60 Disc Ball",
       "Lock Chip Type": "Plastic",
-      "Assist Blade": "F (Free)?",
+      "Assist Blade": "F (Free)",
       "Product Line": "CX",
     },
     // bey: [
@@ -1578,26 +1579,26 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "Blade-EM-001",
+    id: "Blade-EMH-001",
     name: "Emperor Might",
-    image: "/Blade/00Persona/EM 1 C11.webp",
+    image: "/Blade/00Persona/EMH 1 C11.webp",
     category: "blade",
-    type:"",
+    type:"balance",
     price: "CX-11",
     specs: {
-      "Type": "???",
+      "Type": "Balance",
       "Spin": "Right",
-      "Weight": "~ g (Stock Combo Blade)",
-      "Stock Combo": "???",
+      "Weight": "~45 g (Stock Combo Blade)",
+      "Stock Combo": "Heavy Operate",
       "Lock Chip Type": "Light Metal",
-      "Assist Blade": "???",
+      "Assist Blade": "H (Heavy)",
       "Product Line": "CX",
     },
     // bey: [
     //   {
-    //     id: "Blade-Wy-002",
-    //     name: "UX-16",
-    //     image: "/Blade/00Kurosu/CMr 2 U16.webp"
+    //     id: "Blade-EMH-002",
+    //     name: "",
+    //     image: ""
     //   },
     // ]
   },
@@ -1618,6 +1619,52 @@ export const products: Product[] = [
     // bey: [
     //   {
     //     id: "Blade-SGl-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Blade-KWS-001",
+    name: "Kraken Wriggle",
+    image: "/Blade/00SubCharacter/KWS 1 C12.webp",
+    category: "blade",
+    type:"stamina",
+    price: "CX-12",
+    specs: {
+      "Type": "Stamina",
+      "Spin": "Right",
+      "Weight": "~ g (Stock Combo Blade)",
+      "Stock Combo": "Slash 3-85 Orb",
+      "Lock Chip Type": "Plastic",
+      "Assist Blade": "S (Slash)",
+      "Product Line": "CX",
+    }, 
+    // bey: [
+    //   {
+    //     id: "Blade-KWS-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Blade-???-001",
+    name: "???",
+    image: "/Blade/00Zooganic/U17.webp",
+    category: "blade",
+    type:"",
+    price: "UX-17",
+    specs: {
+      "Type": "???",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "",
+      "Product Line": "UX",
+    },
+    // bey: [
+    //   {
+    //     id: "Blade-???-002",
     //     name: "",
     //     image: ""
     //   },
@@ -1889,6 +1936,11 @@ export const products: Product[] = [
         name: "Rare Bey Battle",
         image: "/Assist Blade/S/S 4 C00.webp"
       },
+      {
+        id: "As-S-005",
+        name: "CX-12",
+        image: "/Assist Blade/S/S 5 C12.webp"
+      },
     ]
   },
   {
@@ -2095,7 +2147,7 @@ export const products: Product[] = [
   },
   {
     id: "As-F-001",
-    name: "F (Free)?",
+    name: "F (Free)",
     image: "/Assist Blade/F/F 1 C10.webp",
     category: "assist-blade",
     type: "assist",
@@ -2115,9 +2167,9 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "As-?-001",
-    name: "???",
-    image: "/Assist Blade/?/? 1 C11.webp",
+    id: "As-H-001",
+    name: "H (Heavy)",
+    image: "/Assist Blade/H/H 1 C11.webp",
     category: "assist-blade",
     type: "assist",
     price: "CX-11",
@@ -2125,11 +2177,10 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~ g",
       "High Level": "~ MM",
-      "Gimmick": "???",
     },
     // bey: [
     //   {
-    //     id: "As-?-002",
+    //     id: "As-H-002",
     //     name: "",
     //     image: ""
     //   },
@@ -2680,12 +2731,13 @@ export const products: Product[] = [
     name: "3-85",
     image: "/Ratchet/3/3 85 1 U10.webp",
     category: "ratchet",
-    type: "ratchet",
+    type: "ratchet, simple",
     price: "UX-10",
     features: [
       "3 Contact Points",
       "High : 8.5 mm",
       "Weight: ~4 g",
+      "Simple Lock Ratchet",
     ],
     bey: [
       {
@@ -2707,6 +2759,11 @@ export const products: Product[] = [
         id: "Rat-385-005",
         name: "Rare Bey Battle",
         image: "/Ratchet/3/3 85 5 U00.webp"
+      },
+      {
+        id: "Rat-385-006",
+        name: "CX-12",
+        image: "/Ratchet/3/3 85 6 C12.webp"
       },
     ]
   },
@@ -2735,12 +2792,13 @@ export const products: Product[] = [
     name: "4-55",
     image: "/Ratchet/4/4 55 1 C02.webp",
     category: "ratchet",
-    type: "ratchet",
+    type: "ratchet, simple",
     price: "CX-02",
     features: [
       "4 Contact Points",
       "High : 4.5 mm",
       "Weight: ~4 g",
+      "Simple Lock Ratchet",
     ],
     bey: [
       {
@@ -3350,12 +3408,13 @@ export const products: Product[] = [
     name: "9-65",
     image: "/Ratchet/9/9 65 1 U16.webp",
     category: "ratchet",
-    type: "ratchet",
+    type: "ratchet, simple",
     price: "UX-16",
     features: [
       "9 Contact Points",
       "High : 6.50 mm",
       "Weight: ~4 g",
+      "Simple Lock Ratchet",
     ],
     bey: [
       {
@@ -3430,12 +3489,14 @@ export const products: Product[] = [
     name: "M-85",
     image: "/Ratchet/M/M 85 1 B44.webp",
     category: "ratchet",
-    type: "ratchet",
+    type: "ratchet, simple",
     price: "BX-44",
     features: [
       "5 Contact Points",
       "High : 8.50 mm",
       "Weight: ~10 g",
+      "Metal Part",
+      "Simple Lock Ratchet",
     ],
     // bey: [
     //   {
@@ -3447,7 +3508,7 @@ export const products: Product[] = [
   },
   {
     id: "Hybrid-Rat-Tr-001",
-    name: "Tr",
+    name: "Tr (Turbo)",
     image: "/Hybird Part/Tr 1 C07.webp",
     category: "ratchet",
     type: "ratchet",
@@ -3467,21 +3528,21 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "Hybrid-Rat-???-001",
-    name: "???",
-    image: "/Hybird Part/??? 1 C11.webp",
+    id: "Hybrid-Rat-Op-001",
+    name: "Op (Operate)",
+    image: "/Hybird Part/Op 1 C11.webp",
     category: "ratchet",
     type: "ratchet",
     price: "CX-11",
     features: [
       "Hybrid Part (Ratchet + Bit)",
-      "4 Contact Points",
+      "2-4 Contact Points",
       "High :  mm",
       "Weight: ~ g",
     ],
     // bey: [
     //   {
-    //     id: "Hybrid-Rat-??-002",
+    //     id: "Hybrid-Rat-Op-002",
     //     name: "",
     //     image: ""
     //   },
@@ -3944,6 +4005,11 @@ export const products: Product[] = [
         id: "Bit-O-005",
         name: "CX-05",
         image: "/Bit/O/O 5 C05.webp"
+      },
+      {
+        id: "Bit-O-006",
+        name: "CX-12",
+        image: "/Bit/O/O 6 C12.webp"
       },
     ]
   },
@@ -4981,21 +5047,21 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "Hybrid-Bit-Tr-001",
-    name: "???",
-    image: "/Hybird Part/? 1 C11.webp",
+    id: "Hybrid-Bit-Op-001",
+    name: "Op (Operate)",
+    image: "/Hybird Part/Op 1 C11.webp",
     category: "bit",
-    type:"",
+    type:"balance",
     price: "CX-11",
     specs: {
-      "Type": "Attack, Hybrid Part",
+      "Type": "Balance, Hybrid Part",
       "Weight": "~ g",
-      "Gears": "",
+      "Gears": "18",
       "Burst Resistance": "Simple"
     },
     // bey: [
     //   {
-    //     id: "Hybrid-Bit-?-002",
+    //     id: "Hybrid-Bit-Op-002",
     //     name: "",
     //     image: ""
     //   },
@@ -5547,6 +5613,13 @@ export const products: Product[] = [
       "Product Line": "BX",
       "Original Generation": "Bakuten Shoot Beyblade",
     },
+    bey: [
+      {
+        id: "Blade-XDS-002",
+        name: "BX-00",
+        image: "/Blade/X-Collab/DST-1.webp"
+      },
+    ]
   },
 
   //X-OVER Metal Fight Beyblade
