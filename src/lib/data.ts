@@ -258,6 +258,12 @@ export const products: Product[] = [
         name: "BX-00",
         image: "/Blade/00Persona/SE 5 B00.webp"
       },
+      {
+        id: "Blade-SE-006",
+        name: "BX-00",
+        image: "/Blade/00Persona/SE 6 B00.webp"
+        //Magma Shark
+      },
     ]
   },
   {
@@ -2627,7 +2633,13 @@ export const products: Product[] = [
         //AP Red Ver.
         id: "Rat-370-008",
         name: "UX-??",
-        image: ""
+        image: "/Ratchet/3/3 70 8 U00.webp"
+      },
+      {
+        //Shark Magma
+        id: "Rat-370-009",
+        name: "BX-00",
+        image: "/Ratchet/3/3 70 9 B00.webp"
       },
     ]
   },
@@ -4139,6 +4151,12 @@ export const products: Product[] = [
         id: "Bit-GF-006",
         name: "UX-15",
         image: "/Bit/GF/GF 6 U15.webp"
+      },
+      {
+        //Shark Magma
+        id: "Bit-GF-007",
+        name: "BX-00",
+        image: "/Bit/GF/GF 7 B00.webp"
       },
     ]
   },
