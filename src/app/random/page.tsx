@@ -8,7 +8,8 @@ import type { Product } from "@/lib/types";
 type BeyVariant = {
   name: string;
   image: string;
-  type: string[];
+  // some variants in data use string and some use string[] for `type`
+  type: string | string[];
 };
 
 function getRandomItem<T>(arr: T[]): T | undefined {
@@ -17,7 +18,7 @@ function getRandomItem<T>(arr: T[]): T | undefined {
 }
 
 export default function RandomPage() {
-  const [result, setResult] = useState<any[]>([]);
+  const [result, setResult] = useState<Product[]>([]);
   const [lockedBladeId, setLockedBladeId] = useState<string>("");
 
   // Blade list for dropdown
@@ -52,11 +53,34 @@ export default function RandomPage() {
     blade = blade ? getRandomBladeWithVariant(blade) : undefined;
 
     // สุ่ม Rat- กับ Hybrid- รวมกัน แล้วเลือกมาแสดงแค่ 1 อย่าง
-    const ratOrHybridList = [...rats, ...hybrids];
+    let ratOrHybridList = [...rats, ...hybrids];
+
+    // Special case: Blade-CMr-001 (Clock Mirage) must only use simple lock ratchets
+    // Some ratchets have `type` like "ratchet, simple" or include "Simple" in features
+    const requiresSimpleRatchet = Boolean(blade && (
+      blade.id === "Blade-CMr-001" ||
+      (blade.specs && typeof blade.specs.Gimmick === "string" && /simple/i.test(blade.specs.Gimmick))
+    ));
+
+    if (requiresSimpleRatchet) {
+      ratOrHybridList = ratOrHybridList.filter((r: Product) => {
+        // Only keep Rat- entries (not Hybrid-) that include 'simple' in their `type` string
+        // or have a features array containing 'Simple' (case-insensitive)
+        if (!r || !r.id) return false;
+        if (!r.id.startsWith("Rat-")) return false;
+        const t = (r.type || "") as string;
+        if (/simple/i.test(t)) return true;
+        if (Array.isArray(r.features)) {
+          return r.features.some((f: string) => /simple/i.test(f));
+        }
+        return false;
+      });
+    }
+
     const ratOrHybrid = getRandomItem(ratOrHybridList);
 
-    let bit: any = null;
-    let randoms: any[] = [blade];
+  let bit: Product | undefined = undefined;
+  const randoms: Product[] = blade ? [blade] : [];
 
     // ถ้า blade ที่สุ่มได้มี price: CX- ให้สุ่ม As- มาแทรกต่อท้าย blade
     if (blade && typeof blade.price === "string" && blade.price.startsWith("CX-")) {
