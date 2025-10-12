@@ -1048,8 +1048,8 @@ export const products: Product[] = [
     // bey: [
     //   {
     //     id: "Blade-GR-002",
-    //     name: "",
-    //     image: ""
+    //     name: "CX-11",
+    //     image: "/Blade/00Pendragon-Goldius/GR 2 C11.webp"
     //   },
     // ]
   },
@@ -1091,9 +1091,9 @@ export const products: Product[] = [
       "Type": "Attack",
       "Spin": "Right",
       "Weight": "~37 g (Stock Combo Blade)",
-      "Stock Combo": "S 6-60 Vortex",
+      "Stock Combo": "Slash 6-60 Vortex",
       "Lock Chip Type": "Plastic",
-      "Assist Blade": "Slash",
+      "Assist Blade": "S (Slash)",
       "Product Line": "CX",
     },
     bey: [
@@ -1150,9 +1150,9 @@ export const products: Product[] = [
       "Type": "Stamina",
       "Spin": "Right",
       "Weight": "~35 g (Stock Combo Blade)",
-      "Stock Combo": "R 4-55 Low Orb",
+      "Stock Combo": "Round 4-55 Low Orb",
       "Lock Chip Type": "Plastic",
-      "Assist Blade": "Round",
+      "Assist Blade": "R (Round)",
       "Product Line": "CX",
     },
     bey: [
@@ -1174,9 +1174,9 @@ export const products: Product[] = [
       "Type": "Defense",
       "Spin": "Right",
       "Weight": "~37 g (Stock Combo Blade)",
-      "Stock Combo": "B 6-80 Wedge",
+      "Stock Combo": "Bumper 6-80 Wedge",
       "Lock Chip Type": "Plastic",
-      "Assist Blade": "Bumper",
+      "Assist Blade": "B (Bumper)",
       "Product Line": "CX",
     },
     bey: [
@@ -1203,9 +1203,9 @@ export const products: Product[] = [
       "Type": "Balance",
       "Spin": "Right",
       "Weight": "~36 g (Stock Combo Blade)",
-      "Stock Combo": "T 4-70 Kick",
+      "Stock Combo": "Turn 4-70 Kick",
       "Lock Chip Type": "Plastic",
-      "Assist Blade": "Turn",
+      "Assist Blade": "T (Turn)",
       "Product Line": "CX",
     },
     bey: [
@@ -1237,9 +1237,9 @@ export const products: Product[] = [
       "Type": "Defense",
       "Spin": "Right",
       "Weight": "~35 g (Stock Combo Blade)",
-      "Stock Combo": "C 4-55 Dot",
+      "Stock Combo": "Charge 4-55 Dot",
       "Lock Chip Type": "Plastic",
-      "Assist Blade": "Charge",
+      "Assist Blade": "C (Charge)",
       "Product Line": "CX",
     },
     // bey: [
@@ -1284,9 +1284,9 @@ export const products: Product[] = [
       "Type": "Attack",
       "Spin": "Right",
       "Weight": "~36 g (Stock Combo Blade)",
-      "Stock Combo": "J 9-70 Gear Rush",
+      "Stock Combo": "Jaggy 9-70 Gear Rush",
       "Lock Chip Type": "Plastic",
-      "Assist Blade": "Jaggy",
+      "Assist Blade": "J (Jaggy)",
       "Product Line": "CX",
     },
     bey: [
@@ -1335,9 +1335,9 @@ export const products: Product[] = [
       "Type": "Attack",
       "Spin": "Right",
       "Weight": "~39 g (Stock Combo Blade)",
-      "Stock Combo": "A Turbo",
+      "Stock Combo": "Assault Turbo",
       "Lock Chip Type": "Plastic",
-      "Assist Blade": "Assault",
+      "Assist Blade": "A (Assault)",
       "Product Line": "CX",
     },
     bey: [
@@ -1359,9 +1359,9 @@ export const products: Product[] = [
       "Type": "Stamina",
       "Spin": "Right",
       "Weight": "~37 g (Stock Combo Blade)",
-      "Stock Combo": "W 5-80 Wall Ball",
+      "Stock Combo": "Wheel 5-80 Wall Ball",
       "Lock Chip Type": "Plastic",
-      "Assist Blade": "Wheel",
+      "Assist Blade": "W (Wheel)",
       "Product Line": "CX",
     },
     bey: [
@@ -1388,9 +1388,9 @@ export const products: Product[] = [
       "Type": "Balance",
       "Spin": "Right",
       "Weight": "~37 g (Stock Combo Blade)",
-      "Stock Combo": "M 3-85 High Taper",
+      "Stock Combo": "Massive 3-85 High Taper",
       "Lock Chip Type": "Plastic",
-      "Assist Blade": "Massive",
+      "Assist Blade": "M (Massive)",
       "Product Line": "CX",
     },
     // bey: [
@@ -1478,9 +1478,9 @@ export const products: Product[] = [
       Type: "Balance",
       Spin: "Right",
       Weight: "~39 g (Stock Combo Blade)",
-      "Stock Combo": "D 5-70 Trans Kick",
+      "Stock Combo": "Dual 5-70 Trans Kick",
       "Lock Chip Type": "Plastic",
-      "Assist Blade": "Dual",
+      "Assist Blade": "D (Dual)",
       "Product Line": "CX",
       Gimmick: "Mode Change (8 Modes custom)",
     },
@@ -1552,6 +1552,76 @@ export const products: Product[] = [
         image: "/Blade/00Kurosu/CMr 3 U16.webp"
       },
     ]
+  },
+  {
+    id: "Blade-WHF-001",
+    name: "Wolf Hunt",
+    image: "/Blade/00SubCharacter/WHF 1 C10.webp",
+    category: "blade",
+    type:"stamina",
+    price: "CX-10",
+    specs: {
+      "Type": "Stamina",
+      "Spin": "Right",
+      "Weight": "~ g (Stock Combo Blade)",
+      "Stock Combo": "Free 0-60 Disc Ball",
+      "Lock Chip Type": "Plastic",
+      "Assist Blade": "F (Free)?",
+      "Product Line": "CX",
+    },
+    // bey: [
+    //   {
+    //     id: "Blade-Wy-002",
+    //     name: "UX-16",
+    //     image: "/Blade/00Kurosu/CMr 2 U16.webp"
+    //   },
+    // ]
+  },
+  {
+    id: "Blade-EM-001",
+    name: "Emperor Might",
+    image: "/Blade/00Persona/EM 1 C11.webp",
+    category: "blade",
+    type:"",
+    price: "CX-11",
+    specs: {
+      "Type": "???",
+      "Spin": "Right",
+      "Weight": "~ g (Stock Combo Blade)",
+      "Stock Combo": "???",
+      "Lock Chip Type": "Light Metal",
+      "Assist Blade": "???",
+      "Product Line": "CX",
+    },
+    // bey: [
+    //   {
+    //     id: "Blade-Wy-002",
+    //     name: "UX-16",
+    //     image: "/Blade/00Kurosu/CMr 2 U16.webp"
+    //   },
+    // ]
+  },
+  {
+    id: "Blade-SGl-001",
+    name: "Shark Gill",
+    image: "/Blade/00Persona/SGl 1 C11.webp",
+    category: "blade",
+    type:"",
+    price: "CX-11",
+    specs: {
+      "Type": "???",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "",
+      "Product Line": "BX",
+    },
+    // bey: [
+    //   {
+    //     id: "Blade-SGl-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
   },
 
   //RARE BLADE
@@ -2017,7 +2087,49 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "As-M-002",
+    //     id: "As-D-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "As-F-001",
+    name: "F (Free)?",
+    image: "/Assist Blade/F/F 1 C10.webp",
+    category: "assist-blade",
+    type: "assist",
+    price: "CX-10",
+    specs: {
+      "Spin": "Right",
+      "Weight": "~ g",
+      "High Level": "~ MM",
+      "Gimmick": "Free Spin ring",
+    },
+    // bey: [
+    //   {
+    //     id: "As-F-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "As-?-001",
+    name: "???",
+    image: "/Assist Blade/?/? 1 C11.webp",
+    category: "assist-blade",
+    type: "assist",
+    price: "CX-11",
+    specs: {
+      "Spin": "Right",
+      "Weight": "~ g",
+      "High Level": "~ MM",
+      "Gimmick": "???",
+    },
+    // bey: [
+    //   {
+    //     id: "As-?-002",
     //     name: "",
     //     image: ""
     //   },
@@ -2025,6 +2137,26 @@ export const products: Product[] = [
   },
 
   // RATCHETS
+  {
+    id: "Rat-060-001",
+    name: "0-60",
+    image: "/Ratchet/0/0 60 1 C10.webp",
+    category: "ratchet",
+    type: "ratchet",
+    price: "CX-10",
+    features: [
+      "0 Contact Points",
+      "High : 6.0 mm",
+      "Weight: ~7 g",
+    ],
+    // bey: [
+    //   {
+    //     id: "Rat-060-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
   {
     id: "Rat-070-001",
     name: "0-70",
@@ -2039,7 +2171,7 @@ export const products: Product[] = [
     ],
     // bey: [
     //   {
-    //     id: "Rat-080-002",
+    //     id: "Rat-070-002",
     //     name: "",
     //     image: ""
     //   },
@@ -3334,6 +3466,27 @@ export const products: Product[] = [
       },
     ]
   },
+  {
+    id: "Hybrid-Rat-???-001",
+    name: "???",
+    image: "/Hybird Part/??? 1 C11.webp",
+    category: "ratchet",
+    type: "ratchet",
+    price: "CX-11",
+    features: [
+      "Hybrid Part (Ratchet + Bit)",
+      "4 Contact Points",
+      "High :  mm",
+      "Weight: ~ g",
+    ],
+    // bey: [
+    //   {
+    //     id: "Hybrid-Rat-??-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
 
   // BITS
   {
@@ -4172,6 +4325,11 @@ export const products: Product[] = [
         name: "UX-00",
         image: "/Bit/DB/DB 6 U00.webp"
       },
+      {
+        id: "Bit-DB-007",
+        name: "CX-10",
+        image: "/Bit/DB/DB 7 C10.webp"
+      },
     ]
   },
   {
@@ -4817,6 +4975,27 @@ export const products: Product[] = [
     // bey: [
     //   {
     //     id: "Bit-TK-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Hybrid-Bit-Tr-001",
+    name: "???",
+    image: "/Hybird Part/? 1 C11.webp",
+    category: "bit",
+    type:"",
+    price: "CX-11",
+    specs: {
+      "Type": "Attack, Hybrid Part",
+      "Weight": "~ g",
+      "Gears": "",
+      "Burst Resistance": "Simple"
+    },
+    // bey: [
+    //   {
+    //     id: "Hybrid-Bit-?-002",
     //     name: "",
     //     image: ""
     //   },
