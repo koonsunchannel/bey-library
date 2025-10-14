@@ -1051,13 +1051,13 @@ export const products: Product[] = [
       "Stock Combo": "1-60 Under Neddle",
       "Product Line": "UX",
     },
-    // bey: [
-    //   {
-    //     id: "Blade-GR-002",
-    //     name: "CX-11",
-    //     image: "/Blade/00Pendragon-Goldius/GR 2 C11.webp"
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Blade-GR-002",
+        name: "CX-11",
+        image: "/Blade/00Pendragon-Goldius/GR 2 C11.webp"
+      },
+    ]
   },
   {
     id: "Blade-SDk-001",
@@ -1613,13 +1613,13 @@ export const products: Product[] = [
     name: "Shark Gill",
     image: "/Blade/00Persona/SGl 1 C11.webp",
     category: "blade",
-    type:"",
+    type:"stamina",
     price: "CX-11",
     specs: {
-      "Type": "???",
+      "Type": "Stamina",
       "Spin": "Right",
       "Weight": "~ g",
-      "Stock Combo": "",
+      "Stock Combo": "5-60 Free Ball",
       "Product Line": "BX",
     },
     // bey: [
@@ -1649,28 +1649,6 @@ export const products: Product[] = [
     // bey: [
     //   {
     //     id: "Blade-KWS-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
-  },
-  {
-    id: "Blade-???-001",
-    name: "???",
-    image: "/Blade/00Zooganic/U17.webp",
-    category: "blade",
-    type:"",
-    price: "UX-17",
-    specs: {
-      "Type": "???",
-      "Spin": "Right",
-      "Weight": "~ g",
-      "Stock Combo": "",
-      "Product Line": "UX",
-    },
-    // bey: [
-    //   {
-    //     id: "Blade-???-002",
     //     name: "",
     //     image: ""
     //   },
@@ -1911,6 +1889,28 @@ export const products: Product[] = [
         image: "/Blade/00SubCharacter/WHr 2 U00.webp"
       },
     ]
+  },
+  {
+    id: "Blade-OCt-001",
+    name: "Orochi Cluster",
+    image: "/Blade/00SubCharacter/OCt 1 U00.webp",
+    category: "blade",
+    type: ["attack", "rare"],
+    price: "UX-CoroCoro Comic",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "6-60 Low Flat",
+      "Product Line": "UX",
+    },
+    // bey: [
+    //   {
+    //     id: "Blade-OCt-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
   },
 
   // ASSIST BLADES
@@ -3113,6 +3113,11 @@ export const products: Product[] = [
         name: "BX-37",
         image: "/Ratchet/5/5 60 9 B37.webp"
       },
+      {
+        id: "Rat-560-010",
+        name: "CX-11",
+        image: "/Ratchet/5/5 60 10 C11.webp"
+      },
     ]
   },
   {
@@ -3246,6 +3251,11 @@ export const products: Product[] = [
       {
         id: "Rat-660-006",
         name: "GP Limited",
+        image: ""
+      },
+      {
+        id: "Rat-660-007",
+        name: "CoroCoro Comic",
         image: ""
       },
     ]
@@ -3510,13 +3520,13 @@ export const products: Product[] = [
       "Metal Part",
       "Simple Lock Ratchet",
     ],
-    // bey: [
-    //   {
-    //     id: "Rat-M85-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Rat-M85-002",
+        name: "CX-11",
+        image: "/Ratchet/M/M 85 2 C11.webp"
+      },
+    ]
   },
   {
     id: "Hybrid-Rat-Tr-001",
@@ -3880,6 +3890,11 @@ export const products: Product[] = [
         name: "BX-36",
         image: "/Bit/HN/HN 4 B36.webp"
       },
+      {
+        id: "Bit-HN-005",
+        name: "CX-11",
+        image: "/Bit/HN/HN 5 C11.webp"
+      },
     ]
   },
   {
@@ -3929,6 +3944,11 @@ export const products: Product[] = [
       {
         id: "Bit-LF-008",
         name: "UX-00",
+        image: "/Bit/LF/LF 8 U00.webp"
+      },
+      {
+        id: "Bit-LF-009",
+        name: "CoroCoro Comic",
         image: "/Bit/LF/LF 8 U00.webp"
       },
     ]
@@ -4631,13 +4651,13 @@ export const products: Product[] = [
       "Gears": "12",
       "Burst Resistance": "Low"
     },
-    // bey: [
-    //   {
-    //     id: "Bit-FB-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Bit-FB-002",
+        name: "CX-11",
+        image: "/Bit/FB/FB 2 C11.webp"
+      },
+    ]
   },
   {
     id: "Bit-BS-001",
