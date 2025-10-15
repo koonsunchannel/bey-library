@@ -82,8 +82,11 @@ export default function RandomPage() {
   let bit: Product | undefined = undefined;
   const randoms: Product[] = blade ? [blade] : [];
 
-    // ถ้า blade ที่สุ่มได้มี price: CX- ให้สุ่ม As- มาแทรกต่อท้าย blade
-    if (blade && typeof blade.price === "string" && blade.price.startsWith("CX-")) {
+    // ถ้า blade ที่สุ่มได้มี Product Line: Collaboration หรือ CX ให้สุ่ม As- มาแทรกต่อท้าย blade
+    if (blade && blade.specs && (
+      blade.specs['Product Line'] === 'Collaboration' || 
+      blade.specs['Product Line'] === 'CX'
+    )) {
       const asItem = getRandomItem(asList);
       if (asItem) {
         randoms.push(asItem);
