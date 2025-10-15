@@ -2161,7 +2161,7 @@ export const products: Product[] = [
     specs: {
       "Spin": "Right",
       "Weight": "~ g",
-      "High Level": "~ MM",
+      "High Level": "~10 MM",
       "Gimmick": "Free Spin ring",
     },
     // bey: [
@@ -2182,7 +2182,7 @@ export const products: Product[] = [
     specs: {
       "Spin": "Right",
       "Weight": "~ g",
-      "High Level": "~ MM",
+      "High Level": "~9 MM",
     },
     // bey: [
     //   {
@@ -2927,6 +2927,11 @@ export const products: Product[] = [
         id: "Rat-460-017",
         name: "Game Package",
         image: "/Ratchet/4/4 60 17 C00.webp"
+      },
+      {
+        id: "Rat-460-018",
+        name: "BX-00",
+        image: "/Ratchet/4/4 60 10 25th.webp"
       },
     ]
   },
@@ -3947,9 +3952,10 @@ export const products: Product[] = [
         image: "/Bit/LF/LF 8 U00.webp"
       },
       {
+        //orochi
         id: "Bit-LF-009",
         name: "CoroCoro Comic",
-        image: "/Bit/LF/LF 8 U00.webp"
+        image: "/Bit/LF/LF 9 U00.webp"
       },
     ]
   },
@@ -4713,7 +4719,12 @@ export const products: Product[] = [
         id: "Bit-RA-004",
         name: "25th Anniversary",
         image: "/Bit/RA/RA 4 25th.webp"
-      }
+      },
+      {
+        id: "Bit-RA-005",
+        name: "BX-00",
+        image: "/Bit/RA/RA 2 25th.webp"
+      },
     ]
   },
   {
@@ -5118,13 +5129,13 @@ export const products: Product[] = [
       "Type": "Attack/Balance/Stamina/Defense",
       "Gears": "12",
     },
-    // bey: [
-    //   {
-    //     id: "Rare-Bit-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Rare-Bit-002",
+        name: "BX-00",
+        image: "/Bit/Rare Bit 2 B00.webp"
+      },
+    ]
   },
 
   // OTHER
