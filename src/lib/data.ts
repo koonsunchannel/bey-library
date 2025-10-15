@@ -2183,6 +2183,7 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~ g",
       "High Level": "~9 MM",
+      "Gimmick": "Metal Weight",
     },
     // bey: [
     //   {
