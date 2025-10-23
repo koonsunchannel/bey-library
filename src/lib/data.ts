@@ -3546,6 +3546,7 @@ export const products: Product[] = [
       "2 Contact Points",
       "High : 9 -> 6.50 mm",
       "Weight: ~12 g",
+      "Gimmick: Boost up speed in mid-battle",
     ],
     bey: [
       {
@@ -3565,8 +3566,9 @@ export const products: Product[] = [
     features: [
       "Hybrid Part (Ratchet + Bit)",
       "2-4 Contact Points",
-      "High :  mm",
+      "High : 8/8.5 mm",
       "Weight: ~14 g",
+      "Gimmick: Change mode between attack and defense",
     ],
     // bey: [
     //   {
@@ -4996,7 +4998,8 @@ export const products: Product[] = [
       "Type": "Attack, Hybrid Part",
       "Weight": "~12 g",
       "Gears": "16",
-      "Burst Resistance": "Simple"
+      "Burst Resistance": "Simple",
+      "Gimmick": "Boost up speed in mid-battle",
     },
     bey: [
       {
@@ -5086,7 +5089,7 @@ export const products: Product[] = [
       "Weight": "~2 g",
       "Gears": "12",
       "Burst Resistance": "High",
-      "Gimmick": "Height Change?"
+      "Gimmick": "Height Change"
     },
     // bey: [
     //   {
@@ -5107,7 +5110,8 @@ export const products: Product[] = [
       "Type": "Balance, Hybrid Part",
       "Weight": "~14 g",
       "Gears": "14",
-      "Burst Resistance": "Simple"
+      "Burst Resistance": "Simple",
+      "Gimmick": "Change mode between attack and defense",
     },
     // bey: [
     //   {
