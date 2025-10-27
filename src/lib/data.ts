@@ -4011,6 +4011,11 @@ export const products: Product[] = [
         name: "Collab",
         image: "/Bit/P/P 8 Col.webp"
       },
+      {
+        id: "Bit-P-009",
+        name: "Campaign",
+        image: "/Bit/P/P 9 CP.webp"
+      },
     ]
   },
   {
