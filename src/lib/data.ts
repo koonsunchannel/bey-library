@@ -2284,6 +2284,11 @@ export const products: Product[] = [
         image: "/Ratchet/1/1 60 2 U04.webp"
       },
       {
+        id: "Rat-160-000",
+        name: "UX-00",
+        image: "/Ratchet/1/1 60 0 U00.webp"
+      },
+      {
         id: "Rat-160-003",
         name: "BX-31",
         image: "/Ratchet/1/1 60 3 B31.webp"
@@ -4317,6 +4322,11 @@ export const products: Product[] = [
         image: "/Bit/A/A 2 U04.webp"
       },
       {
+        id: "Bit-A-000",
+        name: "UX-00",
+        image: "/Bit/A/A 0 U00.webp"
+      },
+      {
         id: "Bit-A-003",
         name: "Rare Bey Battle",
         image: "/Bit/A/A 3 U00.webp"
@@ -4365,11 +4375,6 @@ export const products: Product[] = [
         id: "Bit-A-012",
         name: "Collab",
         image: "/Bit/A/A 12 Col.webp"
-      },
-      {
-        id: "Bit-A-013",
-        name: "UX-??",
-        image: ""
       },
     ]
   },
