@@ -387,6 +387,11 @@ export const products: Product[] = [
         name: "UX-00",
         image: "/Blade/00Persona/DD 4 U00.webp"
       },
+      {
+        id: "Blade-DD-005",
+        name: "UX-18",
+        image: "/Blade/00Persona/DD 5 U18.webp"
+      },
     ]
   },
   {
@@ -723,13 +728,13 @@ export const products: Product[] = [
       "Stock Combo": "3-60 Unite",
       "Product Line": "BX",
     },
-    // bey: [
-    //   {
-    //     id: "Blade-WT-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Blade-WT-002",
+        name: "UX-18",
+        image: "/Blade/00Pendragon-Goldius/WT 2 U18.webp"
+      },
+    ]
   },
   {
     id: "Blade-CDg-001",
@@ -1352,6 +1357,11 @@ export const products: Product[] = [
         name: "CoroCoro Event",
         image: "/Blade/00Zodiac - Fox/PBA 2 C00.webp"
       },
+      {
+        id: "Blade-PBA-003",
+        name: "UX-18",
+        image: "/Blade/00Zodiac - Fox/PBA 3 U18.webp"
+      },
     ]
   },
   {
@@ -1502,13 +1512,13 @@ export const products: Product[] = [
         type: ["balance"]
       }
     ],
-    // bey: [
-    //   {
-    //     id: "Blade-SED-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Blade-SED-002",
+        name: "UX-18",
+        image: "/Blade/00Kurosu/SED Smash 2 U18.webp"
+      },
+    ]
   },
   {
     id: "Blade-GTk-001",
@@ -1631,12 +1641,56 @@ export const products: Product[] = [
     // ]
   },
   {
+    id: "Blade-MDg-001",
+    name: "Meteor Dragoon",
+    image: "/Blade/00Pendragon-Goldius/MDg 1 U17.webp",
+    category: "blade",
+    type:"attack",
+    price: "UX-17",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Left",
+      "Weight": "~ g",
+      "Stock Combo": "3-70 Jolt",
+      "Product Line": "UX",
+    },
+    // bey: [
+    //   {
+    //     id: "Blade-MDg-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Blade-MCs-001",
+    name: "Mummy Curse",
+    image: "/Blade/00SubCharacter/MCs 1 U18.webp",
+    category: "blade",
+    type:"defense",
+    price: "UX-18",
+    specs: {
+      "Type": "Defense",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "7-55 Wedge",
+      "Product Line": "UX",
+    },
+    // bey: [
+    //   {
+    //     id: "Blade-MCs-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
     id: "Blade-KWS-001",
     name: "Kraken Wriggle",
     image: "/Blade/00SubCharacter/KWS 1 C12.webp",
     category: "blade",
     type:"stamina",
-    price: "CX-12",
+    price: "CX-???",
     specs: {
       "Type": "Stamina",
       "Spin": "Right",
@@ -2027,13 +2081,13 @@ export const products: Product[] = [
       "Weight": "~5 g",
       "High Level": "~10 MM",
     },
-    // bey: [
-    //   {
-    //     id: "As-C-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "As-C-002",
+        name: "UX-18",
+        image: "/Assist Blade/C/C 2 U18.webp"
+      },
+    ]
   },
   {
     id: "As-J-001",
@@ -2122,13 +2176,13 @@ export const products: Product[] = [
       "Weight": "~6 g",
       "High Level": "~10 MM",
     },
-    // bey: [
-    //   {
-    //     id: "As-M-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "As-M-002",
+        name: "UX-18",
+        image: "/Assist Blade/M/M 2 U18.webp"
+      },
+    ]
   },
   {
     id: "As-D-001",
@@ -2647,6 +2701,12 @@ export const products: Product[] = [
         name: "BX-00",
         image: "/Ratchet/3/3 70 9 B00.webp"
       },
+      {
+        //Shark Magma
+        id: "Rat-370-010",
+        name: "UX-17",
+        image: "/Ratchet/3/3 70 10 U17.webp"
+      },
     ]
   },
   {
@@ -2939,6 +2999,11 @@ export const products: Product[] = [
         name: "BX-00",
         image: "/Ratchet/4/4 60 10 25th.webp"
       },
+      {
+        id: "Rat-460-019",
+        name: "UX-18",
+        image: "/Ratchet/4/4 60 19 U18.webp"
+      },
     ]
   },
   {
@@ -3068,6 +3133,11 @@ export const products: Product[] = [
         id: "Rat-480-015",
         name: "UX-00",
         image: "/Ratchet/4/4 80 15 U00.webp"
+      },
+      {
+        id: "Rat-480-016",
+        name: "UX-18",
+        image: "/Ratchet/4/4 80 16 U18.webp"
       },
     ]
   },
@@ -3322,6 +3392,26 @@ export const products: Product[] = [
     ]
   },
   {
+    id: "Rat-755-001",
+    name: "7-55",
+    image: "/Ratchet/7/7 55 1 U18.webp",
+    category: "ratchet",
+    type: "ratchet",
+    price: "UX-18",
+    features: [
+      "7 Contact Points",
+      "High : 5.50 mm",
+      "Weight: ~4 g",
+    ],
+    bey: [
+      {
+        id: "Rat-755-002",
+        name: "UX-18",
+        image: "/Ratchet/7/7 55 2 U18.webp"
+      },
+    ]
+  },
+  {
     id: "Rat-760-001",
     name: "7-60",
     image: "/Ratchet/7/7 60 1 U06.webp",
@@ -3480,6 +3570,11 @@ export const products: Product[] = [
         name: "CX-06",
         image: "/Ratchet/9/9 70 2 C06.webp"
       },
+      {
+        id: "Rat-970-003",
+        name: "CX-06",
+        image: "/Ratchet/9/9 70 3 U18.webp"
+      },
     ]
   },
   {
@@ -3536,6 +3631,11 @@ export const products: Product[] = [
         id: "Rat-M85-002",
         name: "CX-11",
         image: "/Ratchet/M/M 85 2 C11.webp"
+      },
+      {
+        id: "Rat-M85-003",
+        name: "UX-18",
+        image: "/Ratchet/M/M 85 3 U18.webp"
       },
     ]
   },
@@ -4562,6 +4662,11 @@ export const products: Product[] = [
         name: "UX-12",
         image: "/Bit/C/C 3 U12.webp"
       },
+      {
+        id: "Bit-C-004",
+        name: "UX-18",
+        image: "/Bit/C/C 4 U18.webp"
+      },
     ]
   },
   {
@@ -4623,13 +4728,13 @@ export const products: Product[] = [
       "Gears": "16",
       "Burst Resistance": "Low"
     },
-    // bey: [
-    //   {
-    //     id: "Bit-G-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Bit-G-002",
+        name: "UX-18",
+        image: "/Bit/G/G 2 U18.webp"
+      },
+    ]
   },
   {
     id: "Bit-E-001",
@@ -4781,13 +4886,13 @@ export const products: Product[] = [
       "Burst Resistance": "High",
       "Gimmick": "Height Change"
     },
-    // bey: [
-    //   {
-    //     id: "Bit-TP-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Bit-TP-002",
+        name: "UX-18",
+        image: "/Bit/TP/TP 2 U18.webp"
+      },
+    ]
   },
   {
     id: "Bit-LR-001",
@@ -4802,13 +4907,13 @@ export const products: Product[] = [
       "Gears": "10",
       "Burst Resistance": "High"
     },
-    // bey: [
-    //   {
-    //     id: "Bit-LR-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Bit-LR-002",
+        name: "UX-18",
+        image: "/Bit/LR/LR 2 U18.webp"
+      },
+    ]
   },
   {
     id: "Bit-UN-001",
@@ -4921,6 +5026,16 @@ export const products: Product[] = [
         id: "Bit-W-003",
         name: "G3 Prize",
         image: "/Bit/W/W 3 G3P.webp"
+      },
+      {
+        id: "Bit-W-004",
+        name: "UX-18",
+        image: "/Bit/W/W 4 U18.webp"
+      },
+      {
+        id: "Bit-W-005",
+        name: "UX-18",
+        image: "/Bit/W/W 5 U18.webp"
       },
     ]
   },
@@ -5122,6 +5237,27 @@ export const products: Product[] = [
       "Gears": "14",
       "Burst Resistance": "Simple",
       "Gimmick": "Change mode between attack and defense",
+    },
+    // bey: [
+    //   {
+    //     id: "Hybrid-Bit-Op-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Bit-J-001",
+    name: "J (Jolt)",
+    image: "/Bit/J/J 1 U18.webp",
+    category: "bit",
+    type:"attack",
+    price: "UX-18",
+    specs: {
+      "Type": "Attack",
+      "Weight": "~2 g",
+      "Gears": "16",
+      "Burst Resistance": "High",
     },
     // bey: [
     //   {
