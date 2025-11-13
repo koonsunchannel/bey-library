@@ -1830,7 +1830,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Attack",
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~37 g",
       "Stock Combo": "4-60 Accel",
       "Lock Chip Type": "Plastic (~1.7 g)",
       "Assist Blade": "Turn",
