@@ -1516,7 +1516,7 @@ export const products: Product[] = [
       {
         id: "Blade-SED-002",
         name: "UX-18",
-        image: "/Blade/00Kurosu/SED Smash 2 U18.webp"
+        image: "/Blade/00Kurosu/SED 2 U18.webp"
       },
     ]
   },
@@ -1676,13 +1676,13 @@ export const products: Product[] = [
       "Stock Combo": "7-55 Wedge",
       "Product Line": "UX",
     },
-    // bey: [
-    //   {
-    //     id: "Blade-MCs-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Blade-MCs-002",
+        name: "",
+        image: "/Blade/00SubCharacter/MCs 2 U18.webp"
+      },
+    ]
   },
   {
     id: "Blade-KWS-001",
@@ -1947,7 +1947,7 @@ export const products: Product[] = [
   {
     id: "Blade-OCt-001",
     name: "Orochi Cluster",
-    image: "/Blade/00SubCharacter/OCt 1 U00.webp",
+    image: "/Blade/00Persona/OCt 1 U00.webp",
     category: "blade",
     type: ["attack", "rare"],
     price: "UX-CoroCoro Comic",
@@ -2497,6 +2497,12 @@ export const products: Product[] = [
         name: "CX-06",
         image: "/Ratchet/2/2 60 7 C06.webp"
       },
+      {
+        //Shark Magma
+        id: "Rat-260-008",
+        name: "BX-00",
+        image: "/Ratchet/3/2 60 8 B00.webp"
+      },
     ]
   },
   {
@@ -2696,16 +2702,9 @@ export const products: Product[] = [
         image: "/Ratchet/3/3 70 8 U00.webp"
       },
       {
-        //Shark Magma
         id: "Rat-370-009",
-        name: "BX-00",
-        image: "/Ratchet/3/3 70 9 B00.webp"
-      },
-      {
-        //Shark Magma
-        id: "Rat-370-010",
         name: "UX-17",
-        image: "/Ratchet/3/3 70 10 U17.webp"
+        image: "/Ratchet/3/3 70 9 U17.webp"
       },
     ]
   },
@@ -2842,6 +2841,11 @@ export const products: Product[] = [
         id: "Rat-385-006",
         name: "CX-12",
         image: "/Ratchet/3/3 85 6 C12.webp"
+      },
+      {
+        id: "Rat-385-007",
+        name: "UX-18",
+        image: "/Ratchet/3/3 85 7 U18.webp"
       },
     ]
   },
@@ -3632,11 +3636,6 @@ export const products: Product[] = [
         name: "CX-11",
         image: "/Ratchet/M/M 85 2 C11.webp"
       },
-      {
-        id: "Rat-M85-003",
-        name: "UX-18",
-        image: "/Ratchet/M/M 85 3 U18.webp"
-      },
     ]
   },
   {
@@ -4291,12 +4290,6 @@ export const products: Product[] = [
         name: "UX-15",
         image: "/Bit/GF/GF 6 U15.webp"
       },
-      {
-        //Shark Magma
-        id: "Bit-GF-007",
-        name: "BX-00",
-        image: "/Bit/GF/GF 7 B00.webp"
-      },
     ]
   },
   {
@@ -4363,6 +4356,12 @@ export const products: Product[] = [
         id: "Bit-GP-004",
         name: "BX-39",
         image: "/Bit/GP/GP 4 B39.webp"
+      },
+      {
+        //Shark Magma
+        id: "Bit-GF-005",
+        name: "BX-00",
+        image: "/Bit/GF/GP 5 B00.webp"
       },
     ]
   },
@@ -5249,7 +5248,7 @@ export const products: Product[] = [
   {
     id: "Bit-J-001",
     name: "J (Jolt)",
-    image: "/Bit/J/J 1 U18.webp",
+    image: "/Bit/J/J 1 U17.webp",
     category: "bit",
     type:"attack",
     price: "UX-18",

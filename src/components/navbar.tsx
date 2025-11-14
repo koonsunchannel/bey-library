@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from 'lucide-react'
+import SearchBar from './SearchBar'
 
 const categories = [
   { name: "Blade", path: "/category/blade", color: "cyber-glow-red" },
@@ -32,20 +33,23 @@ export default function NavBar() {
           </Link>
         </div>
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center space-x-6">
-          {categories.map((category) => (
-            <Link
-              key={category.path}
-              href={category.path}
-              className={`text-sm font-medium transition-colors hover:text-white
-                ${pathname === category.path ? category.color : "text-muted-foreground"}
-                uppercase tracking-wide`}
-            >
-              {category.name}
-            </Link>
-          ))}
-        </nav>
+        <div className="hidden md:flex items-center gap-6">
+          <SearchBar />
+          {/* Desktop Nav */}
+          <nav className="flex items-center space-x-6">
+            {categories.map((category) => (
+              <Link
+                key={category.path}
+                href={category.path}
+                className={`text-sm font-medium transition-colors hover:text-white
+                  ${pathname === category.path ? category.color : "text-muted-foreground"}
+                  uppercase tracking-wide`}
+              >
+                {category.name}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
         {/* Mobile Nav */}
         <Sheet>
@@ -58,6 +62,9 @@ export default function NavBar() {
             </button>
           </SheetTrigger>
           <SheetContent side="right" className="w-[200px] p-0">
+            <div className="p-3">
+              <SearchBar />
+            </div>
             <nav className="grid gap-2 p-4">
               {categories.map((category) => (
                 <Link
