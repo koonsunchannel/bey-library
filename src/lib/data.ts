@@ -3400,12 +3400,13 @@ export const products: Product[] = [
     name: "7-55",
     image: "/Ratchet/7/7 55 1 U18.webp",
     category: "ratchet",
-    type: "ratchet",
+    type: "ratchet, simple",
     price: "UX-18",
     features: [
       "7 Contact Points",
       "High : 5.50 mm",
       "Weight: ~4 g",
+      "Simple Lock Ratchet",
     ],
     bey: [
       {
