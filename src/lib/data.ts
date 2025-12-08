@@ -4162,6 +4162,11 @@ export const products: Product[] = [
         name: "CX-12",
         image: "/Bit/O/O 6 C12.webp"
       },
+      {
+        id: "Bit-O-007",
+        name: "Campaign",
+        image: "/Bit/O/O 7 CP.webp"
+      },
     ]
   },
   {
@@ -4713,6 +4718,11 @@ export const products: Product[] = [
         name: "CX-05",
         image: "/Bit/D/D 7 B00.webp"
       },
+      {
+        id: "Bit-D-008",
+        name: "Campaign",
+        image: "/Bit/D/D 8 CP.webp"
+      },
     ]
   },
   {
@@ -4979,6 +4989,11 @@ export const products: Product[] = [
         id: "Bit-V-007",
         name: "GP Limited",
         image: ""
+      },
+      {
+        id: "Bit-V-008",
+        name: "Campaign",
+        image: "/Bit/V/V 8 CP.webp"
       },
     ]
   },
