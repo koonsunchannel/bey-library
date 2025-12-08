@@ -13,12 +13,8 @@ export function generateStaticParams() {
   }))
 }
 
-export default function ProductPage({
-  params
-}: {
-  params: { category: string; id: string }
-}) {
-  const { category, id } = params
+export default async function ProductPage({ params }: { params: { category: string; id: string } | Promise<{ category: string; id: string }> }) {
+  const { category, id } = await params
   const isValidCategory = ['blade', 'assist-blade', 'ratchet', 'bit', 'other', 'x-over', 'credits'].includes(category)
 
   // Get the product data

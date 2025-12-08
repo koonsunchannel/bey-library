@@ -4723,6 +4723,11 @@ export const products: Product[] = [
         name: "Campaign",
         image: "/Bit/D/D 8 CP.webp"
       },
+      {
+        id: "Bit-D-008",
+        name: "Campaign",
+        image: "/Bit/D/D 8 CP.webp"
+      },
     ]
   },
   {

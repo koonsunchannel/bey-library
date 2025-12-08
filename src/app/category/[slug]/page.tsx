@@ -14,8 +14,8 @@ export function generateStaticParams() {
   ]
 }
 
-export default function CategoryPage({ params }: { params: { slug: string } }) {
-  const { slug } = params
+export default async function CategoryPage({ params }: { params: { slug: string } | Promise<{ slug: string }> }) {
+  const { slug } = await params
 
   const isValidCategory = ['blade', 'assist-blade', 'ratchet', 'bit', 'other', 'x-over', 'credits'].includes(slug)
   if (!isValidCategory) {
