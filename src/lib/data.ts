@@ -2839,13 +2839,13 @@ export const products: Product[] = [
       },
       {
         id: "Rat-385-006",
-        name: "CX-12",
-        image: "/Ratchet/3/3 85 6 C12.webp"
-      },
-      {
-        id: "Rat-385-007",
         name: "UX-18",
         image: "/Ratchet/3/3 85 7 U18.webp"
+      },
+      {
+        id: "Rat-385-00z",
+        name: "CX-??",
+        image: ""
       },
     ]
   },
@@ -4159,13 +4159,13 @@ export const products: Product[] = [
       },
       {
         id: "Bit-O-006",
-        name: "CX-12",
-        image: "/Bit/O/O 6 C12.webp"
+        name: "Campaign",
+        image: "/Bit/O/O 6 CP.webp"
       },
       {
-        id: "Bit-O-007",
-        name: "Campaign",
-        image: "/Bit/O/O 7 CP.webp"
+        id: "Bit-O-00z",
+        name: "CX-??",
+        image: ""
       },
     ]
   },
