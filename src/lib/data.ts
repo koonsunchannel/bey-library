@@ -2840,7 +2840,7 @@ export const products: Product[] = [
       {
         id: "Rat-385-006",
         name: "UX-18",
-        image: "/Ratchet/3/3 85 7 U18.webp"
+        image: "/Ratchet/3/3 85 6 U18.webp"
       },
       {
         id: "Rat-385-00z",
@@ -3006,7 +3006,7 @@ export const products: Product[] = [
       {
         id: "Rat-460-019",
         name: "UX-18",
-        image: "/Ratchet/4/4 60 19 U18.webp"
+        image: "/Ratchet/4/4 60 18 U18.webp"
       },
     ]
   },
