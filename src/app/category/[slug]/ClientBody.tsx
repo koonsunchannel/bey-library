@@ -13,7 +13,7 @@ export default function ClientBody({
   products: Product[]
   slug: string
 }) {
-  const [selectedType, setSelectedType] = useState<string>('All')
+  const [selectedTypes, setSelectedTypes] = useState<string[]>([])
   const [randomizedProducts, setRandomizedProducts] = useState<Product[]>(products)
 
   useEffect(() => {
@@ -30,23 +30,50 @@ export default function ClientBody({
   }, [products])
 
   let filteredProducts = randomizedProducts;
-  if (selectedType !== 'All' && ['blade', 'bit', 'x-over'].includes(slug)) {
-    if (slug === 'blade' && ['BX', 'UX', 'CX'].includes(selectedType)) {
-      filteredProducts = randomizedProducts.filter(product => product.specs && product.specs['Product Line'] === selectedType);
-    } else {
-      filteredProducts = randomizedProducts.filter((product) =>
-        Array.isArray(product.type)
-          ? product.type.includes(selectedType)
-          : product.type === selectedType
-      );
-    }
+  
+  // ถ้ามีการเลือก ให้กรองข้อมูล
+  if (selectedTypes.length > 0 && ['blade', 'assist-blade', 'bit', 'x-over'].includes(slug)) {
+    // แยกการเลือกตามหมวดหมู่
+    const selectedProductLines = selectedTypes.filter(t => ['BX', 'UX', 'CX'].includes(t));
+    const selectedSpins = selectedTypes.filter(t => ['Right', 'Left'].includes(t));
+    const selectedTypeCategories = selectedTypes.filter(t => ['attack', 'balance', 'stamina', 'defense', 'rare'].includes(t));
+
+    filteredProducts = randomizedProducts.filter((product) => {
+      // ตรวจสอบ Product Line (ถ้ามีการเลือก)
+      if (selectedProductLines.length > 0) {
+        const matchesProductLine = selectedProductLines.includes(product.specs?.['Product Line'] as string);
+        if (!matchesProductLine) return false;
+      }
+
+      // ตรวจสอบ Type (ถ้ามีการเลือก)
+      if (selectedTypeCategories.length > 0) {
+        // สำหรับ assist-blade ให้ดูจาก specs.Type แทน
+        if (slug === 'assist-blade') {
+          const specsType = product.specs?.['Type'];
+          const matchesType = specsType && selectedTypeCategories.some(t => specsType.toLowerCase().includes(t));
+          if (!matchesType) return false;
+        } else {
+          const productTypes = Array.isArray(product.type) ? product.type : [product.type];
+          const matchesType = selectedTypeCategories.some(t => productTypes.includes(t));
+          if (!matchesType) return false;
+        }
+      }
+
+      // ตรวจสอบ Spin (ถ้ามีการเลือก) - สำหรับ blade และ assist-blade
+      if ((slug === 'blade' || slug === 'assist-blade') && selectedSpins.length > 0) {
+        const matchesSpin = selectedSpins.includes(product.specs?.['Spin'] as string);
+        if (!matchesSpin) return false;
+      }
+
+      return true;
+    });
   }
 
   return (
     <>
-      {['blade', 'bit', 'x-over'].includes(slug) && (
+      {['blade', 'assist-blade', 'bit', 'x-over'].includes(slug) && (
         <div className="mb-8">
-          <Filter onChange={setSelectedType} slug={slug} />
+          <Filter onChange={setSelectedTypes} slug={slug} />
         </div>
       )}
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

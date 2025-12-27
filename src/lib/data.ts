@@ -1628,7 +1628,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Stamina",
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~35 g",
       "Stock Combo": "5-60 Free Ball",
       "Product Line": "BX",
     },
@@ -1650,7 +1650,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Attack",
       "Spin": "Left",
-      "Weight": "~ g",
+      "Weight": "~39 g",
       "Stock Combo": "3-70 Jolt",
       "Product Line": "UX",
     },
@@ -1672,7 +1672,7 @@ export const products: Product[] = [
     specs: {
       "Type": "Defense",
       "Spin": "Right",
-      "Weight": "~ g",
+      "Weight": "~37 g",
       "Stock Combo": "7-55 Wedge",
       "Product Line": "UX",
     },
@@ -1976,6 +1976,7 @@ export const products: Product[] = [
     type: "assist",
     price: "CX-01",
     specs: {
+      "Type": "Attack",
       "Spin": "Right",
       "Weight": "~4 g",
       "High Level": "~9 MM",
@@ -2011,6 +2012,7 @@ export const products: Product[] = [
     type: "assist",
     price: "CX-02",
     specs: {
+      "Type": "Stamina",
       "Spin": "Right",
       "Weight": "~4 g",
       "High Level": "~10 MM",
@@ -2031,6 +2033,7 @@ export const products: Product[] = [
     type: "assist",
     price: "CX-03",
     specs: {
+      "Type": "Defense",
       "Spin": "Right",
       "Weight": "~5 g",
       "High Level": "~10 MM",
@@ -2051,6 +2054,7 @@ export const products: Product[] = [
     type: "assist",
     price: "CX-05",
     specs: {
+      "Type": "Balance",
       "Spin": "Right",
       "Weight": "~6 g",
       "High Level": "~10 MM",
@@ -2077,6 +2081,7 @@ export const products: Product[] = [
     type: "assist",
     price: "CX-05",
     specs: {
+      "Type": "Defense",
       "Spin": "Right",
       "Weight": "~5 g",
       "High Level": "~10 MM",
@@ -2097,6 +2102,7 @@ export const products: Product[] = [
     type: "assist",
     price: "CX-06",
     specs: {
+      "Type": "Attack",
       "Spin": "Right",
       "Weight": "~5 g",
       "High Level": "~9 MM",
@@ -2132,6 +2138,7 @@ export const products: Product[] = [
     type: "assist",
     price: "CX-07",
     specs: {
+      "Type": "Attack",
       "Spin": "Right",
       "Weight": "~5 g",
       "High Level": "~10 MM",
@@ -2152,6 +2159,7 @@ export const products: Product[] = [
     type: "assist",
     price: "CX-08",
     specs: {
+      "Type": "Stamina",
       "Spin": "Right",
       "Weight": "~7 g",
       "High Level": "~10 MM",
@@ -2172,6 +2180,7 @@ export const products: Product[] = [
     type: "assist",
     price: "CX-08",
     specs: {
+      "Type": "Balance",
       "Spin": "Right",
       "Weight": "~6 g",
       "High Level": "~10 MM",
@@ -2192,6 +2201,7 @@ export const products: Product[] = [
     type: "assist",
     price: "CX-09",
     specs: {
+      "Type": "Balance",
       "Spin": "Right",
       "Weight": "~6 g",
       "High Level": "~10 MM",
@@ -2213,6 +2223,7 @@ export const products: Product[] = [
     type: "assist",
     price: "CX-10",
     specs: {
+      "Type": "Stamina",
       "Spin": "Right",
       "Weight": "~5 g",
       "High Level": "~10 MM",
@@ -2234,6 +2245,7 @@ export const products: Product[] = [
     type: "assist",
     price: "CX-11",
     specs: {
+      "Type": "Balance",
       "Spin": "Right",
       "Weight": "~7 g",
       "High Level": "~9 MM",
