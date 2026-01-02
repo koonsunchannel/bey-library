@@ -25,7 +25,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-DS-003",
-        name: "BX-14",
+        name: "BX-14 (03)",
         image: "/Blade/00Persona/DS 3 B14.webp"
       },
       {
@@ -97,7 +97,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-HS-003",
-        name: "BX-14",
+        name: "BX-14 (04)",
         image: "/Blade/00Persona/HS 4 B14.webp"
       },
       {
@@ -134,7 +134,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-WA-004",
-        name: "BX-14",
+        name: "BX-14 (06)",
         image: "/Blade/00Persona/WA 4 B14.webp"
       },
       {
@@ -149,7 +149,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-WA-007",
-        name: "BX-24",
+        name: "BX-24 (06)",
         image: "/Blade/00Persona/WA 7 B24.webp"
       },
     ]
@@ -181,7 +181,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-KS-004",
-        name: "BX-14",
+        name: "BX-14 (05)",
         image: "/Blade/00Persona/KS 4 B14.webp"
       },
       {
@@ -218,7 +218,7 @@ export const products: Product[] = [
       },
       {
         id: "KL-003",
-        name: "BX-24",
+        name: "BX-24 (02)",
         image: "/Blade/00Persona/KL 3 B24.webp"
       },
     ]
@@ -240,7 +240,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-SE-002",
-        name: "BX-14",
+        name: "BX-14 (02)",
         image: "/Blade/00Persona/SE 2 B14.webp"
       },
       {
@@ -250,7 +250,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-SE-004",
-        name: "BX-31",
+        name: "BX-31 (05)",
         image: "/Blade/00Persona/SE 4 B31.webp"
       },
       {
@@ -288,12 +288,12 @@ export const products: Product[] = [
       },
       {
         id: "Blade-LC-003",
-        name: "BX-24",
+        name: "BX-24 (05)",
         image: "/Blade/00Zooganic/LC 2 B24.webp"
       },
       {
         id: "Blade-LC-004",
-        name: "UX-12",
+        name: "UX-12 (04)",
         image: "/Blade/00Zooganic/LC 3 U12.webp"
       },
     ]
@@ -315,22 +315,22 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-VT-002",
-        name: "BX-16",
+        name: "BX-16 (02)",
         image: "/Blade/00Zooganic/VT 2 B16.webp"
       },
       {
         id: "Blade-VT-003",
-        name: "BX-16",
+        name: "BX-16 (03)",
         image: "/Blade/00Zooganic/VT 3 B16.webp"
       },
       {
         id: "Blade-VT-004",
-        name: "BX-24",
+        name: "BX-24 (04)",
         image: "/Blade/00Zooganic/VT 4 B24.webp"
       },
       {
         id: "Blade-VT-005",
-        name: "BX-35",
+        name: "BX-35 (06)",
         image: "/Blade/00Zooganic/VT 5 B35.webp"
       },
     ]
@@ -352,7 +352,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-RH-001",
-        name: "BX-31",
+        name: "BX-31 (06)",
         image: "/Blade/00Zooganic/RH 2 B31.webp"
       },
     ]
@@ -374,7 +374,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-DD-002",
-        name: "BX-31",
+        name: "BX-31 (04)",
         image: "/Blade/00Persona/DD 2 B31.webp"
       },
       {
@@ -389,7 +389,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-DD-005",
-        name: "UX-18",
+        name: "UX-18 (05)",
         image: "/Blade/00Persona/DD 5 U18.webp"
       },
     ]
@@ -411,7 +411,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-HC-002",
-        name: "BX-31",
+        name: "BX-31 (03)",
         image: "/Blade/00Persona/HC 2 B31.webp"
       },
       {
@@ -438,7 +438,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-PW-002",
-        name: "BX-35",
+        name: "BX-35 (05)",
         image: "/Blade/00Yggdrasil/PW 2 B35.webp"
       },
       {
@@ -470,7 +470,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-WG-002",
-        name: "BX-24",
+        name: "BX-24 (02)",
         image: "/Blade/00SubCharacter/WG 2 B24.webp"
       },
       {
@@ -480,7 +480,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-WG-004",
-        name: "UX-12",
+        name: "UX-12 (05)",
         image: "/Blade/00SubCharacter/WG 4 U12.webp"
       },
     ]
@@ -502,7 +502,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-US-002",
-        name: "BX-35",
+        name: "BX-35 (03)",
         image: "/Blade/00Yggdrasil/US 2 B35.webp"
       },
     ]
@@ -524,12 +524,12 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-SC-002",
-        name: "BX-27",
+        name: "BX-27 (02)",
         image: "/Blade/00Yggdrasil/SC 2 B27.webp"
       },
       {
         id: "Blade-SC-003",
-        name: "BX-27",
+        name: "BX-27 (03)",
         image: "/Blade/00Yggdrasil/SC 3 B27.webp"
       },
       {
@@ -591,7 +591,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-DB-009",
-        name: "CX-08",
+        name: "CX-08 (04)",
         image: "/Blade/00Persona/DB 9 C08.webp"
       },
     ]
@@ -645,7 +645,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-WR-003",
-        name: "BX-35",
+        name: "BX-35 (04)",
         image: "/Blade/00Persona/WR 3 B35.webp"
       },
       {
@@ -672,7 +672,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-TB-002",
-        name: "BX-31",
+        name: "BX-31 (02)",
         image: "/Blade/00SubCharacter/TB 2 B31.webp"
       },
       {
@@ -699,17 +699,17 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-SSw-002",
-        name: "UX-05",
+        name: "UX-05 (02)",
         image: "/Blade/00SubCharacter/SSw 2 U005.webp"
       },
       {
         id: "Blade-SSw-003",
-        name: "UX-05",
+        name: "UX-05 (03)",
         image: "/Blade/00SubCharacter/SSw 3 U05.webp"
       },
       {
         id: "Blade-SSw-004",
-        name: "UX-12",
+        name: "UX-12 (03)",
         image: "/Blade/00SubCharacter/SSw 4 U12.webp"
       },
     ]
@@ -731,7 +731,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-WT-002",
-        name: "UX-18",
+        name: "UX-18 (06)",
         image: "/Blade/00Pendragon-Goldius/WT 2 U18.webp"
       },
     ]
@@ -758,7 +758,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-CDg-003",
-        name: "CX-08",
+        name: "CX-08 (06)",
         image: "/Blade/00Pendragon-Goldius/CDg 3 C08.webp"
       },
     ]
@@ -780,12 +780,12 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-BSl-002",
-        name: "BX-35",
+        name: "BX-35 (02)",
         image: "/Blade/00Pendragon-Goldius/BSl 2 B35.webp"
       },
       {
         id: "Blade-BSl-003",
-        name: "CX-08",
+        name: "CX-08 (05)",
         image: "/Blade/00Pendragon-Goldius/BSl 3 C08.webp"
       },
     ]
@@ -807,7 +807,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "LCT-002",
-        name: "CX-05",
+        name: "CX-05 (04)",
         image: "/Blade/00Zooganic/LCT 2 C05.webp"
       },
     ]
@@ -829,7 +829,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "PR-002",
-        name: "CX-05",
+        name: "CX-05 (05)",
         image: "/Blade/00Yggdrasil/PR 2 C05.webp"
       },
     ]
@@ -851,17 +851,17 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-WW-002",
-        name: "BX-36",
+        name: "BX-36 (02)",
         image: "/Blade/00Persona/WW 2 B36.webp"
       },
       {
         id: "Blade-WW-003",
-        name: "BX-36",
+        name: "BX-36 (03)",
         image: "/Blade/00Persona/WW 3 B36.webp"
       },
       {
         id: "Blade-WW-004",
-        name: "CX-05",
+        name: "CX-05 (06)",
         image: "/Blade/00Persona/WW 4 C05.webp"
       },
     ]
@@ -1037,7 +1037,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-GC-002",
-        name: "UX-12",
+        name: "UX-12 (02)",
         image: "/Blade/00Pendragon-Goldius/GC 2 U12.webp"
       },
     ]
@@ -1066,7 +1066,7 @@ export const products: Product[] = [
   },
   {
     id: "Blade-SDk-001",
-    name: "Shleter Drake",
+    name: "Shelter Drake",
     image: "/Blade/00Pendragon-Goldius/SDk 1 B39.webp",
     category: "blade",
     type:"balance",
@@ -1081,12 +1081,12 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-SDk-002",
-        name: "BX-39",
+        name: "BX-39 (02)",
         image: "/Blade/00Pendragon-Goldius/SDk 2 B39.webp"
       },
       {
         id: "Blade-SDk-003",
-        name: "BX-39",
+        name: "BX-39 (03)",
         image: "/Blade/00Pendragon-Goldius/SDk 3 B39.webp"
       },
     ]
@@ -1222,7 +1222,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-HRT-002",
-        name: "CX-05 (Arc T)",
+        name: "CX-05 (Arc T)(03)",
         image: "/Blade/00Persona/HRT 2 C05.webp"
       },
       {
@@ -1303,12 +1303,12 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-FBJ-002",
-        name: "CX-06",
+        name: "CX-06 (02)",
         image: "/Blade/00Zodiac - Fox/FBJ 2 C06.webp"
       },
       {
         id: "Blade-FBJ-003",
-        name: "CX-06",
+        name: "CX-06 (03)",
         image: "/Blade/00Zodiac - Fox/FBJ 3 C06.webp"
       },
     ]
@@ -1359,7 +1359,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-PBA-003",
-        name: "UX-18",
+        name: "UX-18 (Brush M)(03)",
         image: "/Blade/00Zodiac - Fox/PBA 3 U18.webp"
       },
     ]
@@ -1383,7 +1383,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-CFW-002",
-        name: "CX-08 (Dark W)",
+        name: "CX-08 (Dark W)(03)",
         image: "/Blade/00Zodiac - Fox/CFW 2 C08.webp"
       },
       {
@@ -1515,7 +1515,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-SED-002",
-        name: "UX-18",
+        name: "UX-18 (Brave C)(04)",
         image: "/Blade/00Kurosu/SED 2 U18.webp"
       },
     ]
@@ -1560,12 +1560,12 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-Wy-002",
-        name: "UX-16",
+        name: "UX-16 (02)",
         image: "/Blade/00Kurosu/CMr 2 U16.webp"
       },
       {
         id: "Blade-Wy-003",
-        name: "UX-16",
+        name: "UX-16 (03)",
         image: "/Blade/00Kurosu/CMr 3 U16.webp"
       },
     ]
@@ -1679,7 +1679,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-MCs-002",
-        name: "",
+        name: "UX-18 (02)",
         image: "/Blade/00SubCharacter/MCs 2 U18.webp"
       },
     ]
@@ -1754,7 +1754,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-PF-002",
-        name: "UX-12 (Regular Sale)",
+        name: "UX-12 (05)",
         image: "/Blade/00Yggdrasil/PF 2 U12.webp"
       },
       {
