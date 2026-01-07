@@ -1685,6 +1685,30 @@ export const products: Product[] = [
     ]
   },
   {
+    id: "Blade-PFZ-001",
+    name: "Phoenix Flare",
+    image: "/Blade/00SubCharacter/PFZ 1 C12.webp",
+    category: "blade",
+    type:"defense",
+    price: "CX-12",
+    specs: {
+      "Type": "Defense",
+      "Spin": "Right",
+      "Weight": "~ g (Stock Combo Blade)",
+      "Stock Combo": "z 9-80 Wall Wedge",
+      "Lock Chip Type": "Plastic (~1.7 g)",
+      "Assist Blade": "Z ()",
+      "Product Line": "CX",
+    }, 
+    // bey: [
+    //   {
+    //     id: "Blade-PFZ-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
     id: "Blade-KWS-001",
     name: "Kraken Wriggle",
     image: "/Blade/00SubCharacter/KWS 1 C12.webp",
@@ -3627,6 +3651,11 @@ export const products: Product[] = [
         name: "CX-05",
         image: "/Ratchet/9/9 80 5 C05.webp"
       },
+      {
+        id: "Rat-980-006",
+        name: "CX-12",
+        image: "/Ratchet/9/9 80 6 C12.webp"
+      },
     ]
   },
   {
@@ -5293,7 +5322,28 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "Hybrid-Bit-Op-002",
+    //     id: "Bit-J-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Bit-WW-001",
+    name: "WW (Wall Wedge)",
+    image: "/Bit/WW/WW 1 C12.webp",
+    category: "bit",
+    type:"defense",
+    price: "CX-12",
+    specs: {
+      "Type": "Defense",
+      "Weight": "~4 g",
+      "Gears": "16",
+      "Burst Resistance": "Low",
+    },
+    // bey: [
+    //   {
+    //     id: "Bit-WW-002",
     //     name: "",
     //     image: ""
     //   },
