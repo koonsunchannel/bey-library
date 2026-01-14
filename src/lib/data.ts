@@ -68,6 +68,11 @@ export const products: Product[] = [
         name: "G1 Prize",
         image: "/Blade/00Persona/DS 11 G1P.webp"
       },
+      {
+        id: "Blade-DS-012",
+        name: "Limnited",
+        image: "/Blade/00Persona/DS 12 LD.webp"
+      },
     ],
   },
   {
@@ -91,19 +96,24 @@ export const products: Product[] = [
         image: "/Blade/00Persona/HS 2 B00.webp"
       },
       {
-        id: "Blade-HS-002",
+        id: "Blade-HS-003",
         name: "BX-08",
         image: "/Blade/00Persona/HS 3 B08.webp"
       },
       {
-        id: "Blade-HS-003",
+        id: "Blade-HS-004",
         name: "BX-14 (04)",
         image: "/Blade/00Persona/HS 4 B14.webp"
       },
       {
-        id: "Blade-HS-004",
+        id: "Blade-HS-005",
         name: "CoroCoro Comic",
         image: "/Blade/00Persona/HS 5 B00.webp"
+      },
+      {
+        id: "Blade-HS-006",
+        name: "BX-48",
+        image: "/Blade/00Persona/HS 6 B48.webp"
       },
     ]
   },
@@ -263,6 +273,11 @@ export const products: Product[] = [
         name: "BX-00",
         image: "/Blade/00Persona/SE 6 B00.webp"
         //Magma Shark
+      },
+      {
+        id: "Blade-SE-007",
+        name: "BX-48",
+        image: "/Blade/00Persona/SE 7 B48.webp"
       },
     ]
   },
@@ -594,6 +609,11 @@ export const products: Product[] = [
         name: "CX-08 (04)",
         image: "/Blade/00Persona/DB 9 C08.webp"
       },
+      {
+        id: "Blade-DB-010",
+        name: "BX-48",
+        image: "/Blade/00Persona/DB 10 B48.webp"
+      },
     ]
   },
   {
@@ -760,6 +780,16 @@ export const products: Product[] = [
         id: "Blade-CDg-003",
         name: "CX-08 (06)",
         image: "/Blade/00Pendragon-Goldius/CDg 3 C08.webp"
+      },
+      {
+        id: "Blade-CDg-004",
+        name: "Limited",
+        image: "/Blade/00Pendragon-Goldius/CDg 4 LD.webp"
+      },
+      {
+        id: "Blade-CDg-005",
+        name: "BX-48",
+        image: "/Blade/00Pendragon-Goldius/CDg 5 B48.webp"
       },
     ]
   },
@@ -1687,7 +1717,7 @@ export const products: Product[] = [
   {
     id: "Blade-PFZ-001",
     name: "Phoenix Flare",
-    image: "/Blade/00SubCharacter/PFZ 1 C12.webp",
+    image: "/Blade/00Yggdrasil/PFZ 1 C12.webp",
     category: "blade",
     type:"defense",
     price: "CX-12",
@@ -1697,7 +1727,7 @@ export const products: Product[] = [
       "Weight": "~ g (Stock Combo Blade)",
       "Stock Combo": "z 9-80 Wall Wedge",
       "Lock Chip Type": "Plastic (~1.7 g)",
-      "Assist Blade": "Z ()",
+      "Assist Blade": "Z (Zillion)",
       "Product Line": "CX",
     }, 
     // bey: [
@@ -1846,13 +1876,13 @@ export const products: Product[] = [
       "Stock Combo": "2-80 Elevate",
       "Product Line": "BX",
     },
-    // bey: [
-    //   {
-    //     id: "Blade-MT-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Blade-MT-002",
+        name: "BX-48",
+        image: "/Blade/00SubCharacter/MT 2 B48.webp"
+      },
+    ]
   },
   {
     id: "Blade-CC-001",
@@ -2283,6 +2313,27 @@ export const products: Product[] = [
     //   },
     // ]
   },
+  {
+    id: "As-Z-001",
+    name: "Z (Zillion)",
+    image: "/Assist Blade/Z/Z 1 C12.webp",
+    category: "assist-blade",
+    type: "assist",
+    price: "CX-12",
+    specs: {
+      "Type": "Defense",
+      "Spin": "Right",
+      "Weight": "~6 g",
+      "High Level": "~9 MM",
+    },
+    // bey: [
+    //   {
+    //     id: "As-H-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
 
   // RATCHETS
   {
@@ -2443,6 +2494,11 @@ export const products: Product[] = [
         name: "CX-08",
         image: "/Ratchet/1/1 60 15 C08.webp"
       },
+      {
+        id: "Rat-160-016",
+        name: "Limited",
+        image: "/Ratchet/1/1 60 16 LD.webp"
+      },
     ]
   },
   {
@@ -2595,6 +2651,11 @@ export const products: Product[] = [
         id: "Rat-280-004",
         name: "DMM Lottery",
         image: "/Ratchet/2/2 80 4 B00.webp"
+      },
+      {
+        id: "Rat-280-005",
+        name: "BX-48",
+        image: "/Ratchet/2/2 80 5 B48.webp"
       },
     ]
   },
@@ -2879,6 +2940,11 @@ export const products: Product[] = [
         image: "/Ratchet/3/3 85 6 U18.webp"
       },
       {
+        id: "Rat-385-007",
+        name: "BX-48",
+        image: "/Ratchet/3/3 85 7 B48.webp"
+      },
+      {
         id: "Rat-385-00z",
         name: "CX-??",
         image: ""
@@ -3088,6 +3154,11 @@ export const products: Product[] = [
         id: "Rat-470-007",
         name: "Rare Bey Battle",
         image: "/Ratchet/4/4 70 7 C00.webp"
+      },
+      {
+        id: "Rat-470-008",
+        name: "BX-48",
+        image: "/Ratchet/4/4 70 8 B48.webp"
       },
     ]
   },
@@ -3475,6 +3546,11 @@ export const products: Product[] = [
         name: "CX-05",
         image: "/Ratchet/7/7 60 3 C05.webp"
       },
+      {
+        id: "Rat-760-004",
+        name: "BX-48",
+        image: "/Ratchet/7/7 60 4 B48.webp"
+      },
     ]
   },
   {
@@ -3564,6 +3640,11 @@ export const products: Product[] = [
         id: "Rat-960-007",
         name: "BX-46",
         image: "/Ratchet/9/9 60 7 B46.webp"
+      },
+      {
+        id: "Rat-960-008",
+        name: "Limited",
+        image: "/Ratchet/9/9 60 8 LD.webp"
       },
     ]
   },
@@ -3655,6 +3736,11 @@ export const products: Product[] = [
         id: "Rat-980-006",
         name: "CX-12",
         image: "/Ratchet/9/9 80 6 C12.webp"
+      },
+      {
+        id: "Rat-980-007",
+        name: "BX-48",
+        image: "/Ratchet/9/9 80 7 B48.webp"
       },
     ]
   },
@@ -3819,6 +3905,16 @@ export const products: Product[] = [
         id: "Bit-F-017",
         name: "CX-08",
         image: "/Bit/F/F 17 C08.webp"
+      },
+      {
+        id: "Bit-F-018",
+        name: "Limited",
+        image: "/Bit/F/F 18 LD.webp"
+      },
+      {
+        id: "Bit-F-019",
+        name: "BX-48",
+        image: "/Bit/F/F 19 B48.webp"
       },
     ]
   },
@@ -4296,6 +4392,11 @@ export const products: Product[] = [
         name: "UX-07",
         image: "/Bit/S/S 3 U07.webp"
       },
+      {
+        id: "Bit-S-004",
+        name: "BX-48",
+        image: "/Bit/S/S 4 B48.webp"
+      },
     ]
   },
   {
@@ -4372,6 +4473,11 @@ export const products: Product[] = [
         id: "Bit-GB-005",
         name: "UX-12",
         image: "/Bit/GB/GB 5 U12.webp"
+      },
+      {
+        id: "Bit-GB-006",
+        name: "BX-48",
+        image: "/Bit/GB/GB 6 B48.webp"
       },
     ]
   },
@@ -4630,6 +4736,11 @@ export const products: Product[] = [
         name: "CoroCoro Comic",
         image: "/Bit/Q/Q 4 B00.webp"
       },
+      {
+        id: "Bit-Q-005",
+        name: "BX-48",
+        image: "/Bit/Q/Q 5 B48.webp"
+      },
     ]
   },
   {
@@ -4815,6 +4926,11 @@ export const products: Product[] = [
         id: "Bit-E-003",
         name: "UX-12",
         image: "/Bit/E/E 3 U12.webp"
+      },
+      {
+        id: "Bit-E-004",
+        name: "BX-48",
+        image: "/Bit/E/E 4 B48.webp"
       },
     ]
   },
@@ -5032,14 +5148,19 @@ export const products: Product[] = [
         image: "/Bit/V/V 6 C00.webp"
       },
       {
-        id: "Bit-V-007",
-        name: "GP Limited",
-        image: ""
-      },
-      {
         id: "Bit-V-008",
         name: "Campaign",
         image: "/Bit/V/V 8 CP.webp"
+      },
+      {
+        id: "Bit-V-009",
+        name: "Limited",
+        image: "/Bit/V/V 9 LD.webp"
+      },
+      {
+        id: "Bit-V-010",
+        name: "GP Limited",
+        image: ""
       },
     ]
   },
