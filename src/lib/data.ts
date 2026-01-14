@@ -112,7 +112,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-HS-006",
-        name: "BX-48",
+        name: "BX-48 (04)",
         image: "/Blade/00Persona/HS 6 B48.webp"
       },
     ]
@@ -276,7 +276,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-SE-007",
-        name: "BX-48",
+        name: "BX-48 (02)",
         image: "/Blade/00Persona/SE 7 B48.webp"
       },
     ]
@@ -611,7 +611,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-DB-010",
-        name: "BX-48",
+        name: "BX-48 (05)",
         image: "/Blade/00Persona/DB 10 B48.webp"
       },
     ]
@@ -788,7 +788,7 @@ export const products: Product[] = [
       },
       {
         id: "Blade-CDg-005",
-        name: "BX-48",
+        name: "BX-48 (01)",
         image: "/Blade/00Pendragon-Goldius/CDg 5 B48.webp"
       },
     ]
@@ -1879,7 +1879,7 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-MT-002",
-        name: "BX-48",
+        name: "BX-48 (03)",
         image: "/Blade/00SubCharacter/MT 2 B48.webp"
       },
     ]
