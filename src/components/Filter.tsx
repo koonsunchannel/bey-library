@@ -34,6 +34,10 @@ export default function Filter({ onChange, slug }: { onChange: (types: string[])
     
     // Other
     { label: "Rare", value: "rare", group: "other" },
+    // Hybrid (show only on bit page)
+    ...(slug === 'bit' ? [
+      { label: "Hybrid", value: "hybrid", group: "other" },
+    ] : []),
   ];
 
   const [selectedTypes, setSelectedTypes] = useState<string[]>([])
@@ -198,7 +202,7 @@ export default function Filter({ onChange, slug }: { onChange: (types: string[])
                 {groupedFilters.other && (
                   <div>
                     <p className="text-xs font-semibold text-gray-500 mb-2 uppercase">Other</p>
-                    <div className="grid grid-cols-1 gap-2">
+                    <div className="grid grid-cols-2 gap-2">
                       {groupedFilters.other.map(renderFilterButton)}
                     </div>
                   </div>

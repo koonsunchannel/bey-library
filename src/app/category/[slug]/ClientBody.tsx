@@ -37,6 +37,7 @@ export default function ClientBody({
     const selectedProductLines = selectedTypes.filter(t => ['BX', 'UX', 'CX'].includes(t));
     const selectedSpins = selectedTypes.filter(t => ['Right', 'Left'].includes(t));
     const selectedTypeCategories = selectedTypes.filter(t => ['attack', 'balance', 'stamina', 'defense', 'rare'].includes(t));
+    const selectedHybrid = selectedTypes.includes('hybrid');
 
     filteredProducts = randomizedProducts.filter((product) => {
       // ตรวจสอบ Product Line (ถ้ามีการเลือก)
@@ -63,6 +64,15 @@ export default function ClientBody({
       if ((slug === 'blade' || slug === 'assist-blade') && selectedSpins.length > 0) {
         const matchesSpin = selectedSpins.includes(product.specs?.['Spin'] as string);
         if (!matchesSpin) return false;
+      }
+
+      // ตรวจสอบ Hybrid (ถ้ามีการเลือก) - ตรวจสอบจาก image path หรือ specs.Type
+      if (selectedHybrid) {
+        const imgPath = product.image || '';
+        const specsType = product.specs?.['Type'] || '';
+        const isHybrid = (typeof imgPath === 'string' && imgPath.includes('/Hybird Part/')) ||
+                         (typeof specsType === 'string' && specsType.includes('Hybrid Part'));
+        if (!isHybrid) return false;
       }
 
       return true;
