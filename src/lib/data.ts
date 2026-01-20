@@ -1835,8 +1835,8 @@ export const products: Product[] = [
     bey: [
       {
         id: "Blade-AP-002",
-        name: "UX-??",
-        image: "/Blade/00Zodiac - Fox/AP 2 U--.webp"
+        name: "UX-00",
+        image: "/Blade/00Zodiac - Fox/AP 2 U00.webp"
       },
     ]
   },
@@ -2793,15 +2793,14 @@ export const products: Product[] = [
         image: "/Ratchet/3/3 70 7 U00.webp"
       },
       {
-        //AP Red Ver.
         id: "Rat-370-008",
-        name: "UX-??",
-        image: "/Ratchet/3/3 70 8 U00.webp"
+        name: "UX-17",
+        image: "/Ratchet/3/3 70 8 U17.webp"
       },
       {
         id: "Rat-370-009",
-        name: "UX-17",
-        image: "/Ratchet/3/3 70 9 U17.webp"
+        name: "UX-00",
+        image: "/Ratchet/3/3 70 9 U00.webp"
       },
     ]
   },
@@ -4627,6 +4626,11 @@ export const products: Product[] = [
         id: "Bit-A-012",
         name: "Collab",
         image: "/Bit/A/A 12 Col.webp"
+      },
+      {
+        id: "Bit-A-012",
+        name: "UX-00",
+        image: "/Bit/A/A 13 U00.webp"
       },
     ]
   },
