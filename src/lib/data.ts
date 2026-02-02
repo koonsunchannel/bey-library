@@ -1739,6 +1739,78 @@ export const products: Product[] = [
     // ]
   },
   {
+    id: "Blade-CX2-001",
+    name: "Salamander ???",
+    image: "/Blade/00temporary/Salamander 1.webp",
+    category: "blade",
+    type:"attack",
+    price: "CX-???",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~ g (Stock Combo Blade)",
+      "Stock Combo": "",
+      "Lock Chip Type": "Plastic (~1.7 g)",
+      "Assist Blade": "",
+      "Product Line": "CX",
+    }, 
+    // bey: [
+    //   {
+    //     id: "Blade-???-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Blade-CX2-002",
+    name: "Knight ???",
+    image: "/Blade/00temporary/Knight CX.webp",
+    category: "blade",
+    type:"defense",
+    price: "CX-???",
+    specs: {
+      "Type": "Defense",
+      "Spin": "Right",
+      "Weight": "~ g (Stock Combo Blade)",
+      "Stock Combo": "",
+      "Lock Chip Type": "Plastic (~1.7 g)",
+      "Assist Blade": "",
+      "Product Line": "CX",
+    }, 
+    // bey: [
+    //   {
+    //     id: "Blade-???-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Blade-CX2-003",
+    name: "Ragnaruk ???",
+    image: "/Blade/00temporary/Ragnaruk 1.webp",
+    category: "blade",
+    type:"stamina",
+    price: "CX-???",
+    specs: {
+      "Type": "Stamina",
+      "Spin": "Right",
+      "Weight": "~ g (Stock Combo Blade)",
+      "Stock Combo": "",
+      "Lock Chip Type": "Plastic (~1.7 g)",
+      "Assist Blade": "",
+      "Product Line": "CX",
+    }, 
+    // bey: [
+    //   {
+    //     id: "Blade-???-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
     id: "Blade-KWS-001",
     name: "Kraken Wriggle",
     image: "/Blade/00SubCharacter/KWS 1 C12.webp",
@@ -2407,6 +2479,26 @@ export const products: Product[] = [
     ]
   },
   {
+    id: "Rat-150-001",
+    name: "1-50",
+    image: "/Ratchet/1/1 50 1 C00.webp",
+    category: "ratchet",
+    type: "ratchet",
+    price: "CX-???",
+    features: [
+      "1 Contact Points",
+      "High : 5.0 mm",
+      "Weight: ~6 g",
+    ],
+    // bey: [
+    //   {
+    //     id: "Rat-150-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
     id: "Rat-160-001",
     name: "1-60",
     image: "/Ratchet/1/1 60 1 U01.webp",
@@ -3000,9 +3092,15 @@ export const products: Product[] = [
         image: "/Ratchet/4/4 55 4 Col.webp"
       },
       {
-        id: "Rat-455-004",
+        id: "Rat-455-005",
         name: "CX-00",
         image: "/Ratchet/4/4 55 5 C00.webp"
+      },
+      {
+        //ragnaruk
+        id: "Rat-455-006",
+        name: "CX-???",
+        image: "/Ratchet/4/4 55 6 C00.webp"
       },
     ]
   },
@@ -3592,6 +3690,26 @@ export const products: Product[] = [
     // bey: [
     //   {
     //     id: "Rat-780-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Rat-860-001",
+    name: "8-60",
+    image: "/Ratchet/8/8 60 1 C00.webp",
+    category: "ratchet",
+    type: "ratchet",
+    price: "CX-???",
+    features: [
+      "8 Contact Points",
+      "High : 6.00 mm",
+      "Weight: ~8 g",
+    ],
+    // bey: [
+    //   {
+    //     id: "Rat-860-002",
     //     name: "",
     //     image: ""
     //   },
@@ -5469,6 +5587,69 @@ export const products: Product[] = [
     // bey: [
     //   {
     //     id: "Bit-WW-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Bit-A-T-001",
+    name: "",
+    image: "/Bit/WW/???.webp",
+    category: "bit",
+    type:"attack",
+    price: "CX-???",
+    specs: {
+      "Type": "Attack",
+      "Weight": "~4 g",
+      "Gears": "16",
+      "Burst Resistance": "High",
+    },
+    // bey: [
+    //   {
+    //     id: "Bit--002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Bit-A-D-001",
+    name: "",
+    image: "/Bit/WW/???.webp",
+    category: "bit",
+    type:"defense",
+    price: "CX-???",
+    specs: {
+      "Type": "Defense",
+      "Weight": "~4 g",
+      "Gears": "12",
+      "Burst Resistance": "Low",
+    },
+    // bey: [
+    //   {
+    //     id: "Bit-A-D-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Bit-A-S-001",
+    name: "",
+    image: "/Bit/WW/???.webp",
+    category: "bit",
+    type:"stamina",
+    price: "CX-???",
+    specs: {
+      "Type": "Stamina",
+      "Weight": "~4 g",
+      "Gears": "???",
+      "Burst Resistance": "Low",
+    },
+    // bey: [
+    //   {
+    //     id: "Bit-A-S-002",
     //     name: "",
     //     image: ""
     //   },
