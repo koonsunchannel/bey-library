@@ -1740,7 +1740,7 @@ export const products: Product[] = [
   },
   {
     id: "Blade-CX2-001",
-    name: "Salamander ???",
+    name: "Bahamut Blitz",
     image: "/Blade/00temporary/Salamander 1.webp",
     category: "blade",
     type:"attack",
@@ -1764,7 +1764,7 @@ export const products: Product[] = [
   },
   {
     id: "Blade-CX2-002",
-    name: "Knight ???",
+    name: "Knight Fortress",
     image: "/Blade/00temporary/Knight CX.webp",
     category: "blade",
     type:"defense",
@@ -1788,7 +1788,7 @@ export const products: Product[] = [
   },
   {
     id: "Blade-CX2-003",
-    name: "Ragnaruk ???",
+    name: "Ragna Rage",
     image: "/Blade/00temporary/Ragnaruk 1.webp",
     category: "blade",
     type:"stamina",
