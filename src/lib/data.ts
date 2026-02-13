@@ -6253,8 +6253,8 @@ export const products: Product[] = [
   },
   {
     id: "other-025",
-    name: "Start Dash Set",
-    image: "/Other/BX07/Start-Dash-Set-Box.webp",
+    name: "Start Dash Set C",
+    image: "/Other/BX07/Start-Dash-Set-C16.webp",
     category: "other",
     type: "other",
     price: "CX-16",
