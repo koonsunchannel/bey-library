@@ -1725,7 +1725,7 @@ export const products: Product[] = [
       "Type": "Defense",
       "Spin": "Right",
       "Weight": "~ g (Stock Combo Blade)",
-      "Stock Combo": "z 9-80 Wall Wedge",
+      "Stock Combo": "Zillion 9-80 Wall Wedge",
       "Lock Chip Type": "Plastic (~1.7 g)",
       "Assist Blade": "Z (Zillion)",
       "Product Line": "CX",
@@ -1740,71 +1740,74 @@ export const products: Product[] = [
   },
   {
     id: "Blade-CX2-001",
-    name: "Bahamut Blitz",
-    image: "/Blade/00temporary/Salamander 1.webp",
+    name: "Bahamut Blitz BK",
+    image: "/Blade/00Kurosu/BBBK 1 C13.webp",
     category: "blade",
     type:"attack",
-    price: "CX-???",
+    price: "CX-13",
     specs: {
       "Type": "Attack",
       "Spin": "Right",
       "Weight": "~ g (Stock Combo Blade)",
-      "Stock Combo": "",
+      "Stock Combo": "Break Knuckle 1-50 Ignition",
       "Lock Chip Type": "Plastic (~1.7 g)",
-      "Assist Blade": "",
+      "Over Blade": "B (Break)",
+      "Assist Blade": "K (Knuckle)",
       "Product Line": "CX",
     }, 
-    // bey: [
-    //   {
-    //     id: "Blade-???-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Blade-BBBK-002",
+        name: "CX-16",
+        image: "/Blade/00Kurosu/BBBK 2 C16.webp"
+      },
+    ]
   },
   {
-    id: "Blade-CX2-002",
-    name: "Knight Fortress",
-    image: "/Blade/00temporary/Knight CX.webp",
+    id: "Blade-KFGV-001",
+    name: "Knight Fortress GV",
+    image: "/Blade/00temporary/KFGV 1 C14.webp",
     category: "blade",
     type:"defense",
-    price: "CX-???",
+    price: "CX-14",
     specs: {
       "Type": "Defense",
       "Spin": "Right",
       "Weight": "~ g (Stock Combo Blade)",
-      "Stock Combo": "",
+      "Stock Combo": "Guard Vertical 8-70 Under Needle",
       "Lock Chip Type": "Plastic (~1.7 g)",
-      "Assist Blade": "",
+      "Over Blade": "G (Guard)",
+      "Assist Blade": "V (Vertical)",
       "Product Line": "CX",
     }, 
     // bey: [
     //   {
-    //     id: "Blade-???-002",
+    //     id: "Blade-KFGV-002",
     //     name: "",
     //     image: ""
     //   },
     // ]
   },
   {
-    id: "Blade-CX2-003",
-    name: "Ragna Rage",
-    image: "/Blade/00temporary/Ragnaruk 1.webp",
+    id: "Blade-RRFE-001",
+    name: "Ragna Rage FE",
+    image: "/Blade/00temporary/RRFE 1 C15.webp",
     category: "blade",
     type:"stamina",
-    price: "CX-???",
+    price: "CX-15",
     specs: {
       "Type": "Stamina",
       "Spin": "Right",
       "Weight": "~ g (Stock Combo Blade)",
-      "Stock Combo": "",
+      "Stock Combo": "Flow Erase 4-55 Yielding",
       "Lock Chip Type": "Plastic (~1.7 g)",
-      "Assist Blade": "",
+      "Over Blade": "F (Flow)",
+      "Assist Blade": "E (Erase)",
       "Product Line": "CX",
     }, 
     // bey: [
     //   {
-    //     id: "Blade-???-002",
+    //     id: "Blade-RRFE-002",
     //     name: "",
     //     image: ""
     //   },
@@ -2400,7 +2403,70 @@ export const products: Product[] = [
     },
     // bey: [
     //   {
-    //     id: "As-H-002",
+    //     id: "As-Z-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "As-K-001",
+    name: "K (Knuckle)",
+    image: "/Assist Blade/K/K 1 C13.webp",
+    category: "assist-blade",
+    type: "assist",
+    price: "CX-13",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "High Level": "~ MM",
+    },
+    bey: [
+      {
+        id: "As-K-002",
+        name: "CX-16",
+        image: "/Assist Blade/K/K 2 C13.webp"
+      },
+    ]
+  },
+  {
+    id: "As-V-001",
+    name: "V (Vertical)",
+    image: "/Assist Blade/V/V 1 C14.webp",
+    category: "assist-blade",
+    type: "assist",
+    price: "CX-12",
+    specs: {
+      "Type": "Defense",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "High Level": "~ MM",
+    },
+    // bey: [
+    //   {
+    //     id: "As-V-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "As-E-001",
+    name: "E (Erase)",
+    image: "/Assist Blade/E/E 1 C15.webp",
+    category: "assist-blade",
+    type: "assist",
+    price: "CX-12",
+    specs: {
+      "Type": "Stamina",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "High Level": "~ MM",
+    },
+    // bey: [
+    //   {
+    //     id: "As-E-002",
     //     name: "",
     //     image: ""
     //   },
@@ -3696,20 +3762,20 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "Rat-860-001",
-    name: "8-60",
-    image: "/Ratchet/8/8 60 1 C00.webp",
+    id: "Rat-870-001",
+    name: "8-70",
+    image: "/Ratchet/8/8 70 1 C14.webp",
     category: "ratchet",
     type: "ratchet",
-    price: "CX-???",
+    price: "CX-14",
     features: [
       "8 Contact Points",
-      "High : 6.00 mm",
+      "High : 7.00 mm",
       "Weight: ~8 g",
     ],
     // bey: [
     //   {
-    //     id: "Rat-860-002",
+    //     id: "Rat-870-002",
     //     name: "",
     //     image: ""
     //   },
@@ -5222,13 +5288,13 @@ export const products: Product[] = [
       "Gears": "12",
       "Burst Resistance": "Low"
     },
-    // bey: [
-    //   {
-    //     id: "Bit-UN-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Bit-UN-002",
+        name: "",
+        image: "/Bit/UN/UN 2 C14.webp"
+      },
+    ]
   },
   {
     id: "Bit-V-001",
@@ -5593,63 +5659,42 @@ export const products: Product[] = [
     // ]
   },
   {
-    id: "Bit-A-T-001",
-    name: "",
-    image: "/Bit/WW/???.webp",
+    id: "Bit-I-001",
+    name: "Ignition",
+    image: "/Bit/I/I 1 C13.webp",
     category: "bit",
     type:"attack",
-    price: "CX-???",
+    price: "CX-13",
     specs: {
       "Type": "Attack",
       "Weight": "~4 g",
       "Gears": "16",
       "Burst Resistance": "High",
     },
-    // bey: [
-    //   {
-    //     id: "Bit--002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Bit-I-002",
+        name: "CX-16",
+        image: "/Bit/I/I 2 C16.webp"
+      },
+    ]
   },
   {
-    id: "Bit-A-D-001",
-    name: "",
-    image: "/Bit/WW/???.webp",
-    category: "bit",
-    type:"defense",
-    price: "CX-???",
-    specs: {
-      "Type": "Defense",
-      "Weight": "~4 g",
-      "Gears": "12",
-      "Burst Resistance": "Low",
-    },
-    // bey: [
-    //   {
-    //     id: "Bit-A-D-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
-  },
-  {
-    id: "Bit-A-S-001",
-    name: "",
-    image: "/Bit/WW/???.webp",
+    id: "Bit-Y-001",
+    name: "Yielding",
+    image: "/Bit/Y/Y 1 C15.webp",
     category: "bit",
     type:"stamina",
-    price: "CX-???",
+    price: "CX-15",
     specs: {
       "Type": "Stamina",
       "Weight": "~4 g",
-      "Gears": "???",
+      "Gears": "32?",
       "Burst Resistance": "Low",
     },
     // bey: [
     //   {
-    //     id: "Bit-A-S-002",
+    //     id: "Bit-Y-002",
     //     name: "",
     //     image: ""
     //   },
