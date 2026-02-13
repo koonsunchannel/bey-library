@@ -6251,6 +6251,42 @@ export const products: Product[] = [
       "String Luncher (Violet Ver.)",
     ],
   },
+  {
+    id: "other-025",
+    name: "Start Dash Set",
+    image: "/Other/BX07/Start-Dash-Set-Box.webp",
+    category: "other",
+    type: "other",
+    price: "CX-16",
+    features: [
+      "Xtreme Stadium (Clear & Green Ver.)",
+      "Bahamut Blitz Break Knuckle 1-50 Igintion (Special Ver.)",
+      "Winder Launcher (Blue Extra Ver.)",
+      "Launcher Grip (Blue Extra Ver.)"
+    ],
+    pro: [
+      {
+        id: "DS-002",
+        name: "Bahamut Blitz Break Knuckle 1-50 Igintion (Special Ver.)",
+        image: "/Blade/00Persona/DS 2 B07.webp"
+      },
+      {
+        id: "Lun07-001",
+        name: "Winder Launcher (Blue Extra Ver.)",
+        image: "/Other/BX07/Beyblade-X-Winder-Launcher-Blue-Extra-Ver.webp"
+      },
+      {
+        id: "Gip07-0001",
+        name: "Launcher Grip (Blue Extra Ver.)",
+        image: "/Other/BX07/Beyblade-X-Launcher-Grip-Blue-Extra-Ver.webp"
+      },
+      {
+        id: "Sta-0001",
+        name: "Xtreme Stadium (Clear & Green Ver.)",
+        image: "/Other/BX07/Xtreme-Stadium-CX-16.webp"
+      },
+    ]
+  },
 
   //X-OVER Bakuten Shoot Beyblade
   {
