@@ -32,7 +32,7 @@ export default function ClientBody({
   let filteredProducts = randomizedProducts;
   
   // ถ้ามีการเลือก ให้กรองข้อมูล
-  if (selectedTypes.length > 0 && ['blade', 'assist-blade', 'bit', 'x-over'].includes(slug)) {
+  if (selectedTypes.length > 0 && ['blade', 'over-blade', 'assist-blade', 'bit', 'x-over'].includes(slug)) {
     // แยกการเลือกตามหมวดหมู่
     const selectedProductLines = selectedTypes.filter(t => ['BX', 'UX', 'CX'].includes(t));
     const selectedSpins = selectedTypes.filter(t => ['Right', 'Left'].includes(t));
@@ -48,8 +48,8 @@ export default function ClientBody({
 
       // ตรวจสอบ Type (ถ้ามีการเลือก)
       if (selectedTypeCategories.length > 0) {
-        // สำหรับ assist-blade ให้ดูจาก specs.Type แทน
-        if (slug === 'assist-blade') {
+        // สำหรับ assist-blade และ over-blade ให้ดูจาก specs.Type แทน
+        if (slug === 'assist-blade' || slug === 'over-blade') {
           const specsType = product.specs?.['Type'];
           const matchesType = specsType && selectedTypeCategories.some(t => specsType.toLowerCase().includes(t));
           if (!matchesType) return false;
@@ -60,8 +60,8 @@ export default function ClientBody({
         }
       }
 
-      // ตรวจสอบ Spin (ถ้ามีการเลือก) - สำหรับ blade และ assist-blade
-      if ((slug === 'blade' || slug === 'assist-blade') && selectedSpins.length > 0) {
+      // ตรวจสอบ Spin (ถ้ามีการเลือก) - สำหรับ blade, assist-blade และ over-blade
+      if ((slug === 'blade' || slug === 'assist-blade' || slug === 'over-blade') && selectedSpins.length > 0) {
         const matchesSpin = selectedSpins.includes(product.specs?.['Spin'] as string);
         if (!matchesSpin) return false;
       }
@@ -81,7 +81,7 @@ export default function ClientBody({
 
   return (
     <>
-      {['blade', 'assist-blade', 'bit', 'x-over'].includes(slug) && (
+      {['blade', 'over-blade', 'assist-blade', 'bit', 'x-over'].includes(slug) && (
         <div className="mb-8">
           <Filter onChange={setSelectedTypes} slug={slug} />
         </div>

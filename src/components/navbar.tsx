@@ -8,6 +8,7 @@ import SearchBar from './SearchBar'
 
 const categories = [
   { name: "Blade", path: "/category/blade", color: "cyber-glow-red" },
+  { name: "Over Blade", path: "/category/over-blade", color: "cyber-glow-red" },
   { name: "Assist Blade", path: "/category/assist-blade", color: "cyber-glow-red" },
   { name: "Ratchet", path: "/category/ratchet", color: "cyber-glow-green" },
   { name: "Bit", path: "/category/bit", color: "cyber-glow-blue" },

@@ -894,6 +894,11 @@ export const products: Product[] = [
         name: "CX-05 (06)",
         image: "/Blade/00Persona/WW 4 C05.webp"
       },
+      {
+        id: "Blade-WW-005",
+        name: "BX-00",
+        image: "/Blade/00Persona/WW 5 B00.webp"
+      },
     ]
   },
   {
@@ -1766,7 +1771,7 @@ export const products: Product[] = [
   {
     id: "Blade-KFGV-001",
     name: "Knight Fortress GV",
-    image: "/Blade/00temporary/KFGV 1 C14.webp",
+    image: "/Blade/00Persona/KFGV 1 C14.webp",
     category: "blade",
     type:"defense",
     price: "CX-14",
@@ -1791,7 +1796,7 @@ export const products: Product[] = [
   {
     id: "Blade-RRFE-001",
     name: "Ragna Rage FE",
-    image: "/Blade/00temporary/RRFE 1 C15.webp",
+    image: "/Blade/00Kurosu/RRFE 1 C15.webp",
     category: "blade",
     type:"stamina",
     price: "CX-15",
@@ -2090,6 +2095,68 @@ export const products: Product[] = [
     // bey: [
     //   {
     //     id: "Blade-OCt-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+
+  // OVER BLADES
+  {
+    id: "Ov-B-001",
+    name: "B (Break)",
+    image: "/Over Blade/B/B 1 C13.webp",
+    category: "over-blade",
+    type: "Attack",
+    price: "CX-13",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~ g",
+    },
+    // bey: [
+    //   {
+    //     id: "Ov-B-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Ov-G-001",
+    name: "G (Guard)",
+    image: "/Over Blade/G/G 1 C14.webp",
+    category: "over-blade",
+    type: "Defense",
+    price: "CX-14",
+    specs: {
+      "Type": "Defense",
+      "Spin": "Right",
+      "Weight": "~ g",
+    },
+    // bey: [
+    //   {
+    //     id: "Ov-G-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Ov-F-001",
+    name: "F (Flow)",
+    image: "/Over Blade/F/F 1 C15.webp",
+    category: "over-blade",
+    type: "Stamina",
+    price: "CX-15",
+    specs: {
+      "Type": "Stamina",
+      "Spin": "Right",
+      "Weight": "~ g",
+    },
+    // bey: [
+    //   {
+    //     id: "Ov-F-002",
     //     name: "",
     //     image: ""
     //   },
@@ -2436,7 +2503,7 @@ export const products: Product[] = [
     image: "/Assist Blade/V/V 1 C14.webp",
     category: "assist-blade",
     type: "assist",
-    price: "CX-12",
+    price: "CX-14",
     specs: {
       "Type": "Defense",
       "Spin": "Right",
@@ -2457,7 +2524,7 @@ export const products: Product[] = [
     image: "/Assist Blade/E/E 1 C15.webp",
     category: "assist-blade",
     type: "assist",
-    price: "CX-12",
+    price: "CX-15",
     specs: {
       "Type": "Stamina",
       "Spin": "Right",
@@ -2550,7 +2617,7 @@ export const products: Product[] = [
     image: "/Ratchet/1/1 50 1 C00.webp",
     category: "ratchet",
     type: "ratchet",
-    price: "CX-???",
+    price: "CX-13",
     features: [
       "1 Contact Points",
       "High : 5.0 mm",
@@ -2701,6 +2768,11 @@ export const products: Product[] = [
         id: "Rat-180-003",
         name: "Collab",
         image: "/Ratchet/1/1 80 3 Col.webp"
+      },
+      {
+        id: "Rat-180-004",
+        name: "BX-00",
+        image: "/Ratchet/1/1 80 4 B00.webp"
       },
     ]
   },
@@ -4620,6 +4692,11 @@ export const products: Product[] = [
         id: "Bit-GF-006",
         name: "UX-15",
         image: "/Bit/GF/GF 6 U15.webp"
+      },
+      {
+        id: "Bit-GF-007",
+        name: "BX-00",
+        image: "/Bit/GF/GF 7 B00.webp"
       },
     ]
   },

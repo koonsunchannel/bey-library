@@ -5,7 +5,7 @@ export type Product = {
   // description: string
   fullDescription?: string
   image: string
-  category: 'blade' | 'assist-blade' | 'ratchet' | 'bit' | 'other' | 'x-over' | 'credits'
+  category: 'blade' | 'over-blade' | 'assist-blade' | 'ratchet' | 'bit' | 'other' | 'x-over' | 'credits'
   type: string | string[]
   combo?: Record<string, string>
   price: string

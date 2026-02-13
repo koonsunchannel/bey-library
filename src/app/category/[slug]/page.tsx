@@ -5,6 +5,7 @@ import ClientBody from './ClientBody'
 export function generateStaticParams() {
   return [
     { slug: 'blade' },
+    { slug: 'over-blade' },
     { slug: 'assist-blade' },
     { slug: 'ratchet' },
     { slug: 'bit' },
@@ -17,7 +18,7 @@ export function generateStaticParams() {
 export default async function CategoryPage({ params }: { params: { slug: string } | Promise<{ slug: string }> }) {
   const { slug } = await params
 
-  const isValidCategory = ['blade', 'assist-blade', 'ratchet', 'bit', 'other', 'x-over', 'credits'].includes(slug)
+  const isValidCategory = ['blade', 'over-blade', 'assist-blade', 'ratchet', 'bit', 'other', 'x-over', 'credits'].includes(slug)
   if (!isValidCategory) {
     return (
       <div className="container py-12">
@@ -27,10 +28,11 @@ export default async function CategoryPage({ params }: { params: { slug: string 
     )
   }
 
-  const products = getProducts(slug as 'blade' | 'assist-blade' | 'ratchet' | 'bit' | 'other' | 'x-over' | 'credits')
+  const products = getProducts(slug as 'blade' | 'over-blade' | 'assist-blade' | 'ratchet' | 'bit' | 'other' | 'x-over' | 'credits')
 
   const titleColor =
     slug === 'blade' ? 'cyber-glow-red' :
+    slug === 'over-blade' ? 'cyber-glow-red' :
     slug === 'assist-blade' ? 'cyber-glow-red' :
     slug === 'ratchet' ? 'cyber-glow-green' :
     slug === 'bit' ? 'cyber-glow-blue' :
@@ -40,6 +42,7 @@ export default async function CategoryPage({ params }: { params: { slug: string 
 
   const categoryTitle =
     slug === 'blade' ? 'BLADES' :
+    slug === 'over-blade' ? 'OVER BLADES' :
     slug === 'assist-blade' ? 'ASSIST BLADES' :
     slug === 'ratchet' ? 'RATCHETS' :
     slug === 'bit' ? 'BITS' :
@@ -49,6 +52,7 @@ export default async function CategoryPage({ params }: { params: { slug: string 
 
   const categoryDescription =
     slug === 'blade' ? 'Top part for main playing style.' :
+    slug === 'over-blade' ? 'Special Over Blade parts (B, G, F).' :
     slug === 'assist-blade' ? 'Top part for main playing style.' :
     slug === 'ratchet' ? 'Middle part for adjust high level of beyblade.' :
     slug === 'bit' ? 'Bottom part for main type play style of beyblade.' :

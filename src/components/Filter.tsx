@@ -26,8 +26,8 @@ export default function Filter({ onChange, slug }: { onChange: (types: string[])
     { label: "Stamina", value: "stamina", icon: "/Stamina Type.webp", group: "typeExtra" },
     { label: "Defense", value: "defense", icon: "/Defense Type.webp", group: "typeExtra" },
     
-    // Spin Direction (สำหรับ blade และ assist-blade)
-    ...(slug === 'blade' || slug === 'assist-blade' ? [
+    // Spin Direction (สำหรับ blade, assist-blade และ over-blade)
+    ...(slug === 'blade' || slug === 'assist-blade' || slug === 'over-blade' ? [
       { label: "Right Spin", value: "Right", group: "spin" },
       { label: "Left Spin", value: "Left", group: "spin" },
     ] : []),

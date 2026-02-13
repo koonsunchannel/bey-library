@@ -15,7 +15,7 @@ export function generateStaticParams() {
 
 export default async function ProductPage({ params }: { params: { category: string; id: string } | Promise<{ category: string; id: string }> }) {
   const { category, id } = await params
-  const isValidCategory = ['blade', 'assist-blade', 'ratchet', 'bit', 'other', 'x-over', 'credits'].includes(category)
+  const isValidCategory = ['blade', 'over-blade', 'assist-blade', 'ratchet', 'bit', 'other', 'x-over', 'credits'].includes(category)
 
   // Get the product data
   const product = getProductById(id)
@@ -38,6 +38,7 @@ export default async function ProductPage({ params }: { params: { category: stri
   // Determine the glow color based on category
   const glowColor =
     product.category === 'blade' ? 'cyber-glow-red' :
+    product.category === 'over-blade' ? 'cyber-glow-red' :
     product.category === 'assist-blade' ? 'cyber-glow-red' :
     product.category === 'ratchet' ? 'cyber-glow-green' :
     product.category === 'bit' ? 'cyber-glow-blue' :
