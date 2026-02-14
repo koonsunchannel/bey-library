@@ -73,6 +73,11 @@ export const products: Product[] = [
         name: "Limnited",
         image: "/Blade/00Persona/DS 12 LD.webp"
       },
+      {
+        id: "Blade-DS-013",
+        name: "Limnited?",
+        image: "/Blade/00Persona/DS 13 LD.webp"
+      },
     ],
   },
   {
@@ -1745,7 +1750,7 @@ export const products: Product[] = [
   },
   {
     id: "Blade-CX2-001",
-    name: "Bahamut Blitz BK",
+    name: "Bahamut Blitz",
     image: "/Blade/00Kurosu/BBBK 1 C13.webp",
     category: "blade",
     type:"attack",
@@ -1758,7 +1763,7 @@ export const products: Product[] = [
       "Lock Chip Type": "Plastic (~1.7 g)",
       "Over Blade": "B (Break)",
       "Assist Blade": "K (Knuckle)",
-      "Product Line": "CX",
+      "Product Line": "CX Xpansion",
     }, 
     bey: [
       {
@@ -1770,7 +1775,7 @@ export const products: Product[] = [
   },
   {
     id: "Blade-KFGV-001",
-    name: "Knight Fortress GV",
+    name: "Knight Fortress",
     image: "/Blade/00Persona/KFGV 1 C14.webp",
     category: "blade",
     type:"defense",
@@ -1783,7 +1788,7 @@ export const products: Product[] = [
       "Lock Chip Type": "Plastic (~1.7 g)",
       "Over Blade": "G (Guard)",
       "Assist Blade": "V (Vertical)",
-      "Product Line": "CX",
+      "Product Line": "CX Xpansion",
     }, 
     // bey: [
     //   {
@@ -1795,8 +1800,8 @@ export const products: Product[] = [
   },
   {
     id: "Blade-RRFE-001",
-    name: "Ragna Rage FE",
-    image: "/Blade/00Kurosu/RRFE 1 C15.webp",
+    name: "Ragna Rage",
+    image: "/Blade/00Persona/RRFE 1 C15.webp",
     category: "blade",
     type:"stamina",
     price: "CX-15",
@@ -1808,7 +1813,7 @@ export const products: Product[] = [
       "Lock Chip Type": "Plastic (~1.7 g)",
       "Over Blade": "F (Flow)",
       "Assist Blade": "E (Erase)",
-      "Product Line": "CX",
+      "Product Line": "CX Xpansion",
     }, 
     // bey: [
     //   {
@@ -2114,13 +2119,13 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~ g",
     },
-    // bey: [
-    //   {
-    //     id: "Ov-B-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Ov-B-002",
+        name: "CX-16",
+        image: "/Over Blade/B/B 2 C16.webp"
+      },
+    ]
   },
   {
     id: "Ov-G-001",
@@ -2614,7 +2619,7 @@ export const products: Product[] = [
   {
     id: "Rat-150-001",
     name: "1-50",
-    image: "/Ratchet/1/1 50 1 C00.webp",
+    image: "/Ratchet/1/1 50 1 C13.webp",
     category: "ratchet",
     type: "ratchet",
     price: "CX-13",
@@ -2623,13 +2628,13 @@ export const products: Product[] = [
       "High : 5.0 mm",
       "Weight: ~6 g",
     ],
-    // bey: [
-    //   {
-    //     id: "Rat-150-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Rat-150-002",
+        name: "CX-16",
+        image: "/Ratchet/1/1 50 2 C16.webp"
+      },
+    ]
   },
   {
     id: "Rat-160-001",
@@ -3235,10 +3240,9 @@ export const products: Product[] = [
         image: "/Ratchet/4/4 55 5 C00.webp"
       },
       {
-        //ragnaruk
-        id: "Rat-455-006",
-        name: "CX-???",
-        image: "/Ratchet/4/4 55 6 C00.webp"
+        id: "Rat-455-007",
+        name: "CX-15",
+        image: "/Ratchet/4/4 55 7 C15.webp"
       },
     ]
   },
@@ -5737,7 +5741,7 @@ export const products: Product[] = [
   },
   {
     id: "Bit-I-001",
-    name: "Ignition",
+    name: "I (Ignition)",
     image: "/Bit/I/I 1 C13.webp",
     category: "bit",
     type:"attack",
@@ -6268,7 +6272,7 @@ export const products: Product[] = [
       {
         id: "DS-002",
         name: "Bahamut Blitz Break Knuckle 1-50 Igintion (Special Ver.)",
-        image: "/Blade/00Persona/DS 2 B07.webp"
+        image: "/Blade/00Kurosu/BBBK 2 C13.webp"
       },
       {
         id: "Lun07-001",
@@ -6284,6 +6288,36 @@ export const products: Product[] = [
         id: "Sta-0001",
         name: "Xtreme Stadium (Clear & Green Ver.)",
         image: "/Other/BX07/Xtreme-Stadium-CX-16.webp"
+      },
+    ]
+  },
+  {
+    id: "other-026",
+    name: "String Luncher (Special Color)",
+    image: "/Other/BX00/String B4 LTD B00.webp",
+    category: "other",
+    type: "other",
+    price: "BX-00 (B4 Limited)",
+    features: [
+      "String Luncher Pink Ver.",
+      "String Luncher Green Ver.",
+      "String Luncher Orange Ver.",
+    ],
+    pro: [
+      {
+        id: "String B4-001",
+        name: "String Luncher Pink Ver.",
+        image: "/Other/BX00/String B4 LTD Pink.webp"
+      },
+      {
+        id: "String B4-002",
+        name: "String Luncher Green Ver.",
+        image: "/Other/BX00/String B4 LTD Green.webp"
+      },
+      {
+        id: "String B4-003",
+        name: "String Luncher Orange Ver.",
+        image: "/Other/BX00/String B4 LTD Orange.webp"
       },
     ]
   },

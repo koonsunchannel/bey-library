@@ -34,6 +34,10 @@ export default function Filter({ onChange, slug }: { onChange: (types: string[])
     
     // Other
     { label: "Rare", value: "rare", group: "other" },
+    // Xpansion (show only on blade page)
+    ...(slug === 'blade' ? [
+      { label: "Xpansion", value: "xpansion", icon: "/Xpansion.webp", group: "other" },
+    ] : []),
     // Hybrid (show only on bit page)
     ...(slug === 'bit' ? [
       { label: "Hybrid", value: "hybrid", group: "other" },

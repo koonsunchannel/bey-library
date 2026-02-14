@@ -38,12 +38,19 @@ export default function ClientBody({
     const selectedSpins = selectedTypes.filter(t => ['Right', 'Left'].includes(t));
     const selectedTypeCategories = selectedTypes.filter(t => ['attack', 'balance', 'stamina', 'defense', 'rare'].includes(t));
     const selectedHybrid = selectedTypes.includes('hybrid');
+    const selectedXpansion = selectedTypes.includes('xpansion');
 
     filteredProducts = randomizedProducts.filter((product) => {
       // ตรวจสอบ Product Line (ถ้ามีการเลือก)
+      const productLineSpec = (product.specs?.['Product Line'] || '').toString();
       if (selectedProductLines.length > 0) {
-        const matchesProductLine = selectedProductLines.includes(product.specs?.['Product Line'] as string);
+        const matchesProductLine = selectedProductLines.some(pl => productLineSpec.toLowerCase().includes(pl.toLowerCase()));
         if (!matchesProductLine) return false;
+      }
+
+      // ถ้าเลือก Xpansion ให้กรองเฉพาะที่มีคำว่า "Xpansion" ใน Product Line
+      if (selectedXpansion) {
+        if (!productLineSpec.toLowerCase().includes('xpansion')) return false;
       }
 
       // ตรวจสอบ Type (ถ้ามีการเลือก)

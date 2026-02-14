@@ -83,13 +83,23 @@ export default function RandomPage() {
   const randoms: Product[] = blade ? [blade] : [];
 
     // ถ้า blade ที่สุ่มได้มี Product Line: Collaboration หรือ CX ให้สุ่ม As- มาแทรกต่อท้าย blade
-    if (blade && blade.specs && (
-      blade.specs['Product Line'] === 'Collaboration' || 
-      blade.specs['Product Line'] === 'CX'
-    )) {
-      const asItem = getRandomItem(asList);
-      if (asItem) {
-        randoms.push(asItem);
+    // Special: ถ้าเป็น "CX Xpansion" ให้สุ่ม Over Blade ตามด้วย Assist Blade
+    if (blade && blade.specs) {
+      const pl = (blade.specs['Product Line'] || '').toString();
+      const plLower = pl.toLowerCase();
+
+      if (pl === 'Collaboration' || pl === 'CX') {
+        const asItem = getRandomItem(asList);
+        if (asItem) randoms.push(asItem);
+      }
+
+      // CX Xpansion case (or any product line that contains both CX and Xpansion)
+      if (plLower.includes('cx') && plLower.includes('xpansion')) {
+        const overList = products.filter(p => p.category === 'over-blade');
+        const overItem = getRandomItem(overList);
+        const asItem = getRandomItem(asList);
+        if (overItem) randoms.push(overItem);
+        if (asItem) randoms.push(asItem);
       }
     }
 
@@ -140,14 +150,17 @@ export default function RandomPage() {
         Randomize
       </button>
       <div className="flex flex-wrap gap-8 justify-center">
-        {result.map((item, idx) => (
-          <div key={item?.id || idx} className="flex flex-col items-center max-w-xs">
-            {item?.image && (
-              <img src={item.image} alt={item.name} className="w-40 h-40 object-contain rounded-lg border mb-2" />
-            )}
-            <div className="text-lg font-semibold text-center">{item?.name}</div>
-          </div>
-        ))}
+        {result.map((item, idx) => {
+          const displayName = item?.name || "";
+          return (
+            <div key={item?.id || idx} className="flex flex-col items-center max-w-xs">
+              {item?.image && (
+                <img src={item.image} alt={item.name} className="w-40 h-40 object-contain rounded-lg border mb-2" />
+              )}
+              <div className="text-lg font-semibold text-center">{displayName}</div>
+            </div>
+          )
+        })}
       </div>
       {/* ส่วน Result */}
       {result.length > 0 && (
@@ -161,14 +174,30 @@ export default function RandomPage() {
           <div
             className="text-2xl font-bold text-center text-white"
           >
-            {result.map((item, idx) => {
-              let name = item?.name || "";
-              // ถ้าเป็น Rat-, Bit-, As-, หรือ Hybrid- ให้ตัดข้อความในวงเล็บออก (ลบทุกวงเล็บและ trim ช่องว่างซ้ำ)
-              if ((item?.id?.startsWith("Rat-") || item?.id?.startsWith("Bit-") || item?.id?.startsWith("As-") || item?.id?.startsWith("Hybrid-"))) {
-                name = name.replace(/\s*\([^)]*\)/g, "").replace(/\s+/g, " ").trim();
+            {(() => {
+              const tokens: string[] = [];
+              for (let i = 0; i < result.length; i++) {
+                const item = result[i];
+                let name = item?.name || "";
+                if ((item?.id?.startsWith("Rat-") || item?.id?.startsWith("Bit-") || item?.id?.startsWith("As-") || item?.id?.startsWith("Hybrid-") || item?.id?.startsWith("Over-") || item?.id?.startsWith("Ov-"))) {
+                  name = name.replace(/\s*\([^)]*\)/g, "").replace(/\s+/g, " ").trim();
+                }
+
+                const next = result[i + 1];
+                if ((item?.id?.startsWith("Over-") || item?.id?.startsWith("Ov-")) && next && next.id?.startsWith("As-")) {
+                  // combine Over + Assist with no space
+                  let nextName = next.name || "";
+                  if ((next.id?.startsWith("Rat-") || next.id?.startsWith("Bit-") || next.id?.startsWith("As-") || next.id?.startsWith("Hybrid-") || next.id?.startsWith("Over-") || next.id?.startsWith("Ov-"))) {
+                    nextName = nextName.replace(/\s*\([^)]*\)/g, "").replace(/\s+/g, " ").trim();
+                  }
+                  tokens.push(`${name}${nextName}`);
+                  i++; // skip next (Assist)
+                } else {
+                  tokens.push(name);
+                }
               }
-              return name;
-            }).join(" ")}
+              return tokens.join(" ");
+            })()}
           </div>
         </div>
       )}
