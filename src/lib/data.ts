@@ -1969,7 +1969,7 @@ export const products: Product[] = [
   },
   {
     id: "Blade-SK-001",
-    name: "Shinobi Knife (XONE)",
+    name: "Shinobi Knife",
     image: "/Blade/00SubCharacter/SK 1 XONE.webp",
     category: "blade",
     type: ["attack", "rare"],
