@@ -1139,6 +1139,10 @@ export const products: Product[] = [
     type:"attack",
     price: "CX-01",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Dran C01.webp",
+      "Lock Chip Label": "Lock Chip : Dran",
+      "Main Blade Image": "/Blade/00Persona/DBS 0 C01.webp",
+      "Main Blade Label": "Main Blade : Brave",
       "Type": "Attack",
       "Spin": "Right",
       "Weight": "~37 g (Stock Combo Blade)",
@@ -1198,6 +1202,10 @@ export const products: Product[] = [
     type:"stamina",
     price: "CX-02",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Wizard C02.webp",
+      "Lock Chip Label": "Lock Chip : Wizard",
+      "Main Blade Image": "/Blade/00Persona/WAR 0 C02.webp",
+      "Main Blade Label": "Main Blade : Arc",
       "Type": "Stamina",
       "Spin": "Right",
       "Weight": "~35 g (Stock Combo Blade)",
@@ -1222,6 +1230,10 @@ export const products: Product[] = [
     type:"defense",
     price: "CX-03",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Perseus C03.webp",
+      "Lock Chip Label": "Lock Chip : Perseus",
+      "Main Blade Image": "/Blade/00Zodiac - Fox/PDB 0 C03.webp",
+      "Main Blade Label": "Main Blade : Dark",
       "Type": "Defense",
       "Spin": "Right",
       "Weight": "~37 g (Stock Combo Blade)",
@@ -1251,6 +1263,10 @@ export const products: Product[] = [
     type:"balance",
     price: "CX-05",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Hells C05.webp",
+      "Lock Chip Label": "Lock Chip : Hells",
+      "Main Blade Image": "/Blade/00Persona/HRT 0 C05.webp",
+      "Main Blade Label": "Main Blade : Reaper",
       "Type": "Balance",
       "Spin": "Right",
       "Weight": "~36 g (Stock Combo Blade)",
@@ -1285,6 +1301,10 @@ export const products: Product[] = [
     type:"defense",
     price: "CX-05",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Rhino C05.webp",
+      "Lock Chip Label": "Lock Chip : Rhino",
+      "Main Blade Image": "/Blade/00Zooganic/RRC 0 C05.webp",
+      "Main Blade Label": "Main Blade : Reaper",
       "Type": "Defense",
       "Spin": "Right",
       "Weight": "~35 g (Stock Combo Blade)",
@@ -1332,6 +1352,10 @@ export const products: Product[] = [
     type:"attack",
     price: "CX-06",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Fox C06.webp",
+      "Lock Chip Label": "Lock Chip : Fox",
+      "Main Blade Image": "/Blade/00Zodiac - Fox/FBJ 0 C06.webp",
+      "Main Blade Label": "Main Blade : Brush",
       "Type": "Attack",
       "Spin": "Right",
       "Weight": "~36 g (Stock Combo Blade)",
@@ -1383,6 +1407,10 @@ export const products: Product[] = [
     type:"attack",
     price: "CX-07",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Pegasus C07.webp",
+      "Lock Chip Label": "Lock Chip : Pegasus",
+      "Main Blade Image": "/Blade/00Zodiac - Fox/PBA 0 C07.webp",
+      "Main Blade Label": "Main Blade : Blast",
       "Type": "Attack",
       "Spin": "Right",
       "Weight": "~39 g (Stock Combo Blade)",
@@ -1412,6 +1440,10 @@ export const products: Product[] = [
     type:"stamina",
     price: "CX-08",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Cerberus C08.webp",
+      "Lock Chip Label": "Lock Chip : Cerberus",
+      "Main Blade Image": "/Blade/00Zodiac - Fox/CFW 0 C08.webp",
+      "Main Blade Label": "Main Blade : Flame",
       "Type": "Stamina",
       "Spin": "Right",
       "Weight": "~37 g (Stock Combo Blade)",
@@ -1441,6 +1473,10 @@ export const products: Product[] = [
     type:"balance",
     price: "CX-08",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Whale C08.webp",
+      "Lock Chip Label": "Lock Chip : Whale",
+      "Main Blade Image": "/Blade/00Persona/WFM 0 C08.webp",
+      "Main Blade Label": "Main Blade : Flame",
       "Type": "Balance",
       "Spin": "Right",
       "Weight": "~37 g (Stock Combo Blade)",
@@ -1531,6 +1567,12 @@ export const products: Product[] = [
     type: ["balance"],
     price: "CX-09",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Sol C09.webp",
+      "Lock Chip Label": "Sol",
+      "Main Blade Image": "/Blade/00Kurosu/SED Upper 0 C09.webp",
+      "Main Blade Label": "Eclipse(Upper)",
+      "Main Blade Image2": "/Blade/00Kurosu/SED Smash 0 C09.webp",
+      "Main Blade Label2": "Eclipse(Smash)",
       Type: "Balance",
       Spin: "Right",
       Weight: "~39 g (Stock Combo Blade)",
@@ -1618,6 +1660,10 @@ export const products: Product[] = [
     type:"stamina",
     price: "CX-10",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Wolf C10.webp",
+      "Lock Chip Label": "Lock Chip : Wolf",
+      "Main Blade Image": "/Blade/00SubCharacter/WHF 0 C10.webp",
+      "Main Blade Label": "Main Blade : Hunt",
       "Type": "Stamina",
       "Spin": "Right",
       "Weight": "~39 g (Stock Combo Blade)",
@@ -1642,6 +1688,10 @@ export const products: Product[] = [
     type:"balance",
     price: "CX-11",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Emperor C11.webp",
+      "Lock Chip Label": "Lock Chip : Emperor",
+      "Main Blade Image": "/Blade/00Persona/EMH 0 C11.webp",
+      "Main Blade Label": "Main Blade : Might",
       "Type": "Balance",
       "Spin": "Right",
       "Weight": "~45 g (Stock Combo Blade)",
@@ -1732,6 +1782,10 @@ export const products: Product[] = [
     type:"defense",
     price: "CX-12",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Phoenix C12.webp",
+      "Lock Chip Label": "Lock Chip : Phoenix",
+      "Main Blade Image": "/Blade/00Yggdrasil/PFZ 0 C12.webp",
+      "Main Blade Label": "Main Blade : Flare",
       "Type": "Defense",
       "Spin": "Right",
       "Weight": "~ g (Stock Combo Blade)",
@@ -1756,6 +1810,10 @@ export const products: Product[] = [
     type:"attack",
     price: "CX-13",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Bahamut C13.webp",
+      "Lock Chip Label": "Lock Chip : Bahamut",
+      "Main Blade Image": "/Blade/00Kurosu/BBBK 0 C13.webp",
+      "Main Blade Label": "Metal Blade : Blitz",
       "Type": "Attack",
       "Spin": "Right",
       "Weight": "~ g (Stock Combo Blade)",
@@ -1781,6 +1839,10 @@ export const products: Product[] = [
     type:"defense",
     price: "CX-14",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Knight C14.webp",
+      "Lock Chip Label": "Lock Chip : Knight",
+      "Main Blade Image": "/Blade/00Persona/KFGV 0 C14.webp",
+      "Main Blade Label": "Metal Blade : Fortress",
       "Type": "Defense",
       "Spin": "Right",
       "Weight": "~ g (Stock Combo Blade)",
@@ -1806,6 +1868,10 @@ export const products: Product[] = [
     type:"stamina",
     price: "CX-15",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Ragna C15.webp",
+      "Lock Chip Label": "Lock Chip : Ragna",
+      "Main Blade Image": "/Blade/00Persona/RRFE 0 C15.webp",
+      "Main Blade Label": "Metal Blade : Rage",
       "Type": "Stamina",
       "Spin": "Right",
       "Weight": "~ g (Stock Combo Blade)",
@@ -1818,30 +1884,6 @@ export const products: Product[] = [
     // bey: [
     //   {
     //     id: "Blade-RRFE-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
-  },
-  {
-    id: "Blade-KWS-001",
-    name: "Kraken Wriggle",
-    image: "/Blade/00SubCharacter/KWS 1 C12.webp",
-    category: "blade",
-    type:"stamina",
-    price: "CX-???",
-    specs: {
-      "Type": "Stamina",
-      "Spin": "Right",
-      "Weight": "~ g (Stock Combo Blade)",
-      "Stock Combo": "Slash 3-85 Orb",
-      "Lock Chip Type": "Plastic (~1.7 g)",
-      "Assist Blade": "S (Slash)",
-      "Product Line": "CX",
-    }, 
-    // bey: [
-    //   {
-    //     id: "Blade-KWS-002",
     //     name: "",
     //     image: ""
     //   },
@@ -2021,6 +2063,10 @@ export const products: Product[] = [
     type:["attack", "rare"],
     price: "CX-Game Package",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Leon C00.webp",
+      "Lock Chip Label": "Lock Chip : Leon",
+      "Main Blade Image": "/Blade/00Zooganic/LFT 0 C00.webp",
+      "Main Blade Label": "Main Blade : Fang",
       "Type": "Attack",
       "Spin": "Right",
       "Weight": "~37 g",
@@ -2045,6 +2091,10 @@ export const products: Product[] = [
     type:["attack", "rare"],
     price: "CX-Rare Bey Battle",
     specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/Valkyrie C00.webp",
+      "Lock Chip Label": "Lock Chip : Valkyrie",
+      "Main Blade Image": "/Blade/00Kurosu/VVS 0 C00.webp",
+      "Main Blade Label": "Main Blade : Volt",
       "Type": "Attack",
       "Spin": "Right",
       "Weight": "~41 g",
@@ -2197,11 +2247,6 @@ export const products: Product[] = [
         id: "As-S-004",
         name: "Rare Bey Battle",
         image: "/Assist Blade/S/S 4 C00.webp"
-      },
-      {
-        id: "As-S-005",
-        name: "CX-12",
-        image: "/Assist Blade/S/S 5 C12.webp"
       },
     ]
   },
@@ -3177,11 +3222,6 @@ export const products: Product[] = [
         id: "Rat-385-007",
         name: "BX-48",
         image: "/Ratchet/3/3 85 7 B48.webp"
-      },
-      {
-        id: "Rat-385-00z",
-        name: "CX-??",
-        image: ""
       },
     ]
   },
@@ -4557,11 +4597,6 @@ export const products: Product[] = [
         id: "Bit-O-006",
         name: "Campaign",
         image: "/Bit/O/O 6 CP.webp"
-      },
-      {
-        id: "Bit-O-00z",
-        name: "CX-??",
-        image: ""
       },
     ]
   },
