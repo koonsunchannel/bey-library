@@ -12,17 +12,69 @@ type BeyVariant = {
   type: string | string[];
 };
 
+// Type for component parts (Lock Chip, Main Blade, etc.)
+type ComponentPart = {
+  id: string;
+  name: string;
+  image: string;
+  componentType: 'lock-chip' | 'main-blade' | 'metal-blade';
+  spin?: string;
+};
+
 function getRandomItem<T>(arr: T[]): T | undefined {
   if (!arr.length) return undefined;
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+// Extract Lock Chip and Main Blade from CX items
+function extractCXComponents(): ComponentPart[] {
+  const components: ComponentPart[] = [];
+  const cxBlades = products.filter(p => p.id.startsWith("Blade-") && p.specs?.['Product Line']?.includes('CX'));
+  
+  cxBlades.forEach(blade => {
+    if (blade.specs) {
+      const lockChipImage = blade.specs['Lock Chip Image'];
+      const lockChipLabel = blade.specs['Lock Chip Label'];
+      const mainBladeImage = blade.specs['Main Blade Image'] || blade.specs['Metal Blade Image'];
+      const mainBladeLabel = blade.specs['Main Blade Label'] || blade.specs['Metal Blade Label'];
+      const spin = blade.specs['Spin'];
+      
+      if (lockChipImage && lockChipLabel) {
+        components.push({
+          id: `${blade.id}-lock`,
+          name: lockChipLabel.replace('Lock Chip : ', ''),
+          image: lockChipImage,
+          componentType: 'lock-chip',
+          spin: spin
+        });
+      }
+      
+      if (mainBladeImage && mainBladeLabel) {
+        const isMetal = mainBladeLabel.startsWith('Metal Blade');
+        components.push({
+          id: `${blade.id}-main`,
+          name: mainBladeLabel.replace(/^(Main Blade|Metal Blade) : /, ''),
+          image: mainBladeImage,
+          componentType: isMetal ? 'metal-blade' : 'main-blade',
+          spin: spin
+        });
+      }
+    }
+  });
+  
+  return components;
+}
+
 export default function RandomPage() {
   const [result, setResult] = useState<Product[]>([]);
+  const [components, setComponents] = useState<ComponentPart[]>([]);
   const [lockedBladeId, setLockedBladeId] = useState<string>("");
 
   // Blade list for dropdown
   const blades = products.filter(p => p.id.startsWith("Blade-"));
+  
+  // Get all CX components once
+  const cxComponents = extractCXComponents();
 
   // Helper to get random variant if blade has randomVariants
   function getRandomBladeWithVariant(blade: Product & { randomVariants?: BeyVariant[] }) {
@@ -81,12 +133,44 @@ export default function RandomPage() {
 
   let bit: Product | undefined = undefined;
   const randoms: Product[] = blade ? [blade] : [];
+  const componentParts: ComponentPart[] = [];
 
     // ถ้า blade ที่สุ่มได้มี Product Line: Collaboration หรือ CX ให้สุ่ม As- มาแทรกต่อท้าย blade
     // Special: ถ้าเป็น "CX Xpansion" ให้สุ่ม Over Blade ตามด้วย Assist Blade
     if (blade && blade.specs) {
       const pl = (blade.specs['Product Line'] || '').toString();
       const plLower = pl.toLowerCase();
+
+      // CX case: extract Lock Chip and Main Blade
+      if (pl === 'CX' || plLower.includes('cx')) {
+        // Get the spin from Main Blade
+        const mainBladeSpin = blade.specs['Spin'];
+        
+        // Get Lock Chip from any CX blade with matching spin
+        const cxLockChips = cxComponents.filter(c => 
+          c.componentType === 'lock-chip' && c.spin === mainBladeSpin
+        );
+        const randomLockChip = getRandomItem(cxLockChips);
+        if (randomLockChip) {
+          componentParts.push(randomLockChip);
+        }
+        
+        // Get Main Blade from this specific blade
+        if (blade.specs['Main Blade Image'] || blade.specs['Metal Blade Image']) {
+          const mainBladeImage = blade.specs['Main Blade Image'] || blade.specs['Metal Blade Image'];
+          const mainBladeLabel = blade.specs['Main Blade Label'] || blade.specs['Metal Blade Label'];
+          if (mainBladeImage && mainBladeLabel) {
+            const isMetal = mainBladeLabel.startsWith('Metal Blade');
+            componentParts.push({
+              id: `${blade.id}-main`,
+              name: mainBladeLabel.replace(/^(Main Blade|Metal Blade) : /, ''),
+              image: mainBladeImage,
+              componentType: isMetal ? 'metal-blade' : 'main-blade',
+              spin: mainBladeSpin
+            });
+          }
+        }
+      }
 
       if (pl === 'Collaboration' || pl === 'CX') {
         const asItem = getRandomItem(asList);
@@ -119,6 +203,7 @@ export default function RandomPage() {
     }
 
     setResult(randoms.filter(Boolean));
+    setComponents(componentParts);
   }
 
   return (
@@ -150,7 +235,22 @@ export default function RandomPage() {
         Randomize
       </button>
       <div className="flex flex-wrap gap-8 justify-center">
+        {/* Display component parts (Lock Chip, Main Blade) first */}
+        {components.map((component, idx) => (
+          <div key={component.id || idx} className="flex flex-col items-center max-w-xs">
+            {component.image && (
+              <img src={component.image} alt={component.name} className="w-40 h-40 object-contain rounded-lg border mb-2" />
+            )}
+            <div className="text-lg font-semibold text-center">{component.name}</div>
+          </div>
+        ))}
+        {/* Display regular products (skip Blade if CX components are shown) */}
         {result.map((item, idx) => {
+          // Skip Blade items when showing CX components
+          if (item?.id?.startsWith("Blade-") && components.length > 0) {
+            return null;
+          }
+          
           const displayName = item?.name || "";
           return (
             <div key={item?.id || idx} className="flex flex-col items-center max-w-xs">
@@ -176,8 +276,33 @@ export default function RandomPage() {
           >
             {(() => {
               const tokens: string[] = [];
+              
+              // Add component parts first (Lock Chip + Main Blade) with space between
+              for (let i = 0; i < components.length; i++) {
+                const comp = components[i];
+                let name = comp.name || "";
+                
+                // If next component is main-blade/metal-blade and current is lock-chip, combine with space
+                const next = components[i + 1];
+                if ((comp.componentType === 'lock-chip') && next && 
+                    (next.componentType === 'main-blade' || next.componentType === 'metal-blade')) {
+                  let nextName = next.name || "";
+                  tokens.push(`${name} ${nextName}`);
+                  i++; // skip next
+                } else {
+                  tokens.push(name);
+                }
+              }
+              
+              // Add regular products (skip Blade- products for CX)
               for (let i = 0; i < result.length; i++) {
                 const item = result[i];
+                
+                // Skip Blade items when showing CX components
+                if (item?.id?.startsWith("Blade-") && components.length > 0) {
+                  continue;
+                }
+                
                 let name = item?.name || "";
                 if ((item?.id?.startsWith("Rat-") || item?.id?.startsWith("Bit-") || item?.id?.startsWith("As-") || item?.id?.startsWith("Hybrid-") || item?.id?.startsWith("Over-") || item?.id?.startsWith("Ov-"))) {
                   name = name.replace(/\s*\([^)]*\)/g, "").replace(/\s+/g, " ").trim();

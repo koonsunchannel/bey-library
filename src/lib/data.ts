@@ -5797,7 +5797,7 @@ export const products: Product[] = [
   },
   {
     id: "Bit-Y-001",
-    name: "Yielding",
+    name: "Y (Yielding)",
     image: "/Bit/Y/Y 1 C15.webp",
     category: "bit",
     type:"stamina",
