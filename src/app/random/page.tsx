@@ -173,22 +173,49 @@ export default function RandomPage() {
       }
 
       if (pl === 'Collaboration' || pl === 'CX') {
-        const asItem = getRandomItem(asList);
+        // ตรวจสอบ Spin ของ Main Blade ถ้าเป็น Left ให้กรอง Assist Blade เป็น Left เท่านั้น
+        const mainBladeComponent = componentParts.find(c => c.componentType === 'main-blade' || c.componentType === 'metal-blade');
+        const mainBladeSpin = mainBladeComponent?.spin;
+        
+        let filteredAsList = asList;
+        if (mainBladeSpin === 'Left') {
+          // กรองเฉพาะ Assist Blade ที่เป็น Left Spin
+          filteredAsList = filteredAsList.filter(p => p.specs?.['Spin'] === 'Left');
+        }
+        
+        const asItem = getRandomItem(filteredAsList);
         if (asItem) randoms.push(asItem);
       }
 
-      // CX Xpansion case (or any product line that contains both CX and Xpansion)
-      if (plLower.includes('cx') && plLower.includes('xpansion')) {
-        const overList = products.filter(p => p.category === 'over-blade');
-        const overItem = getRandomItem(overList);
-        const asItem = getRandomItem(asList);
+      // CX Xpanded case (or any product line that contains both CX and Xpanded)
+      if (plLower.includes('cx') && plLower.includes('xpanded')) {
+        // ตรวจสอบ Spin ของ Main Blade ถ้าเป็น Left ให้กรอง Over และ Assist Blade เป็น Left เท่านั้น
+        const mainBladeComponent = componentParts.find(c => c.componentType === 'main-blade' || c.componentType === 'metal-blade');
+        const mainBladeSpin = mainBladeComponent?.spin;
+        
+        let filteredOverList = products.filter(p => p.category === 'over-blade');
+        let filteredAsList = asList;
+        
+        if (mainBladeSpin === 'Left') {
+          // กรองเฉพาะ Over Blade และ Assist Blade ที่เป็น Left Spin
+          filteredOverList = filteredOverList.filter(p => p.specs?.['Spin'] === 'Left');
+          filteredAsList = filteredAsList.filter(p => p.specs?.['Spin'] === 'Left');
+        }
+        
+        const overItem = getRandomItem(filteredOverList);
+        const asItem = getRandomItem(filteredAsList);
         if (overItem) randoms.push(overItem);
         if (asItem) randoms.push(asItem);
       }
     }
 
-    // เพิ่ม ratOrHybrid
-    if (ratOrHybrid) {
+    // เพิ่ม ratOrHybrid (ยกเว้น UX Xpanded ที่สุ่มเฉพาะ Bit)
+    const isUxXpanded = blade && blade.specs && 
+      blade.specs['Product Line'] && 
+      blade.specs['Product Line'].toString().toLowerCase().includes('ux') && 
+      blade.specs['Product Line'].toString().toLowerCase().includes('xpanded');
+    
+    if (ratOrHybrid && !isUxXpanded) {
       if (ratOrHybrid.id.startsWith("Hybrid-")) {
         // ถ้าเป็น Hybrid- ให้แสดงเฉพาะ Hybrid- (ไม่ต้องแสดง Rat- และไม่ต้องสุ่ม Bit-)
         randoms.push(ratOrHybrid);
@@ -199,6 +226,14 @@ export default function RandomPage() {
         if (bit) {
           randoms.push(bit);
         }
+      }
+    }
+    
+    // สำหรับ UX Xpanded สุ่มเฉพาะ Bit ไม่ต้องมี Ratchet
+    if (isUxXpanded) {
+      bit = getRandomItem(bits);
+      if (bit) {
+        randoms.push(bit);
       }
     }
 

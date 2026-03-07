@@ -38,7 +38,7 @@ export default function ClientBody({
     const selectedSpins = selectedTypes.filter(t => ['Right', 'Left'].includes(t));
     const selectedTypeCategories = selectedTypes.filter(t => ['attack', 'balance', 'stamina', 'defense', 'rare'].includes(t));
     const selectedHybrid = selectedTypes.includes('hybrid');
-    const selectedXpansion = selectedTypes.includes('xpansion');
+    const selectedXpanded = selectedTypes.includes('xpanded');
 
     filteredProducts = randomizedProducts.filter((product) => {
       // ตรวจสอบ Product Line (ถ้ามีการเลือก)
@@ -48,9 +48,9 @@ export default function ClientBody({
         if (!matchesProductLine) return false;
       }
 
-      // ถ้าเลือก Xpansion ให้กรองเฉพาะที่มีคำว่า "Xpansion" ใน Product Line
-      if (selectedXpansion) {
-        if (!productLineSpec.toLowerCase().includes('xpansion')) return false;
+      // ถ้าเลือก Xpanded ให้กรองเฉพาะที่มีคำว่า "Xpanded" ใน Product Line
+      if (selectedXpanded) {
+        if (!productLineSpec.toLowerCase().includes('xpanded')) return false;
       }
 
       // ตรวจสอบ Type (ถ้ามีการเลือก)

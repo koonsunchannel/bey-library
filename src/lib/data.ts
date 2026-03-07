@@ -1821,7 +1821,7 @@ export const products: Product[] = [
       "Lock Chip Type": "Plastic (~1.7 g)",
       "Over Blade": "B (Break)",
       "Assist Blade": "K (Knuckle)",
-      "Product Line": "CX Xpansion",
+      "Product Line": "CX Xpanded",
     }, 
     bey: [
       {
@@ -1850,7 +1850,7 @@ export const products: Product[] = [
       "Lock Chip Type": "Plastic (~1.7 g)",
       "Over Blade": "G (Guard)",
       "Assist Blade": "V (Vertical)",
-      "Product Line": "CX Xpansion",
+      "Product Line": "CX Xpanded",
     }, 
     // bey: [
     //   {
@@ -1879,7 +1879,7 @@ export const products: Product[] = [
       "Lock Chip Type": "Plastic (~1.7 g)",
       "Over Blade": "F (Flow)",
       "Assist Blade": "E (Erase)",
-      "Product Line": "CX Xpansion",
+      "Product Line": "CX Xpanded",
     }, 
     // bey: [
     //   {
