@@ -1889,6 +1889,55 @@ export const products: Product[] = [
     //   },
     // ]
   },
+  {
+    id: "Blade-BG-001",
+    name: "Bullet Griffon",
+    image: "/Blade/00Kurosu/BG 1 U19.webp",
+    category: "blade",
+    type:"balance",
+    price: "UX-19",
+    specs: {
+      "Lock Chip Image": "/Blade/00Kurosu/BG 1 U19 U.webp",
+      "Lock Chip Label": "Upper : Bullet",
+      "Main Blade Image": "/Blade/00Kurosu/BG 1 U19 L.webp",
+      "Main Blade Label": "Lower : Griffon",
+      "Type": "Balance",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "Hexa",
+      "Product Line": "UX Xpanded",
+      "Gimmick": "Split Blade (Upper/Lower)",
+    }, 
+    // bey: [
+    //   {
+    //     id: "Blade-BG-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Blade-DST-001",
+    name: "Dran Strike",
+    image: "/Blade/00Persona/DST 1 B49.webp",
+    category: "blade",
+    type:"attack",
+    price: "BX-49",
+    specs: {
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "4-50 Free Flat",
+      "Product Line": "BX Xpanded",
+    }, 
+    // bey: [
+    //   {
+    //     id: "Blade-BG-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
 
   //RARE BLADE
   {
@@ -3237,13 +3286,13 @@ export const products: Product[] = [
       "High : 5.0 mm",
       "Weight: ~5 g",
     ],
-    // bey: [
-    //   {
-    //     id: "Rat-450-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Rat-450-002",
+        name: "BX-49",
+        image: "/Ratchet/4/4 50 2 B49.webp"
+      },
+    ]
   },
   {
     id: "Rat-455-001",
@@ -5804,13 +5853,34 @@ export const products: Product[] = [
     price: "CX-15",
     specs: {
       "Type": "Stamina",
-      "Weight": "~4 g",
-      "Gears": "32?",
+      "Weight": "~8 g",
+      "Gears": "24",
       "Burst Resistance": "Low",
     },
     // bey: [
     //   {
     //     id: "Bit-Y-002",
+    //     name: "",
+    //     image: ""
+    //   },
+    // ]
+  },
+  {
+    id: "Bit-FF-001",
+    name: "FF (Free Flat)",
+    image: "/Bit/FF/FF 1 B49.webp",
+    category: "bit",
+    type:"attack",
+    price: "BX-49",
+    specs: {
+      "Type": "Attack",
+      "Weight": "~4 g",
+      "Gears": "12",
+      "Burst Resistance": "High",
+    },
+    // bey: [
+    //   {
+    //     id: "Bit-FF-002",
     //     name: "",
     //     image: ""
     //   },

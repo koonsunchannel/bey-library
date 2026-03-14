@@ -40,6 +40,7 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
   const productLine = (displayProduct.specs?.['Product Line'] || '').toString()
   const isCX = displayProduct.category === 'blade' && productLine.toLowerCase().includes('cx')
   const isXpansion = isCX && productLine.toLowerCase().includes('xpansion')
+  const isSplitBlade = displayProduct.specs?.['Gimmick']?.toString().toLowerCase().includes('split blade')
   const lockChipImage = (displayProduct.specs?.['Lock Chip Image'] || '') as string
   const mainBladeImage1 = (isXpansion
     ? (displayProduct.specs?.['Metal Blade Image'] || displayProduct.specs?.['Main Blade Image'] || '')
@@ -54,6 +55,12 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
   const bladeDetailLabel2 = (isXpansion
     ? (displayProduct.specs?.['Metal Blade Label2'] || displayProduct.specs?.['Main Blade Label2'] || '')
     : (displayProduct.specs?.['Main Blade Label2'] || '')) as string
+
+  // Split Blade helpers
+  const splitBladeUpperImage = (displayProduct.specs?.['Lock Chip Image'] || '') as string
+  const splitBladeLowerImage = (displayProduct.specs?.['Main Blade Image'] || '') as string
+  const splitBladeUpperLabel = (displayProduct.specs?.['Lock Chip Label'] || 'Upper') as string
+  const splitBladeLowerLabel = (displayProduct.specs?.['Main Blade Label'] || 'Lower') as string
 
   // Filter out image & label keys from displayed specs so URLs / image keys don't show
   const _specs = displayProduct.specs || {}
@@ -196,6 +203,45 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
                       </div>
                     )}
                   </div>
+                </div>
+              </div>
+            )}
+
+            {/* Split Blade Details Section */}
+            {isSplitBlade && (
+              <div className="mt-6">
+                <h3 className={`text-xl font-bold cyber-heading ${glowColor} mb-4`}>
+                  BLADE DETAILS
+                </h3>
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                  {splitBladeUpperImage && (
+                    <div className="flex flex-col items-center space-y-2">
+                      <div className="relative w-40 h-40 rounded-lg overflow-hidden border bg-black">
+                        <Image
+                          src={splitBladeUpperImage}
+                          alt={splitBladeUpperLabel}
+                          width={200}
+                          height={200}
+                          className="object-contain"
+                        />
+                      </div>
+                      <p className="text-sm font-medium text-center">{splitBladeUpperLabel}</p>
+                    </div>
+                  )}
+                  {splitBladeLowerImage && (
+                    <div className="flex flex-col items-center space-y-2">
+                      <div className="relative w-40 h-40 rounded-lg overflow-hidden border bg-black">
+                        <Image
+                          src={splitBladeLowerImage}
+                          alt={splitBladeLowerLabel}
+                          width={200}
+                          height={200}
+                          className="object-contain"
+                        />
+                      </div>
+                      <p className="text-sm font-medium text-center">{splitBladeLowerLabel}</p>
+                    </div>
+                  )}
                 </div>
               </div>
             )}
