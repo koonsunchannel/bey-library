@@ -155,16 +155,36 @@ export default function RandomPage() {
           componentParts.push(randomLockChip);
         }
         
-        // Get Main Blade from this specific blade
+        // Get Main Blade from this specific blade (randomize between available options)
         if (blade.specs['Main Blade Image'] || blade.specs['Metal Blade Image']) {
-          const mainBladeImage = blade.specs['Main Blade Image'] || blade.specs['Metal Blade Image'];
-          const mainBladeLabel = blade.specs['Main Blade Label'] || blade.specs['Metal Blade Label'];
-          if (mainBladeImage && mainBladeLabel) {
-            const isMetal = mainBladeLabel.startsWith('Metal Blade');
+          // Check if blade has multiple Main Blade options
+          const hasMultipleMainBlades = blade.specs['Main Blade Image2'] || blade.specs['Metal Blade Image2'];
+          
+          let selectedMainBladeImage: string;
+          let selectedMainBladeLabel: string;
+          
+          if (hasMultipleMainBlades) {
+            // Randomly choose between Main Blade 1 and 2
+            const useSecondBlade = Math.random() < 0.5;
+            
+            if (useSecondBlade && (blade.specs['Main Blade Image2'] || blade.specs['Metal Blade Image2'])) {
+              selectedMainBladeImage = blade.specs['Main Blade Image2'] || blade.specs['Metal Blade Image2'];
+              selectedMainBladeLabel = blade.specs['Main Blade Label2'] || blade.specs['Metal Blade Label2'];
+            } else {
+              selectedMainBladeImage = blade.specs['Main Blade Image'] || blade.specs['Metal Blade Image'];
+              selectedMainBladeLabel = blade.specs['Main Blade Label'] || blade.specs['Metal Blade Label'];
+            }
+          } else {
+            selectedMainBladeImage = blade.specs['Main Blade Image'] || blade.specs['Metal Blade Image'];
+            selectedMainBladeLabel = blade.specs['Main Blade Label'] || blade.specs['Metal Blade Label'];
+          }
+          
+          if (selectedMainBladeImage && selectedMainBladeLabel) {
+            const isMetal = selectedMainBladeLabel.startsWith('Metal Blade');
             componentParts.push({
               id: `${blade.id}-main`,
-              name: mainBladeLabel.replace(/^(Main Blade|Metal Blade) : /, ''),
-              image: mainBladeImage,
+              name: selectedMainBladeLabel.replace(/^(Main Blade|Metal Blade) : /, ''),
+              image: selectedMainBladeImage,
               componentType: isMetal ? 'metal-blade' : 'main-blade',
               spin: mainBladeSpin
             });
