@@ -38,7 +38,7 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
 
   // Blade Details helpers
   const productLine = (displayProduct.specs?.['Product Line'] || '').toString()
-  const isCX = displayProduct.category === 'blade' && productLine.toLowerCase().includes('cx')
+  const isCX = (displayProduct.category === 'blade' || displayProduct.category === 'x-over') && productLine.toLowerCase().includes('cx')
   const isXpansion = isCX && productLine.toLowerCase().includes('xpansion')
   const isSplitBlade = displayProduct.specs?.['Gimmick']?.toString().toLowerCase().includes('split blade')
   const lockChipImage = (displayProduct.specs?.['Lock Chip Image'] || '') as string
@@ -134,8 +134,8 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
                   FEATURES
                 </h3>
                 <ul className="space-y-2">
-                  {displayProduct.features.map((feature) => (
-                    <li key={`feature-${feature.substring(0, 20)}`} className="flex items-start">
+                  {displayProduct.features.map((feature, idx) => (
+                    <li key={`feature-${idx}`} className="flex items-start">
                       <div className={`mr-2 text-lg ${glowColor}`}>•</div>
                       <span>{feature}</span>
                     </li>
@@ -143,8 +143,8 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
                 </ul>
               </div>
             )}
-            {/* Blade Details (for CX blades) - placed above Variants */}
-            {displayProduct.category === 'blade' && (displayProduct.specs?.['Product Line'] || '').toString().toLowerCase().includes('cx') && (
+            {/* Blade Details (for CX/x-over blades) - placed above Variants */}
+            {((displayProduct.category === 'blade' || displayProduct.category === 'x-over') && (displayProduct.specs?.['Product Line'] || '').toString().toLowerCase().includes('cx')) && (
               <div className="mt-6">
                 <h3 className={`text-xl font-bold cyber-heading ${glowColor} mb-4`}>
                   BLADE DETAILS

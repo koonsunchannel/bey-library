@@ -1336,13 +1336,13 @@ export const products: Product[] = [
       "Product Line": "UX",
       "Gimmick": "Mode Change (Defense/Attack)",
     },
-    // bey: [
-    //   {
-    //     id: "Blade-SSp-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Blade-SSp-002",
+        name: "UX-00",
+        image: "/Blade/00Zodiac - Fox/SSp 2 U00.webp"
+      },
+    ]
   },
   {
     id: "Blade-FBJ-001",
@@ -1930,13 +1930,23 @@ export const products: Product[] = [
       "Stock Combo": "4-50 Free Flat",
       "Product Line": "BX Xpanded",
     }, 
-    // bey: [
-    //   {
-    //     id: "Blade-BG-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Blade-DST-002",
+        name: "GP Prize",
+        image: "/Blade/00Persona/DST 2 GP Prize.webp"
+      },
+      {
+        id: "Blade-DST-003",
+        name: "GP Prize",
+        image: "/Blade/00Persona/DST 3 GP Prize.webp"
+      },
+      {
+        id: "Blade-DST-004",
+        name: "GP Prize",
+        image: "/Blade/00Persona/DST 4 GP Prize.webp"
+      },
+    ]
   },
 
   //RARE BLADE
@@ -2339,6 +2349,11 @@ export const products: Product[] = [
         name: "CX-04",
         image: "/Assist Blade/B/B 2 C04.webp"
       },
+      {
+        id: "As-B-003",
+        name: "CX-00",
+        image: "/Assist Blade/B/B 3 C00.webp"
+      },
     ]
   },
   {
@@ -2365,6 +2380,11 @@ export const products: Product[] = [
         id: "As-T-003",
         name: "CX-00",
         image: "/Assist Blade/T/T 3 C00.webp"
+      },
+      {
+        id: "As-T-004",
+        name: "CX-00",
+        image: "/Assist Blade/T/T 4 C00.webp"
       },
     ]
   },
@@ -2443,6 +2463,11 @@ export const products: Product[] = [
         id: "As-A-002",
         name: "CoroCoro Event",
         image: "/Assist Blade/A/A 2 C00.webp"
+      },
+      {
+        id: "As-A-003",
+        name: "CX-00",
+        image: "/Assist Blade/A/A 3 C00.webp"
       },
     ]
   },
@@ -2672,13 +2697,18 @@ export const products: Product[] = [
       "High : 7.0 mm",
       "Weight: ~7 g",
     ],
-    // bey: [
-    //   {
-    //     id: "Rat-070-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Rat-070-002",
+        name: "UX-00",
+        image: "/Ratchet/0/0 70 2 U00.webp"
+      },
+      {
+        id: "Rat-070-003",
+        name: "CX-00",
+        image: "/Ratchet/0/0 70 3 C00.webp"
+      },
+    ]
   },
   {
     id: "Rat-080-001",
@@ -2837,13 +2867,13 @@ export const products: Product[] = [
       "High : 7.0 mm",
       "Weight: ~6 g",
     ],
-    // bey: [
-    //   {
-    //     id: "Rat-170-002",
-    //     name: "UX-07",
-    //     image: "https://i.ibb.co/YTWjYHJr/1-80-2-U07.webp"
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Rat-170-002",
+        name: "CX-00",
+        image: "/Ratchet/1/1 70 2 C00.webp"
+      },
+    ]
   },
   {
     id: "Rat-180-001",
@@ -2870,8 +2900,8 @@ export const products: Product[] = [
       },
       {
         id: "Rat-180-004",
-        name: "BX-00",
-        image: "/Ratchet/1/1 80 4 B00.webp"
+        name: "Campaign",
+        image: "/Ratchet/1/1 80 4 CP.webp"
       },
     ]
   },
@@ -2919,10 +2949,9 @@ export const products: Product[] = [
         image: "/Ratchet/2/2 60 7 C06.webp"
       },
       {
-        //Shark Magma
         id: "Rat-260-008",
-        name: "BX-00",
-        image: "/Ratchet/3/2 60 8 B00.webp"
+        name: "Campaign",
+        image: "/Ratchet/2/2 60 8 CP.webp"
       },
     ]
   },
@@ -2950,6 +2979,17 @@ export const products: Product[] = [
         id: "Rat-270-003",
         name: "CoroCoro Comic",
         image: "/Ratchet/2/2 70 3 C00.webp"
+      },
+      {
+        //Spriggan
+        id: "Rat-270-004",
+        name: "X-Over",
+        image: "/Ratchet/2/2 70 4 B00.webp"
+      },
+      {
+        id: "Rat-270-005",
+        name: "CX-00",
+        image: "/Ratchet/2/2 70 5 C00.webp"
       },
     ]
   },
@@ -3291,6 +3331,21 @@ export const products: Product[] = [
         id: "Rat-450-002",
         name: "BX-49",
         image: "/Ratchet/4/4 50 2 B49.webp"
+      },
+      {
+        id: "Rat-450-003",
+        name: "GP Prize",
+        image: "/Ratchet/4/4 50 3 GP Prize.webp"
+      },
+      {
+        id: "Rat-450-004",
+        name: "GP Prize",
+        image: "/Ratchet/4/4 50 4 GP Prize.webp"
+      },
+      {
+        id: "Rat-450-005",
+        name: "GP Prize",
+        image: "/Ratchet/4/4 50 5 GP Prize.webp"
       },
     ]
   },
@@ -4783,8 +4838,8 @@ export const products: Product[] = [
       },
       {
         id: "Bit-GF-007",
-        name: "BX-00",
-        image: "/Bit/GF/GF 7 B00.webp"
+        name: "Campaign",
+        image: "/Bit/GF/GF 7 CP.webp"
       },
     ]
   },
@@ -4859,10 +4914,9 @@ export const products: Product[] = [
         image: "/Bit/GP/GP 4 B39.webp"
       },
       {
-        //Shark Magma
-        id: "Bit-GF-005",
-        name: "BX-00",
-        image: "/Bit/GF/GP 5 B00.webp"
+        id: "Bit-GP-005",
+        name: "Campaign",
+        image: "/Bit/GP/GP 5 CP.webp"
       },
     ]
   },
@@ -4977,9 +5031,14 @@ export const products: Product[] = [
         image: "/Bit/A/A 12 Col.webp"
       },
       {
-        id: "Bit-A-012",
+        id: "Bit-A-013",
         name: "UX-00",
         image: "/Bit/A/A 13 U00.webp"
+      },
+      {
+        id: "Bit-A-014",
+        name: "CX-00",
+        image: "/Bit/A/A 14 C00.webp"
       },
     ]
   },
@@ -5285,6 +5344,11 @@ export const products: Product[] = [
         name: "BX-48",
         image: "/Bit/E/E 4 B48.webp"
       },
+      {
+        id: "Bit-E-005",
+        name: "CX-00",
+        image: "/Bit/E/E 5 C00.webp"
+      },
     ]
   },
   {
@@ -5503,17 +5567,23 @@ export const products: Product[] = [
       {
         id: "Bit-V-008",
         name: "Campaign",
-        image: "/Bit/V/V 8 CP.webp"
+        image: "/Bit/V/V 7 CP.webp"
       },
       {
         id: "Bit-V-009",
         name: "Limited",
-        image: "/Bit/V/V 9 LD.webp"
+        image: "/Bit/V/V 8 LD.webp"
       },
       {
+        //Gold-Black Dran Brave
         id: "Bit-V-010",
         name: "GP Limited",
         image: ""
+      },
+      {
+        id: "Bit-V-011",
+        name: "GP Limited",
+        image: "/Bit/V/V 9 C00.webp"
       },
     ]
   },
@@ -5618,13 +5688,13 @@ export const products: Product[] = [
       "Gears": "16",
       "Burst Resistance": "High"
     },
-    // bey: [
-    //   {
-    //     id: "Bit-Z-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Bit-Z-002",
+        name: "UX-00",
+        image: "/Bit/Z/Z 2 U00.webp"
+      },
+    ]
   },
   {
     id: "Bit-GR-001",
@@ -5729,13 +5799,13 @@ export const products: Product[] = [
       "Gears": "18",
       "Burst Resistance": "High"
     },
-    // bey: [
-    //   {
-    //     id: "Bit-M-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Bit-M-002",
+        name: "X-Over",
+        image: "/Bit/M/M 2 B00.webp"
+      },
+    ]
   },
   {
     id: "Bit-TK-001",
@@ -5878,13 +5948,23 @@ export const products: Product[] = [
       "Gears": "12",
       "Burst Resistance": "High",
     },
-    // bey: [
-    //   {
-    //     id: "Bit-FF-002",
-    //     name: "",
-    //     image: ""
-    //   },
-    // ]
+    bey: [
+      {
+        id: "Bit-FF-002",
+        name: "GP Prize",
+        image: "/Bit/FF/FF 2 GP Prize.webp"
+      },
+      {
+        id: "Bit-FF-003",
+        name: "GP Prize",
+        image: "/Bit/FF/FF 3 GP Prize.webp"
+      },
+      {
+        id: "Bit-FF-004",
+        name: "GP Prize",
+        image: "/Bit/FF/FF 4 GP Prize.webp"
+      },
+    ]
   },
 
   // RARE BIT
@@ -6363,7 +6443,7 @@ export const products: Product[] = [
   {
     id: "other-025",
     name: "Start Dash Set C",
-    image: "/Other/BX07/Start-Dash-Set-C16.webp",
+    image: "/Other/CX16/Start-Dash-Set-C16.webp",
     category: "other",
     type: "other",
     price: "CX-16",
@@ -6377,22 +6457,22 @@ export const products: Product[] = [
       {
         id: "DS-002",
         name: "Bahamut Blitz Break Knuckle 1-50 Igintion (Special Ver.)",
-        image: "/Blade/00Kurosu/BBBK 2 C13.webp"
+        image: "/Blade/00Kurosu/BBBK 2 C16.webp"
       },
       {
         id: "Lun07-001",
         name: "Winder Launcher (Blue Extra Ver.)",
-        image: "/Other/BX07/Beyblade-X-Winder-Launcher-Blue-Extra-Ver.webp"
+        image: "/Other/CX16/Beyblade-X-Winder-Launcher-Blue-Extra-Ver.webp"
       },
       {
         id: "Gip07-0001",
         name: "Launcher Grip (Blue Extra Ver.)",
-        image: "/Other/BX07/Beyblade-X-Launcher-Grip-Blue-Extra-Ver.webp"
+        image: "/Other/CX16/Beyblade-X-Launcher-Grip-Blue-Extra-Ver.webp"
       },
       {
         id: "Sta-0001",
         name: "Xtreme Stadium (Clear & Green Ver.)",
-        image: "/Other/BX07/Xtreme-Stadium-CX-16.webp"
+        image: "/Other/CX16/Xtreme-Stadium-CX-16.webp"
       },
     ]
   },
@@ -6423,6 +6503,54 @@ export const products: Product[] = [
         id: "String B4-003",
         name: "String Luncher Orange Ver.",
         image: "/Other/BX00/String B4 LTD Orange.webp"
+      },
+    ]
+  },
+  {
+    id: "other-027",
+    name: "CX-00 Evagelion Deck Set",
+    image: "/Other/CX00/Evangelion_Deck_Set_Box.webp",
+    category: "other",
+    type: "other",
+    price: "CX-00 (Collaboration)",
+    features: [
+      "EVA Arc B 0-70 Elevate",
+      "EVA Brave A 1-70 Vortex",
+      "EVA Brush T 2-70 Accel",
+      "EVA-Winder Luncher (White & Orange Ver.)",
+      "EVA-Winder Luncher (Black & Red Ver.)",
+      "EVA 3on3 Box",
+    ],
+    pro: [
+      {
+        id: "EVA Arc B-001",
+        name: "EVA Arc B 0-70 Elevate",
+        image: "/Blade/X-Collab/EVA-00 1.webp"
+      },
+      {
+        id: "EVA Brave A-001",
+        name: "EVA Brave A 1-70 Vortex",
+        image: "/Blade/X-Collab/EVA-01 1.webp"
+      },
+      {
+        id: "EVA Brush T-001",
+        name: "EVA Brush T 2-70 Accel",
+        image: "/Blade/X-Collab/EVA-02 1.webp"
+      },
+      {
+        id: "EVA-Winder-001",
+        name: "EVA-Winder Luncher (White & Orange Ver.)",
+        image: "/Other/CX00/EVA-Winder Luncher1.webp"
+      },
+      {
+        id: "EVA-Winder-002",
+        name: "EVA-Winder Luncher (Black & Red Ver.)",
+        image: "/Other/CX00/EVA-Winder Luncher2.webp"
+      },
+      {
+        id: "EVA 3on3 Box-001",
+        name: "EVA 3on3 Box",
+        image: "/Other/CX00/EVA 3on3 Box.webp"
       },
     ]
   },
@@ -6599,6 +6727,22 @@ export const products: Product[] = [
       "Spin": "Right",
       "Weight": "~30 g",
       "Stock Combo": "3-60 Gear Flat",
+      "Product Line": "BX",
+      "Original Generation": "Beyblade Burst",
+    },
+  },
+  {
+    id: "Blade-X-OBB-003",
+    name: "Storm Spriggan",
+    image: "/Blade/X-Collab/SSS-1.webp",
+    category: "x-over",
+    type: "balance",
+    price: "BX-00",
+    specs: {
+      "Type": "Balance",
+      "Spin": "Right",
+      "Weight": "~ g",
+      "Stock Combo": "2-70 Merge",
       "Product Line": "BX",
       "Original Generation": "Beyblade Burst",
     },
@@ -6862,6 +7006,69 @@ export const products: Product[] = [
       "Product Line": "BX",
       "Collab": "Jurassic World",
       "Description": "This Blade is also count as Ptera Swing.",
+    },
+  },
+  {
+    id: "Blade-X-CLB-017",
+    name: "EVA Arc",
+    image: "/Blade/X-Collab/EVA-00 1.webp",
+    category: "x-over",
+    type:"balance",
+    price: "Collab Evangelion",
+    specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/EVA-00.webp",
+      "Lock Chip Label": "Lock Chip : EVA",
+      "Main Blade Image": "/Blade/X-Collab/EVA-00 0.webp",
+      "Main Blade Label": "Main Blade : Arc",
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~38 g (Stock Combo Blade)",
+      "Stock Combo": "Bumper 0-70 Elevate",
+      "Lock Chip Type": "Plastic (~1.7 g)",
+      "Assist Blade": "B (Bumper)",
+      "Product Line": "CX",
+    },
+  },
+  {
+    id: "Blade-X-CLB-018",
+    name: "EVA Brave",
+    image: "/Blade/X-Collab/EVA-01 1.webp",
+    category: "x-over",
+    type:"attack",
+    price: "Collab Evangelion",
+    specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/EVA-01.webp",
+      "Lock Chip Label": "Lock Chip : EVA",
+      "Main Blade Image": "/Blade/X-Collab/EVA-01 0.webp",
+      "Main Blade Label": "Main Blade : Brave",
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~38 g (Stock Combo Blade)",
+      "Stock Combo": "Assult 1-70 Vortex",
+      "Lock Chip Type": "Plastic (~1.7 g)",
+      "Assist Blade": "A (Assult)",
+      "Product Line": "CX",
+    },
+  },
+  {
+    id: "Blade-X-CLB-019",
+    name: "EVA Brush",
+    image: "/Blade/X-Collab/EVA-02 1.webp",
+    category: "x-over",
+    type:"attack",
+    price: "Collab Evangelion",
+    specs: {
+      "Lock Chip Image": "/Blade/Lock Chip/EVA-02.webp",
+      "Lock Chip Label": "Lock Chip : EVA",
+      "Main Blade Image": "/Blade/X-Collab/EVA-02 0.webp",
+      "Main Blade Label": "Main Blade : Brush",
+      "Type": "Attack",
+      "Spin": "Right",
+      "Weight": "~38 g (Stock Combo Blade)",
+      "Stock Combo": "Turn 2-70 Accel",
+      "Lock Chip Type": "Plastic (~1.7 g)",
+      "Assist Blade": "T (Turn)",
+      "Product Line": "CX",
     },
   },
 
