@@ -34,6 +34,13 @@ export default function Filter({ onChange, slug }: { onChange: (types: string[])
     
     // Other
     { label: "Rare", value: "rare", group: "other" },
+    // X-over Category (show only on x-over page)
+    ...(slug === 'x-over' ? [
+      { label: "Bakuten Shoot", value: "bakuten", icon: "/BakutenShoot.webp", group: "category" },
+      { label: "Metal Fight", value: "metalfight", icon: "/MetalFight.webp", group: "category" },
+      { label: "Burst", value: "burst", icon: "/Burst.webp", group: "category" },
+      { label: "Collab", value: "collab", icon: "/X-Over.webp", group: "category" },
+    ] : []),
     // Xpanded (show only on blade page)
     ...(slug === 'blade' ? [
       { label: "Xpanded", value: "xpanded", icon: "/Xpanded.webp", group: "other" },
@@ -198,6 +205,16 @@ export default function Filter({ onChange, slug }: { onChange: (types: string[])
                     <p className="text-xs font-semibold text-gray-500 mb-2 uppercase">Spin Direction</p>
                     <div className="grid grid-cols-2 gap-2">
                       {groupedFilters.spin.map(renderFilterButton)}
+                    </div>
+                  </div>
+                )}
+
+                {/* Category */}
+                {groupedFilters.category && (
+                  <div>
+                    <p className="text-xs font-semibold text-gray-500 mb-2 uppercase">Category</p>
+                    <div className="grid grid-cols-2 gap-2">
+                      {groupedFilters.category.map(renderFilterButton)}
                     </div>
                   </div>
                 )}

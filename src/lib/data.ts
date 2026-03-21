@@ -2972,7 +2972,7 @@ export const products: Product[] = [
         //metal coat orange
         id: "Rat-270-002",
         name: "CoroCoro Comic",
-        image: ""
+        image: "/Ratchet/2/2 70 2 U00.webp"
       },
       {
         //Dran Arc S
@@ -3831,7 +3831,7 @@ export const products: Product[] = [
       {
         id: "Rat-660-007",
         name: "CoroCoro Comic",
-        image: ""
+        image: "/Ratchet/6/6 60 7 U00.webp"
       },
     ]
   },
@@ -5452,7 +5452,7 @@ export const products: Product[] = [
       {
         id: "Bit-L-002",
         name: "CoroCoro Comic",
-        image: ""
+        image: "/Bit/L/L 2 U00.webp"
       },
       {
         id: "Bit-L-003",
@@ -7027,6 +7027,7 @@ export const products: Product[] = [
       "Lock Chip Type": "Plastic (~1.7 g)",
       "Assist Blade": "B (Bumper)",
       "Product Line": "CX",
+      "Collab": "Evangelion",
     },
   },
   {
@@ -7048,6 +7049,7 @@ export const products: Product[] = [
       "Lock Chip Type": "Plastic (~1.7 g)",
       "Assist Blade": "A (Assult)",
       "Product Line": "CX",
+      "Collab": "Evangelion",
     },
   },
   {
@@ -7069,6 +7071,7 @@ export const products: Product[] = [
       "Lock Chip Type": "Plastic (~1.7 g)",
       "Assist Blade": "T (Turn)",
       "Product Line": "CX",
+      "Collab": "Evangelion",
     },
   },
 

@@ -39,6 +39,7 @@ export default function ClientBody({
     const selectedTypeCategories = selectedTypes.filter(t => ['attack', 'balance', 'stamina', 'defense', 'rare'].includes(t));
     const selectedHybrid = selectedTypes.includes('hybrid');
     const selectedXpanded = selectedTypes.includes('xpanded');
+    const selectedXoverCategories = selectedTypes.filter(t => ['bakuten', 'metalfight', 'burst', 'collab'].includes(t));
 
     filteredProducts = randomizedProducts.filter((product) => {
       // ตรวจสอบ Product Line (ถ้ามีการเลือก)
@@ -46,6 +47,20 @@ export default function ClientBody({
       if (selectedProductLines.length > 0) {
         const matchesProductLine = selectedProductLines.some(pl => productLineSpec.toLowerCase().includes(pl.toLowerCase()));
         if (!matchesProductLine) return false;
+      }
+      
+      // ตรวจสอบ X-Over Category (Bakuten / Metal Fight / Burst / Collab)
+      if (selectedXoverCategories.length > 0) {
+        const originalGeneration = (product.specs?.['Original Generation'] || '').toString().toLowerCase();
+        const collabValue = (product.specs?.['Collab'] || '').toString().toLowerCase();
+        const matchesXoverCategory = selectedXoverCategories.some((category) => {
+          if (category === 'bakuten') return originalGeneration.includes('bakuten');
+          if (category === 'metalfight') return originalGeneration.includes('metal fight');
+          if (category === 'burst') return originalGeneration.includes('beyblade burst');
+          if (category === 'collab') return collabValue.length > 0;
+          return false;
+        });
+        if (!matchesXoverCategory) return false;
       }
 
       // ถ้าเลือก Xpanded ให้กรองเฉพาะที่มีคำว่า "Xpanded" ใน Product Line
