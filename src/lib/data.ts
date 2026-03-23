@@ -2983,7 +2983,7 @@ export const products: Product[] = [
       {
         //Spriggan
         id: "Rat-270-004",
-        name: "X-Over",
+        name: "BX-00",
         image: "/Ratchet/2/2 70 4 B00.webp"
       },
       {
