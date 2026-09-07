@@ -10,12 +10,32 @@ export async function getProducts(category?: string): Promise<Product[]> {
       *,
       product_variants (*)
     `)
+    .order('display_order', { ascending: true, nullsFirst: false })
+    .order('created_at', { ascending: true })
 
   if (category) {
     query = query.eq('category', category)
   }
 
-  const { data, error } = await query
+  let { data, error } = await query
+
+  if (error) {
+    const fallbackQuery = supabase
+      .from('products')
+      .select(`
+        *,
+        product_variants (*)
+      `)
+      .order('created_at', { ascending: true })
+
+    if (category) {
+      fallbackQuery.eq('category', category)
+    }
+
+    const fallback = await fallbackQuery
+    data = fallback.data
+    error = fallback.error
+  }
 
   if (error) {
     console.error('Error fetching products:', error)
@@ -28,7 +48,11 @@ export async function getProducts(category?: string): Promise<Product[]> {
   }))
 
   // Sort: non-rare first, then rare (both by created_at ascending)
-  return products.sort((a, b) => {
+  return products.sort((a: Product, b: Product) => {
+    if (a.display_order != null || b.display_order != null) {
+      return (a.display_order ?? Number.MAX_SAFE_INTEGER) - (b.display_order ?? Number.MAX_SAFE_INTEGER)
+    }
+
     const aIsRare = Array.isArray(a.type) && a.type.includes('rare')
     const bIsRare = Array.isArray(b.type) && b.type.includes('rare')
     
@@ -38,7 +62,7 @@ export async function getProducts(category?: string): Promise<Product[]> {
     }
     
     // Same rarity, sort by created_at ascending
-    return new Date(a.created_at).getTime() - new Date(b.created_at).getTime()
+    return new Date(a.created_at || 0).getTime() - new Date(b.created_at || 0).getTime()
   })
 }
 

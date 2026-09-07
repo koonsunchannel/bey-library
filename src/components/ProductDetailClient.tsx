@@ -72,7 +72,12 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
   const imageKeys = ['Lock Chip Image', 'Main Blade Image', 'Metal Blade Image', 'Main Blade Image2', 'Metal Blade Image2']
   const labelKeys = ['Lock Chip Label', 'Main Blade Label', 'Metal Blade Label', 'Main Blade Label2', 'Metal Blade Label2']
   const hiddenKeys = ['Product Xpanded']
-  const filteredSpecsEntries = Object.entries(_specs).filter(([k]) => !imageKeys.includes(k) && !labelKeys.includes(k) && !hiddenKeys.includes(k))
+  const filteredSpecsEntries = Object.entries(_specs).filter(([key, value]) => {
+    if (imageKeys.includes(key) || labelKeys.includes(key) || hiddenKeys.includes(key)) return false
+    if (String(value).trim().toLowerCase() === 'none') return false
+    if (key === 'Weight' && String(value).trim() === '') return false
+    return true
+  })
 
   return (
     <div className="container py-12">

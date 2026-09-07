@@ -1,6 +1,8 @@
 export type Product = {
   id: string
   name: string
+  display_order?: number | null
+  created_at?: string
   // description: string
   // description: string
   fullDescription?: string

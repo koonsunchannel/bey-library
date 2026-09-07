@@ -48,7 +48,7 @@ export default function BitProductForm({ existing, onClose, onSaved }: BitProduc
         id: existing.id,
         name: existing.name || '',
         price: existing.price || '',
-        type: (Array.isArray(existing.type) ? existing.type.find(t => ['attack', 'balance', 'stamina', 'defense'].includes(t)) : typeof existing.type === 'string' ? existing.type : 'attack') || 'attack',
+        type: (Array.isArray(existing.type) ? existing.type.find(t => ['none', 'attack', 'balance', 'stamina', 'defense'].includes(t)) : typeof existing.type === 'string' ? existing.type : 'attack') || 'attack',
         isRare: Array.isArray(existing.type) ? existing.type.includes('rare') : existing.type === 'rare',
         specType: (existing.specs?.Type as string) || 'Attack',
         burstResistance: (existing.specs?.['Burst Resistance'] as string) || 'Low',
@@ -407,11 +407,21 @@ export default function BitProductForm({ existing, onClose, onSaved }: BitProduc
               className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white"
               required
             >
+              <option value="none">None</option>
               <option value="attack">attack</option>
               <option value="balance">balance</option>
               <option value="stamina">stamina</option>
               <option value="defense">defense</option>
             </select>
+            <label className="mt-3 flex items-center gap-2 text-white">
+              <input
+                type="checkbox"
+                checked={formData.isRare}
+                onChange={(e) => setFormData({ ...formData, isRare: e.target.checked })}
+                className="h-4 w-4"
+              />
+              <span className="text-sm">Rare</span>
+            </label>
           </div>
 
           <div>
@@ -438,6 +448,7 @@ export default function BitProductForm({ existing, onClose, onSaved }: BitProduc
                 className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white"
                 required
               >
+                <option value="None">None</option>
                 <option value="Attack">Attack</option>
                 <option value="Balance">Balance</option>
                 <option value="Stamina">Stamina</option>
@@ -474,6 +485,8 @@ export default function BitProductForm({ existing, onClose, onSaved }: BitProduc
               className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white"
               required
             >
+              <option value="None">None</option>
+              <option value="Simple">Simple</option>
               <option value="Low">Low</option>
               <option value="High">High</option>
             </select>

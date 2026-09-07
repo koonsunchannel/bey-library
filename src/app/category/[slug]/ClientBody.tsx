@@ -33,6 +33,9 @@ export default function ClientBody({
   const [showOtherForm, setShowOtherForm] = useState(false)
   const [showEditor, setShowEditor] = useState(false)
   const [editProduct, setEditProduct] = useState<Product | null>(null)
+  const [draggedProductId, setDraggedProductId] = useState<string | null>(null)
+  const [isSavingOrder, setIsSavingOrder] = useState(false)
+  const [orderStatus, setOrderStatus] = useState('')
 
   useEffect(() => {
     setIsAdmin(adminFlag())
@@ -60,6 +63,10 @@ export default function ClientBody({
       // - Hybrid items last, sorted by created_at ascending
       // - Among non-hybrid ratchets, sort by number, then High, then created_at
       sortedProducts.sort((a, b) => {
+        if (a.display_order != null || b.display_order != null) {
+          return (a.display_order ?? Number.MAX_SAFE_INTEGER) - (b.display_order ?? Number.MAX_SAFE_INTEGER)
+        }
+
         const aIsHybrid = isHybridRatchet(a)
         const bIsHybrid = isHybridRatchet(b)
 
@@ -68,7 +75,7 @@ export default function ClientBody({
         }
 
         if (aIsHybrid && bIsHybrid) {
-          return new Date(a.created_at).getTime() - new Date(b.created_at).getTime()
+          return new Date(a.created_at || 0).getTime() - new Date(b.created_at || 0).getTime()
         }
 
         const aName = a.name || ''
@@ -92,7 +99,7 @@ export default function ClientBody({
           return aHigh - bHigh
         }
 
-        return new Date(a.created_at).getTime() - new Date(b.created_at).getTime()
+        return new Date(a.created_at || 0).getTime() - new Date(b.created_at || 0).getTime()
       })
     }
 
@@ -280,11 +287,65 @@ export default function ClientBody({
     window.location.reload()
   }
 
+  const handleDrop = (targetId: string) => {
+    if (!draggedProductId || draggedProductId === targetId || selectedTypes.length > 0) return
+
+    const nextProducts = [...randomizedProducts]
+    const draggedIndex = nextProducts.findIndex(product => product.id === draggedProductId)
+    const targetIndex = nextProducts.findIndex(product => product.id === targetId)
+    if (draggedIndex < 0 || targetIndex < 0) return
+
+    const [draggedProduct] = nextProducts.splice(draggedIndex, 1)
+    nextProducts.splice(targetIndex, 0, draggedProduct)
+    setRandomizedProducts(nextProducts)
+    setDraggedProductId(null)
+    setOrderStatus('ยังไม่ได้บันทึกลำดับ')
+  }
+
+  const saveOrder = async () => {
+    if (!isAdmin || selectedTypes.length > 0 || randomizedProducts.length === 0) return
+
+    setIsSavingOrder(true)
+    setOrderStatus('กำลังบันทึกลำดับ...')
+    try {
+      const response = await fetch('/api/admin/products/reorder', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          items: randomizedProducts.map((product, index) => ({
+            id: product.id,
+            display_order: index,
+          })),
+        }),
+      })
+      const data = await response.json()
+      if (!response.ok || !data.success) throw new Error(data.message || 'บันทึกลำดับไม่สำเร็จ')
+      setOrderStatus('บันทึกลำดับแล้ว')
+    } catch (error) {
+      setOrderStatus(error instanceof Error ? error.message : 'บันทึกลำดับไม่สำเร็จ')
+    } finally {
+      setIsSavingOrder(false)
+      setDraggedProductId(null)
+    }
+  }
+
   return (
     <>
       {['blade', 'over-blade', 'assist-blade', 'ratchet', 'bit', 'x-over', 'other'].includes(slug) && (
         <div className="mb-8 flex items-center justify-between">
           <Filter onChange={setSelectedTypes} slug={slug} />
+          {isAdmin && selectedTypes.length === 0 && (
+            <div className="ml-auto flex items-center gap-3 text-sm">
+              <span className="text-muted-foreground">ลากการ์ดเพื่อเรียงลำดับ</span>
+              <button
+                onClick={saveOrder}
+                disabled={isSavingOrder || !orderStatus.includes('ยังไม่ได้')}
+                className="rounded bg-cyan-500 px-3 py-2 font-semibold text-white shadow hover:bg-cyan-400 disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                {isSavingOrder ? 'กำลังบันทึก...' : 'บันทึกลำดับ'}
+              </button>
+            </div>
+          )}
           {isAdmin && slug === 'blade' && (
             <button
               onClick={openAddBladeForm}
@@ -401,7 +462,14 @@ export default function ClientBody({
           </div>
         )}
         {filteredProducts.map((product) => (
-          <div key={product.id} className="relative">
+          <div
+            key={product.id}
+            className={`relative ${isAdmin && selectedTypes.length === 0 ? 'cursor-grab active:cursor-grabbing' : ''}`}
+            draggable={isAdmin && selectedTypes.length === 0}
+            onDragStart={() => setDraggedProductId(product.id)}
+            onDragOver={(event) => event.preventDefault()}
+            onDrop={() => handleDrop(product.id)}
+          >
             {isAdmin && (
               <button
                 onClick={() => openEditEditor(product)}
