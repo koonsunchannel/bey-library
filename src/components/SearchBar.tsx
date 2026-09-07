@@ -1,8 +1,9 @@
 "use client"
 
-import React, { useEffect, useRef, useState } from "react"
+import type React from "react"
+import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
-import { products } from "@/lib/data"
+import { getProducts } from "@/lib/database-client"
 
 type Hit = {
   id: string
@@ -16,7 +17,27 @@ export default function SearchBar() {
   const [results, setResults] = useState<Hit[]>([])
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState(0)
+  const [allProducts, setAllProducts] = useState<Hit[]>([])
   const inputRef = useRef<HTMLInputElement | null>(null)
+
+  // Fetch all products on component mount
+  useEffect(() => {
+    async function fetchProducts() {
+      try {
+        const products = await getProducts()
+        const hits = products.map(p => ({
+          id: p.id,
+          name: p.name,
+          category: p.category,
+          image: p.image
+        }))
+        setAllProducts(hits)
+      } catch (error) {
+        console.error('Failed to fetch products:', error)
+      }
+    }
+    fetchProducts()
+  }, [])
 
   useEffect(() => {
     if (!query) {
@@ -26,21 +47,19 @@ export default function SearchBar() {
     }
 
     const q = query.trim().toLowerCase()
-    const matched = products
+    const matched = allProducts
       .filter((p) => {
         return (
           p.name.toLowerCase().includes(q) ||
-          p.id.toLowerCase().includes(q) ||
-          (p.price || "").toLowerCase().includes(q)
+          p.id.toLowerCase().includes(q)
         )
       })
       .slice(0, 8)
-      .map((p) => ({ id: p.id, name: p.name, category: p.category, image: p.image }))
 
     setResults(matched)
     setOpen(matched.length > 0)
     setActive(0)
-  }, [query])
+  }, [query, allProducts])
 
   function onKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
     if (!open) return
@@ -79,6 +98,7 @@ export default function SearchBar() {
         <ul
           id="search-results"
           role="listbox"
+          tabIndex={0}
           className="absolute left-0 right-0 z-50 mt-1 max-h-64 overflow-auto rounded-md bg-popover p-1 shadow-lg"
         >
           {results.map((r, idx) => (

@@ -1,12 +1,17 @@
+export const dynamic = 'force-static'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
-import { getProductById, getProducts, products } from '@/lib/data'
+import { getProductByIdServer, getProductsServer, getAllProductIds } from '@/lib/database-server'
 import { ProductDetailClient } from '@/components/ProductDetailClient'
 
 // Generate static params for all product pages
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const productIds = await getAllProductIds()
+  const products = await getProductsServer()
+
   return products.map((product) => ({
     category: product.category,
     id: product.id,
@@ -18,10 +23,10 @@ export default async function ProductPage({ params }: { params: { category: stri
   const isValidCategory = ['blade', 'over-blade', 'assist-blade', 'ratchet', 'bit', 'other', 'x-over', 'credits'].includes(category)
 
   // Get the product data
-  const product = getProductById(id)
+  const product = await getProductByIdServer(id)
 
   // Get other products from the same category for the similar products section
-  const categoryProducts = product ? getProducts(product.category) : []
+  const categoryProducts = product ? await getProductsServer(product.category) : []
 
   if (!product || !isValidCategory) {
     return (

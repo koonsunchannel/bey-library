@@ -26,6 +26,13 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  turbopack: {},
+  webpack(config, { dev }) {
+    if (dev) {
+      config.devtool = false
+    }
+    return config
+  },
 };
 
 module.exports = nextConfig;

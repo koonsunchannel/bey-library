@@ -1,0 +1,354 @@
+
+> bey-library@0.1.0 lint
+> biome lint --write && tsc --noEmit
+
+D:\bey-library\src\app\category\[slug]\ClientBody.tsx:22:25 lint/suspicious/noExplicitAny ━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × Unexpected any. Specify a different type.
+  
+    20 │     setRandomizedProducts(
+    21 │       products.map(product => {
+  > 22 │         if ((product as any).randomVariants?.length) {
+       │                         ^^^
+    23 │           const variants = (product as any).randomVariants;
+    24 │           const chosen = variants[Math.floor(Math.random() * variants.length)];
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+System.Management.Automation.RemoteException
+D:\bey-library\src\app\category\[slug]\ClientBody.tsx:23:40 lint/suspicious/noExplicitAny ━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × Unexpected any. Specify a different type.
+  
+    21 │       products.map(product => {
+    22 │         if ((product as any).randomVariants?.length) {
+  > 23 │           const variants = (product as any).randomVariants;
+       │                                        ^^^
+    24 │           const chosen = variants[Math.floor(Math.random() * variants.length)];
+    25 │           return { ...product, ...chosen };
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+System.Management.Automation.RemoteException
+D:\bey-library\src\app\category\[slug]\ClientBody.tsx:55:46 lint/complexity/useLiteralKeys  FIXABLE  ━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × The computed expression can be simplified without the use of a string literal.
+  
+    53 │       if (selectedXoverCategories.length > 0) {
+    54 │         const originalGeneration = (product.specs?.['Original Generation'] || '').toString().toLowerCase();
+  > 55 │         const collabValue = (product.specs?.['Collab'] || '').toString().toLowerCase();
+       │                                              ^^^^^^^^
+    56 │         const matchesXoverCategory = selectedXoverCategories.some((category) => {
+    57 │           if (category === 'bakuten') return originalGeneration.includes('bakuten');
+  
+  i Unsafe fix: Use a literal key instead.
+  
+    55 │ ········const·collabValue·=·(product.specs?.['Collab']·||·'').toString().toLowerCase();␍
+       │                                             --      --                                 
+System.Management.Automation.RemoteException
+D:\bey-library\src\app\category\[slug]\ClientBody.tsx:75:45 lint/complexity/useLiteralKeys  FIXABLE  ━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × The computed expression can be simplified without the use of a string literal.
+  
+    73 │         // สำหร�บ assist-blade และ over-blade ให�ด�จาก specs.Type แทน
+    74 │         if (slug === 'assist-blade' || slug === 'over-blade') {
+  > 75 │           const specsType = product.specs?.['Type'];
+       │                                             ^^^^^^
+    76 │           const matchesType = specsType && selectedTypeCategories.some(t => specsType.toLowerCase().includes(t));
+    77 │           if (!matchesType) return false;
+  
+  i Unsafe fix: Use a literal key instead.
+  
+    75 │ ··········const·specsType·=·product.specs?.['Type'];␍
+       │                                            --    -- 
+System.Management.Automation.RemoteException
+D:\bey-library\src\app\category\[slug]\ClientBody.tsx:87:68 lint/complexity/useLiteralKeys  FIXABLE  ━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × The computed expression can be simplified without the use of a string literal.
+  
+    85 │       // ตรวจสอบ Spin (ถ�าม�การเล�อก) - สำหร�บ blade, assist-blade และ over-blade
+    86 │       if ((slug === 'blade' || slug === 'assist-blade' || slug === 'over-blade') && selectedSpins.length > 0) {
+  > 87 │         const matchesSpin = selectedSpins.includes(product.specs?.['Spin'] as string);
+       │                                                                    ^^^^^^
+    88 │         if (!matchesSpin) return false;
+    89 │       }
+  
+  i Unsafe fix: Use a literal key instead.
+  
+    87 │ ········const·matchesSpin·=·selectedSpins.includes(product.specs?.['Spin']·as·string);␍
+       │                                                                   --    --            
+System.Management.Automation.RemoteException
+D:\bey-library\src\app\category\[slug]\ClientBody.tsx:94:43 lint/complexity/useLiteralKeys  FIXABLE  ━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × The computed expression can be simplified without the use of a string literal.
+  
+    92 │       if (selectedHybrid) {
+    93 │         const imgPath = product.image || '';
+  > 94 │         const specsType = product.specs?.['Type'] || '';
+       │                                           ^^^^^^
+    95 │         const isHybrid = (typeof imgPath === 'string' && imgPath.includes('/Hybird Part/')) ||
+    96 │                          (typeof specsType === 'string' && specsType.includes('Hybrid Part'));
+  
+  i Unsafe fix: Use a literal key instead.
+  
+    94 │ ········const·specsType·=·product.specs?.['Type']·||·'';␍
+       │                                          --    --       
+System.Management.Automation.RemoteException
+D:\bey-library\src\components\SearchBar.tsx:99:30 lint/a11y/useSemanticElements ━━━━━━━━━━━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × The elements with the following roles can be changed to the following elements:
+    <select>
+  
+  
+     97 │       {open && (
+     98 │         <ul
+   > 99 │           id="search-results"
+        │                              
+  > 100 │           role="listbox"
+        │           ^^^^^^^^^^^^^^
+    101 │           tabIndex={0}
+    102 │           className="absolute left-0 right-0 z-50 mt-1 max-h-64 overflow-auto rounded-md bg-popover p-1 shadow-lg"
+  
+  i For examples and more information, see WAI-ARIA Roles
+  
+System.Management.Automation.RemoteException
+D:\bey-library\src\components\SearchBar.tsx:105:13 lint/a11y/useFocusableInteractive ━━━━━━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × The HTML element with the interactive role "option" is not focusable.
+  
+    103 │         >
+    104 │           {results.map((r, idx) => (
+  > 105 │             <li
+        │             ^^^
+  > 106 │               key={r.id}
+         ...
+  > 112 │               }`}
+  > 113 │             >
+        │             ^
+    114 │               <Link
+    115 │                 href={`/product/${r.category}/${r.id}`}
+  
+  i A non-interactive HTML element that is not focusable may not be reachable for users that rely on keyboard navigation, even with an added role like "option".
+  
+  i Add a tabIndex attribute to make this element focusable.
+  
+System.Management.Automation.RemoteException
+D:\bey-library\src\components\SearchBar.tsx:106:25 lint/a11y/useSemanticElements ━━━━━━━━━━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × The elements with the following roles can be changed to the following elements:
+    <option>
+  
+  
+    104 │           {results.map((r, idx) => (
+    105 │             <li
+  > 106 │               key={r.id}
+        │                         
+  > 107 │               role="option"
+        │               ^^^^^^^^^^^^^
+    108 │               aria-selected={idx === active}
+    109 │               onMouseEnter={() => setActive(idx)}
+  
+  i For examples and more information, see WAI-ARIA Roles
+  
+System.Management.Automation.RemoteException
+D:\bey-library\src\components\Filter.tsx:134:7 lint/style/noUselessElse  FIXABLE  ━━━━━━━━━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × This else clause can be omitted because previous branches break early.
+  
+    132 │         </button>
+    133 │       )
+  > 134 │     } else {
+        │       ^^^^^^
+  > 135 │       // Text option
+         ...
+  > 154 │       )
+  > 155 │     }
+        │     ^
+    156 │   }
+    157 │ 
+  
+  i Unsafe fix: Omit the else clause.
+  
+    132 132 │           </button>␍
+    133 133 │         )␍
+    134     │ - ····}·else·{␍
+        134 │ + ····}␍
+    135 135 │         // Text option␍
+    136 136 │         return (␍
+    ······· │ 
+    152 152 │             <span className="text-sm font-medium">{option.label}</span>␍
+    153 153 │           </button>␍
+    154     │ - ······)␍
+    155     │ - ····}␍
+        154 │ + ······)␍
+    156 155 │     }␍
+    157 156 │   ␍
+  
+System.Management.Automation.RemoteException
+D:\bey-library\src\lib\database-server.ts:25:37 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × Unexpected any. Specify a different type.
+  
+    23 │   }
+    24 │ 
+  > 25 │   return (data || []).map((product: any) => ({
+       │                                     ^^^
+    26 │     ...product,
+    27 │     bey: product.product_variants || []
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+System.Management.Automation.RemoteException
+D:\bey-library\src\components\ProductDetailClient.tsx:20:32 lint/suspicious/noExplicitAny ━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × Unexpected any. Specify a different type.
+  
+    19 │   useEffect(() => {
+  > 20 │     if (product && (product as any).randomVariants && (product as any).randomVariants.length > 0) {
+       │                                ^^^
+    21 │       const variants = (product as any).randomVariants
+    22 │       const idx = Math.floor(Math.random() * variants.length)
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+System.Management.Automation.RemoteException
+D:\bey-library\src\components\ProductDetailClient.tsx:20:67 lint/suspicious/noExplicitAny ━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × Unexpected any. Specify a different type.
+  
+    19 │   useEffect(() => {
+  > 20 │     if (product && (product as any).randomVariants && (product as any).randomVariants.length > 0) {
+       │                                                                   ^^^
+    21 │       const variants = (product as any).randomVariants
+    22 │       const idx = Math.floor(Math.random() * variants.length)
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+System.Management.Automation.RemoteException
+D:\bey-library\src\components\ProductDetailClient.tsx:21:36 lint/suspicious/noExplicitAny ━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × Unexpected any. Specify a different type.
+  
+    19 │   useEffect(() => {
+    20 │     if (product && (product as any).randomVariants && (product as any).randomVariants.length > 0) {
+  > 21 │       const variants = (product as any).randomVariants
+       │                                    ^^^
+    22 │       const idx = Math.floor(Math.random() * variants.length)
+    23 │       const selected = variants[idx]
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+System.Management.Automation.RemoteException
+D:\bey-library\src\components\ProductDetailClient.tsx:43:47 lint/complexity/useLiteralKeys  FIXABLE  ━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × The computed expression can be simplified without the use of a string literal.
+  
+    41 │   const isCX = (displayProduct.category === 'blade' || displayProduct.category === 'x-over') && productLine.toLowerCase().includes('cx')
+    42 │   const isXpansion = isCX && productLine.toLowerCase().includes('xpansion')
+  > 43 │   const isSplitBlade = displayProduct.specs?.['Gimmick']?.toString().toLowerCase().includes('split blade')
+       │                                               ^^^^^^^^^
+    44 │   const lockChipImage = (displayProduct.specs?.['Lock Chip Image'] || '') as string
+    45 │   const mainBladeImage1 = (isXpansion
+  
+  i Unsafe fix: Use a literal key instead.
+  
+    43 │ ··const·isSplitBlade·=·displayProduct.specs?.['Gimmick']?.toString().toLowerCase().includes('split·blade')␍
+       │                                              --       --                                                  
+System.Management.Automation.RemoteException
+D:\bey-library\src\components\ProductDetailClient.tsx:171:42 lint/suspicious/noExplicitAny ━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × Unexpected any. Specify a different type.
+  
+    169 │                   <div className="flex flex-col items-center">
+    170 │                     {/* If product has randomVariants or a second main image, show images side-by-side */}
+  > 171 │                     {((displayProduct as any).randomVariants?.length || mainBladeImage2) ? (
+        │                                          ^^^
+    172 │                       <div className="flex gap-4">
+    173 │                         <div className="flex flex-col items-center">
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+System.Management.Automation.RemoteException
+D:\bey-library\src\components\ProductDetailClient.tsx:138:41 lint/suspicious/noArrayIndexKey ━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × Avoid using the index of an array as key property in an element.
+  
+    136 │                 <ul className="space-y-2">
+    137 │                   {displayProduct.features.map((feature, idx) => (
+  > 138 │                     <li key={`feature-${idx}`} className="flex items-start">
+        │                                         ^^^
+    139 │                       <div className={`mr-2 text-lg ${glowColor}`}>•</div>
+    140 │                       <span>{feature}</span>
+  
+  i This is the source of the key value.
+  
+    135 │                 </h3>
+    136 │                 <ul className="space-y-2">
+  > 137 │                   {displayProduct.features.map((feature, idx) => (
+        │                                                          ^^^
+    138 │                     <li key={`feature-${idx}`} className="flex items-start">
+    139 │                       <div className={`mr-2 text-lg ${glowColor}`}>•</div>
+  
+  i The order of the items may change, and this also affects performances and component state.
+  
+  i Check the React documentation. 
+  
+System.Management.Automation.RemoteException
+D:\bey-library\src\components\admin\ProductAdminForm.tsx:65:27 lint/suspicious/noExplicitAny ━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × Unexpected any. Specify a different type.
+  
+    63 │       type: form.type.includes(",") ? form.type.split(',').map(s => s.trim()) : form.type,
+    64 │       price: form.price || "",
+  > 65 │       specs: specsData as any
+       │                           ^^^
+    66 │     })
+    67 │ 
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+System.Management.Automation.RemoteException
+D:\bey-library\src\components\admin\ProductAdminForm.tsx:37:3 lint/correctness/useExhaustiveDependencies ━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × This hook does not specify all of its dependencies: refreshProducts
+  
+    35 │   }
+    36 │ 
+  > 37 │   useEffect(() => {
+       │   ^^^^^^^^^
+    38 │     refreshProducts()
+    39 │   }, [])
+  
+  i This dependency is not specified in the hook dependency list.
+  
+    37 │   useEffect(() => {
+  > 38 │     refreshProducts()
+       │     ^^^^^^^^^^^^^^^
+    39 │   }, [])
+    40 │ 
+  
+  i Either include it or remove the dependency array
+  
+System.Management.Automation.RemoteException
+D:\bey-library\src\lib\database-client.ts:26:37 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × Unexpected any. Specify a different type.
+  
+    25 │   // Transform data to match Product interface
+  > 26 │   return (data || []).map((product: any) => ({
+       │                                     ^^^
+    27 │     ...product,
+    28 │     bey: product.product_variants || []
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+System.Management.Automation.RemoteException
+The number of diagnostics exceeds the number allowed by Biome.
+Diagnostics not shown: 10.
+Checked 36 files in 765ms. No fixes applied.
+Found 30 errors.
+lint ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+System.Management.Automation.RemoteException
+  × Some errors were emitted while running checks.
+  
+System.Management.Automation.RemoteException

@@ -1,9 +1,17 @@
 'use client'
 
-
 import { useState, useEffect } from 'react'
 import Filter from '@/components/Filter'
 import { ProductCard } from '@/components/product-card'
+import ProductEditor from '@/components/admin/ProductEditor'
+import BladeProductForm from '@/components/admin/BladeProductForm'
+import OverBladeProductForm from '@/components/admin/OverBladeProductForm'
+import AssistBladeProductForm from '@/components/admin/AssistBladeProductForm'
+import RatchetProductForm from '@/components/admin/RatchetProductForm'
+import BitProductForm from '@/components/admin/BitProductForm'
+import XOverProductForm from '@/components/admin/XOverProductForm'
+import OtherProductForm from '@/components/admin/OtherProductForm'
+import { isAdmin as adminFlag, clearAdmin } from '@/lib/admin'
 import type { Product } from '@/lib/types'
 
 export default function ClientBody({
@@ -15,10 +23,81 @@ export default function ClientBody({
 }) {
   const [selectedTypes, setSelectedTypes] = useState<string[]>([])
   const [randomizedProducts, setRandomizedProducts] = useState<Product[]>(products)
+  const [isAdmin, setIsAdmin] = useState(false)
+  const [showBladeForm, setShowBladeForm] = useState(false)
+  const [showOverBladeForm, setShowOverBladeForm] = useState(false)
+  const [showAssistBladeForm, setShowAssistBladeForm] = useState(false)
+  const [showRatchetForm, setShowRatchetForm] = useState(false)
+  const [showBitForm, setShowBitForm] = useState(false)
+  const [showXOverForm, setShowXOverForm] = useState(false)
+  const [showOtherForm, setShowOtherForm] = useState(false)
+  const [showEditor, setShowEditor] = useState(false)
+  const [editProduct, setEditProduct] = useState<Product | null>(null)
 
   useEffect(() => {
+    setIsAdmin(adminFlag())
+  }, [])
+
+  useEffect(() => {
+    let sortedProducts = [...products]
+
+    if (slug === 'ratchet') {
+      const isHybridRatchet = (product: Product) => {
+        const productTypes = Array.isArray(product.type) ? product.type : [product.type]
+        if (productTypes.some(type => typeof type === 'string' && type.toLowerCase().includes('hybrid'))) {
+          return true
+        }
+        const specsType = product.specs?.['Type']
+        if (typeof specsType === 'string' && specsType.toLowerCase().includes('hybrid')) {
+          return true
+        }
+        const imgPath = product.image || ''
+        return typeof imgPath === 'string' && imgPath.includes('/Hybird Part/')
+      }
+
+      // Custom sorting for Ratchet:
+      // - Non-hybrid ratchets first
+      // - Hybrid items last, sorted by created_at ascending
+      // - Among non-hybrid ratchets, sort by number, then High, then created_at
+      sortedProducts.sort((a, b) => {
+        const aIsHybrid = isHybridRatchet(a)
+        const bIsHybrid = isHybridRatchet(b)
+
+        if (aIsHybrid !== bIsHybrid) {
+          return aIsHybrid ? 1 : -1
+        }
+
+        if (aIsHybrid && bIsHybrid) {
+          return new Date(a.created_at).getTime() - new Date(b.created_at).getTime()
+        }
+
+        const aName = a.name || ''
+        const bName = b.name || ''
+        const aMatch = aName.match(/^(\d+)/)
+        const bMatch = bName.match(/^(\d+)/)
+        const aNum = aMatch ? parseInt(aMatch[1]) : null
+        const bNum = bMatch ? parseInt(bMatch[1]) : null
+
+        if (aNum !== null && bNum !== null) {
+          if (aNum !== bNum) return aNum - bNum
+        } else if (aNum !== null) {
+          return -1
+        } else if (bNum !== null) {
+          return 1
+        }
+
+        const aHigh = parseInt(a.specs?.['High'] as string) || 0
+        const bHigh = parseInt(b.specs?.['High'] as string) || 0
+        if (aHigh !== bHigh) {
+          return aHigh - bHigh
+        }
+
+        return new Date(a.created_at).getTime() - new Date(b.created_at).getTime()
+      })
+    }
+
     setRandomizedProducts(
-      products.map(product => {
+      sortedProducts.map(product => {
         if ((product as any).randomVariants?.length) {
           const variants = (product as any).randomVariants;
           const chosen = variants[Math.floor(Math.random() * variants.length)];
@@ -27,12 +106,12 @@ export default function ClientBody({
         return product;
       })
     )
-  }, [products])
+  }, [products, slug])
 
   let filteredProducts = randomizedProducts;
   
   // ถ้ามีการเลือก ให้กรองข้อมูล
-  if (selectedTypes.length > 0 && ['blade', 'over-blade', 'assist-blade', 'bit', 'x-over'].includes(slug)) {
+  if (selectedTypes.length > 0 && ['blade', 'over-blade', 'assist-blade', 'ratchet', 'bit', 'x-over', 'other'].includes(slug)) {
     // แยกการเลือกตามหมวดหมู่
     const selectedProductLines = selectedTypes.filter(t => ['BX', 'UX', 'CX'].includes(t));
     const selectedSpins = selectedTypes.filter(t => ['Right', 'Left'].includes(t));
@@ -101,26 +180,368 @@ export default function ClientBody({
     });
   }
 
+  const openAddBladeForm = () => {
+    setEditProduct(null)
+    setShowBladeForm(true)
+  }
+
+  const openAddOverBladeForm = () => {
+    setEditProduct(null)
+    setShowOverBladeForm(true)
+  }
+
+  const openAddAssistBladeForm = () => {
+    setEditProduct(null)
+    setShowAssistBladeForm(true)
+  }
+
+  const openAddRatchetForm = () => {
+    setEditProduct(null)
+    setShowRatchetForm(true)
+  }
+
+  const openAddBitForm = () => {
+    setEditProduct(null)
+    setShowBitForm(true)
+  }
+
+  const openAddXOverForm = () => {
+    setEditProduct(null)
+    setShowXOverForm(true)
+  }
+
+  const openAddOtherForm = () => {
+    setEditProduct(null)
+    setShowOtherForm(true)
+  }
+
+  const openEditEditor = (product: Product) => {
+    if (slug === 'blade') {
+      setEditProduct(product)
+      setShowBladeForm(true)
+    } else if (slug === 'over-blade') {
+      setEditProduct(product)
+      setShowOverBladeForm(true)
+    } else if (slug === 'assist-blade') {
+      setEditProduct(product)
+      setShowAssistBladeForm(true)
+    } else if (slug === 'ratchet') {
+      setEditProduct(product)
+      setShowRatchetForm(true)
+    } else if (slug === 'bit') {
+      setEditProduct(product)
+      setShowBitForm(true)
+    } else if (slug === 'x-over') {
+      setEditProduct(product)
+      setShowXOverForm(true)
+    } else if (slug === 'other') {
+      setEditProduct(product)
+      setShowOtherForm(true)
+    } else {
+      setEditProduct(product)
+      setShowEditor(true)
+    }
+  }
+
+  const handleEditorClose = () => {
+    setShowEditor(false)
+    setEditProduct(null)
+  }
+
+  const handleBladeFormClose = () => {
+    setShowBladeForm(false)
+  }
+
+  const handleOverBladeFormClose = () => {
+    setShowOverBladeForm(false)
+  }
+
+  const handleAssistBladeFormClose = () => {
+    setShowAssistBladeForm(false)
+  }
+
+  const handleRatchetFormClose = () => {
+    setShowRatchetForm(false)
+  }
+
+  const handleBitFormClose = () => {
+    setShowBitForm(false)
+  }
+
+  const handleXOverFormClose = () => {
+    setShowXOverForm(false)
+  }
+
+  const handleOtherFormClose = () => {
+    setShowOtherForm(false)
+  }
+
+  const handleSaved = () => {
+    window.location.reload()
+  }
+
   return (
     <>
-      {['blade', 'over-blade', 'assist-blade', 'bit', 'x-over'].includes(slug) && (
-        <div className="mb-8">
+      {['blade', 'over-blade', 'assist-blade', 'ratchet', 'bit', 'x-over', 'other'].includes(slug) && (
+        <div className="mb-8 flex items-center justify-between">
           <Filter onChange={setSelectedTypes} slug={slug} />
+          {isAdmin && slug === 'blade' && (
+            <button
+              onClick={openAddBladeForm}
+              className="ml-4 px-3 py-2 bg-emerald-500 text-white rounded shadow"
+            >
+              + เพิ่ม Blade ใหม่
+            </button>
+          )}
+          {isAdmin && slug === 'over-blade' && (
+            <button
+              onClick={openAddOverBladeForm}
+              className="ml-4 px-3 py-2 bg-emerald-500 text-white rounded shadow"
+            >
+              + เพิ่ม Over Blade ใหม่
+            </button>
+          )}
+          {isAdmin && slug === 'assist-blade' && (
+            <button
+              onClick={openAddAssistBladeForm}
+              className="ml-4 px-3 py-2 bg-emerald-500 text-white rounded shadow"
+            >
+              + เพิ่ม Assist Blade ใหม่
+            </button>
+          )}
+          {isAdmin && slug === 'ratchet' && (
+            <button
+              onClick={openAddRatchetForm}
+              className="ml-4 px-3 py-2 bg-emerald-500 text-white rounded shadow"
+            >
+              + เพิ่ม Ratchet ใหม่
+            </button>
+          )}
+          {isAdmin && slug === 'bit' && (
+            <button
+              onClick={openAddBitForm}
+              className="ml-4 px-3 py-2 bg-emerald-500 text-white rounded shadow"
+            >
+              + เพิ่ม Bit ใหม่
+            </button>
+          )}
+          {isAdmin && slug === 'x-over' && (
+            <button
+              onClick={openAddXOverForm}
+              className="ml-4 px-3 py-2 bg-emerald-500 text-white rounded shadow"
+            >
+              + เพิ่ม X-Over ใหม่
+            </button>
+          )}
+          {isAdmin && slug === 'other' && (
+            <button
+              onClick={openAddOtherForm}
+              className="ml-4 px-3 py-2 bg-emerald-500 text-white rounded shadow"
+            >
+              + เพิ่ม Other ใหม่
+            </button>
+          )}
         </div>
       )}
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {isAdmin && slug === 'blade' && (
+          <div className="rounded-lg border border-dashed border-green-400 p-4 flex items-center justify-center cursor-pointer hover:bg-green-600/10" onClick={openAddBladeForm}>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-green-400">+</div>
+              <div className="text-sm text-white">เพิ่ม Blade ใหม่</div>
+            </div>
+          </div>
+        )}
+        {isAdmin && slug === 'over-blade' && (
+          <div className="rounded-lg border border-dashed border-green-400 p-4 flex items-center justify-center cursor-pointer hover:bg-green-600/10" onClick={openAddOverBladeForm}>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-green-400">+</div>
+              <div className="text-sm text-white">เพิ่ม Over Blade ใหม่</div>
+            </div>
+          </div>
+        )}
+        {isAdmin && slug === 'assist-blade' && (
+          <div className="rounded-lg border border-dashed border-green-400 p-4 flex items-center justify-center cursor-pointer hover:bg-green-600/10" onClick={openAddAssistBladeForm}>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-green-400">+</div>
+              <div className="text-sm text-white">เพิ่ม Assist Blade ใหม่</div>
+            </div>
+          </div>
+        )}
+        {isAdmin && slug === 'ratchet' && (
+          <div className="rounded-lg border border-dashed border-green-400 p-4 flex items-center justify-center cursor-pointer hover:bg-green-600/10" onClick={openAddRatchetForm}>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-green-400">+</div>
+              <div className="text-sm text-white">เพิ่ม Ratchet ใหม่</div>
+            </div>
+          </div>
+        )}
+        {isAdmin && slug === 'bit' && (
+          <div className="rounded-lg border border-dashed border-blue-400 p-4 flex items-center justify-center cursor-pointer hover:bg-blue-600/10" onClick={openAddBitForm}>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-400">+</div>
+              <div className="text-sm text-white">เพิ่ม Bit ใหม่</div>
+            </div>
+          </div>
+        )}
+        {isAdmin && slug === 'x-over' && (
+          <div className="rounded-lg border border-dashed border-cyan-400 p-4 flex items-center justify-center cursor-pointer hover:bg-cyan-600/10" onClick={openAddXOverForm}>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-cyan-400">+</div>
+              <div className="text-sm text-white">เพิ่ม X-Over ใหม่</div>
+            </div>
+          </div>
+        )}
+        {isAdmin && slug === 'other' && (
+          <div className="rounded-lg border border-dashed border-yellow-400 p-4 flex items-center justify-center cursor-pointer hover:bg-yellow-600/10" onClick={openAddOtherForm}>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-yellow-400">+</div>
+              <div className="text-sm text-white">เพิ่ม Other ใหม่</div>
+            </div>
+          </div>
+        )}
         {filteredProducts.map((product) => (
-          <ProductCard
-            key={product.id}
-            id={product.id}
-            name={product.name}
-            image={product.image}
-            category={product.category}
-            price={product.price}
-            type={Array.isArray(product.type) ? product.type : [product.type]}
-          />
+          <div key={product.id} className="relative">
+            {isAdmin && (
+              <button
+                onClick={() => openEditEditor(product)}
+                className="absolute right-2 top-2 z-10 rounded-full bg-yellow-400 text-black p-1 shadow hover:bg-yellow-300"
+                title="แก้ไข"
+              >
+                ✎
+              </button>
+            )}
+            <ProductCard
+              id={product.id}
+              name={product.name}
+              image={product.image}
+              category={product.category}
+              price={product.price}
+              type={Array.isArray(product.type) ? product.type : [product.type]}
+            />
+          </div>
         ))}
       </div>
+      {showBladeForm && (
+        <BladeProductForm
+          existing={editProduct}
+          onClose={handleBladeFormClose}
+          onSaved={handleSaved}
+        />
+      )}
+      {showOverBladeForm && (
+        <OverBladeProductForm
+          existing={editProduct}
+          onClose={handleOverBladeFormClose}
+          onSaved={handleSaved}
+        />
+      )}
+      {showAssistBladeForm && (
+        <AssistBladeProductForm
+          existing={editProduct}
+          onClose={handleAssistBladeFormClose}
+          onSaved={handleSaved}
+        />
+      )}
+      {showRatchetForm && (
+        <RatchetProductForm
+          existing={editProduct}
+          onClose={handleRatchetFormClose}
+          onSaved={handleSaved}
+        />
+      )}
+      {showBitForm && (
+        <BitProductForm
+          existing={editProduct}
+          onClose={handleBitFormClose}
+          onSaved={handleSaved}
+        />
+      )}
+      {showXOverForm && (
+        <XOverProductForm
+          existing={editProduct}
+          onClose={handleXOverFormClose}
+          onSaved={handleSaved}
+        />
+      )}
+      {showOtherForm && (
+        <OtherProductForm
+          existing={editProduct}
+          onClose={handleOtherFormClose}
+          onSaved={handleSaved}
+        />
+      )}
+      {showEditor && (
+        <ProductEditor
+          category={slug}
+          existing={editProduct}
+          onClose={handleEditorClose}
+          onSaved={handleSaved}
+        />
+      )}
+      {isAdmin && slug === 'blade' && (
+        <button
+          onClick={openAddBladeForm}
+          className="fixed bottom-4 right-4 z-50 bg-emerald-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-emerald-600"
+          title="เพิ่ม Blade ใหม่"
+        >
+          +
+        </button>
+      )}
+      {isAdmin && slug === 'over-blade' && (
+        <button
+          onClick={openAddOverBladeForm}
+          className="fixed bottom-4 right-4 z-50 bg-emerald-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-emerald-600"
+          title="เพิ่ม Over Blade ใหม่"
+        >
+          +
+        </button>
+      )}
+      {isAdmin && slug === 'assist-blade' && (
+        <button
+          onClick={openAddAssistBladeForm}
+          className="fixed bottom-4 right-4 z-50 bg-emerald-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-emerald-600"
+          title="เพิ่ม Assist Blade ใหม่"
+        >
+          +
+        </button>
+      )}
+      {isAdmin && slug === 'ratchet' && (
+        <button
+          onClick={openAddRatchetForm}
+          className="fixed bottom-4 right-4 z-50 bg-emerald-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-emerald-600"
+          title="เพิ่ม Ratchet ใหม่"
+        >
+          +
+        </button>
+      )}
+      {isAdmin && slug === 'bit' && (
+        <button
+          onClick={openAddBitForm}
+          className="fixed bottom-4 right-4 z-50 bg-blue-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-blue-600"
+          title="เพิ่ม Bit ใหม่"
+        >
+          +
+        </button>
+      )}
+      {isAdmin && slug === 'x-over' && (
+        <button
+          onClick={openAddXOverForm}
+          className="fixed bottom-4 right-4 z-50 bg-cyan-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-cyan-600"
+          title="เพิ่ม X-Over ใหม่"
+        >
+          +
+        </button>
+      )}
+      {isAdmin && slug === 'other' && (
+        <button
+          onClick={openAddOtherForm}
+          className="fixed bottom-4 right-4 z-50 bg-yellow-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-yellow-600"
+          title="เพิ่ม Other ใหม่"
+        >
+          +
+        </button>
+      )}
     </>
   )
 }

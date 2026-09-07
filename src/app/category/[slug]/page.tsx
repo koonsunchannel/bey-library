@@ -1,4 +1,5 @@
-import { getProducts } from '@/lib/data'
+export const dynamic = 'force-static'
+
 import { Separator } from '@/components/ui/separator'
 import ClientBody from './ClientBody'
 
@@ -15,10 +16,14 @@ export function generateStaticParams() {
   ]
 }
 
+import { getProductsServer } from '@/lib/database-server'
+
 export default async function CategoryPage({ params }: { params: { slug: string } | Promise<{ slug: string }> }) {
-  const { slug } = await params
+  const { slug } = (await params) as { slug: string }
 
   const isValidCategory = ['blade', 'over-blade', 'assist-blade', 'ratchet', 'bit', 'other', 'x-over', 'credits'].includes(slug)
+
+  const products = isValidCategory && slug !== 'credits' ? await getProductsServer(slug) : []
   if (!isValidCategory) {
     return (
       <div className="container py-12">
@@ -27,8 +32,6 @@ export default async function CategoryPage({ params }: { params: { slug: string 
       </div>
     )
   }
-
-  const products = getProducts(slug as 'blade' | 'over-blade' | 'assist-blade' | 'ratchet' | 'bit' | 'other' | 'x-over' | 'credits')
 
   const titleColor =
     slug === 'blade' ? 'cyber-glow-red' :

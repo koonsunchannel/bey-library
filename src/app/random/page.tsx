@@ -1,7 +1,7 @@
 "use client"
 
-import { useState } from "react";
-import { products } from "@/lib/data";
+import { useState, useEffect } from "react";
+import { getProducts } from "@/lib/database-client";
 import type { Product } from "@/lib/types";
 
 // Type for blade variants
@@ -27,7 +27,7 @@ function getRandomItem<T>(arr: T[]): T | undefined {
 }
 
 // Extract Lock Chip and Main Blade from CX items
-function extractCXComponents(): ComponentPart[] {
+function extractCXComponents(products: Product[]): ComponentPart[] {
   const components: ComponentPart[] = [];
   const cxBlades = products.filter(p => p.id.startsWith("Blade-") && p.specs?.['Product Line']?.includes('CX'));
   
@@ -69,12 +69,29 @@ export default function RandomPage() {
   const [result, setResult] = useState<Product[]>([]);
   const [components, setComponents] = useState<ComponentPart[]>([]);
   const [lockedBladeId, setLockedBladeId] = useState<string>("");
+  const [allProducts, setAllProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  // Fetch all products on mount
+  useEffect(() => {
+    async function fetchProducts() {
+      try {
+        const products = await getProducts();
+        setAllProducts(products);
+        setLoading(false);
+      } catch (error) {
+        console.error('Failed to fetch products:', error);
+        setLoading(false);
+      }
+    }
+    fetchProducts();
+  }, []);
 
   // Blade list for dropdown
-  const blades = products.filter(p => p.id.startsWith("Blade-"));
-  
+  const blades = allProducts.filter(p => p.id.startsWith("Blade-"));
+
   // Get all CX components once
-  const cxComponents = extractCXComponents();
+  const cxComponents = extractCXComponents(allProducts);
 
   // Helper to get random variant if blade has randomVariants
   function getRandomBladeWithVariant(blade: Product & { randomVariants?: BeyVariant[] }) {
@@ -94,10 +111,10 @@ export default function RandomPage() {
 
   function handleRandomize() {
     // Filter Blade-, Rat-, Bit-, As-, Hybrid-
-    const rats = products.filter(p => p.id.startsWith("Rat-"));
-    const hybrids = products.filter(p => p.id.startsWith("Hybrid-"));
-    const bits = products.filter(p => p.id.startsWith("Bit-") && !p.id.startsWith("Hybrid-Bit-"));
-    const asList = products.filter(p => p.id.startsWith("As-"));
+    const rats = allProducts.filter(p => p.id.startsWith("Rat-"));
+    const hybrids = allProducts.filter(p => p.id.startsWith("Hybrid-"));
+    const bits = allProducts.filter(p => p.id.startsWith("Bit-") && !p.id.startsWith("Hybrid-Bit-"));
+    const asList = allProducts.filter(p => p.id.startsWith("As-"));
 
     // ใช้ blade ที่เลือก ถ้าเลือกไว้, ถ้าไม่เลือกให้สุ่ม และสุ่ม variant ถ้ามี
     let blade = lockedBladeId ? blades.find(b => b.id === lockedBladeId) : getRandomItem(blades);
@@ -108,7 +125,7 @@ export default function RandomPage() {
     let ratOrHybridList = [...rats, ...hybrids];
 
     // Special case: Blade-CMr-001 (Clock Mirage) must only use simple lock ratchets
-    // Some ratchets have `type` like "ratchet, simple" or include "Simple" in features
+    // Filter to only include Ratchets with "simple" in their type
     const requiresSimpleRatchet = Boolean(blade && (
       blade.id === "Blade-CMr-001" ||
       (blade.specs && typeof blade.specs.Gimmick === "string" && /simple/i.test(blade.specs.Gimmick))
@@ -116,14 +133,14 @@ export default function RandomPage() {
 
     if (requiresSimpleRatchet) {
       ratOrHybridList = ratOrHybridList.filter((r: Product) => {
-        // Only keep Rat- entries (not Hybrid-) that include 'simple' in their `type` string
-        // or have a features array containing 'Simple' (case-insensitive)
+        // Only keep Rat- entries that have "simple" in their type string
         if (!r || !r.id) return false;
         if (!r.id.startsWith("Rat-")) return false;
-        const t = (r.type || "") as string;
-        if (/simple/i.test(t)) return true;
-        if (Array.isArray(r.features)) {
-          return r.features.some((f: string) => /simple/i.test(f));
+        const t = r.type;
+        if (typeof t === 'string') {
+          return t.toLowerCase().includes('simple');
+        } else if (Array.isArray(t)) {
+          return t.some(type => typeof type === 'string' && type.toLowerCase().includes('simple'));
         }
         return false;
       });
@@ -213,7 +230,7 @@ export default function RandomPage() {
         const mainBladeComponent = componentParts.find(c => c.componentType === 'main-blade' || c.componentType === 'metal-blade');
         const mainBladeSpin = mainBladeComponent?.spin;
         
-        let filteredOverList = products.filter(p => p.category === 'over-blade');
+        let filteredOverList = allProducts.filter(p => p.category === 'over-blade');
         let filteredAsList = asList;
         
         if (mainBladeSpin === 'Left') {
@@ -335,13 +352,13 @@ export default function RandomPage() {
               // Add component parts first (Lock Chip + Main Blade) with space between
               for (let i = 0; i < components.length; i++) {
                 const comp = components[i];
-                let name = comp.name || "";
+                const name = comp.name || "";
                 
                 // If next component is main-blade/metal-blade and current is lock-chip, combine with space
                 const next = components[i + 1];
                 if ((comp.componentType === 'lock-chip') && next && 
                     (next.componentType === 'main-blade' || next.componentType === 'metal-blade')) {
-                  let nextName = next.name || "";
+                  const nextName = next.name || "";
                   tokens.push(`${name} ${nextName}`);
                   i++; // skip next
                 } else {

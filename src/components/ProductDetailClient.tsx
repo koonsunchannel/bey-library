@@ -36,6 +36,10 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
     displayProduct.category === 'x-over' ? 'cyber-glow-purple' :
     'cyber-glow-red'
 
+  const hasImage = (src?: string | null): src is string => {
+    return Boolean(src && typeof src === 'string' && src.trim().length > 0)
+  }
+
   // Blade Details helpers
   const productLine = (displayProduct.specs?.['Product Line'] || '').toString()
   const isCX = (displayProduct.category === 'blade' || displayProduct.category === 'x-over') && productLine.toLowerCase().includes('cx')
@@ -63,23 +67,29 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
   const splitBladeLowerLabel = (displayProduct.specs?.['Main Blade Label'] || 'Lower') as string
 
   // Filter out image & label keys from displayed specs so URLs / image keys don't show
+  // Also hide Product Xpand because it is shown under Product Line in this UI
   const _specs = displayProduct.specs || {}
   const imageKeys = ['Lock Chip Image', 'Main Blade Image', 'Metal Blade Image', 'Main Blade Image2', 'Metal Blade Image2']
   const labelKeys = ['Lock Chip Label', 'Main Blade Label', 'Metal Blade Label', 'Main Blade Label2', 'Metal Blade Label2']
-  const filteredSpecsEntries = Object.entries(_specs).filter(([k]) => !imageKeys.includes(k) && !labelKeys.includes(k))
+  const hiddenKeys = ['Product Xpanded']
+  const filteredSpecsEntries = Object.entries(_specs).filter(([k]) => !imageKeys.includes(k) && !labelKeys.includes(k) && !hiddenKeys.includes(k))
 
   return (
     <div className="container py-12">
       <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
         {/* Product Image */}
         <div className="relative aspect-square overflow-hidden rounded-lg cyber-border bg-black">
-          <Image
-            src={displayProduct.image}
-            alt={displayProduct.name}
-            fill
-            className="object-contain"
-            priority
-          />
+          {hasImage(displayProduct.image) ? (
+            <Image
+              src={displayProduct.image}
+              alt={displayProduct.name}
+              fill
+              className="object-contain"
+              priority
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">No Image</div>
+          )}
         </div>
 
         {/* Product Info */}
@@ -99,16 +109,26 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
             {displayProduct.specs && (
               <div className="mt-6">
                 <h3 className={`text-xl font-bold cyber-heading ${glowColor} mb-4`}>
-                  SPECIFICATIONS
+                  {displayProduct.category === 'other' ? 'PRODUCT LISTS' : 'SPECIFICATIONS'}
                 </h3>
-                <div className="grid grid-cols-2 gap-y-2">
-                  {filteredSpecsEntries.map(([key, value]) => (
-                    <div key={key} className="flex flex-col">
-                      <span className="text-sm text-muted-foreground">{key}</span>
-                      <span className="font-medium">{value}</span>
-                    </div>
-                  ))}
-                </div>
+                {displayProduct.category === 'other' ? (
+                  <div className="space-y-2">
+                    {filteredSpecsEntries.map(([key, value]) => (
+                      <div key={key} className="whitespace-pre-wrap font-medium">
+                        {value}
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-2 gap-y-2">
+                    {filteredSpecsEntries.map(([key, value]) => (
+                      <div key={key} className="flex flex-col">
+                        <span className="text-sm text-muted-foreground">{key}</span>
+                        <span className="font-medium whitespace-pre-wrap">{value}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             )}
 
@@ -151,7 +171,7 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
                 </h3>
                 <div className="mb-6 grid grid-cols-2 gap-4 items-center">
                   <div className="flex flex-col items-center">
-                    {lockChipImage ? (
+                    {hasImage(lockChipImage) ? (
                       <div className="relative w-40 h-40 rounded-lg overflow-hidden border bg-black">
                         <Image src={lockChipImage} alt="Lock Chip" fill className="object-contain" />
                       </div>
@@ -172,16 +192,18 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
                       <div className="flex gap-4">
                         <div className="flex flex-col items-center">
                           <div className="relative w-40 h-40 rounded-lg overflow-hidden border bg-black">
-                            {mainBladeImage1 ? (
+                            {hasImage(mainBladeImage1) ? (
                               <Image src={mainBladeImage1} alt={bladeDetailLabel1} fill className="object-contain" />
-                            ) : (
+                            ) : hasImage(displayProduct.image) ? (
                               <Image src={displayProduct.image} alt={displayProduct.name} fill className="object-contain" />
+                            ) : (
+                              <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">No Image</div>
                             )}
                           </div>
                           <div className="mt-2 text-sm text-center">{bladeDetailLabel1}</div>
                         </div>
 
-                        {mainBladeImage2 && (
+                        {hasImage(mainBladeImage2) && (
                           <div className="flex flex-col items-center">
                             <div className="relative w-40 h-40 rounded-lg overflow-hidden border bg-black">
                               <Image src={mainBladeImage2} alt={bladeDetailLabel2 || `${bladeDetailLabel1} 2`} fill className="object-contain" />
@@ -214,7 +236,7 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
                   BLADE DETAILS
                 </h3>
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                  {splitBladeUpperImage && (
+                  {hasImage(splitBladeUpperImage) && (
                     <div className="flex flex-col items-center space-y-2">
                       <div className="relative w-40 h-40 rounded-lg overflow-hidden border bg-black">
                         <Image
@@ -228,7 +250,7 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
                       <p className="text-sm font-medium text-center">{splitBladeUpperLabel}</p>
                     </div>
                   )}
-                  {splitBladeLowerImage && (
+                  {hasImage(splitBladeLowerImage) && (
                     <div className="flex flex-col items-center space-y-2">
                       <div className="relative w-40 h-40 rounded-lg overflow-hidden border bg-black">
                         <Image
@@ -249,19 +271,23 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
             {displayProduct.bey && (
               <div className="mt-6">
                 <h3 className={`text-xl font-bold cyber-heading ${glowColor} mb-4`}>
-                  VARIANTS
+                  {displayProduct.category === 'other' ? 'PRODUCT DETAILS' : 'VARIANTS'}
                 </h3>
                 <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
                   {displayProduct.bey.map((bey) => (
                     <div key={bey.id} className="flex flex-col items-center space-y-2">
                       <div className="relative w-50 h-50">
-                        <Image
-                          src={bey.image}
-                          alt={bey.name}
-                          width={200}
-                          height={200}
-                          className="object-cover rounded-lg"
-                        />
+                        {hasImage(bey.image) ? (
+                          <Image
+                            src={bey.image}
+                            alt={bey.name}
+                            width={200}
+                            height={200}
+                            className="object-cover rounded-lg"
+                          />
+                        ) : (
+                          <div className="w-full h-full flex items-center justify-center text-gray-400 text-xs">No Image</div>
+                        )}
                       </div>
                       <p className="text-sm font-medium text-center">{bey.name}</p>
                     </div>
@@ -279,13 +305,17 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
                   {displayProduct.pro.map((pro) => (
                     <div key={pro.id} className="flex flex-col items-center space-y-2">
                       <div className="relative w-32 h-32">
-                        <Image
-                          src={pro.image}
-                          alt={pro.name}
-                          width={200}
-                          height={200}
-                          className="object-cover rounded-lg"
-                        />
+                        {hasImage(pro.image) ? (
+                          <Image
+                            src={pro.image}
+                            alt={pro.name}
+                            width={200}
+                            height={200}
+                            className="object-cover rounded-lg"
+                          />
+                        ) : (
+                          <div className="w-full h-full flex items-center justify-center text-gray-400 text-xs">No Image</div>
+                        )}
                       </div>
                       <p className="text-sm font-medium text-center">{pro.name}</p>
                     </div>

@@ -1,10 +1,12 @@
 "use client"
 
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
+import { useEffect, useState } from 'react'
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from 'lucide-react'
 import SearchBar from './SearchBar'
+import { isAdmin as checkIsAdmin, clearAdmin } from '@/lib/admin'
 
 const categories = [
   { name: "Blade", path: "/category/blade", color: "cyber-glow-red" },
@@ -20,6 +22,18 @@ const categories = [
 
 export default function NavBar() {
   const pathname = usePathname()
+  const router = useRouter()
+  const [isAdmin, setIsAdmin] = useState(false)
+
+  useEffect(() => {
+    setIsAdmin(checkIsAdmin())
+  }, [])
+
+  const handleLogout = () => {
+    clearAdmin()
+    setIsAdmin(false)
+    router.push('/')
+  }
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-black/70 backdrop-blur-sm">
@@ -36,6 +50,14 @@ export default function NavBar() {
 
         <div className="hidden md:flex items-center gap-6">
           <SearchBar />
+          {isAdmin ? (
+            <button
+              onClick={handleLogout}
+              className="px-3 py-1 text-xs bg-red-500 rounded text-white"
+            >Logout Admin</button>
+          ) : (
+            <Link href="/admin" className="px-3 py-1 text-xs bg-blue-500 rounded text-white">Admin</Link>
+          )}
           {/* Desktop Nav */}
           <nav className="flex items-center space-x-6">
             {categories.map((category) => (

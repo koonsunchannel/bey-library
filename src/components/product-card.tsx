@@ -31,12 +31,18 @@ export function ProductCard({ id, name, image, category, price, type }: ProductC
       <CardHeader className="p-0">
         <div className="aspect-square w-full overflow-hidden relative bg-black">
           <Link href={`/product/${category}/${id}`}>
-            <Image
-              src={image}
-              alt={name}
-              fill
-              className="object-contain cursor-pointer"
-            />
+            {image && image.trim() ? (
+              <Image
+                src={image}
+                alt={name}
+                fill
+                className="object-contain cursor-pointer"
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
+                No Image
+              </div>
+            )}
           </Link>
         </div>
       </CardHeader>
