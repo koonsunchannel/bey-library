@@ -26,10 +26,14 @@ function getRandomItem<T>(arr: T[]): T | undefined {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+function isBladeProduct(product: Product): boolean {
+  return product.category === 'blade' || product.category === 'x-over' || product.id.startsWith('Blade-');
+}
+
 // Extract Lock Chip and Main Blade from CX items
 function extractCXComponents(products: Product[]): ComponentPart[] {
   const components: ComponentPart[] = [];
-  const cxBlades = products.filter(p => p.id.startsWith("Blade-") && p.specs?.['Product Line']?.includes('CX'));
+  const cxBlades = products.filter(p => isBladeProduct(p) && p.specs?.['Product Line']?.toString().toLowerCase().includes('cx'));
   
   cxBlades.forEach(blade => {
     if (blade.specs) {
@@ -88,7 +92,7 @@ export default function RandomPage() {
   }, []);
 
   // Blade list for dropdown
-  const blades = allProducts.filter(p => p.id.startsWith("Blade-"));
+  const blades = allProducts.filter(isBladeProduct);
 
   // Get all CX components once
   const cxComponents = extractCXComponents(allProducts);
@@ -100,9 +104,9 @@ export default function RandomPage() {
       if (variant) {
         return { 
           ...blade,
-          name: variant.name,
+          name: variant.name?.trim() || blade.name,
           image: variant.image,
-          type: variant.type
+          type: variant.type || blade.type
         };
       }
     }
@@ -319,7 +323,7 @@ export default function RandomPage() {
         {/* Display regular products (skip Blade if CX components are shown) */}
         {result.map((item, idx) => {
           // Skip Blade items when showing CX components
-          if (item?.id?.startsWith("Blade-") && components.length > 0) {
+          if (isBladeProduct(item) && components.length > 0) {
             return null;
           }
           
@@ -371,7 +375,7 @@ export default function RandomPage() {
                 const item = result[i];
                 
                 // Skip Blade items when showing CX components
-                if (item?.id?.startsWith("Blade-") && components.length > 0) {
+                if (isBladeProduct(item) && components.length > 0) {
                   continue;
                 }
                 

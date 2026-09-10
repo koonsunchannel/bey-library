@@ -7,9 +7,12 @@ CREATE TABLE IF NOT EXISTS products (
   type TEXT[] DEFAULT '{}',
   price TEXT,
   specs JSONB DEFAULT '{}',
+  random_variants JSONB DEFAULT '[]',
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
+
+ALTER TABLE products ADD COLUMN IF NOT EXISTS random_variants JSONB DEFAULT '[]';
 
 -- Create product_variants table for bey array
 CREATE TABLE IF NOT EXISTS product_variants (
@@ -52,6 +55,31 @@ CREATE TABLE IF NOT EXISTS admin_users (
 CREATE POLICY "Allow public read admin user" ON admin_users FOR SELECT USING (true);
 
 INSERT INTO admin_users (id, password) VALUES ('admin', 'Sol@r2468') ON CONFLICT (id) DO NOTHING;
+
+-- Seed the Credits page into the database so it can be managed like other categories.
+INSERT INTO products (id, name, image, category, type, price, specs)
+VALUES (
+  'CD001',
+  'Credits? Why you want to know that???',
+  'https://i.ibb.co/0pcrGh1N/Credit.webp',
+  'credits',
+  ARRAY['credits'],
+  'This website don''t want anything from you.',
+  '{
+    "Creator Name": "Why you want to know that?",
+    "Donation": "Go to Philanthropy funds.",
+    "Ownership": "I''m not Takara Tomy. Beyblade is not my product, This web for community free use.",
+    "Objective": "To make it easier for the community to find Beyblade X parts data, Not find me.",
+    "Special Thanks": "Thanks to Takara Tomy for making Beyblade."
+  }'::jsonb
+)
+ON CONFLICT (id) DO UPDATE SET
+  name = EXCLUDED.name,
+  image = EXCLUDED.image,
+  category = EXCLUDED.category,
+  type = EXCLUDED.type,
+  price = EXCLUDED.price,
+  specs = EXCLUDED.specs;
 
 -- Create updated_at trigger function
 CREATE OR REPLACE FUNCTION update_updated_at_column()

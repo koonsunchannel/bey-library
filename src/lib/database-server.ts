@@ -1,5 +1,6 @@
 import { createServerSupabaseClient } from './supabase-server'
 import type { Product } from './types'
+import { sortXOverProducts } from './utils'
 
 export async function getProductsServer(category?: string): Promise<Product[]> {
   const supabase = createServerSupabaseClient()
@@ -44,8 +45,13 @@ export async function getProductsServer(category?: string): Promise<Product[]> {
 
   const products = (data || []).map((product: any) => ({
     ...product,
-    bey: product.product_variants || []
+    bey: product.product_variants || [],
+    randomVariants: product.random_variants || product.specs?.__randomVariants || []
   }))
+
+  if (category === 'x-over') {
+    return sortXOverProducts(products)
+  }
 
   // Sort: non-rare first, then rare (both by created_at ascending)
   return products.sort((a, b) => {
@@ -85,7 +91,8 @@ export async function getProductByIdServer(id: string): Promise<Product | null> 
 
   return {
     ...data,
-    bey: data.product_variants || []
+    bey: data.product_variants || [],
+    randomVariants: data.random_variants || data.specs?.__randomVariants || []
   }
 }
 

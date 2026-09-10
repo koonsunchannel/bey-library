@@ -11,7 +11,10 @@ import RatchetProductForm from '@/components/admin/RatchetProductForm'
 import BitProductForm from '@/components/admin/BitProductForm'
 import XOverProductForm from '@/components/admin/XOverProductForm'
 import OtherProductForm from '@/components/admin/OtherProductForm'
+import CreditsProductForm from '@/components/admin/CreditsProductForm'
+import SponsorProductForm from '@/components/admin/SponsorProductForm'
 import { isAdmin as adminFlag, clearAdmin } from '@/lib/admin'
+import { sortXOverProducts } from '@/lib/utils'
 import type { Product } from '@/lib/types'
 
 export default function ClientBody({
@@ -31,6 +34,8 @@ export default function ClientBody({
   const [showBitForm, setShowBitForm] = useState(false)
   const [showXOverForm, setShowXOverForm] = useState(false)
   const [showOtherForm, setShowOtherForm] = useState(false)
+  const [showCreditsForm, setShowCreditsForm] = useState(false)
+  const [showSponsorForm, setShowSponsorForm] = useState(false)
   const [showEditor, setShowEditor] = useState(false)
   const [editProduct, setEditProduct] = useState<Product | null>(null)
   const [draggedProductId, setDraggedProductId] = useState<string | null>(null)
@@ -44,7 +49,9 @@ export default function ClientBody({
   useEffect(() => {
     let sortedProducts = [...products]
 
-    if (slug === 'ratchet') {
+    if (slug === 'x-over') {
+      sortXOverProducts(sortedProducts)
+    } else if (slug === 'ratchet') {
       const isHybridRatchet = (product: Product) => {
         const productTypes = Array.isArray(product.type) ? product.type : [product.type]
         if (productTypes.some(type => typeof type === 'string' && type.toLowerCase().includes('hybrid'))) {
@@ -222,6 +229,16 @@ export default function ClientBody({
     setShowOtherForm(true)
   }
 
+  const openAddCreditsForm = () => {
+    setEditProduct(null)
+    setShowCreditsForm(true)
+  }
+
+  const openAddSponsorForm = () => {
+    setEditProduct(null)
+    setShowSponsorForm(true)
+  }
+
   const openEditEditor = (product: Product) => {
     if (slug === 'blade') {
       setEditProduct(product)
@@ -244,6 +261,10 @@ export default function ClientBody({
     } else if (slug === 'other') {
       setEditProduct(product)
       setShowOtherForm(true)
+    } else if (slug === 'credits') {
+      setEditProduct(product)
+      if (Array.isArray(product.type) && product.type.includes('sponsor')) setShowSponsorForm(true)
+      else setShowCreditsForm(true)
     } else {
       setEditProduct(product)
       setShowEditor(true)
@@ -281,6 +302,30 @@ export default function ClientBody({
 
   const handleOtherFormClose = () => {
     setShowOtherForm(false)
+  }
+
+  const handleCreditsFormClose = () => {
+    setShowCreditsForm(false)
+  }
+
+  const handleSponsorFormClose = () => {
+    setShowSponsorForm(false)
+  }
+
+  const handleDeleteCard = async (product: Product) => {
+    if (!isAdmin || !confirm(`ยืนยันการลบ ${product.name}?`)) return
+    const response = await fetch('/api/admin/products', {
+      method: 'DELETE',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: product.id }),
+    })
+    const data = await response.json()
+    if (!response.ok || !data.success) {
+      setOrderStatus(data.message || 'ลบข้อมูลไม่สำเร็จ')
+      return
+    }
+    setRandomizedProducts(currentProducts => currentProducts.filter(item => item.id !== product.id))
+    setOrderStatus('ลบข้อมูลแล้ว')
   }
 
   const handleSaved = () => {
@@ -331,9 +376,9 @@ export default function ClientBody({
 
   return (
     <>
-      {['blade', 'over-blade', 'assist-blade', 'ratchet', 'bit', 'x-over', 'other'].includes(slug) && (
+      {['blade', 'over-blade', 'assist-blade', 'ratchet', 'bit', 'x-over', 'other', 'credits'].includes(slug) && (
         <div className="mb-8 flex items-center justify-between">
-          <Filter onChange={setSelectedTypes} slug={slug} />
+          {slug !== 'credits' && <Filter onChange={setSelectedTypes} slug={slug} />}
           {isAdmin && selectedTypes.length === 0 && (
             <div className="ml-auto flex items-center gap-3 text-sm">
               <span className="text-muted-foreground">ลากการ์ดเพื่อเรียงลำดับ</span>
@@ -402,6 +447,19 @@ export default function ClientBody({
               + เพิ่ม Other ใหม่
             </button>
           )}
+          {isAdmin && slug === 'credits' && (
+            <button
+              onClick={openAddCreditsForm}
+              className="ml-auto px-3 py-2 rounded bg-cyan-500 text-white shadow hover:bg-cyan-400"
+            >
+              + เพิ่มเครดิตบุคคล
+            </button>
+          )}
+          {isAdmin && slug === 'credits' && (
+            <button onClick={openAddSponsorForm} className="ml-3 rounded bg-cyan-700 px-3 py-2 text-white shadow hover:bg-cyan-600">
+              + เพิ่ม Sponsor / ร้านค้า
+            </button>
+          )}
         </div>
       )}
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -461,6 +519,14 @@ export default function ClientBody({
             </div>
           </div>
         )}
+        {isAdmin && slug === 'credits' && (
+          <div className="rounded-lg border border-dashed border-cyan-400 p-4 flex items-center justify-center cursor-pointer hover:bg-cyan-600/10" onClick={openAddCreditsForm}>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-cyan-400">+</div>
+              <div className="text-sm text-white">เพิ่ม Credits / Sponsor</div>
+            </div>
+          </div>
+        )}
         {filteredProducts.map((product) => (
           <div
             key={product.id}
@@ -471,13 +537,19 @@ export default function ClientBody({
             onDrop={() => handleDrop(product.id)}
           >
             {isAdmin && (
-              <button
-                onClick={() => openEditEditor(product)}
-                className="absolute right-2 top-2 z-10 rounded-full bg-yellow-400 text-black p-1 shadow hover:bg-yellow-300"
-                title="แก้ไข"
-              >
-                ✎
-              </button>
+              <div className="absolute right-2 top-2 z-10 flex gap-1">
+                <button onClick={() => openEditEditor(product)} className="rounded-full bg-yellow-400 p-1 text-black shadow hover:bg-yellow-300" title="แก้ไข">✎</button>
+                <button
+                  onClick={(event) => {
+                    event.stopPropagation()
+                    handleDeleteCard(product)
+                  }}
+                  onMouseDown={(event) => event.stopPropagation()}
+                  draggable={false}
+                  className="rounded-full bg-red-500 p-1 text-white shadow hover:bg-red-400"
+                  title="ลบ"
+                >×</button>
+              </div>
             )}
             <ProductCard
               id={product.id}
@@ -536,6 +608,20 @@ export default function ClientBody({
         <OtherProductForm
           existing={editProduct}
           onClose={handleOtherFormClose}
+          onSaved={handleSaved}
+        />
+      )}
+      {showCreditsForm && (
+        <CreditsProductForm
+          existing={editProduct}
+          onClose={handleCreditsFormClose}
+          onSaved={handleSaved}
+        />
+      )}
+      {showSponsorForm && (
+        <SponsorProductForm
+          existing={editProduct}
+          onClose={handleSponsorFormClose}
           onSaved={handleSaved}
         />
       )}
@@ -606,6 +692,15 @@ export default function ClientBody({
           onClick={openAddOtherForm}
           className="fixed bottom-4 right-4 z-50 bg-yellow-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-yellow-600"
           title="เพิ่ม Other ใหม่"
+        >
+          +
+        </button>
+      )}
+      {isAdmin && slug === 'credits' && (
+        <button
+          onClick={openAddCreditsForm}
+          className="fixed bottom-4 right-4 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-cyan-500 text-2xl text-white shadow-lg hover:bg-cyan-400"
+          title="เพิ่ม Credits / Sponsor"
         >
           +
         </button>

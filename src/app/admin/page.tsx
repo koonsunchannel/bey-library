@@ -41,7 +41,7 @@ export default function AdminPage() {
     <main className="min-h-screen bg-slate-900 text-white flex items-center justify-center">
       <div className="p-8 bg-slate-800 rounded-lg shadow-lg w-full max-w-md">
         <h1 className="text-2xl font-bold mb-4">Admin Login</h1>
-        <p className="text-sm text-slate-300 mb-4">กรุณากรอกรหัสสำหรับผู้ดูแล (Sol@r2468)</p>
+        <p className="text-sm text-slate-300 mb-4">กรุณากรอกรหัสสำหรับผู้ดูแล</p>
 
         <form onSubmit={handleLogin} className="space-y-4">
           <input

@@ -21,7 +21,13 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
       const variants = (product as any).randomVariants
       const idx = Math.floor(Math.random() * variants.length)
       const selected = variants[idx]
-      setDisplayProduct({ ...product, ...selected })
+      setDisplayProduct({
+        ...product,
+        ...selected,
+        name: selected.name?.trim() || product.name,
+        image: selected.image || product.image,
+        type: selected.type || product.type,
+      })
     } else {
       setDisplayProduct(product)
     }
@@ -52,6 +58,7 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
   const mainBladeImage2 = (isXpansion
     ? (displayProduct.specs?.['Metal Blade Image2'] || displayProduct.specs?.['Main Blade Image2'] || '')
     : (displayProduct.specs?.['Main Blade Image2'] || displayProduct.specs?.['Metal Blade Image2'] || '')) as string
+  const mainBladeImage3 = (displayProduct.specs?.['Main Blade Image3'] || '') as string
   const lockChipLabel = (displayProduct.specs?.['Lock Chip Label'] || 'Lock Chip') as string
   const bladeDetailLabel1 = (isXpansion
     ? (displayProduct.specs?.['Metal Blade Label'] || displayProduct.specs?.['Main Blade Label'] || 'Metal Blade')
@@ -59,6 +66,23 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
   const bladeDetailLabel2 = (isXpansion
     ? (displayProduct.specs?.['Metal Blade Label2'] || displayProduct.specs?.['Main Blade Label2'] || '')
     : (displayProduct.specs?.['Main Blade Label2'] || '')) as string
+  const bladeDetailLabel3 = (displayProduct.specs?.['Main Blade Label3'] || '') as string
+  const hasXOverBladeDetails = displayProduct.category === 'x-over' && (
+    hasImage(lockChipImage) || hasImage(mainBladeImage1) || hasImage(mainBladeImage2) || hasImage(mainBladeImage3) ||
+    Boolean(
+      displayProduct.specs?.['Lock Chip Type'] ||
+      displayProduct.specs?.['Lock Chip Label'] ||
+      displayProduct.specs?.['Main Blade Label'] ||
+      displayProduct.specs?.['Main Blade Label2'] ||
+      displayProduct.specs?.['Main Blade Label3']
+    )
+  )
+  const hasLockChipDetails = hasImage(lockChipImage) || Boolean(displayProduct.specs?.['Lock Chip Type'] || displayProduct.specs?.['Lock Chip Label'])
+  const mainBladeDetails = [
+    { image: mainBladeImage1, label: bladeDetailLabel1 },
+    { image: mainBladeImage2, label: bladeDetailLabel2 },
+    { image: mainBladeImage3, label: bladeDetailLabel3 },
+  ].filter(detail => hasImage(detail.image) || Boolean(detail.label))
 
   // Split Blade helpers
   const splitBladeUpperImage = (displayProduct.specs?.['Lock Chip Image'] || '') as string
@@ -69,9 +93,9 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
   // Filter out image & label keys from displayed specs so URLs / image keys don't show
   // Also hide Product Xpand because it is shown under Product Line in this UI
   const _specs = displayProduct.specs || {}
-  const imageKeys = ['Lock Chip Image', 'Main Blade Image', 'Metal Blade Image', 'Main Blade Image2', 'Metal Blade Image2']
+  const imageKeys = ['Lock Chip Image', 'Main Blade Image', 'Metal Blade Image', 'Main Blade Image2', 'Metal Blade Image2', 'Sponsor Image']
   const labelKeys = ['Lock Chip Label', 'Main Blade Label', 'Metal Blade Label', 'Main Blade Label2', 'Metal Blade Label2']
-  const hiddenKeys = ['Product Xpanded']
+  const hiddenKeys = ['Product Xpanded', '__randomVariants']
   const filteredSpecsEntries = Object.entries(_specs).filter(([key, value]) => {
     if (imageKeys.includes(key) || labelKeys.includes(key) || hiddenKeys.includes(key)) return false
     if (String(value).trim().toLowerCase() === 'none') return false
@@ -120,7 +144,11 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
                   <div className="space-y-2">
                     {filteredSpecsEntries.map(([key, value]) => (
                       <div key={key} className="whitespace-pre-wrap font-medium">
-                        {value}
+                        {key === 'Sponsor URL' ? (
+                          <a href={value} target="_blank" rel="noreferrer" className="text-cyan-300 underline hover:text-cyan-200">
+                            {value}
+                          </a>
+                        ) : value}
                       </div>
                     ))}
                   </div>
@@ -129,11 +157,28 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
                     {filteredSpecsEntries.map(([key, value]) => (
                       <div key={key} className="flex flex-col">
                         <span className="text-sm text-muted-foreground">{key}</span>
-                        <span className="font-medium whitespace-pre-wrap">{value}</span>
+                        <span className="font-medium whitespace-pre-wrap">
+                          {key === 'Sponsor URL' ? (
+                            <a href={value} target="_blank" rel="noreferrer" className="text-cyan-300 underline hover:text-cyan-200">
+                              {value}
+                            </a>
+                          ) : value}
+                        </span>
                       </div>
                     ))}
                   </div>
                 )}
+              </div>
+            )}
+
+            {displayProduct.category === 'credits' && displayProduct.specs?.['Sponsor Image'] && (
+              <div className="mt-6">
+                <h3 className={`mb-4 text-xl font-bold cyber-heading ${glowColor}`}>SPONSOR</h3>
+                <img
+                  src={displayProduct.specs['Sponsor Image']}
+                  alt={displayProduct.specs['Sponsor Shop'] || 'Sponsor'}
+                  className="max-h-48 max-w-full rounded-lg object-contain"
+                />
               </div>
             )}
 
@@ -169,67 +214,37 @@ export function ProductDetailClient({ product, categoryProducts }: Props) {
               </div>
             )}
             {/* Blade Details (for CX/x-over blades) - placed above Variants */}
-            {((displayProduct.category === 'blade' || displayProduct.category === 'x-over') && (displayProduct.specs?.['Product Line'] || '').toString().toLowerCase().includes('cx')) && (
+            {((displayProduct.category === 'blade' && isCX) || hasXOverBladeDetails) && (
               <div className="mt-6">
                 <h3 className={`text-xl font-bold cyber-heading ${glowColor} mb-4`}>
                   BLADE DETAILS
                 </h3>
-                <div className="mb-6 grid grid-cols-2 gap-4 items-center">
-                  <div className="flex flex-col items-center">
-                    {hasImage(lockChipImage) ? (
+                <div className="mb-6 flex flex-wrap items-start justify-center gap-4">
+                  {hasLockChipDetails && (
+                    <div className="flex flex-col items-center">
+                      {hasImage(lockChipImage) ? (
                       <div className="relative w-40 h-40 rounded-lg overflow-hidden border bg-black">
                         <Image src={lockChipImage} alt="Lock Chip" fill className="object-contain" />
                       </div>
                     ) : (
-                      <div className="w-40 h-40 rounded-lg bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center border">
-                        <div className="text-center px-2">
-                          <div className="text-sm text-muted-foreground">Lock Chip</div>
-                          <div className="text-sm font-medium mt-2">{displayProduct.specs?.['Lock Chip Type'] || '—'}</div>
-                        </div>
+                      <div className="flex min-h-40 min-w-40 items-center justify-center rounded-lg border bg-gray-900 px-3 text-center">
+                        <span className="text-sm font-medium">{displayProduct.specs?.['Lock Chip Type']}</span>
                       </div>
                     )}
-                    <div className="mt-2 text-sm text-center">{lockChipLabel}</div>
-                  </div>
+                      {displayProduct.specs?.['Lock Chip Label'] && <div className="mt-2 text-center text-sm">{displayProduct.specs['Lock Chip Label']}</div>}
+                    </div>
+                  )}
 
-                  <div className="flex flex-col items-center">
-                    {/* If product has randomVariants or a second main image, show images side-by-side */}
-                    {((displayProduct as any).randomVariants?.length || mainBladeImage2) ? (
-                      <div className="flex gap-4">
-                        <div className="flex flex-col items-center">
-                          <div className="relative w-40 h-40 rounded-lg overflow-hidden border bg-black">
-                            {hasImage(mainBladeImage1) ? (
-                              <Image src={mainBladeImage1} alt={bladeDetailLabel1} fill className="object-contain" />
-                            ) : hasImage(displayProduct.image) ? (
-                              <Image src={displayProduct.image} alt={displayProduct.name} fill className="object-contain" />
-                            ) : (
-                              <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">No Image</div>
-                            )}
-                          </div>
-                          <div className="mt-2 text-sm text-center">{bladeDetailLabel1}</div>
+                  {mainBladeDetails.map((detail, index) => (
+                    <div key={`blade-detail-${index}`} className="flex flex-col items-center">
+                      {hasImage(detail.image) && (
+                        <div className="relative h-40 w-40 overflow-hidden rounded-lg border bg-black">
+                          <Image src={detail.image} alt={detail.label || `Main Blade ${index + 1}`} fill className="object-contain" />
                         </div>
-
-                        {hasImage(mainBladeImage2) && (
-                          <div className="flex flex-col items-center">
-                            <div className="relative w-40 h-40 rounded-lg overflow-hidden border bg-black">
-                              <Image src={mainBladeImage2} alt={bladeDetailLabel2 || `${bladeDetailLabel1} 2`} fill className="object-contain" />
-                            </div>
-                            <div className="mt-2 text-sm text-center">{bladeDetailLabel2 || `${bladeDetailLabel1} 2`}</div>
-                          </div>
-                        )}
-                      </div>
-                    ) : (
-                      <div className="grid grid-cols-1 gap-2">
-                        <div className="relative w-40 h-40 rounded-lg overflow-hidden border bg-black">
-                          {mainBladeImage1 ? (
-                            <Image src={mainBladeImage1} alt={bladeDetailLabel1} fill className="object-contain" />
-                          ) : (
-                            <Image src={displayProduct.image} alt={displayProduct.name} fill className="object-contain" />
-                          )}
-                        </div>
-                        <div className="mt-2 text-sm text-center">{bladeDetailLabel1}</div>
-                      </div>
-                    )}
-                  </div>
+                      )}
+                      {detail.label && <div className="mt-2 text-center text-sm">{detail.label}</div>}
+                    </div>
+                  ))}
                 </div>
               </div>
             )}

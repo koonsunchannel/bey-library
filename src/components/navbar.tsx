@@ -50,13 +50,13 @@ export default function NavBar() {
 
         <div className="hidden md:flex items-center gap-6">
           <SearchBar />
-          {isAdmin ? (
+          {isAdmin && (
             <button
               onClick={handleLogout}
-              className="px-3 py-1 text-xs bg-red-500 rounded text-white"
-            >Logout Admin</button>
-          ) : (
-            <Link href="/admin" className="px-3 py-1 text-xs bg-blue-500 rounded text-white">Admin</Link>
+              className="rounded bg-red-500 px-3 py-1 text-xs text-white"
+            >
+              Logout Admin
+            </button>
           )}
           {/* Desktop Nav */}
           <nav className="flex items-center space-x-6">

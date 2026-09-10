@@ -24,6 +24,11 @@ export async function POST(request: Request) {
       return NextResponse.json({ success: false, message: 'No files provided' }, { status: 400 })
     }
 
+    const invalidFile = files.find(file => !file || typeof file.name !== 'string' || file.size === 0)
+    if (invalidFile) {
+      return NextResponse.json({ success: false, message: 'ไฟล์รูปภาพไม่ถูกต้องหรือไม่มีข้อมูล' }, { status: 400 })
+    }
+
     // Check environment variables
     const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
     const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY
@@ -46,8 +51,17 @@ export async function POST(request: Request) {
 
     const bucketName = 'beyblade-images'
 
-    // Skip bucket check and creation for now - assume it exists
-    console.log('[upload-image] Skipping bucket check, assuming bucket exists')
+    const { data: bucket, error: bucketError } = await supabase.storage.getBucket(bucketName)
+    if (!bucket) {
+      const { error: createBucketError } = await supabase.storage.createBucket(bucketName, { public: true })
+      if (createBucketError) {
+        console.error('[upload-image] Bucket error:', bucketError, createBucketError)
+        return NextResponse.json({
+          success: false,
+          message: `ไม่พบพื้นที่เก็บรูปภาพ: ${createBucketError.message}`,
+        }, { status: 500 })
+      }
+    }
 
     const uploaded: Array<{ path: string; publicUrl: string }> = []
 
@@ -55,7 +69,8 @@ export async function POST(request: Request) {
       const file = files[i]
       console.log(`[upload-image] Processing file ${i + 1}:`, file.name, file.size, file.type)
 
-      const fileNameSafe = `${category}-${Date.now()}-${Math.random().toString(36).slice(2, 11)}`
+      const extension = file.name.includes('.') ? `.${file.name.split('.').pop()?.toLowerCase().replace(/[^a-z0-9]/g, '')}` : ''
+      const fileNameSafe = `${category}-${Date.now()}-${Math.random().toString(36).slice(2, 11)}${extension}`
       const path = `${category}/${fileNameSafe}`
 
       console.log(`[upload-image] Uploading to path:`, path)

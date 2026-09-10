@@ -44,7 +44,8 @@ export async function getProducts(category?: string): Promise<Product[]> {
 
   const products = (data || []).map((product: any) => ({
     ...product,
-    bey: product.product_variants || []
+    bey: product.product_variants || [],
+    randomVariants: product.random_variants || product.specs?.__randomVariants || []
   }))
 
   // Sort: non-rare first, then rare (both by created_at ascending)
@@ -85,7 +86,8 @@ export async function getProductById(id: string): Promise<Product | null> {
 
   return {
     ...data,
-    bey: data.product_variants || []
+    bey: data.product_variants || [],
+    randomVariants: data.random_variants || data.specs?.__randomVariants || []
   }
 }
 

@@ -23,7 +23,7 @@ export default async function CategoryPage({ params }: { params: { slug: string 
 
   const isValidCategory = ['blade', 'over-blade', 'assist-blade', 'ratchet', 'bit', 'other', 'x-over', 'credits'].includes(slug)
 
-  const products = isValidCategory && slug !== 'credits' ? await getProductsServer(slug) : []
+  const products = isValidCategory ? await getProductsServer(slug) : []
   if (!isValidCategory) {
     return (
       <div className="container py-12">

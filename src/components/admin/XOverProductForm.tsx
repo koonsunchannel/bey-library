@@ -10,6 +10,14 @@ type XOverVariant = {
 }
 
 type XOverSpecs = {
+  'Lock Chip Image'?: string
+  'Lock Chip Label'?: string
+  'Main Blade Image'?: string
+  'Main Blade Label'?: string
+  'Main Blade Image2'?: string
+  'Main Blade Label2'?: string
+  'Main Blade Image3'?: string
+  'Main Blade Label3'?: string
   Type?: string
   Spin?: string
   Weight?: string
@@ -43,6 +51,7 @@ export default function XOverProductForm({ existing, onClose, onSaved }: XOverPr
 
   const [images, setImages] = useState<File[]>([])
   const [existingImageUrl, setExistingImageUrl] = useState('')
+  const [existingRandomImageUrls, setExistingRandomImageUrls] = useState<string[]>([])
   const [specs, setSpecs] = useState<XOverSpecs>({})
   const [variants, setVariants] = useState<XOverVariant[]>([])
   const [status, setStatus] = useState('')
@@ -65,6 +74,7 @@ export default function XOverProductForm({ existing, onClose, onSaved }: XOverPr
         originalGeneration: (existing.specs?.['Original Generation'] as string) || 'Bakuten Shoot Beyblade',
       })
       setExistingImageUrl(existing.image || '')
+      setExistingRandomImageUrls(existing.randomVariants?.map(variant => variant.image).filter(Boolean) || [])
       setSpecs(existing.specs as XOverSpecs || {})
       setVariants(
         existing.bey?.map(v => ({
@@ -148,6 +158,22 @@ export default function XOverProductForm({ existing, onClose, onSaved }: XOverPr
     }
   }
 
+  const handleMainImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setImages(Array.from(e.currentTarget.files || []).slice(0, 5))
+  }
+
+  const handleSpecImageUpload = async (key: string, file: File) => {
+    try {
+      const urls = await handleImageUpload([file])
+      if (urls.length > 0) {
+        setSpecs(currentSpecs => ({ ...currentSpecs, [key]: urls[0] }))
+      }
+    } catch (error) {
+      console.error('Spec image upload error:', error)
+      setStatus('เกิดข้อผิดพลาดในการอัปโหลดรูป Specs')
+    }
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
@@ -162,9 +188,11 @@ export default function XOverProductForm({ existing, onClose, onSaved }: XOverPr
       }
 
       let mainImageUrl = mode === 'edit' ? existingImageUrl : ''
+      let imageUrls = mode === 'edit' ? existingRandomImageUrls : []
       if (images.length > 0) {
         const uploadedUrls = await handleImageUpload(images)
-        mainImageUrl = uploadedUrls[0] || mainImageUrl
+        imageUrls = uploadedUrls.slice(0, 5)
+        mainImageUrl = imageUrls[0] || mainImageUrl
       }
 
       const typeArray = [formData.type]
@@ -175,6 +203,9 @@ export default function XOverProductForm({ existing, onClose, onSaved }: XOverPr
         Type: formData.specType,
         'Original Generation': formData.originalGeneration,
       }
+      const randomVariants = imageUrls.length > 1
+        ? imageUrls.map(image => ({ name: formData.name, image, type: typeArray }))
+        : []
 
       if (mode === 'edit' && existing) {
         const updateRes = await fetch('/api/admin/products', {
@@ -188,6 +219,7 @@ export default function XOverProductForm({ existing, onClose, onSaved }: XOverPr
             type: typeArray,
             price: formData.price,
             specs: finalSpecs,
+            randomVariants,
           }),
         })
 
@@ -249,6 +281,7 @@ export default function XOverProductForm({ existing, onClose, onSaved }: XOverPr
             type: typeArray,
             price: formData.price,
             specs: finalSpecs,
+            randomVariants,
           }),
         })
 
@@ -424,13 +457,24 @@ export default function XOverProductForm({ existing, onClose, onSaved }: XOverPr
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-white mb-1">รูปภาพหลัก</label>
+            <label className="block text-sm font-medium text-white mb-1">รูปภาพหน้าปก (สูงสุด 5 รูป)</label>
             <input
               type="file"
+              multiple
               accept="image/*"
-              onChange={(e) => setImages(Array.from(e.target.files || []))}
+              onChange={handleMainImageUpload}
               className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white"
             />
+            <p className="mt-1 text-xs text-gray-400">
+              {images.length > 1 ? 'รูปที่เลือกจะถูกสุ่มใช้แสดงผลในหน้าเว็บและหน้า Random' : 'เลือกได้สูงสุด 5 รูป รูปแรกจะเป็นหน้าปก'}
+            </p>
+            {existingRandomImageUrls.length > 0 && images.length === 0 && (
+              <div className="mt-2 grid grid-cols-5 gap-2">
+                {existingRandomImageUrls.map((image, index) => (
+                  <img key={`${image}-${index}`} src={image} alt={`Current ${index + 1}`} className="h-16 w-16 rounded object-cover" />
+                ))}
+              </div>
+            )}
             {existingImageUrl && (
               <div className="mt-2">
                 <img src={existingImageUrl} alt="Current" className="w-20 h-20 object-cover rounded" />
@@ -453,6 +497,84 @@ export default function XOverProductForm({ existing, onClose, onSaved }: XOverPr
 
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white">Specs</h3>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-white mb-1">Lock Chip Image</label>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => e.currentTarget.files?.[0] && handleSpecImageUpload('Lock Chip Image', e.currentTarget.files[0])}
+                  className="w-full px-2 py-1 text-xs bg-gray-700 text-white rounded"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-white mb-1">Lock Chip Label</label>
+                <input
+                  type="text"
+                  value={specs['Lock Chip Label'] || ''}
+                  onChange={(e) => setSpecs({ ...specs, 'Lock Chip Label': e.target.value })}
+                  className="w-full px-2 py-1 text-xs bg-gray-700 text-white rounded"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-white mb-1">Main Blade Image</label>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => e.currentTarget.files?.[0] && handleSpecImageUpload('Main Blade Image', e.currentTarget.files[0])}
+                  className="w-full px-2 py-1 text-xs bg-gray-700 text-white rounded"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-white mb-1">Main Blade Label</label>
+                <input
+                  type="text"
+                  value={specs['Main Blade Label'] || ''}
+                  onChange={(e) => setSpecs({ ...specs, 'Main Blade Label': e.target.value })}
+                  className="w-full px-2 py-1 text-xs bg-gray-700 text-white rounded"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-white mb-1">Main Blade Image 2</label>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => e.currentTarget.files?.[0] && handleSpecImageUpload('Main Blade Image2', e.currentTarget.files[0])}
+                  className="w-full px-2 py-1 text-xs bg-gray-700 text-white rounded"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-white mb-1">Main Blade Label 2</label>
+                <input
+                  type="text"
+                  value={specs['Main Blade Label2'] || ''}
+                  onChange={(e) => setSpecs({ ...specs, 'Main Blade Label2': e.target.value })}
+                  className="w-full px-2 py-1 text-xs bg-gray-700 text-white rounded"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-white mb-1">Main Blade Image 3</label>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => e.currentTarget.files?.[0] && handleSpecImageUpload('Main Blade Image3', e.currentTarget.files[0])}
+                  className="w-full px-2 py-1 text-xs bg-gray-700 text-white rounded"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-white mb-1">Main Blade Label 3</label>
+                <input
+                  type="text"
+                  value={specs['Main Blade Label3'] || ''}
+                  onChange={(e) => setSpecs({ ...specs, 'Main Blade Label3': e.target.value })}
+                  className="w-full px-2 py-1 text-xs bg-gray-700 text-white rounded"
+                />
+              </div>
+            </div>
 
             <div className="grid grid-cols-2 gap-4">
               <div>

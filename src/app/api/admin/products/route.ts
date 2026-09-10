@@ -10,21 +10,38 @@ export async function POST(request: NextRequest) {
   }
 
   const supabase = createServerSupabaseClient()
+  const fallbackSpecs = {
+    ...(body.specs || {}),
+    __randomVariants: body.randomVariants || [],
+  }
 
   try {
-    const { data, error } = await supabase
+    const productPayload = {
+      id: body.id,
+      name: body.name,
+      image: body.image || null,
+      category: body.category,
+      type: body.type || [],
+      price: body.price || null,
+      specs: body.specs || {},
+      random_variants: body.randomVariants || [],
+    }
+    let { data, error } = await supabase
       .from('products')
-      .insert({
-        id: body.id,
-        name: body.name,
-        image: body.image || null,
-        category: body.category,
-        type: body.type || [],
-        price: body.price || null,
-        specs: body.specs || {},
-      })
+      .upsert(productPayload, { onConflict: 'id' })
       .select('*')
       .single()
+
+    if (error?.message.includes("random_variants") && error.message.includes('schema cache')) {
+      const { random_variants: _randomVariants, ...fallbackPayload } = productPayload
+      const fallbackResult = await supabase
+        .from('products')
+        .upsert({ ...fallbackPayload, specs: fallbackSpecs }, { onConflict: 'id' })
+        .select('*')
+        .single()
+      data = fallbackResult.data
+      error = fallbackResult.error
+    }
 
     if (error) {
       console.error('Create product error:', error)
@@ -46,21 +63,39 @@ export async function PUT(request: NextRequest) {
   }
 
   const supabase = createServerSupabaseClient()
+  const fallbackSpecs = {
+    ...(body.specs || {}),
+    __randomVariants: body.randomVariants || [],
+  }
 
   try {
-    const { data, error } = await supabase
+    const productPayload = {
+      name: body.name,
+      image: body.image || null,
+      category: body.category,
+      type: body.type || [],
+      price: body.price || null,
+      specs: body.specs || {},
+      random_variants: body.randomVariants || [],
+    }
+    let { data, error } = await supabase
       .from('products')
-      .update({
-        name: body.name,
-        image: body.image || null,
-        category: body.category,
-        type: body.type || [],
-        price: body.price || null,
-        specs: body.specs || {},
-      })
+      .update(productPayload)
       .eq('id', body.id)
       .select('*')
       .single()
+
+    if (error?.message.includes("random_variants") && error.message.includes('schema cache')) {
+      const { random_variants: _randomVariants, ...fallbackPayload } = productPayload
+      const fallbackResult = await supabase
+        .from('products')
+        .update({ ...fallbackPayload, specs: fallbackSpecs })
+        .eq('id', body.id)
+        .select('*')
+        .single()
+      data = fallbackResult.data
+      error = fallbackResult.error
+    }
 
     if (error) {
       console.error('Update product error:', error)
