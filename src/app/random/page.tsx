@@ -75,6 +75,7 @@ export default function RandomPage() {
   const [lockedBladeId, setLockedBladeId] = useState<string>("");
   const [allProducts, setAllProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
+  const [excludeXOver, setExcludeXOver] = useState(true);
 
   // Fetch all products on mount
   useEffect(() => {
@@ -92,10 +93,15 @@ export default function RandomPage() {
   }, []);
 
   // Blade list for dropdown
-  const blades = allProducts.filter(isBladeProduct);
+  const randomProducts = excludeXOver
+    ? allProducts.filter(product => product.category !== 'x-over')
+    : allProducts;
+
+  // Blade list for dropdown
+  const blades = randomProducts.filter(isBladeProduct);
 
   // Get all CX components once
-  const cxComponents = extractCXComponents(allProducts);
+  const cxComponents = extractCXComponents(randomProducts);
 
   // Helper to get random variant if blade has randomVariants
   function getRandomBladeWithVariant(blade: Product & { randomVariants?: BeyVariant[] }) {
@@ -115,10 +121,10 @@ export default function RandomPage() {
 
   function handleRandomize() {
     // Filter Blade-, Rat-, Bit-, As-, Hybrid-
-    const rats = allProducts.filter(p => p.id.startsWith("Rat-"));
-    const hybrids = allProducts.filter(p => p.id.startsWith("Hybrid-"));
-    const bits = allProducts.filter(p => p.id.startsWith("Bit-") && !p.id.startsWith("Hybrid-Bit-"));
-    const asList = allProducts.filter(p => p.id.startsWith("As-"));
+    const rats = randomProducts.filter(p => p.id.startsWith("Rat-"));
+    const hybrids = randomProducts.filter(p => p.id.startsWith("Hybrid-"));
+    const bits = randomProducts.filter(p => p.id.startsWith("Bit-") && !p.id.startsWith("Hybrid-Bit-"));
+    const asList = randomProducts.filter(p => p.id.startsWith("As-"));
 
     // ใช้ blade ที่เลือก ถ้าเลือกไว้, ถ้าไม่เลือกให้สุ่ม และสุ่ม variant ถ้ามี
     let blade = lockedBladeId ? blades.find(b => b.id === lockedBladeId) : getRandomItem(blades);
@@ -303,6 +309,22 @@ export default function RandomPage() {
             <option key={b.id} value={b.id}>{b.name}</option>
           ))}
         </select>
+        <label className="mt-[10px] flex cursor-pointer items-center gap-2 text-sm text-white">
+          <input
+            type="checkbox"
+            checked={excludeXOver}
+            onChange={event => {
+              const shouldExclude = event.target.checked
+              setExcludeXOver(shouldExclude)
+              if (shouldExclude && lockedBladeId) {
+                const selectedBlade = allProducts.find(product => product.id === lockedBladeId)
+                if (selectedBlade?.category === 'x-over') setLockedBladeId('')
+              }
+            }}
+            className="h-4 w-4 accent-red-500"
+          />
+          Not include X-Over
+        </label>
       </div>
       <button
         onClick={handleRandomize}
