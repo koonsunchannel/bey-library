@@ -7,14 +7,7 @@ import { X } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
-const Sheet = React.forwardRef<
-  React.ElementRef<typeof SheetPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Root>
->(({ ...props }, ref) => {
-  const generatedId = React.useId()
-  return <SheetPrimitive.Root {...props} id={generatedId} ref={ref} />
-})
-Sheet.displayName = "Sheet"
+const Sheet = SheetPrimitive.Root
 
 const SheetTrigger = SheetPrimitive.Trigger
 
@@ -63,16 +56,12 @@ interface SheetContentProps
 const SheetContent = React.forwardRef<
   React.ElementRef<typeof SheetPrimitive.Content>,
   SheetContentProps
->(({ side = "right", className, children, id, ...props }, ref) => {
-  const generatedId = React.useId()
-  const contentId = id ?? generatedId
-
+>(({ side = "right", className, children, ...props }, ref) => {
   return (
     <SheetPortal>
       <SheetOverlay />
       <SheetPrimitive.Content
         ref={ref}
-        id={contentId}
         className={cn(sheetVariants({ side }), className)}
         {...props}
       >

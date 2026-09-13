@@ -10,6 +10,29 @@ export async function POST(request: NextRequest) {
   }
 
   const supabase = createServerSupabaseClient()
+  const productId = typeof body.id === 'string' ? body.id.trim() : ''
+  if (!productId) {
+    return NextResponse.json({ success: false, message: 'กรุณากรอก ID หลักของสินค้า' }, { status: 400 })
+  }
+
+  const { data: existingProduct, error: lookupError } = await supabase
+    .from('products')
+    .select('id')
+    .eq('id', productId)
+    .maybeSingle()
+
+  if (lookupError) {
+    console.error('Product ID lookup error:', lookupError)
+    return NextResponse.json({ success: false, message: 'ตรวจสอบ ID สินค้าไม่สำเร็จ' }, { status: 500 })
+  }
+
+  if (existingProduct) {
+    return NextResponse.json({
+      success: false,
+      message: `ID "${productId}" มีอยู่แล้ว กรุณาเปลี่ยนเป็น ID ใหม่`,
+    }, { status: 409 })
+  }
+
   const fallbackSpecs = {
     ...(body.specs || {}),
     __randomVariants: body.randomVariants || [],
@@ -17,7 +40,7 @@ export async function POST(request: NextRequest) {
 
   try {
     const productPayload = {
-      id: body.id,
+      id: productId,
       name: body.name,
       image: body.image || null,
       category: body.category,
@@ -28,7 +51,7 @@ export async function POST(request: NextRequest) {
     }
     let { data, error } = await supabase
       .from('products')
-      .upsert(productPayload, { onConflict: 'id' })
+      .insert(productPayload)
       .select('*')
       .single()
 
@@ -36,7 +59,7 @@ export async function POST(request: NextRequest) {
       const { random_variants: _randomVariants, ...fallbackPayload } = productPayload
       const fallbackResult = await supabase
         .from('products')
-        .upsert({ ...fallbackPayload, specs: fallbackSpecs }, { onConflict: 'id' })
+        .insert({ ...fallbackPayload, specs: fallbackSpecs })
         .select('*')
         .single()
       data = fallbackResult.data
@@ -45,6 +68,12 @@ export async function POST(request: NextRequest) {
 
     if (error) {
       console.error('Create product error:', error)
+      if (error.code === '23505') {
+        return NextResponse.json({
+          success: false,
+          message: `ID "${productId}" มีอยู่แล้ว กรุณาเปลี่ยนเป็น ID ใหม่`,
+        }, { status: 409 })
+      }
       return NextResponse.json({ success: false, message: error.message }, { status: 500 })
     }
 

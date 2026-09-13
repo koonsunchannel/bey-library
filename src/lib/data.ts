@@ -3,22 +3,14 @@ import type { Product } from "./types"
 // Mock data for our cyber-themed library products
 export const products: Product[] = [
   
-  //troll credits
-  {
-    id: "CD001",
-    name: "Credits? Why you want to know that???",
-    image: "https://i.ibb.co/0pcrGh1N/Credit.webp",
-    category: "credits",
-    type: "credits",
-    price: "This website don't want anything from you.",
-    specs: {
-      "Creator Name": "Why you want to know that?",
-      "Donation": "Go to Philanthropy funds.",
-      "Ownership": "I'm not Takara Tomy. Beyblade is not my product, This web for community free use.",
-      "Objective": "To make it easier for the community to find Beyblade X parts data, Not find me.",
-      "Special Thanks": "Thanks to Takara Tomy for making Beyblade.",
-    },
-  },
+  //~ g (Stock Combo)
+  //Blade-[ชื่อย่อ]-001
+  //Rat-[ชื่อย่อ]-001
+  //Bit-[ชื่อย่อ]-001
+  //Ov-[ชื่อย่อ]-001
+  //As-[ชื่อย่อ]-001
+  //other-001
+  //Blade-X-[ชื่อภาค]-001
 ];
 
 // Helper functions to get products (deterministic; do not perform randomization here)

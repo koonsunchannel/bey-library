@@ -221,9 +221,9 @@ export default function OtherProductForm({ existing, onClose, onSaved }: OtherPr
         })
 
         if (!createRes.ok) {
-          const errText = await createRes.text()
-          console.error('Create product failed:', createRes.status, errText)
-          setStatus('ข้อผิดพลาดในการสร้างสินค้า')
+          const errorData = await createRes.json().catch(() => null)
+          console.error('Create product failed:', createRes.status, errorData)
+          setStatus(errorData?.message || 'ข้อผิดพลาดในการสร้างสินค้า')
           setLoading(false)
           return
         }

@@ -24,8 +24,10 @@ export default function NavBar() {
   const pathname = usePathname()
   const router = useRouter()
   const [isAdmin, setIsAdmin] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
+    setIsMounted(true)
     setIsAdmin(checkIsAdmin())
   }, [])
 
@@ -75,36 +77,38 @@ export default function NavBar() {
         </div>
 
         {/* Mobile Nav */}
-        <Sheet>
-          <SheetTrigger asChild className="md:hidden">
-            <button
-              className="p-2 hover:bg-accent hover:text-accent-foreground rounded-md"
-              aria-label="Toggle Menu"
-            >
-              <Menu className="h-5 w-5" />
-            </button>
-          </SheetTrigger>
-          <SheetContent side="right" className="w-[200px] p-0">
-            <div className="p-3">
-              <SearchBar />
-            </div>
-            <nav className="grid gap-2 p-4">
-              {categories.map((category) => (
-                <Link
-                  key={category.path}
-                  href={category.path}
-                  className={`block py-2 px-3 text-sm font-medium rounded-md
-                    ${pathname === category.path ?
-                      `bg-secondary ${category.color}` :
-                      "text-muted-foreground hover:bg-accent"}
-                    uppercase tracking-wide`}
-                >
-                  {category.name}
-                </Link>
-              ))}
-            </nav>
-          </SheetContent>
-        </Sheet>
+        {isMounted && (
+          <Sheet>
+            <SheetTrigger asChild className="md:hidden">
+              <button
+                className="p-2 hover:bg-accent hover:text-accent-foreground rounded-md"
+                aria-label="Toggle Menu"
+              >
+                <Menu className="h-5 w-5" />
+              </button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[200px] p-0">
+              <div className="p-3">
+                <SearchBar />
+              </div>
+              <nav className="grid gap-2 p-4">
+                {categories.map((category) => (
+                  <Link
+                    key={category.path}
+                    href={category.path}
+                    className={`block py-2 px-3 text-sm font-medium rounded-md
+                      ${pathname === category.path ?
+                        `bg-secondary ${category.color}` :
+                        "text-muted-foreground hover:bg-accent"}
+                      uppercase tracking-wide`}
+                  >
+                    {category.name}
+                  </Link>
+                ))}
+              </nav>
+            </SheetContent>
+          </Sheet>
+        )}
       </div>
     </header>
   )
