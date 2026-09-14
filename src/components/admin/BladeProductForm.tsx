@@ -27,6 +27,8 @@ type BladeSpecs = {
   'Over Blade'?: string
   'Assist Blade'?: string
   'Product Line'?: string
+  V2?: boolean
+  'V2 Weight'?: string
   Gimmick?: string
   'Gimmick Type'?: string
   'Product Xpanded'?: string
@@ -45,6 +47,7 @@ export default function BladeProductForm({ existing, onClose, onSaved }: BladePr
     price: '',
     type: '',
     isRare: false,
+    isV2: false,
   })
 
   const [images, setImages] = useState<File[]>([])
@@ -65,6 +68,7 @@ export default function BladeProductForm({ existing, onClose, onSaved }: BladePr
         price: existing.price || '',
         type: (existing.type?.[0] || '').toLowerCase(),
         isRare: existing.type?.includes('rare') ? true : false,
+        isV2: String(existing.specs?.V2).toLowerCase() === 'true',
       })
       setExistingImageUrl(existing.image || '')
       setSpecs(existing.specs as BladeSpecs || {})
@@ -196,6 +200,7 @@ export default function BladeProductForm({ existing, onClose, onSaved }: BladePr
       const finalSpecs: BladeSpecs = {
         ...specs,
         Type: formData.type,
+        V2: formData.isV2,
       }
 
       if (mode === 'edit' && existing) {
@@ -490,6 +495,15 @@ export default function BladeProductForm({ existing, onClose, onSaved }: BladePr
                     />
                     <span className="text-sm">Rare</span>
                   </label>
+                  <label className="flex items-center gap-2 text-gray-300">
+                    <input
+                      type="checkbox"
+                      checked={formData.isV2}
+                      onChange={(e) => setFormData({ ...formData, isV2: e.target.checked })}
+                      className="rounded"
+                    />
+                    <span className="text-sm">V2</span>
+                  </label>
                 </div>
               </div>
 
@@ -642,6 +656,17 @@ export default function BladeProductForm({ existing, onClose, onSaved }: BladePr
                   type="text"
                   value={specs.Weight || ''}
                   onChange={(e) => setSpecs({ ...specs, Weight: e.target.value })}
+                  className="w-full px-2 py-1 text-xs bg-slate-800 text-white rounded"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs text-gray-300 mb-1">V2 Weight</label>
+                <input
+                  type="text"
+                  value={specs['V2 Weight'] || ''}
+                  onChange={(e) => setSpecs({ ...specs, 'V2 Weight': e.target.value })}
+                  placeholder="เช่น 38.5 g"
                   className="w-full px-2 py-1 text-xs bg-slate-800 text-white rounded"
                 />
               </div>

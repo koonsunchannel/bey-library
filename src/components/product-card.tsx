@@ -11,9 +11,10 @@ type ProductCardProps = {
   category: 'blade' | 'assist-blade' | 'ratchet' | 'bit' | 'other' | 'x-over' | 'credits'
   price: string
   type?: string[]
+  isV2?: boolean
 }
 
-export function ProductCard({ id, name, image, category, price, type }: ProductCardProps) {
+export function ProductCard({ id, name, image, category, price, type, isV2 }: ProductCardProps) {
   // Determine the glow color based on category
   const glowColor =
     category === 'blade' ? 'cyber-glow-red' :
@@ -25,9 +26,14 @@ export function ProductCard({ id, name, image, category, price, type }: ProductC
     'cyber-glow-red'
 
   return (
-    <Card className={`overflow-hidden transition-all duration-200 hover:border-white ${
+    <Card className={`relative overflow-hidden transition-all duration-200 hover:border-white ${
       type?.includes('rare') ? 'border-4 border-white shadow-[0_0_10px_2px_#fff]' : 'border-muted'
     } cyber-border`}>
+      {category === 'blade' && isV2 && (
+        <span className="absolute right-2 top-2 z-10 rounded border border-yellow-300 bg-yellow-400 px-2 py-1 text-xs font-bold text-black shadow-md">
+          V2
+        </span>
+      )}
       <CardHeader className="p-0">
         <div className="aspect-square w-full overflow-hidden relative bg-black">
           <Link href={`/product/${category}/${id}`}>

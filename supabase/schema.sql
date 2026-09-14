@@ -14,6 +14,12 @@ CREATE TABLE IF NOT EXISTS products (
 
 ALTER TABLE products ADD COLUMN IF NOT EXISTS random_variants JSONB DEFAULT '[]';
 
+-- Blade V2 metadata is stored in the existing specs JSONB column.
+UPDATE products
+SET specs = COALESCE(specs, '{}'::jsonb) || '{"V2": false}'::jsonb
+WHERE category = 'blade'
+  AND NOT (COALESCE(specs, '{}'::jsonb) ? 'V2');
+
 -- Create product_variants table for bey array
 CREATE TABLE IF NOT EXISTS product_variants (
   id TEXT PRIMARY KEY,

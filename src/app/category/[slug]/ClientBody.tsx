@@ -558,6 +558,7 @@ export default function ClientBody({
               category={product.category}
               price={product.price}
               type={Array.isArray(product.type) ? product.type : [product.type]}
+              isV2={slug === 'blade' && String(product.specs?.V2).toLowerCase() === 'true'}
             />
           </div>
         ))}
