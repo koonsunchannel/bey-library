@@ -17,6 +17,7 @@ const categories = [
   { name: "Other", path: "/category/other", color: "cyber-glow-yellow" },
   { name: "X-Over", path: "/category/x-over", color: "cyber-glow-purple" },
   { name: "Credits", path: "/category/credits", color: "cyber-glow-red" },
+  { name: "Deck", path: "/deck", color: "cyber-glow-yellow" },
   { name: "RANDOM", path: "/random", color: "cyber-glow-red" },
 ]
 
@@ -50,7 +51,7 @@ export default function NavBar() {
           </Link>
         </div>
 
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-3">
           <SearchBar />
           {isAdmin && (
             <button
@@ -61,12 +62,12 @@ export default function NavBar() {
             </button>
           )}
           {/* Desktop Nav */}
-          <nav className="flex items-center space-x-6">
+          <nav className="flex items-center space-x-3 whitespace-nowrap">
             {categories.map((category) => (
               <Link
                 key={category.path}
                 href={category.path}
-                className={`text-sm font-medium transition-colors hover:text-white
+                className={`text-xs font-medium transition-colors hover:text-white
                   ${pathname === category.path ? category.color : "text-muted-foreground"}
                   uppercase tracking-wide`}
               >

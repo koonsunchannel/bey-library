@@ -15,6 +15,37 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ success: false, message: 'กรุณากรอก ID หลักของสินค้า' }, { status: 400 })
   }
 
+  const createDuplicateResponse = async () => {
+    const [{ data: duplicateProduct }, { data: latestProduct }] = await Promise.all([
+      supabase
+        .from('products')
+        .select('id, name, category')
+        .eq('id', productId)
+        .maybeSingle(),
+      supabase
+        .from('products')
+        .select('id, name')
+        .eq('category', body.category)
+        .order('created_at', { ascending: false })
+        .limit(1)
+        .maybeSingle(),
+    ])
+
+    const duplicateDetails = duplicateProduct
+      ? `ID "${duplicateProduct.id}" ซ้ำกับชื่อ "${duplicateProduct.name}" ในหมวด "${duplicateProduct.category}"`
+      : `ID "${productId}" มีอยู่แล้ว`
+    const latestDetails = latestProduct
+      ? `ID ล่าสุดในหมวด "${body.category}" คือ "${latestProduct.id}" (${latestProduct.name})`
+      : `ยังไม่มีข้อมูลเดิมในหมวด "${body.category}"`
+
+    return NextResponse.json({
+      success: false,
+      message: `${duplicateDetails}. ${latestDetails}. กรุณาเปลี่ยน ID ใหม่`,
+      duplicate: duplicateProduct,
+      latestInCategory: latestProduct,
+    }, { status: 409 })
+  }
+
   const { data: existingProduct, error: lookupError } = await supabase
     .from('products')
     .select('id')
@@ -27,10 +58,7 @@ export async function POST(request: NextRequest) {
   }
 
   if (existingProduct) {
-    return NextResponse.json({
-      success: false,
-      message: `ID "${productId}" มีอยู่แล้ว กรุณาเปลี่ยนเป็น ID ใหม่`,
-    }, { status: 409 })
+    return createDuplicateResponse()
   }
 
   const fallbackSpecs = {
@@ -69,10 +97,7 @@ export async function POST(request: NextRequest) {
     if (error) {
       console.error('Create product error:', error)
       if (error.code === '23505') {
-        return NextResponse.json({
-          success: false,
-          message: `ID "${productId}" มีอยู่แล้ว กรุณาเปลี่ยนเป็น ID ใหม่`,
-        }, { status: 409 })
+        return createDuplicateResponse()
       }
       return NextResponse.json({ success: false, message: error.message }, { status: 500 })
     }

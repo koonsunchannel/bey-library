@@ -2,15 +2,14 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
-import { Separator } from '@/components/ui/separator'
-import { getProducts } from '@/lib/data'
+import { getProductsServer } from '@/lib/database-server'
 import { ProductCard } from '@/components/product-card'
 
-export default function Home() {
-  // Get featured products (one from each category)
-  const bladeProduct = getProducts('blade')[0]
-  const ratchetProduct = getProducts('ratchet')[0]
-  const bitProduct = getProducts('bit')[0]
+export default async function Home() {
+  const products = await getProductsServer()
+  const bladeProduct = products.find(product => product.category === 'blade' && product.name.trim().toLowerCase() === 'dran sword')
+  const ratchetProduct = products.find(product => product.category === 'ratchet' && product.id === 'Rat-360-001')
+  const bitProduct = products.find(product => product.category === 'bit' && (product.id === 'Bit-F-001' || /\bflat\b/i.test(product.name)))
 
   return (
     <div className="container py-8 space-y-16">
@@ -64,8 +63,8 @@ export default function Home() {
               <CardHeader className="p-0">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="https://i.ibb.co/G40ySY2X/DS-1-B01.webp"
-                    alt="Blade Category"
+                    src={bladeProduct?.image || '/Beyblade_X_Logo_White.webp'}
+                    alt={bladeProduct?.name || 'Blade Category'}
                     width={600}
                     height={400}
                     className="object-cover w-full h-full transition-transform hover:scale-105"
@@ -88,8 +87,8 @@ export default function Home() {
               <CardHeader className="p-0">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="https://i.ibb.co/Qv29Y5pf/3-60-1-B01.webp"
-                    alt="Ratchet Category"
+                    src={ratchetProduct?.image || '/Beyblade_X_Logo_White.webp'}
+                    alt={ratchetProduct?.name || 'Ratchet Category'}
                     width={600}
                     height={400}
                     className="object-cover w-full h-full transition-transform hover:scale-105"
@@ -112,8 +111,8 @@ export default function Home() {
               <CardHeader className="p-0">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="https://i.ibb.co/27dbvcjp/F-1-B01.webp"
-                    alt="Bit Category"
+                    src={bitProduct?.image || '/Beyblade_X_Logo_White.webp'}
+                    alt={bitProduct?.name || 'Bit Category'}
                     width={600}
                     height={400}
                     className="object-cover w-full h-full transition-transform hover:scale-105"

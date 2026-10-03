@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { getProducts } from "@/lib/database-client";
+import PartImageSelect from "@/components/PartImageSelect";
 import type { Product } from "@/lib/types";
 
 // Type for blade variants
@@ -297,18 +298,13 @@ export default function RandomPage() {
       </h1>
       {/* Blade lock dropdown */}
       <div className="mb-6 w-full max-w-[180px]">
-        <select
-          id="blade-lock"
-          className="w-full text-sm px-2 py-1 rounded-md border border-gray-300 shadow-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-red-400 hover:bg-gray-50"
+        <PartImageSelect
           value={lockedBladeId}
-          onChange={e => setLockedBladeId(e.target.value)}
-          aria-label="Blade lock selector"
-        >
-          <option value="">-- Random Blade --</option>
-          {blades.map(b => (
-            <option key={b.id} value={b.id}>{b.name}</option>
-          ))}
-        </select>
+          onChange={setLockedBladeId}
+          placeholder="-- Random Blade --"
+          triggerClassName="w-full rounded-md border border-gray-300 bg-white px-2 py-1 text-sm text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-red-400 hover:bg-gray-50"
+          options={blades.map(blade => ({ value: blade.id, label: blade.name, image: blade.image }))}
+        />
         <label className="mt-[10px] flex cursor-pointer items-center gap-2 text-sm text-white">
           <input
             type="checkbox"
