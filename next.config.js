@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  basePath: '/bey-library',
   eslint: {
     // we use biome for linting
     ignoreDuringBuilds: true,
